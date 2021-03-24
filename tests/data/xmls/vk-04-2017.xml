@@ -1,0 +1,496 @@
+<ns11:Siirto xmlns:ns11="http://www.eduskunta.fi/skeemat/siirto/2011/09/07">
+  <Sanomavalitys xmlns="http://www.eduskunta.fi/skeemat/siirtokooste/2011/05/17">
+    <ns4:SanomatyyppiNimi xmlns:ns4="http://www.eduskunta.fi/skeemat/siirtoelementit/2011/05/17">VASKI_JULKVP_Interpellation_fi</ns4:SanomatyyppiNimi>
+    <ns4:SanomaTunnus xmlns:ns4="http://www.eduskunta.fi/skeemat/siirtoelementit/2011/05/17">Vaski_VASKI_JULKVP_Interpellation_fi_24 marras 2017_13:05:35 EET</ns4:SanomaTunnus>
+    <ns4:LuontiHetki xmlns:ns4="http://www.eduskunta.fi/skeemat/siirtoelementit/2011/05/17">2017-11-24T13:05:35.701+02:00</ns4:LuontiHetki>
+    <ns4:SiirtoKoodi xmlns:ns4="http://www.eduskunta.fi/skeemat/siirtoelementit/2011/05/17">paivitys</ns4:SiirtoKoodi>
+    <Toimija xmlns="http://www.vn.fi/skeemat/metatietokooste/2010/04/27" xmlns:s333="http://www.vn.fi/skeemat/metatietoelementit/2010/04/27" s333:rooliKoodi="lahettaja">
+      <s333:YhteisoTeksti>Eduskunta</s333:YhteisoTeksti>
+    </Toimija>
+    <Toimija xmlns="http://www.vn.fi/skeemat/metatietokooste/2010/04/27" xmlns:s334="http://www.vn.fi/skeemat/metatietoelementit/2010/04/27" s334:rooliKoodi="vastaanottaja">
+      <s334:YhteisoTeksti>Eduskunta</s334:YhteisoTeksti>
+    </Toimija>
+  </Sanomavalitys>
+  <ns11:SiirtoMetatieto>
+    <jme:JulkaisuMetatieto xmlns:asi="http://www.vn.fi/skeemat/asiakirjakooste/2010/04/27" xmlns:asi1="http://www.vn.fi/skeemat/asiakirjaelementit/2010/04/27" xmlns:jme="http://www.eduskunta.fi/skeemat/julkaisusiirtokooste/2011/12/20" xmlns:met="http://www.vn.fi/skeemat/metatietokooste/2010/04/27" xmlns:met1="http://www.vn.fi/skeemat/metatietoelementit/2010/04/27" xmlns:org="http://www.vn.fi/skeemat/organisaatiokooste/2010/02/15" xmlns:org1="http://www.vn.fi/skeemat/organisaatioelementit/2010/02/15" xmlns:sii="http://www.eduskunta.fi/skeemat/siirtokooste/2011/05/17" xmlns:sii1="http://www.eduskunta.fi/skeemat/siirtoelementit/2011/05/17" xmlns:sis="http://www.vn.fi/skeemat/sisaltokooste/2010/04/27" xmlns:sis1="http://www.vn.fi/skeemat/sisaltoelementit/2010/04/27" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" met1:asiakirjatyyppiNimi="Välikysymys" met1:eduskuntaTunnus="VK 4/2017 vp" met1:identifiointiTunnus="{5378B2B9-C73C-4BA0-8B0F-D61F4C44C0FA}" met1:kieliKoodi="fi" met1:laadintaPvm="2017-11-24" met1:muuTunnus="EDK-2017-AK-159569" met1:paatehtavaKoodi="04 01 01 Välikysymysmenettely">
+      <asi:IdentifiointiOsa>
+        <met1:AsiakirjatyyppiNimi>Välikysymys</met1:AsiakirjatyyppiNimi>
+        <asi:EduskuntaTunniste>
+          <met1:AsiakirjatyyppiKoodi>VK</met1:AsiakirjatyyppiKoodi>
+          <asi1:AsiakirjaNroTeksti>4</asi1:AsiakirjaNroTeksti>
+          <asi1:ValtiopaivavuosiTeksti>2017</asi1:ValtiopaivavuosiTeksti>
+        </asi:EduskuntaTunniste>
+        <met:Toimija met1:rooliKoodi="">
+          <met1:YhteisoTeksti/>
+          <org:Henkilo>
+            <org1:AsemaTeksti/>
+            <org1:EtuNimi/>
+            <org1:SukuNimi/>
+            <org1:LisatietoTeksti/>
+          </org:Henkilo>
+        </met:Toimija>
+        <met1:LaadintaPvmTeksti>24.11.2017</met1:LaadintaPvmTeksti>
+        <met:Nimeke met1:vaihtoehtoinenNimekeTeksti="">
+          <met1:NimekeTeksti>Välikysymys eriarvoistumisesta</met1:NimekeTeksti>
+        </met:Nimeke>
+      </asi:IdentifiointiOsa>
+      <sii:EsitysmuotoViite met1:muuTunnus="{5378B2B9-C73C-4BA0-8B0F-D61F4C44C0FA}"/>
+      <met:Aihe>
+        <met1:AiheTeksti/>
+      </met:Aihe>
+    </jme:JulkaisuMetatieto>
+  </ns11:SiirtoMetatieto>
+  <SiirtoAsiakirja xmlns="http://www.eduskunta.fi/skeemat/siirtokooste/2011/05/17">
+    <RakenneAsiakirja>
+      <kys:Kysymys xmlns:asi="http://www.vn.fi/skeemat/asiakirjakooste/2010/04/27" xmlns:asi1="http://www.vn.fi/skeemat/asiakirjaelementit/2010/04/27" xmlns:kys="http://www.eduskunta.fi/skeemat/kysymys/2012/08/10" xmlns:met="http://www.vn.fi/skeemat/metatietokooste/2010/04/27" xmlns:met1="http://www.vn.fi/skeemat/metatietoelementit/2010/04/27" xmlns:mix="http://www.loc.gov/mix/v20" xmlns:narc="http://www.arkisto.fi/skeemat/sahke2/2011/01/31_vnk" xmlns:org="http://www.vn.fi/skeemat/organisaatiokooste/2010/02/15" xmlns:org1="http://www.vn.fi/skeemat/organisaatioelementit/2010/02/15" xmlns:saa="http://www.vn.fi/skeemat/saadoskooste/2010/04/27" xmlns:saa1="http://www.vn.fi/skeemat/saadoselementit/2010/04/27" xmlns:sis="http://www.vn.fi/skeemat/sisaltokooste/2010/04/27" xmlns:sis1="http://www.vn.fi/skeemat/sisaltoelementit/2010/04/27" xmlns:tau="http://www.vn.fi/skeemat/taulukkokooste/2010/04/27" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" met1:asiakirjatyyppiNimi="Välikysymys" met1:eduskuntaTunnus="VK 4/2017 vp" met1:identifiointiTunnus="VK 4/2017 vp" met1:julkisuusKoodi="Julkinen" met1:kieliKoodi="fi" met1:laadintaPvm="2017-11-24" met1:paatehtavaKoodi="04 01 01" met1:rakennemaarittelyNimi="kysymys.xsd" met1:tilaKoodi="Valmis" met1:versioTeksti="5.0">
+        <asi:IdentifiointiOsa>
+          <met1:AsiakirjatyyppiNimi>Välikysymys</met1:AsiakirjatyyppiNimi>
+          <asi:EduskuntaTunniste>
+            <met1:AsiakirjatyyppiKoodi>VK</met1:AsiakirjatyyppiKoodi>
+            <asi1:AsiakirjaNroTeksti>4</asi1:AsiakirjaNroTeksti>
+            <asi1:ValtiopaivavuosiTeksti>2017 vp</asi1:ValtiopaivavuosiTeksti>
+          </asi:EduskuntaTunniste>
+          <met:Toimija met1:rooliKoodi="Laatija">
+            <org:Henkilo met1:muuTunnus="1144">
+              <org1:EtuNimi>Suna</org1:EtuNimi>
+              <org1:SukuNimi>Kymäläinen</org1:SukuNimi>
+              <org1:LisatietoTeksti>sd</org1:LisatietoTeksti>
+              <org1:LisatietoTeksti>ym.</org1:LisatietoTeksti>
+            </org:Henkilo>
+          </met:Toimija>
+          <met:Nimeke>
+            <met1:NimekeTeksti>Välikysymys eriarvoistumisesta</met1:NimekeTeksti>
+          </met:Nimeke>
+        </asi:IdentifiointiOsa>
+        <asi:PerusteluOsa>
+          <sis1:OtsikkoTeksti>Eduskunnalle</sis1:OtsikkoTeksti>
+          <asi:PerusteluLuku>
+            <sis1:ValiotsikkoTeksti>Johdanto </sis1:ValiotsikkoTeksti>
+            <sis:KappaleKooste>"Eriarvoisuus vaikuttaa ihmisiin kaikilla elämänalueilla: Se alentaa pärjäämistä yhteiskunnassa, heikentää mahdollisuuksien hyödyntämistä ja aiheuttaa osalle väestöstä merkittävän takamatkan eri elämänalueilla ja markkinoilla. Eriarvoisuus myös vähentää kannustin- ja byrokratialoukkujen muodossa ihmisten kykyä käyttää julkisen vallan ja työmarkkinoiden tuomia mahdollisuuksia. Lisäksi se heikentää fyysistä terveyttä ja henkistä autonomiaa, mikä heijastuu elinajanodotteen eroina, pitkäaikaisena pienituloisuutena ja pysyvänä vajaakuntoisuutena." Näin toteaa hallitus tiedotteessaan 20.11.2017. </sis:KappaleKooste>
+            <sis:KappaleKooste>Hallitus näyttää jollakin tasolla heränneen oman politiikkansa eriarvoisuuteen ja on asettanut eriarvoisuutta pohtivan työryhmän, jolle se on antanut tehtäväksi hakea "uusia toimintatapoja ja keinoja pitkään jatkuneen yhteiskunnallisen eriytymisen pysäyttämiseksi nykyisen menokehyksen puitteissa ja julkisia menoja lisäämättä". </sis:KappaleKooste>
+            <sis:KappaleKooste>Kannustamme hallitusta tässä työssä, mutta kyseenalaistamme jo tehdyt päätökset sekä ensi vuoden budjetin yhteydessä tehtävät hallituksen esitykset. Yksi suurimmista syistä eriarvoisuuden kasvuun löytyy Sipilän hallituksen ohjelmasta. Jos eriarvoisuuteen todella halutaan vaikuttaa, se on mahdollista huomioimalla juuri nyt opposition vaihtoehtobudjeteissaan esittämiä linjauksia. Olemme huolissamme siitä, että hallitus on toistuvasti näyttänyt kääntävän selkänsä sille kuilulle, joka on revennyt hyvinvoivien ja huono-osaisten suomalaisten välille. Hallitus on leikannut eri ihmisiltä eri tavoin. Hallituksen toimet ovat johtaneet joko tekoina tai tekemättä jättämisenä eriarvoisuuden kasvuun ja eriarvoistumisen syvenemiseen. Monella eri mittarilla ja usealla yhteiskunnan sektorilla eriarvoisuus on lisääntymässä ja — mikä pahinta — syvenemässä ja periytymässä.</sis:KappaleKooste>
+            <sis:KappaleKooste>100-vuotiaan suomalaisen yhteiskuntamme yksi ehdoton vahvuus on kansakuntamme eheys. Se on vakauden ja kasvun tae. Nyt, kun talous on saatu kääntymään kasvuun, on huolehdittava siitä, että kasvusta hyötyvät kaikki. Poliitikkojen tehtävä on huolehtia siitä, että emme päästä eriarvoisuutta kasvamaan keskuudessamme. Eriarvoisuuden kasvu ei ole mikään luonnonlaki, vaan siihen voidaan aktiivisesti poliittisin päätöksen vaikuttaa. </sis:KappaleKooste>
+            <sis1:ValiotsikkoTeksti>Hallituksen talouspolitiikka on eriarvoistavaa</sis1:ValiotsikkoTeksti>
+            <sis:KappaleKooste>Hallituksen talouspolitiikkaa ohjaa tietoinen ja ideologinen ajattelu hyvinvointiyhteiskunnan murentamiseksi. Hallituksen maine tiukkana taloudenpitäjänä ei vastaa totuutta, sillä leikkausten ohella tehdyt massiiviset veronalennukset ovat vesittäneet hallituksen tavoitteita julkisen talouden tasapainottamiseksi. Riippumattomat laskelmat ovat osoittaneet, että nämä veronalennukset ovat hyödyttäneet erityisesti varakkaita, ja samalla hallituksen omissa lakiesityksissäkin todetaan, että monet veronalennukset eivät edes vahvista työllisyyttä tai kasvua.</sis:KappaleKooste>
+            <sis:KappaleKooste>Hallitus on leikannut lähes neljän miljardin edestä, ja samalla se on tehnyt etupäässä hyvätuloisille kohdistuneita veronalennuksia lähes kahden miljardin edestä. Tämä on johtanut siihen, että talouden rakenteellinen alijäämä on kasvamassa eikä vähenemässä.</sis:KappaleKooste>
+            <sis:KappaleKooste>Hallituksen talouspolitiikka heikentää kaikkein pienituloisimpien asemaa, kun taas edellisen hallituksen toimet pienensivät tuloeroja. Hallituksen päätösperäinen politiikka on leikannut eniten, jopa kymmeniä euroja, kaikkein pienituloisimpien tuloja. Nämä rahat ovat suoraan pois pienituloisten ihmisten arjen hyvinvoinnista. Keskituloisilla politiikan vaikutus on ollut neutraalia, ja suurituloisten tuloja tehdyt päätökset ovat kasvattaneet, jopa satoja euroja. Näin ollen tuloerot ovat kasvaneet. Hallituksen päätökset kasvattavat myös köyhyysastetta. Politiikassa on kuitenkin aina mahdollista valita toisin. Työn verotuksen keventäminen on perusteltua, kunhan se toteutetaan sosiaalisesti oikeudenmukaisella tavalla ja tehdään samalla tulonsiirtoja, jotka parantavat heikoimmassa asemassa olevien tilannetta. Tässä hallitus on epäonnistunut, ja sen tulisi muuttaa kurssia. </sis:KappaleKooste>
+            <sis:KappaleKooste>Hallitus on perustellut leikkauksia julkisen talouden tasapainottamisella: kun julkista taloutta tasapainotetaan, leikkaukset osuvat hallituksen mukaan väistämättä pienituloisiin, koska vain heille maksetaan etuuksia. Argumentti on vailla pohjaa kahdesta syystä:</sis:KappaleKooste>
+            <sis:Lista sis1:ulkoasuKoodi="Numeropiste">
+              <sis:ListaKohta>
+                <sis:KappaleKooste>Leikkausten rinnalla hallitus on painottanut veronkevennyksissä kaikista varakkaimpia. Jos näin ei olisi tehty ja päinvastoin myös verotusta olisi käytetty tasapainottamisen välineenä, suuri osa leikkauksista olisi voitu jättää tekemättä. Esimerkiksi talouspolitiikan arviointineuvosto kritisoi hallitusta siitä, että tulopuolta ei ole käytetty sopeutuksessa. Hallituksen suurituloisiin kohdistuneet veronalennukset on todettu hallituksen omissa esityksissä tehottomiksi työllisyyden lisäämisen kannalta.</sis:KappaleKooste>
+              </sis:ListaKohta>
+              <sis:ListaKohta>
+                <sis:KappaleKooste>Edellisellä hallituskaudella tuloeroja pienennettiin ja perusturvaa parannettiin kireästä finanssipolitiikasta huolimatta. Silti poliittisilla päätöksillä pystyttiin kaventamaan tuloeroja ja parantamaan perusturvaa. Kyse on arvovalinnoista. Eri hallituskausien vertailu osoittaa, että oikeudenmukainen politiikka on mahdollista myös vaikeina aikoina.</sis:KappaleKooste>
+              </sis:ListaKohta>
+            </sis:Lista>
+            <sis:KappaleKooste>Sipilän hallituksen päätöksillä on lisätty eriarvoisuutta ja syvennetty sitä kaikilla elämänalueilla ja politiikan sektoreilla.</sis:KappaleKooste>
+            <sis:KappaleKooste>Reilujen pelisääntöjen mukaan toimivat työmarkkinat ovat keskeinen osa pohjoismaista yhteiskuntamallia. Tasapainoiset suhteet työmarkkinoilla turvaavat oikeudenmukaista tulonjakoa. Hallitus on kuitenkin puuttunut työmarkkinoiden toimintaan tavalla, jota ei voi pitää tasapuolisena. Hallitus joutui kylläkin perumaan suunnitelmansa palkkoja leikkaavista pakkolaeista, mutta lopulta hallituksen painostuksesta päädyttiin kiky-sopimukseen, joka lisää julkisen talouden epätasapainoa ja on lomarahaleikkauksen vuoksi erityisen vaikea julkisen sektorin pienipalkkaisille työntekijöille. </sis:KappaleKooste>
+            <sis1:ValiotsikkoTeksti>Hallituksen leikkaukset eriarvoistavat ihmisiä</sis1:ValiotsikkoTeksti>
+            <sis:KappaleKooste>Sipilän hallitus on leikannut toistuvasti sosiaalietuuksia ja peruspalveluita. Nämä leikkaukset ovat kohdistuneet suoraan kaikkein pienituloisimpiin ihmisiin ja ihmisiin, joiden palvelutarpeet ovat suuria. Erityisen kohtuuttomaksi hallituksen leikkauslinjan tekee se, että vaikka hyvin tiedetään etuusleikkausten paitsi kertautuvan ajallisesti myös kohdistuvan samoihin henkilöihin useamman etuuden myötä, on vaikutusarviot jätetty toistuvasti tekemättä.</sis:KappaleKooste>
+            <sis:KappaleKooste>Hallitus on jäädyttänyt ja leikannut perusturvaetuuksien indeksit. Hallituskauden aikana indeksileikkaukset kumuloituvat ja heikentävät perusturvan ostovoimaa yli 5 %. Esimerkiksi työttömällä tämä tarkoittaa ostovoiman heikentymistä yli 30 euroa/kk. Asumistuen indeksijäädytysten vuoksi asumistuki on heikentynyt. Asumistukea on leikattu myös tulosovitusta tiukentamalla ja jatkossa heikentämällä indeksiä ja leikkaamalla osa-asunnon tukea. Sosiaali- ja terveydenhuollon asiakasmaksuja on korotettu lähes 30 prosentilla, lääkekorvauksia on leikattu ja omavastuuta nostettu, ruokavaliokorvaus on lakkautettu, matkakorvauksia on heikennetty (ns. Kela-korvaus), sairauspäivärahaa on leikattu. Ansioturvan kestoa on lyhennetty ja korotusosia on leikattu niin, että leikkaukset työttömien toimeentuloon ovat olleet jopa tuhansia euroja. Hallitus on myös heikentänyt merkittävästi opiskelijoiden asemaa leikkaamalla opintorahaa lähes 90 euroa kuukaudessa ja lakkauttamalla tuen indeksisidonnaisuuden. Opintoraha tulisi palauttaa takaisin aikaisemmalle tasolle.</sis:KappaleKooste>
+            <sis:KappaleKooste>Vaikka hallitus on tehnyt kahteen otteeseen korotuksen takuueläkkeeseen, niiden vaikutukset rajoittuvat lähinnä indeksijäädytysten kompensointiin, kun tarkastellaan koko hallituskautta. Lisäksi kansaneläkeindeksin korotusten jäädyttäminen tarkoittaa, että täysi kansaneläke on vuonna 2019 n. 20 euroa kuukaudessa pienempi verrattuna tilanteeseen, jossa indeksikorotukset olisi tehty normaalisti. Erityiseksi juuri eläkeläisiin kohdistuvat etuusleikkaukset tekee se, etteivät eläkkeellä olevat kansalaiset voi työnteolla olennaisesti tai lainkaan parantaa enää omaa toimeentuloaan. Suomessa ei saa hyväksyä tilannetta, jossa eläkeläinen joutuu valitsemaan, ostaako ruokaa vai lääkkeitä. </sis:KappaleKooste>
+            <sis:KappaleKooste>Verotuksen lapsivähennys poistuu, mikä tarkoittaa, että kahden kouluikäisen lapsen perheessä verotus kiristyy prosenttiyksikön ensi vuonna. Lapsilisien tasoa on leikattu ja ne on irrotettu indeksistä, minkä lisäksi moniin lapsiperheisiin vaikuttavat myös edellä kuvatut kansaneläkeindeksiin sidottuihin etuuksiin ja asumistukeen tehdyt heikennykset. Vain toimeentulotuen taso on säilytetty, mikä käytännössä sekin lisää lapsiperheiden ahdinkoa ajaessaan perheitä toimeentulotuen loukkuun. </sis:KappaleKooste>
+            <sis:KappaleKooste>Lisäksi subjektiivinen oikeus kokopäiväiseen varhaiskasvatukseen on rajattu vanhemman työmarkkina-aseman perusteella niin, että työttömien lapsilla ei ole samoja oikeuksia kuin työssäkäyvien vanhempien lapsilla, kerhotoiminnan maksut on kaksinkertaistettu ja varhaiskasvatuksen ryhmäkokoja on kasvatettu. Kuntien väliset erot lasten ja perheiden arkeen vaikuttavien lakisääteisten palvelujen laadussa ovat suuret. Erot niin varhaiskasvatuksessa ja peruskoulutuksessa kuin myös neuvolatoiminnassa, lastensuojelussa ja vapaa-ajan palveluissa ovat merkittäviä. Eriarvoistuva peruskoulu lisää nuorten syrjäytymisriskiä ja peruskoulun tasa-arvorahojen leikkaukset osaltaan lisäävät eriarvoisuutta. Hallituksen leikkaukset ovat kohdistuneet erityisesti jo valmiiksi vaikeassa asemassa oleviin lapsiperheisiin. Yhteisvaikutukset perhettä kohden voivat olla hyvin merkittävät, etenkin jos vanhemmat ovat työttöminä tai muun etuuden varassa. </sis:KappaleKooste>
+            <sis:KappaleKooste>Lapsiköyhyys on suomalaisen hyvinvointivaltion häpeäpilkku. Lapsiköyhyyden vähentäminen ja sen seurausten lieventäminen vaativat johdonmukaista politiikkaa ja panostusta niin perhe-etuuksiin kuin palveluiden parantamiseen. Myös kokonaisvaltainen lapsivaikutusten arviointi on välttämätöntä, jotta saadaan luotettavasti selville, miten eri suuntiin vaikuttavat muutokset kohdistuvat suoraan tai välillisesti lapsiperheiden arkeen, sekä taloudelliseen tilanteeseen että palveluiden saatavuuteen ja tavoitettavuuteen. Lapsiköyhyyteen tulee puuttua erityisesti, sillä se ei tarkoita vain aineellista puutetta, vaan usein myös syrjään jäämistä ja ulkopuolisuutta. Tällä voi olla ratkaiseva merkitys tulevalle elämälle.</sis:KappaleKooste>
+            <sis:KappaleKooste>Väestöryhmien välillä on sosioekonomisen aseman, sukupuolen, siviilisäädyn, asuinalueen ja äidinkielen mukaisia merkittäviä terveyseroja. Erot ovat Suomessa yhä selvempiä ja kansainvälisestikin katsottuna suuria. Erityisen suuria ne ovat sosioekonomisten ryhmien välillä eli tarkasteltaessa terveyden vaihtelua esimerkiksi koulutuksen, ammattiaseman tai tulojen mukaisesti. </sis:KappaleKooste>
+            <sis:KappaleKooste>Suomessa köyhä nainen kuolee 5,6 vuotta aiemmin kuin rikas ja miehillä ero alimman ja ylimmän tulokymmenyksen välillä elinajanodotteessa on peräti 10,6 vuotta. Absoluuttisen tuloköyhyyden yleisyydestä kertoo esimerkiksi se, että vuonna 2016 lähes 30 prosenttia 20—54-vuotiaista ja miltei viidennes 55—74-vuotiaista suomalaisista ilmoitti joutuneensa rahan puutteen vuoksi tinkimään ruoasta, lääkkeistä tai lääkärissäkäynnistä. </sis:KappaleKooste>
+            <sis:KappaleKooste>Osa terveyseroista juontuu jo lapsuudesta. THL:n tunnettu tutkimus vuoden 1987 syntymäkohortista osoittaa, että pitkään toimeentulotukea saaneiden vanhempien lapset olivat 21 ikävuoteen mennessä joutuneet itsekin toimeentulotuen asiakkaiksi, he jäivät peruskoulun varaan ja käyttivät psykiatrian erikoissairaanhoidon palveluita ja psyykenlääkkeitä huomattavasti yleisemmin kuin niiden vanhempien lapset, jotka eivät olleet saaneet toimeentulotukea. </sis:KappaleKooste>
+            <sis:KappaleKooste>Sipilän hallituksen sosiaalipoliittiset ratkaisut ja sote-uudistukseen liittyvät päätökset ja suunnitelmat eivät ole hillinneet terveyden ja hyvinvoinnin eriarvoisuutta, pikemminkin päinvastoin. Etenkin sote-uudistuksen palvelutuotantoratkaisut sisältävät lukuisten eri asiantuntijoiden arvioiden mukaan vakavan uhan lisääntyvään eriarvoistumiseen. </sis:KappaleKooste>
+            <sis:KappaleKooste>Hallituksen valitsemalle yksityistämisen ja eriarvoistamisen tielle sosiaali- ja terveyspolitiikassa on kuitenkin vaihtoehtoja. Esimerkiksi THL:n tutkijat ovat äskettäin muistuttaneet, että rakenteellisella tasolla ihmisten välisiin eroihin voisi vaikuttaa kaventamalla tuloeroja, esimerkiksi progressiivisen verotuksen välineillä. Myös politiikan ja lainsäädännön keinoin tulisi määrätietoisesti puuttua köyhyyteen, epätasa-arvoon ja syrjintään, koulutukseen, työoloihin ja asumiseen. Palvelujärjestelmään vaikuttamalla voidaan myös tehokkaasti tasata eroja, jos niin halutaan. Epätasa-arvoinen terveydenhuoltojärjestelmämme ruokkii terveyseroja, ja siksi palvelujärjestelmän ja sen rahoituksen uudistamisessa tulisi kiinnittää huomiota palvelujen hintojen kohtuullisuuteen ja väestön tarpeisiin. Tutkijat edottavat myös elintapoihin vaikuttamista, sillä alkoholin käyttö selittää merkittävän osan tuloryhmien kuolleisuuserosta. </sis:KappaleKooste>
+            <sis:KappaleKooste>Nämä tutkijoiden ehdotukset tulisi ottaa nyt erityisen vakavasti, sillä Sipilän hallituksen päätökset näyttävät jokaisella saralla vievän juuri päinvastaiseen suuntaan: verotusta on käytetty tuloerojen kasvattamiseen, köyhyyttä ja epätasa-arvoa on monin säästöpäätöksin syvennetty, sote-uudistuksessa esitetyt keinot eivät toimi alkuperäisten tavoitteiden saavuttamiseksi — ja lopulta, alkoholipolitiikassa hallitus on tekemässä ratkaisuja, joiden seuraukset näkyvät voimakkaimmin alimmissa tuloryhmissä. </sis:KappaleKooste>
+            <sis:KappaleKooste>Koulutuslupauksistaan huolimatta Sipilän hallitus on toimillaan eriarvoistanut suomalaista koulutusta jokaisella asteella ennen näkemättömällä tavalla. Koulutuksellinen eriarvoistuminen on syventynyt, eikä koulutusjärjestelmä enää kykene nostamaan vaikeammista sosioekonomisista taustoista tulevia tavoittelemaan parempaa tulevaisuutta. Hallitus on seurannut kehitystä sivusta puuttumatta eriarvoistumiskehitykseen millään vaikuttavalla tavalla. </sis:KappaleKooste>
+            <sis:KappaleKooste>OECD:n mukaan Suomessa on 600 000 aikuista, joilla on puutteelliset perustaidot.  Suomalaisista peräti 15 prosenttia ei ole suorittanut toisen asteen tutkintoa 25 ikävuoteen mennessä. Työelämän kasvavat osaamisvaatimukset ja rakennemuutokset haastavat erityisesti perusasteen varaan jääneet. Toisen asteen koulutuksesta syrjäytyminen ennustaa heikompaa terveydentilaa ja useampia työttömyysjaksoja kuin lukion tai ammatillisen koulutuksen suorittaneilla. Peruskoulun varassa olevien ihmisten työurat jäävät jopa 10 vuotta muita lyhyemmiksi, ja heidän työllisyysasteensa on selvästi muita heikompi. Tuhansia ihmisiä jää myös työttömäksi aloilta, jotka pysyvästi supistuvat. Työelämän muutoksissa huonoiten pärjäävät ihmiset tarvitsevat kohdennettuja toimia, joiden avulla he pääsevät takaisin työelämään. Sipilän hallitus kuitenkin leikkaa rajusti ammatillisen koulutuksen rahoitusta ja toteuttaa reformin, joka uhkaa erityisesti oppimisvalmiuksiltaan heikompien oppilaiden pärjäämistä. Lisäksi ajetaan alas nuorisotakuu. Ensi vuonna loppuu nuorten aikuisten osaamisohjelma, mikä jättäisi 100 000 alle 30-vuotiasta perusasteen varassa olevaa nuorta ilman kunnon mahdollisuutta koulutukseen pääsyyn. Myös hallituksen suunnittelema työttömyysturvan aktiivimalli uhkaa entisestään eriarvoistaa työttömiä ihmisiä. Hallitus ei ole satsannut riittävästi aktiiviseen työvoimapolitiikkaan eikä työllisyyteen. Toimettomuus näkyy alempana työllisyytenä ja työmarkkinoiden heikompana toimivuutena vertailussa muihin Pohjoismaihin.  </sis:KappaleKooste>
+            <sis1:ValiotsikkoTeksti>Asuinalueiden eriarvoistuminen syvenee</sis1:ValiotsikkoTeksti>
+            <sis:KappaleKooste>Myös asuinalueiden eriarvoistuminen on kasvava uhka hyvinvoinnille Suomessa. Varsinkin suurissa kaupungeissa, joiden väestö kasvaa maan sisäisen ja ulkoisen muuttoliikkeen seurauksena, on väestö korostuneesti jakautunut tulotason mukaan eri asuinalueille. Köyhyyden keskittyessä myös köyhyyttä aiheuttavat ja sen kanssa esiintyvät sosiaaliset ongelmat, kuten työttömyys, päihteiden väärinkäyttö ja terveysongelmat pahenevat. Pahimmillaan asuinalueelle voi muodostua kierre, jossa syvenevät sosiaaliset ongelmat johtavat paremmin pärjäävien pois muuttoon ja slummiutumiseen. </sis:KappaleKooste>
+            <sis:KappaleKooste>Alueellinen eriarvoistumisen kierre heijastuu erityisen traagisesti syrjäytymisvaarassa olevien perheiden lapsiin. Mitä hajanaisemmat omat perheolot ovat, sitä tärkeämpää lapselle on ympäröivän yhteisön tuki. Naapurit, ystävien perheet ja koulu ovat monelle ongelmaperheen lapselle suorastaan elintärkeitä. Kun kurjuus keskittyy, tippuu tämä tuki lapsilta pois. Slummiutuminen vie vaikeuksissa olevien vanhempien lapsilta mahdollisuuksia rakentaa elämäänsä ympäröivän yhteisön avulla. Alueellinen eriarvoisuus näkyy myös julkisissa palveluissa. Monesti alueella, jolla on heikompi tulotaso ja enemmän sosiaalisia ongelmia, ovat myös julkiset palvelut heikommat.</sis:KappaleKooste>
+            <sis:KappaleKooste>Alueellinen eriarvoistuminen ei ole pelkästään kaupunkien ongelma. Samat moninaiset negatiiviset noidankehät voivat kohdata kokonaista pientä paikkakuntaa. Tämän kaltaisia ongelmia syntyy etenkin suuren paikallisen työnantajan tai alueella merkittävän toimialan joutuessa supistamaan toimintaansa. Näissä tilanteissa tarvitaan valtiovallan erityistoimia, jotta alueen elinvoima ja ihmisten toimentulo saadaan turvattua.</sis:KappaleKooste>
+            <sis:KappaleKooste>Alueelliseen eriarvoistumiseen on puututtava päättäväisesti ennen kuin ongelmat kärjistyvät ja huono kierre pääsee syntymään. Hallituksen on nostettava eriarvoistumisen torjuminen myös alue- ja kaupunkipolitiikan keskiöön. Ilman alueellista tasa-arvoa emme voi ylläpitää laajaa hyvinvointia maassamme.</sis:KappaleKooste>
+          </asi:PerusteluLuku>
+        </asi:PerusteluOsa>
+        <asi:PonsiOsa>
+          <asi1:JohdantoTeksti>Edellä olevan perusteella ja Suomen perustuslain 43 §:ään viitaten esitämme asianomaisen ministerin vastattavaksi seuraavan välikysymyksen:</asi1:JohdantoTeksti>
+          <sis:SisennettyKappaleKooste>
+            <sis1:KursiiviTeksti>Miksi hallitus haluaa leikata opiskelijoilta, työttömiltä, lapsiperheiltä ja eläkeläisiltä ja kaventaa samalla veropohjaa suuntaamalla veronalennuksia erityisesti rikkaille, vaikka tämä romuttaa suomalaisen hyvinvointivaltion, </sis1:KursiiviTeksti>
+          </sis:SisennettyKappaleKooste>
+          <sis:SisennettyKappaleKooste>
+            <sis1:KursiiviTeksti>miksi hallitus jättää vaikutusarviot tekemättä ja kohdistaa maksukorotukset sekä toimeentulon ja palveluiden leikkaukset toistuvasti samoihin ihmisiin, vaikka ne syventävät köyhyyttä ja eriarvoisuutta,</sis1:KursiiviTeksti>
+          </sis:SisennettyKappaleKooste>
+          <sis:SisennettyKappaleKooste>
+            <sis1:KursiiviTeksti>aikooko hallitus korjata tekemänsä lomarahaleikkauksen eriarvoistavat vaikutukset julkisen sektorin pienipalkkaisten työntekijöiden toimeentulossa, </sis1:KursiiviTeksti>
+          </sis:SisennettyKappaleKooste>
+          <sis:SisennettyKappaleKooste>
+            <sis1:KursiiviTeksti>miten hallitus aikoo kaventaa hyvinvointi- ja terveyseroja sosiaali- ja terveyspolitiikkaa koskevilla päätöksillä, </sis1:KursiiviTeksti>
+          </sis:SisennettyKappaleKooste>
+          <sis:SisennettyKappaleKooste>
+            <sis1:KursiiviTeksti>miksi hallitus leikkaa tuhansien lasten ja nuorten tulevaisuudesta ja ajaa heidät syrjäytymisvaaraan leikkaamalla kaikilta koulutuksen tasoilta ja </sis1:KursiiviTeksti>
+          </sis:SisennettyKappaleKooste>
+          <sis:SisennettyKappaleKooste>
+            <sis1:KursiiviTeksti>miksi hallitus ei ole ryhtynyt toimenpiteisiin maamme eri seutujen ja asuinalueiden eriytymiskehityksen pysäyttämiseksi, vaikka sillä on vakavat seuraukset sekä ihmisten hyvinvoinnissa että kestävässä talouskasvussa?</sis1:KursiiviTeksti>
+          </sis:SisennettyKappaleKooste>
+        </asi:PonsiOsa>
+        <asi:AllekirjoitusOsa>
+          <asi:PaivaysKooste asi1:allekirjoitusPvm="2017-11-24">Helsingissä 24.11.2017</asi:PaivaysKooste>
+          <asi:Allekirjoittaja asi1:allekirjoitusLuokitusKoodi="EnsimmainenAllekirjoittaja">
+            <org:Henkilo met1:muuTunnus="1144">
+              <org1:EtuNimi>Suna</org1:EtuNimi>
+              <org1:SukuNimi>Kymäläinen</org1:SukuNimi>
+              <org1:LisatietoTeksti>sd</org1:LisatietoTeksti>
+            </org:Henkilo>
+          </asi:Allekirjoittaja>
+          <asi:Allekirjoittaja>
+            <org:Henkilo met1:muuTunnus="1099">
+              <org1:EtuNimi>Eeva-Johanna</org1:EtuNimi>
+              <org1:SukuNimi>Eloranta</org1:SukuNimi>
+              <org1:LisatietoTeksti>sd</org1:LisatietoTeksti>
+            </org:Henkilo>
+          </asi:Allekirjoittaja>
+          <asi:Allekirjoittaja>
+            <org:Henkilo met1:muuTunnus="931">
+              <org1:EtuNimi>Maarit</org1:EtuNimi>
+              <org1:SukuNimi>Feldt-Ranta</org1:SukuNimi>
+              <org1:LisatietoTeksti>sd</org1:LisatietoTeksti>
+            </org:Henkilo>
+          </asi:Allekirjoittaja>
+          <asi:Allekirjoittaja>
+            <org:Henkilo met1:muuTunnus="451">
+              <org1:EtuNimi>Tarja</org1:EtuNimi>
+              <org1:SukuNimi>Filatov</org1:SukuNimi>
+              <org1:LisatietoTeksti>sd</org1:LisatietoTeksti>
+            </org:Henkilo>
+          </asi:Allekirjoittaja>
+          <asi:Allekirjoittaja>
+            <org:Henkilo met1:muuTunnus="116">
+              <org1:EtuNimi>Jukka</org1:EtuNimi>
+              <org1:SukuNimi>Gustafsson</org1:SukuNimi>
+              <org1:LisatietoTeksti>sd</org1:LisatietoTeksti>
+            </org:Henkilo>
+          </asi:Allekirjoittaja>
+          <asi:Allekirjoittaja>
+            <org:Henkilo met1:muuTunnus="926">
+              <org1:EtuNimi>Maria</org1:EtuNimi>
+              <org1:SukuNimi>Guzenina</org1:SukuNimi>
+              <org1:LisatietoTeksti>sd</org1:LisatietoTeksti>
+            </org:Henkilo>
+          </asi:Allekirjoittaja>
+          <asi:Allekirjoittaja>
+            <org:Henkilo met1:muuTunnus="538">
+              <org1:EtuNimi>Tuula</org1:EtuNimi>
+              <org1:SukuNimi>Haatainen</org1:SukuNimi>
+              <org1:LisatietoTeksti>sd</org1:LisatietoTeksti>
+            </org:Henkilo>
+          </asi:Allekirjoittaja>
+          <asi:Allekirjoittaja>
+            <org:Henkilo met1:muuTunnus="1326">
+              <org1:EtuNimi>Timo</org1:EtuNimi>
+              <org1:SukuNimi>Harakka</org1:SukuNimi>
+              <org1:LisatietoTeksti>sd</org1:LisatietoTeksti>
+            </org:Henkilo>
+          </asi:Allekirjoittaja>
+          <asi:Allekirjoittaja>
+            <org:Henkilo met1:muuTunnus="768">
+              <org1:EtuNimi>Eero</org1:EtuNimi>
+              <org1:SukuNimi>Heinäluoma</org1:SukuNimi>
+              <org1:LisatietoTeksti>sd</org1:LisatietoTeksti>
+            </org:Henkilo>
+          </asi:Allekirjoittaja>
+          <asi:Allekirjoittaja>
+            <org:Henkilo met1:muuTunnus="565">
+              <org1:EtuNimi>Susanna</org1:EtuNimi>
+              <org1:SukuNimi>Huovinen</org1:SukuNimi>
+              <org1:LisatietoTeksti>sd</org1:LisatietoTeksti>
+            </org:Henkilo>
+          </asi:Allekirjoittaja>
+          <asi:Allekirjoittaja>
+            <org:Henkilo met1:muuTunnus="1121">
+              <org1:EtuNimi>Lauri</org1:EtuNimi>
+              <org1:SukuNimi>Ihalainen</org1:SukuNimi>
+              <org1:LisatietoTeksti>sd</org1:LisatietoTeksti>
+            </org:Henkilo>
+          </asi:Allekirjoittaja>
+          <asi:Allekirjoittaja>
+            <org:Henkilo met1:muuTunnus="954">
+              <org1:EtuNimi>Ilkka</org1:EtuNimi>
+              <org1:SukuNimi>Kantola</org1:SukuNimi>
+              <org1:LisatietoTeksti>sd</org1:LisatietoTeksti>
+            </org:Henkilo>
+          </asi:Allekirjoittaja>
+          <asi:Allekirjoittaja>
+            <org:Henkilo met1:muuTunnus="791">
+              <org1:EtuNimi>Anneli</org1:EtuNimi>
+              <org1:SukuNimi>Kiljunen</org1:SukuNimi>
+              <org1:LisatietoTeksti>sd</org1:LisatietoTeksti>
+            </org:Henkilo>
+          </asi:Allekirjoittaja>
+          <asi:Allekirjoittaja>
+            <org:Henkilo met1:muuTunnus="1297">
+              <org1:EtuNimi>Sanna</org1:EtuNimi>
+              <org1:SukuNimi>Marin</org1:SukuNimi>
+              <org1:LisatietoTeksti>sd</org1:LisatietoTeksti>
+            </org:Henkilo>
+          </asi:Allekirjoittaja>
+          <asi:Allekirjoittaja>
+            <org:Henkilo met1:muuTunnus="203">
+              <org1:EtuNimi>Riitta</org1:EtuNimi>
+              <org1:SukuNimi>Myller</org1:SukuNimi>
+              <org1:LisatietoTeksti>sd</org1:LisatietoTeksti>
+            </org:Henkilo>
+          </asi:Allekirjoittaja>
+          <asi:Allekirjoittaja>
+            <org:Henkilo met1:muuTunnus="1087">
+              <org1:EtuNimi>Merja</org1:EtuNimi>
+              <org1:SukuNimi>Mäkisalo-Ropponen</org1:SukuNimi>
+              <org1:LisatietoTeksti>sd</org1:LisatietoTeksti>
+            </org:Henkilo>
+          </asi:Allekirjoittaja>
+          <asi:Allekirjoittaja>
+            <org:Henkilo met1:muuTunnus="1302">
+              <org1:EtuNimi>Ilmari</org1:EtuNimi>
+              <org1:SukuNimi>Nurminen</org1:SukuNimi>
+              <org1:LisatietoTeksti>sd</org1:LisatietoTeksti>
+            </org:Henkilo>
+          </asi:Allekirjoittaja>
+          <asi:Allekirjoittaja>
+            <org:Henkilo met1:muuTunnus="971">
+              <org1:EtuNimi>Johanna</org1:EtuNimi>
+              <org1:SukuNimi>Ojala-Niemelä</org1:SukuNimi>
+              <org1:LisatietoTeksti>sd</org1:LisatietoTeksti>
+            </org:Henkilo>
+          </asi:Allekirjoittaja>
+          <asi:Allekirjoittaja>
+            <org:Henkilo met1:muuTunnus="887">
+              <org1:EtuNimi>Sirpa</org1:EtuNimi>
+              <org1:SukuNimi>Paatero</org1:SukuNimi>
+              <org1:LisatietoTeksti>sd</org1:LisatietoTeksti>
+            </org:Henkilo>
+          </asi:Allekirjoittaja>
+          <asi:Allekirjoittaja>
+            <org:Henkilo met1:muuTunnus="1274">
+              <org1:EtuNimi>Antti</org1:EtuNimi>
+              <org1:SukuNimi>Rinne</org1:SukuNimi>
+              <org1:LisatietoTeksti>sd</org1:LisatietoTeksti>
+            </org:Henkilo>
+          </asi:Allekirjoittaja>
+          <asi:Allekirjoittaja>
+            <org:Henkilo met1:muuTunnus="1311">
+              <org1:EtuNimi>Joona</org1:EtuNimi>
+              <org1:SukuNimi>Räsänen</org1:SukuNimi>
+              <org1:LisatietoTeksti>sd</org1:LisatietoTeksti>
+            </org:Henkilo>
+          </asi:Allekirjoittaja>
+          <asi:Allekirjoittaja>
+            <org:Henkilo met1:muuTunnus="1102">
+              <org1:EtuNimi>Kristiina</org1:EtuNimi>
+              <org1:SukuNimi>Salonen</org1:SukuNimi>
+              <org1:LisatietoTeksti>sd</org1:LisatietoTeksti>
+            </org:Henkilo>
+          </asi:Allekirjoittaja>
+          <asi:Allekirjoittaja>
+            <org:Henkilo met1:muuTunnus="1316">
+              <org1:EtuNimi>Ville</org1:EtuNimi>
+              <org1:SukuNimi>Skinnari</org1:SukuNimi>
+              <org1:LisatietoTeksti>sd</org1:LisatietoTeksti>
+            </org:Henkilo>
+          </asi:Allekirjoittaja>
+          <asi:Allekirjoittaja>
+            <org:Henkilo met1:muuTunnus="1319">
+              <org1:EtuNimi>Satu</org1:EtuNimi>
+              <org1:SukuNimi>Taavitsainen</org1:SukuNimi>
+              <org1:LisatietoTeksti>sd</org1:LisatietoTeksti>
+            </org:Henkilo>
+          </asi:Allekirjoittaja>
+          <asi:Allekirjoittaja>
+            <org:Henkilo met1:muuTunnus="952">
+              <org1:EtuNimi>Katja</org1:EtuNimi>
+              <org1:SukuNimi>Taimela</org1:SukuNimi>
+              <org1:LisatietoTeksti>sd</org1:LisatietoTeksti>
+            </org:Henkilo>
+          </asi:Allekirjoittaja>
+          <asi:Allekirjoittaja>
+            <org:Henkilo met1:muuTunnus="1378">
+              <org1:EtuNimi>Pilvi</org1:EtuNimi>
+              <org1:SukuNimi>Torsti</org1:SukuNimi>
+              <org1:LisatietoTeksti>sd</org1:LisatietoTeksti>
+            </org:Henkilo>
+          </asi:Allekirjoittaja>
+          <asi:Allekirjoittaja>
+            <org:Henkilo met1:muuTunnus="357">
+              <org1:EtuNimi>Erkki</org1:EtuNimi>
+              <org1:SukuNimi>Tuomioja</org1:SukuNimi>
+              <org1:LisatietoTeksti>sd</org1:LisatietoTeksti>
+            </org:Henkilo>
+          </asi:Allekirjoittaja>
+          <asi:Allekirjoittaja>
+            <org:Henkilo met1:muuTunnus="1126">
+              <org1:EtuNimi>Tytti</org1:EtuNimi>
+              <org1:SukuNimi>Tuppurainen</org1:SukuNimi>
+              <org1:LisatietoTeksti>sd</org1:LisatietoTeksti>
+            </org:Henkilo>
+          </asi:Allekirjoittaja>
+          <asi:Allekirjoittaja>
+            <org:Henkilo met1:muuTunnus="511">
+              <org1:EtuNimi>Pia</org1:EtuNimi>
+              <org1:SukuNimi>Viitanen</org1:SukuNimi>
+              <org1:LisatietoTeksti>sd</org1:LisatietoTeksti>
+            </org:Henkilo>
+          </asi:Allekirjoittaja>
+          <asi:Allekirjoittaja>
+            <org:Henkilo met1:muuTunnus="1298">
+              <org1:EtuNimi>Krista</org1:EtuNimi>
+              <org1:SukuNimi>Mikkonen</org1:SukuNimi>
+              <org1:LisatietoTeksti>vihr</org1:LisatietoTeksti>
+            </org:Henkilo>
+          </asi:Allekirjoittaja>
+          <asi:Allekirjoittaja>
+            <org:Henkilo met1:muuTunnus="930">
+              <org1:EtuNimi>Heli</org1:EtuNimi>
+              <org1:SukuNimi>Järvinen</org1:SukuNimi>
+              <org1:LisatietoTeksti>vihr</org1:LisatietoTeksti>
+            </org:Henkilo>
+          </asi:Allekirjoittaja>
+          <asi:Allekirjoittaja>
+            <org:Henkilo met1:muuTunnus="914">
+              <org1:EtuNimi>Outi</org1:EtuNimi>
+              <org1:SukuNimi>Alanko-Kahiluoto</org1:SukuNimi>
+              <org1:LisatietoTeksti>vihr</org1:LisatietoTeksti>
+            </org:Henkilo>
+          </asi:Allekirjoittaja>
+          <asi:Allekirjoittaja>
+            <org:Henkilo met1:muuTunnus="118">
+              <org1:EtuNimi>Pekka</org1:EtuNimi>
+              <org1:SukuNimi>Haavisto</org1:SukuNimi>
+              <org1:LisatietoTeksti>vihr</org1:LisatietoTeksti>
+            </org:Henkilo>
+          </asi:Allekirjoittaja>
+          <asi:Allekirjoittaja>
+            <org:Henkilo met1:muuTunnus="1332">
+              <org1:EtuNimi>Ozan</org1:EtuNimi>
+              <org1:SukuNimi>Yanar</org1:SukuNimi>
+              <org1:LisatietoTeksti>vihr</org1:LisatietoTeksti>
+            </org:Henkilo>
+          </asi:Allekirjoittaja>
+          <asi:Allekirjoittaja>
+            <org:Henkilo met1:muuTunnus="771">
+              <org1:EtuNimi>Jyrki</org1:EtuNimi>
+              <org1:SukuNimi>Kasvi</org1:SukuNimi>
+              <org1:LisatietoTeksti>vihr</org1:LisatietoTeksti>
+            </org:Henkilo>
+          </asi:Allekirjoittaja>
+          <asi:Allekirjoittaja>
+            <org:Henkilo met1:muuTunnus="921">
+              <org1:EtuNimi>Johanna</org1:EtuNimi>
+              <org1:SukuNimi>Karimäki</org1:SukuNimi>
+              <org1:LisatietoTeksti>vihr</org1:LisatietoTeksti>
+            </org:Henkilo>
+          </asi:Allekirjoittaja>
+          <asi:Allekirjoittaja>
+            <org:Henkilo met1:muuTunnus="1114">
+              <org1:EtuNimi>Jani</org1:EtuNimi>
+              <org1:SukuNimi>Toivola</org1:SukuNimi>
+              <org1:LisatietoTeksti>vihr</org1:LisatietoTeksti>
+            </org:Henkilo>
+          </asi:Allekirjoittaja>
+          <asi:Allekirjoittaja>
+            <org:Henkilo met1:muuTunnus="1324">
+              <org1:EtuNimi>Hanna</org1:EtuNimi>
+              <org1:SukuNimi>Halmeenpää</org1:SukuNimi>
+              <org1:LisatietoTeksti>vihr</org1:LisatietoTeksti>
+            </org:Henkilo>
+          </asi:Allekirjoittaja>
+          <asi:Allekirjoittaja>
+            <org:Henkilo met1:muuTunnus="363">
+              <org1:EtuNimi>Satu</org1:EtuNimi>
+              <org1:SukuNimi>Hassi</org1:SukuNimi>
+              <org1:LisatietoTeksti>vihr</org1:LisatietoTeksti>
+            </org:Henkilo>
+          </asi:Allekirjoittaja>
+          <asi:Allekirjoittaja>
+            <org:Henkilo met1:muuTunnus="1346">
+              <org1:EtuNimi>Touko</org1:EtuNimi>
+              <org1:SukuNimi>Aalto</org1:SukuNimi>
+              <org1:LisatietoTeksti>vihr</org1:LisatietoTeksti>
+            </org:Henkilo>
+          </asi:Allekirjoittaja>
+          <asi:Allekirjoittaja>
+            <org:Henkilo met1:muuTunnus="1097">
+              <org1:EtuNimi>Aino-Kaisa</org1:EtuNimi>
+              <org1:SukuNimi>Pekonen</org1:SukuNimi>
+              <org1:LisatietoTeksti>vas</org1:LisatietoTeksti>
+            </org:Henkilo>
+          </asi:Allekirjoittaja>
+          <asi:Allekirjoittaja>
+            <org:Henkilo met1:muuTunnus="1315">
+              <org1:EtuNimi>Matti</org1:EtuNimi>
+              <org1:SukuNimi>Semi</org1:SukuNimi>
+              <org1:LisatietoTeksti>vas</org1:LisatietoTeksti>
+            </org:Henkilo>
+          </asi:Allekirjoittaja>
+          <asi:Allekirjoittaja>
+            <org:Henkilo met1:muuTunnus="479">
+              <org1:EtuNimi>Annika</org1:EtuNimi>
+              <org1:SukuNimi>Lapintie</org1:SukuNimi>
+              <org1:LisatietoTeksti>vas</org1:LisatietoTeksti>
+            </org:Henkilo>
+          </asi:Allekirjoittaja>
+          <asi:Allekirjoittaja>
+            <org:Henkilo met1:muuTunnus="1154">
+              <org1:EtuNimi>Jari</org1:EtuNimi>
+              <org1:SukuNimi>Myllykoski</org1:SukuNimi>
+              <org1:LisatietoTeksti>vas</org1:LisatietoTeksti>
+            </org:Henkilo>
+          </asi:Allekirjoittaja>
+          <asi:Allekirjoittaja>
+            <org:Henkilo met1:muuTunnus="1155">
+              <org1:EtuNimi>Anna</org1:EtuNimi>
+              <org1:SukuNimi>Kontula</org1:SukuNimi>
+              <org1:LisatietoTeksti>vas</org1:LisatietoTeksti>
+            </org:Henkilo>
+          </asi:Allekirjoittaja>
+          <asi:Allekirjoittaja>
+            <org:Henkilo met1:muuTunnus="1153">
+              <org1:EtuNimi>Silvia</org1:EtuNimi>
+              <org1:SukuNimi>Modig</org1:SukuNimi>
+              <org1:LisatietoTeksti>vas</org1:LisatietoTeksti>
+            </org:Henkilo>
+          </asi:Allekirjoittaja>
+          <asi:Allekirjoittaja>
+            <org:Henkilo met1:muuTunnus="1276">
+              <org1:EtuNimi>Katja</org1:EtuNimi>
+              <org1:SukuNimi>Hänninen</org1:SukuNimi>
+              <org1:LisatietoTeksti>vas</org1:LisatietoTeksti>
+            </org:Henkilo>
+          </asi:Allekirjoittaja>
+          <asi:Allekirjoittaja>
+            <org:Henkilo met1:muuTunnus="1310">
+              <org1:EtuNimi>Li</org1:EtuNimi>
+              <org1:SukuNimi>Andersson</org1:SukuNimi>
+              <org1:LisatietoTeksti>vas</org1:LisatietoTeksti>
+            </org:Henkilo>
+          </asi:Allekirjoittaja>
+          <asi:Allekirjoittaja>
+            <org:Henkilo met1:muuTunnus="507">
+              <org1:EtuNimi>Kari</org1:EtuNimi>
+              <org1:SukuNimi>Uotila</org1:SukuNimi>
+              <org1:LisatietoTeksti>vas</org1:LisatietoTeksti>
+            </org:Henkilo>
+          </asi:Allekirjoittaja>
+        </asi:AllekirjoitusOsa>
+      </kys:Kysymys>
+    </RakenneAsiakirja>
+  </SiirtoAsiakirja>
+  <SiirtoTiedosto xmlns="http://www.eduskunta.fi/skeemat/siirtokooste/2011/05/17">
+    <Document xmlns="http://www.arkisto.fi/skeemat/sahke2/2011/01/31_vnk">
+      <NativeId>{5378B2B9-C73C-4BA0-8B0F-D61F4C44C0FA}</NativeId>
+      <UseType>Julkaisu</UseType>
+      <File>
+        <Name>5378B2B9-C73C-4BA0-8B0F-D61F4C44C0FA.pdf</Name>
+        <Path>sftp://intpurnukka.eduskunta.fi:22/home/vaskijul/liitteet/tojulkvp/5378B2B9-C73C-4BA0-8B0F-D61F4C44C0FA.pdf</Path>
+      </File>
+      <Format>
+        <Name>application/pdf</Name>
+        <Version/>
+      </Format>
+      <HashAlgorithm>MD5</HashAlgorithm>
+      <HashValue>4b4f918dd7a04e20d3fc16823d45d65a</HashValue>
+    </Document>
+  </SiirtoTiedosto>
+</ns11:Siirto>

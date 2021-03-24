@@ -1,0 +1,48 @@
+{
+  "number": 1,
+  "year": 1900,
+  "begin_time": "1900-01-01 00:00:00",
+  "subsections": [
+    {
+      "number": "1",
+      "statements": [
+        {
+          "type": "C",
+          "mp_id": 0,
+          "firstname": "Unknown",
+          "lastname": "Person",
+          "party": "",
+          "title": "Stranger",
+          "start_time": "",
+          "end_time": "",
+          "language": "en",
+          "text": "This json is used to test exceptions in preprocessor code. To include a character that the simple test recipe process, let's say greetings in German: Schöne Grüße!",
+          "embedded_statement": {
+            "title": "",
+            "firstname": "",
+            "lastname": "",
+            "text": ""
+          }
+        },
+        {
+          "type": "C",
+          "mp_id": 0,
+          "firstname": "Unknown",
+          "lastname": "Person",
+          "party": "",
+          "title": "Stranger",
+          "start_time": "",
+          "end_time": "",
+          "language": "en",
+          "text": "A second statement text.",
+          "embedded_statement": {
+            "title": "",
+            "firstname": "",
+            "lastname": "",
+            "text": ""
+          }
+        }
+      ]
+    }
+  ]
+}

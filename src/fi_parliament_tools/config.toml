@@ -1,0 +1,6 @@
+# This configuration file collects all paths and default parameters
+
+title = "Finnish parliament download tools configuration"
+
+[paths]
+corpus_dir = "/teamwork/t40511_asr/c/eduskunta_new/sessions"

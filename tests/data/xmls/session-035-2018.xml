@@ -1,0 +1,432 @@
+<ns11:Siirto xmlns:ns11="http://www.eduskunta.fi/skeemat/siirto/2011/09/07">
+    <Sanomavalitys xmlns="http://www.eduskunta.fi/skeemat/siirtokooste/2011/05/17">
+        <ns4:SanomatyyppiNimi xmlns:ns4="http://www.eduskunta.fi/skeemat/siirtoelementit/2011/05/17">VASKI_JULKVP_Record_fi</ns4:SanomatyyppiNimi>
+        <ns4:SanomaTunnus xmlns:ns4="http://www.eduskunta.fi/skeemat/siirtoelementit/2011/05/17">Vaski_VASKI_JULKVP_Record_fi_10-maalis-2020_11:45:05:387_EET</ns4:SanomaTunnus>
+        <ns4:LuontiHetki xmlns:ns4="http://www.eduskunta.fi/skeemat/siirtoelementit/2011/05/17">2020-03-10T11:45:05.387+02:00</ns4:LuontiHetki>
+        <ns4:SiirtoKoodi xmlns:ns4="http://www.eduskunta.fi/skeemat/siirtoelementit/2011/05/17">paivitys</ns4:SiirtoKoodi>
+        <Toimija xmlns="http://www.vn.fi/skeemat/metatietokooste/2010/04/27"
+            xmlns:s415="http://www.vn.fi/skeemat/metatietoelementit/2010/04/27" s415:rooliKoodi="lahettaja">
+            <s415:YhteisoTeksti>Eduskunta</s415:YhteisoTeksti>
+        </Toimija>
+        <Toimija xmlns="http://www.vn.fi/skeemat/metatietokooste/2010/04/27"
+            xmlns:s416="http://www.vn.fi/skeemat/metatietoelementit/2010/04/27" s416:rooliKoodi="vastaanottaja">
+            <s416:YhteisoTeksti>Eduskunta</s416:YhteisoTeksti>
+        </Toimija>
+    </Sanomavalitys>
+    <ns11:SiirtoMetatieto>
+        <jme:JulkaisuMetatieto xmlns:asi="http://www.vn.fi/skeemat/asiakirjakooste/2010/04/27"
+            xmlns:asi1="http://www.vn.fi/skeemat/asiakirjaelementit/2010/04/27"
+            xmlns:jme="http://www.eduskunta.fi/skeemat/julkaisusiirtokooste/2011/12/20"
+            xmlns:met="http://www.vn.fi/skeemat/metatietokooste/2010/04/27"
+            xmlns:met1="http://www.vn.fi/skeemat/metatietoelementit/2010/04/27"
+            xmlns:org="http://www.vn.fi/skeemat/organisaatiokooste/2010/02/15"
+            xmlns:org1="http://www.vn.fi/skeemat/organisaatioelementit/2010/02/15"
+            xmlns:sii="http://www.eduskunta.fi/skeemat/siirtokooste/2011/05/17"
+            xmlns:sii1="http://www.eduskunta.fi/skeemat/siirtoelementit/2011/05/17"
+            xmlns:sis="http://www.vn.fi/skeemat/sisaltokooste/2010/04/27"
+            xmlns:sis1="http://www.vn.fi/skeemat/sisaltoelementit/2010/04/27"
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" met1:asiakirjatyyppiNimi="Pöytäkirja" met1:eduskuntaTunnus="PTK 35/2018 vp" met1:identifiointiTunnus="{40041606-C475-C9A9-84D9-70C3CD400000}" met1:kieliKoodi="fi" met1:laadintaPvm="2018-04-13" met1:muuTunnus="EDK-2018-AK-183137" met1:paatehtavaKoodi="00 00 03 Poliittinen ohjaus">
+            <asi:IdentifiointiOsa>
+                <met1:AsiakirjatyyppiNimi>Pöytäkirja</met1:AsiakirjatyyppiNimi>
+                <asi:EduskuntaTunniste>
+                    <met1:AsiakirjatyyppiKoodi>PTK</met1:AsiakirjatyyppiKoodi>
+                    <asi1:AsiakirjaNroTeksti>35</asi1:AsiakirjaNroTeksti>
+                    <asi1:ValtiopaivavuosiTeksti>2018</asi1:ValtiopaivavuosiTeksti>
+                </asi:EduskuntaTunniste>
+                <met:Toimija met1:rooliKoodi="Laatija">
+                    <met1:YhteisoTeksti>Täysistunto</met1:YhteisoTeksti>
+                </met:Toimija>
+                <met1:LaadintaPvmTeksti>13.04.2018</met1:LaadintaPvmTeksti>
+                <met:Nimeke met1:vaihtoehtoinenNimekeTeksti="">
+                    <met1:NimekeTeksti>Perjantai 13.4.2018 klo 13.11—13.30</met1:NimekeTeksti>
+                </met:Nimeke>
+            </asi:IdentifiointiOsa>
+            <sii:EsitysmuotoViite met1:muuTunnus="{40041606-C475-C9A9-84D9-70C3CD400000}"/>
+        </jme:JulkaisuMetatieto>
+    </ns11:SiirtoMetatieto>
+    <SiirtoAsiakirja xmlns="http://www.eduskunta.fi/skeemat/siirtokooste/2011/05/17">
+        <RakenneAsiakirja>
+            <ptk:Poytakirja xmlns:asi="http://www.vn.fi/skeemat/asiakirjakooste/2010/04/27"
+                xmlns:asi1="http://www.vn.fi/skeemat/asiakirjaelementit/2010/04/27"
+                xmlns:elu="http://www.eduskunta.fi/skeemat/ehdotusluettelo/2014/07/28"
+                xmlns:fra="http://www.eduskunta.fi/skeemat/fraasikooste/2011/01/04"
+                xmlns:fra1="http://www.eduskunta.fi/skeemat/fraasielementit/2011/01/04"
+                xmlns:met="http://www.vn.fi/skeemat/metatietokooste/2010/04/27"
+                xmlns:met1="http://www.vn.fi/skeemat/metatietoelementit/2010/04/27"
+                xmlns:mix="http://www.loc.gov/mix/v20"
+                xmlns:narc="http://www.arkisto.fi/skeemat/sahke2/2011/01/31_vnk"
+                xmlns:org="http://www.vn.fi/skeemat/organisaatiokooste/2010/02/15"
+                xmlns:org1="http://www.vn.fi/skeemat/organisaatioelementit/2010/02/15"
+                xmlns:ptk="http://www.eduskunta.fi/skeemat/poytakirja/2011/01/28"
+                xmlns:saa="http://www.vn.fi/skeemat/saadoskooste/2010/04/27"
+                xmlns:saa1="http://www.vn.fi/skeemat/saadoselementit/2010/04/27"
+                xmlns:sis="http://www.vn.fi/skeemat/sisaltokooste/2010/04/27"
+                xmlns:sis1="http://www.vn.fi/skeemat/sisaltoelementit/2010/04/27"
+                xmlns:tau="http://www.vn.fi/skeemat/taulukkokooste/2010/04/27"
+                xmlns:vsk="http://www.eduskunta.fi/skeemat/vaskikooste/2011/01/04"
+                xmlns:vsk1="http://www.eduskunta.fi/skeemat/vaskielementit/2011/01/04"
+                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" met1:asiakirjatyyppiNimi="Pöytäkirja" met1:eduskuntaTunnus="PTK 35/2018 vp" met1:identifiointiTunnus="8d75a328-3234-cc90-bc87-62fc48100000" met1:kieliKoodi="fi" met1:laadintaPvm="2020-03-10" met1:muuTunnus="8d75a328-3234-cc90-bc87-62fc48100000" met1:rakennemaarittelyNimi="eduskunnanpoytakirja.xsd" met1:tilaKoodi="Valmis" met1:versioTeksti="5.0" vsk1:kokousAloitusHetki="2018-04-13T13:00:00" vsk1:kokousLopetusHetki="2018-04-13T13:30:00">
+                <asi:IdentifiointiOsa>
+                    <met1:AsiakirjatyyppiNimi>Pöytäkirja</met1:AsiakirjatyyppiNimi>
+                    <asi:EduskuntaTunniste>
+                        <met1:AsiakirjatyyppiKoodi>PTK</met1:AsiakirjatyyppiKoodi>
+                        <asi1:AsiakirjaNroTeksti>35</asi1:AsiakirjaNroTeksti>
+                        <asi1:ValtiopaivavuosiTeksti>2018 vp</asi1:ValtiopaivavuosiTeksti>
+                    </asi:EduskuntaTunniste>
+                    <met:Toimija met1:rooliKoodi="Laatija">
+                        <met1:YhteisoTeksti>Täysistunto</met1:YhteisoTeksti>
+                    </met:Toimija>
+                    <met:Nimeke>
+                        <met1:NimekeTeksti>Perjantai 13.4.2018 klo 13.11—13.30</met1:NimekeTeksti>
+                    </met:Nimeke>
+                </asi:IdentifiointiOsa>
+                <asi:SisaltoKuvaus>
+                    <sis:KappaleKooste>Täysistunto alkoi klo 13.11. Täysistunto päättyi klo 13.30.</sis:KappaleKooste>
+                    <sis:KappaleKooste>Puhetta johti puhemies Paula Risikko (13.11—13.30).</sis:KappaleKooste>
+                </asi:SisaltoKuvaus>
+                <vsk:MuuAsiakohta met1:muuTunnus="51921" vsk1:kasittelyvaiheKoodi="KOKNHU" vsk1:kohtaJNro="1" vsk1:kohtatyyppiKoodi="Asiakohta" vsk1:yleinenKasittelyvaiheKoodi="KOKOUS">
+                    <vsk1:KohtaNumero>1</vsk1:KohtaNumero>
+                    <sis1:OtsikkoTeksti>Nimenhuuto</sis1:OtsikkoTeksti>
+                    <vsk:KohtaAsiakirja vsk1:hyperlinkkiKoodi="EDK-2018-AK-183090">
+                        <met1:AsiakirjatyyppiNimi>Nimenhuutoraportti</met1:AsiakirjatyyppiNimi>
+                        <vsk1:TarkenneTeksti>Liite 1A</vsk1:TarkenneTeksti>
+                    </vsk:KohtaAsiakirja>
+                    <vsk:Toimenpide met1:muuTunnus="222460" vsk1:fraasiTunnus="K_106">
+                        <vsk:KohtaSisalto>
+                            <sis:KappaleKooste>Toimitettiin nimenhuuto.</sis:KappaleKooste>
+                        </vsk:KohtaSisalto>
+                    </vsk:Toimenpide>
+                </vsk:MuuAsiakohta>
+                <vsk:MuuAsiakohta met1:muuTunnus="51922" vsk1:kasittelyvaiheKoodi="KOKILM" vsk1:kohtaJNro="2" vsk1:kohtatyyppiKoodi="Asiakohta" vsk1:yleinenKasittelyvaiheKoodi="KOKOUS">
+                    <vsk1:KohtaNumero>2</vsk1:KohtaNumero>
+                    <sis1:OtsikkoTeksti>Ilmoituksia</sis1:OtsikkoTeksti>
+                </vsk:MuuAsiakohta>
+                <vsk:MuuAsiakohta met1:muuTunnus="60405" vsk1:kasittelyvaiheKoodi="KOKHAL" vsk1:kohtaJNro="3" vsk1:kohtatyyppiKoodi="Alikohta" vsk1:paakohtaTunnus="51922" vsk1:yleinenKasittelyvaiheKoodi="KOKOUS">
+                    <vsk1:KohtaNumero>2.1</vsk1:KohtaNumero>
+                    <sis1:OtsikkoTeksti>Hallituksen esitykset</sis1:OtsikkoTeksti>
+                    <vsk:Toimenpide met1:muuTunnus="253320" vsk1:fraasiTunnus="K_118">
+                        <vsk:KohtaSisalto>
+                            <sis:KappaleKooste>Valtioneuvosto on 12.4.2018 antanut hallituksen esitykset HE 36-54/2018 vp.</sis:KappaleKooste>
+                        </vsk:KohtaSisalto>
+                    </vsk:Toimenpide>
+                </vsk:MuuAsiakohta>
+                <vsk:MuuAsiakohta met1:muuTunnus="60406" vsk1:kasittelyvaiheKoodi="KOKVKK" vsk1:kohtaJNro="4" vsk1:kohtatyyppiKoodi="Alikohta" vsk1:paakohtaTunnus="51922" vsk1:yleinenKasittelyvaiheKoodi="KOKOUS">
+                    <vsk1:KohtaNumero>2.2</vsk1:KohtaNumero>
+                    <sis1:OtsikkoTeksti>Vastaukset kirjallisiin kysymyksiin</sis1:OtsikkoTeksti>
+                    <vsk:Toimenpide met1:muuTunnus="253322" vsk1:fraasiTunnus="K_138">
+                        <vsk:KohtaSisalto>
+                            <sis:KappaleKooste>Eduskunnalle ovat saapuneet vastaukset kirjallisiin kysymyksiin KK 76, 83, 86, 87, 89–93/2018 vp.</sis:KappaleKooste>
+                        </vsk:KohtaSisalto>
+                    </vsk:Toimenpide>
+                </vsk:MuuAsiakohta>
+                <vsk:MuuAsiakohta met1:muuTunnus="60465" vsk1:kasittelyvaiheKoodi="KOKVS" vsk1:kohtaJNro="5" vsk1:kohtatyyppiKoodi="Alikohta" vsk1:paakohtaTunnus="51922" vsk1:yleinenKasittelyvaiheKoodi="KOKOUS">
+                    <vsk1:KohtaNumero>2.3</vsk1:KohtaNumero>
+                    <sis1:OtsikkoTeksti>Valtioneuvoston selonteot</sis1:OtsikkoTeksti>
+                    <vsk:Toimenpide met1:muuTunnus="253796" vsk1:fraasiTunnus="P_K_121">
+                        <vsk:KohtaSisalto>
+                            <sis:KappaleKooste>Valtioneuvosto on 13.4.2018 antanut eduskunnalle selonteon VNS 1/2018 vp julkisen talouden suunnitelmasta vuosille 2019-2022.</sis:KappaleKooste>
+                        </vsk:KohtaSisalto>
+                    </vsk:Toimenpide>
+                </vsk:MuuAsiakohta>
+                <vsk:Asiakohta met1:eduskuntaTunnus="LA 5/2018 vp" met1:muuTunnus="60249" vsk1:kasittelyvaiheKoodi="LK" vsk1:kohtaJNro="6" vsk1:kohtatyyppiKoodi="Asiakohta" vsk1:yleinenKasittelyvaiheKoodi="LK">
+                    <vsk1:KohtaNumero>3</vsk1:KohtaNumero>
+                    <vsk:KohtaNimeke>
+                        <met1:NimekeTeksti>Lakialoite laiksi muovipakkausverosta</met1:NimekeTeksti>
+                    </vsk:KohtaNimeke>
+                    <vsk:KohtaAsia vsk1:hyperlinkkiKoodi="LA 5/2018 vp">
+                        <met1:AsiakirjatyyppiNimi>Lakialoite</met1:AsiakirjatyyppiNimi>
+                        <met1:EduskuntaTunnus>LA 5/2018 vp</met1:EduskuntaTunnus>
+                        <met:Toimija>
+                            <org:Henkilo met1:muuTunnus="1298">
+                                <org1:EtuNimi>Krista</org1:EtuNimi>
+                                <org1:SukuNimi>Mikkonen</org1:SukuNimi>
+                                <org1:LisatietoTeksti>vihr</org1:LisatietoTeksti>
+                                <org1:LisatietoTeksti>ym.</org1:LisatietoTeksti>
+                            </org:Henkilo>
+                        </met:Toimija>
+                    </vsk:KohtaAsia>
+                    <vsk:Toimenpide met1:muuTunnus="252383" vsk1:fraasiTunnus="P_LKN375_LA">
+                        <sis1:ValiotsikkoTeksti>Lähetekeskustelu</sis1:ValiotsikkoTeksti>
+                        <vsk:KohtaSisalto>
+                            <vsk:PuheenjohtajaRepliikki>
+                                <vsk1:PuheenjohtajaTeksti>Puhemies Paula Risikko</vsk1:PuheenjohtajaTeksti>
+                                <sis:KappaleKooste>Lähetekeskustelua varten esitellään päiväjärjestyksen <sis1:HarvaKursiiviTeksti>3.</sis1:HarvaKursiiviTeksti> asia. Puhemiesneuvosto ehdottaa, että asia lähetetään valtiovarainvaliokuntaan.</sis:KappaleKooste>
+                            </vsk:PuheenjohtajaRepliikki>
+                        </vsk:KohtaSisalto>
+                    </vsk:Toimenpide>
+                    <vsk:KeskusteluToimenpide met1:muuTunnus="253968" vsk1:fraasiTunnus="KE_108">
+                        <sis1:ValiotsikkoTeksti>Keskustelu</sis1:ValiotsikkoTeksti>
+                        <vsk:PuheenvuoroToimenpide met1:muuTunnus="253971" vsk1:puheenvuoroAloitusHetki="2018-04-13T13:13:14" vsk1:puheenvuoroLuokitusKoodi="E">
+                            <vsk1:AjankohtaTeksti>13.13</vsk1:AjankohtaTeksti>
+                            <met:Toimija>
+                                <org:Henkilo met1:muuTunnus="1298">
+                                    <org1:EtuNimi>Krista</org1:EtuNimi>
+                                    <org1:SukuNimi>Mikkonen</org1:SukuNimi>
+                                    <org1:LisatietoTeksti>vihr</org1:LisatietoTeksti>
+                                </org:Henkilo>
+                            </met:Toimija>
+                            <vsk1:TarkenneTeksti>(esittelypuheenvuoro)</vsk1:TarkenneTeksti>
+                            <vsk:PuheenvuoroOsa met1:asiakirjatyyppiNimi="Puheenvuoro" met1:kieliKoodi="fi" met1:muuTunnus="160818" met1:tilaKoodi="Tarkistettu" met1:versioTeksti="1.1" vsk1:puheenvuoroAloitusHetki="2018-04-13T13:13:14" vsk1:puheenvuoroJNro="1" vsk1:puheenvuoroLopetusHetki="2018-04-13T13:18:40">
+                                <vsk:KohtaSisalto>
+                                    <sis:KappaleKooste>Arvoisa rouva puhemies! Viime aikoina olemme havahtuneet siihen, että tällä menolla maailman merissä on enemmän muovia kuin kalaa vuoteen 2050 mennessä. Muovi on monella tapaa hyvä ja käytännöllinen materiaali, mutta ongelmaksi muodostuu muoviroskan syntyminen [Hälinää — Puhemies koputtaa] ja muovin liikakäyttö. </sis:KappaleKooste>
+                                    <vsk:PuheenjohtajaRepliikki>
+                                        <vsk1:PuheenjohtajaTeksti>Puhemies Paula Risikko</vsk1:PuheenjohtajaTeksti>
+                                        <sis:KappaleKooste> Anteeksi, edustaja. — Pyydän kaikkia niitä, jotka eivät ole täällä salissa tässä asiassa, siirtymään kokouksiin ulkopuolelle, kiitos. — Olkaa hyvä, edustaja Mikkonen.</sis:KappaleKooste>
+                                    </vsk:PuheenjohtajaRepliikki>
+                                    <sis:KappaleKooste>Tällä käsittelyssä olevalla lakialoitteella pyritään vastaamaan tähän ongelmaan. Kertakäyttöisten muovipakkausten syntyä ja niiden ympäristökuormitusta on vähennettävä. Sitä varten esitämme muovipakkausveroa. </sis:KappaleKooste>
+                                    <sis:KappaleKooste>Vero koskisi kaikkia tuotteita, joiden valmistukseen on käytetty muovia ja jotka on tarkoitettu säilyttämään tai suojaamaan. Myös muovipussit olisivat veron piirissä. Vero olisi jokaisesta muovipakkauksesta 2 euroa kilolta. Veron yhtenä tarkoituksena on ohjata uusiomuovin käyttöön ja ympäristöystävällisempien pakkausmateriaalien kehittämiseen. Sen vuoksi kierrätysmuovi ja aidosti biohajoava muovi olisivat verovapaita. Vero ei myöskään koskisi panttipulloja.</sis:KappaleKooste>
+                                    <sis:KappaleKooste>Tämä aloite muovipakkausverosta jätettiin helmikuussa osana vihreän eduskuntaryhmän muoviavausta, jossa ehdotimme myös muita keinoja muoviroskan vähentämiseen ja muovin kierrätyksen lisäämiseen. Olenkin todella ilahtunut siitä, että hallitus päätti nyt kehysriihessä ryhtyä selvittämään muoviveron käyttöönottoa. Toivon, että tämä aloite avittaa hallitusta löytämään verolle hyvän toteuttamismallin.</sis:KappaleKooste>
+                                    <sis:KappaleKooste>Arvoisa puhemies! Jätelain mukaan kaikessa toiminnassa on mahdollisuuksien mukaan huolehdittava siitä, että jätettä syntyy mahdollisimman vähän. Muovipakkausten ympäristökuormitus on merkittävä. Muovin raaka-aineena on fossiilinen öljy, eikä se maadu luonnossa. Valmistus kuluttaa luonnonvaroja ja energiaa. Muovipakkauksia valmistetaan vuosittain valtavasti. Pelkkiä muovikasseja käytetään Suomessa 300 miljoonaa kappaletta. [Pertti Salolainen: Ohoh!] Vuosittain maapallolla tuotetaan muovia 288 miljoonaa tonnia, ja suurinta osaa pakkauksista käytetään vain kerran. [Pertti Salolainen: Hirveätä!]</sis:KappaleKooste>
+                                    <sis:KappaleKooste>Maailman muovista mereen päätyy noin 10 prosenttia. Myös Itämeri kärsii muovijätteestä, sillä Suomen rannikoilta löytyvästä roskasta noin kolme neljäsosaa on muovia. Meressä kaloja ja muita merieläimiä kuolee, kun ne sotkeutuvat muovijätteeseen. Linnut, kalat ja kaikenkokoiset merieliöt luulevat helposti muovia ruuaksi. Ne saattavat nääntyä nälkään, kun muoviroska ei hajoa ruuansulatuskanavassa. Meristä muovi ei myöskään häviä vaan jauhautuu ajan kuluessa yhä pienemmiksi muruiksi eli mikromuoviksi. Ne keräävät itseensä ympäristömyrkkyjä ja kulkeutuvat ravintoketjussa ylöspäin meidän jokaisen lautaselle saakka. [Pertti Salolainen: Totta!]</sis:KappaleKooste>
+                                    <sis:KappaleKooste>Muovia verotetaan jo nyt monissa Euroopan maissa. Irlannissa otettiin jo 15 vuotta sitten käyttöön muovipussivero, ja se on osoittautunut tehokkaaksi, sillä muovipussien käyttö on vähentynyt 90 prosenttia. Sekä irlantilaiset itse että kaupat pitävät veroa järkevänä ja hyvänä. Muovipakkausvero olisi toimiva ratkaisu myös Suomessa. Se vähentäisi muovipakkausten valmistuksen ja käytöstä poistamisen ympäristöhaittoja sekä lisäisi korvaavien ratkaisujen kysyntää.</sis:KappaleKooste>
+                                    <sis:KappaleKooste>Arvoisa puhemies! Roskaantuminen ja muovijätteen päätyminen ympäristöön eivät voi jatkua nykyisellään. Kehityksen kääntämiseksi eivät riitä yksin kuluttajien valinnat, vaan tarvitaan lainsäädäntöä. Suomelle tarvitaan oma muovistrategia, kuten EU-tasolla on jo tehty. Nyt sellaista onkin ryhdytty valmistelemaan ympäristöministeriössä muovitiekartan nimellä. Tiekartan on määrä hahmottaa sellaisia toimia, joilla Suomi voi vähentää muovijätteen ja roskan aiheuttamia haittoja, tehostaa muovin kierrätystä ja edistää parempien tuotteiden suunnittelua.</sis:KappaleKooste>
+                                    <sis:KappaleKooste>Toivon, että ehdotuksemme muovipakkausverosta löytää tiensä Suomen muovitiekarttaan. Sen vuoksi olisi hyvä, jos muoviveroa päästäisiin selvittämään heti eikä vasta työryhmän lopetettua työnsä syksyllä, kuten hallituksen kehysriihipäätöksessä todettiin. Sillä jos selvitys tehtäisiin nyt heti, sen voisi ottaa myös mukaan tiekartan toimenpiteisiin, kun sopiva malli löydetään.</sis:KappaleKooste>
+                                    <sis:KappaleKooste>Toki olisi parasta, jos muoviverosta päästäisiin sopuun EU-tasolla, ja Suomen onkin edistettävä muoviveron käyttöönottoa EU:ssa. Mutta sitä ennen Suomi voi toimia edelläkävijänä ja ottaa muoviveron käyttöön kotimaassa. Tämä auttaisi myös yrityksiämme pääsemään eturiviin siinä vaiheessa, kun etsitään muoville korvaavia tuotteita. Olemme toimineet edelläkävijänä ennenkin. Nyt sen aika olisi taas.</sis:KappaleKooste>
+                                    <vsk:PuheenjohtajaRepliikki>
+                                        <vsk1:PuheenjohtajaTeksti>Puhemies Paula Risikko</vsk1:PuheenjohtajaTeksti>
+                                        <sis:KappaleKooste> Otetaan jonkin aikaa debattia.</sis:KappaleKooste>
+                                    </vsk:PuheenjohtajaRepliikki>
+                                </vsk:KohtaSisalto>
+                            </vsk:PuheenvuoroOsa>
+                        </vsk:PuheenvuoroToimenpide>
+                        <vsk:PuheenvuoroToimenpide met1:muuTunnus="253972" vsk1:puheenvuoroAloitusHetki="2018-04-13T13:18:48" vsk1:puheenvuoroLuokitusKoodi="V">
+                            <vsk1:AjankohtaTeksti>13.18</vsk1:AjankohtaTeksti>
+                            <met:Toimija>
+                                <org:Henkilo met1:muuTunnus="259">
+                                    <org1:EtuNimi>Pertti</org1:EtuNimi>
+                                    <org1:SukuNimi>Salolainen</org1:SukuNimi>
+                                    <org1:LisatietoTeksti>kok</org1:LisatietoTeksti>
+                                </org:Henkilo>
+                            </met:Toimija>
+                            <vsk1:TarkenneTeksti>(vastauspuheenvuoro)</vsk1:TarkenneTeksti>
+                            <vsk:PuheenvuoroOsa met1:asiakirjatyyppiNimi="Puheenvuoro" met1:kieliKoodi="fi" met1:muuTunnus="160819" met1:tilaKoodi="Tarkistettu" met1:versioTeksti="1.1" vsk1:puheenvuoroAloitusHetki="2018-04-13T13:18:48" vsk1:puheenvuoroJNro="1" vsk1:puheenvuoroLopetusHetki="2018-04-13T13:19:10">
+                                <vsk:KohtaSisalto>
+                                    <sis:KappaleKooste> Arvoisa puhemies! Tämä oli aivan loistava puheenvuoro, ja toivoisi, että tällaisia puheenvuoroja kuulisi useammin tässä salissa. En mene toistamaan, mitä siinä sanottiin — oli erittäin hyviä näkökohtia — vaan toivon vain, että nämä asiat nyt lähtevät meidän hallinnossa vahvasti eteenpäin.</sis:KappaleKooste>
+                                </vsk:KohtaSisalto>
+                            </vsk:PuheenvuoroOsa>
+                        </vsk:PuheenvuoroToimenpide>
+                        <vsk:PuheenvuoroToimenpide met1:muuTunnus="253973" vsk1:puheenvuoroAloitusHetki="2018-04-13T13:19:15" vsk1:puheenvuoroLuokitusKoodi="V">
+                            <vsk1:AjankohtaTeksti>13.19</vsk1:AjankohtaTeksti>
+                            <met:Toimija>
+                                <org:Henkilo met1:muuTunnus="511">
+                                    <org1:EtuNimi>Pia</org1:EtuNimi>
+                                    <org1:SukuNimi>Viitanen</org1:SukuNimi>
+                                    <org1:LisatietoTeksti>sd</org1:LisatietoTeksti>
+                                </org:Henkilo>
+                            </met:Toimija>
+                            <vsk1:TarkenneTeksti>(vastauspuheenvuoro)</vsk1:TarkenneTeksti>
+                            <vsk:PuheenvuoroOsa met1:asiakirjatyyppiNimi="Puheenvuoro" met1:kieliKoodi="fi" met1:muuTunnus="160820" met1:tilaKoodi="Tarkistettu" met1:versioTeksti="1.1" vsk1:puheenvuoroAloitusHetki="2018-04-13T13:19:15" vsk1:puheenvuoroJNro="1" vsk1:puheenvuoroLopetusHetki="2018-04-13T13:20:11">
+                                <vsk:KohtaSisalto>
+                                    <sis:KappaleKooste>Arvoisa rouva puhemies! Minusta tämä aloite on oikeanhenkinen. Meidän täytyy tänä päivänä miettiä entistä tehokkaampia keinoja, miten tuemme ympäristöystävällisempää taloutta ja kaiken kaikkiaan esimerkiksi kannustamme kiertotalouteen. </sis:KappaleKooste>
+                                    <sis:KappaleKooste>Meillä on tässä SDP:llä tiettyä edelläkävijyyttä. Olemme joskus puhuneet pakkausten verottamisesta ja tämänkaltaisista asioista, ja nytkin meillä on ajatuksia sen suhteen, miten voisimme verojärjestelmäämme kaiken kaikkiaan kannustavalla tavalla muuttaa ympäristöystävällisempään suuntaan tulevaisuudessa. </sis:KappaleKooste>
+                                    <sis:KappaleKooste>Puhemies, se, minkä haluaisin tässä sanoa: On hyvä, että hallitus sanoi, että se alkaa selvittää tätä asiaa, mutta en ehkä ymmärrä, miksi vasta syksyllä nämä toimet käynnistyvät. Kyllä minä kannustaisin ryhtymään toimeen heti ja katsomaan kokonaisuuksia, mutta ehkä hieman voisi laajemmalta pohjalta [Eero Heinäluoma: Jalka pois jarrulta!] — eli jalka pois jarrulta.</sis:KappaleKooste>
+                                    <vsk:PuheenjohtajaRepliikki>
+                                        <vsk1:PuheenjohtajaTeksti>Puhemies Paula Risikko</vsk1:PuheenjohtajaTeksti>
+                                        <sis:KappaleKooste> Tiedoksi kaikille, että käytämme tämän loppuajan nyt tähän debattiin.</sis:KappaleKooste>
+                                    </vsk:PuheenjohtajaRepliikki>
+                                </vsk:KohtaSisalto>
+                            </vsk:PuheenvuoroOsa>
+                        </vsk:PuheenvuoroToimenpide>
+                        <vsk:PuheenvuoroToimenpide met1:muuTunnus="253974" vsk1:puheenvuoroAloitusHetki="2018-04-13T13:20:21" vsk1:puheenvuoroLuokitusKoodi="V">
+                            <vsk1:AjankohtaTeksti>13.20</vsk1:AjankohtaTeksti>
+                            <met:Toimija>
+                                <org:Henkilo met1:muuTunnus="768">
+                                    <org1:EtuNimi>Eero</org1:EtuNimi>
+                                    <org1:SukuNimi>Heinäluoma</org1:SukuNimi>
+                                    <org1:LisatietoTeksti>sd</org1:LisatietoTeksti>
+                                </org:Henkilo>
+                            </met:Toimija>
+                            <vsk1:TarkenneTeksti>(vastauspuheenvuoro)</vsk1:TarkenneTeksti>
+                            <vsk:PuheenvuoroOsa met1:asiakirjatyyppiNimi="Puheenvuoro" met1:kieliKoodi="fi" met1:muuTunnus="160821" met1:tilaKoodi="Tarkistettu" met1:versioTeksti="1.1" vsk1:puheenvuoroAloitusHetki="2018-04-13T13:20:21" vsk1:puheenvuoroJNro="1" vsk1:puheenvuoroLopetusHetki="2018-04-13T13:21:17">
+                                <vsk:KohtaSisalto>
+                                    <sis:KappaleKooste>Arvoisa puhemies! Täytyy sanoa, että tässä on ilmeisesti yksi asia, jossa voidaan olla laveasti yhtä mieltä sekä hallituksessa että oppositiossa, ja iloitsen siitä, että arvostettu luontoaktiivi, kollega Pertti Salolainen otti esille tämän olennaisen puolen tässä asiassa eli kestävän talouden edistämisen ja luonnonsuojelun. Sekin liittyy tämän muoviveron eteenpäinvientiin.</sis:KappaleKooste>
+                                    <sis:KappaleKooste>Mutta sitten yhdyn edustaja Viitasen näkökulmaan, että pitää miettiä vähän laveammalti. Vaihtoehtobudjeteissahan on aikaisemmin tuotu esille tämä pakkausvero-ajatus, joka sekin ohjaa luonnonvarojen järkevään käyttöön. Asenteet ovat muuttumassa. Muovipusseista peritään nyt nykyään kautta linjan maksua. Tässä on ison asennemuutoksen paikka, ja pelkästään tämä ratkaisu ei tule riittämään. Tarvitaan veropolitiikan isompaa ohjaamista, jotta me saamme kestävän yhteiskunnan ja talouden periaatteiden mukaisen verojärjestelmän aikaan.</sis:KappaleKooste>
+                                </vsk:KohtaSisalto>
+                            </vsk:PuheenvuoroOsa>
+                        </vsk:PuheenvuoroToimenpide>
+                        <vsk:PuheenvuoroToimenpide met1:muuTunnus="253975" vsk1:puheenvuoroAloitusHetki="2018-04-13T13:21:18" vsk1:puheenvuoroLuokitusKoodi="V">
+                            <vsk1:AjankohtaTeksti>13.21</vsk1:AjankohtaTeksti>
+                            <met:Toimija>
+                                <org:Henkilo met1:muuTunnus="507">
+                                    <org1:EtuNimi>Kari</org1:EtuNimi>
+                                    <org1:SukuNimi>Uotila</org1:SukuNimi>
+                                    <org1:LisatietoTeksti>vas</org1:LisatietoTeksti>
+                                </org:Henkilo>
+                            </met:Toimija>
+                            <vsk1:TarkenneTeksti>(vastauspuheenvuoro)</vsk1:TarkenneTeksti>
+                            <vsk:PuheenvuoroOsa met1:asiakirjatyyppiNimi="Puheenvuoro" met1:kieliKoodi="fi" met1:muuTunnus="160822" met1:tilaKoodi="Tarkistettu" met1:versioTeksti="1.1" vsk1:puheenvuoroAloitusHetki="2018-04-13T13:21:18" vsk1:puheenvuoroJNro="1" vsk1:puheenvuoroLopetusHetki="2018-04-13T13:22:20">
+                                <vsk:KohtaSisalto>
+                                    <sis:KappaleKooste> Arvoisa puhemies! Aikaisempi kansanedustaja Esko Seppänen totesi aikoinaan, että turhakkeet, kerskakkeet ja haitakkeet pitää laittaa kovemmalle verolle, ja tässä on kysymyksessä nimenomaan haitake. Elikkä koko maailma on havahtunut ilmastonmuutoksen jälkeen seuraavaan tosi suureen ongelmaan elikkä siihen, niin kuin tässä edustaja Mikkonen totesi, että maailman merissä on arvioitu olevan vuonna 2050 enemmän muovia kuin kalaa. Se on valtava katastrofiuhka, ja siihen on reagoitava. </sis:KappaleKooste>
+                                    <sis:KappaleKooste>On tietysti tärkeää, että kansanedustajan lakialoitteella tämä asia laitetaan liikkeelle, mutta tietysti hallitukselta pitäisi edellyttää ja edellytetään kyllä nopeaa toimintaa, mihin täälläkin on viitattu. Tämähän tulee valtiovarainvaliokuntaan ja verojaoston pöydälle, ja katsotaan, miten pystytään tämän lakialoitteen kautta asiaa vauhdittamaan. Mutta tämä on todella sellainen ongelma, johon on tartuttava heti ja viipymättä ja mahdollisimman kovin ja vaikuttavin keinoin. [Pertti Salolainen: Hyvä!]</sis:KappaleKooste>
+                                </vsk:KohtaSisalto>
+                            </vsk:PuheenvuoroOsa>
+                        </vsk:PuheenvuoroToimenpide>
+                        <vsk:PuheenvuoroToimenpide met1:muuTunnus="253977" vsk1:puheenvuoroAloitusHetki="2018-04-13T13:22:20" vsk1:puheenvuoroLuokitusKoodi="V">
+                            <vsk1:AjankohtaTeksti>13.22</vsk1:AjankohtaTeksti>
+                            <met:Toimija>
+                                <org:Henkilo met1:muuTunnus="921">
+                                    <org1:EtuNimi>Johanna</org1:EtuNimi>
+                                    <org1:SukuNimi>Karimäki</org1:SukuNimi>
+                                    <org1:LisatietoTeksti>vihr</org1:LisatietoTeksti>
+                                </org:Henkilo>
+                            </met:Toimija>
+                            <vsk1:TarkenneTeksti>(vastauspuheenvuoro)</vsk1:TarkenneTeksti>
+                            <vsk:PuheenvuoroOsa met1:asiakirjatyyppiNimi="Puheenvuoro" met1:kieliKoodi="fi" met1:muuTunnus="160826" met1:tilaKoodi="Tarkistettu" met1:versioTeksti="1.1" vsk1:puheenvuoroAloitusHetki="2018-04-13T13:22:20" vsk1:puheenvuoroJNro="1" vsk1:puheenvuoroLopetusHetki="2018-04-13T13:23:22">
+                                <vsk:KohtaSisalto>
+                                    <sis:KappaleKooste>Arvoisa rouva puhemies! On hyvä kuulla, että tämä vihreän ryhmän aloite muovipakkausverosta saa laajaa kannatusta. Maailma on hukkumassa muoviroskaan, ja esimerkiksi muovipullo hajoaa luonnossa vasta 500 vuoden kuluessa. Meidän täytyy pysäyttää tämä kehitys ja tehdä sellaisia politiikkatoimia, että ihmisten on helppo arjessansa välttää muovia. </sis:KappaleKooste>
+                                    <sis:KappaleKooste>On hyvä, että hallitus myös selvityttää muovipakkausveroa, mutta esimerkiksi tämä esitys, jonka edustaja Mikkonen esitteli, on jo ihan käyttövalmis esitys, jonka voi ottaa pikimmiten käyttöön. </sis:KappaleKooste>
+                                    <sis:KappaleKooste>Tämä esitys on osa laajempaa vihreän ryhmän muoviavausta helmikuulta, ja muita ehdotuksia siinä on muun muassa se, että kielletään mikromuovin lisääminen tuotteisiin. Tämä on myös Pohjoismaiden neuvoston suositus pohjoismaisille hallituksille, jonka Ruotsi jo kiitettävästi on ottamassa käyttöön kesällä, ja näin Suomenkin täytyy tehdä — ottaa pikimmiten käyttöön mikromuovin käyttökielto kosmetiikassa.</sis:KappaleKooste>
+                                </vsk:KohtaSisalto>
+                            </vsk:PuheenvuoroOsa>
+                        </vsk:PuheenvuoroToimenpide>
+                        <vsk:PuheenvuoroToimenpide met1:muuTunnus="253979" vsk1:puheenvuoroAloitusHetki="2018-04-13T13:23:23" vsk1:puheenvuoroLuokitusKoodi="V">
+                            <vsk1:AjankohtaTeksti>13.23</vsk1:AjankohtaTeksti>
+                            <met:Toimija>
+                                <org:Henkilo met1:muuTunnus="1317">
+                                    <org1:EtuNimi>Simon</org1:EtuNimi>
+                                    <org1:SukuNimi>Elo</org1:SukuNimi>
+                                    <org1:LisatietoTeksti>sin</org1:LisatietoTeksti>
+                                </org:Henkilo>
+                            </met:Toimija>
+                            <vsk1:TarkenneTeksti>(vastauspuheenvuoro)</vsk1:TarkenneTeksti>
+                            <vsk:PuheenvuoroOsa met1:asiakirjatyyppiNimi="Puheenvuoro" met1:kieliKoodi="fi" met1:muuTunnus="160829" met1:tilaKoodi="Tarkistettu" met1:versioTeksti="1.1" vsk1:puheenvuoroAloitusHetki="2018-04-13T13:23:23" vsk1:puheenvuoroJNro="1" vsk1:puheenvuoroLopetusHetki="2018-04-13T13:24:31">
+                                <vsk:KohtaSisalto>
+                                    <sis:KappaleKooste>Arvoisa puhemies! Suomella on hyvä historia, edelläkävijyys panttipullojen kierrätyksessä. Siitä muut maat ovat vähitellen myös ottaneet mallia, ja parempaan suuntaan on menty. Muistan kun perheeni vieraili 90-luvulla usein Israelissa, ja Lähi-idässä oli suuri ongelma nimenomaan silloin näitten muovipanttipullojen kanssa. Ei ollut sitä järjestelmää, että saisi jotain rahaa siitä, kun ne vie kauppaan kierrätykseen, ja niitä pulloja oli pitkin poikin ympäri katuja. Ei ole enää: jos tänä päivänä menee Jerusalemiin tai Tel Aviviin, niin heillä on nykyään järjestelmä, ja katukuva näyttää siinä suhteessa samanlaiselta kuin Suomessakin, eli parempaan suuntaan on tässä menty.</sis:KappaleKooste>
+                                    <sis:KappaleKooste>Jos ajatellaan sitten EU:n tilannetta, niin arvio on, että 100 000 tonnia joka vuosi EU-maiden rannikoilta päätyy muovia mereen. Eli kun puhutaan koko maailman laajuisesti, niin kyllä EU:ssakin tämä on ongelma, ei pelkästään kehitysmaissa. Jalka sinänsä kyllä pois jarrulta — se jarrukin on kyllä varmaan muovista tehty — mutta kyllä katson, että selvitys pitää nyt tehdä huolella ja ottaa muovivero käyttöön vähintäänkin kertakäyttömuoville. [Puhemies koputtaa] 5 sekuntia valmistetaan, 5 minuuttia käytetään, [Puhemies: Aika!] ja satoja vuosia luonnossa — se ei sovi.</sis:KappaleKooste>
+                                </vsk:KohtaSisalto>
+                            </vsk:PuheenvuoroOsa>
+                        </vsk:PuheenvuoroToimenpide>
+                        <vsk:PuheenvuoroToimenpide met1:muuTunnus="253981" vsk1:puheenvuoroAloitusHetki="2018-04-13T13:24:31" vsk1:puheenvuoroLuokitusKoodi="V">
+                            <vsk1:AjankohtaTeksti>13.24</vsk1:AjankohtaTeksti>
+                            <met:Toimija>
+                                <org:Henkilo met1:muuTunnus="392">
+                                    <org1:EtuNimi>Olavi</org1:EtuNimi>
+                                    <org1:SukuNimi>Ala-Nissilä</org1:SukuNimi>
+                                    <org1:LisatietoTeksti>kesk</org1:LisatietoTeksti>
+                                </org:Henkilo>
+                            </met:Toimija>
+                            <vsk1:TarkenneTeksti>(vastauspuheenvuoro)</vsk1:TarkenneTeksti>
+                            <vsk:PuheenvuoroOsa met1:asiakirjatyyppiNimi="Puheenvuoro" met1:kieliKoodi="fi" met1:muuTunnus="160831" met1:tilaKoodi="Tarkistettu" met1:versioTeksti="1.1" vsk1:puheenvuoroAloitusHetki="2018-04-13T13:24:31" vsk1:puheenvuoroJNro="1" vsk1:puheenvuoroLopetusHetki="2018-04-13T13:25:32">
+                                <vsk:KohtaSisalto>
+                                    <sis:KappaleKooste> Puhemies! Kuten edustaja Uotila sanoi, niin voidaan verojaostossakin tätä käsitellä. Sitä kauttahan se menee, vaikka aloitteita yleensä emme kovin laajasti käsittele, mutta tässä on yleisempää mielenkiintoa. </sis:KappaleKooste>
+                                    <sis:KappaleKooste>Todellakin, kun ajattelemme ympäristönsuojelua laajemmin, saastuttajan pitää maksaa. On puhuttu paljon esimerkiksi maailmanlaajuisesta carbon taxista, hiiliverosta. Se olisi teoriassa hyvä, jos voitaisiin päästöille laittaa kunnon vero, niin silloin markkinat alkaisivat toimia, syntyisi päästöjä vähemmän ja syntyisi myöskin nopeammin teknologiaa, joka estää hiilidioksipäästöjä. Tässä on pienemmästä asiasta kysymys, mutta totta kai tämä muovisaastekin on globaali ilmiö tuolla maailman merissä. </sis:KappaleKooste>
+                                    <sis:KappaleKooste>Me voimme Suomen osalta löytää — minä kannatan, että selvitetään — oman ratkaisumme ehkä kohdennetummin tähän kysymykseen juuri niin kuin tässä aloitteessa esitetään, ja kannatan siinä mielessä tämän aloitteen asian selvittämistä.</sis:KappaleKooste>
+                                </vsk:KohtaSisalto>
+                            </vsk:PuheenvuoroOsa>
+                        </vsk:PuheenvuoroToimenpide>
+                        <vsk:PuheenvuoroToimenpide met1:muuTunnus="253982" vsk1:puheenvuoroAloitusHetki="2018-04-13T13:25:32" vsk1:puheenvuoroLuokitusKoodi="V">
+                            <vsk1:AjankohtaTeksti>13.25</vsk1:AjankohtaTeksti>
+                            <met:Toimija>
+                                <org:Henkilo met1:muuTunnus="1096">
+                                    <org1:EtuNimi>Ritva</org1:EtuNimi>
+                                    <org1:SukuNimi>Elomaa</org1:SukuNimi>
+                                    <org1:LisatietoTeksti>ps</org1:LisatietoTeksti>
+                                </org:Henkilo>
+                            </met:Toimija>
+                            <vsk1:TarkenneTeksti>(vastauspuheenvuoro)</vsk1:TarkenneTeksti>
+                            <vsk:PuheenvuoroOsa met1:asiakirjatyyppiNimi="Puheenvuoro" met1:kieliKoodi="fi" met1:muuTunnus="160832" met1:tilaKoodi="Tarkistettu" met1:versioTeksti="1.1" vsk1:puheenvuoroAloitusHetki="2018-04-13T13:25:32" vsk1:puheenvuoroJNro="1" vsk1:puheenvuoroLopetusHetki="2018-04-13T13:26:19">
+                                <vsk:KohtaSisalto>
+                                    <sis:KappaleKooste> Arvoisa puhemies! Ympäristöasiat ovat tosi tärkeitä, ja hyvä, että Suomessa on herätty vahvasti hoitamaan näitä asioita tulevaisuudessa ja tekemään toimia, jotka vähentävät saasteita. Suuret maat, monet teollisuusmaat saastuttavat valtavan paljon, ja heidän osuutensa pitää olla vahva ympäristökysymyksissä. </sis:KappaleKooste>
+                                    <sis:KappaleKooste>Krista Mikkoselle sanon kiitoksen, että on tuonut lakialoitteen muovista. Tämä on tosi tärkeä. Nimittäin ei ole ihmisille hyvä eikä eläimille, että maailman merillä on roskamuovia, joka saastuttaa ja tekee suuria ongelmia kaikille.</sis:KappaleKooste>
+                                </vsk:KohtaSisalto>
+                            </vsk:PuheenvuoroOsa>
+                        </vsk:PuheenvuoroToimenpide>
+                        <vsk:PuheenvuoroToimenpide met1:muuTunnus="253983" vsk1:puheenvuoroAloitusHetki="2018-04-13T13:26:19" vsk1:puheenvuoroLuokitusKoodi="V">
+                            <vsk1:AjankohtaTeksti>13.26</vsk1:AjankohtaTeksti>
+                            <met:Toimija>
+                                <org:Henkilo met1:muuTunnus="1326">
+                                    <org1:EtuNimi>Timo</org1:EtuNimi>
+                                    <org1:SukuNimi>Harakka</org1:SukuNimi>
+                                    <org1:LisatietoTeksti>sd</org1:LisatietoTeksti>
+                                </org:Henkilo>
+                            </met:Toimija>
+                            <vsk1:TarkenneTeksti>(vastauspuheenvuoro)</vsk1:TarkenneTeksti>
+                            <vsk:PuheenvuoroOsa met1:asiakirjatyyppiNimi="Puheenvuoro" met1:kieliKoodi="fi" met1:muuTunnus="160833" met1:tilaKoodi="Tarkistettu" met1:versioTeksti="1.1" vsk1:puheenvuoroAloitusHetki="2018-04-13T13:26:19" vsk1:puheenvuoroJNro="1" vsk1:puheenvuoroLopetusHetki="2018-04-13T13:27:30">
+                                <vsk:KohtaSisalto>
+                                    <sis:KappaleKooste> Arvoisa puhemies! Kiitos edustaja Mikkoselle tästä lakialoitteesta. Edustaja Viitanen oli liian vaatimaton vähätellessään omaa osuuttaan siinä, että SDP jo 2009 esitteli vaihtoehtobudjetissaan pakkausveroa. On mukavaa, että sosiaalidemokraatit ovat voineet olla tässä innoittamassa vihreitä lakialoitteeseen.</sis:KappaleKooste>
+                                    <sis:KappaleKooste>Ilmastonmuutoksen torjunnan ja kestävän kehityksen varmistaminen ovat niin tärkeitä asioita Suomelle ja koko ihmiskunnalle, että niiden tarkastelun tulisi olla johdonmukaisesti kaiken lainsäädännön uudistamista läpilyövä periaate, ja tähän SDP myös pyrkii. Osana kohtapuoleen julkistettavaa vero-ohjelmaa me otamme käyttöön systemaattisen periaatteen, jossa jatkossa kaikkia verouudistuksia tarkastellaan myös kestävän kehityksen näkökulmasta. Tästä hyvä esimerkki on juuri nyt suuren valiokunnan käsittelyyn tuleva keskustelu EU:n laajasta arvonlisäverojärjestelmän uudistuksesta. Meille se antaa mahdollisuuden esitellä kestävän kehityksen arvonlisäveroa, siis kaikkea läpilyövää ilmastonmuutoksen vastaisen toiminnan verouudistusta. </sis:KappaleKooste>
+                                </vsk:KohtaSisalto>
+                            </vsk:PuheenvuoroOsa>
+                        </vsk:PuheenvuoroToimenpide>
+                        <vsk:PuheenvuoroToimenpide met1:muuTunnus="253984" vsk1:puheenvuoroAloitusHetki="2018-04-13T13:27:30" vsk1:puheenvuoroLuokitusKoodi="V">
+                            <vsk1:AjankohtaTeksti>13.27</vsk1:AjankohtaTeksti>
+                            <met:Toimija>
+                                <org:Henkilo met1:muuTunnus="363">
+                                    <org1:EtuNimi>Satu</org1:EtuNimi>
+                                    <org1:SukuNimi>Hassi</org1:SukuNimi>
+                                    <org1:LisatietoTeksti>vihr</org1:LisatietoTeksti>
+                                </org:Henkilo>
+                            </met:Toimija>
+                            <vsk1:TarkenneTeksti>(vastauspuheenvuoro)</vsk1:TarkenneTeksti>
+                            <vsk:PuheenvuoroOsa met1:asiakirjatyyppiNimi="Puheenvuoro" met1:kieliKoodi="fi" met1:muuTunnus="160834" met1:tilaKoodi="Tarkistettu" met1:versioTeksti="1.1" vsk1:puheenvuoroAloitusHetki="2018-04-13T13:27:30" vsk1:puheenvuoroJNro="1" vsk1:puheenvuoroLopetusHetki="2018-04-13T13:28:41">
+                                <vsk:KohtaSisalto>
+                                    <sis:KappaleKooste> Arvoisa puhemies! Tämä ongelmahan on maailmanlaajuinen. Joitakin kuukausia sitten tapasin valokuvaajan, joka oli Huippuvuorilla kuvannut ilmastonmuutoksen vaikutuksia, ja hän kertoi, että sielläkin rannat ovat täynnä jauhoksi jauhautunutta muovia. </sis:KappaleKooste>
+                                    <sis:KappaleKooste>Suomi ei tietenkään ole pääosassa tämän globaalin ongelman aiheuttajana, mutta me voimme olla suuri osa tätä ratkaisua. En usko, että pelkästään kierrätys ja sen sellaiset ratkaisut auttavat. Niitä toki tarvitaan, mutta meidän on kehitettävä pakkausmateriaaleja, jotka ovat biohajoavia — ihan oikeasti biohajoavia. Sekään ei auta, että teemme muovia vaikka puuraaka-aineesta, jos se lopputuote sinänsä on ihan samaa muovia kuin öljypohjainenkin muovi. Kehittämällä biopohjaisten pakkausmateriaalien ratkaisuja Suomi voi [Puhemies koputtaa] luoda osaamista ja tuotteita, jotka ovat koko ihmiskunnalle tarpeen.</sis:KappaleKooste>
+                                    <vsk:PuheenjohtajaRepliikki>
+                                        <vsk1:PuheenjohtajaTeksti>Puhemies Paula Risikko</vsk1:PuheenjohtajaTeksti>
+                                        <sis:KappaleKooste> Viimeisen vastauspuheenvuoron käyttää edustaja Vähämäki. [Timo Heinonen: Puhemies, ensimmäisenä pyysin!]</sis:KappaleKooste>
+                                    </vsk:PuheenjohtajaRepliikki>
+                                </vsk:KohtaSisalto>
+                            </vsk:PuheenvuoroOsa>
+                        </vsk:PuheenvuoroToimenpide>
+                        <vsk:PuheenvuoroToimenpide met1:muuTunnus="253988" vsk1:puheenvuoroAloitusHetki="2018-04-13T13:28:41" vsk1:puheenvuoroLuokitusKoodi="V">
+                            <vsk1:AjankohtaTeksti>13.28</vsk1:AjankohtaTeksti>
+                            <met:Toimija>
+                                <org:Henkilo met1:muuTunnus="1136">
+                                    <org1:EtuNimi>Ville</org1:EtuNimi>
+                                    <org1:SukuNimi>Vähämäki</org1:SukuNimi>
+                                    <org1:LisatietoTeksti>ps</org1:LisatietoTeksti>
+                                </org:Henkilo>
+                            </met:Toimija>
+                            <vsk1:TarkenneTeksti>(vastauspuheenvuoro)</vsk1:TarkenneTeksti>
+                            <vsk:PuheenvuoroOsa met1:asiakirjatyyppiNimi="Puheenvuoro" met1:kieliKoodi="fi" met1:muuTunnus="160836" met1:tilaKoodi="Tarkistettu" met1:versioTeksti="1.1" vsk1:puheenvuoroAloitusHetki="2018-04-13T13:28:41" vsk1:puheenvuoroJNro="1" vsk1:puheenvuoroLopetusHetki="2018-04-13T13:29:49">
+                                <vsk:KohtaSisalto>
+                                    <sis:KappaleKooste>Puhemies! Ensinnäkin edustaja Mikkoselta todella hyvä aloite, ja täytyy sanoa näin, että edustaja Hassi pääsi tässä siihen avainkysymykseen. Eli todellakin on olemassa biohajoavia muoveja, jotka ovat joko öljypohjaisia tai sitten biopohjaisia hajoavia muoveja. Biopohjaiset hajoavat muovit hajoavat hiilidioksidiksi ja vedeksi nopeammin kuin nämä muut, ei-biohajoavat muovit. Jos vain pystyttäisiin jotenkin ohjaamaan kulutusta vaikkapa kansainvälisen yhteistyön kautta kohti näitä biopohjaisia, hajoavia muoveja — ne ovat muun muassa selluloosapohjaisia biohajoavia muoveja — niin tässä olisi huikea mahdollisuus meidän teollisuudelle ja bisnekselle tehdä uusia tuotteita, muun muassa metsäteollisuuden tuotteita. Neste Oyj:kin [Puhemies koputtaa] on näitä paljon tutkinut. Että tässä on myöskin mahdollisuus luoda [Puhemies koputtaa] samalla liiketoimintaa ja vientiä Suomelle.</sis:KappaleKooste>
+                                </vsk:KohtaSisalto>
+                            </vsk:PuheenvuoroOsa>
+                        </vsk:PuheenvuoroToimenpide>
+                    </vsk:KeskusteluToimenpide>
+                    <vsk:Toimenpide met1:muuTunnus="253989" vsk1:fraasiTunnus="P_KESK_40LK">
+                        <vsk:KohtaSisalto>
+                            <sis:KappaleKooste>Keskustelu ja asian käsittely keskeytettiin.</sis:KappaleKooste>
+                        </vsk:KohtaSisalto>
+                    </vsk:Toimenpide>
+                </vsk:Asiakohta>
+                <vsk:MuuAsiakohta met1:muuTunnus="51923" vsk1:kasittelyvaiheKoodi="KOKSEU" vsk1:kohtaJNro="7" vsk1:kohtatyyppiKoodi="Asiakohta" vsk1:yleinenKasittelyvaiheKoodi="KOKOUS">
+                    <vsk1:KohtaNumero>4</vsk1:KohtaNumero>
+                    <sis1:OtsikkoTeksti>Seuraava täysistunto</sis1:OtsikkoTeksti>
+                    <vsk:Toimenpide met1:muuTunnus="222462" vsk1:fraasiTunnus="K_110">
+                        <vsk:KohtaSisalto>
+                            <sis:KappaleKooste>Eduskunnan seuraava täysistunto on tiistaina 17.4.2018 klo 14.00. Täysistunto lopetettiin klo 13.30.</sis:KappaleKooste>
+                        </vsk:KohtaSisalto>
+                    </vsk:Toimenpide>
+                </vsk:MuuAsiakohta>
+                <asi:AllekirjoitusOsa>
+                    <asi1:JohdantoTeksti>Pöytäkirjan vakuudeksi:</asi1:JohdantoTeksti>
+                    <asi:Allekirjoittaja>
+                        <org:Henkilo>
+                            <org1:EtuNimi>Maija-Leena</org1:EtuNimi>
+                            <org1:SukuNimi>Paavola</org1:SukuNimi>
+                        </org:Henkilo>
+                    </asi:Allekirjoittaja>
+                </asi:AllekirjoitusOsa>
+            </ptk:Poytakirja>
+        </RakenneAsiakirja>
+    </SiirtoAsiakirja>
+    <SiirtoTiedosto xmlns="http://www.eduskunta.fi/skeemat/siirtokooste/2011/05/17">
+        <Document xmlns="http://www.arkisto.fi/skeemat/sahke2/2011/01/31_vnk">
+            <NativeId>{40041606-C475-C9A9-84D9-70C3CD400000}</NativeId>
+            <UseType>Julkaisu</UseType>
+            <File>
+                <Name>40041606-C475-C9A9-84D9-70C3CD400000.pdf</Name>
+                <Path>sftp://intpurnukka.eduskunta.fi:22/home/vaskijul/liitteet/tojulkvp/40041606-C475-C9A9-84D9-70C3CD400000.pdf</Path>
+            </File>
+            <Format>
+                <Name>application/pdf</Name>
+                <Version/>
+            </Format>
+            <HashAlgorithm>MD5</HashAlgorithm>
+            <HashValue>4ea4e5538f8ab5e1153880e17e64c222</HashValue>
+        </Document>
+    </SiirtoTiedosto>
+</ns11:Siirto>

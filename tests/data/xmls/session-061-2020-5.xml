@@ -1,0 +1,218 @@
+<ns11:Siirto xmlns:ns11="http://www.eduskunta.fi/skeemat/siirto/2011/09/07">
+    <Sanomavalitys xmlns="http://www.eduskunta.fi/skeemat/siirtokooste/2011/05/17">
+        <ns4:SanomatyyppiNimi xmlns:ns4="http://www.eduskunta.fi/skeemat/siirtoelementit/2011/05/17">VASKI_JULKVP_RecordArticle_fi</ns4:SanomatyyppiNimi>
+        <ns4:SanomaTunnus xmlns:ns4="http://www.eduskunta.fi/skeemat/siirtoelementit/2011/05/17">Vaski_VASKI_JULKVP_RecordArticle_fi_08-touko-2020_11:00:04:897_EEST</ns4:SanomaTunnus>
+        <ns4:LuontiHetki xmlns:ns4="http://www.eduskunta.fi/skeemat/siirtoelementit/2011/05/17">2020-05-08T11:00:04.897+03:00</ns4:LuontiHetki>
+        <ns4:SiirtoKoodi xmlns:ns4="http://www.eduskunta.fi/skeemat/siirtoelementit/2011/05/17">paivitys</ns4:SiirtoKoodi>
+        <Toimija xmlns="http://www.vn.fi/skeemat/metatietokooste/2010/04/27"
+            xmlns:s729="http://www.vn.fi/skeemat/metatietoelementit/2010/04/27" s729:rooliKoodi="lahettaja">
+            <s729:YhteisoTeksti>Eduskunta</s729:YhteisoTeksti>
+        </Toimija>
+        <Toimija xmlns="http://www.vn.fi/skeemat/metatietokooste/2010/04/27"
+            xmlns:s730="http://www.vn.fi/skeemat/metatietoelementit/2010/04/27" s730:rooliKoodi="vastaanottaja">
+            <s730:YhteisoTeksti>Eduskunta</s730:YhteisoTeksti>
+        </Toimija>
+    </Sanomavalitys>
+    <ns11:SiirtoMetatieto>
+        <jme:JulkaisuMetatieto xmlns:asi="http://www.vn.fi/skeemat/asiakirjakooste/2010/04/27"
+            xmlns:asi1="http://www.vn.fi/skeemat/asiakirjaelementit/2010/04/27"
+            xmlns:jme="http://www.eduskunta.fi/skeemat/julkaisusiirtokooste/2011/12/20"
+            xmlns:met="http://www.vn.fi/skeemat/metatietokooste/2010/04/27"
+            xmlns:met1="http://www.vn.fi/skeemat/metatietoelementit/2010/04/27"
+            xmlns:org="http://www.vn.fi/skeemat/organisaatiokooste/2010/02/15"
+            xmlns:org1="http://www.vn.fi/skeemat/organisaatioelementit/2010/02/15"
+            xmlns:sii="http://www.eduskunta.fi/skeemat/siirtokooste/2011/05/17"
+            xmlns:sii1="http://www.eduskunta.fi/skeemat/siirtoelementit/2011/05/17"
+            xmlns:sis="http://www.vn.fi/skeemat/sisaltokooste/2010/04/27"
+            xmlns:sis1="http://www.vn.fi/skeemat/sisaltoelementit/2010/04/27"
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" met1:asiakirjatyyppiNimi="Pöytäkirjan asiakohta" met1:eduskuntaTunnus="" met1:identifiointiTunnus="{68209B8C-4EB7-CE22-860B-71F34AA00000}" met1:kieliKoodi="fi" met1:laadintaPvm="2020-04-24" met1:muuTunnus="EDK-2020-AK-298888" met1:paatehtavaKoodi="00 01 00 00 00 Lain säätäminen">
+            <asi:IdentifiointiOsa>
+                <met1:AsiakirjatyyppiNimi>Pöytäkirjan asiakohta</met1:AsiakirjatyyppiNimi>
+                <asi:Vireilletulo>
+                    <met1:EduskuntaTunnus>HE 45/2020 vp</met1:EduskuntaTunnus>
+                </asi:Vireilletulo>
+                <met:Toimija met1:rooliKoodi="Laatija">
+                    <met1:YhteisoTeksti>Täysistunto</met1:YhteisoTeksti>
+                </met:Toimija>
+                <met1:LaadintaPvmTeksti>24.04.2020</met1:LaadintaPvmTeksti>
+                <met:Nimeke met1:vaihtoehtoinenNimekeTeksti="">
+                    <met1:NimekeTeksti>Perjantai 24.4.2020 klo 13.00—14.07</met1:NimekeTeksti>
+                </met:Nimeke>
+            </asi:IdentifiointiOsa>
+            <sii:EsitysmuotoViite met1:muuTunnus="{68209B8C-4EB7-CE22-860B-71F34AA00000}"/>
+        </jme:JulkaisuMetatieto>
+    </ns11:SiirtoMetatieto>
+    <SiirtoAsiakirja xmlns="http://www.eduskunta.fi/skeemat/siirtokooste/2011/05/17">
+        <RakenneAsiakirja>
+            <ptk:PoytakirjaAsiakohta xmlns:asi="http://www.vn.fi/skeemat/asiakirjakooste/2010/04/27"
+                xmlns:asi1="http://www.vn.fi/skeemat/asiakirjaelementit/2010/04/27"
+                xmlns:elu="http://www.eduskunta.fi/skeemat/ehdotusluettelo/2014/07/28"
+                xmlns:fra="http://www.eduskunta.fi/skeemat/fraasikooste/2011/01/04"
+                xmlns:fra1="http://www.eduskunta.fi/skeemat/fraasielementit/2011/01/04"
+                xmlns:met="http://www.vn.fi/skeemat/metatietokooste/2010/04/27"
+                xmlns:met1="http://www.vn.fi/skeemat/metatietoelementit/2010/04/27"
+                xmlns:mix="http://www.loc.gov/mix/v20"
+                xmlns:narc="http://www.arkisto.fi/skeemat/sahke2/2011/01/31_vnk"
+                xmlns:org="http://www.vn.fi/skeemat/organisaatiokooste/2010/02/15"
+                xmlns:org1="http://www.vn.fi/skeemat/organisaatioelementit/2010/02/15"
+                xmlns:ptk="http://www.eduskunta.fi/skeemat/poytakirja/2011/01/28"
+                xmlns:saa="http://www.vn.fi/skeemat/saadoskooste/2010/04/27"
+                xmlns:saa1="http://www.vn.fi/skeemat/saadoselementit/2010/04/27"
+                xmlns:sis="http://www.vn.fi/skeemat/sisaltokooste/2010/04/27"
+                xmlns:sis1="http://www.vn.fi/skeemat/sisaltoelementit/2010/04/27"
+                xmlns:tau="http://www.vn.fi/skeemat/taulukkokooste/2010/04/27"
+                xmlns:vsk="http://www.eduskunta.fi/skeemat/vaskikooste/2011/01/04"
+                xmlns:vsk1="http://www.eduskunta.fi/skeemat/vaskielementit/2011/01/04"
+                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" met1:asiakirjatyyppiNimi="Pöytäkirjan asiakohta" met1:eduskuntaTunnus="PTK 61/2020 vp" met1:identifiointiTunnus="7736fb3e-b70c-cca2-8ee6-71f34a300000" met1:kieliKoodi="fi" met1:laadintaPvm="2020-04-24" met1:muuTunnus="7736fb3e-b70c-cca2-8ee6-71f34a300000" met1:rakennemaarittelyNimi="eduskunnanpoytakirja.xsd" met1:tilaKoodi="Tarkistettu" met1:versioTeksti="4.0" vsk1:kokousAloitusHetki="2020-04-24T13:00:00" vsk1:kokousLopetusHetki="2020-04-24T13:30:00">
+                <asi:IdentifiointiOsa>
+                    <met1:AsiakirjatyyppiNimi>Pöytäkirjan asiakohta</met1:AsiakirjatyyppiNimi>
+                    <asi:EduskuntaTunniste>
+                        <met1:AsiakirjatyyppiKoodi>PTK</met1:AsiakirjatyyppiKoodi>
+                        <asi1:AsiakirjaNroTeksti>61</asi1:AsiakirjaNroTeksti>
+                        <asi1:ValtiopaivavuosiTeksti>2020 vp</asi1:ValtiopaivavuosiTeksti>
+                    </asi:EduskuntaTunniste>
+                    <met:Toimija met1:rooliKoodi="Laatija">
+                        <met1:YhteisoTeksti>Täysistunto</met1:YhteisoTeksti>
+                    </met:Toimija>
+                    <met:Nimeke>
+                        <met1:NimekeTeksti>Perjantai 24.4.2020 klo 13.00—14.07</met1:NimekeTeksti>
+                    </met:Nimeke>
+                </asi:IdentifiointiOsa>
+                <vsk:Asiakohta met1:eduskuntaTunnus="HE 45/2020 vp" met1:muuTunnus="99452" vsk1:kasittelyvaiheKoodi="2K" vsk1:kohtaJNro="1" vsk1:kohtatyyppiKoodi="Asiakohta" vsk1:yleinenKasittelyvaiheKoodi="2K">
+                    <vsk1:KohtaNumero>5</vsk1:KohtaNumero>
+                    <vsk:KohtaNimeke>
+                        <met1:NimekeTeksti>Hallituksen esitys eduskunnalle laiksi väliaikaisesta poikkeamisesta osakeyhtiölaista, asunto-osakeyhtiölaista, osuuskuntalaista, yhdistyslaista ja eräistä muista yhteisölaeista Covid-19 epidemian leviämisen rajoittamiseksi</met1:NimekeTeksti>
+                    </vsk:KohtaNimeke>
+                    <vsk:KohtaAsia vsk1:hyperlinkkiKoodi="HE 45/2020 vp">
+                        <met1:AsiakirjatyyppiNimi>Hallituksen esitys</met1:AsiakirjatyyppiNimi>
+                        <met1:EduskuntaTunnus>HE 45/2020 vp</met1:EduskuntaTunnus>
+                    </vsk:KohtaAsia>
+                    <vsk:KohtaAsiakirja>
+                        <met1:AsiakirjatyyppiNimi>Valiokunnan mietintö</met1:AsiakirjatyyppiNimi>
+                        <met1:EduskuntaTunnus>TaVM 8/2020 vp</met1:EduskuntaTunnus>
+                    </vsk:KohtaAsiakirja>
+                    <vsk:Toimenpide met1:muuTunnus="417143" vsk1:fraasiTunnus="2K_2">
+                        <sis1:ValiotsikkoTeksti>Toinen käsittely</sis1:ValiotsikkoTeksti>
+                        <vsk:KohtaSisalto>
+                            <vsk:PuheenjohtajaRepliikki>
+                                <vsk1:PuheenjohtajaTeksti>Puhemies Matti Vanhanen</vsk1:PuheenjohtajaTeksti>
+                                <sis:KappaleKooste>Toiseen käsittelyyn esitellään päiväjärjestyksen <sis1:HarvaKursiiviTeksti>5.</sis1:HarvaKursiiviTeksti> asia. Nyt voidaan hyväksyä tai hylätä lakiehdotus, jonka sisällöstä päätettiin ensimmäisessä käsittelyssä.</sis:KappaleKooste>
+                            </vsk:PuheenjohtajaRepliikki>
+                        </vsk:KohtaSisalto>
+                    </vsk:Toimenpide>
+                    <vsk:KeskusteluToimenpide met1:muuTunnus="418224" vsk1:fraasiTunnus="KE_108">
+                        <sis1:ValiotsikkoTeksti>Keskustelu</sis1:ValiotsikkoTeksti>
+                        <vsk:PuheenvuoroToimenpide met1:muuTunnus="418227" vsk1:puheenvuoroAloitusHetki="2020-04-24T13:47:45" vsk1:puheenvuoroLuokitusKoodi="T">
+                            <vsk1:AjankohtaTeksti>13.47</vsk1:AjankohtaTeksti>
+                            <met:Toimija>
+                                <org:Henkilo met1:muuTunnus="778">
+                                    <org1:EtuNimi>Sari</org1:EtuNimi>
+                                    <org1:SukuNimi>Essayah</org1:SukuNimi>
+                                    <org1:LisatietoTeksti>kd</org1:LisatietoTeksti>
+                                </org:Henkilo>
+                            </met:Toimija>
+                            <vsk:PuheenvuoroOsa met1:asiakirjatyyppiNimi="Puheenvuoro" met1:kieliKoodi="fi" met1:muuTunnus="266206" met1:tilaKoodi="Hyväksytty" met1:versioTeksti="1.1" vsk1:puheenvuoroAloitusHetki="2020-04-24T13:47:45" vsk1:puheenvuoroJNro="1" vsk1:puheenvuoroLopetusHetki="2020-04-24T13:49:22">
+                                <vsk:KohtaSisalto>
+                                    <sis:KappaleKooste>Arvoisa puhemies! Silloin kun ollaan niin sanotusti sisävuorossa, näissä siirtymissä pitää näköjään pieni aikalisä yrittää ottaa. — Todellakin, arvoisa puhemies, on äärimmäisen tärkeää, että tällä hallituksen esityksellä pystytään nyt helpottamaan erilaisten yhdistysten ja myöskin yhtiöitten kevään vuosikokousten järjestämistä. Tässähän tehdään helpotuksia joko sen suhteen, että näitä voidaan siirtää eteenpäin, tai sitten sen, että mahdollisuus etäkokoustamiseen on, vaikka sitä ei olisi mainittu näitten kyseisten toimijoitten omissa säännöissä.</sis:KappaleKooste>
+                                    <sis:KappaleKooste>Tämä esitys on todellakin tarpeellinen, ja tässä voi vain kiittää valiokuntaa siitä, että asioita on viety ripeästi eteenpäin. On tietysti hyvin mahdollista, että tämä poikkeuksellinen aika muuttaa pysyvästikin kenties yhdistysten toimintatapoja, ja voi olla, että tällainen etäkokoustaminen tulee yhä yleisemmäksi — toki millään tavalla väheksymättä sitä, että on äärimmäisen tärkeää, että esimerkiksi erilaisissa aatteellisissa yhteisöissä päästään keskusteluyhteyteen myös paikan päällä ja tapaamaan toisia. Ne ovat monta kertaa myöskin tämmöisiä sosiaalisen kontaktin ja sosiaalisen tapaamisen paikkoja, tapoja tulla yhteen.</sis:KappaleKooste>
+                                    <sis:KappaleKooste>Arvoisa puhemies! Pidemmittä puheitta: tätä hallituksen esitystä voi lämpimästi kannattaa ja viedä eteenpäin.</sis:KappaleKooste>
+                                </vsk:KohtaSisalto>
+                            </vsk:PuheenvuoroOsa>
+                        </vsk:PuheenvuoroToimenpide>
+                        <vsk:PuheenvuoroToimenpide met1:muuTunnus="418230" vsk1:puheenvuoroAloitusHetki="2020-04-24T13:49:26" vsk1:puheenvuoroLuokitusKoodi="T">
+                            <vsk1:AjankohtaTeksti>13.49</vsk1:AjankohtaTeksti>
+                            <met:Toimija>
+                                <org:Henkilo met1:muuTunnus="499">
+                                    <org1:EtuNimi>Päivi</org1:EtuNimi>
+                                    <org1:SukuNimi>Räsänen</org1:SukuNimi>
+                                    <org1:LisatietoTeksti>kd</org1:LisatietoTeksti>
+                                </org:Henkilo>
+                            </met:Toimija>
+                            <vsk:PuheenvuoroOsa met1:asiakirjatyyppiNimi="Puheenvuoro" met1:kieliKoodi="fi" met1:muuTunnus="266207" met1:tilaKoodi="Hyväksytty" met1:versioTeksti="1.1" vsk1:puheenvuoroAloitusHetki="2020-04-24T13:49:26" vsk1:puheenvuoroJNro="1" vsk1:puheenvuoroLopetusHetki="2020-04-24T13:51:07">
+                                <vsk:KohtaSisalto>
+                                    <sis:KappaleKooste>Arvoisa puhemies! Tässä esityksessä tuodaan joustoja erilaisten kokousten, muun muassa yhtiökokouksen, osuuskunnan kokouksen ja yhdistyksen kokouksen järjestämiseen nyt koronaepidemian aikana ja muun muassa näitä etäosallistumismahdollisuuksia ja ennakkoäänestämismahdollisuuksia lisätään. Talousvaliokunta on täällä todennut, että kokonaisuutena arvioiden nämä ehdotetut muutokset eivät merkittävällä tavalla rajoita vähemmistöosakkaidenkaan vaikutusmahdollisuuksia päätöksenteossa nykytilaan verrattuna. </sis:KappaleKooste>
+                                    <sis:KappaleKooste>Ajattelen, että vaikka tämä koronaepidemia on monella tavoin hyvin ikävä vaihe historiassamme, niin se tarjoaa kyllä toisaalta mahdollisuuden tietynlaiseen koeaikaan juuri näille erilaisille etäosallistumiskokeiluille. Ajattelen, että tätäkin jaksoa voi pitää nyt jonkinlaisena kokeiluaikana, josta sitten toivon mukaan tehdään johtopäätöksiä siitä, olisiko mahdollisuus joitakin näistä joustoista säätää pysyvästi myös lainsäädäntöön. Ja kyllä ajattelen, että esimerkiksi tämä etäosallistuminen on juuri niitä asioita, joita kannattaisi kehittää. </sis:KappaleKooste>
+                                </vsk:KohtaSisalto>
+                            </vsk:PuheenvuoroOsa>
+                        </vsk:PuheenvuoroToimenpide>
+                        <vsk:PuheenvuoroToimenpide met1:muuTunnus="418233" vsk1:puheenvuoroAloitusHetki="2020-04-24T13:51:07" vsk1:puheenvuoroLuokitusKoodi="T">
+                            <vsk1:AjankohtaTeksti>13.51</vsk1:AjankohtaTeksti>
+                            <met:Toimija>
+                                <org:Henkilo met1:muuTunnus="1341">
+                                    <org1:EtuNimi>Antti</org1:EtuNimi>
+                                    <org1:SukuNimi>Kurvinen</org1:SukuNimi>
+                                    <org1:LisatietoTeksti>kesk</org1:LisatietoTeksti>
+                                </org:Henkilo>
+                            </met:Toimija>
+                            <vsk:PuheenvuoroOsa met1:asiakirjatyyppiNimi="Puheenvuoro" met1:kieliKoodi="fi" met1:muuTunnus="266208" met1:tilaKoodi="Hyväksytty" met1:versioTeksti="1.1" vsk1:puheenvuoroAloitusHetki="2020-04-24T13:51:07" vsk1:puheenvuoroJNro="1" vsk1:puheenvuoroLopetusHetki="2020-04-24T13:54:10">
+                                <vsk:KohtaSisalto>
+                                    <sis:KappaleKooste>Herra puhemies! Kuten tässä edelliset puhujat ovatkin jo tuoneet esille, kysymys on siitä, että elämän pitää kuitenkin kohtuullisesti jatkua, ja sanoisinko näin, että oikeudellisen elämän ja laillisen elämän pitää jatkua tässä COVID-19-koronataudinkin aikana. Meillä on kevät perinteisesti yhtiökokousten aikaa, yhdistysten vuosikokousten aikaa, erilaisten yhteisöjen sääntömääräisten ja lakisääteisten kokousten aikaa, ja varmasti jokainen meistä 200 kansanedustajasta on saanut kymmeniä viestejä ja soittoja siitä, miten me teemme meidän taloyhtiömme kokouksen kanssa, miten järjestämme puolueemme paikallisyhdistyksen kokouksen ja miten sitten esimerkiksi jonkun osuuskunnan kokous järjestetään, miten tässä tulisi toimia, ja nyt lainsäätäjä reagoi tähän tilanteeseen. Hallitus on tehnyt esityksiä, joilla tässä poikkeusajassa ja poikkeustilassa, tämän koronan ajaksi, helpotetaan erilaisten yhteisöjen kokousmenettelyjä ja otetaan näitä etämahdollisuuksia automaattisesti käyttöön. </sis:KappaleKooste>
+                                    <sis:KappaleKooste>Haluan kiittää tässä töitä tehneitä eduskunnan valiokuntia. Tässä on huomioitu monia kentän palautteita. Itsekin olen tietoinen siitä, että esimerkiksi puolueiden erityispiirteet on tässä huomioitu. Puolueethan ovat vähän omanlaisiaan yhdistyksiä. Monta kertaa puolueessa se, että kokoonnutaan yhteen ja käydään keskustelua, on tärkeämpää kuin se tilinpäätöksen hyväksyminen, ja on sitten näitä poliittisia intohimoja. </sis:KappaleKooste>
+                                    <sis:KappaleKooste>Olen samaa mieltä, puhemies, kuin edustaja Räsänen. Hän puhui erittäin hyvin siitä, että tämä on tällainen tietynlainen koetusaika ja tällainen kokeiluvaihe nyt meillä yhteiskunnassa ja oikeastaan koko maailmassakin tällä hetkellä siinä, millä tavalla meidän elämämme muuttuu. Mehän olemme oppineet näihin Skype-kokouksiin ja Teams-kokouksiin kaikki ja toimimaan eri tavalla kuin normaalitilanteessa, kun emme nyt voi kokoontua ja emme voi kohdata fyysisesti, ja on jännä nähdä, tuleeko joihinkin yhdistyksiin esimerkiksi ihan säännönmukaiseksi tämä etäyhteyksien käyttö. Se varmaan lisääntyy, ja myös työelämässä ja liike-elämässä ehkäpä matkustaminen vähenee ja otetaan käyttöön etäyhteyksiä. </sis:KappaleKooste>
+                                    <sis:KappaleKooste>Kuitenkin, puhemies, on varmaan todettava, että niin elinkeinoelämässä kuin sitten kansalaisyhteiskunnassakin tietyissä tilanteissa fyysinen kokoustaminen on hyvin tärkeää. On todella vaikea ajatella, että jonkun aatteellisen yhdistyksen tai puolueen kokoukset olisivat pelkästään siellä virtuaaliyhteyksillä, ja ison pörssiyhtiön yhtiökokouskin voi olla vähän haastava kyllä vielä etäyhteyksillä normaalioloissa jatkossa ylläpitää. </sis:KappaleKooste>
+                                    <sis:KappaleKooste>Mutta tämä on erittäin hyvää arjen tukemista. Tämä on todellinen arjen esitys, mitä me nyt käsittelemme.</sis:KappaleKooste>
+                                </vsk:KohtaSisalto>
+                            </vsk:PuheenvuoroOsa>
+                        </vsk:PuheenvuoroToimenpide>
+                        <vsk:PuheenvuoroToimenpide met1:muuTunnus="418236" vsk1:puheenvuoroAloitusHetki="2020-04-24T13:54:10" vsk1:puheenvuoroLuokitusKoodi="T">
+                            <vsk1:AjankohtaTeksti>13.54</vsk1:AjankohtaTeksti>
+                            <met:Toimija>
+                                <org:Henkilo met1:muuTunnus="1426">
+                                    <org1:EtuNimi>Sheikki</org1:EtuNimi>
+                                    <org1:SukuNimi>Laakso</org1:SukuNimi>
+                                    <org1:LisatietoTeksti>ps</org1:LisatietoTeksti>
+                                </org:Henkilo>
+                            </met:Toimija>
+                            <vsk:PuheenvuoroOsa met1:asiakirjatyyppiNimi="Puheenvuoro" met1:kieliKoodi="fi" met1:muuTunnus="266213" met1:tilaKoodi="Hyväksytty" met1:versioTeksti="1.1" vsk1:puheenvuoroAloitusHetki="2020-04-24T13:54:10" vsk1:puheenvuoroJNro="1" vsk1:puheenvuoroLopetusHetki="2020-04-24T13:56:16">
+                                <vsk:KohtaSisalto>
+                                    <sis:KappaleKooste>Arvoisa puhemies! Tämä tilanne kyllä todellakin vaatii tämän esillä olevan esityksen hyväksymistä, koska tilanne on se, että se — niin kuin aikaisemmatkin puheenvuorot ovat olleet salissa — tarkoittaa sitä, että monia kokouksia olisi haasteellista järjestää. Tilanne on vielä se, että vaikka nyt on annettu vähän hyväksyntää sille, että niitä siirrellään syksyyn, niin just mediassakin on ollut, että riskiryhmäläisille saattavat kuitenkin karanteenit vielä iskeä vähän pitempään, ja aika usein monen yhdistyksen toiminnassa on mukana eläkeläisiä sen takia, että heillä on aika usein aikaa paneutua näihin juttuihin. Aika monessakin yhdistyksessä jossain muodossa on riskiryhmäläisiä varmasti mukana.</sis:KappaleKooste>
+                                    <sis:KappaleKooste>Tässä jopa tavallansa vahingossa tehdään kyllä sitä, että päästään opettelemaan tähän hommaan, mikä tulee kuitenkin olemaan tulevaisuutta. Vaikka tässä puhutaan Skypesta ja Teamsistä ja näistä, niin tilanne on se, että kun ruvetaan miettimään oikeasti tätä juttua, aika monta kokousta tulee varmasti olemaan viimeistään 10 vuoden päästä ja 20 vuoden päästä suurin osa niin, että on 360-kameroita ja muutenkin virtuaalihommaa. Kun me saamme tavallansa luotua jopa sinne omaan vessaan tai komeroon tilanteen, jossa näyttää siltä, että me seisomme täällä, puhumattakaan siitä, että varmasti kymmenen vuoden aikana tulee jo sitäkin teknologiaa, että kun joku virtuaalisesti koskee toista, niin se toinen tuntee sen, ja tällaisia hommia. Tämä on jopa sattumaa, että me varmaan saamme tästä semmoisen pikku loikan siihen, että uskallamme lähteä, kun etenkään aikaisemmin ei ole välttämättä uskallettu lähteä kokeilemaan niitä, ja nytten sitten, kun on pakko uskaltaa, lähdetään ja huomataan, että ei tämä olekaan niin vaarallista kuin miltä tämä ensin tuntuu. </sis:KappaleKooste>
+                                    <sis:KappaleKooste>Elikkä kannatan tosiaankin tätä esitystä.</sis:KappaleKooste>
+                                </vsk:KohtaSisalto>
+                            </vsk:PuheenvuoroOsa>
+                        </vsk:PuheenvuoroToimenpide>
+                        <vsk:PuheenvuoroToimenpide met1:muuTunnus="418244" vsk1:puheenvuoroAloitusHetki="2020-04-24T13:56:16" vsk1:puheenvuoroLuokitusKoodi="T">
+                            <vsk1:AjankohtaTeksti>13.56</vsk1:AjankohtaTeksti>
+                            <met:Toimija>
+                                <org:Henkilo met1:muuTunnus="464">
+                                    <org1:EtuNimi>Kimmo</org1:EtuNimi>
+                                    <org1:SukuNimi>Kiljunen</org1:SukuNimi>
+                                    <org1:LisatietoTeksti>sd</org1:LisatietoTeksti>
+                                </org:Henkilo>
+                            </met:Toimija>
+                            <vsk:PuheenvuoroOsa met1:asiakirjatyyppiNimi="Puheenvuoro" met1:kieliKoodi="fi" met1:muuTunnus="266214" met1:tilaKoodi="Hyväksytty" met1:versioTeksti="1.1" vsk1:puheenvuoroAloitusHetki="2020-04-24T13:56:16" vsk1:puheenvuoroJNro="1" vsk1:puheenvuoroLopetusHetki="2020-04-24T13:59:24">
+                                <vsk:KohtaSisalto>
+                                    <sis:KappaleKooste>Arvoisa puhemies! Tässä yhteydessä, kun meillä on tämä koronakriisi päällä ja meidän täytyy välttää näitä lähikontakteja, on ihan paikallaan, että etätoimintoihin luodaan tilaa ja myöskin yhdistyksien ja muiden sääntömääräiset kokoukset voitaisiin juoksuttaa etäkokouksina. Sille on perusteensa, niin kuin tässä julkisessa päätöksenteossakin, että me toimimme etänä, se on varmasti aivan tarkoituksenmukaista. Edustajat itse asiassa kaikissa näissä kolmessa edellisessä puheenvuorossa totesivat myöskin jatkoksi sen, että tässähän on meillä myöskin mallia tulevaisuudelle. Tähänkin voin yhtyä, että tämän koronaviruksen aikana tehdyissä uudistuksissa on varmasti paljon hyödyllisiä ideoita, joille on käyttöä myöskin jatkossa. Yhtenä on juuri tämä etätoimintojenkin mahdollistaminen. Jotkut ovat käyttäneet näitä tukimuotojakin esimerkkinä siitä, että vaikkapa perustuloa ikään kuin ollaan synnyttämässä täällä nyt näillä tietyntyyppisillä tuloratkaisuilla.</sis:KappaleKooste>
+                                    <sis:KappaleKooste>Palaten tähän etäkeskusteluun haluaisin kuitenkin laittaa tähän varoittavan sanan — varoittavan sanan: Minusta on riski siinä, että me lähtisimme ikään kuin idealisoimaan sitä tilannetta, että me edelleen yhä pidemmälle atomisoimme tämän yhteiskunnan niin, että me hajaannumme kaikki toisistamme, meillä ei ole sosiaalista kontaktipintaa, me emme kohtaa ihmisiä ihmisinä vaan virtuaalisissa muodoissa. Täällä viitattiin eläkeläisiin, vanhuksiin, ikäihmisiin, jotka kokoustavat paljon, ja useimmissa niissä kokoustamistilanteissa tarkoituksena ei ole itse se asia, minkä vuoksi ollaan tultu siihen kokoukseen, tilinpäätöksen hyväksyminen tai joku muu formaliteetti, vaan ennen kaikkea se, että kohdataan ihminen, kahvitellaan, ollaan yhdessä, voidaan jutella, nähdään ihminen, kun muutenkin yksinäisyys on iäkkäille ihmisille se varsinainen kansantauti. Eli voimakas varoituksen sana siitä, että ei ruveta idealisoimaan näitä etätoimintoja niin pitkälle, että näkisimme, että tulevaisuus on pelkkiä virtuaalitoimintoja.</sis:KappaleKooste>
+                                    <sis:KappaleKooste>Haluaisin, arvoisa puhemies, tähän sanoa vielä sen seikan, että jos me menemme näihin etätoimintoihin, se automaattisesti tarkoittaa sisällöllisesti myöskin vallan keskittymistä. Valta väkisin keskittyy näissä etätoiminnoissa valmistelijoille ja sen prosessin vetäjille. Tämä on aivan automaattinen seuraus siitä, ja sen takia tämä perinteinen kokoustaminen, yhdessäolo, on huomattavasti luontevampi tapa ihmisten kommunikoida keskenään, nähdä se elävä tilanne, katseet, ilmeet, olemus, kaikki — se on ihan eri asia kuin se, että viesti tulee etäältä virtuaalisena. Voimakas varoituksen sana siihen, ettei idealisoida tätä etätoimintaa.</sis:KappaleKooste>
+                                </vsk:KohtaSisalto>
+                            </vsk:PuheenvuoroOsa>
+                        </vsk:PuheenvuoroToimenpide>
+                    </vsk:KeskusteluToimenpide>
+                    <vsk:PaatoksentekoToimenpide met1:muuTunnus="417144" vsk1:fraasiTunnus="P_2K_1">
+                        <vsk:KohtaSisalto>
+                            <sis:KappaleKooste>Keskustelu päättyi.</sis:KappaleKooste>
+                            <sis:KappaleKooste>Eduskunta hyväksyi ensimmäisessä käsittelyssä sisällöltään päätetyn, hallituksen esitykseen HE 45/2020 vp sisältyvän lakiehdotuksen. Lakiehdotuksen toinen käsittely päättyi. Asian käsittely päättyi.</sis:KappaleKooste>
+                        </vsk:KohtaSisalto>
+                    </vsk:PaatoksentekoToimenpide>
+                </vsk:Asiakohta>
+            </ptk:PoytakirjaAsiakohta>
+        </RakenneAsiakirja>
+    </SiirtoAsiakirja>
+    <SiirtoTiedosto xmlns="http://www.eduskunta.fi/skeemat/siirtokooste/2011/05/17">
+        <Document xmlns="http://www.arkisto.fi/skeemat/sahke2/2011/01/31_vnk">
+            <NativeId>{68209B8C-4EB7-CE22-860B-71F34AA00000}</NativeId>
+            <UseType>Julkaisu</UseType>
+            <File>
+                <Name>68209B8C-4EB7-CE22-860B-71F34AA00000.pdf</Name>
+                <Path>sftp://intpurnukka.eduskunta.fi:22/home/vaskijul/liitteet/tojulkvp/68209B8C-4EB7-CE22-860B-71F34AA00000.pdf</Path>
+            </File>
+            <Format>
+                <Name>application/pdf</Name>
+                <Version/>
+            </Format>
+            <HashAlgorithm>MD5</HashAlgorithm>
+            <HashValue>5de2eba67f789d6781b003f0b1c4acad</HashValue>
+        </Document>
+    </SiirtoTiedosto>
+</ns11:Siirto>

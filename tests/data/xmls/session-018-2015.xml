@@ -1,0 +1,1313 @@
+<ns11:Siirto xmlns:ns11="http://www.eduskunta.fi/skeemat/siirto/2011/09/07">
+    <Sanomavalitys xmlns="http://www.eduskunta.fi/skeemat/siirtokooste/2011/05/17">
+        <ns4:SanomatyyppiNimi xmlns:ns4="http://www.eduskunta.fi/skeemat/siirtoelementit/2011/05/17">VASKI_JULKVP_Record_fi</ns4:SanomatyyppiNimi>
+        <ns4:SanomaTunnus xmlns:ns4="http://www.eduskunta.fi/skeemat/siirtoelementit/2011/05/17">Vaski_VASKI_JULKVP_Record_fi_21-marras-2018_13:48:06:423_EET</ns4:SanomaTunnus>
+        <ns4:LuontiHetki xmlns:ns4="http://www.eduskunta.fi/skeemat/siirtoelementit/2011/05/17">2018-11-21T13:48:06.423+02:00</ns4:LuontiHetki>
+        <ns4:SiirtoKoodi xmlns:ns4="http://www.eduskunta.fi/skeemat/siirtoelementit/2011/05/17">paivitys</ns4:SiirtoKoodi>
+        <Toimija xmlns="http://www.vn.fi/skeemat/metatietokooste/2010/04/27"
+            xmlns:s443="http://www.vn.fi/skeemat/metatietoelementit/2010/04/27" s443:rooliKoodi="lahettaja">
+            <s443:YhteisoTeksti>Eduskunta</s443:YhteisoTeksti>
+        </Toimija>
+        <Toimija xmlns="http://www.vn.fi/skeemat/metatietokooste/2010/04/27"
+            xmlns:s444="http://www.vn.fi/skeemat/metatietoelementit/2010/04/27" s444:rooliKoodi="vastaanottaja">
+            <s444:YhteisoTeksti>Eduskunta</s444:YhteisoTeksti>
+        </Toimija>
+    </Sanomavalitys>
+    <ns11:SiirtoMetatieto>
+        <jme:JulkaisuMetatieto xmlns:asi="http://www.vn.fi/skeemat/asiakirjakooste/2010/04/27"
+            xmlns:asi1="http://www.vn.fi/skeemat/asiakirjaelementit/2010/04/27"
+            xmlns:jme="http://www.eduskunta.fi/skeemat/julkaisusiirtokooste/2011/12/20"
+            xmlns:met="http://www.vn.fi/skeemat/metatietokooste/2010/04/27"
+            xmlns:met1="http://www.vn.fi/skeemat/metatietoelementit/2010/04/27"
+            xmlns:org="http://www.vn.fi/skeemat/organisaatiokooste/2010/02/15"
+            xmlns:org1="http://www.vn.fi/skeemat/organisaatioelementit/2010/02/15"
+            xmlns:sii="http://www.eduskunta.fi/skeemat/siirtokooste/2011/05/17"
+            xmlns:sii1="http://www.eduskunta.fi/skeemat/siirtoelementit/2011/05/17"
+            xmlns:sis="http://www.vn.fi/skeemat/sisaltokooste/2010/04/27"
+            xmlns:sis1="http://www.vn.fi/skeemat/sisaltoelementit/2010/04/27"
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" met1:asiakirjatyyppiNimi="Pöytäkirja" met1:eduskuntaTunnus="PTK 18/2015 vp" met1:identifiointiTunnus="{8B572B27-36F0-CD34-87D8-673618C00000}" met1:kieliKoodi="fi" met1:laadintaPvm="2015-06-10" met1:muuTunnus="EDK-2015-AK-6175" met1:paatehtavaKoodi="00 00 03 Poliittinen ohjaus">
+            <asi:IdentifiointiOsa>
+                <met1:AsiakirjatyyppiNimi>Pöytäkirja</met1:AsiakirjatyyppiNimi>
+                <asi:EduskuntaTunniste>
+                    <met1:AsiakirjatyyppiKoodi>PTK</met1:AsiakirjatyyppiKoodi>
+                    <asi1:AsiakirjaNroTeksti>18</asi1:AsiakirjaNroTeksti>
+                    <asi1:ValtiopaivavuosiTeksti>2015</asi1:ValtiopaivavuosiTeksti>
+                </asi:EduskuntaTunniste>
+                <met:Toimija met1:rooliKoodi="Laatija">
+                    <met1:YhteisoTeksti>Täysistunto</met1:YhteisoTeksti>
+                </met:Toimija>
+                <met1:LaadintaPvmTeksti>10.06.2015</met1:LaadintaPvmTeksti>
+                <met:Nimeke met1:vaihtoehtoinenNimekeTeksti="">
+                    <met1:NimekeTeksti>Keskiviikko 10.6.2015 klo 14.08—15.15</met1:NimekeTeksti>
+                </met:Nimeke>
+            </asi:IdentifiointiOsa>
+            <sii:EsitysmuotoViite met1:muuTunnus="{8B572B27-36F0-CD34-87D8-673618C00000}"/>
+        </jme:JulkaisuMetatieto>
+    </ns11:SiirtoMetatieto>
+    <SiirtoAsiakirja xmlns="http://www.eduskunta.fi/skeemat/siirtokooste/2011/05/17">
+        <RakenneAsiakirja>
+            <ptk:Poytakirja xmlns:asi="http://www.vn.fi/skeemat/asiakirjakooste/2010/04/27"
+                xmlns:asi1="http://www.vn.fi/skeemat/asiakirjaelementit/2010/04/27"
+                xmlns:elu="http://www.eduskunta.fi/skeemat/ehdotusluettelo/2014/07/28"
+                xmlns:fra="http://www.eduskunta.fi/skeemat/fraasikooste/2011/01/04"
+                xmlns:fra1="http://www.eduskunta.fi/skeemat/fraasielementit/2011/01/04"
+                xmlns:met="http://www.vn.fi/skeemat/metatietokooste/2010/04/27"
+                xmlns:met1="http://www.vn.fi/skeemat/metatietoelementit/2010/04/27"
+                xmlns:mix="http://www.loc.gov/mix/v20"
+                xmlns:narc="http://www.arkisto.fi/skeemat/sahke2/2011/01/31_vnk"
+                xmlns:org="http://www.vn.fi/skeemat/organisaatiokooste/2010/02/15"
+                xmlns:org1="http://www.vn.fi/skeemat/organisaatioelementit/2010/02/15"
+                xmlns:ptk="http://www.eduskunta.fi/skeemat/poytakirja/2011/01/28"
+                xmlns:saa="http://www.vn.fi/skeemat/saadoskooste/2010/04/27"
+                xmlns:saa1="http://www.vn.fi/skeemat/saadoselementit/2010/04/27"
+                xmlns:sis="http://www.vn.fi/skeemat/sisaltokooste/2010/04/27"
+                xmlns:sis1="http://www.vn.fi/skeemat/sisaltoelementit/2010/04/27"
+                xmlns:tau="http://www.vn.fi/skeemat/taulukkokooste/2010/04/27"
+                xmlns:vsk="http://www.eduskunta.fi/skeemat/vaskikooste/2011/01/04"
+                xmlns:vsk1="http://www.eduskunta.fi/skeemat/vaskielementit/2011/01/04"
+                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" met1:asiakirjatyyppiNimi="Pöytäkirja" met1:eduskuntaTunnus="PTK 18/2015 vp" met1:identifiointiTunnus="c9b26743-8fa3-4dfa-aca0-3d0daefc25e2" met1:kieliKoodi="fi" met1:laadintaPvm="2018-11-21" met1:muuTunnus="c9b26743-8fa3-4dfa-aca0-3d0daefc25e2" met1:rakennemaarittelyNimi="eduskunnanpoytakirja.xsd" met1:tilaKoodi="Valmis" met1:versioTeksti="5.1" vsk1:kokousAloitusHetki="2015-06-10T14:00:00" vsk1:kokousLopetusHetki="2015-06-10T15:00:00">
+                <asi:IdentifiointiOsa>
+                    <met1:AsiakirjatyyppiNimi>Pöytäkirja</met1:AsiakirjatyyppiNimi>
+                    <asi:EduskuntaTunniste>
+                        <met1:AsiakirjatyyppiKoodi>PTK</met1:AsiakirjatyyppiKoodi>
+                        <asi1:AsiakirjaNroTeksti>18</asi1:AsiakirjaNroTeksti>
+                        <asi1:ValtiopaivavuosiTeksti>2015 vp</asi1:ValtiopaivavuosiTeksti>
+                    </asi:EduskuntaTunniste>
+                    <met:Toimija met1:rooliKoodi="Laatija">
+                        <met1:YhteisoTeksti>Täysistunto</met1:YhteisoTeksti>
+                    </met:Toimija>
+                    <met:Nimeke>
+                        <met1:NimekeTeksti>Keskiviikko 10.6.2015 klo 14.08—15.15</met1:NimekeTeksti>
+                    </met:Nimeke>
+                </asi:IdentifiointiOsa>
+                <asi:SisaltoKuvaus>
+                    <sis:KappaleKooste>Täysistunto alkoi klo 14.08. Täysistunto päättyi klo 15.15.</sis:KappaleKooste>
+                    <sis:KappaleKooste>Puhetta johti puhemies Maria Lohela (14.08—15.15).</sis:KappaleKooste>
+                </asi:SisaltoKuvaus>
+                <vsk:MuuAsiakohta met1:muuTunnus="772" vsk1:kasittelyvaiheKoodi="KOKNHU" vsk1:kohtaJNro="1" vsk1:kohtatyyppiKoodi="Asiakohta" vsk1:yleinenKasittelyvaiheKoodi="KOKOUS">
+                    <vsk1:KohtaNumero>1</vsk1:KohtaNumero>
+                    <sis1:OtsikkoTeksti>Nimenhuuto</sis1:OtsikkoTeksti>
+                    <vsk:KohtaAsiakirja vsk1:hyperlinkkiKoodi="EDK-2015-AK-6163">
+                        <met1:AsiakirjatyyppiNimi>Nimenhuutoraportti</met1:AsiakirjatyyppiNimi>
+                        <vsk1:TarkenneTeksti>Liite 1A</vsk1:TarkenneTeksti>
+                    </vsk:KohtaAsiakirja>
+                    <vsk:Toimenpide met1:muuTunnus="2428" vsk1:fraasiTunnus="K_106">
+                        <vsk:KohtaSisalto>
+                            <sis:KappaleKooste>Toimitettiin nimenhuuto.</sis:KappaleKooste>
+                        </vsk:KohtaSisalto>
+                    </vsk:Toimenpide>
+                    <sis:NeljannesTyhja/>
+                </vsk:MuuAsiakohta>
+                <vsk:MuuAsiakohta met1:muuTunnus="773" vsk1:kasittelyvaiheKoodi="KOKILM" vsk1:kohtaJNro="2" vsk1:kohtatyyppiKoodi="Asiakohta" vsk1:yleinenKasittelyvaiheKoodi="KOKOUS">
+                    <vsk1:KohtaNumero>2</vsk1:KohtaNumero>
+                    <sis1:OtsikkoTeksti>Ilmoituksia</sis1:OtsikkoTeksti>
+                </vsk:MuuAsiakohta>
+                <vsk:MuuAsiakohta met1:muuTunnus="1391" vsk1:kasittelyvaiheKoodi="KOKK" vsk1:kohtaJNro="3" vsk1:kohtatyyppiKoodi="Alikohta" vsk1:paakohtaTunnus="773" vsk1:yleinenKasittelyvaiheKoodi="KOKOUS">
+                    <vsk1:KohtaNumero>2.1</vsk1:KohtaNumero>
+                    <sis1:OtsikkoTeksti>Kertomukset</sis1:OtsikkoTeksti>
+                    <vsk:Toimenpide met1:muuTunnus="4404" vsk1:fraasiTunnus="K_134">
+                        <vsk:KohtaSisalto>
+                            <sis:KappaleKooste>Eduskunnalle on annettu Eduskunnan pankkivaltuuston kertomus 2014 (K 14/2015 vp).</sis:KappaleKooste>
+                        </vsk:KohtaSisalto>
+                    </vsk:Toimenpide>
+                </vsk:MuuAsiakohta>
+                <vsk:MuuAsiakohta met1:muuTunnus="1422" vsk1:kasittelyvaiheKoodi="KOKVKPJ" vsk1:kohtaJNro="4" vsk1:kohtatyyppiKoodi="Alikohta" vsk1:paakohtaTunnus="773" vsk1:yleinenKasittelyvaiheKoodi="KOKOUS">
+                    <vsk1:KohtaNumero>2.2</vsk1:KohtaNumero>
+                    <sis1:OtsikkoTeksti>Valiokuntien puheenjohtajat ja varapuheenjohtajat</sis1:OtsikkoTeksti>
+                    <vsk:Toimenpide met1:muuTunnus="4580" vsk1:fraasiTunnus="KOKVKPJ_1">
+                        <vsk:KohtaSisalto>
+                            <vsk:PuheenjohtajaRepliikki>
+                                <vsk1:PuheenjohtajaTeksti>Puhemies Maria Lohela</vsk1:PuheenjohtajaTeksti>
+                                <sis:KappaleKooste>Valiokunnat ovat valinneet puheenjohtajansa ja varapuheenjohtajansa seuraavasti:</sis:KappaleKooste>
+                            </vsk:PuheenjohtajaRepliikki>
+                            <vsk:OsallistujaOsa>
+                                <asi1:JohdantoTeksti>Suuri valiokunta:</asi1:JohdantoTeksti>
+                                <met:Toimija>
+                                    <org:Henkilo met1:muuTunnus="948">
+                                        <org1:AsemaTeksti>puheenjohtajaksi</org1:AsemaTeksti>
+                                        <org1:EtuNimi>Anne-Mari</org1:EtuNimi>
+                                        <org1:SukuNimi>Virolainen</org1:SukuNimi>
+                                        <org1:LisatietoTeksti>kok</org1:LisatietoTeksti>
+                                    </org:Henkilo>
+                                </met:Toimija>
+                                <met:Toimija>
+                                    <org:Henkilo met1:muuTunnus="1150">
+                                        <org1:AsemaTeksti>I varapuheenjohtajaksi</org1:AsemaTeksti>
+                                        <org1:EtuNimi>Anne</org1:EtuNimi>
+                                        <org1:SukuNimi>Louhelainen</org1:SukuNimi>
+                                        <org1:LisatietoTeksti>ps</org1:LisatietoTeksti>
+                                    </org:Henkilo>
+                                </met:Toimija>
+                                <met:Toimija>
+                                    <org:Henkilo met1:muuTunnus="1126">
+                                        <org1:AsemaTeksti>II varapuheenjohtajaksi</org1:AsemaTeksti>
+                                        <org1:EtuNimi>Tytti</org1:EtuNimi>
+                                        <org1:SukuNimi>Tuppurainen</org1:SukuNimi>
+                                        <org1:LisatietoTeksti>sd</org1:LisatietoTeksti>
+                                    </org:Henkilo>
+                                </met:Toimija>
+                            </vsk:OsallistujaOsa>
+                            <vsk:OsallistujaOsa>
+                                <asi1:JohdantoTeksti>Perustuslakivaliokunta:</asi1:JohdantoTeksti>
+                                <met:Toimija>
+                                    <org:Henkilo met1:muuTunnus="479">
+                                        <org1:AsemaTeksti>puheenjohtajaksi</org1:AsemaTeksti>
+                                        <org1:EtuNimi>Annika</org1:EtuNimi>
+                                        <org1:SukuNimi>Lapintie</org1:SukuNimi>
+                                        <org1:LisatietoTeksti>vas</org1:LisatietoTeksti>
+                                    </org:Henkilo>
+                                </met:Toimija>
+                                <met:Toimija>
+                                    <org:Henkilo met1:muuTunnus="800">
+                                        <org1:AsemaTeksti>varapuheenjohtajaksi</org1:AsemaTeksti>
+                                        <org1:EtuNimi>Tapani</org1:EtuNimi>
+                                        <org1:SukuNimi>Tölli</org1:SukuNimi>
+                                        <org1:LisatietoTeksti>kesk</org1:LisatietoTeksti>
+                                    </org:Henkilo>
+                                </met:Toimija>
+                            </vsk:OsallistujaOsa>
+                            <vsk:OsallistujaOsa>
+                                <asi1:JohdantoTeksti>Ulkoasiainvaliokunta:</asi1:JohdantoTeksti>
+                                <met:Toimija>
+                                    <org:Henkilo met1:muuTunnus="772">
+                                        <org1:AsemaTeksti>puheenjohtajaksi</org1:AsemaTeksti>
+                                        <org1:EtuNimi>Antti</org1:EtuNimi>
+                                        <org1:SukuNimi>Kaikkonen</org1:SukuNimi>
+                                        <org1:LisatietoTeksti>kesk</org1:LisatietoTeksti>
+                                    </org:Henkilo>
+                                </met:Toimija>
+                                <met:Toimija>
+                                    <org:Henkilo met1:muuTunnus="259">
+                                        <org1:AsemaTeksti>varapuheenjohtajaksi</org1:AsemaTeksti>
+                                        <org1:EtuNimi>Pertti</org1:EtuNimi>
+                                        <org1:SukuNimi>Salolainen</org1:SukuNimi>
+                                        <org1:LisatietoTeksti>kok</org1:LisatietoTeksti>
+                                    </org:Henkilo>
+                                </met:Toimija>
+                            </vsk:OsallistujaOsa>
+                            <vsk:OsallistujaOsa>
+                                <asi1:JohdantoTeksti>Valtiovarainvaliokunta:</asi1:JohdantoTeksti>
+                                <met:Toimija>
+                                    <org:Henkilo met1:muuTunnus="402">
+                                        <org1:AsemaTeksti>puheenjohtajaksi</org1:AsemaTeksti>
+                                        <org1:EtuNimi>Timo</org1:EtuNimi>
+                                        <org1:SukuNimi>Kalli</org1:SukuNimi>
+                                        <org1:LisatietoTeksti>kesk</org1:LisatietoTeksti>
+                                    </org:Henkilo>
+                                </met:Toimija>
+                                <met:Toimija>
+                                    <org:Henkilo met1:muuTunnus="1116">
+                                        <org1:AsemaTeksti>varapuheenjohtajaksi</org1:AsemaTeksti>
+                                        <org1:EtuNimi>Maria</org1:EtuNimi>
+                                        <org1:SukuNimi>Tolppanen</org1:SukuNimi>
+                                        <org1:LisatietoTeksti>ps</org1:LisatietoTeksti>
+                                    </org:Henkilo>
+                                </met:Toimija>
+                            </vsk:OsallistujaOsa>
+                            <vsk:OsallistujaOsa>
+                                <asi1:JohdantoTeksti>Tarkastusvaliokunta:</asi1:JohdantoTeksti>
+                                <met:Toimija>
+                                    <org:Henkilo met1:muuTunnus="768">
+                                        <org1:AsemaTeksti>puheenjohtajaksi</org1:AsemaTeksti>
+                                        <org1:EtuNimi>Eero</org1:EtuNimi>
+                                        <org1:SukuNimi>Heinäluoma</org1:SukuNimi>
+                                        <org1:LisatietoTeksti>sd</org1:LisatietoTeksti>
+                                    </org:Henkilo>
+                                </met:Toimija>
+                                <met:Toimija>
+                                    <org:Henkilo met1:muuTunnus="392">
+                                        <org1:AsemaTeksti>varapuheenjohtajaksi</org1:AsemaTeksti>
+                                        <org1:EtuNimi>Olavi</org1:EtuNimi>
+                                        <org1:SukuNimi>Ala-Nissilä</org1:SukuNimi>
+                                        <org1:LisatietoTeksti>kesk</org1:LisatietoTeksti>
+                                    </org:Henkilo>
+                                </met:Toimija>
+                            </vsk:OsallistujaOsa>
+                            <vsk:OsallistujaOsa>
+                                <asi1:JohdantoTeksti>Hallintovaliokunta:</asi1:JohdantoTeksti>
+                                <met:Toimija>
+                                    <org:Henkilo met1:muuTunnus="1152">
+                                        <org1:AsemaTeksti>puheenjohtajaksi</org1:AsemaTeksti>
+                                        <org1:EtuNimi>Pirkko</org1:EtuNimi>
+                                        <org1:SukuNimi>Mattila</org1:SukuNimi>
+                                        <org1:LisatietoTeksti>ps</org1:LisatietoTeksti>
+                                    </org:Henkilo>
+                                </met:Toimija>
+                                <met:Toimija>
+                                    <org:Henkilo met1:muuTunnus="959">
+                                        <org1:AsemaTeksti>varapuheenjohtajaksi</org1:AsemaTeksti>
+                                        <org1:EtuNimi>Timo V.</org1:EtuNimi>
+                                        <org1:SukuNimi>Korhonen</org1:SukuNimi>
+                                        <org1:LisatietoTeksti>kesk</org1:LisatietoTeksti>
+                                    </org:Henkilo>
+                                </met:Toimija>
+                            </vsk:OsallistujaOsa>
+                            <vsk:OsallistujaOsa>
+                                <asi1:JohdantoTeksti>Lakivaliokunta:</asi1:JohdantoTeksti>
+                                <met:Toimija>
+                                    <org:Henkilo met1:muuTunnus="1118">
+                                        <org1:AsemaTeksti>puheenjohtajaksi</org1:AsemaTeksti>
+                                        <org1:EtuNimi>Kari</org1:EtuNimi>
+                                        <org1:SukuNimi>Tolvanen</org1:SukuNimi>
+                                        <org1:LisatietoTeksti>kok</org1:LisatietoTeksti>
+                                    </org:Henkilo>
+                                </met:Toimija>
+                                <met:Toimija>
+                                    <org:Henkilo met1:muuTunnus="351">
+                                        <org1:AsemaTeksti>varapuheenjohtajaksi</org1:AsemaTeksti>
+                                        <org1:EtuNimi>Eva</org1:EtuNimi>
+                                        <org1:SukuNimi>Biaudet</org1:SukuNimi>
+                                        <org1:LisatietoTeksti>r</org1:LisatietoTeksti>
+                                    </org:Henkilo>
+                                </met:Toimija>
+                            </vsk:OsallistujaOsa>
+                            <vsk:OsallistujaOsa>
+                                <asi1:JohdantoTeksti>Liikenne- ja viestintävaliokunta:</asi1:JohdantoTeksti>
+                                <met:Toimija>
+                                    <org:Henkilo met1:muuTunnus="1124">
+                                        <org1:AsemaTeksti>puheenjohtajaksi</org1:AsemaTeksti>
+                                        <org1:EtuNimi>Ari</org1:EtuNimi>
+                                        <org1:SukuNimi>Jalonen</org1:SukuNimi>
+                                        <org1:LisatietoTeksti>ps</org1:LisatietoTeksti>
+                                    </org:Henkilo>
+                                </met:Toimija>
+                                <met:Toimija>
+                                    <org:Henkilo met1:muuTunnus="962">
+                                        <org1:AsemaTeksti>varapuheenjohtajaksi</org1:AsemaTeksti>
+                                        <org1:EtuNimi>Mirja</org1:EtuNimi>
+                                        <org1:SukuNimi>Vehkaperä</org1:SukuNimi>
+                                        <org1:LisatietoTeksti>kesk</org1:LisatietoTeksti>
+                                    </org:Henkilo>
+                                </met:Toimija>
+                            </vsk:OsallistujaOsa>
+                            <vsk:OsallistujaOsa>
+                                <asi1:JohdantoTeksti>Maa- ja metsätalousvaliokunta:</asi1:JohdantoTeksti>
+                                <met:Toimija>
+                                    <org:Henkilo met1:muuTunnus="582">
+                                        <org1:AsemaTeksti>puheenjohtajaksi</org1:AsemaTeksti>
+                                        <org1:EtuNimi>Jari</org1:EtuNimi>
+                                        <org1:SukuNimi>Leppä</org1:SukuNimi>
+                                        <org1:LisatietoTeksti>kesk</org1:LisatietoTeksti>
+                                    </org:Henkilo>
+                                </met:Toimija>
+                                <met:Toimija>
+                                    <org:Henkilo met1:muuTunnus="1119">
+                                        <org1:AsemaTeksti>varapuheenjohtajaksi</org1:AsemaTeksti>
+                                        <org1:EtuNimi>Reijo</org1:EtuNimi>
+                                        <org1:SukuNimi>Hongisto</org1:SukuNimi>
+                                        <org1:LisatietoTeksti>ps</org1:LisatietoTeksti>
+                                    </org:Henkilo>
+                                </met:Toimija>
+                            </vsk:OsallistujaOsa>
+                            <vsk:OsallistujaOsa>
+                                <asi1:JohdantoTeksti>Puolustusvaliokunta:</asi1:JohdantoTeksti>
+                                <met:Toimija>
+                                    <org:Henkilo met1:muuTunnus="170">
+                                        <org1:AsemaTeksti>puheenjohtajaksi</org1:AsemaTeksti>
+                                        <org1:EtuNimi>Ilkka</org1:EtuNimi>
+                                        <org1:SukuNimi>Kanerva</org1:SukuNimi>
+                                        <org1:LisatietoTeksti>kok</org1:LisatietoTeksti>
+                                    </org:Henkilo>
+                                </met:Toimija>
+                                <met:Toimija>
+                                    <org:Henkilo met1:muuTunnus="1133">
+                                        <org1:AsemaTeksti>varapuheenjohtajaksi</org1:AsemaTeksti>
+                                        <org1:EtuNimi>Mika</org1:EtuNimi>
+                                        <org1:SukuNimi>Kari</org1:SukuNimi>
+                                        <org1:LisatietoTeksti>sd</org1:LisatietoTeksti>
+                                    </org:Henkilo>
+                                </met:Toimija>
+                            </vsk:OsallistujaOsa>
+                            <vsk:OsallistujaOsa>
+                                <asi1:JohdantoTeksti>Sivistysvaliokunta:</asi1:JohdantoTeksti>
+                                <met:Toimija>
+                                    <org:Henkilo met1:muuTunnus="946">
+                                        <org1:AsemaTeksti>puheenjohtajaksi</org1:AsemaTeksti>
+                                        <org1:EtuNimi>Tuomo</org1:EtuNimi>
+                                        <org1:SukuNimi>Puumala</org1:SukuNimi>
+                                        <org1:LisatietoTeksti>kesk</org1:LisatietoTeksti>
+                                    </org:Henkilo>
+                                </met:Toimija>
+                                <met:Toimija>
+                                    <org:Henkilo met1:muuTunnus="934">
+                                        <org1:AsemaTeksti>varapuheenjohtajaksi</org1:AsemaTeksti>
+                                        <org1:EtuNimi>Sanna</org1:EtuNimi>
+                                        <org1:SukuNimi>Lauslahti</org1:SukuNimi>
+                                        <org1:LisatietoTeksti>kok</org1:LisatietoTeksti>
+                                    </org:Henkilo>
+                                </met:Toimija>
+                            </vsk:OsallistujaOsa>
+                            <vsk:OsallistujaOsa>
+                                <asi1:JohdantoTeksti>Sosiaali- ja terveysvaliokunta:</asi1:JohdantoTeksti>
+                                <met:Toimija>
+                                    <org:Henkilo met1:muuTunnus="538">
+                                        <org1:AsemaTeksti>puheenjohtajaksi</org1:AsemaTeksti>
+                                        <org1:EtuNimi>Tuula</org1:EtuNimi>
+                                        <org1:SukuNimi>Haatainen</org1:SukuNimi>
+                                        <org1:LisatietoTeksti>sd</org1:LisatietoTeksti>
+                                    </org:Henkilo>
+                                </met:Toimija>
+                                <met:Toimija>
+                                    <org:Henkilo met1:muuTunnus="938">
+                                        <org1:AsemaTeksti>varapuheenjohtajaksi</org1:AsemaTeksti>
+                                        <org1:EtuNimi>Hannakaisa</org1:EtuNimi>
+                                        <org1:SukuNimi>Heikkinen</org1:SukuNimi>
+                                        <org1:LisatietoTeksti>kesk</org1:LisatietoTeksti>
+                                    </org:Henkilo>
+                                </met:Toimija>
+                            </vsk:OsallistujaOsa>
+                            <vsk:OsallistujaOsa>
+                                <asi1:JohdantoTeksti>Talousvaliokunta:</asi1:JohdantoTeksti>
+                                <met:Toimija>
+                                    <org:Henkilo met1:muuTunnus="1128">
+                                        <org1:AsemaTeksti>puheenjohtajaksi</org1:AsemaTeksti>
+                                        <org1:EtuNimi>Kaj</org1:EtuNimi>
+                                        <org1:SukuNimi>Turunen</org1:SukuNimi>
+                                        <org1:LisatietoTeksti>ps</org1:LisatietoTeksti>
+                                    </org:Henkilo>
+                                </met:Toimija>
+                                <met:Toimija>
+                                    <org:Henkilo met1:muuTunnus="972">
+                                        <org1:AsemaTeksti>varapuheenjohtajaksi</org1:AsemaTeksti>
+                                        <org1:EtuNimi>Harri</org1:EtuNimi>
+                                        <org1:SukuNimi>Jaskari</org1:SukuNimi>
+                                        <org1:LisatietoTeksti>kok</org1:LisatietoTeksti>
+                                    </org:Henkilo>
+                                </met:Toimija>
+                            </vsk:OsallistujaOsa>
+                            <vsk:OsallistujaOsa>
+                                <asi1:JohdantoTeksti>Tulevaisuusvaliokunta:</asi1:JohdantoTeksti>
+                                <met:Toimija>
+                                    <org:Henkilo met1:muuTunnus="1217">
+                                        <org1:AsemaTeksti>puheenjohtajaksi</org1:AsemaTeksti>
+                                        <org1:EtuNimi>Carl</org1:EtuNimi>
+                                        <org1:SukuNimi>Haglund</org1:SukuNimi>
+                                        <org1:LisatietoTeksti>r</org1:LisatietoTeksti>
+                                    </org:Henkilo>
+                                </met:Toimija>
+                                <met:Toimija>
+                                    <org:Henkilo met1:muuTunnus="1087">
+                                        <org1:AsemaTeksti>varapuheenjohtajaksi</org1:AsemaTeksti>
+                                        <org1:EtuNimi>Merja</org1:EtuNimi>
+                                        <org1:SukuNimi>Mäkisalo-Ropponen</org1:SukuNimi>
+                                        <org1:LisatietoTeksti>sd</org1:LisatietoTeksti>
+                                    </org:Henkilo>
+                                </met:Toimija>
+                            </vsk:OsallistujaOsa>
+                            <vsk:OsallistujaOsa>
+                                <asi1:JohdantoTeksti>Työelämä- ja tasa-arvovaliokunta:</asi1:JohdantoTeksti>
+                                <met:Toimija>
+                                    <org:Henkilo met1:muuTunnus="451">
+                                        <org1:AsemaTeksti>puheenjohtajaksi</org1:AsemaTeksti>
+                                        <org1:EtuNimi>Tarja</org1:EtuNimi>
+                                        <org1:SukuNimi>Filatov</org1:SukuNimi>
+                                        <org1:LisatietoTeksti>sd</org1:LisatietoTeksti>
+                                    </org:Henkilo>
+                                </met:Toimija>
+                                <met:Toimija>
+                                    <org:Henkilo met1:muuTunnus="930">
+                                        <org1:AsemaTeksti>varapuheenjohtajaksi</org1:AsemaTeksti>
+                                        <org1:EtuNimi>Heli</org1:EtuNimi>
+                                        <org1:SukuNimi>Järvinen</org1:SukuNimi>
+                                        <org1:LisatietoTeksti>vihr</org1:LisatietoTeksti>
+                                    </org:Henkilo>
+                                </met:Toimija>
+                            </vsk:OsallistujaOsa>
+                            <vsk:OsallistujaOsa>
+                                <asi1:JohdantoTeksti>Ympäristövaliokunta:</asi1:JohdantoTeksti>
+                                <met:Toimija>
+                                    <org:Henkilo met1:muuTunnus="363">
+                                        <org1:AsemaTeksti>puheenjohtajaksi</org1:AsemaTeksti>
+                                        <org1:EtuNimi>Satu</org1:EtuNimi>
+                                        <org1:SukuNimi>Hassi</org1:SukuNimi>
+                                        <org1:LisatietoTeksti>vihr</org1:LisatietoTeksti>
+                                    </org:Henkilo>
+                                </met:Toimija>
+                                <met:Toimija>
+                                    <org:Henkilo met1:muuTunnus="1153">
+                                        <org1:AsemaTeksti>varapuheenjohtajaksi</org1:AsemaTeksti>
+                                        <org1:EtuNimi>Silvia</org1:EtuNimi>
+                                        <org1:SukuNimi>Modig</org1:SukuNimi>
+                                        <org1:LisatietoTeksti>vas</org1:LisatietoTeksti>
+                                    </org:Henkilo>
+                                </met:Toimija>
+                            </vsk:OsallistujaOsa>
+                        </vsk:KohtaSisalto>
+                    </vsk:Toimenpide>
+                </vsk:MuuAsiakohta>
+                <vsk:Asiakohta met1:eduskuntaTunnus="VAP 3/2015 vp" met1:muuTunnus="1438" vsk1:kasittelyvaiheKoodi="AKAS" vsk1:kohtaJNro="5" vsk1:kohtatyyppiKoodi="Asiakohta" vsk1:yleinenKasittelyvaiheKoodi="AKAS">
+                    <vsk1:KohtaNumero>3</vsk1:KohtaNumero>
+                    <vsk:KohtaNimeke>
+                        <met1:NimekeTeksti>Stefan Wallinin vapautuspyyntö valtiovarainvaliokunnan varajäsenyydestä</met1:NimekeTeksti>
+                    </vsk:KohtaNimeke>
+                    <vsk:KohtaAsia>
+                        <met1:AsiakirjatyyppiNimi>Vapautuspyyntö</met1:AsiakirjatyyppiNimi>
+                        <met1:EduskuntaTunnus>VAP 3/2015 vp</met1:EduskuntaTunnus>
+                    </vsk:KohtaAsia>
+                    <vsk:Toimenpide met1:muuTunnus="4642" vsk1:fraasiTunnus="P_AKAS_7">
+                        <sis1:ValiotsikkoTeksti>Ainoa käsittely</sis1:ValiotsikkoTeksti>
+                        <vsk:KohtaSisalto>
+                            <vsk:PuheenjohtajaRepliikki>
+                                <vsk1:PuheenjohtajaTeksti>Puhemies Maria Lohela</vsk1:PuheenjohtajaTeksti>
+                                <sis:KappaleKooste>Ainoaan käsittelyyn esitellään päiväjärjestyksen <sis1:HarvaKursiiviTeksti>3.</sis1:HarvaKursiiviTeksti> asia. Stefan Wallin pyytää vapautusta valtiovarainvaliokunnan varajäsenyydestä.</sis:KappaleKooste>
+                                <sis:KappaleKooste>Puhemiesneuvosto puoltaa pyyntöä.</sis:KappaleKooste>
+                            </vsk:PuheenjohtajaRepliikki>
+                            <sis:KappaleKooste>Keskustelua ei syntynyt.</sis:KappaleKooste>
+                        </vsk:KohtaSisalto>
+                    </vsk:Toimenpide>
+                    <vsk:PaatoksentekoToimenpide met1:muuTunnus="4643" vsk1:fraasiTunnus="P_AKAS_6">
+                        <vsk:KohtaSisalto>
+                            <sis:KappaleKooste>Eduskunta hyväksyi vapautuspyynnön.</sis:KappaleKooste>
+                        </vsk:KohtaSisalto>
+                    </vsk:PaatoksentekoToimenpide>
+                    <vsk:PaatoksentekoToimenpide met1:muuTunnus="4644" vsk1:fraasiTunnus="P_AKAS 11">
+                        <vsk:KohtaSisalto>
+                            <sis:KappaleKooste>Täydennysvaali toimitetaan torstaina 11.6.2015 kello 16 pidettävässä täysistunnossa. Ehdokaslistat on jätettävä keskuskansliaan viimeistään torstaina 11.6.2015 kello 13.</sis:KappaleKooste>
+                        </vsk:KohtaSisalto>
+                    </vsk:PaatoksentekoToimenpide>
+                </vsk:Asiakohta>
+                <vsk:Asiakohta met1:eduskuntaTunnus="HE 3/2015 vp" met1:muuTunnus="1224" vsk1:kasittelyvaiheKoodi="2K" vsk1:kohtaJNro="6" vsk1:kohtatyyppiKoodi="Asiakohta" vsk1:yleinenKasittelyvaiheKoodi="2K">
+                    <vsk1:KohtaNumero>4</vsk1:KohtaNumero>
+                    <vsk:KohtaNimeke>
+                        <met1:NimekeTeksti>Hallituksen esitys eduskunnalle laiksi lukiolain 19 ja 28 §:n muuttamisesta</met1:NimekeTeksti>
+                    </vsk:KohtaNimeke>
+                    <vsk:KohtaAsia>
+                        <met1:AsiakirjatyyppiNimi>Hallituksen esitys</met1:AsiakirjatyyppiNimi>
+                        <met1:EduskuntaTunnus>HE 3/2015 vp</met1:EduskuntaTunnus>
+                    </vsk:KohtaAsia>
+                    <vsk:KohtaAsiakirja>
+                        <met1:AsiakirjatyyppiNimi>Valiokunnan mietintö</met1:AsiakirjatyyppiNimi>
+                        <met1:EduskuntaTunnus>SiVM 1/2015 vp</met1:EduskuntaTunnus>
+                    </vsk:KohtaAsiakirja>
+                    <vsk:Toimenpide met1:muuTunnus="3971" vsk1:fraasiTunnus="2K_2">
+                        <sis1:ValiotsikkoTeksti>Toinen käsittely</sis1:ValiotsikkoTeksti>
+                        <vsk:KohtaSisalto>
+                            <vsk:PuheenjohtajaRepliikki>
+                                <vsk1:PuheenjohtajaTeksti>Puhemies Maria Lohela</vsk1:PuheenjohtajaTeksti>
+                                <sis:KappaleKooste>Toiseen käsittelyyn esitellään päiväjärjestyksen <sis1:HarvaKursiiviTeksti>4.</sis1:HarvaKursiiviTeksti> asia. Nyt voidaan hyväksyä tai hylätä lakiehdotus, jonka sisällöstä päätettiin ensimmäisessä käsittelyssä.</sis:KappaleKooste>
+                            </vsk:PuheenjohtajaRepliikki>
+                            <sis:KappaleKooste>Keskustelua ei syntynyt.</sis:KappaleKooste>
+                        </vsk:KohtaSisalto>
+                    </vsk:Toimenpide>
+                    <vsk:PaatoksentekoToimenpide met1:muuTunnus="3972" vsk1:fraasiTunnus="P_2K_1">
+                        <vsk:KohtaSisalto>
+                            <sis:KappaleKooste>Eduskunta hyväksyi ensimmäisessä käsittelyssä sisällöltään päätetyn, hallituksen esitykseen HE 3/2015 vp sisältyvän lakiehdotuksen. Lakiehdotuksen toinen käsittely päättyi. Asian käsittely päättyi.</sis:KappaleKooste>
+                        </vsk:KohtaSisalto>
+                    </vsk:PaatoksentekoToimenpide>
+                </vsk:Asiakohta>
+                <vsk:Asiakohta met1:eduskuntaTunnus="HE 1/2015 vp" met1:muuTunnus="1225" vsk1:kasittelyvaiheKoodi="2K" vsk1:kohtaJNro="7" vsk1:kohtatyyppiKoodi="Asiakohta" vsk1:yleinenKasittelyvaiheKoodi="2K">
+                    <vsk1:KohtaNumero>5</vsk1:KohtaNumero>
+                    <vsk:KohtaNimeke>
+                        <met1:NimekeTeksti>Hallituksen esitys eduskunnalle laeiksi luottolaitosten ja sijoituspalveluyritysten kriisinratkaisusta  annetun lain 8 luvun muuttamisesta, sijoituspalvelulain 6 luvun 2 §:n muuttamisesta sekä rahoitusvakausviranomaisesta annetun lain 5 luvun muuttamisesta</met1:NimekeTeksti>
+                    </vsk:KohtaNimeke>
+                    <vsk:KohtaAsia>
+                        <met1:AsiakirjatyyppiNimi>Hallituksen esitys</met1:AsiakirjatyyppiNimi>
+                        <met1:EduskuntaTunnus>HE 1/2015 vp</met1:EduskuntaTunnus>
+                    </vsk:KohtaAsia>
+                    <vsk:KohtaAsiakirja>
+                        <met1:AsiakirjatyyppiNimi>Valiokunnan mietintö</met1:AsiakirjatyyppiNimi>
+                        <met1:EduskuntaTunnus>TaVM 1/2015 vp</met1:EduskuntaTunnus>
+                    </vsk:KohtaAsiakirja>
+                    <vsk:Toimenpide met1:muuTunnus="3973" vsk1:fraasiTunnus="2K_2">
+                        <sis1:ValiotsikkoTeksti>Toinen käsittely</sis1:ValiotsikkoTeksti>
+                        <vsk:KohtaSisalto>
+                            <vsk:PuheenjohtajaRepliikki>
+                                <vsk1:PuheenjohtajaTeksti>Puhemies Maria Lohela</vsk1:PuheenjohtajaTeksti>
+                                <sis:KappaleKooste>Toiseen käsittelyyn esitellään päiväjärjestyksen <sis1:HarvaKursiiviTeksti>5.</sis1:HarvaKursiiviTeksti> asia. Nyt voidaan hyväksyä tai hylätä lakiehdotukset, joiden sisällöstä päätettiin ensimmäisessä käsittelyssä.</sis:KappaleKooste>
+                            </vsk:PuheenjohtajaRepliikki>
+                            <sis:KappaleKooste>Keskustelua ei syntynyt.</sis:KappaleKooste>
+                        </vsk:KohtaSisalto>
+                    </vsk:Toimenpide>
+                    <vsk:PaatoksentekoToimenpide met1:muuTunnus="3978" vsk1:fraasiTunnus="P_2K_1">
+                        <vsk:KohtaSisalto>
+                            <sis:KappaleKooste>Eduskunta hyväksyi ensimmäisessä käsittelyssä sisällöltään päätetyt, hallituksen esitykseen HE 1/2015 vp sisältyvät 1.-3. lakiehdotuksen. Lakiehdotusten toinen käsittely päättyi. Asian käsittely päättyi.</sis:KappaleKooste>
+                        </vsk:KohtaSisalto>
+                    </vsk:PaatoksentekoToimenpide>
+                </vsk:Asiakohta>
+                <vsk:Asiakohta met1:eduskuntaTunnus="HE 4/2015 vp" met1:muuTunnus="1392" vsk1:kasittelyvaiheKoodi="1K" vsk1:kohtaJNro="8" vsk1:kohtatyyppiKoodi="Asiakohta" vsk1:yleinenKasittelyvaiheKoodi="1K">
+                    <vsk1:KohtaNumero>6</vsk1:KohtaNumero>
+                    <vsk:KohtaNimeke>
+                        <met1:NimekeTeksti>Hallituksen esitys eduskunnalle laiksi tietoyhteiskuntakaaren muuttamisesta</met1:NimekeTeksti>
+                    </vsk:KohtaNimeke>
+                    <vsk:KohtaAsia>
+                        <met1:AsiakirjatyyppiNimi>Hallituksen esitys</met1:AsiakirjatyyppiNimi>
+                        <met1:EduskuntaTunnus>HE 4/2015 vp</met1:EduskuntaTunnus>
+                    </vsk:KohtaAsia>
+                    <vsk:KohtaAsiakirja>
+                        <met1:AsiakirjatyyppiNimi>Valiokunnan mietintö</met1:AsiakirjatyyppiNimi>
+                        <met1:EduskuntaTunnus>LiVM 1/2015 vp</met1:EduskuntaTunnus>
+                    </vsk:KohtaAsiakirja>
+                    <vsk:Toimenpide met1:muuTunnus="4407" vsk1:fraasiTunnus="1K_5">
+                        <sis1:ValiotsikkoTeksti>Ensimmäinen käsittely</sis1:ValiotsikkoTeksti>
+                        <vsk:KohtaSisalto>
+                            <vsk:PuheenjohtajaRepliikki>
+                                <vsk1:PuheenjohtajaTeksti>Puhemies Maria Lohela</vsk1:PuheenjohtajaTeksti>
+                                <sis:KappaleKooste>Ensimmäiseen käsittelyyn esitellään päiväjärjestyksen <sis1:HarvaKursiiviTeksti>6.</sis1:HarvaKursiiviTeksti> asia. Käsittelyn pohjana on liikenne- ja viestintävaliokunnan mietintö LiVM 1/2015 vp. Nyt päätetään lakiehdotuksen sisällöstä.</sis:KappaleKooste>
+                            </vsk:PuheenjohtajaRepliikki>
+                        </vsk:KohtaSisalto>
+                    </vsk:Toimenpide>
+                    <vsk:KeskusteluToimenpide met1:muuTunnus="4933" vsk1:fraasiTunnus="KE_108">
+                        <sis1:ValiotsikkoTeksti>Keskustelu</sis1:ValiotsikkoTeksti>
+                        <vsk:PuheenvuoroToimenpide met1:muuTunnus="4936" vsk1:puheenvuoroAloitusHetki="2015-06-10T14:13:37" vsk1:puheenvuoroLuokitusKoodi="T">
+                            <vsk1:AjankohtaTeksti>14.13</vsk1:AjankohtaTeksti>
+                            <met:Toimija>
+                                <org:Henkilo met1:muuTunnus="1312">
+                                    <org1:EtuNimi>Hanna</org1:EtuNimi>
+                                    <org1:SukuNimi>Sarkkinen</org1:SukuNimi>
+                                    <org1:LisatietoTeksti>vas</org1:LisatietoTeksti>
+                                </org:Henkilo>
+                            </met:Toimija>
+                            <vsk:PuheenvuoroOsa met1:asiakirjatyyppiNimi="Puheenvuoro" met1:kieliKoodi="fi" met1:muuTunnus="2298" met1:tilaKoodi="Tarkistettu" met1:versioTeksti="1.1" vsk1:puheenvuoroAloitusHetki="2015-06-10T14:13:37" vsk1:puheenvuoroJNro="1" vsk1:puheenvuoroLopetusHetki="2015-06-10T14:15:43">
+                                <vsk:KohtaSisalto>
+                                    <sis:KappaleKooste> Arvoisa puhemies! Hallituksen esityksen mukaisesti on varmasti hyvä jatkaa määräaikaisesti matkapuhelinliittymien telemarkkinointikieltoa. Kukaan kansalainen ei ole kyllä ainakaan itselleni valittanut siitä, että enää eivät puhelinkauppiaat soittele kotiliittymiin ja ‑puhelimiin, ja myös operaattorit ovat olleet kohtuullisen tyytyväisiä tähän kieltoon.</sis:KappaleKooste>
+                                    <sis:KappaleKooste>Ongelmia on kuitenkin muussa puhelinmyynnissä ja telemarkkinoinnissa. Erityisesti nettiliittymien puhelinmyynnissä on ongelmia. On aggressiivista myyntiä, ja ihmisillä on epätietoisuutta siitä, mitä he ovat lopulta ostaneet. Lisäksi mielestäni on ongelmallista rajata vain puhelinliittymät telemarkkinointikiellon piiriin, kun viestintä- ja mobiilipalveluiden puhelinkauppa on laajempi aihe ja se on laajempi ongelma ja ongelmia on tosiaan tässä muidenkin tyyppisten sopimusten myynnissä.</sis:KappaleKooste>
+                                    <sis:KappaleKooste>Tämä laki tämänsisältöisenä on varmasti ihan hyvä, ja on hyvä määräaikaisesti jatkaa tätä, mutta näkisin, että sitten kun tämä laki on kulumassa umpeen, meidän on palattava asiaan ja on tehtävä joku lopullisempi ratkaisu tästä telemarkkinoinnista. Ei voida mennä tällaisen yhden sopimusalan määräaikaisuudella eteenpäin. Meidän täytyy tehdä ratkaisut, jotka ovat laajempia ja jotka koskevat viestintä-, tele- ja mobiilisopimusten puhelinmyyntiä laajemmin ja muutenkin puhelinmyynnin pelisääntöjä laajemmin. Varmaankin paras ratkaisu olisi se, että jatkossa puhelimessa tehty ostos pitäisi varmentaa kirjallisesti esimerkiksi sähköpostilla, tekstiviestillä tai kirjeellä. Meidän on ratkaistava jossain vaiheessa nämä puhelinmyynnissä olevat ongelmat ja käsiteltävä asia kokonaisvaltaisesti. — Kiitos. (Hälinää)</sis:KappaleKooste>
+                                    <vsk:PuheenjohtajaRepliikki>
+                                        <vsk1:PuheenjohtajaTeksti>Puhemies Maria Lohela</vsk1:PuheenjohtajaTeksti>
+                                        <sis:KappaleKooste>Pyydän salia hiljenemään.</sis:KappaleKooste>
+                                    </vsk:PuheenjohtajaRepliikki>
+                                </vsk:KohtaSisalto>
+                            </vsk:PuheenvuoroOsa>
+                        </vsk:PuheenvuoroToimenpide>
+                        <vsk:PuheenvuoroToimenpide met1:muuTunnus="4942" vsk1:puheenvuoroAloitusHetki="2015-06-10T14:15:48" vsk1:puheenvuoroLuokitusKoodi="T">
+                            <vsk1:AjankohtaTeksti>14.15</vsk1:AjankohtaTeksti>
+                            <met:Toimija>
+                                <org:Henkilo met1:muuTunnus="960">
+                                    <org1:EtuNimi>Krista</org1:EtuNimi>
+                                    <org1:SukuNimi>Kiuru</org1:SukuNimi>
+                                    <org1:LisatietoTeksti>sd</org1:LisatietoTeksti>
+                                </org:Henkilo>
+                            </met:Toimija>
+                            <vsk:PuheenvuoroOsa met1:asiakirjatyyppiNimi="Puheenvuoro" met1:kieliKoodi="fi" met1:muuTunnus="2299" met1:tilaKoodi="Tarkistettu" met1:versioTeksti="1.1" vsk1:puheenvuoroAloitusHetki="2015-06-10T14:15:48" vsk1:puheenvuoroJNro="1" vsk1:puheenvuoroLopetusHetki="2015-06-10T14:17:14">
+                                <vsk:KohtaSisalto>
+                                    <sis:KappaleKooste>Arvoisa puhemies! Minä kiitän edustaja Sarkkista siitä, että otitte tämän teeman esille. Monet täällä ajattelevat, että maailmaa on helppo parantaa niinkin, ettei se tunnu missään. Tämä on varmasti yksi sellainen pieni asia, mutta hienoa, että olemme saaneet sen kuntoon tällaisella väliaikaisella ratkaisulla, jota nyt sitten tässä esityksessä jatketaan. Olen iloinen siitä, että tässä salissa olemme löytäneet toisemme tämän asian korjaamisessa.</sis:KappaleKooste>
+                                    <sis:KappaleKooste>Kysymys on siis siitä, että hyvin paljon meillä aikaisemmin tuotti ongelmaa se, että puhelinyhtiöt myivät suoraan numerolla liittymiä, uusia liittymiä, myöskin sellaisille ihmisille, jotka eivät välttämättä hallinneet sitä, mitä tästä seuraa. Meillä oli paljon eläkeläisiä ja heidän omaisiaan valittamassa siitä, että ihmiselle oli saatettu myydä kolmekin liittymää, jolloin sitten numerot aina edeltävistä vaihdettiin, ja oli monenlaisia Viestintävirastoon tehtyjä valituksia, jotka johtivat siihen, että hyvin erikoinen käytäntö, joka meillä oli vallitseva käytäntö, saatiin kitkettyä tällä väliaikaisratkaisulla pois. Ja olen iloinen myös siitä, että ala tämän lopulta hyväksyi. Tämä oli iso päätös aikoinaan, ja hienoa, että nyt voimme täällä salissa olla siitä yksimielisiä, että tätä käytäntöä jopa väliaikaisena jatketaan. Ja yhdyn myös siihen, että tästä pitää tehdä pysyvä käytäntö.</sis:KappaleKooste>
+                                </vsk:KohtaSisalto>
+                            </vsk:PuheenvuoroOsa>
+                        </vsk:PuheenvuoroToimenpide>
+                        <vsk:PuheenvuoroToimenpide met1:muuTunnus="4943" vsk1:puheenvuoroAloitusHetki="2015-06-10T14:17:16" vsk1:puheenvuoroLuokitusKoodi="T">
+                            <vsk1:AjankohtaTeksti>14.17</vsk1:AjankohtaTeksti>
+                            <met:Toimija>
+                                <org:Henkilo met1:muuTunnus="1056">
+                                    <org1:EtuNimi>Kalle</org1:EtuNimi>
+                                    <org1:SukuNimi>Jokinen</org1:SukuNimi>
+                                    <org1:LisatietoTeksti>kok</org1:LisatietoTeksti>
+                                </org:Henkilo>
+                            </met:Toimija>
+                            <vsk:PuheenvuoroOsa met1:asiakirjatyyppiNimi="Puheenvuoro" met1:kieliKoodi="fi" met1:muuTunnus="2300" met1:tilaKoodi="Tarkistettu" met1:versioTeksti="1.1" vsk1:puheenvuoroAloitusHetki="2015-06-10T14:17:16" vsk1:puheenvuoroJNro="1" vsk1:puheenvuoroLopetusHetki="2015-06-10T14:18:48">
+                                <vsk:KohtaSisalto>
+                                    <sis:KappaleKooste>Arvoisa puhemies! Tämä hallituksen esityshän on jatkoa vuoden 2011 hallituksen esitykselle, joka vietiin viestintämarkkinalain 65 §:ään, ja tuo pykälä sinällään siirrettiin tietoyhteiskuntakaareen, jonka aiempi eduskunta sääti.</sis:KappaleKooste>
+                                    <sis:KappaleKooste>Kysymys on siis siitä, että matkapuhelinliittymiä ei saa markkinoida puhelimitse asiakkaille muuta kuin heidän omasta pyynnöstään. Tietysti kyseinen matkaviestinyhtiö, jossa asiakas on asiakkaana, voi markkinoida. Tämä ongelma nousi aikanaan esille siitä, että puhelinmarkkinointi oli varsin aggressiivista liittymien osalta, ja varsinkin monet ikäihmiset joutuivat tilanteeseen, jossa eivät edes tienneet, mitä he olivat ostaneet. Näistä tuli hyvin paljon kuluttajavalituksia. Nyt kun tämä puhelinmarkkinointikielto määräaikaisena on ollut voimassa, niin kuluttajavalitusten määrä on laskenut ja tilanne on rauhoittunut.</sis:KappaleKooste>
+                                    <sis:KappaleKooste>On erittäin hyvä asia, että tätä puhelinmarkkinointikieltoa nyt jatketaan kolmella vuodella, ja nyt tämän kolmen vuoden aikana tulee tilanne kyllä selkiyttää ja arvioida, tuleeko tästä tehdä pysyvä ja miten ylipäätään puhelinmarkkinointia sitten säännellään tässä maassa.</sis:KappaleKooste>
+                                </vsk:KohtaSisalto>
+                            </vsk:PuheenvuoroOsa>
+                        </vsk:PuheenvuoroToimenpide>
+                        <vsk:PuheenvuoroToimenpide met1:muuTunnus="4946" vsk1:puheenvuoroAloitusHetki="2015-06-10T14:18:50" vsk1:puheenvuoroLuokitusKoodi="T">
+                            <vsk1:AjankohtaTeksti>14.18</vsk1:AjankohtaTeksti>
+                            <met:Toimija>
+                                <org:Henkilo met1:muuTunnus="1120">
+                                    <org1:EtuNimi>Ari</org1:EtuNimi>
+                                    <org1:SukuNimi>Torniainen</org1:SukuNimi>
+                                    <org1:LisatietoTeksti>kesk</org1:LisatietoTeksti>
+                                </org:Henkilo>
+                            </met:Toimija>
+                            <vsk:PuheenvuoroOsa met1:asiakirjatyyppiNimi="Puheenvuoro" met1:kieliKoodi="fi" met1:muuTunnus="2302" met1:tilaKoodi="Tarkistettu" met1:versioTeksti="1.1" vsk1:puheenvuoroAloitusHetki="2015-06-10T14:18:50" vsk1:puheenvuoroJNro="1" vsk1:puheenvuoroLopetusHetki="2015-06-10T14:19:56">
+                                <vsk:KohtaSisalto>
+                                    <sis:KappaleKooste> Arvoisa rouva puhemies! Tietoyhteiskuntakaari oli viime eduskuntakauden yksi laajimpia kokonaisuuksia, joita päätettiin. Siihen samaan lakipakettiin yhdistettiin erittäin monta lakia, ja se on osoittautunut hyväksi asiaksi. Tämä puhelinmarkkinoinnin kieltäminen ja rajoittaminen oli myöskin yksi osa tätä, ja on tietysti hyvä nyt, että tätä määräaikaa jatketaan.</sis:KappaleKooste>
+                                    <sis:KappaleKooste>Hallituksen esitys on sen puoleen hyvä, mutta kun ensimmäinen puhuja kiinnitti huomiota siihen, että ei pitäisi pelkästään puhelinasioihin rajoittaa, niin liikenne- ja viestintävaliokunta on omassa mietintöluonnoksessaan myöskin kiinnittänyt samaan asiaan huomiota. Täällä on selvästi, että "valiokunta kiinnitti huomiota, että asiantuntijakuulemisissa on tuotu esille myös tarve löytää ratkaisuja yleisestikin erilaisten hyödykkeiden puhelinmyynnistä kuluttajille aiheutuviin ongelmiin". Tämä asia tulee myöskin ratkaista niin, että tätä kokonaisuutta katsotaan tulevaisuudessa. Toivon itse tätä.</sis:KappaleKooste>
+                                </vsk:KohtaSisalto>
+                            </vsk:PuheenvuoroOsa>
+                        </vsk:PuheenvuoroToimenpide>
+                    </vsk:KeskusteluToimenpide>
+                    <vsk:PaatoksentekoToimenpide met1:muuTunnus="4408" vsk1:fraasiTunnus="P_1K_1">
+                        <vsk:KohtaSisalto>
+                            <sis:KappaleKooste>Yleiskeskustelu päättyi.</sis:KappaleKooste>
+                            <sis:KappaleKooste>Eduskunta hyväksyi hallituksen esitykseen HE 4/2015 vp sisältyvän lakiehdotuksen sisällön mietinnön mukaisena. Lakiehdotuksen ensimmäinen käsittely päättyi.</sis:KappaleKooste>
+                        </vsk:KohtaSisalto>
+                    </vsk:PaatoksentekoToimenpide>
+                </vsk:Asiakohta>
+                <vsk:Asiakohta met1:eduskuntaTunnus="K 15/2015 vp" met1:muuTunnus="1228" vsk1:kasittelyvaiheKoodi="LK" vsk1:kohtaJNro="9" vsk1:kohtatyyppiKoodi="Asiakohta" vsk1:yleinenKasittelyvaiheKoodi="LK">
+                    <vsk1:KohtaNumero>7</vsk1:KohtaNumero>
+                    <vsk:KohtaNimeke>
+                        <met1:NimekeTeksti>Valtiontalouden  tarkastusviraston erilliskertomus eduskunnalle valtion vuoden 2014 tilinpäätöksen ja hallituksen vuosikertomuksen tarkastuksesta</met1:NimekeTeksti>
+                    </vsk:KohtaNimeke>
+                    <vsk:KohtaAsia>
+                        <met1:AsiakirjatyyppiNimi>Kertomus</met1:AsiakirjatyyppiNimi>
+                        <met1:EduskuntaTunnus>K 15/2015 vp</met1:EduskuntaTunnus>
+                    </vsk:KohtaAsia>
+                    <vsk:Toimenpide met1:muuTunnus="3979" vsk1:fraasiTunnus="P_LKN375_K">
+                        <sis1:ValiotsikkoTeksti>Lähetekeskustelu</sis1:ValiotsikkoTeksti>
+                        <vsk:KohtaSisalto>
+                            <vsk:PuheenjohtajaRepliikki>
+                                <vsk1:PuheenjohtajaTeksti>Puhemies Maria Lohela</vsk1:PuheenjohtajaTeksti>
+                                <sis:KappaleKooste>Lähetekeskustelua varten esitellään päiväjärjestyksen <sis1:HarvaKursiiviTeksti>7.</sis1:HarvaKursiiviTeksti> asia. Puhemiesneuvosto ehdottaa, että asia lähetetään tarkastusvaliokuntaan.</sis:KappaleKooste>
+                            </vsk:PuheenjohtajaRepliikki>
+                        </vsk:KohtaSisalto>
+                    </vsk:Toimenpide>
+                    <vsk:KeskusteluToimenpide met1:muuTunnus="4948" vsk1:fraasiTunnus="KE_108">
+                        <sis1:ValiotsikkoTeksti>Keskustelu</sis1:ValiotsikkoTeksti>
+                        <vsk:PuheenvuoroToimenpide met1:muuTunnus="4951" vsk1:puheenvuoroAloitusHetki="2015-06-10T14:20:23" vsk1:puheenvuoroLuokitusKoodi="T">
+                            <vsk1:AjankohtaTeksti>14.20</vsk1:AjankohtaTeksti>
+                            <met:Toimija>
+                                <org:Henkilo met1:muuTunnus="802">
+                                    <org1:EtuNimi>Markus</org1:EtuNimi>
+                                    <org1:SukuNimi>Mustajärvi</org1:SukuNimi>
+                                    <org1:LisatietoTeksti>vas</org1:LisatietoTeksti>
+                                </org:Henkilo>
+                            </met:Toimija>
+                            <vsk:PuheenvuoroOsa met1:asiakirjatyyppiNimi="Puheenvuoro" met1:kieliKoodi="fi" met1:muuTunnus="2310" met1:tilaKoodi="Tarkistettu" met1:versioTeksti="1.1" vsk1:puheenvuoroAloitusHetki="2015-06-10T14:20:23" vsk1:puheenvuoroJNro="1" vsk1:puheenvuoroLopetusHetki="2015-06-10T14:22:29">
+                                <vsk:KohtaSisalto>
+                                    <sis:KappaleKooste> Arvoisa puhemies! Kun lukee hallituksen vuosikertomusta ja sen liitettä, jossa ovat sitten valtion tilinpäätöslukemat, niin tulee hyvin selvästi esille sanojen, tekojen ja lukujen ristiriita. Olen monta kertaa aiemminkin nostanut esille sen, kuinka paljon työ- ja elinkeinoministeriön hallinnonalalla jätetään vuosittain käyttämättä eduskunnan myöntämiä työllisyysmäärärahoja tilanteessa, jossa eletään massatyöttömyyden aikaa. Työttömiä on työ- ja elinkeinoministeriön tilastointijärjestelmän mukaan 350 000, pitkäaikaistyöttömyys kasvaa, nuorten yhteiskuntatakuu ei toimi. Siitä huolimatta, kun katsotaan, mikä on sitten tilanne, vuonna 2012 momentilta 32.30.51 — elikkä juuri se momentti, jossa on julkisen työvoimapalvelun määrärahat — jätettiin käyttämättä 36 miljoonaa, 2013 kolminkertainen määrä, 95 miljoonaa, ja nyt sitten edellisiltä vuosilta siirtyneet, vuodenvaihteessa siirtyneet säästöt ovat jo 212 miljoonaa euroa. Eli sellainen summa on jätetty käyttämättä.</sis:KappaleKooste>
+                                    <sis:KappaleKooste>Periaatteessa, jos laskee yhteen viime vuoden varsinaisen talousarvion, lisätalousarvion ja nyt nämä edellisvuosien säästöt, työ- ja elinkeinoministeriöllä olisi ollut rahaa käytössään 717 miljoonaa euroa, josta on viime vuoden aikana käytetty vain 505 miljoonaa euroa, eli valtava summa on jätetty käyttämättä sellaisia määrärahoja, jotka olisivat kohdistuneet suoraan työttömiin, välittömästi työttömiin, työpaikkoina ja koulutuspaikkoina. Toivon kyllä, että vaikkapa tarkastusvaliokunta ja työelämä- ja tasa-arvovaliokunta ja mahdolliset muutkin elimet puuttuisivat tähän asiaan ihan toden teolla. Eduskunta on halunnut, että ne rahat käytetään työllisyyden edistämiseen, ja näin valtava pakkosäästö on toteutettu vuosi vuoden jälkeen.</sis:KappaleKooste>
+                                </vsk:KohtaSisalto>
+                            </vsk:PuheenvuoroOsa>
+                        </vsk:PuheenvuoroToimenpide>
+                        <vsk:PuheenvuoroToimenpide met1:muuTunnus="4955" vsk1:puheenvuoroAloitusHetki="2015-06-10T14:22:30" vsk1:puheenvuoroLuokitusKoodi="T">
+                            <vsk1:AjankohtaTeksti>14.22</vsk1:AjankohtaTeksti>
+                            <met:Toimija>
+                                <org:Henkilo met1:muuTunnus="301">
+                                    <org1:EtuNimi>Ben</org1:EtuNimi>
+                                    <org1:SukuNimi>Zyskowicz</org1:SukuNimi>
+                                    <org1:LisatietoTeksti>kok</org1:LisatietoTeksti>
+                                </org:Henkilo>
+                            </met:Toimija>
+                            <vsk:PuheenvuoroOsa met1:asiakirjatyyppiNimi="Puheenvuoro" met1:kieliKoodi="fi" met1:muuTunnus="2311" met1:tilaKoodi="Tarkistettu" met1:versioTeksti="1.1" vsk1:puheenvuoroAloitusHetki="2015-06-10T14:22:30" vsk1:puheenvuoroJNro="1" vsk1:puheenvuoroLopetusHetki="2015-06-10T14:24:35">
+                                <vsk:KohtaSisalto>
+                                    <sis:KappaleKooste>Arvoisa rouva puhemies! Täällä kertomuksen sivulla 11 kerrotaan, että Suomella on Kreikan valtiolta saatavia reilu miljardi euroa, ja tämähän liittyy siihen ensimmäiseen Kreikka-tukipakettiin silloin 2010. Tänä päivänä joudumme joka päivä seuraamaan uutisia siitä, miten Kreikan valtion käy, ja jos sen käy nyt hyvin huonosti eli rahat loppuvat, niin silloin on aika lailla selvää, että tätä miljardin saatavaa me emme tule saamaan tai ainakaan me emme tule sitä saamaan vuosikausiin.</sis:KappaleKooste>
+                                    <sis:KappaleKooste>En ihan ymmärrä tätä tunnelmaa, mikä Kreikassa tänä päivänä näiden asioiden tiimoilta vallitsee. Ainakin kun seuraa suomalaista ja kansainvälistä mediaa, näyttää siltä, että kreikkalaiset ovat sitä mieltä, että se on kaikkien muiden kuin kreikkalaisten itsensä vika, että he ovat nyt tällaisessa taloudellisessa tilanteessa. Kuitenkin perussyy Kreikan talouden ongelmiin on yksinkertaisesti se, että siellä on eletty yli varojen, on syöty enemmän kuin on tienattu, eikä se nyt voi olla Suomen eikä muiden maiden vika, että nämä maat odottavat ja edellyttävät, että Kreikka maksaisi ne velkansa, jotka sillä näille maille on.</sis:KappaleKooste>
+                                    <sis:KappaleKooste>Kreikan uuden hallituksen asenne on myös kummallinen. Hallitus tuntuu lähtevän siitä, että kun se on kansalle antanut vaaleissa katteettomia lupauksia, niin se voi sitten näille velkojilleenkin sanoa, että emme me voi sitoutua näihin Kreikan valtiona antamiin sitoumuksiin ja että meillä on oikeus nyt jättää velat maksamatta tai vaatia velkojilta kovin vahvaa vastaantuloa.</sis:KappaleKooste>
+                                    <sis:KappaleKooste>Toivon todellakin, että löytyisi ratkaisu nykytilanteeseen, Kreikka sitoutuisi tekemiinsä sopimuksiin ja pääsisi pitkällä aikavälillä jaloilleen.</sis:KappaleKooste>
+                                </vsk:KohtaSisalto>
+                            </vsk:PuheenvuoroOsa>
+                        </vsk:PuheenvuoroToimenpide>
+                        <vsk:PuheenvuoroToimenpide met1:muuTunnus="4957" vsk1:puheenvuoroAloitusHetki="2015-06-10T14:24:36" vsk1:puheenvuoroLuokitusKoodi="T">
+                            <vsk1:AjankohtaTeksti>14.24</vsk1:AjankohtaTeksti>
+                            <met:Toimija>
+                                <org:Henkilo met1:muuTunnus="1041">
+                                    <org1:EtuNimi>Vesa-Matti</org1:EtuNimi>
+                                    <org1:SukuNimi>Saarakkala</org1:SukuNimi>
+                                    <org1:LisatietoTeksti>ps</org1:LisatietoTeksti>
+                                </org:Henkilo>
+                            </met:Toimija>
+                            <vsk:PuheenvuoroOsa met1:asiakirjatyyppiNimi="Puheenvuoro" met1:kieliKoodi="fi" met1:muuTunnus="2312" met1:tilaKoodi="Tarkistettu" met1:versioTeksti="1.1" vsk1:puheenvuoroAloitusHetki="2015-06-10T14:24:36" vsk1:puheenvuoroJNro="1" vsk1:puheenvuoroLopetusHetki="2015-06-10T14:25:38">
+                                <vsk:KohtaSisalto>
+                                    <sis:KappaleKooste> Arvoisa puhemies! Valtiontalouden tarkastusvirasto kiinnittää tässä erilliskertomuksessaan ansaitusti huomiota selkeisiin puutteisiin ministe-riöiden harjoittamassa raportoinnissa koskien niille talousarviossa asetettuja yhteiskunnallisia vaikuttavuustavoitteita. Vaikka vaikuttavuustavoitteiden raportoinnin kattavuudessa on tapahtunut edellisiin vuosiin nähden näkyvää parannusta systemaattisen ohjeistuksen myötä, ei raportoinnin laatu ole vielä aivan toivotulla tasolla. Valtiontalouden tarkastusviraston mukaan vaikuttavuustavoitteista raportointi on yhä useammin jäänyt vain erillisten toimenpiteiden kuvaamiseksi. Jatkossa olisi syytä kehittää näiden vaikuttavuustavoitteiden asettamista siten, että ministeriöt raportoisivat lähinnä sellaisista tavoitteista, joilla on aitoa merkitystä kyseisen hallinnonalan ohjauksen kannalta.</sis:KappaleKooste>
+                                </vsk:KohtaSisalto>
+                            </vsk:PuheenvuoroOsa>
+                        </vsk:PuheenvuoroToimenpide>
+                        <vsk:PuheenvuoroToimenpide met1:muuTunnus="4958" vsk1:puheenvuoroAloitusHetki="2015-06-10T14:25:39" vsk1:puheenvuoroLuokitusKoodi="T">
+                            <vsk1:AjankohtaTeksti>14.25</vsk1:AjankohtaTeksti>
+                            <met:Toimija>
+                                <org:Henkilo met1:muuTunnus="392">
+                                    <org1:EtuNimi>Olavi</org1:EtuNimi>
+                                    <org1:SukuNimi>Ala-Nissilä</org1:SukuNimi>
+                                    <org1:LisatietoTeksti>kesk</org1:LisatietoTeksti>
+                                </org:Henkilo>
+                            </met:Toimija>
+                            <vsk:PuheenvuoroOsa met1:asiakirjatyyppiNimi="Puheenvuoro" met1:kieliKoodi="fi" met1:muuTunnus="2313" met1:tilaKoodi="Tarkistettu" met1:versioTeksti="1.1" vsk1:puheenvuoroAloitusHetki="2015-06-10T14:25:39" vsk1:puheenvuoroJNro="1" vsk1:puheenvuoroLopetusHetki="2015-06-10T14:26:45">
+                                <vsk:KohtaSisalto>
+                                    <sis:KappaleKooste>Arvoisa puhemies! Viittaan tuohon, mitä edustaja Zyskowicz puhui Kreikan saatavista, miljardin markan saatavista — jos me olisimme yrityksessä, niin siellähän saatava merkitään enintään todennäköiseen arvoonsa. Tällä saatavalla todennäköisesti ei ole paljon arvoa, siinähän on tehty erillinen riskiarvio tämän saatavan osalta. Ehkä isompi ongelma on se, että kun Kreikka tavallaan jo oli oikealla tiellä hallintonsa ja taloutensa suhteen, niin sitten vaalien jälkeen on ollut enemmän liturgiaa ja show’ta hallitukselta kuin todellista uudistamista, (Ben Zyskowicz: Juuri näin!) ja nyt on todella vaara, että kun ja jos rahoja annetaan, ne menevät mustaan aukkoon. Ellei Kreikka pysty omaa hallintoaan budjetoimaan, vastuullistuttamaan, valvomaan omaa julkista ta-louttaan, niin valitettavasti tämä tie edelleen jatkuu ja me joudumme tästäkin saatavasta ehkä sitten toteamaan, että tällä käytännössä ei ole juurikaan arvoa.</sis:KappaleKooste>
+                                </vsk:KohtaSisalto>
+                            </vsk:PuheenvuoroOsa>
+                        </vsk:PuheenvuoroToimenpide>
+                        <vsk:PuheenvuoroToimenpide met1:muuTunnus="4961" vsk1:puheenvuoroAloitusHetki="2015-06-10T14:26:48" vsk1:puheenvuoroLuokitusKoodi="T">
+                            <vsk1:AjankohtaTeksti>14.26</vsk1:AjankohtaTeksti>
+                            <met:Toimija>
+                                <org:Henkilo met1:muuTunnus="802">
+                                    <org1:EtuNimi>Markus</org1:EtuNimi>
+                                    <org1:SukuNimi>Mustajärvi</org1:SukuNimi>
+                                    <org1:LisatietoTeksti>vas</org1:LisatietoTeksti>
+                                </org:Henkilo>
+                            </met:Toimija>
+                            <vsk:PuheenvuoroOsa met1:asiakirjatyyppiNimi="Puheenvuoro" met1:kieliKoodi="fi" met1:muuTunnus="2314" met1:tilaKoodi="Tarkistettu" met1:versioTeksti="1.1" vsk1:puheenvuoroAloitusHetki="2015-06-10T14:26:48" vsk1:puheenvuoroJNro="1" vsk1:puheenvuoroLopetusHetki="2015-06-10T14:28:40">
+                                <vsk:KohtaSisalto>
+                                    <sis:KappaleKooste>Arvoisa puhemies! Tästä Kreikan tilanteesta. Jos muistan oikein, niin oli juhannusviikko vuonna 2012, jolloinka Suomikin päätti antaa ensimmäisen pääomaosuutensa Euroopan vakausmekanismille, 1,44 miljardia euroa. Se on siellä sisässä jo, sitoumus on 11 miljardista eurosta. Vielä jokin aika sitten se oli budjettikirjaan kirjattuna, että summa on maksettava vaadittaessa, mutta jostain syystä — en tiedä, häveliäisyyssyistä vai mistä — se maininta on budjettikirjasta nyt myöhemmin poistettu. Mielenkiintoista olisi nyt tietää, kun nimenomaan on väläytetty sitä, että Kreikkaa tuetaan Euroopan vakausmekanismin kautta, elikkä sen pankin kautta, joka on Luxemburgin suurherttuakunnassa perustettu, jossa johtajilla on syytesuoja ja asiakirjat salaisia, että onko se piikki auki vai onko se kiinni. Tätä keskustelua takavuosina on kuultu kyllä aika lailla.</sis:KappaleKooste>
+                                    <sis:KappaleKooste>Mutta kovin oli yksipuolinen edustaja Zyskowiczilla se Kreikan syyllistäminen. Minä olen siihen asti aivan samaa mieltä, että Kreikka on elänyt vastuuttomasti yli varojensa ja siellä talousjärjestelmässä ja maan taloudenpidossa on paljonkin korjattavaa. Mutta kyllä olisi pitänyt laittaa paljon tiukemmin vastuuseen nekin pankit, jotka holtittomalla tavalla ovat luotottaneet Kreikkaa, elikkä saksalaiset ja ranskalaiset pankit, jotka päästettiin juoksemaan omia vastuitaan pakoon. Kyllä se vain on päivänselvä asia, että Kreikka ei tule ilman joustoa laina-aikoihin ja -ehtoihin selviämään tuosta valtavasta velkataakastaan, se on ikävä tosiasia. Mutta haluaisin kyllä kuulla niidenkin kannanottoja, jotka vielä vaalien alla sanoivat, että piikki on sitten kiinni, että onko se kiinni vai onko se auki.</sis:KappaleKooste>
+                                </vsk:KohtaSisalto>
+                            </vsk:PuheenvuoroOsa>
+                        </vsk:PuheenvuoroToimenpide>
+                        <vsk:PuheenvuoroToimenpide met1:muuTunnus="4962" vsk1:puheenvuoroAloitusHetki="2015-06-10T14:28:41" vsk1:puheenvuoroLuokitusKoodi="T">
+                            <vsk1:AjankohtaTeksti>14.28</vsk1:AjankohtaTeksti>
+                            <met:Toimija>
+                                <org:Henkilo met1:muuTunnus="1310">
+                                    <org1:EtuNimi>Li</org1:EtuNimi>
+                                    <org1:SukuNimi>Andersson</org1:SukuNimi>
+                                    <org1:LisatietoTeksti>vas</org1:LisatietoTeksti>
+                                </org:Henkilo>
+                            </met:Toimija>
+                            <vsk:PuheenvuoroOsa met1:asiakirjatyyppiNimi="Puheenvuoro" met1:kieliKoodi="fi" met1:muuTunnus="2315" met1:tilaKoodi="Tarkistettu" met1:versioTeksti="1.1" vsk1:puheenvuoroAloitusHetki="2015-06-10T14:28:41" vsk1:puheenvuoroJNro="1" vsk1:puheenvuoroLopetusHetki="2015-06-10T14:30:18">
+                                <vsk:KohtaSisalto>
+                                    <sis:KappaleKooste>Arvoisa rouva puhemies! Edustaja Zyskowicz nosti omassa puheenvuorossaan esille Kreikan tilanteen. Edustaja Zyskowicz on varmaan kanssani samaa mieltä siitä, että niin Suomen kuin koko euroalueen etuhan on se, että Kreikan taloustilanne kohenee ja että kreikkalaisilla päättäjillä on mahdollisuus saada talous taas kuntoon. Siksi on ensisijaisen tärkeätä, että saadaan aikaiseksi ensinnäkin neuvottelutulos ja siten myöskin kreikkalaisille päättäjille työrauha keskittyä näihin taloudellisiin uudistuksiin, mitä ovat Kreikassa tekemässä, mutta myöskin sellaisia neuvotteluehtoja eli lainaehtoja, jotka eivät entuudestaan heikennä Kreikan taloudellista tilannetta.</sis:KappaleKooste>
+                                    <sis:KappaleKooste>Tässä sanottiin myöskin, että Kreikan hallitus on antanut äänestäjille katteettomia lupauksia. Minun nähdäkseni Syrizan vaaliohjelma rakentui ennen kaikkea kolmeen kokonaisuuteen: ensinnäkin humanitaarisen kriisin ratkaiseminen, johon liittyy esimerkiksi asuntojen ja sähkön turvaaminen kaikille tarvitseville, toiseksi nimenomaan hallinnon uudistaminen eli byrokratian keventämistä ja verovälttelyn vähentämistä, ja kolmantena näiden lainaehtojen uudelleen neuvotteleminen. Siihenkin minun nähdäkseni Kreikan kansa on antanut hyvin selvän mandaatin. Selvää on myöskin, että nämä rajut leikkausedellytykset, jotka näihin ehtoihin on liitetty, ovat nimenomaan heikentäneet Kreikan taloustilannetta. Kreikan bruttokansantuotteesta on hävinnyt neljäsosa sen jälkeen, kun näitä niin sanottuja pelastuspaketteja käynnistettiin vuonna 2010.</sis:KappaleKooste>
+                                </vsk:KohtaSisalto>
+                            </vsk:PuheenvuoroOsa>
+                        </vsk:PuheenvuoroToimenpide>
+                        <vsk:PuheenvuoroToimenpide met1:muuTunnus="4969" vsk1:puheenvuoroAloitusHetki="2015-06-10T14:30:19" vsk1:puheenvuoroLuokitusKoodi="T">
+                            <vsk1:AjankohtaTeksti>14.30</vsk1:AjankohtaTeksti>
+                            <met:Toimija>
+                                <org:Henkilo met1:muuTunnus="301">
+                                    <org1:EtuNimi>Ben</org1:EtuNimi>
+                                    <org1:SukuNimi>Zyskowicz</org1:SukuNimi>
+                                    <org1:LisatietoTeksti>kok</org1:LisatietoTeksti>
+                                </org:Henkilo>
+                            </met:Toimija>
+                            <vsk:PuheenvuoroOsa met1:asiakirjatyyppiNimi="Puheenvuoro" met1:kieliKoodi="fi" met1:muuTunnus="2316" met1:tilaKoodi="Tarkistettu" met1:versioTeksti="1.1" vsk1:puheenvuoroAloitusHetki="2015-06-10T14:30:19" vsk1:puheenvuoroJNro="1" vsk1:puheenvuoroLopetusHetki="2015-06-10T14:32:23">
+                                <vsk:KohtaSisalto>
+                                    <sis:KappaleKooste>Arvoisa rouva puhemies! Edustaja Mustajärvelle vastaan, että olen samaa mieltä, että vastuussa totta kai veloistaan on velallinen, mutta kyllä velkojakin saa katsoa peiliin, kun on mennyt maksukyvyttömille tai maksukyvyttömyyden uhkaamille lainoja kovasti antamaan. Nämä pankit ovat osaltaan joutuneet vastuuseen, kun näitä saatavia on leikattu, mutta totta kai asiaan kuuluisi se, että se, joka menee lainaa antamaan, kärsii sen luottotappion, jos sellaista on tullakseen.</sis:KappaleKooste>
+                                    <sis:KappaleKooste>Mitä edustaja Anderssonin puheenvuoroon tulee, niin pitää sanoa — niin kuin edustaja Ala-Nissilä täällä kertoi — että Kreikan edellinen hallitus ja Kreikka olivat oikealla tiellä. Siellä oli saatu jo taloutta kasvuun, ripeämpään kasvuun kuin esimerkiksi Suomessa, mutta tämän teidän veljespuolueenne, vaalivoittajan, katteettomat lupaukset ovat johtaneet sellaiseen taloudelliseen epävarmuuteen poliittisen epävarmuuden ohella Kreikassa, että Kreikan talouden orastava kasvu on supistunut.</sis:KappaleKooste>
+                                    <sis:KappaleKooste>Sanoitte, että ei ole annettu katteettomia lupauksia. No, voi olla, että vasemmistoliiton Suomessa antamien lupausten rinnalla jopa Syrizan lupaukset kalpenevat. Mutta tosiasia on se, että kun annettiin ymmärtää, että velat voidaan jättää hoitamatta ja kaikki ikävät säästöpäätökset voidaan peruuttaa ja että valtiontalous saadaan tasapainoon, kun vain rikkailta otetaan, niin kyllähän ne nyt olivat täysin ilmassa olevia lupauksia. Tämän sanottuani sanon kuitenkin sen, minkä olen aikaisemminkin tässä salissa, tai itse asiassa tuossa naapurisalissa, sanonut, että Kreikassa ovat raharikkaat päässeet verojen maksussa aivan liian vähällä ja että siellä todellakaan ei ole ollut — toivottavasti nyt on — veronkantosysteemi tehokas eikä myöskään ole ollut tehokasta toimintaa harmaata taloutta ja veronkiertoa vastaan.</sis:KappaleKooste>
+                                </vsk:KohtaSisalto>
+                            </vsk:PuheenvuoroOsa>
+                        </vsk:PuheenvuoroToimenpide>
+                        <vsk:PuheenvuoroToimenpide met1:muuTunnus="4972" vsk1:puheenvuoroAloitusHetki="2015-06-10T14:32:24" vsk1:puheenvuoroLuokitusKoodi="T">
+                            <vsk1:AjankohtaTeksti>14.32</vsk1:AjankohtaTeksti>
+                            <met:Toimija>
+                                <org:Henkilo met1:muuTunnus="1041">
+                                    <org1:EtuNimi>Vesa-Matti</org1:EtuNimi>
+                                    <org1:SukuNimi>Saarakkala</org1:SukuNimi>
+                                    <org1:LisatietoTeksti>ps</org1:LisatietoTeksti>
+                                </org:Henkilo>
+                            </met:Toimija>
+                            <vsk:PuheenvuoroOsa met1:asiakirjatyyppiNimi="Puheenvuoro" met1:kieliKoodi="fi" met1:muuTunnus="2317" met1:tilaKoodi="Tarkistettu" met1:versioTeksti="1.1" vsk1:puheenvuoroAloitusHetki="2015-06-10T14:32:24" vsk1:puheenvuoroJNro="1" vsk1:puheenvuoroLopetusHetki="2015-06-10T14:33:53">
+                                <vsk:KohtaSisalto>
+                                    <sis:KappaleKooste> Arvoisa puhemies! Tässä Kreikan kysymyksessä ja jatkossakin on tärkeää ottaa huomioon, mitkä ovat Suomen tämänhetkiset kokonaisvastuut tässä eurokriisin hoidossa. Mikäli uusia tukipyyntöjä tulee, niin silloin on myös tehtävä riskiarvio eli on tehtävä arvio siitä, mitkä ovat ne riskit ja niitten toteutumisen todennäköisyys. Nämä olivat ne kaksi keskeistä teemaa, joita perustuslakivaliokunta viime vaalikaudella korosti, ja ne ovat mielestäni voimassa nytkin. Siihen nähden olen hieman hämmästynyt, kun valtiovarainministeriön papereita tuossa jokin aika sitten selasin, että esimerkiksi tätä Euroopan vakausmekanismin pääomaa, joka siellä on tuo noin 1,5 miljardia euroa — ja sinne tarvittaessa pääomitetaan 12,5 miljardiin euroon asti — ei lasketa meidän vastuiksemme, vaan sillä oli joku muu termi. Tämä on mielestäni kyllä omiaan hämärtämään tätä tilannetta. Minun mielestäni olisi kuitenkin hyvä puhua vastuista, koska kyllä se silloin on menetettyä rahaa, jos me annamme jatkossa Kreikkaan EVM:n kautta rahaa, ja kun tiedetään, että nyt on ongelmia jo nykyistenkin takaisinmaksujen kanssa, niin kaikki rahat, mitä sinne jatkossa laitetaan, menetetään ja siten ollen riski on sataprosenttinen.</sis:KappaleKooste>
+                                </vsk:KohtaSisalto>
+                            </vsk:PuheenvuoroOsa>
+                        </vsk:PuheenvuoroToimenpide>
+                        <vsk:PuheenvuoroToimenpide met1:muuTunnus="4975" vsk1:puheenvuoroAloitusHetki="2015-06-10T14:33:54" vsk1:puheenvuoroLuokitusKoodi="T">
+                            <vsk1:AjankohtaTeksti>14.33</vsk1:AjankohtaTeksti>
+                            <met:Toimija>
+                                <org:Henkilo met1:muuTunnus="511">
+                                    <org1:EtuNimi>Pia</org1:EtuNimi>
+                                    <org1:SukuNimi>Viitanen</org1:SukuNimi>
+                                    <org1:LisatietoTeksti>sd</org1:LisatietoTeksti>
+                                </org:Henkilo>
+                            </met:Toimija>
+                            <vsk:PuheenvuoroOsa met1:asiakirjatyyppiNimi="Puheenvuoro" met1:kieliKoodi="fi" met1:muuTunnus="2322" met1:tilaKoodi="Tarkistettu" met1:versioTeksti="1.1" vsk1:puheenvuoroAloitusHetki="2015-06-10T14:33:54" vsk1:puheenvuoroJNro="1" vsk1:puheenvuoroLopetusHetki="2015-06-10T14:35:04">
+                                <vsk:KohtaSisalto>
+                                    <sis:KappaleKooste>Arvoisa puhemies! Tämä Kreikan tilanne on tietenkin vakava, ja kukaan meistä ei olisi tällaista toivonut. Mutta täytyypä muistella sitä, että vuonna 2010, kun tämä paketti ilman vakuuksia myönnettiin silloisen porvarihallituksen toimesta, jo tiedettiin ja käytiin sitä keskustelua, että voi olla, että tulee valitettavasti se tilanne, että emme tule saamaan rahojamme takaisin. Tuolloinhan SDP vaati, että täytyy saada vakuuksia, ja meille oli tietenkin suuri pettymys, että tulimme antaneeksi tämän kahdenvälisen lainan sitä kautta sillä hallituskaudella.</sis:KappaleKooste>
+                                    <sis:KappaleKooste>Oli hyvin tärkeää, arvoisa puhemies, varsinkin kun näemme tilanteen tänään, että viime kaudella linja muuttui ja jatkossa toimimme niin, että Suomi sai saatavilleen vakuudet.</sis:KappaleKooste>
+                                    <sis:KappaleKooste>On niin, hyvät ystävät, että kyllä suomalaisten veronmaksajien riskit on rajattava ja sillä tavalla tämän politiikan pitää olla ja pysyä tiukkana. Tietenkin olisi miellyttävää kuulla nyt sitten tämän nykyisen hallituksen linjanvedot tässä, mutta huomasin, että ulkoministeri Soini juuri lähti salista ja poistui, mutta tässä olisi ollut hyvä tilaisuus kenties käydä hieman tätäkin keskustelua.</sis:KappaleKooste>
+                                </vsk:KohtaSisalto>
+                            </vsk:PuheenvuoroOsa>
+                        </vsk:PuheenvuoroToimenpide>
+                        <vsk:PuheenvuoroToimenpide met1:muuTunnus="4977" vsk1:puheenvuoroAloitusHetki="2015-06-10T14:35:06" vsk1:puheenvuoroLuokitusKoodi="T">
+                            <vsk1:AjankohtaTeksti>14.35</vsk1:AjankohtaTeksti>
+                            <met:Toimija>
+                                <org:Henkilo met1:muuTunnus="1310">
+                                    <org1:EtuNimi>Li</org1:EtuNimi>
+                                    <org1:SukuNimi>Andersson</org1:SukuNimi>
+                                    <org1:LisatietoTeksti>vas</org1:LisatietoTeksti>
+                                </org:Henkilo>
+                            </met:Toimija>
+                            <vsk:PuheenvuoroOsa met1:asiakirjatyyppiNimi="Puheenvuoro" met1:kieliKoodi="fi" met1:muuTunnus="2326" met1:tilaKoodi="Tarkistettu" met1:versioTeksti="1.1" vsk1:puheenvuoroAloitusHetki="2015-06-10T14:35:06" vsk1:puheenvuoroJNro="1" vsk1:puheenvuoroLopetusHetki="2015-06-10T14:36:14">
+                                <vsk:KohtaSisalto>
+                                    <sis:KappaleKooste>Arvoisa rouva puhemies! Täällä tuotiin Kreikan orastava talouskasvu esille esimerkkinä siitä, että Kreikan taloudella oli mennyt hyvin ennen näitä tammikuussa pidettyjä vaaleja. Kun puhutaan maasta, jossa työttömyys edelleen on yli 25 prosenttia ja jossa bkt:stä, kuten sanoin, on hävinnyt neljäsosa näiden rajujen leikkausten seurauksena, en kyllä puhuisi mistään taloudellisesti hyvin toimeentulevasta maasta. Ja siinä on tosiaankin nimenomaan velkojilla peiliin katsomisen paikka.</sis:KappaleKooste>
+                                    <sis:KappaleKooste>Haluaisin myöskin kysyä edustaja Zyskowiczilta, jos hänen mielestään siis on väärin ratkaista tätä humanitaarista kriisiä tai että sähkön ja asunnon takaamisessa kansalaisille olisi kyse katteettomista lupauksista. Haluan myöskin huomauttaa, että nyt valittu hallitus Kreikassa on ensimmäinen, joka on toden teolla myöskin ilmaissut haluavansa puuttua tähän verovälttelyyn ja niihin ongelmiin, joita Kreikan hallinnossa on ollut jo pitkään. Se on myöskin ollut keskeinen syy siihen, että he saivat niin suuren vaalivoiton kuin mitä vuoden alussa saivat.</sis:KappaleKooste>
+                                </vsk:KohtaSisalto>
+                            </vsk:PuheenvuoroOsa>
+                        </vsk:PuheenvuoroToimenpide>
+                        <vsk:PuheenvuoroToimenpide met1:muuTunnus="4979" vsk1:puheenvuoroAloitusHetki="2015-06-10T14:36:15" vsk1:puheenvuoroLuokitusKoodi="T">
+                            <vsk1:AjankohtaTeksti>14.36</vsk1:AjankohtaTeksti>
+                            <met:Toimija>
+                                <org:Henkilo met1:muuTunnus="301">
+                                    <org1:EtuNimi>Ben</org1:EtuNimi>
+                                    <org1:SukuNimi>Zyskowicz</org1:SukuNimi>
+                                    <org1:LisatietoTeksti>kok</org1:LisatietoTeksti>
+                                </org:Henkilo>
+                            </met:Toimija>
+                            <vsk:PuheenvuoroOsa met1:asiakirjatyyppiNimi="Puheenvuoro" met1:kieliKoodi="fi" met1:muuTunnus="2328" met1:tilaKoodi="Tarkistettu" met1:versioTeksti="1.1" vsk1:puheenvuoroAloitusHetki="2015-06-10T14:36:15" vsk1:puheenvuoroJNro="1" vsk1:puheenvuoroLopetusHetki="2015-06-10T14:38:21">
+                                <vsk:KohtaSisalto>
+                                    <sis:KappaleKooste>Arvoisa rouva puhemies! On totta, että vuonna 2010 jouduttiin laina antamaan eräänlaisessa hätätilanteessa, jossa muuten oli riskinä se, että olisi Euroopassa nähty eräänlainen dominoilmiö, jossa Kreikan ongelmista olisi aiheutunut erittäin rajusti koko euroalueen ongelma. Tänä päivänä tilanne on sillä tavoin parempi, että Kreikan talouden romahdus ei samalla tavalla horjuta koko euroalueen taloutta, mutta on aivan varmaa, että omat kielteiset vaikutuksensa sillä olisi, ja sen vuoksi on perusteltua pyrkiä siihen, että tämä pahin skenaario voitaisiin yhteisin toimin välttää.</sis:KappaleKooste>
+                                    <sis:KappaleKooste>Mitä tulee nykyhallituksen linjaan, jota täällä kyseltiin, niin nykyhallituksen linja on se, että suomalaisten veronmaksajien riskiä pyritään luonnollisesti kaikin tavoin rajaamaan ja samalla toimimaan niin, että yhteisen valuuttamme ja yhteisen valuutta-alueemme talous ei aiheettomasti kärsisi.</sis:KappaleKooste>
+                                    <sis:KappaleKooste>Edustaja Andersson sanoi, että olisin sanonut, että Kreikalla meni hyvin. Tässä salissa on huono akustiikka, mutta ei tässä ihan niin huono akustiikka ole, että edustaja Andersson olisi voinut näin kuulla. En todellakaan nimittäin mitään tällaista sanonut. Sanoin, että Kreikan taloudessa oli nähty jo käännettä parempaan ja orastavaa talouskasvua oli nähty.</sis:KappaleKooste>
+                                    <sis:KappaleKooste>Mitä sitten tulee siihen Syrizan vaaliohjelmaan, niin totta kai humanitaarinen kriisi pitää pyrkiä välttämään, mutta luulenpa, että jos Syriza ja Kreikan nykyhallitus pitää kiinni nykyisestä linjastaan eikä ymmärrä, että sen on velkojien kanssa päästävä sopuun enemmän velkojien ehdoilla, koska velallinen on se, joka joutuu joustamaan, niin siinä tilanteessa valitettavasti nähdään todellinen humanitaarinen kriisi Kreikassa.</sis:KappaleKooste>
+                                </vsk:KohtaSisalto>
+                            </vsk:PuheenvuoroOsa>
+                        </vsk:PuheenvuoroToimenpide>
+                        <vsk:PuheenvuoroToimenpide met1:muuTunnus="4980" vsk1:puheenvuoroAloitusHetki="2015-06-10T14:38:23" vsk1:puheenvuoroLuokitusKoodi="T">
+                            <vsk1:AjankohtaTeksti>14.38</vsk1:AjankohtaTeksti>
+                            <met:Toimija>
+                                <org:Henkilo met1:muuTunnus="768">
+                                    <org1:EtuNimi>Eero</org1:EtuNimi>
+                                    <org1:SukuNimi>Heinäluoma</org1:SukuNimi>
+                                    <org1:LisatietoTeksti>sd</org1:LisatietoTeksti>
+                                </org:Henkilo>
+                            </met:Toimija>
+                            <vsk:PuheenvuoroOsa met1:asiakirjatyyppiNimi="Puheenvuoro" met1:kieliKoodi="fi" met1:muuTunnus="2330" met1:tilaKoodi="Tarkistettu" met1:versioTeksti="1.1" vsk1:puheenvuoroAloitusHetki="2015-06-10T14:38:23" vsk1:puheenvuoroJNro="1" vsk1:puheenvuoroLopetusHetki="2015-06-10T14:40:18">
+                                <vsk:KohtaSisalto>
+                                    <sis:KappaleKooste>Arvoisa puhemies! Tässä on ollut tärkeätä keskustelua, ja pidän selvänä, että valtiovarainvaliokunta ottaa tässä lausutut näkökohdat omassa työssään huomioon.</sis:KappaleKooste>
+                                    <sis:KappaleKooste>Ensin tähän kysymykseen näiden työllisyysmäärärahojen käytöstä, johon edustaja Mustajärvi viittasi: Joskushan voi olla ansio, että jotain rahaa ei kokonaisuudessaan käytetä, mutta on selvää, että näiden rahojen osalta, jotka on tarkoitettu nimenomaisesti työllisyyden hoitoon ja myös aktivointitoimiin, on suuri pettymys, jos näin suuria rahoja jää käyttämättä kuin tässä on. Tästähän on puhuttu ennenkin, ei tässä salissa mutta tuossa naapurisalissa, ja voi hyvin olla perusteltua, että katsottaisiin vähän tarkemmalla sihdillä, miten tämä on mahdollista, että voi 200 miljoonaa jäädä käyttämättä korkean työttömyyden olosuhteissa. Se kiinnostaa varmasti eduskuntaa, joka kuitenkin on lähtenyt siitä, että nämä rahat ovat tarpeellisia, jotta pitkäaikaistyöttömyys katkaistaan, nuoria voidaan auttaa.</sis:KappaleKooste>
+                                    <sis:KappaleKooste>Sitten toinen asia liittyy näihin vastuisiin: mitä vastuita Suomen valtiolla on, mitä lainoja Suomen valtio on antanut, tai missä valtio on takaajana. Ennen vaaleja valtiovarainministeriö teki erittäin arvokkaan ja tärkeän selvitystyön, kun julkistettiin selvitys siitä, kuinka suuressa mittakaavassa valtio on takaajana erilaisissa lainajärjestelyissä, mikä tosiasiassa on tietysti myös sitten Suomen valtion riski, ja näitä liittyy sekä yritystoimintaan että myös sitten eräin osin kotitalouksiin muun muassa asuntoluototuksen kohdalla. On hyvin mahdollista, että tarkastusvaliokunta haluaa myös tätä asiaa katsoa laveammalti sekä tämän Kreikka-lainan ja ‑lainoituksen osalta että Suomen takausvastuiden osalta yhteydessä näihin kotimaan vastuisiin.</sis:KappaleKooste>
+                                </vsk:KohtaSisalto>
+                            </vsk:PuheenvuoroOsa>
+                        </vsk:PuheenvuoroToimenpide>
+                        <vsk:PuheenvuoroToimenpide met1:muuTunnus="4984" vsk1:puheenvuoroAloitusHetki="2015-06-10T14:40:19" vsk1:puheenvuoroLuokitusKoodi="T">
+                            <vsk1:AjankohtaTeksti>14.40</vsk1:AjankohtaTeksti>
+                            <met:Toimija>
+                                <org:Henkilo met1:muuTunnus="802">
+                                    <org1:EtuNimi>Markus</org1:EtuNimi>
+                                    <org1:SukuNimi>Mustajärvi</org1:SukuNimi>
+                                    <org1:LisatietoTeksti>vas</org1:LisatietoTeksti>
+                                </org:Henkilo>
+                            </met:Toimija>
+                            <vsk:PuheenvuoroOsa met1:asiakirjatyyppiNimi="Puheenvuoro" met1:kieliKoodi="fi" met1:muuTunnus="2331" met1:tilaKoodi="Tarkistettu" met1:versioTeksti="1.1" vsk1:puheenvuoroAloitusHetki="2015-06-10T14:40:19" vsk1:puheenvuoroJNro="1" vsk1:puheenvuoroLopetusHetki="2015-06-10T14:42:07">
+                                <vsk:KohtaSisalto>
+                                    <sis:KappaleKooste>Arvoisa puhemies! On hyvä, että asianomaisen valiokunnan puheenjohtaja lupasi ottaa tarkempaan syyniin nämä työllisyysmäärärahojen pakkosäästöt. Yhtenä syynä on sitten se, että on annettu järjetön ohje siitä, että samaan aikaan, kun valuma pitkäaikaistyöttömyyteen kasvaa koko ajan, ensin pitää olla maksettuna 300 päivää työmarkkinatukea ennen kuin tukirahoja voidaan osoittaa tämän henkilön työllistämiseksi. On aivan käsittämätöntä se, että tarkoituksella päästetään työttömyys pitkittymään ja vasta sen jälkeen asianomaista tuetaan, kun on olemassa pitkältä ajalta hyvin vahvaa tutkimustietoa siitä, että mitä nopeammin työttömyyteen pystytään puuttumaan, sitä enemmän käytetty panos myöskin tuottaa.</sis:KappaleKooste>
+                                    <sis:KappaleKooste>Mutta sitten näistä isoista valtion vastuista, takauksista ja takuista, että kyllä edustaja Saarakkala puhui ihan asiaa siitä, että Euroopan vakausmekanismissa meillä on se aiempi pääomasijoitus ja nyt tämä yli 11 miljardin euron määräraha tai arvio on laitettu sitten kohtaan taulukko 26 Kansainvälisille rahoituslaitoksille vaadittaessa maksettavat pääomat. Luku on todellakin tuo, ja vaikka se on "vaadittaessa maksettava" ja sanotaan, että joka kerta teknisesti Suomessa eduskunta käsittelee sen erikseen, myönnetäänkö sitä uutta pääomaa vai ei, kyllä realismia ainakin tällä poliittisella jakaumalla on, että sellaista hallitusta, sellaisia ministereitä ei vähällä kummalla tässä maassa nähdä, että silloin, kun pyyntö Euroopan vakausmekanismista tulee, täällä sanottaisiin, että meillä on piikki nyt kiinni.</sis:KappaleKooste>
+                                </vsk:KohtaSisalto>
+                            </vsk:PuheenvuoroOsa>
+                        </vsk:PuheenvuoroToimenpide>
+                        <vsk:PuheenvuoroToimenpide met1:muuTunnus="4987" vsk1:puheenvuoroAloitusHetki="2015-06-10T14:42:10" vsk1:puheenvuoroLuokitusKoodi="V">
+                            <vsk1:AjankohtaTeksti>14.42</vsk1:AjankohtaTeksti>
+                            <met:Toimija>
+                                <org:Henkilo met1:muuTunnus="451">
+                                    <org1:EtuNimi>Tarja</org1:EtuNimi>
+                                    <org1:SukuNimi>Filatov</org1:SukuNimi>
+                                    <org1:LisatietoTeksti>sd</org1:LisatietoTeksti>
+                                </org:Henkilo>
+                            </met:Toimija>
+                            <vsk1:TarkenneTeksti>(vastauspuheenvuoro)</vsk1:TarkenneTeksti>
+                            <vsk:PuheenvuoroOsa met1:asiakirjatyyppiNimi="Puheenvuoro" met1:kieliKoodi="fi" met1:muuTunnus="2333" met1:tilaKoodi="Tarkistettu" met1:versioTeksti="1.1" vsk1:puheenvuoroAloitusHetki="2015-06-10T14:42:10" vsk1:puheenvuoroJNro="1" vsk1:puheenvuoroLopetusHetki="2015-06-10T14:43:08">
+                                <vsk:KohtaSisalto>
+                                    <sis:KappaleKooste>Arvoisa puhemies! Edustajat Mustajärvi ja Heinäluoma puuttuivat tärkeään asiaan sen suhteen, että työllistämismäärärahat, joita on budjetissa, todellakin pitäisi pystyä käyttämään täysimääräisesti. Yksi syy tähän rahojen käyttämättä jättämiseen on se, että hallitukset toisensa perään ovat hyvää tarkoittaen pyrkineet siihen, että noita rahoja korvamerkitään tai ohjataan painopisteeltään tiettyihin tarkoituksiin, ja sitten aina tuo tarkoitus ei lähdekään niin nopeasti liikkeelle kuin on ajateltu, elikkä toimeenpanossa on ongelmia. Ja sen vuoksi esimerkiksi nyt, kun on ajateltu näitä 300-päiväisiä, joihin edustaja Mustajärvi viittasi, on syytä tarkkaan katsoa, miten tuo raha on tullut käytetyksi. Kun toisaalla on pula rahoista ja toisaalla on korvamerkittyä rahaa, jota ei pystytä käyttämään, niin tässä järkevää olisi osittain purkaa tuota korvamerkkiä. Ja tämä liittyy myös moniin muihin systeemeihin, joita tässä rahankäytössä on.</sis:KappaleKooste>
+                                    <sis:KappaleKooste/>
+                                    <vsk:PuheenjohtajaRepliikki>
+                                        <vsk1:PuheenjohtajaTeksti>Puhemies Maria Lohela</vsk1:PuheenjohtajaTeksti>
+                                        <sis:KappaleKooste>Puhujalistaan.</sis:KappaleKooste>
+                                        <sis:KappaleKooste/>
+                                    </vsk:PuheenjohtajaRepliikki>
+                                </vsk:KohtaSisalto>
+                            </vsk:PuheenvuoroOsa>
+                        </vsk:PuheenvuoroToimenpide>
+                        <vsk:PuheenvuoroToimenpide met1:muuTunnus="4989" vsk1:puheenvuoroAloitusHetki="2015-06-10T14:43:10" vsk1:puheenvuoroLuokitusKoodi="T">
+                            <vsk1:AjankohtaTeksti>14.43</vsk1:AjankohtaTeksti>
+                            <met:Toimija>
+                                <org:Henkilo met1:muuTunnus="392">
+                                    <org1:EtuNimi>Olavi</org1:EtuNimi>
+                                    <org1:SukuNimi>Ala-Nissilä</org1:SukuNimi>
+                                    <org1:LisatietoTeksti>kesk</org1:LisatietoTeksti>
+                                </org:Henkilo>
+                            </met:Toimija>
+                            <vsk:PuheenvuoroOsa met1:asiakirjatyyppiNimi="Puheenvuoro" met1:kieliKoodi="fi" met1:muuTunnus="2342" met1:tilaKoodi="Tarkistettu" met1:versioTeksti="1.1" vsk1:puheenvuoroAloitusHetki="2015-06-10T14:43:10" vsk1:puheenvuoroJNro="1" vsk1:puheenvuoroLopetusHetki="2015-06-10T14:44:26">
+                                <vsk:KohtaSisalto>
+                                    <sis:KappaleKooste>Arvoisa rouva puhemies! Se on usein niin, että niitä, jotka pyrkivät valtiontaloutta, julkistaloutta tervehdyttämään, helposti syyllistetään siitä. Asianhan pitäisi olla kuitenkin päinvastoin. Kreikassakin todella edellinen hallitus kuitenkin pyrki toteuttamaan uudistusohjelmaa ja sai siinä tuloksia aikaan. Ja sitten tämä uusi hallitus katteettomilla lupauksilla vähävaraisia ihmisiä, suoraan sanottuna, harhauttamalla sai suuren vaalivoiton. Sitten sen jälkeen on tämä tietynlainen liturgia ja jopa show jatkunut, ja tulos on se, että nämä vähävaraiset ihmiset joutuvat entistä huonompaan asemaan. Voi tulla päiviä, jolloin pankin seinästä ei enää tule rahaa ja tilanne on todella huono. Näin ollen olisi tärkeää se, että Kreikkakin voisi siirtyä sellaisten uudistusten tielle, joilla jollain aikavälillä julkinen talous saadaan kuntoon. Valtiohan voi julkistaloutta tasapainottaa kolmella tavalla: säästämällä tai sitten talouskasvun kautta tai sitten tällä kolmannella menetelmällä, että kaverit maksavat. Valitettavasti tämä kaverit maksavat ‑menetelmä ei voi kovin kauan toimia ja Kreikan on itse laitettava asioitaan kuntoon. Ja mitä kauemmin tämä huono hallinto siellä jatkuu, tämä Syrizan toiminta, sitä vaikeampaan asemaan joutuvat nämä vähävaraiset ihmiset.</sis:KappaleKooste>
+                                </vsk:KohtaSisalto>
+                            </vsk:PuheenvuoroOsa>
+                        </vsk:PuheenvuoroToimenpide>
+                        <vsk:PuheenvuoroToimenpide met1:muuTunnus="4990" vsk1:puheenvuoroAloitusHetki="2015-06-10T14:44:27" vsk1:puheenvuoroLuokitusKoodi="T">
+                            <vsk1:AjankohtaTeksti>14.44</vsk1:AjankohtaTeksti>
+                            <met:Toimija>
+                                <org:Henkilo met1:muuTunnus="375">
+                                    <org1:EtuNimi>Markku</org1:EtuNimi>
+                                    <org1:SukuNimi>Rossi</org1:SukuNimi>
+                                    <org1:LisatietoTeksti>kesk</org1:LisatietoTeksti>
+                                </org:Henkilo>
+                            </met:Toimija>
+                            <vsk:PuheenvuoroOsa met1:asiakirjatyyppiNimi="Puheenvuoro" met1:kieliKoodi="fi" met1:muuTunnus="2351" met1:tilaKoodi="Tarkistettu" met1:versioTeksti="1.1" vsk1:puheenvuoroAloitusHetki="2015-06-10T14:44:27" vsk1:puheenvuoroJNro="1" vsk1:puheenvuoroLopetusHetki="2015-06-10T14:46:50">
+                                <vsk:KohtaSisalto>
+                                    <sis:KappaleKooste>Arvoisa rouva puhemies! Eduskunnan yksi keskeisimpiä tehtäviä on vastata valtiontaloudesta, ja tähän liittyvät tietysti kaikki ne sitoumukset, mihin Suomikin Euroopan unionin ja eri järjestelmien kautta on liittynyt.</sis:KappaleKooste>
+                                    <sis:KappaleKooste>Kun tarkastellaan Kreikkaa, Kreikan kansan kokoa ja kansantalouden kokoa, niin kyllähän siellä on havaittavissa aivan selkeä vinoutuma verotuksen keräämisen kohdalla. Kreikan pitäisi pystyä keräämään huomattavasti enemmän, likipitäen tuplaten, verovaroja kansalaisiltaan, mutta näin ei vain tapahdu. Kysymys on silloin tietysti sekä haluttomuudesta maksaa veroja että myös järjestelmän heikkoudesta kerätä niitä veroja sieltä. Ja tämä tietysti tuo mieleen sen, että samallahan Kreikan valtio omalta osaltaan oikeastaan pelaa filunkia myös Euroopan unionin suuntaan: kun he näyttäytyvät hyvin köyhinä valtion osalta — mitä tietysti kyllä tällä hetkellä ovatkin — niin he maksavat myös Euroopan unionin jäsenmaksua hyvin vähän mutta saavat vastaavasti mahdollisimman paljon Euroopan unionilta taas avustusta ja apua eri asioihin. Eli tämä suhde kulkee näin, että kansantaloudessa kansalaisten taskussa raha kiertää mutta se ei kierrä täältä eri mekanismien ja valtion kautta, ja näin ollen tässä syntyy monenlaista vinoumaa kaiken aikaa. Näin ollen voi sanoa, että kyllä siinä tietyllä lailla, koko tässä operaatiossa, jos sitä näin voi kutsua, on koko kansa mukana.</sis:KappaleKooste>
+                                    <sis:KappaleKooste>Kreikkalaisethan ovat iloista, hienoa kansaa, ei siinä mitään, mutta he ovat kyllä oppineet kautta historian toimimaan niin. Jo 1900-luvun alussa heidät erotettiin rahaliitosta, kun väärennettiin kolikoita ja sinne laitettiin erilaista valuuttaa kuin piti laittaa. Onko tänä päivänä meno samanlainen? Toivon vain kyllä nykyisellekin hallitukselle vastuullisuutta; kun seuraava hallitus sitten tulee, niin sekin joutuu sitä vastuullisuutta kantamaan. Ja kreikkalaiset tietysti joutuvat olemaan mukana kaikissa niissä sitoumuksissaan, mitä he ovat tehneet. On syy sitten lainoittajissa tai lainanottajissa, eivät he siitä pääse pois. (Puhemies koputtaa) Jos he sanoutuvat kaikesta irti, niin sehän johtaa sitten Kreikan kohdalta käytännössä oikein totaaliseen konkurssiin, ja sitäkään en kyllä kreikkalaisille toivo.</sis:KappaleKooste>
+                                </vsk:KohtaSisalto>
+                            </vsk:PuheenvuoroOsa>
+                        </vsk:PuheenvuoroToimenpide>
+                        <vsk:PuheenvuoroToimenpide met1:muuTunnus="4991" vsk1:puheenvuoroAloitusHetki="2015-06-10T14:46:51" vsk1:puheenvuoroLuokitusKoodi="T">
+                            <vsk1:AjankohtaTeksti>14.46</vsk1:AjankohtaTeksti>
+                            <met:Toimija>
+                                <org:Henkilo met1:muuTunnus="797">
+                                    <org1:EtuNimi>Hannu</org1:EtuNimi>
+                                    <org1:SukuNimi>Hoskonen</org1:SukuNimi>
+                                    <org1:LisatietoTeksti>kesk</org1:LisatietoTeksti>
+                                </org:Henkilo>
+                            </met:Toimija>
+                            <vsk:PuheenvuoroOsa met1:asiakirjatyyppiNimi="Puheenvuoro" met1:kieliKoodi="fi" met1:muuTunnus="2368" met1:tilaKoodi="Tarkistettu" met1:versioTeksti="1.1" vsk1:puheenvuoroAloitusHetki="2015-06-10T14:46:51" vsk1:puheenvuoroJNro="1" vsk1:puheenvuoroLopetusHetki="2015-06-10T14:48:44">
+                                <vsk:KohtaSisalto>
+                                    <sis:KappaleKooste>Arvoisa rouva puhemies! Tämä keskustelu Kreikan talouden tilanteesta ja valtiontalouden tarkastuskertomuksesta, erilliskertomuksesta, on erittäin ajankohtainen. Siitähän meidän pitää olla tietenkin huolissaan, mikä tilanne Kreikassa on, pitääkö euromaiden aina olla työntämässä rahaa lisää sinne, alueelle, jolla veroja ei kanneta niin kuin tulisi kantaa. Ja tavallaanhan me tässä maksamme kreikkalaisten veroja, jos sinne rahaa annamme. Siinä linjauksessahan, mikä hallitusohjelmassa on, että pyritään tästä yhteisvastuusta aktiivisesti eroon, on kysymys puhtaasti vain siitä, noudatammeko Euroopan unionin perussopimusta, jonne nimenomaan pienten jäsenmaiden vaatimuksesta otettiin se pykälä, että ei tarvitse mennä takaamaan toisten lainoja eikä toisten lainoja tarvitse maksaa. Tässä on kysymys ihan perusasiasta, unionin perussopimuksen noudattamisesta.</sis:KappaleKooste>
+                                    <sis:KappaleKooste>Silloin kun Suomi liittyi euroon 2002, me kävimme keskustelua siitä, onko tämä hyvä vai huono asia. Silloinhan jyrkästi kiellettiin se keskustelu, että kun kustannukset nousevat, niin miten me hoidamme sen kustannusnousun. Ennenhän se hoidettiin devalvaatiolla, mutta nyt D-pilleriä ei enää ole, ja näin ollen meidän tulee itse leikata omia kustannuksiamme ja pitää kilpailukyky yllä omilla toimenpiteillä. Siinä tilanteessa me nyt olemme, ja on kaksi tärkeää asiaa: Toinen on se, että hoidamme omat asiamme mahdollisimman hyvin ja saamme tämän oman talouselämän pyörimään mahdollisimman tehokkaasti. Ja toinen asia on se, että noudatamme Euroopan unionin perussopimusta niin kuin se aikanaan kirjattiin. Sillähän haluttiin nimenomaan pieniä maita suojella, ja näiden pienten maiden joukkoon Suomikin kuuluu. Meidän pitää pysyä siltä tieltä pois, millä Kreikka nyt valitettavasti on. Jos emme tee muutosta tähän politiikkaan, mitä tässä maassa harjoitetaan, niin olemme itse sillä Kreikan tiellä, ja siitä ei sen jälkeen kyllä kukaan tykkää eikä niistä lopputuloksista kanneta hyviä hedelmiä.</sis:KappaleKooste>
+                                </vsk:KohtaSisalto>
+                            </vsk:PuheenvuoroOsa>
+                        </vsk:PuheenvuoroToimenpide>
+                        <vsk:PuheenvuoroToimenpide met1:muuTunnus="4994" vsk1:puheenvuoroAloitusHetki="2015-06-10T14:48:46" vsk1:puheenvuoroLuokitusKoodi="T">
+                            <vsk1:AjankohtaTeksti>14.48</vsk1:AjankohtaTeksti>
+                            <met:Toimija>
+                                <org:Henkilo met1:muuTunnus="1333">
+                                    <org1:EtuNimi>Laura</org1:EtuNimi>
+                                    <org1:SukuNimi>Huhtasaari</org1:SukuNimi>
+                                    <org1:LisatietoTeksti>ps</org1:LisatietoTeksti>
+                                </org:Henkilo>
+                            </met:Toimija>
+                            <vsk:PuheenvuoroOsa met1:asiakirjatyyppiNimi="Puheenvuoro" met1:kieliKoodi="fi" met1:muuTunnus="2377" met1:tilaKoodi="Tarkistettu" met1:versioTeksti="1.1" vsk1:puheenvuoroAloitusHetki="2015-06-10T14:48:46" vsk1:puheenvuoroJNro="1" vsk1:puheenvuoroLopetusHetki="2015-06-10T14:49:57">
+                                <vsk:KohtaSisalto>
+                                    <sis:KappaleKooste>Arvoisa rouva puhemies! On hyvä tiedostaa, että Kreikka ei selviä veloistaan. Maalla on velkaa 177 prosenttia suhteessa bruttokansantuotteeseen, ja tällaista velkaa ei ole yksikään maa aikaisemmin pystynyt maksamaan. Kreikka pitäisi päästää ulos eurosta, mutta se asia ei ole nyt Suomen päätettävä. Kreikka on noin 2 prosenttia jotakuinkin Euroopan taloudesta. Se ei olisi kaatanut Euroopan taloutta vuonna 2010, eikä se sitä kaada nyt.</sis:KappaleKooste>
+                                    <sis:KappaleKooste>Eduskunta viime kaudella on mennyt tähän sitoumukseen mukaan, yli 11 miljardia, ja se tarkoittaa sitä, että enemmistöpäätöksellä, vaikka Suomi ei hyväksyisi, voidaan meiltä sitä rahaa pyytää. Jatkossa on hyvin tärkeätä, että me emme enää mene mukaan tähän, koska me tiedämme, että kaikki raha, mikä sinne menee, ei takaisin tule.</sis:KappaleKooste>
+                                </vsk:KohtaSisalto>
+                            </vsk:PuheenvuoroOsa>
+                        </vsk:PuheenvuoroToimenpide>
+                        <vsk:PuheenvuoroToimenpide met1:muuTunnus="4998" vsk1:puheenvuoroAloitusHetki="2015-06-10T14:49:58" vsk1:puheenvuoroLuokitusKoodi="T">
+                            <vsk1:AjankohtaTeksti>14.49</vsk1:AjankohtaTeksti>
+                            <met:Toimija>
+                                <org:Henkilo met1:muuTunnus="1116">
+                                    <org1:EtuNimi>Maria</org1:EtuNimi>
+                                    <org1:SukuNimi>Tolppanen</org1:SukuNimi>
+                                    <org1:LisatietoTeksti>ps</org1:LisatietoTeksti>
+                                </org:Henkilo>
+                            </met:Toimija>
+                            <vsk:PuheenvuoroOsa met1:asiakirjatyyppiNimi="Puheenvuoro" met1:kieliKoodi="fi" met1:muuTunnus="2378" met1:tilaKoodi="Tarkistettu" met1:versioTeksti="1.1" vsk1:puheenvuoroAloitusHetki="2015-06-10T14:49:58" vsk1:puheenvuoroJNro="1" vsk1:puheenvuoroLopetusHetki="2015-06-10T14:52:10">
+                                <vsk:KohtaSisalto>
+                                    <sis:KappaleKooste> Arvoisa rouva puhemies! Palaan takaisin siihen, että me emme käytä niitä rahoja, mitä työllistämiseen on tarkoitettu. Se on suorastaan anteeksiantamatonta.</sis:KappaleKooste>
+                                    <sis:KappaleKooste>Tässä on syynä myöskin sellainen asia, että meidän lainsäädäntömme on monesti hyvin epätarkkaa. Siellä on suomenkielisyysrikkeitä, ja sen lisäksi sieltä unohtuu asioita pois. Nyt esimerkiksi työllistämismäärärahoissa kävi sillä tavalla, että määriteltiin, korvamerkittiin tietty määrä sellaisille ihmisille, jotka ovat olleet työttömänä 300 päivää. Tästä seurasi se, että TEM tulkitsi asian siten, että 300 päivää täytyy olla työttömänä sen jälkeen, kun laki astuu voimaan, mistä edelleen seurasi se, että ihmiset, jotka olivat olleet esimerkiksi 500 päivää työttömänä eli ansiosidonnaisen ajan, joutuivat olemaan vielä 300 päivää työttömänä ennen kuin heille pystyttiin maksamaan palkkatukea. Tämä oli TEMin linjaus. Näin siitäkin huolimatta, että tämä eduskunta tuossa viereisessä salissa sääti lain, jossa ei mainita minkäänlaista määräaikaa sille, että palkkatukea voitaisiin maksaa.</sis:KappaleKooste>
+                                    <sis:KappaleKooste>Minä kysynkin nytten, miten voi olla mahdollista, että me säädämme lakeja ja sitten ministeriöt päättävät, miten näitä lakeja sovelletaan, lukematta sitä lakitekstiä ja ottamatta huomioon sitä, mitä eduskunta on oikeasti asiasta halunnut ja asiasta päättänyt.</sis:KappaleKooste>
+                                    <sis:KappaleKooste>Toivon todella, että tämä eduskunta ja tämä hallitus nyt, kun lähtee menemään eteenpäin, ottaa nämä työllistämisasiat todella vakavasti ja että tässä salissa saadaan päätettyä sellainen laki, missä kuntien sakkomaksut voidaan hyötykäyttää jo aikaisemmin ja käyttää ne suoraan työllistämiseen eikä palauttaa takaisin, ei panna kuntia maksamaan sitä, jolleivät he pysty pitkäaikaistyöttömiä työllistämään.</sis:KappaleKooste>
+                                </vsk:KohtaSisalto>
+                            </vsk:PuheenvuoroOsa>
+                        </vsk:PuheenvuoroToimenpide>
+                        <vsk:PuheenvuoroToimenpide met1:muuTunnus="5004" vsk1:puheenvuoroAloitusHetki="2015-06-10T14:52:13" vsk1:puheenvuoroLuokitusKoodi="V">
+                            <vsk1:AjankohtaTeksti>14.52</vsk1:AjankohtaTeksti>
+                            <met:Toimija>
+                                <org:Henkilo met1:muuTunnus="451">
+                                    <org1:EtuNimi>Tarja</org1:EtuNimi>
+                                    <org1:SukuNimi>Filatov</org1:SukuNimi>
+                                    <org1:LisatietoTeksti>sd</org1:LisatietoTeksti>
+                                </org:Henkilo>
+                            </met:Toimija>
+                            <vsk1:TarkenneTeksti>(vastauspuheenvuoro)</vsk1:TarkenneTeksti>
+                            <vsk:PuheenvuoroOsa met1:asiakirjatyyppiNimi="Puheenvuoro" met1:kieliKoodi="fi" met1:muuTunnus="2379" met1:tilaKoodi="Tarkistettu" met1:versioTeksti="1.1" vsk1:puheenvuoroAloitusHetki="2015-06-10T14:52:13" vsk1:puheenvuoroJNro="1" vsk1:puheenvuoroLopetusHetki="2015-06-10T14:53:13">
+                                <vsk:KohtaSisalto>
+                                    <sis:KappaleKooste> Arvoisa puhemies! On helppo yhtyä siihen toiveeseen, että hallitus ottaa vakavasti työllistämismäärärahat ja erityisesti pitkäaikaistyöttömyyden. Siinä mielessä toivon, että me voimme eduskunnasta lähettää viestiä, joka tähtää siihen, että ne rahat, mitä tänä vuonna on, tulee käytettyä ja että sieltä vapautetaan sellaiseen käyttötarkoitukseen suunnattuja rahoja, jotka eivät ehkä tule käytetyksi jossakin te-toimistossa.</sis:KappaleKooste>
+                                    <sis:KappaleKooste>Tämä kokonaisongelmahan tulee siitä, että meillä on hyvin pirstaleinen järjestelmä ja meidän toimeenpano eri te-toimistoissa tai palvelukeskuksissa tai eri kunnissa on hyvin erilaista ja me emme kykene ennakoimaan sitä, minkä verran missäkin työvoimatoimistossa on esimerkiksi pitkäaikaistyöttömiä tai alle 25-vuotiaita työttömiä. Sen vuoksi on tärkeää, että esimerkiksi seuraavassa lisäbudjetissa katsotaan tämä rahan ohjeistus ja huolehditaan siitä, että rahat riittävät, koska tällä hetkellä ne näyttävät olevan loppu monesta tärkeästä käyttötarkoituksesta, jopa nuorisotakuusta.</sis:KappaleKooste>
+                                    <vsk:PuheenjohtajaRepliikki>
+                                        <vsk1:PuheenjohtajaTeksti>Puhemies Maria Lohela</vsk1:PuheenjohtajaTeksti>
+                                        <sis:KappaleKooste>Puhujalistaan.</sis:KappaleKooste>
+                                    </vsk:PuheenjohtajaRepliikki>
+                                </vsk:KohtaSisalto>
+                            </vsk:PuheenvuoroOsa>
+                        </vsk:PuheenvuoroToimenpide>
+                        <vsk:PuheenvuoroToimenpide met1:muuTunnus="5008" vsk1:puheenvuoroAloitusHetki="2015-06-10T14:53:14" vsk1:puheenvuoroLuokitusKoodi="T">
+                            <vsk1:AjankohtaTeksti>14.53</vsk1:AjankohtaTeksti>
+                            <met:Toimija>
+                                <org:Henkilo met1:muuTunnus="1317">
+                                    <org1:EtuNimi>Simon</org1:EtuNimi>
+                                    <org1:SukuNimi>Elo</org1:SukuNimi>
+                                    <org1:LisatietoTeksti>ps</org1:LisatietoTeksti>
+                                </org:Henkilo>
+                            </met:Toimija>
+                            <vsk:PuheenvuoroOsa met1:asiakirjatyyppiNimi="Puheenvuoro" met1:kieliKoodi="fi" met1:muuTunnus="2380" met1:tilaKoodi="Tarkistettu" met1:versioTeksti="1.1" vsk1:puheenvuoroAloitusHetki="2015-06-10T14:53:14" vsk1:puheenvuoroJNro="1" vsk1:puheenvuoroLopetusHetki="2015-06-10T14:55:09">
+                                <vsk:KohtaSisalto>
+                                    <sis:KappaleKooste>Arvoisa rouva puhemies! Edustaja Hoskonen otti tässä tärkeän näkökulman esille todetessaan, että perussopimuksissa on sovittu aikanaan nimenomaan pienten maiden näkökulmaa ajatellen, että tällaista kriisipolitiikkaa, mitä nyt on harjoitettu, ei tehtäisi, ei lähdettäisi hoitamaan muiden maiden velkoja, takaamaan muiden maiden velkoja. Näin on kuitenkin tehty, ja siksi on hieman erikoista, että tällaisen EU-kriitikon täytyy perätä juurikin perussopimusten noudattamista. Toivoisin, että jatkossa tähän kiinnitettäisiin enemmän huomiota.</sis:KappaleKooste>
+                                    <sis:KappaleKooste> Edustaja Zyskowicz nosti esille tärkeän asian kertomuksesta eli tämän noin miljardi euroa, minkä Suomi on todennäköisesti, voi sanoa, menettämässä. Kreikalla on ikävä historia taloudellisista ongelmista. Jos Kreikka menisi nyt varsinaisesti vararikkoon, niin se ei olisi sen valtion historiassa ensimmäinen kerta. Toivon todella, että niin ei käy, mutta pahalta näyttää. Valtaistuinpeli-kirjasarjassa oli eräs suku, jonka motto oli, että "Lannisterit maksavat aina velkansa". Toivon todella, että voimme jossain vaiheessa sanoa kreikkalaisista, että kreikkalaiset maksavat aina velkansa.</sis:KappaleKooste>
+                                    <sis:KappaleKooste>Edustaja Andersson nosti esille sen, että kaikkihan me haluamme, että Kreikalle käy hyvin. Näin varmasti on, mutta varmasti keinot siihen hieman eroavat. Itse olen sitä mieltä, että Kreikan olisi parempi olla euroalueen ulkopuolella, ja uskon, että tällä menolla siihen tullaan menemään, toivotaan sitä aktiivisesti tai ei. Siksi kysynkin edustaja Anderssonilta, miten te näette tilanteen: pitäisikö Kreikan jatkaa eurossa, suorastaan keinolla millä hyvänsä, vai olisiko parempi, että Kreikka lähtee euroalueesta ja aloittaa puhtaalta pöydältä oman rahayksikön turvin?</sis:KappaleKooste>
+                                </vsk:KohtaSisalto>
+                            </vsk:PuheenvuoroOsa>
+                        </vsk:PuheenvuoroToimenpide>
+                        <vsk:PuheenvuoroToimenpide met1:muuTunnus="5011" vsk1:puheenvuoroAloitusHetki="2015-06-10T14:55:13" vsk1:puheenvuoroLuokitusKoodi="V">
+                            <vsk1:AjankohtaTeksti>14.55</vsk1:AjankohtaTeksti>
+                            <met:Toimija>
+                                <org:Henkilo met1:muuTunnus="511">
+                                    <org1:EtuNimi>Pia</org1:EtuNimi>
+                                    <org1:SukuNimi>Viitanen</org1:SukuNimi>
+                                    <org1:LisatietoTeksti>sd</org1:LisatietoTeksti>
+                                </org:Henkilo>
+                            </met:Toimija>
+                            <vsk1:TarkenneTeksti>(vastauspuheenvuoro)</vsk1:TarkenneTeksti>
+                            <vsk:PuheenvuoroOsa met1:asiakirjatyyppiNimi="Puheenvuoro" met1:kieliKoodi="fi" met1:muuTunnus="2381" met1:tilaKoodi="Tarkistettu" met1:versioTeksti="1.1" vsk1:puheenvuoroAloitusHetki="2015-06-10T14:55:13" vsk1:puheenvuoroJNro="1" vsk1:puheenvuoroLopetusHetki="2015-06-10T14:56:24">
+                                <vsk:KohtaSisalto>
+                                    <sis:KappaleKooste> Arvoisa rouva puhemies! Kun äsken puheenvuorossani mainitsin, että ulkoministeri Soini juuri valitettavasti poistui salista, niin olisi ollut erittäin tärkeää, että hän olisi voinut osallistua tähän keskusteluun, koska minun mielestäni, kun kuuntelen esimerkiksi perussuomalaisten linjaa täällä, nyt ei ole ihan selvää, mikä teidän linjanne on tässä suhteessa: Haluatteko Suomen pois eurosta? Haluatteko Kreikan pois? Mikä on suhteenne Euroopan vakausmekanismiin? Miten varmistatte sen, että toden totta veronmaksajien vastuut tulee rajattua myös tulevaisuudessa, kuten SDP:n toimesta viime hallituksessa tapahtui näiden vakuuksien suhteen?</sis:KappaleKooste>
+                                    <sis:KappaleKooste>Me puhumme nyt, puhemies, siitä miljardin erästä, joka annettiin edellistä edellisen hallituksen aikana ilman vakuuksia, jolloin esimerkiksi keskustavetoisen hallituksen pääministeri Vanhanen totesi, että "tämähän on hyvä bisnes". Nyt on mielenkiintoista nähdä sitten, kuinka hyvä bisnes. Tämä ei ole vahingoniloa, tämä on valitettava tosiasia, että näin on käynyt, ja kukaan ei sitä toivo. Siksi haluaisin, että tässä keskustelussa myös nykyinen linja ja nykyisen hallituksen linja voisi selkeytyä tätä päivää paremmin.</sis:KappaleKooste>
+                                </vsk:KohtaSisalto>
+                            </vsk:PuheenvuoroOsa>
+                        </vsk:PuheenvuoroToimenpide>
+                        <vsk:PuheenvuoroToimenpide met1:muuTunnus="5016" vsk1:puheenvuoroAloitusHetki="2015-06-10T14:56:26" vsk1:puheenvuoroLuokitusKoodi="V">
+                            <vsk1:AjankohtaTeksti>14.56</vsk1:AjankohtaTeksti>
+                            <met:Toimija>
+                                <org:Henkilo met1:muuTunnus="1317">
+                                    <org1:EtuNimi>Simon</org1:EtuNimi>
+                                    <org1:SukuNimi>Elo</org1:SukuNimi>
+                                    <org1:LisatietoTeksti>ps</org1:LisatietoTeksti>
+                                </org:Henkilo>
+                            </met:Toimija>
+                            <vsk1:TarkenneTeksti>(vastauspuheenvuoro)</vsk1:TarkenneTeksti>
+                            <vsk:PuheenvuoroOsa met1:asiakirjatyyppiNimi="Puheenvuoro" met1:kieliKoodi="fi" met1:muuTunnus="2383" met1:tilaKoodi="Tarkistettu" met1:versioTeksti="1.1" vsk1:puheenvuoroAloitusHetki="2015-06-10T14:56:26" vsk1:puheenvuoroJNro="1" vsk1:puheenvuoroLopetusHetki="2015-06-10T14:57:37">
+                                <vsk:KohtaSisalto>
+                                    <sis:KappaleKooste> Arvoisa rouva puhemies! Edustaja Viitanen on oikeassa siinä, että edustaja Vanhasen aikanaan pääministerinä sanoma “tämä on hyvä bisnes” on osoittautunut valitettavan suureksi mokaksi ja bisnestä tästä ei kyllä millään saa. Mutta toisaalta sosialidemokraattien aivan oikein vaatimat vakuudetkin Kreikan osalta, jos yhtään toteutuvat Kreikan vaatimukset sillä tavalla kuin nyt Syriza Tsiprasin suulla on esittänyt, kyllä laukeavat, eli eipä niistä välttämättä paljon meille hyötyä tule olemaan.</sis:KappaleKooste>
+                                    <sis:KappaleKooste>Edustaja Viitanen peräänkuulutti meidän linjaamme suhteessa Kreikan eurojäsenyyteen, suhteessa vakausmekanismiin. Kuten totesin ja kuten puheenjohtaja Soini on todennut, Kreikan olisi parempi olla euron ulkopuolella, se on perussuomalainen linja. Mitä tulee sitten vakausmekanismiin, totta kai mennään hallituksen linjalla, eli hallitus suhtautuu kielteisesti Suomen takausten kasvattamiseen eurokriisissä. Se on hyvin selkeä linja, mikä sinne on merkattu, ja myös se, että hallitus sitoutuu palauttamaan no bail-out -säännön takaisin voimaan.</sis:KappaleKooste>
+                                </vsk:KohtaSisalto>
+                            </vsk:PuheenvuoroOsa>
+                        </vsk:PuheenvuoroToimenpide>
+                        <vsk:PuheenvuoroToimenpide met1:muuTunnus="5017" vsk1:puheenvuoroAloitusHetki="2015-06-10T14:57:39" vsk1:puheenvuoroLuokitusKoodi="V">
+                            <vsk1:AjankohtaTeksti>14.57</vsk1:AjankohtaTeksti>
+                            <met:Toimija>
+                                <org:Henkilo met1:muuTunnus="203">
+                                    <org1:EtuNimi>Riitta</org1:EtuNimi>
+                                    <org1:SukuNimi>Myller</org1:SukuNimi>
+                                    <org1:LisatietoTeksti>sd</org1:LisatietoTeksti>
+                                </org:Henkilo>
+                            </met:Toimija>
+                            <vsk1:TarkenneTeksti>(vastauspuheenvuoro)</vsk1:TarkenneTeksti>
+                            <vsk:PuheenvuoroOsa met1:asiakirjatyyppiNimi="Puheenvuoro" met1:kieliKoodi="fi" met1:muuTunnus="2384" met1:tilaKoodi="Tarkistettu" met1:versioTeksti="1.1" vsk1:puheenvuoroAloitusHetki="2015-06-10T14:57:39" vsk1:puheenvuoroJNro="1" vsk1:puheenvuoroLopetusHetki="2015-06-10T14:58:47">
+                                <vsk:KohtaSisalto>
+                                    <sis:KappaleKooste> Arvoisa puhemies! Kun tässä on tätä keskustelua nyt kuullut, niin ihmettelen kovasti sitä, että perussuomalaiset ovat hallituksessa ja ovat suurin piirtein sen politiikan takana, mitä hallituksesta käsin nyt on viimeiset vuodet tehty, ehkä menevät hieman pidemmällekin siinä. Heidän puheensa ennen vaaleja olivat hyvin erilaisia. Tässä haluan vain muistuttaa siitä, mikä vastuu meillä on äänestäjiämme kohtaan. Kun sosialidemokraatit arvostelivat ennen vuoden 2011 vaaleja harjoitettua politiikkaa kriisimaiden tukemisessa, me teimme hallituksessa selkeitä muutoksia, jotka vastasivat niitä puheita ja niitä tavoitteita, joita olimme ennen vaaleja tehneet. Tässä on mielestäni sellainen kysymys, jossa meidän pitää vastata äänestäjille omista lupauksistamme.</sis:KappaleKooste>
+                                </vsk:KohtaSisalto>
+                            </vsk:PuheenvuoroOsa>
+                        </vsk:PuheenvuoroToimenpide>
+                        <vsk:PuheenvuoroToimenpide met1:muuTunnus="5018" vsk1:puheenvuoroAloitusHetki="2015-06-10T14:58:48" vsk1:puheenvuoroLuokitusKoodi="V">
+                            <vsk1:AjankohtaTeksti>14.58</vsk1:AjankohtaTeksti>
+                            <met:Toimija>
+                                <org:Henkilo met1:muuTunnus="511">
+                                    <org1:EtuNimi>Pia</org1:EtuNimi>
+                                    <org1:SukuNimi>Viitanen</org1:SukuNimi>
+                                    <org1:LisatietoTeksti>sd</org1:LisatietoTeksti>
+                                </org:Henkilo>
+                            </met:Toimija>
+                            <vsk1:TarkenneTeksti>(vastauspuheenvuoro)</vsk1:TarkenneTeksti>
+                            <vsk:PuheenvuoroOsa met1:asiakirjatyyppiNimi="Puheenvuoro" met1:kieliKoodi="fi" met1:muuTunnus="2385" met1:tilaKoodi="Tarkistettu" met1:versioTeksti="1.1" vsk1:puheenvuoroAloitusHetki="2015-06-10T14:58:48" vsk1:puheenvuoroJNro="1" vsk1:puheenvuoroLopetusHetki="2015-06-10T14:59:48">
+                                <vsk:KohtaSisalto>
+                                    <sis:KappaleKooste> Arvoisa rouva puhemies! Kyllä edustaja Myller tässä kiinnitti aivan olennaiseen asiaan huomiota, nimittäin äänestäjän- ja kuluttajansuojaan. Mutta tietenkin tässä tapauksessa, kun perussuomalaisten linja on muuttunut oikeaan suuntaan ja se takinkääntö on tapahtunut siten, että nyt kannatetaan sitä viime hallituksen tiukkaa linjaa — veronmaksajien vastuut rajataan ja muuta — niin siinä mielessä tulo sosialidemokraattiselle tiukalle linjalle on sinänsä hyvä, koska saattoi olla, että ennen viime vaaleja jotkut äänestäjät päättelivät siellä Tammelantorilla, että perussuomalaisten mielestä suurin piirtein koko Suomen ja kaikkien pitää irtaantua eurosta tai milloin mitäkin. Juuri siksi tietenkin se, että hallituksen linja tässä suhteessa muistuttaa sosialidemokraattien linjaa, joka on tiukka, veronmaksajien vastuut rajaava linja, on sinänsä hyvä asia. Ja tässäkin tapauksessa, arvoisa puhemies, on iloista, että takki on kääntynyt oikeaan suuntaan. Mutta kuten sanottu, on saatava varmuus tästä, ja siksi olisin toivonut tätä keskustelua myös tässä yhteydessä.</sis:KappaleKooste>
+                                </vsk:KohtaSisalto>
+                            </vsk:PuheenvuoroOsa>
+                        </vsk:PuheenvuoroToimenpide>
+                        <vsk:PuheenvuoroToimenpide met1:muuTunnus="5019" vsk1:puheenvuoroAloitusHetki="2015-06-10T14:59:49" vsk1:puheenvuoroLuokitusKoodi="V">
+                            <vsk1:AjankohtaTeksti>14.59</vsk1:AjankohtaTeksti>
+                            <met:Toimija>
+                                <org:Henkilo met1:muuTunnus="1116">
+                                    <org1:EtuNimi>Maria</org1:EtuNimi>
+                                    <org1:SukuNimi>Tolppanen</org1:SukuNimi>
+                                    <org1:LisatietoTeksti>ps</org1:LisatietoTeksti>
+                                </org:Henkilo>
+                            </met:Toimija>
+                            <vsk1:TarkenneTeksti>(vastauspuheenvuoro)</vsk1:TarkenneTeksti>
+                            <vsk:PuheenvuoroOsa met1:asiakirjatyyppiNimi="Puheenvuoro" met1:kieliKoodi="fi" met1:muuTunnus="2386" met1:tilaKoodi="Tarkistettu" met1:versioTeksti="1.1" vsk1:puheenvuoroAloitusHetki="2015-06-10T14:59:49" vsk1:puheenvuoroJNro="1" vsk1:puheenvuoroLopetusHetki="2015-06-10T15:01:09">
+                                <vsk:KohtaSisalto>
+                                    <sis:KappaleKooste> Arvoisa rouva puhemies! Tämä oli hauska puheenvuoro, jonka äsken kuulin. Jos perussuomalaisten linja on nyt kääntynyt demareiden linjalle, niin täytyy kyllä sanoa, että kovin on laput silmillä luettu ja kuunneltu uutisia. Meidän linjamme on ollut alusta saakka täysin selvä ja täysin tiukka: "ei" näille maksamisille. (Välihuutoja)</sis:KappaleKooste>
+                                    <sis:KappaleKooste>Jos me puhumme siitä, mitä äänestäjille on luvattu, niin kyllä nyt kannattaa katsoa peiliin hetken ja miettiä, mitä esimerkiksi viime kaudella teitte. Teidän aikananne työttömyys kasvoi tässä maassa, teidän aikananne työpaikat vähenivät tästä maasta, teidän aikananne vienti tyrehtyi tässä maassa. Te olitte silloin hallituksessa. Te olitte päättämässä näitä asioita. Te annoitte tämän kaiken tapahtua.</sis:KappaleKooste>
+                                    <sis:KappaleKooste>Mutta jos me puhumme Kreikan tilanteesta, niin se tilannehan on sellainen, että Kreikan pitäisi todellakin tajuta erota tai unionin pitäisi ymmärtää vaikka erottaa Kreikka jo näillä eväillä, mitä tällä hetkellä siellä on. Henkilökohtaisesti tietenkin toivon, (Puhemies koputtaa) että Kreikan kansa ei kärsisi siitä, mutta siellä valitettavasti tilanne on se, että siellä on rahavalta erikseen ja kansa erikseen.</sis:KappaleKooste>
+                                </vsk:KohtaSisalto>
+                            </vsk:PuheenvuoroOsa>
+                        </vsk:PuheenvuoroToimenpide>
+                        <vsk:PuheenvuoroToimenpide met1:muuTunnus="5025" vsk1:puheenvuoroAloitusHetki="2015-06-10T15:01:10" vsk1:puheenvuoroLuokitusKoodi="V">
+                            <vsk1:AjankohtaTeksti>15.01</vsk1:AjankohtaTeksti>
+                            <met:Toimija>
+                                <org:Henkilo met1:muuTunnus="511">
+                                    <org1:EtuNimi>Pia</org1:EtuNimi>
+                                    <org1:SukuNimi>Viitanen</org1:SukuNimi>
+                                    <org1:LisatietoTeksti>sd</org1:LisatietoTeksti>
+                                </org:Henkilo>
+                            </met:Toimija>
+                            <vsk1:TarkenneTeksti>(vastauspuheenvuoro)</vsk1:TarkenneTeksti>
+                            <vsk:PuheenvuoroOsa met1:asiakirjatyyppiNimi="Puheenvuoro" met1:kieliKoodi="fi" met1:muuTunnus="2387" met1:tilaKoodi="Tarkistettu" met1:versioTeksti="1.1" vsk1:puheenvuoroAloitusHetki="2015-06-10T15:01:10" vsk1:puheenvuoroJNro="1" vsk1:puheenvuoroLopetusHetki="2015-06-10T15:02:23">
+                                <vsk:KohtaSisalto>
+                                    <sis:KappaleKooste>Arvoisa rouva puhemies! Tämä keskustelu nyt vähän ehkä laajenee suhteessa siihen, mitä kukakin on ennen vaaleja sanonut tai tehnyt. Siinä mielessä olen hirveän hyvilläni siitä, että SDP:n linja on ollut koko ajan hyvin johdonmukainen tässä eurokriisissä. 2010 me tosiaankin näitä vakuudettomia lainoja vastustimme, sen jälkeen vaadimme veronmaksajien vastuiden rajaamista ja edelleen pysymme samalla linjalla ja kuluttajansuoja on taattu. Samoin meille työasiat ja työllisyys ovat tärkeitä. Olemme tehneet paljon myös oikeudenmukaisuuden puolesta, esimerkiksi oikeudenmukaisten veroratkaisujen puolesta. On hyvin tärkeää, että jos vaalien alla luvataan pitää pienemmistä ihmisistä huolta, näin myös tehdään vaalien jälkeen.</sis:KappaleKooste>
+                                    <sis:KappaleKooste>Ihmettelen, puhemies, kovasti esimerkiksi perussuomalaisten linjaa tässä. Ette varmasti ennen vaaleja kertoneet äänestäjillenne, että aiotte leikata pienituloisilta eläkkeensaajilta, työttömiltä, opiskelijoilta, lapsiperheiltä. Tänään esimerkiksi päiväkotiväki on kovin huolissaan tuolla barrikadeilla, ja aion kyllä siihen mielenosoitukseen myös osallistua ja käydä tätä keskustelua, että miksi vaalien alla puhuttiin niin toista. Mutta tässä tapauksessa tietenkin kysymys on siitä, että tämä on nyt perussuomalaisten valinta, (Puhemies koputtaa) että olette mukana tässä porvarihallituksessa.</sis:KappaleKooste>
+                                </vsk:KohtaSisalto>
+                            </vsk:PuheenvuoroOsa>
+                        </vsk:PuheenvuoroToimenpide>
+                        <vsk:PuheenvuoroToimenpide met1:muuTunnus="5026" vsk1:puheenvuoroAloitusHetki="2015-06-10T15:02:25" vsk1:puheenvuoroLuokitusKoodi="V">
+                            <vsk1:AjankohtaTeksti>15.02</vsk1:AjankohtaTeksti>
+                            <met:Toimija>
+                                <org:Henkilo met1:muuTunnus="1116">
+                                    <org1:EtuNimi>Maria</org1:EtuNimi>
+                                    <org1:SukuNimi>Tolppanen</org1:SukuNimi>
+                                    <org1:LisatietoTeksti>ps</org1:LisatietoTeksti>
+                                </org:Henkilo>
+                            </met:Toimija>
+                            <vsk1:TarkenneTeksti>(vastauspuheenvuoro)</vsk1:TarkenneTeksti>
+                            <vsk:PuheenvuoroOsa met1:asiakirjatyyppiNimi="Puheenvuoro" met1:kieliKoodi="fi" met1:muuTunnus="2388" met1:tilaKoodi="Tarkistettu" met1:versioTeksti="1.1" vsk1:puheenvuoroAloitusHetki="2015-06-10T15:02:25" vsk1:puheenvuoroJNro="1" vsk1:puheenvuoroLopetusHetki="2015-06-10T15:03:24">
+                                <vsk:KohtaSisalto>
+                                    <sis:KappaleKooste> Arvoisa rouva puhemies! Onko teidän mielestänne oikeudenmukaista verotusta se, että kun ihminen jää työttömäksi ja jos hän esimerkiksi saa ansiosidonnaista päivärahaa, niin se on noin 60 prosenttia hänen ansioistaan ja sen jälkeen vero siitä minimissään on 20 prosenttia, kun henkilö on saattanut maksaa ansiotuloveroa työssä ollessaan 12 prosenttia? Tämäkö on sitä oikeudenmukaista verotusta, mitä sosialidemokraatit ovat ajaneet? Onko teidän mielestänne oikeudenmukaista se, että eläkeläiset joutuvat maksamaan kovempaa verotusta kuin ansiotyössä olevat ihmiset samankokoisesta tulosta kuin mikä ansiotyöstä saadaan? Siinä ei ole minun mielestäni minkäänlaista tasavertaisuutta eikä solidaarisuutta.</sis:KappaleKooste>
+                                    <sis:KappaleKooste>Minun mielestäni nämä ovat niitä asioita, mitä pitää korjata tässä maassa ja mihin pitää myöskin tällä hallituskaudella pyrkiä puuttumaan.</sis:KappaleKooste>
+                                </vsk:KohtaSisalto>
+                            </vsk:PuheenvuoroOsa>
+                        </vsk:PuheenvuoroToimenpide>
+                        <vsk:PuheenvuoroToimenpide met1:muuTunnus="5032" vsk1:puheenvuoroAloitusHetki="2015-06-10T15:03:27" vsk1:puheenvuoroLuokitusKoodi="V">
+                            <vsk1:AjankohtaTeksti>15.03</vsk1:AjankohtaTeksti>
+                            <met:Toimija>
+                                <org:Henkilo met1:muuTunnus="511">
+                                    <org1:EtuNimi>Pia</org1:EtuNimi>
+                                    <org1:SukuNimi>Viitanen</org1:SukuNimi>
+                                    <org1:LisatietoTeksti>sd</org1:LisatietoTeksti>
+                                </org:Henkilo>
+                            </met:Toimija>
+                            <vsk1:TarkenneTeksti>(vastauspuheenvuoro)</vsk1:TarkenneTeksti>
+                            <vsk:PuheenvuoroOsa met1:asiakirjatyyppiNimi="Puheenvuoro" met1:kieliKoodi="fi" met1:muuTunnus="2389" met1:tilaKoodi="Tarkistettu" met1:versioTeksti="1.1" vsk1:puheenvuoroAloitusHetki="2015-06-10T15:03:27" vsk1:puheenvuoroJNro="1" vsk1:puheenvuoroLopetusHetki="2015-06-10T15:04:43">
+                                <vsk:KohtaSisalto>
+                                    <sis:KappaleKooste>Arvoisa puhemies! Tästä olemmekin juuri huolissamme, muun muassa eläkkeensaajan verotuksesta, ja siksi kannamme huolta siitä, että hallitushan nyt nimenomaan aikoo tätä veroeroa omilla toimillaan kasvattaa.</sis:KappaleKooste>
+                                    <sis:KappaleKooste>Olemme erittäin huolissamme siitä, että tähän hallituksen kokonaisveroratkaisuun ei liity yhtäkään elementtiä, jolla kaikkein varakkaimmat, kaikkein suurituloisimmat vuorineuvokset osallistuisivat verotuksen kautta lamatalkoisiin, vaikka sitä on toivonut niin arkkipiispa Mäkinen kuin kovin kovin moni muu. Sitä ovat toivoneet ekonomistit, jotka kertovat, että tällaisilla hyväntekeväisyystempauksilla on korkeintaan veronmenetysseuraamuksia, mikä tietenkin yhteisen hyvän kannalta on huono asia.</sis:KappaleKooste>
+                                    <sis:KappaleKooste>Eli kysyn teiltä käsi sydämellä: eikö nyt olisi aika tosissaan korjata verolinjaa oikeudenmukaisemmaksi? Viime kaudella tehtiin solidaarisuusvero, nostettiin pääomaveroa, tehtiin näitä elementtejä, joilla myös hyväosaiset olivat mukana näissä yhteisissä lamatalkoissa, ja toivoisin sitä samaa linjaa myös nykyiseltä hallitukselta. Valitettavasti nyt käy päinvastoin. (Olavi Ala-Nissilä: Sama linjahan jatkuu!) Valitettavasti nyt käy päinvastoin. (Puhemies koputtaa) — Edustaja Ala-Nissilä voisi varmasti mainita muutaman hyväosaisia koskevan verouudistuksen tässä. (Olavi Ala-Nissilän välihuuto) — No, se nyt vielä puuttuisi, että se olisi se solidaarisuustoimenpide, (Puhemies koputtaa) että otettaisiin solidaarisuusvero pois. Ei se näin mene.</sis:KappaleKooste>
+                                </vsk:KohtaSisalto>
+                            </vsk:PuheenvuoroOsa>
+                        </vsk:PuheenvuoroToimenpide>
+                        <vsk:PuheenvuoroToimenpide met1:muuTunnus="5033" vsk1:puheenvuoroAloitusHetki="2015-06-10T15:04:45" vsk1:puheenvuoroLuokitusKoodi="V">
+                            <vsk1:AjankohtaTeksti>15.04</vsk1:AjankohtaTeksti>
+                            <met:Toimija>
+                                <org:Henkilo met1:muuTunnus="768">
+                                    <org1:EtuNimi>Eero</org1:EtuNimi>
+                                    <org1:SukuNimi>Heinäluoma</org1:SukuNimi>
+                                    <org1:LisatietoTeksti>sd</org1:LisatietoTeksti>
+                                </org:Henkilo>
+                            </met:Toimija>
+                            <vsk1:TarkenneTeksti>(vastauspuheenvuoro)</vsk1:TarkenneTeksti>
+                            <vsk:PuheenvuoroOsa met1:asiakirjatyyppiNimi="Puheenvuoro" met1:kieliKoodi="fi" met1:muuTunnus="2390" met1:tilaKoodi="Tarkistettu" met1:versioTeksti="1.1" vsk1:puheenvuoroAloitusHetki="2015-06-10T15:04:45" vsk1:puheenvuoroJNro="1" vsk1:puheenvuoroLopetusHetki="2015-06-10T15:05:55">
+                                <vsk:KohtaSisalto>
+                                    <sis:KappaleKooste>Arvoisa puhemies! Olen koettanut vähän pidätellä itseäni ja pysyttäytyä tässä tarkastusvaliokunnan puheenjohtajan roolissa. Näyttää siltä, että valiokunnalle tulee aika haastava työ ja aivan erityisesti, jos valiokunta joutuu vielä ottamaan tarkastettavaksi nämä puolueiden esittämät vaalilupaukset ja niiden toteutumisen.</sis:KappaleKooste>
+                                    <sis:KappaleKooste>Tämä eläkekeskustelu on erittäin tärkeä keskustelu. Tuon siihen vain yhden lisäyksen, ja se on se, että tarkistin eläkeläisten verokohtelun suhteessa samaa tuloa saaviin palkansaajiin. Tiedot löytyvät Veronmaksajain Keskusliiton nettisivuilta. Niistä käy ilmi, että 95 000 euroa vuodessa, siis 95 000 euroa vuodessa, tienaavat eläkeläiset ja siitä ylöspäin maksavat enemmän veroa kuin vastaavaa tuloa saavat työssä olevat. Alhaisemmissa tuloissa vero on joko sama tai alhaisempi. 1 000 euroa ja vähemmän eläkettä saavat ovat alhaisemmin verotettuja kuin samaa tuloa saavat palkansaajat — tiedot löytyvät Veronmaksajain Keskusliiton sivuilta — kun huomioidaan kaikki pakolliset sekä verot että maksut.</sis:KappaleKooste>
+                                </vsk:KohtaSisalto>
+                            </vsk:PuheenvuoroOsa>
+                        </vsk:PuheenvuoroToimenpide>
+                        <vsk:PuheenvuoroToimenpide met1:muuTunnus="5039" vsk1:puheenvuoroAloitusHetki="2015-06-10T15:05:56" vsk1:puheenvuoroLuokitusKoodi="V">
+                            <vsk1:AjankohtaTeksti>15.05</vsk1:AjankohtaTeksti>
+                            <met:Toimija>
+                                <org:Henkilo met1:muuTunnus="1310">
+                                    <org1:EtuNimi>Li</org1:EtuNimi>
+                                    <org1:SukuNimi>Andersson</org1:SukuNimi>
+                                    <org1:LisatietoTeksti>vas</org1:LisatietoTeksti>
+                                </org:Henkilo>
+                            </met:Toimija>
+                            <vsk1:TarkenneTeksti>(vastauspuheenvuoro)</vsk1:TarkenneTeksti>
+                            <vsk:PuheenvuoroOsa met1:asiakirjatyyppiNimi="Puheenvuoro" met1:kieliKoodi="fi" met1:muuTunnus="2391" met1:tilaKoodi="Tarkistettu" met1:versioTeksti="1.1" vsk1:puheenvuoroAloitusHetki="2015-06-10T15:05:56" vsk1:puheenvuoroJNro="1" vsk1:puheenvuoroLopetusHetki="2015-06-10T15:06:51">
+                                <vsk:KohtaSisalto>
+                                    <sis:KappaleKooste>Arvoisa rouva puhemies! Edustaja Tolppanen nostaa esille aivan oikeita epäkohtia, mitä tulee meidän verotuspolitiikkaan ja tulonjakoon, mutta kyllä tässä herää kysymys, mitä perussuomalaiset nyt sitten ovat tekemässä hallituksessa näiden epäkohtien korjaamiseksi. En ainakaan itse havainnut tästä mainintaa hallitusohjelmassa.</sis:KappaleKooste>
+                                    <sis:KappaleKooste>Sen sijaan havaitsin kyllä mainintoja siitä, että suurituloisiin kohdistuva verotus nyt lähinnä koostuu tästä solidaarisuusveron jatkamisesta, joka siis tuottaa noin 65 miljoonaa euroa verotuottoja vuositasolla, kun taas pienituloisiin, sosiaaliturvan varassa eläviin suomalaisiin ja eläkeläisiin ja heidän toimeentuloonsa kohdistetaan 1,5 miljardin euron edestä leikkauksia. Valitettavasti perussuomalaiset ovat nyt mukana hallituksessa, joka näin tulee kasvattamaan tuloeroja näiden meidän tulonjakoon liittyvien epäkohtien korjaamisen sijaan.</sis:KappaleKooste>
+                                </vsk:KohtaSisalto>
+                            </vsk:PuheenvuoroOsa>
+                        </vsk:PuheenvuoroToimenpide>
+                        <vsk:PuheenvuoroToimenpide met1:muuTunnus="5040" vsk1:puheenvuoroAloitusHetki="2015-06-10T15:06:53" vsk1:puheenvuoroLuokitusKoodi="V">
+                            <vsk1:AjankohtaTeksti>15.06</vsk1:AjankohtaTeksti>
+                            <met:Toimija>
+                                <org:Henkilo met1:muuTunnus="1116">
+                                    <org1:EtuNimi>Maria</org1:EtuNimi>
+                                    <org1:SukuNimi>Tolppanen</org1:SukuNimi>
+                                    <org1:LisatietoTeksti>ps</org1:LisatietoTeksti>
+                                </org:Henkilo>
+                            </met:Toimija>
+                            <vsk1:TarkenneTeksti>(vastauspuheenvuoro)</vsk1:TarkenneTeksti>
+                            <vsk:PuheenvuoroOsa met1:asiakirjatyyppiNimi="Puheenvuoro" met1:kieliKoodi="fi" met1:muuTunnus="2392" met1:tilaKoodi="Tarkistettu" met1:versioTeksti="1.1" vsk1:puheenvuoroAloitusHetki="2015-06-10T15:06:53" vsk1:puheenvuoroJNro="1" vsk1:puheenvuoroLopetusHetki="2015-06-10T15:08:07">
+                                <vsk:KohtaSisalto>
+                                    <sis:KappaleKooste>Arvoisa rouva puhemies! Tietysti, jos puhutaan eläkeläisten verotuksesta, varmaan voimme tarkistella sitä useammalta kantilta. Eläketulovähennystä ei samalla tavalla myönnetä kuin palkkatulovähennystä. Sitä ei esimerkiksi otettu huomioon Yle-verossa, vaan sieltä kategorisesti maksetaan enempi Yle-veroa kuin palkansaajat maksavat.</sis:KappaleKooste>
+                                    <sis:KappaleKooste>Jos puhumme siitä, mitä veroja nytten täytyy maksaa, niin viime kaudella me jo esitimme sitä, että kaikki ihmiset, jotka tienaavat 70 000 euroa vuodessa, tulisivat viidenteen veroluokkaan ja maksaisivat enemmän, mutta se ei kelvannut teille. Te jätitte sen sijaan tämän 100 000 euroa. Mikä siinä on erona? Siinä on erona 30 000 euroa ja se, että aika harvat tienaavat palkkatyöstä 100 000 euroa vuodessa, mutta 70 000 tienaa aika moni. Jos se olisi säädetty viime vuonna, nyt voisimme jatkaa samaa linjaa ja saisimme huomattavasti enemmän verotuloja. (Eduskunnasta: Minä kannatan tätä esitystä!) — Totta kai, kannatetaan sitä ja toivotaan, että ihmiset maksavat (Puhemies: Aika!) vapaaehtoisesti. Tosin minä henkilökohtaisesti olen siinä asiassa skeptinen.</sis:KappaleKooste>
+                                </vsk:KohtaSisalto>
+                            </vsk:PuheenvuoroOsa>
+                        </vsk:PuheenvuoroToimenpide>
+                        <vsk:PuheenvuoroToimenpide met1:muuTunnus="5041" vsk1:puheenvuoroAloitusHetki="2015-06-10T15:08:10" vsk1:puheenvuoroLuokitusKoodi="V">
+                            <vsk1:AjankohtaTeksti>15.08</vsk1:AjankohtaTeksti>
+                            <met:Toimija>
+                                <org:Henkilo met1:muuTunnus="392">
+                                    <org1:EtuNimi>Olavi</org1:EtuNimi>
+                                    <org1:SukuNimi>Ala-Nissilä</org1:SukuNimi>
+                                    <org1:LisatietoTeksti>kesk</org1:LisatietoTeksti>
+                                </org:Henkilo>
+                            </met:Toimija>
+                            <vsk1:TarkenneTeksti>(vastauspuheenvuoro)</vsk1:TarkenneTeksti>
+                            <vsk:PuheenvuoroOsa met1:asiakirjatyyppiNimi="Puheenvuoro" met1:kieliKoodi="fi" met1:muuTunnus="2393" met1:tilaKoodi="Tarkistettu" met1:versioTeksti="1.1" vsk1:puheenvuoroAloitusHetki="2015-06-10T15:08:10" vsk1:puheenvuoroJNro="1" vsk1:puheenvuoroLopetusHetki="2015-06-10T15:09:03">
+                                <vsk:KohtaSisalto>
+                                    <sis:KappaleKooste>Arvoisa puhemies! Monet henkilöt ovat riippuvaisia julkisesta taloudesta: juuri vähävaraiset, eläkeläiset ja niin edelleen. Heidän kannaltaan on tietysti tärkeää, että julkistalous olisi jossain kunnossa. Usein sanotaan, että kunnossa oleva julkistalous on köyhän paras ystävä. Se on vähän yksinkertaistettuna näin.</sis:KappaleKooste>
+                                    <sis:KappaleKooste>Mutta minusta Kreikassa, ehkä vähän meilläkin, juuri näitä ihmisiä harhautetaan sillä tavalla, että annetaan sellaisia lupauksia, sellaista liturgiaa, joilla julkistalous ajautuu huonompaan tilanteeseen, niin kuin Kreikassa. Ihmiset joutuvat todella vaikeuksiin siellä, kun on annettu sellainen kuva, ettei näitä uudistuksia pidäkään vain jatkaa, vaan voidaan jatkaa tällaisella show- ja liturgiamenettelyllä, joka johtaa vain Kreikan todellisiin vaikeuksiin. Emme me saa Suomessa sortua tähän, kyllä meidän täytyy nähdä se, että meidän täytyy saada julkistalous kuntoon, jotta me voimme niitten ihmisten asiaa hoitaa, jotka ovat julkistaloudesta riippuvaisia.</sis:KappaleKooste>
+                                </vsk:KohtaSisalto>
+                            </vsk:PuheenvuoroOsa>
+                        </vsk:PuheenvuoroToimenpide>
+                        <vsk:PuheenvuoroToimenpide met1:muuTunnus="5042" vsk1:puheenvuoroAloitusHetki="2015-06-10T15:09:06" vsk1:puheenvuoroLuokitusKoodi="V">
+                            <vsk1:AjankohtaTeksti>15.09</vsk1:AjankohtaTeksti>
+                            <met:Toimija>
+                                <org:Henkilo met1:muuTunnus="511">
+                                    <org1:EtuNimi>Pia</org1:EtuNimi>
+                                    <org1:SukuNimi>Viitanen</org1:SukuNimi>
+                                    <org1:LisatietoTeksti>sd</org1:LisatietoTeksti>
+                                </org:Henkilo>
+                            </met:Toimija>
+                            <vsk1:TarkenneTeksti>(vastauspuheenvuoro)</vsk1:TarkenneTeksti>
+                            <vsk:PuheenvuoroOsa met1:asiakirjatyyppiNimi="Puheenvuoro" met1:kieliKoodi="fi" met1:muuTunnus="2394" met1:tilaKoodi="Tarkistettu" met1:versioTeksti="1.1" vsk1:puheenvuoroAloitusHetki="2015-06-10T15:09:06" vsk1:puheenvuoroJNro="1" vsk1:puheenvuoroLopetusHetki="2015-06-10T15:10:18">
+                                <vsk:KohtaSisalto>
+                                    <sis:KappaleKooste> Arvoisa rouva puhemies! Siitä olemme kaikki samaa mieltä, että julkinen talous tulee saada kuntoon. Tulee tehdä kuitenkin nämä vaikeat yhtälöt oikeudenmukaisella tavalla ja oikeudenmukaisella pohjalla.</sis:KappaleKooste>
+                                    <sis:KappaleKooste>Puhemies! Olen hyvin iloinen, että täällä perussuomalaisten edustaja Tolppanen valtiovarainvaliokunnan varapuheenjohtajana teki juuri ehdotuksen siitä, että voisimme toden totta nostaa hyvätuloisimpien verotusta, oliko se (Maria Tolppasen välihuuto) 70 000 nyt se raja. Me mielellämme jo etukäteen kannatamme tätä ehdotusta, kun perussuomalaiset tulee sen ehkä siellä valtiovarainvaliokunnassa tekemään, nimittäin tämä on vakava kysymys: ihmiset eivät koe sitä oikeudenmukaiseksi, että kaikkein hyvätuloisimmat eivät osallistu.</sis:KappaleKooste>
+                                    <sis:KappaleKooste>Puhemies! Kiinnitin huomiota myös, kun viime lauantaina oli nykyisen hallituksen taipaleen yhdeksäs päivä, ja se oli hyvä päivä siksi, että ulkoministeri, puheenjohtaja Soini otti kantaa Helsingin Sanomissa, että myös pääomaverotusta voidaan katsoa. Minä ainakin tulkitsin tässä tilanteessa, että se "voidaan katsoa" tarkoittaisi nimenomaan, että sitä pääomaveroa voitaisiin oikeudenmukaisuussyistä toivottavasti nostaa eikä muuten vain katsella. Siksi tietenkin jäin odottamaan perussuomalaisilta myös aloitteita (Puhemies koputtaa) tähän suuntaan, jotta saisimme myös hyväosaiset lamatalkoisiin.</sis:KappaleKooste>
+                                    <vsk:PuheenjohtajaRepliikki>
+                                        <vsk1:PuheenjohtajaTeksti>Puhemies Maria Lohela</vsk1:PuheenjohtajaTeksti>
+                                        <sis:KappaleKooste>Puhujalistaan.</sis:KappaleKooste>
+                                    </vsk:PuheenjohtajaRepliikki>
+                                </vsk:KohtaSisalto>
+                            </vsk:PuheenvuoroOsa>
+                        </vsk:PuheenvuoroToimenpide>
+                        <vsk:PuheenvuoroToimenpide met1:muuTunnus="5043" vsk1:puheenvuoroAloitusHetki="2015-06-10T15:10:20" vsk1:puheenvuoroLuokitusKoodi="T">
+                            <vsk1:AjankohtaTeksti>15.10</vsk1:AjankohtaTeksti>
+                            <met:Toimija>
+                                <org:Henkilo met1:muuTunnus="1310">
+                                    <org1:EtuNimi>Li</org1:EtuNimi>
+                                    <org1:SukuNimi>Andersson</org1:SukuNimi>
+                                    <org1:LisatietoTeksti>vas</org1:LisatietoTeksti>
+                                </org:Henkilo>
+                            </met:Toimija>
+                            <vsk:PuheenvuoroOsa met1:asiakirjatyyppiNimi="Puheenvuoro" met1:kieliKoodi="fi" met1:muuTunnus="2395" met1:tilaKoodi="Tarkistettu" met1:versioTeksti="1.1" vsk1:puheenvuoroAloitusHetki="2015-06-10T15:10:20" vsk1:puheenvuoroJNro="1" vsk1:puheenvuoroLopetusHetki="2015-06-10T15:12:57">
+                                <vsk:KohtaSisalto>
+                                    <sis:KappaleKooste>Arvoisa rouva puhemies! Sallinette vielä yhden puheenvuoron liittyen Kreikkaan.</sis:KappaleKooste>
+                                    <sis:KappaleKooste>Jos puhutaan Kreikan taloudesta ja niistä ongelmista, jotka siellä ikään kuin pitkällä tähtäimellä ovat taustalla, niin kyllä ne liittyvät ennen kaikkea heikkoon tai liian kapeaan veropohjaan, jossa Kreikalla on jo pitkään ollut ongelmana nimenomaan verovälttely ja myöskin liian pieni verokertymä. Siellä ovat olleet ongelmana tämmöiset pitkän ajan aikana kertyneet alijäämät, jotka ennen kaikkea liittyvät myöskin Kreikan elinkeinorakenteeseen ja siihen, että Kreikan vientisektori esimerkiksi ei ole pärjännyt kovin hyvin tässä euromaiden välisessä sisäisessä kaupankäynnissä euroalueella.</sis:KappaleKooste>
+                                    <sis:KappaleKooste>Nämä tosiasiat huomioiden on mielestäni myöskin aivan päivänselvää, että tässä kriisin hoidossa on tehty erittäin raskaita virheitä, jotka ovat huomattavasti myöskin heikentäneet Kreikan taloudellista tilannetta ja myöskin vaikeuttaneet kreikkalaisten päättäjien mahdollisuuksia saattaa julkistalous Kreikassa kuntoon. Kuten mainitsin aikaisemmassa puheenvuorossani, on aivan selvää, että sen jälkeen, kun näihin tukipaketteihin on liitetty nämä vaatimukset esimerkiksi julkismenojen leikkauksista ja myöskin julkisten työpaikkojen vähentämisestä, Kreikan bkt on pienentynyt merkittävästi samanaikaisesti, kun työttömyys on kasvanut ja myöskin Kreikan julkisvelan suhde suhteessa bkt:hen on kasvanut erittäin merkittävästi. Eli näillä vaatimuksilla näistä rajuista leikkauksista julkisiin menoihin, ylimitoitetuista sellaisista, on itse asiassa koko ajan lisätty sitä epätodennäköisyyttä sille, että Kreikalla olisi mahdollisuus maksaa velkansa takaisin — niin kuin me tietenkin kaikki toivomme, että heillä olisi mahdollisuus — ja samanaikaisesti luotu pohjaa tälle humanitaariselle kriisille, joka Kreikassa tällä hetkellä on tosiasia.</sis:KappaleKooste>
+                                    <sis:KappaleKooste>Eli minun nähdäkseni niin euroalueen kuin Suomen etu tällä hetkellä on se, että on mahdollista saavuttaa tästä lainaerästä sopu, joka myöskin sisältää sellaisia ehtoja, jotka eivät entuudestaan pahenna tätä samaa tilannetta ja jatka tätä Kreikan taloustilannetta pahentavaa kriisinhoitolinjaa. (Puhemies koputtaa)</sis:KappaleKooste>
+                                    <sis:KappaleKooste>Sitten mitä tulee edustaja Elon kysymykseen vasemmistoliiton linjasta, niin itse pidän täysin selvänä, että koko euroyhteistyön jatkamisen näkökulmasta on välttämätöntä tehdä rakenteellisia uudistuksia siihen, miten euroyhteistyö tällä hetkellä toimii. (Puhemies koputtaa) Itse en myöskään poissulkisi sellaista vaihtoehtoa, että Kreikalla olisi mahdollisuus ottaa käyttöön esimerkiksi rinnakkaisvaluutta.</sis:KappaleKooste>
+                                </vsk:KohtaSisalto>
+                            </vsk:PuheenvuoroOsa>
+                        </vsk:PuheenvuoroToimenpide>
+                        <vsk:PuheenvuoroToimenpide met1:muuTunnus="5044" vsk1:puheenvuoroAloitusHetki="2015-06-10T15:12:58" vsk1:puheenvuoroLuokitusKoodi="T">
+                            <vsk1:AjankohtaTeksti>15.12</vsk1:AjankohtaTeksti>
+                            <met:Toimija>
+                                <org:Henkilo met1:muuTunnus="1121">
+                                    <org1:EtuNimi>Lauri</org1:EtuNimi>
+                                    <org1:SukuNimi>Ihalainen</org1:SukuNimi>
+                                    <org1:LisatietoTeksti>sd</org1:LisatietoTeksti>
+                                </org:Henkilo>
+                            </met:Toimija>
+                            <vsk:PuheenvuoroOsa met1:asiakirjatyyppiNimi="Puheenvuoro" met1:kieliKoodi="fi" met1:muuTunnus="2396" met1:tilaKoodi="Tarkistettu" met1:versioTeksti="1.1" vsk1:puheenvuoroAloitusHetki="2015-06-10T15:12:58" vsk1:puheenvuoroJNro="1" vsk1:puheenvuoroLopetusHetki="2015-06-10T15:14:48">
+                                <vsk:KohtaSisalto>
+                                    <sis:KappaleKooste>Arvoisa puhemies! Näihin työllisyysrahoihin haluaisin palata muutamalla näkökohdalla.</sis:KappaleKooste>
+                                    <sis:KappaleKooste>Ensinnäkin uusi hallitus aikoo leikata 110 miljoonaa euroa sinänsä jo aika vaatimattomista työllisyysmäärärahoista. Miten me tämän jälkeen hoidamme niitä asioita, joista me täällä nyt puhumme? Toiseksi hallitus aikoo leikata vähän yli 200 miljoonaa työttömyysturvasta, mikä tarkoittaa sitä, että nimenomaan pitkäaikaistyöttömät joutuvat kunnallisen toimeentuloturvan varaan, eli tulee suurta ongelmaa.</sis:KappaleKooste>
+                                    <sis:KappaleKooste>Työllisyysrahat ovat siirtymärahoja, eivät ne ole mihinkään hukkaan menneet. Jos edelliseltä vuodelta on jäänyt jotakin, ne siirtyvät seuraavalle vuodelle. Ja toiseksi on pitkään sidottuja rahoja, joista päätös on tehty jo aikaisemmin, ja tänäkin vuonna niitä velvoitteita vielä hoidetaan. Rahat eivät seiso missään, eivätkä ne ole hukassa, mutta kysymys on siitä, että ne tänä vuonna meinaavat loppua. Meidän ongelmamme on se, että työllisyysmäärärahoja on liian vähän, eikä niitä ole missään hukassa.</sis:KappaleKooste>
+                                    <sis:KappaleKooste>Korvamerkittyä rahaa on sillä tavalla, että 40 prosenttia työllisyysmäärärahoista on kohdennettu pitkäaikaistyöttömille ja heidän hoitamiseensa, mutta 60 prosenttia on voitu alueilla jakaa muihinkin tarkoituksiin.</sis:KappaleKooste>
+                                    <sis:KappaleKooste>300 päivän työmarkkinatuen siirto kuntatasolle, jossa valtio ja kunta vastaavat kuitenkin rahoituksen kustannuksista, oli hyvä uudistus siihen nähden, että se oli ennen 500 päivää. Palkkatukea uudistettiin hyvällä tavalla niin, että se palkitsee nimenomaan, antaa isomman prosentin niille, jos työllistetään pitkäaikaistyöttömiä, vaikeimmin työllistettäviä. Ei palkkatukea käytetä vain pitkäaikaistyöttömyyteen, vaan muuhunkin työllisyyden hoitoon, kuten nuorisotakuun rahoitukseen.</sis:KappaleKooste>
+                                    <sis:KappaleKooste>Halusin vain nyt nämä ehkä tässä keskustelussa vähän sivulle jääneet asiat todeta.</sis:KappaleKooste>
+                                </vsk:KohtaSisalto>
+                            </vsk:PuheenvuoroOsa>
+                        </vsk:PuheenvuoroToimenpide>
+                    </vsk:KeskusteluToimenpide>
+                    <vsk:PaatoksentekoToimenpide met1:muuTunnus="3980" vsk1:fraasiTunnus="LK_K_375">
+                        <vsk:KohtaSisalto>
+                            <sis:KappaleKooste>Keskustelu päättyi.</sis:KappaleKooste>
+                            <sis:KappaleKooste>Asia lähetettiin tarkastusvaliokuntaan.</sis:KappaleKooste>
+                        </vsk:KohtaSisalto>
+                    </vsk:PaatoksentekoToimenpide>
+                </vsk:Asiakohta>
+                <vsk:MuuAsiakohta met1:muuTunnus="774" vsk1:kasittelyvaiheKoodi="KOKSEU" vsk1:kohtaJNro="10" vsk1:kohtatyyppiKoodi="Asiakohta" vsk1:yleinenKasittelyvaiheKoodi="KOKOUS">
+                    <vsk1:KohtaNumero>8</vsk1:KohtaNumero>
+                    <sis1:OtsikkoTeksti>Seuraava täysistunto</sis1:OtsikkoTeksti>
+                    <vsk:Toimenpide met1:muuTunnus="2432" vsk1:fraasiTunnus="K_110">
+                        <vsk:KohtaSisalto>
+                            <sis:KappaleKooste>Eduskunnan seuraava täysistunto on torstaina 11.6.2015 klo 16.00. Täysistunto lopetettiin klo 15.15.</sis:KappaleKooste>
+                        </vsk:KohtaSisalto>
+                    </vsk:Toimenpide>
+                </vsk:MuuAsiakohta>
+                <asi:AllekirjoitusOsa>
+                    <asi1:JohdantoTeksti>Pöytäkirjan vakuudeksi:</asi1:JohdantoTeksti>
+                    <asi:Allekirjoittaja>
+                        <org:Henkilo>
+                            <org1:EtuNimi>Seppo</org1:EtuNimi>
+                            <org1:SukuNimi>Tiitinen</org1:SukuNimi>
+                        </org:Henkilo>
+                    </asi:Allekirjoittaja>
+                </asi:AllekirjoitusOsa>
+            </ptk:Poytakirja>
+        </RakenneAsiakirja>
+    </SiirtoAsiakirja>
+    <SiirtoTiedosto xmlns="http://www.eduskunta.fi/skeemat/siirtokooste/2011/05/17">
+        <Document xmlns="http://www.arkisto.fi/skeemat/sahke2/2011/01/31_vnk">
+            <NativeId>{8B572B27-36F0-CD34-87D8-673618C00000}</NativeId>
+            <UseType>Julkaisu</UseType>
+            <File>
+                <Name>8B572B27-36F0-CD34-87D8-673618C00000.pdf</Name>
+                <Path>sftp://intpurnukka.eduskunta.fi:22/home/vaskijul/liitteet/tojulkvp/8B572B27-36F0-CD34-87D8-673618C00000.pdf</Path>
+            </File>
+            <Format>
+                <Name>application/pdf</Name>
+                <Version/>
+            </Format>
+            <HashAlgorithm>MD5</HashAlgorithm>
+            <HashValue>f0ee20e33140fb9f70a8b483ddbf23e3</HashValue>
+        </Document>
+    </SiirtoTiedosto>
+</ns11:Siirto>

@@ -1,0 +1,333 @@
+{
+  "number": 19,
+  "year": 2016,
+  "begin_time": "2016-03-04 13:00:04.697",
+  "subsections": [
+    {
+      "number": "3",
+      "statements": [
+        {
+          "type": "C",
+          "mp_id": 0,
+          "firstname": "Maria",
+          "lastname": "Lohela",
+          "party": "",
+          "title": "Puhemies",
+          "start_time": "",
+          "end_time": "",
+          "language": "",
+          "text": "Ensimmäiseen käsittelyyn esitellään päiväjärjestyksen 3. asia. Käsittelyn pohjana on työelämä- ja tasa-arvovaliokunnan mietintö TyVM 1/2016 vp. Yleiskeskustelu asiasta päättyi 3.3.2016 pidetyssä täysistunnossa. Nyt käsitellään muutosehdotukset.",
+          "embedded_statement": {
+            "title": "",
+            "firstname": "",
+            "lastname": "",
+            "text": ""
+          }
+        },
+        {
+          "type": "S",
+          "mp_id": 1343,
+          "firstname": "Antero",
+          "lastname": "Laukkanen",
+          "party": "kd",
+          "title": "",
+          "start_time": "",
+          "end_time": "",
+          "language": "",
+          "text": "Arvoisa puhemies! Esitän, että 7 § saa sen muodon, joka on vastalauseessa 1.",
+          "embedded_statement": {
+            "title": "",
+            "firstname": "",
+            "lastname": "",
+            "text": ""
+          }
+        },
+        {
+          "type": "S",
+          "mp_id": 778,
+          "firstname": "Sari",
+          "lastname": "Essayah",
+          "party": "kd",
+          "title": "",
+          "start_time": "",
+          "end_time": "",
+          "language": "",
+          "text": "Arvoisa rouva puhemies! Kannatan.",
+          "embedded_statement": {
+            "title": "",
+            "firstname": "",
+            "lastname": "",
+            "text": ""
+          }
+        },
+        {
+          "type": "C",
+          "mp_id": 0,
+          "firstname": "Maria",
+          "lastname": "Lohela",
+          "party": "",
+          "title": "Puhemies",
+          "start_time": "",
+          "end_time": "",
+          "language": "",
+          "text": "Antero Laukkanen on Sari Essayahin kannattamana ehdottanut, että pykälä hyväksytään vastalauseen 1 mukaisena.",
+          "embedded_statement": {
+            "title": "",
+            "firstname": "",
+            "lastname": "",
+            "text": ""
+          }
+        }
+      ]
+    },
+    {
+      "number": "4",
+      "statements": [
+        {
+          "type": "C",
+          "mp_id": 0,
+          "firstname": "Maria",
+          "lastname": "Lohela",
+          "party": "",
+          "title": "Puhemies",
+          "start_time": "",
+          "end_time": "",
+          "language": "",
+          "text": "Ensimmäiseen käsittelyyn esitellään päiväjärjestyksen 4. asia. Käsittelyn pohjana on ympäristövaliokunnan mietintö YmVM 2/2016 vp. Yleiskeskustelu asiasta päättyi 2.3.2016 pidetyssä täysistunnossa. Nyt käsitellään muutosehdotukset.",
+          "embedded_statement": {
+            "title": "",
+            "firstname": "",
+            "lastname": "",
+            "text": ""
+          }
+        },
+        {
+          "type": "S",
+          "mp_id": 363,
+          "firstname": "Satu",
+          "lastname": "Hassi",
+          "party": "vihr",
+          "title": "",
+          "start_time": "",
+          "end_time": "",
+          "language": "",
+          "text": "Arvoisa puhemies! Esitän, että tämän lain johtolause saa sen muodon kuin on vastalauseessa, mikä tarkoittaa, että 72 a § jää voimaan nykyisessä muodossaan.",
+          "embedded_statement": {
+            "title": "",
+            "firstname": "",
+            "lastname": "",
+            "text": ""
+          }
+        },
+        {
+          "type": "S",
+          "mp_id": 1346,
+          "firstname": "Touko",
+          "lastname": "Aalto",
+          "party": "vihr",
+          "title": "",
+          "start_time": "",
+          "end_time": "",
+          "language": "",
+          "text": "Arvoisa rouva puhemies! Kannatan edustaja Hassin ehdotusta.",
+          "embedded_statement": {
+            "title": "",
+            "firstname": "",
+            "lastname": "",
+            "text": ""
+          }
+        },
+        {
+          "type": "C",
+          "mp_id": 0,
+          "firstname": "Maria",
+          "lastname": "Lohela",
+          "party": "",
+          "title": "Puhemies",
+          "start_time": "",
+          "end_time": "",
+          "language": "",
+          "text": "Satu Hassi on Touko Aallon kannattamana ehdottanut, että pykälä hyväksytään vastalauseen mukaisena.",
+          "embedded_statement": {
+            "title": "",
+            "firstname": "",
+            "lastname": "",
+            "text": ""
+          }
+        }
+      ]
+    },
+    {
+      "number": "5",
+      "statements": [
+        {
+          "type": "C",
+          "mp_id": 0,
+          "firstname": "Maria",
+          "lastname": "Lohela",
+          "party": "",
+          "title": "Puhemies",
+          "start_time": "",
+          "end_time": "",
+          "language": "",
+          "text": "Ensimmäiseen käsittelyyn esitellään päiväjärjestyksen 5. asia. Käsittelyn pohjana on ympäristövaliokunnan mietintö YmVM 3/2016 vp. Yleiskeskustelu asiasta päättyi 2.3.2016 pidetyssä täysistunnossa. Nyt käsitellään muutosehdotukset.",
+          "embedded_statement": {
+            "title": "",
+            "firstname": "",
+            "lastname": "",
+            "text": ""
+          }
+        },
+        {
+          "type": "S",
+          "mp_id": 203,
+          "firstname": "Riitta",
+          "lastname": "Myller",
+          "party": "sd",
+          "title": "",
+          "start_time": "",
+          "end_time": "",
+          "language": "",
+          "text": "Arvoisa puhemies! Esitän, että 171 § saa sen muodon kuin vastalauseessa 1 on esitetty.",
+          "embedded_statement": {
+            "title": "",
+            "firstname": "",
+            "lastname": "",
+            "text": ""
+          }
+        },
+        {
+          "type": "S",
+          "mp_id": 952,
+          "firstname": "Katja",
+          "lastname": "Taimela",
+          "party": "sd",
+          "title": "",
+          "start_time": "",
+          "end_time": "",
+          "language": "",
+          "text": "Arvoisa rouva puhemies! Kannatan.",
+          "embedded_statement": {
+            "title": "",
+            "firstname": "",
+            "lastname": "",
+            "text": ""
+          }
+        },
+        {
+          "type": "S",
+          "mp_id": 363,
+          "firstname": "Satu",
+          "lastname": "Hassi",
+          "party": "vihr",
+          "title": "",
+          "start_time": "",
+          "end_time": "",
+          "language": "",
+          "text": "Arvoisa puhemies! Esitän, että 171 § saa sen muodon kuin on vastalauseessa 2.",
+          "embedded_statement": {
+            "title": "",
+            "firstname": "",
+            "lastname": "",
+            "text": ""
+          }
+        },
+        {
+          "type": "S",
+          "mp_id": 1306,
+          "firstname": "Anders",
+          "lastname": "Adlercreutz",
+          "party": "r",
+          "title": "",
+          "start_time": "",
+          "end_time": "",
+          "language": "",
+          "text": "Arvoisa puhemies! Kannatan.",
+          "embedded_statement": {
+            "title": "",
+            "firstname": "",
+            "lastname": "",
+            "text": ""
+          }
+        },
+        {
+          "type": "C",
+          "mp_id": 0,
+          "firstname": "Maria",
+          "lastname": "Lohela",
+          "party": "",
+          "title": "Puhemies",
+          "start_time": "",
+          "end_time": "",
+          "language": "",
+          "text": "Riitta Myller on Katja Taimelan kannattamana ehdottanut, että 171 §:n 1 momentti hyväksytään vastalauseen 1 mukaisena. Satu Hassi on Anders Adlercreutzin kannattamana ehdottanut, että 171 §:ään lisätään uusi 5 momentti vastalauseen 2 mukaisesti.",
+          "embedded_statement": {
+            "title": "",
+            "firstname": "",
+            "lastname": "",
+            "text": ""
+          }
+        },
+        {
+          "type": "C",
+          "mp_id": 0,
+          "firstname": "Maria",
+          "lastname": "Lohela",
+          "party": "",
+          "title": "Puhemies",
+          "start_time": "",
+          "end_time": "",
+          "language": "",
+          "text": "Ehdotuksista äänestetään erikseen mietintöä vastaan.",
+          "embedded_statement": {
+            "title": "",
+            "firstname": "",
+            "lastname": "",
+            "text": ""
+          }
+        }
+      ]
+    },
+    {
+      "number": "7",
+      "statements": [
+        {
+          "type": "C",
+          "mp_id": 0,
+          "firstname": "Maria",
+          "lastname": "Lohela",
+          "party": "",
+          "title": "Puhemies",
+          "start_time": "",
+          "end_time": "",
+          "language": "",
+          "text": "Ensimmäiseen käsittelyyn esitellään päiväjärjestyksen 7. asia. Käsittelyn pohjana on ulkoasiainvaliokunnan mietintö UaVM 1/2016 vp. Nyt päätetään lakiehdotusten sisällöstä. (Hälinää) — Odotamme hetkisen, että sali vähän rauhoittuu. (Puhemies koputtaa)",
+          "embedded_statement": {
+            "title": "",
+            "firstname": "",
+            "lastname": "",
+            "text": ""
+          }
+        },
+        {
+          "type": "L",
+          "mp_id": 772,
+          "firstname": "Antti",
+          "lastname": "Kaikkonen",
+          "party": "kesk",
+          "title": "",
+          "start_time": "2016-03-04T13:06:58",
+          "end_time": "2016-03-04T13:08:23",
+          "language": "fi",
+          "text": "Arvoisa puhemies! Tässä on käsittelyssä (Hälinää — Puhemies koputtaa) diplomaatteja koskeva lakiesitys. — Mukavaa, että aihe kiinnostaa. (Hälinää) #ch_statement Tästä voi kertoa, että ulkoasiainvaliokunnassa tämä aihe ei myöskään kovin suuria intohimoja herättänyt. Tässä on kysymys aika teknisestä lakimuutoksesta, jossa mahdollistetaan työnteko lähinnä diplomaattien puolisoille ja perheenjäsenille ja joka koskettaa aika pientä joukkoa ihmisiä. Näitä vastaavia sopimuksia on tehty aika monen muunkin maan kanssa, ja nyt on kysymys Argentiinasta, Brasiliasta, Israelista, Serbiasta ja Vietnamista. Toivottavasti myös täysistunnossa tämän asian käsittely sujuu jouhevasti, ja siltä vähän näyttää.",
+          "embedded_statement": {
+            "title": "Puhemies",
+            "firstname": "Maria",
+            "lastname": "Lohela",
+            "text": "Edustajat, siirtykää ripeästi käymään keskusteluja salin ulkopuolelle, niin päästään päiväjärjestyksen asioissa eteenpäin."
+          }
+        }
+      ]
+    }
+  ]
+}

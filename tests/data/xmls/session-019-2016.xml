@@ -1,0 +1,511 @@
+<ns11:Siirto xmlns:ns11="http://www.eduskunta.fi/skeemat/siirto/2011/09/07">
+    <Sanomavalitys xmlns="http://www.eduskunta.fi/skeemat/siirtokooste/2011/05/17">
+        <ns4:SanomatyyppiNimi xmlns:ns4="http://www.eduskunta.fi/skeemat/siirtoelementit/2011/05/17">VASKI_JULKVP_Record_fi</ns4:SanomatyyppiNimi>
+        <ns4:SanomaTunnus xmlns:ns4="http://www.eduskunta.fi/skeemat/siirtoelementit/2011/05/17">Vaski_VASKI_JULKVP_Record_fi_18 tammi 2018_15:18:12 EET</ns4:SanomaTunnus>
+        <ns4:LuontiHetki xmlns:ns4="http://www.eduskunta.fi/skeemat/siirtoelementit/2011/05/17">2018-01-18T15:18:12.861+02:00</ns4:LuontiHetki>
+        <ns4:SiirtoKoodi xmlns:ns4="http://www.eduskunta.fi/skeemat/siirtoelementit/2011/05/17">paivitys</ns4:SiirtoKoodi>
+        <Toimija xmlns="http://www.vn.fi/skeemat/metatietokooste/2010/04/27"
+            xmlns:s423="http://www.vn.fi/skeemat/metatietoelementit/2010/04/27" s423:rooliKoodi="lahettaja">
+            <s423:YhteisoTeksti>Eduskunta</s423:YhteisoTeksti>
+        </Toimija>
+        <Toimija xmlns="http://www.vn.fi/skeemat/metatietokooste/2010/04/27"
+            xmlns:s424="http://www.vn.fi/skeemat/metatietoelementit/2010/04/27" s424:rooliKoodi="vastaanottaja">
+            <s424:YhteisoTeksti>Eduskunta</s424:YhteisoTeksti>
+        </Toimija>
+    </Sanomavalitys>
+    <ns11:SiirtoMetatieto>
+        <jme:JulkaisuMetatieto xmlns:asi="http://www.vn.fi/skeemat/asiakirjakooste/2010/04/27"
+            xmlns:asi1="http://www.vn.fi/skeemat/asiakirjaelementit/2010/04/27"
+            xmlns:jme="http://www.eduskunta.fi/skeemat/julkaisusiirtokooste/2011/12/20"
+            xmlns:met="http://www.vn.fi/skeemat/metatietokooste/2010/04/27"
+            xmlns:met1="http://www.vn.fi/skeemat/metatietoelementit/2010/04/27"
+            xmlns:org="http://www.vn.fi/skeemat/organisaatiokooste/2010/02/15"
+            xmlns:org1="http://www.vn.fi/skeemat/organisaatioelementit/2010/02/15"
+            xmlns:sii="http://www.eduskunta.fi/skeemat/siirtokooste/2011/05/17"
+            xmlns:sii1="http://www.eduskunta.fi/skeemat/siirtoelementit/2011/05/17"
+            xmlns:sis="http://www.vn.fi/skeemat/sisaltokooste/2010/04/27"
+            xmlns:sis1="http://www.vn.fi/skeemat/sisaltoelementit/2010/04/27"
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" met1:asiakirjatyyppiNimi="Pöytäkirja" met1:eduskuntaTunnus="PTK 19/2016 vp" met1:identifiointiTunnus="{F1509D6F-0002-CC80-8619-61096AB00000}" met1:kieliKoodi="fi" met1:laadintaPvm="2016-03-04" met1:muuTunnus="EDK-2016-AK-46101" met1:paatehtavaKoodi="00 00 03 Poliittinen ohjaus">
+            <asi:IdentifiointiOsa>
+                <met1:AsiakirjatyyppiNimi>Pöytäkirja</met1:AsiakirjatyyppiNimi>
+                <asi:EduskuntaTunniste>
+                    <met1:AsiakirjatyyppiKoodi>PTK</met1:AsiakirjatyyppiKoodi>
+                    <asi1:AsiakirjaNroTeksti>19</asi1:AsiakirjaNroTeksti>
+                    <asi1:ValtiopaivavuosiTeksti>2016</asi1:ValtiopaivavuosiTeksti>
+                </asi:EduskuntaTunniste>
+                <met:Toimija met1:rooliKoodi="Laatija">
+                    <met1:YhteisoTeksti>Täysistunto</met1:YhteisoTeksti>
+                </met:Toimija>
+                <met1:LaadintaPvmTeksti>04.03.2016</met1:LaadintaPvmTeksti>
+                <met:Nimeke met1:vaihtoehtoinenNimekeTeksti="">
+                    <met1:NimekeTeksti>Perjantai 4.3.2016 klo 13.00—13.09</met1:NimekeTeksti>
+                </met:Nimeke>
+            </asi:IdentifiointiOsa>
+            <sii:EsitysmuotoViite met1:muuTunnus="{F1509D6F-0002-CC80-8619-61096AB00000}"/>
+        </jme:JulkaisuMetatieto>
+    </ns11:SiirtoMetatieto>
+    <SiirtoAsiakirja xmlns="http://www.eduskunta.fi/skeemat/siirtokooste/2011/05/17">
+        <RakenneAsiakirja>
+            <ptk:Poytakirja xmlns:asi="http://www.vn.fi/skeemat/asiakirjakooste/2010/04/27"
+                xmlns:asi1="http://www.vn.fi/skeemat/asiakirjaelementit/2010/04/27"
+                xmlns:elu="http://www.eduskunta.fi/skeemat/ehdotusluettelo/2014/07/28"
+                xmlns:fra="http://www.eduskunta.fi/skeemat/fraasikooste/2011/01/04"
+                xmlns:fra1="http://www.eduskunta.fi/skeemat/fraasielementit/2011/01/04"
+                xmlns:met="http://www.vn.fi/skeemat/metatietokooste/2010/04/27"
+                xmlns:met1="http://www.vn.fi/skeemat/metatietoelementit/2010/04/27"
+                xmlns:mix="http://www.loc.gov/mix/v20"
+                xmlns:narc="http://www.arkisto.fi/skeemat/sahke2/2011/01/31_vnk"
+                xmlns:org="http://www.vn.fi/skeemat/organisaatiokooste/2010/02/15"
+                xmlns:org1="http://www.vn.fi/skeemat/organisaatioelementit/2010/02/15"
+                xmlns:ptk="http://www.eduskunta.fi/skeemat/poytakirja/2011/01/28"
+                xmlns:saa="http://www.vn.fi/skeemat/saadoskooste/2010/04/27"
+                xmlns:saa1="http://www.vn.fi/skeemat/saadoselementit/2010/04/27"
+                xmlns:sis="http://www.vn.fi/skeemat/sisaltokooste/2010/04/27"
+                xmlns:sis1="http://www.vn.fi/skeemat/sisaltoelementit/2010/04/27"
+                xmlns:tau="http://www.vn.fi/skeemat/taulukkokooste/2010/04/27"
+                xmlns:vsk="http://www.eduskunta.fi/skeemat/vaskikooste/2011/01/04"
+                xmlns:vsk1="http://www.eduskunta.fi/skeemat/vaskielementit/2011/01/04"
+                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" met1:asiakirjatyyppiNimi="Pöytäkirja" met1:eduskuntaTunnus="PTK 19/2016 vp" met1:identifiointiTunnus="b3c7c361-b05c-452c-b90d-e0efa70d7f29" met1:kieliKoodi="fi" met1:laadintaPvm="2018-01-18" met1:muuTunnus="b3c7c361-b05c-452c-b90d-e0efa70d7f29" met1:rakennemaarittelyNimi="eduskunnanpoytakirja.xsd" met1:tilaKoodi="Valmis" met1:versioTeksti="5.0" vsk1:kokousAloitusHetki="2016-03-04T13:00:00" vsk1:kokousLopetusHetki="2016-03-04T13:30:00">
+                <asi:IdentifiointiOsa>
+                    <met1:AsiakirjatyyppiNimi>Pöytäkirja</met1:AsiakirjatyyppiNimi>
+                    <asi:EduskuntaTunniste>
+                        <met1:AsiakirjatyyppiKoodi>PTK</met1:AsiakirjatyyppiKoodi>
+                        <asi1:AsiakirjaNroTeksti>19</asi1:AsiakirjaNroTeksti>
+                        <asi1:ValtiopaivavuosiTeksti>2016 vp</asi1:ValtiopaivavuosiTeksti>
+                    </asi:EduskuntaTunniste>
+                    <met:Toimija met1:rooliKoodi="Laatija">
+                        <met1:YhteisoTeksti>Täysistunto</met1:YhteisoTeksti>
+                    </met:Toimija>
+                    <met:Nimeke>
+                        <met1:NimekeTeksti>Perjantai 4.3.2016 klo 13.00—13.09</met1:NimekeTeksti>
+                    </met:Nimeke>
+                </asi:IdentifiointiOsa>
+                <asi:SisaltoKuvaus>
+                    <sis:KappaleKooste>Täysistunto alkoi klo 13.00. Täysistunto päättyi klo 13.09.</sis:KappaleKooste>
+                    <sis:KappaleKooste>Puhetta johti puhemies Maria Lohela (13.00—13.09).</sis:KappaleKooste>
+                    <sis:Tyhja/>
+                </asi:SisaltoKuvaus>
+                <vsk:MuuAsiakohta met1:muuTunnus="10335" vsk1:kasittelyvaiheKoodi="KOKNHU" vsk1:kohtaJNro="1" vsk1:kohtatyyppiKoodi="Asiakohta" vsk1:yleinenKasittelyvaiheKoodi="KOKOUS">
+                    <vsk1:KohtaNumero>1</vsk1:KohtaNumero>
+                    <sis1:OtsikkoTeksti>Nimenhuuto</sis1:OtsikkoTeksti>
+                    <vsk:KohtaAsiakirja vsk1:hyperlinkkiKoodi="EDK-2016-AK-45988">
+                        <met1:AsiakirjatyyppiNimi>Nimenhuutoraportti</met1:AsiakirjatyyppiNimi>
+                        <vsk1:TarkenneTeksti>Liite 1A</vsk1:TarkenneTeksti>
+                    </vsk:KohtaAsiakirja>
+                    <vsk:Toimenpide met1:muuTunnus="42460" vsk1:fraasiTunnus="K_106">
+                        <vsk:KohtaSisalto>
+                            <sis:KappaleKooste>Toimitettiin nimenhuuto.</sis:KappaleKooste>
+                        </vsk:KohtaSisalto>
+                    </vsk:Toimenpide>
+                </vsk:MuuAsiakohta>
+                <vsk:MuuAsiakohta met1:muuTunnus="10336" vsk1:kasittelyvaiheKoodi="KOKILM" vsk1:kohtaJNro="2" vsk1:kohtatyyppiKoodi="Asiakohta" vsk1:yleinenKasittelyvaiheKoodi="KOKOUS">
+                    <vsk1:KohtaNumero>2</vsk1:KohtaNumero>
+                    <sis1:OtsikkoTeksti>Ilmoituksia</sis1:OtsikkoTeksti>
+                </vsk:MuuAsiakohta>
+                <vsk:MuuAsiakohta met1:muuTunnus="16333" vsk1:kasittelyvaiheKoodi="KOKVS" vsk1:kohtaJNro="3" vsk1:kohtatyyppiKoodi="Alikohta" vsk1:paakohtaTunnus="10336" vsk1:yleinenKasittelyvaiheKoodi="KOKOUS">
+                    <vsk1:KohtaNumero>2.1</vsk1:KohtaNumero>
+                    <sis1:OtsikkoTeksti>Valtioneuvoston selonteot</sis1:OtsikkoTeksti>
+                    <vsk:Toimenpide met1:muuTunnus="65261" vsk1:fraasiTunnus="P_K_121">
+                        <vsk:KohtaSisalto>
+                            <sis:KappaleKooste>Valtioneuvosto on 3.3.2016 antanut eduskunnalle selonteon VNS 2/2016 vp Suomen osallistumisen jatkamisesta ja vahvistamisesta turvallisuussektorin koulutusyhteistyössä Irakissa.</sis:KappaleKooste>
+                        </vsk:KohtaSisalto>
+                    </vsk:Toimenpide>
+                </vsk:MuuAsiakohta>
+                <vsk:MuuAsiakohta met1:muuTunnus="16332" vsk1:kasittelyvaiheKoodi="KOKHAL" vsk1:kohtaJNro="4" vsk1:kohtatyyppiKoodi="Alikohta" vsk1:paakohtaTunnus="10336" vsk1:yleinenKasittelyvaiheKoodi="KOKOUS">
+                    <vsk1:KohtaNumero>2.2</vsk1:KohtaNumero>
+                    <sis1:OtsikkoTeksti>Hallituksen esitykset</sis1:OtsikkoTeksti>
+                    <vsk:Toimenpide met1:muuTunnus="65258" vsk1:fraasiTunnus="K_118">
+                        <vsk:KohtaSisalto>
+                            <sis:KappaleKooste>Valtioneuvosto on 3.3.2016 antanut hallituksen esitykset HE 16-24/2016 vp.</sis:KappaleKooste>
+                        </vsk:KohtaSisalto>
+                    </vsk:Toimenpide>
+                </vsk:MuuAsiakohta>
+                <vsk:MuuAsiakohta met1:muuTunnus="16287" vsk1:kasittelyvaiheKoodi="KOKK" vsk1:kohtaJNro="5" vsk1:kohtatyyppiKoodi="Alikohta" vsk1:paakohtaTunnus="10336" vsk1:yleinenKasittelyvaiheKoodi="KOKOUS">
+                    <vsk1:KohtaNumero>2.3</vsk1:KohtaNumero>
+                    <sis1:OtsikkoTeksti>Kertomukset</sis1:OtsikkoTeksti>
+                    <vsk:Toimenpide met1:muuTunnus="64896" vsk1:fraasiTunnus="K_134">
+                        <vsk:KohtaSisalto>
+                            <sis:KappaleKooste>Eduskunnalle on annettu Euroopan neuvoston Suomen valtuuskunnan kertomus Euroopan neuvoston parlamentaarisen yleiskokouksen toiminnasta vuonna 2015 (K 3/2016 vp).</sis:KappaleKooste>
+                        </vsk:KohtaSisalto>
+                    </vsk:Toimenpide>
+                </vsk:MuuAsiakohta>
+                <vsk:MuuAsiakohta met1:muuTunnus="16324" vsk1:kasittelyvaiheKoodi="KOKVKK" vsk1:kohtaJNro="6" vsk1:kohtatyyppiKoodi="Alikohta" vsk1:paakohtaTunnus="10336" vsk1:yleinenKasittelyvaiheKoodi="KOKOUS">
+                    <vsk1:KohtaNumero>2.4</vsk1:KohtaNumero>
+                    <sis1:OtsikkoTeksti>Vastaukset kirjallisiin kysymyksiin</sis1:OtsikkoTeksti>
+                    <vsk:Toimenpide met1:muuTunnus="65185" vsk1:fraasiTunnus="K_138">
+                        <vsk:KohtaSisalto>
+                            <sis:KappaleKooste>Eduskunnalle ovat saapuneet vastaukset kirjallisiin kysymyksiin KK 411, 412, 424, 431, 434/2015 vp, 2, 6, 8, 14, 16-18, 21, 22, 25-27, 31, 33, 35, 39/2016 vp.</sis:KappaleKooste>
+                            <sis:KappaleKooste/>
+                        </vsk:KohtaSisalto>
+                    </vsk:Toimenpide>
+                </vsk:MuuAsiakohta>
+                <vsk:Asiakohta met1:eduskuntaTunnus="HE 145/2015 vp" met1:muuTunnus="16235" vsk1:kasittelyvaiheKoodi="1K" vsk1:kohtaJNro="7" vsk1:kohtatyyppiKoodi="Asiakohta" vsk1:yleinenKasittelyvaiheKoodi="1K">
+                    <vsk1:KohtaNumero>3</vsk1:KohtaNumero>
+                    <vsk:KohtaNimeke>
+                        <met1:NimekeTeksti>Hallituksen esitys eduskunnalle laeiksi vuosilomalain, merimiesten vuosilomalain ja sairausvakuutuslain muuttamisesta</met1:NimekeTeksti>
+                    </vsk:KohtaNimeke>
+                    <vsk:KohtaAsia>
+                        <met1:AsiakirjatyyppiNimi>Hallituksen esitys</met1:AsiakirjatyyppiNimi>
+                        <met1:EduskuntaTunnus>HE 145/2015 vp</met1:EduskuntaTunnus>
+                    </vsk:KohtaAsia>
+                    <vsk:KohtaAsiakirja>
+                        <met1:AsiakirjatyyppiNimi>Valiokunnan mietintö</met1:AsiakirjatyyppiNimi>
+                        <met1:EduskuntaTunnus>TyVM 1/2016 vp</met1:EduskuntaTunnus>
+                    </vsk:KohtaAsiakirja>
+                    <vsk:Toimenpide met1:muuTunnus="64574" vsk1:fraasiTunnus="1K_12">
+                        <sis1:ValiotsikkoTeksti>Ensimmäinen käsittely</sis1:ValiotsikkoTeksti>
+                        <vsk:KohtaSisalto>
+                            <vsk:PuheenjohtajaRepliikki>
+                                <vsk1:PuheenjohtajaTeksti>Puhemies Maria Lohela</vsk1:PuheenjohtajaTeksti>
+                                <sis:KappaleKooste>Ensimmäiseen käsittelyyn esitellään päiväjärjestyksen <sis1:HarvaKursiiviTeksti>3.</sis1:HarvaKursiiviTeksti> asia. Käsittelyn pohjana on työelämä- ja tasa-arvovaliokunnan mietintö TyVM 1/2016 vp. Yleiskeskustelu asiasta päättyi 3.3.2016 pidetyssä täysistunnossa.</sis:KappaleKooste>
+                                <sis:KappaleKooste>Nyt käsitellään muutosehdotukset.</sis:KappaleKooste>
+                            </vsk:PuheenjohtajaRepliikki>
+                            <sis:KappaleKooste>1. lakiehdotuksen 7 §</sis:KappaleKooste>
+                            <vsk:PuhujaRepliikki>
+                                <met:Toimija>
+                                    <org:Henkilo met1:muuTunnus="1343">
+                                        <org1:EtuNimi>Antero</org1:EtuNimi>
+                                        <org1:SukuNimi>Laukkanen</org1:SukuNimi>
+                                        <org1:LisatietoTeksti>kd</org1:LisatietoTeksti>
+                                    </org:Henkilo>
+                                </met:Toimija>
+                                <sis:KappaleKooste>Arvoisa puhemies! Esitän, että 7 § saa sen muodon, joka on vastalauseessa 1.</sis:KappaleKooste>
+                            </vsk:PuhujaRepliikki>
+                            <vsk:PuhujaRepliikki>
+                                <met:Toimija>
+                                    <org:Henkilo met1:muuTunnus="778">
+                                        <org1:EtuNimi>Sari</org1:EtuNimi>
+                                        <org1:SukuNimi>Essayah</org1:SukuNimi>
+                                        <org1:LisatietoTeksti>kd</org1:LisatietoTeksti>
+                                    </org:Henkilo>
+                                </met:Toimija>
+                                <sis:KappaleKooste>Arvoisa rouva puhemies! Kannatan.</sis:KappaleKooste>
+                            </vsk:PuhujaRepliikki>
+                            <vsk:PuheenjohtajaRepliikki>
+                                <vsk1:PuheenjohtajaTeksti>Puhemies Maria Lohela</vsk1:PuheenjohtajaTeksti>
+                                <sis:KappaleKooste>Antero Laukkanen on Sari Essayahin kannattamana ehdottanut, että pykälä hyväksytään vastalauseen 1 mukaisena.</sis:KappaleKooste>
+                            </vsk:PuheenjohtajaRepliikki>
+                            <sis:KappaleKooste>Selonteko hyväksyttiin.</sis:KappaleKooste>
+                            <vsk:AanestysKappaleKooste>Mietintö "jaa", Antero Laukkasen ehdotus "ei". <vsk:AanestysTulos>
+                                <vsk1:AanestysTulosTeksti>Äänestyksen tulos: jaa 106, ei 56; poissa 37 </vsk1:AanestysTulosTeksti>
+                                <vsk:AanestysViite met1:kieliKoodi="fi" vsk1:aanestysNroTeksti="1" vsk1:kokousNroTeksti="19" vsk1:valtiopaivaTeksti="2016 vp" vsk1:valtiopaivavuosiNroTeksti="2016">
+                                    <vsk1:AanestysViiteTeksti>(äänestys 1). </vsk1:AanestysViiteTeksti>
+                                </vsk:AanestysViite>
+                            </vsk:AanestysTulos>Eduskunta hyväksyi mietinnön.</vsk:AanestysKappaleKooste>
+                    </vsk:KohtaSisalto>
+                </vsk:Toimenpide>
+                <vsk:PaatoksentekoToimenpide met1:muuTunnus="64575" vsk1:fraasiTunnus="P_1K_1">
+                    <vsk:KohtaSisalto>
+                        <sis:KappaleKooste>Eduskunta hyväksyi hallituksen esitykseen HE 145/2015 vp sisältyvien 1.—3. lakiehdotuksen sisällön mietinnön mukaisena. Lakiehdotusten ensimmäinen käsittely päättyi.</sis:KappaleKooste>
+                        <sis:KappaleKooste/>
+                    </vsk:KohtaSisalto>
+                </vsk:PaatoksentekoToimenpide>
+            </vsk:Asiakohta>
+            <vsk:Asiakohta met1:eduskuntaTunnus="HE 146/2015 vp" met1:muuTunnus="16178" vsk1:kasittelyvaiheKoodi="1K" vsk1:kohtaJNro="8" vsk1:kohtatyyppiKoodi="Asiakohta" vsk1:yleinenKasittelyvaiheKoodi="1K">
+                <vsk1:KohtaNumero>4</vsk1:KohtaNumero>
+                <vsk:KohtaNimeke>
+                    <met1:NimekeTeksti>Hallituksen esitys eduskunnalle laiksi luonnonsuojelulain muuttamisesta</met1:NimekeTeksti>
+                </vsk:KohtaNimeke>
+                <vsk:KohtaAsia>
+                    <met1:AsiakirjatyyppiNimi>Hallituksen esitys</met1:AsiakirjatyyppiNimi>
+                    <met1:EduskuntaTunnus>HE 146/2015 vp</met1:EduskuntaTunnus>
+                </vsk:KohtaAsia>
+                <vsk:KohtaAsiakirja>
+                    <met1:AsiakirjatyyppiNimi>Valiokunnan mietintö</met1:AsiakirjatyyppiNimi>
+                    <met1:EduskuntaTunnus>YmVM 2/2016 vp</met1:EduskuntaTunnus>
+                </vsk:KohtaAsiakirja>
+                <vsk:Toimenpide met1:muuTunnus="64060" vsk1:fraasiTunnus="1K_12">
+                    <sis1:ValiotsikkoTeksti>Ensimmäinen käsittely</sis1:ValiotsikkoTeksti>
+                    <vsk:KohtaSisalto>
+                        <vsk:PuheenjohtajaRepliikki>
+                            <vsk1:PuheenjohtajaTeksti>Puhemies Maria Lohela</vsk1:PuheenjohtajaTeksti>
+                            <sis:KappaleKooste>Ensimmäiseen käsittelyyn esitellään päiväjärjestyksen <sis1:HarvaKursiiviTeksti>4.</sis1:HarvaKursiiviTeksti> asia. Käsittelyn pohjana on ympäristövaliokunnan mietintö YmVM 2/2016 vp. Yleiskeskustelu asiasta päättyi 2.3.2016 pidetyssä täysistunnossa.</sis:KappaleKooste>
+                            <sis:KappaleKooste>Nyt käsitellään muutosehdotukset.</sis:KappaleKooste>
+                        </vsk:PuheenjohtajaRepliikki>
+                        <sis:KappaleKooste>72 a §</sis:KappaleKooste>
+                        <vsk:PuhujaRepliikki>
+                            <met:Toimija>
+                                <org:Henkilo met1:muuTunnus="363">
+                                    <org1:EtuNimi>Satu</org1:EtuNimi>
+                                    <org1:SukuNimi>Hassi</org1:SukuNimi>
+                                    <org1:LisatietoTeksti>vihr</org1:LisatietoTeksti>
+                                </org:Henkilo>
+                            </met:Toimija>
+                            <sis:KappaleKooste>Arvoisa puhemies! Esitän, että tämän lain johtolause saa sen muodon kuin on vastalauseessa, mikä tarkoittaa, että 72 a § jää voimaan nykyisessä muodossaan.</sis:KappaleKooste>
+                        </vsk:PuhujaRepliikki>
+                        <vsk:PuhujaRepliikki>
+                            <met:Toimija>
+                                <org:Henkilo met1:muuTunnus="1346">
+                                    <org1:EtuNimi>Touko</org1:EtuNimi>
+                                    <org1:SukuNimi>Aalto</org1:SukuNimi>
+                                    <org1:LisatietoTeksti>vihr</org1:LisatietoTeksti>
+                                </org:Henkilo>
+                            </met:Toimija>
+                            <sis:KappaleKooste>Arvoisa rouva puhemies! Kannatan edustaja Hassin ehdotusta.</sis:KappaleKooste>
+                        </vsk:PuhujaRepliikki>
+                        <vsk:PuheenjohtajaRepliikki>
+                            <vsk1:PuheenjohtajaTeksti>Puhemies Maria Lohela</vsk1:PuheenjohtajaTeksti>
+                            <sis:KappaleKooste>Satu Hassi on Touko Aallon kannattamana ehdottanut, että pykälä hyväksytään vastalauseen mukaisena.</sis:KappaleKooste>
+                        </vsk:PuheenjohtajaRepliikki>
+                        <sis:KappaleKooste>Selonteko hyväksyttiin.</sis:KappaleKooste>
+                        <vsk:AanestysKappaleKooste>Mietintö "jaa", Satu Hassin ehdotus "ei". <vsk:AanestysTulos>
+                            <vsk1:AanestysTulosTeksti>Äänestyksen tulos: jaa 141, ei 21, tyhjiä 1; poissa 36 </vsk1:AanestysTulosTeksti>
+                            <vsk:AanestysViite met1:kieliKoodi="fi" vsk1:aanestysNroTeksti="2" vsk1:kokousNroTeksti="19" vsk1:valtiopaivaTeksti="2016 vp" vsk1:valtiopaivavuosiNroTeksti="2016">
+                                <vsk1:AanestysViiteTeksti>(äänestys 2).  Eduskunta hyväksyi mietinnön.</vsk1:AanestysViiteTeksti>
+                            </vsk:AanestysViite>
+                        </vsk:AanestysTulos>
+                    </vsk:AanestysKappaleKooste>
+                </vsk:KohtaSisalto>
+            </vsk:Toimenpide>
+            <vsk:PaatoksentekoToimenpide met1:muuTunnus="64061" vsk1:fraasiTunnus="P_1K_1">
+                <vsk:KohtaSisalto>
+                    <sis:KappaleKooste>Eduskunta hyväksyi hallituksen esitykseen HE 146/2015 vp sisältyvän lakiehdotuksen sisällön mietinnön mukaisena. Lakiehdotuksen ensimmäinen käsittely päättyi.</sis:KappaleKooste>
+                </vsk:KohtaSisalto>
+            </vsk:PaatoksentekoToimenpide>
+        </vsk:Asiakohta>
+        <vsk:Asiakohta met1:eduskuntaTunnus="HE 148/2015 vp" met1:muuTunnus="16179" vsk1:kasittelyvaiheKoodi="1K" vsk1:kohtaJNro="9" vsk1:kohtatyyppiKoodi="Asiakohta" vsk1:yleinenKasittelyvaiheKoodi="1K">
+            <vsk1:KohtaNumero>5</vsk1:KohtaNumero>
+            <vsk:KohtaNimeke>
+                <met1:NimekeTeksti>Hallituksen esitys eduskunnalle laeiksi maankäyttö- ja rakennuslain muuttamisesta sekä kevennettyjen rakentamis- ja kaavamääräysten kokeilusta annetun lain 3 §:n kumoamisesta</met1:NimekeTeksti>
+            </vsk:KohtaNimeke>
+            <vsk:KohtaAsia>
+                <met1:AsiakirjatyyppiNimi>Hallituksen esitys</met1:AsiakirjatyyppiNimi>
+                <met1:EduskuntaTunnus>HE 148/2015 vp</met1:EduskuntaTunnus>
+            </vsk:KohtaAsia>
+            <vsk:KohtaAsiakirja>
+                <met1:AsiakirjatyyppiNimi>Valiokunnan mietintö</met1:AsiakirjatyyppiNimi>
+                <met1:EduskuntaTunnus>YmVM 3/2016 vp</met1:EduskuntaTunnus>
+            </vsk:KohtaAsiakirja>
+            <vsk:Toimenpide met1:muuTunnus="64064" vsk1:fraasiTunnus="1K_12">
+                <sis1:ValiotsikkoTeksti>Ensimmäinen käsittely</sis1:ValiotsikkoTeksti>
+                <vsk:KohtaSisalto>
+                    <vsk:PuheenjohtajaRepliikki>
+                        <vsk1:PuheenjohtajaTeksti>Puhemies Maria Lohela</vsk1:PuheenjohtajaTeksti>
+                        <sis:KappaleKooste>Ensimmäiseen käsittelyyn esitellään päiväjärjestyksen <sis1:HarvaKursiiviTeksti>5.</sis1:HarvaKursiiviTeksti> asia. Käsittelyn pohjana on ympäristövaliokunnan mietintö YmVM 3/2016 vp. Yleiskeskustelu asiasta päättyi 2.3.2016 pidetyssä täysistunnossa.</sis:KappaleKooste>
+                        <sis:KappaleKooste>Nyt käsitellään muutosehdotukset.</sis:KappaleKooste>
+                    </vsk:PuheenjohtajaRepliikki>
+                    <sis:KappaleKooste>1. lakiehdotuksen 171 §</sis:KappaleKooste>
+                    <vsk:PuhujaRepliikki>
+                        <met:Toimija>
+                            <org:Henkilo met1:muuTunnus="203">
+                                <org1:EtuNimi>Riitta</org1:EtuNimi>
+                                <org1:SukuNimi>Myller</org1:SukuNimi>
+                                <org1:LisatietoTeksti>sd</org1:LisatietoTeksti>
+                            </org:Henkilo>
+                        </met:Toimija>
+                        <sis:KappaleKooste>Arvoisa puhemies! Esitän, että 171 § saa sen muodon kuin vastalauseessa 1 on esitetty.</sis:KappaleKooste>
+                    </vsk:PuhujaRepliikki>
+                    <vsk:PuhujaRepliikki>
+                        <met:Toimija>
+                            <org:Henkilo met1:muuTunnus="952">
+                                <org1:EtuNimi>Katja</org1:EtuNimi>
+                                <org1:SukuNimi>Taimela</org1:SukuNimi>
+                                <org1:LisatietoTeksti>sd</org1:LisatietoTeksti>
+                            </org:Henkilo>
+                        </met:Toimija>
+                        <sis:KappaleKooste>Arvoisa rouva puhemies! Kannatan.</sis:KappaleKooste>
+                    </vsk:PuhujaRepliikki>
+                    <vsk:PuhujaRepliikki>
+                        <met:Toimija>
+                            <org:Henkilo met1:muuTunnus="363">
+                                <org1:EtuNimi>Satu</org1:EtuNimi>
+                                <org1:SukuNimi>Hassi</org1:SukuNimi>
+                                <org1:LisatietoTeksti>vihr</org1:LisatietoTeksti>
+                            </org:Henkilo>
+                        </met:Toimija>
+                        <sis:KappaleKooste>Arvoisa puhemies! Esitän, että 171 § saa sen muodon kuin on vastalauseessa 2.</sis:KappaleKooste>
+                    </vsk:PuhujaRepliikki>
+                    <vsk:PuhujaRepliikki>
+                        <met:Toimija>
+                            <org:Henkilo met1:muuTunnus="1306">
+                                <org1:EtuNimi>Anders</org1:EtuNimi>
+                                <org1:SukuNimi>Adlercreutz</org1:SukuNimi>
+                                <org1:LisatietoTeksti>r</org1:LisatietoTeksti>
+                            </org:Henkilo>
+                        </met:Toimija>
+                        <sis:KappaleKooste>Arvoisa puhemies! Kannatan.</sis:KappaleKooste>
+                    </vsk:PuhujaRepliikki>
+                    <vsk:PuheenjohtajaRepliikki>
+                        <vsk1:PuheenjohtajaTeksti>Puhemies Maria Lohela</vsk1:PuheenjohtajaTeksti>
+                        <sis:KappaleKooste>Riitta Myller on Katja Taimelan kannattamana ehdottanut, että 171 §:n 1 momentti hyväksytään vastalauseen 1 mukaisena.</sis:KappaleKooste>
+                        <sis:KappaleKooste>Satu Hassi on Anders Adlercreutzin kannattamana ehdottanut, että 171 §:ään lisätään uusi 5 momentti vastalauseen 2 mukaisesti.</sis:KappaleKooste>
+                    </vsk:PuheenjohtajaRepliikki>
+                    <sis:KappaleKooste>Selonteko hyväksyttiin.</sis:KappaleKooste>
+                    <vsk:PuheenjohtajaRepliikki>
+                        <vsk1:PuheenjohtajaTeksti>Puhemies Maria Lohela</vsk1:PuheenjohtajaTeksti>
+                        <sis:KappaleKooste>Ehdotuksista äänestetään erikseen mietintöä vastaan.</sis:KappaleKooste>
+                    </vsk:PuheenjohtajaRepliikki>
+                    <sis:KappaleKooste>Äänestysjärjestys hyväksyttiin.</sis:KappaleKooste>
+                    <vsk:AanestysKappaleKooste>Mietintö "jaa", Riitta Myllerin ehdotus "ei". <vsk:AanestysTulos>
+                        <vsk1:AanestysTulosTeksti>Äänestyksen tulos: jaa 109, ei 50; poissa 40 </vsk1:AanestysTulosTeksti>
+                        <vsk:AanestysViite met1:kieliKoodi="fi" vsk1:aanestysNroTeksti="3" vsk1:kokousNroTeksti="19" vsk1:valtiopaivaTeksti="2016 vp" vsk1:valtiopaivavuosiNroTeksti="2016">
+                            <vsk1:AanestysViiteTeksti>(äänestys 3). Eduskunta hyväksyi mietinnön.</vsk1:AanestysViiteTeksti>
+                        </vsk:AanestysViite>
+                    </vsk:AanestysTulos>
+                </vsk:AanestysKappaleKooste>
+                <vsk:AanestysKappaleKooste>Mietintö "jaa", Satu Hassin ehdotus "ei". <vsk:AanestysTulos>
+                    <vsk1:AanestysTulosTeksti>Äänestyksen tulos: jaa 107, ei 52; poissa 40 </vsk1:AanestysTulosTeksti>
+                    <vsk:AanestysViite met1:kieliKoodi="fi" vsk1:aanestysNroTeksti="4" vsk1:kokousNroTeksti="19" vsk1:valtiopaivaTeksti="2016 vp" vsk1:valtiopaivavuosiNroTeksti="2016">
+                        <vsk1:AanestysViiteTeksti>(äänestys 4).  Eduskunta hyväksyi mietinnön. </vsk1:AanestysViiteTeksti>
+                    </vsk:AanestysViite>
+                </vsk:AanestysTulos>
+            </vsk:AanestysKappaleKooste>
+        </vsk:KohtaSisalto>
+    </vsk:Toimenpide>
+    <vsk:PaatoksentekoToimenpide met1:muuTunnus="64065" vsk1:fraasiTunnus="P_1K_1">
+        <vsk:KohtaSisalto>
+            <sis:KappaleKooste>Eduskunta hyväksyi hallituksen esitykseen HE 148/2015 vp sisältyvien 1. ja 2. lakiehdotuksen sisällön mietinnön mukaisena. Lakiehdotusten ensimmäinen käsittely päättyi.</sis:KappaleKooste>
+        </vsk:KohtaSisalto>
+    </vsk:PaatoksentekoToimenpide>
+</vsk:Asiakohta>
+<vsk:Asiakohta met1:eduskuntaTunnus="HE 139/2015 vp" met1:muuTunnus="15945" vsk1:kasittelyvaiheKoodi="2K" vsk1:kohtaJNro="10" vsk1:kohtatyyppiKoodi="Asiakohta" vsk1:yleinenKasittelyvaiheKoodi="2K">
+    <vsk1:KohtaNumero>6</vsk1:KohtaNumero>
+    <vsk:KohtaNimeke>
+        <met1:NimekeTeksti>Hallituksen esitys eduskunnalle laiksi nestemäisten polttoaineiden valmisteverosta annetun lain 2 §:n muuttamisesta</met1:NimekeTeksti>
+    </vsk:KohtaNimeke>
+    <vsk:KohtaAsia>
+        <met1:AsiakirjatyyppiNimi>Hallituksen esitys</met1:AsiakirjatyyppiNimi>
+        <met1:EduskuntaTunnus>HE 139/2015 vp</met1:EduskuntaTunnus>
+    </vsk:KohtaAsia>
+    <vsk:KohtaAsiakirja>
+        <met1:AsiakirjatyyppiNimi>Valiokunnan mietintö</met1:AsiakirjatyyppiNimi>
+        <met1:EduskuntaTunnus>VaVM 1/2016 vp</met1:EduskuntaTunnus>
+    </vsk:KohtaAsiakirja>
+    <vsk:PaatoksentekoToimenpide met1:muuTunnus="62935" vsk1:fraasiTunnus="P_2K_1">
+        <sis1:ValiotsikkoTeksti>Toinen käsittely</sis1:ValiotsikkoTeksti>
+        <vsk:KohtaSisalto>
+            <sis:KappaleKooste>Eduskunta hyväksyi ensimmäisessä käsittelyssä sisällöltään päätetyn, hallituksen esitykseen HE 139/2015 vp sisältyvän lakiehdotuksen. Lakiehdotuksen toinen käsittely päättyi. Asian käsittely päättyi.</sis:KappaleKooste>
+        </vsk:KohtaSisalto>
+    </vsk:PaatoksentekoToimenpide>
+</vsk:Asiakohta>
+<vsk:Asiakohta met1:eduskuntaTunnus="HE 135/2015 vp" met1:muuTunnus="16323" vsk1:kasittelyvaiheKoodi="1K" vsk1:kohtaJNro="11" vsk1:kohtatyyppiKoodi="Asiakohta" vsk1:yleinenKasittelyvaiheKoodi="1K">
+    <vsk1:KohtaNumero>7</vsk1:KohtaNumero>
+    <vsk:KohtaNimeke>
+        <met1:NimekeTeksti>Hallituksen esitys  eduskunnalle  Argentiinan, Brasilian,  Israelin, Serbian ja  Vietnamin kanssa diplomaattisen edustuston,  konsuliedustuston tai  kansainvälisissä järjestöissä toimivan edustuston  työntekijän perheenjäsenen ansiotyön tekemisestä tehtyjen  sopimusten hyväksymisestä sekä laeiksi sopimusten  lainsäädännön alaan  kuuluvien  määräysten voimaansaattamisesta</met1:NimekeTeksti>
+    </vsk:KohtaNimeke>
+    <vsk:KohtaAsia>
+        <met1:AsiakirjatyyppiNimi>Hallituksen esitys</met1:AsiakirjatyyppiNimi>
+        <met1:EduskuntaTunnus>HE 135/2015 vp</met1:EduskuntaTunnus>
+    </vsk:KohtaAsia>
+    <vsk:KohtaAsiakirja>
+        <met1:AsiakirjatyyppiNimi>Valiokunnan mietintö</met1:AsiakirjatyyppiNimi>
+        <met1:EduskuntaTunnus>UaVM 1/2016 vp</met1:EduskuntaTunnus>
+    </vsk:KohtaAsiakirja>
+    <vsk:Toimenpide met1:muuTunnus="65177" vsk1:fraasiTunnus="1K_8">
+        <sis1:ValiotsikkoTeksti>Ensimmäinen käsittely</sis1:ValiotsikkoTeksti>
+        <vsk:KohtaSisalto>
+            <vsk:PuheenjohtajaRepliikki>
+                <vsk1:PuheenjohtajaTeksti>Puhemies Maria Lohela</vsk1:PuheenjohtajaTeksti>
+                <sis:KappaleKooste>Ensimmäiseen käsittelyyn esitellään päiväjärjestyksen <sis1:HarvaKursiiviTeksti>7.</sis1:HarvaKursiiviTeksti> asia. Käsittelyn pohjana on ulkoasiainvaliokunnan mietintö UaVM 1/2016 vp. Nyt päätetään lakiehdotusten sisällöstä. (Hälinää) — Odotamme hetkisen, että sali vähän rauhoittuu. (Puhemies koputtaa)</sis:KappaleKooste>
+            </vsk:PuheenjohtajaRepliikki>
+        </vsk:KohtaSisalto>
+    </vsk:Toimenpide>
+    <vsk:KeskusteluToimenpide met1:muuTunnus="65715" vsk1:fraasiTunnus="KE_108">
+        <sis1:ValiotsikkoTeksti>Keskustelu</sis1:ValiotsikkoTeksti>
+        <vsk:PuheenvuoroToimenpide met1:muuTunnus="65718" vsk1:puheenvuoroAloitusHetki="2016-03-04T13:06:58" vsk1:puheenvuoroLuokitusKoodi="E">
+            <vsk1:AjankohtaTeksti>13.06</vsk1:AjankohtaTeksti>
+            <met:Toimija>
+                <org:Henkilo met1:muuTunnus="772">
+                    <org1:EtuNimi>Antti</org1:EtuNimi>
+                    <org1:SukuNimi>Kaikkonen</org1:SukuNimi>
+                    <org1:LisatietoTeksti>kesk</org1:LisatietoTeksti>
+                </org:Henkilo>
+            </met:Toimija>
+            <vsk1:TarkenneTeksti>(esittelypuheenvuoro)</vsk1:TarkenneTeksti>
+            <vsk:PuheenvuoroOsa met1:asiakirjatyyppiNimi="Puheenvuoro" met1:kieliKoodi="fi" met1:muuTunnus="37300" met1:tilaKoodi="Hyväksytty" met1:versioTeksti="1.1" vsk1:puheenvuoroAloitusHetki="2016-03-04T13:06:58" vsk1:puheenvuoroJNro="1" vsk1:puheenvuoroLopetusHetki="2016-03-04T13:08:23">
+                <vsk:KohtaSisalto>
+                    <sis:KappaleKooste>Arvoisa puhemies! Tässä on käsittelyssä (Hälinää — Puhemies koputtaa) diplomaatteja koskeva lakiesitys. — Mukavaa, että aihe kiinnostaa. (Hälinää)</sis:KappaleKooste>
+                    <vsk:PuheenjohtajaRepliikki>
+                        <vsk1:PuheenjohtajaTeksti>Puhemies Maria Lohela</vsk1:PuheenjohtajaTeksti>
+                        <sis:KappaleKooste>Edustajat, siirtykää ripeästi käymään keskusteluja salin ulkopuolelle, niin päästään päiväjärjestyksen asioissa eteenpäin.</sis:KappaleKooste>
+                    </vsk:PuheenjohtajaRepliikki>
+                    <sis:KappaleKooste>Tästä voi kertoa, että ulkoasiainvaliokunnassa tämä aihe ei myöskään kovin suuria intohimoja herättänyt. Tässä on kysymys aika teknisestä lakimuutoksesta, jossa mahdollistetaan työnteko lähinnä diplomaattien puolisoille ja perheenjäsenille ja joka koskettaa aika pientä joukkoa ihmisiä. Näitä vastaavia sopimuksia on tehty aika monen muunkin maan kanssa, ja nyt on kysymys Argentiinasta, Brasiliasta, Israelista, Serbiasta ja Vietnamista. Toivottavasti myös täysistunnossa tämän asian käsittely sujuu jouhevasti, ja siltä vähän näyttää.</sis:KappaleKooste>
+                </vsk:KohtaSisalto>
+            </vsk:PuheenvuoroOsa>
+        </vsk:PuheenvuoroToimenpide>
+    </vsk:KeskusteluToimenpide>
+    <vsk:PaatoksentekoToimenpide met1:muuTunnus="65176" vsk1:fraasiTunnus="P_1K_3">
+        <vsk:KohtaSisalto>
+            <sis:KappaleKooste>Yleiskeskustelu päättyi.</sis:KappaleKooste>
+            <sis:KappaleKooste>Eduskunta hyväksyi hallituksen esitykseen HE 135/2015 vp sisältyvien 1.—5. lakiehdotuksen sisällön mietinnön mukaisena. Lakiehdotusten ensimmäinen käsittely päättyi.</sis:KappaleKooste>
+        </vsk:KohtaSisalto>
+    </vsk:PaatoksentekoToimenpide>
+</vsk:Asiakohta>
+<vsk:Asiakohta met1:eduskuntaTunnus="HE 133/2015 vp" met1:muuTunnus="16362" vsk1:kasittelyvaiheKoodi="VKPP" vsk1:kohtaJNro="12" vsk1:kohtatyyppiKoodi="Asiakohta" vsk1:yleinenKasittelyvaiheKoodi="VKPP">
+    <vsk1:KohtaNumero>8</vsk1:KohtaNumero>
+    <vsk:KohtaNimeke>
+        <met1:NimekeTeksti>Hallituksen esitys eduskunnalle laeiksi kestävän metsätalouden määräaikaisen rahoituslain, metsätuhojen torjunnasta annetun lain ja riistavahinkolain muuttamisesta</met1:NimekeTeksti>
+    </vsk:KohtaNimeke>
+    <vsk:KohtaAsia>
+        <met1:AsiakirjatyyppiNimi>Hallituksen esitys</met1:AsiakirjatyyppiNimi>
+        <met1:EduskuntaTunnus>HE 133/2015 vp</met1:EduskuntaTunnus>
+    </vsk:KohtaAsia>
+    <vsk:KohtaAsiakirja>
+        <met1:AsiakirjatyyppiNimi>Valiokunnan mietintö</met1:AsiakirjatyyppiNimi>
+        <met1:EduskuntaTunnus>MmVM 1/2016 vp</met1:EduskuntaTunnus>
+    </vsk:KohtaAsiakirja>
+    <vsk:PaatoksentekoToimenpide met1:muuTunnus="65372" vsk1:fraasiTunnus="P_VKPP_1">
+        <sis1:ValiotsikkoTeksti>Mietinnön pöydällepano</sis1:ValiotsikkoTeksti>
+        <vsk:KohtaSisalto>
+            <sis:KappaleKooste>Mietintö pantiin pöydälle 8.3.2016 pidettävään täysistuntoon.</sis:KappaleKooste>
+        </vsk:KohtaSisalto>
+    </vsk:PaatoksentekoToimenpide>
+</vsk:Asiakohta>
+<vsk:Asiakohta met1:eduskuntaTunnus="HE 3/2016 vp" met1:muuTunnus="16310" vsk1:kasittelyvaiheKoodi="VKPP" vsk1:kohtaJNro="13" vsk1:kohtatyyppiKoodi="Asiakohta" vsk1:yleinenKasittelyvaiheKoodi="VKPP">
+    <vsk1:KohtaNumero>9</vsk1:KohtaNumero>
+    <vsk:KohtaNimeke>
+        <met1:NimekeTeksti>Hallituksen esitys eduskunnalle laeiksi sijoitusrahastolain ja Finanssivalvonnasta annetun lain muuttamisesta</met1:NimekeTeksti>
+    </vsk:KohtaNimeke>
+    <vsk:KohtaAsia>
+        <met1:AsiakirjatyyppiNimi>Hallituksen esitys</met1:AsiakirjatyyppiNimi>
+        <met1:EduskuntaTunnus>HE 3/2016 vp</met1:EduskuntaTunnus>
+    </vsk:KohtaAsia>
+    <vsk:KohtaAsiakirja>
+        <met1:AsiakirjatyyppiNimi>Valiokunnan mietintö</met1:AsiakirjatyyppiNimi>
+        <met1:EduskuntaTunnus>TaVM 2/2016 vp</met1:EduskuntaTunnus>
+    </vsk:KohtaAsiakirja>
+    <vsk:PaatoksentekoToimenpide met1:muuTunnus="65101" vsk1:fraasiTunnus="P_VKPP_1">
+        <sis1:ValiotsikkoTeksti>Mietinnön pöydällepano</sis1:ValiotsikkoTeksti>
+        <vsk:KohtaSisalto>
+            <sis:KappaleKooste>Mietintö pantiin pöydälle 8.3.2016 pidettävään täysistuntoon.</sis:KappaleKooste>
+        </vsk:KohtaSisalto>
+    </vsk:PaatoksentekoToimenpide>
+</vsk:Asiakohta>
+<vsk:MuuAsiakohta met1:muuTunnus="10337" vsk1:kasittelyvaiheKoodi="KOKSEU" vsk1:kohtaJNro="14" vsk1:kohtatyyppiKoodi="Asiakohta" vsk1:yleinenKasittelyvaiheKoodi="KOKOUS">
+    <vsk1:KohtaNumero>10</vsk1:KohtaNumero>
+    <sis1:OtsikkoTeksti>Seuraava täysistunto</sis1:OtsikkoTeksti>
+    <vsk:Toimenpide met1:muuTunnus="42462" vsk1:fraasiTunnus="K_110">
+        <vsk:KohtaSisalto>
+            <sis:KappaleKooste>Eduskunnan seuraava täysistunto on tiistaina 8.3.2016 klo 14.00. Täysistunto lopetettiin klo 13.09.</sis:KappaleKooste>
+        </vsk:KohtaSisalto>
+    </vsk:Toimenpide>
+</vsk:MuuAsiakohta>
+<asi:AllekirjoitusOsa>
+    <asi1:JohdantoTeksti>Pöytäkirjan vakuudeksi:</asi1:JohdantoTeksti>
+    <asi:Allekirjoittaja>
+        <org:Henkilo>
+            <org1:EtuNimi>Timo</org1:EtuNimi>
+            <org1:SukuNimi>Tuovinen</org1:SukuNimi>
+        </org:Henkilo>
+    </asi:Allekirjoittaja>
+</asi:AllekirjoitusOsa>
+</ptk:Poytakirja>
+</RakenneAsiakirja>
+</SiirtoAsiakirja>
+<SiirtoTiedosto xmlns="http://www.eduskunta.fi/skeemat/siirtokooste/2011/05/17">
+<Document xmlns="http://www.arkisto.fi/skeemat/sahke2/2011/01/31_vnk">
+<NativeId>{F1509D6F-0002-CC80-8619-61096AB00000}</NativeId>
+<UseType>Julkaisu</UseType>
+<File>
+<Name>F1509D6F-0002-CC80-8619-61096AB00000.pdf</Name>
+<Path>sftp://intpurnukka.eduskunta.fi:22/home/vaskijul/liitteet/tojulkvp/F1509D6F-0002-CC80-8619-61096AB00000.pdf</Path>
+</File>
+<Format>
+<Name>application/pdf</Name>
+<Version/>
+</Format>
+<HashAlgorithm>MD5</HashAlgorithm>
+<HashValue>d5d780cb27b57167fa024f9063ede053</HashValue>
+</Document>
+</SiirtoTiedosto>
+</ns11:Siirto>

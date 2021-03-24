@@ -1,0 +1,6 @@
+# This configuration file collects all paths and default parameters
+
+title = "Finnish parliament download tools configuration"
+
+[paths]
+corpus_dir = "/path/to/corpus_directory"

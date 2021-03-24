@@ -1,0 +1,250 @@
+<ns11:Siirto xmlns:ns11="http://www.eduskunta.fi/skeemat/siirto/2011/09/07">
+    <Sanomavalitys xmlns="http://www.eduskunta.fi/skeemat/siirtokooste/2011/05/17">
+        <ns4:SanomatyyppiNimi xmlns:ns4="http://www.eduskunta.fi/skeemat/siirtoelementit/2011/05/17">VASKI_JULKVP_PlenarySessionMainPage_fi</ns4:SanomatyyppiNimi>
+        <ns4:SanomaTunnus xmlns:ns4="http://www.eduskunta.fi/skeemat/siirtoelementit/2011/05/17">Vaski_VASKI_JULKVP_PlenarySessionMainPage_fi_24-huhti-2020_16:39:05:772_EEST</ns4:SanomaTunnus>
+        <ns4:LuontiHetki xmlns:ns4="http://www.eduskunta.fi/skeemat/siirtoelementit/2011/05/17">2020-04-24T16:39:05.772+03:00</ns4:LuontiHetki>
+        <ns4:SiirtoKoodi xmlns:ns4="http://www.eduskunta.fi/skeemat/siirtoelementit/2011/05/17">paivitys</ns4:SiirtoKoodi>
+        <Toimija xmlns="http://www.vn.fi/skeemat/metatietokooste/2010/04/27"
+            xmlns:s573="http://www.vn.fi/skeemat/metatietoelementit/2010/04/27" s573:rooliKoodi="lahettaja">
+            <s573:YhteisoTeksti>Eduskunta</s573:YhteisoTeksti>
+        </Toimija>
+        <Toimija xmlns="http://www.vn.fi/skeemat/metatietokooste/2010/04/27"
+            xmlns:s574="http://www.vn.fi/skeemat/metatietoelementit/2010/04/27" s574:rooliKoodi="vastaanottaja">
+            <s574:YhteisoTeksti>Eduskunta</s574:YhteisoTeksti>
+        </Toimija>
+    </Sanomavalitys>
+    <ns11:SiirtoMetatieto>
+        <jme:JulkaisuMetatieto xmlns:asi="http://www.vn.fi/skeemat/asiakirjakooste/2010/04/27"
+            xmlns:asi1="http://www.vn.fi/skeemat/asiakirjaelementit/2010/04/27"
+            xmlns:jme="http://www.eduskunta.fi/skeemat/julkaisusiirtokooste/2011/12/20"
+            xmlns:met="http://www.vn.fi/skeemat/metatietokooste/2010/04/27"
+            xmlns:met1="http://www.vn.fi/skeemat/metatietoelementit/2010/04/27"
+            xmlns:org="http://www.vn.fi/skeemat/organisaatiokooste/2010/02/15"
+            xmlns:org1="http://www.vn.fi/skeemat/organisaatioelementit/2010/02/15"
+            xmlns:sii="http://www.eduskunta.fi/skeemat/siirtokooste/2011/05/17"
+            xmlns:sii1="http://www.eduskunta.fi/skeemat/siirtoelementit/2011/05/17"
+            xmlns:sis="http://www.vn.fi/skeemat/sisaltokooste/2010/04/27"
+            xmlns:sis1="http://www.vn.fi/skeemat/sisaltoelementit/2010/04/27"
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" met1:asiakirjatyyppiNimi="Täysistunnon pöytäkirjan pääsivu" met1:eduskuntaTunnus="PTK 61/2020 vp" met1:identifiointiTunnus="{62EDD955-7EBE-CF07-9BDA-71AC68000001}" met1:kieliKoodi="fi" met1:laadintaPvm="2020-04-24" met1:muuTunnus="EDK-2020-AK-298761" met1:paatehtavaKoodi="00 00 03 Poliittinen ohjaus">
+            <asi:IdentifiointiOsa>
+                <met1:AsiakirjatyyppiNimi>Täysistunnon pöytäkirjan pääsivu</met1:AsiakirjatyyppiNimi>
+                <asi:EduskuntaTunniste>
+                    <met1:AsiakirjatyyppiKoodi>PTK</met1:AsiakirjatyyppiKoodi>
+                    <asi1:AsiakirjaNroTeksti>61</asi1:AsiakirjaNroTeksti>
+                    <asi1:ValtiopaivavuosiTeksti>2020</asi1:ValtiopaivavuosiTeksti>
+                </asi:EduskuntaTunniste>
+                <met:Toimija met1:rooliKoodi="Laatija">
+                    <met1:YhteisoTeksti>Täysistunto</met1:YhteisoTeksti>
+                </met:Toimija>
+                <met1:LaadintaPvmTeksti>24.04.2020</met1:LaadintaPvmTeksti>
+                <met:Nimeke met1:vaihtoehtoinenNimekeTeksti="">
+                    <met1:NimekeTeksti>Perjantai 24.4.2020 klo 13.00—14.07</met1:NimekeTeksti>
+                </met:Nimeke>
+            </asi:IdentifiointiOsa>
+        </jme:JulkaisuMetatieto>
+    </ns11:SiirtoMetatieto>
+    <SiirtoAsiakirja xmlns="http://www.eduskunta.fi/skeemat/siirtokooste/2011/05/17">
+        <RakenneAsiakirja>
+            <ptk:Poytakirja xmlns:asi="http://www.vn.fi/skeemat/asiakirjakooste/2010/04/27"
+                xmlns:asi1="http://www.vn.fi/skeemat/asiakirjaelementit/2010/04/27"
+                xmlns:fra="http://www.eduskunta.fi/skeemat/fraasikooste/2011/01/04"
+                xmlns:fra1="http://www.eduskunta.fi/skeemat/fraasielementit/2011/01/04"
+                xmlns:met="http://www.vn.fi/skeemat/metatietokooste/2010/04/27"
+                xmlns:met1="http://www.vn.fi/skeemat/metatietoelementit/2010/04/27"
+                xmlns:org="http://www.vn.fi/skeemat/organisaatiokooste/2010/02/15"
+                xmlns:org1="http://www.vn.fi/skeemat/organisaatioelementit/2010/02/15"
+                xmlns:ptk="http://www.eduskunta.fi/skeemat/poytakirja/2011/01/28"
+                xmlns:sis="http://www.vn.fi/skeemat/sisaltokooste/2010/04/27"
+                xmlns:sis1="http://www.vn.fi/skeemat/sisaltoelementit/2010/04/27"
+                xmlns:vsk="http://www.eduskunta.fi/skeemat/vaskikooste/2011/01/04"
+                xmlns:vsk1="http://www.eduskunta.fi/skeemat/vaskielementit/2011/01/04"
+                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" met1:asiakirjatyyppiNimi="Täysistunnon pöytäkirjan pääsivu" met1:eduskuntaTunnus="PTK 61/2020 vp" met1:identifiointiTunnus="f94c33ad-5fea-c329-995e-71ac67a00001" met1:kieliKoodi="fi" met1:laadintaPvm="2020-04-24" met1:muuTunnus="f94c33ad-5fea-c329-995e-71ac67a00001" met1:rakennemaarittelyNimi="eduskunnanpoytakirja.xsd" met1:tilaKoodi="Hyväksytty" met1:versioTeksti="3.13" vsk1:ennakkotietoTilaKoodi="" vsk1:kokousAloitusHetki="2020-04-24T13:00:00" vsk1:kokousLopetusHetki="2020-04-24T13:30:00">
+                <asi:IdentifiointiOsa>
+                    <met1:AsiakirjatyyppiNimi>Täysistunnon pöytäkirjan pääsivu</met1:AsiakirjatyyppiNimi>
+                    <asi:EduskuntaTunniste>
+                        <met1:AsiakirjatyyppiKoodi>PTK</met1:AsiakirjatyyppiKoodi>
+                        <asi1:AsiakirjaNroTeksti>61</asi1:AsiakirjaNroTeksti>
+                        <asi1:ValtiopaivavuosiTeksti>2020 vp</asi1:ValtiopaivavuosiTeksti>
+                    </asi:EduskuntaTunniste>
+                    <met:Toimija met1:rooliKoodi="Laatija">
+                        <met1:YhteisoTeksti>Täysistunto</met1:YhteisoTeksti>
+                    </met:Toimija>
+                    <met:Nimeke>
+                        <met1:NimekeTeksti>Perjantai 24.4.2020 klo 13.00—14.07</met1:NimekeTeksti>
+                    </met:Nimeke>
+                </asi:IdentifiointiOsa>
+                <asi:SisaltoKuvaus>
+                    <sis:KappaleKooste>Täysistunto alkoi klo 13.00. Täysistunto keskeytettiin klo 13.39. Täysistuntoa jatkettiin klo 13.45. Täysistunto päättyi klo 14.07.</sis:KappaleKooste>
+                    <sis:KappaleKooste>Puhetta johti puhemies Matti Vanhanen (13.00—13.39 ja 13.45—14.07).</sis:KappaleKooste>
+                </asi:SisaltoKuvaus>
+                <vsk:MuuAsiakohta met1:muuTunnus="92608" vsk1:kasittelyvaiheKoodi="KOKNHU" vsk1:kohtaJNro="1" vsk1:kohtatyyppiKoodi="Asiakohta" vsk1:yleinenKasittelyvaiheKoodi="KOKOUS">
+                    <vsk1:KohtaNumero>1</vsk1:KohtaNumero>
+                    <sis1:OtsikkoTeksti>Nimenhuuto</sis1:OtsikkoTeksti>
+                    <vsk:KohtaAsiakirja vsk1:hyperlinkkiKoodi="EDK-2020-AK-298904">
+                        <met1:AsiakirjatyyppiNimi>Nimenhuutoraportti</met1:AsiakirjatyyppiNimi>
+                        <vsk1:TarkenneTeksti>Liite 1A</vsk1:TarkenneTeksti>
+                    </vsk:KohtaAsiakirja>
+                    <vsk:Toimenpide met1:muuTunnus="390455" vsk1:fraasiTunnus="K_106">
+                        <vsk:KohtaSisalto>
+                            <sis:KappaleKooste>Toimitettiin nimenhuuto.</sis:KappaleKooste>
+                        </vsk:KohtaSisalto>
+                    </vsk:Toimenpide>
+                </vsk:MuuAsiakohta>
+                <vsk:MuuAsiakohta met1:muuTunnus="92609" vsk1:kasittelyvaiheKoodi="KOKILM" vsk1:kohtaJNro="2" vsk1:kohtatyyppiKoodi="Asiakohta" vsk1:yleinenKasittelyvaiheKoodi="KOKOUS">
+                    <vsk1:KohtaNumero>2</vsk1:KohtaNumero>
+                    <sis1:OtsikkoTeksti>Ilmoituksia</sis1:OtsikkoTeksti>
+                </vsk:MuuAsiakohta>
+                <vsk:MuuAsiakohta met1:muuTunnus="99532" vsk1:kasittelyvaiheKoodi="KOKHAL" vsk1:kohtaJNro="3" vsk1:kohtatyyppiKoodi="Alikohta" vsk1:paakohtaTunnus="92609" vsk1:yleinenKasittelyvaiheKoodi="KOKOUS">
+                    <vsk1:KohtaNumero>2.1</vsk1:KohtaNumero>
+                    <sis1:OtsikkoTeksti>Hallituksen esitykset</sis1:OtsikkoTeksti>
+                    <vsk:Toimenpide met1:muuTunnus="417631" vsk1:fraasiTunnus="K_118">
+                        <vsk:KohtaSisalto>
+                            <sis:KappaleKooste>Valtioneuvosto on 23.4.2020 antanut hallituksen esitykset HE 53-57, 59, 60/2020 vp.</sis:KappaleKooste>
+                        </vsk:KohtaSisalto>
+                    </vsk:Toimenpide>
+                </vsk:MuuAsiakohta>
+                <vsk:MuuAsiakohta met1:muuTunnus="99570" vsk1:kasittelyvaiheKoodi="KOKVS" vsk1:kohtaJNro="4" vsk1:kohtatyyppiKoodi="Alikohta" vsk1:paakohtaTunnus="92609" vsk1:yleinenKasittelyvaiheKoodi="KOKOUS">
+                    <vsk1:KohtaNumero>2.2</vsk1:KohtaNumero>
+                    <sis1:OtsikkoTeksti>Valtioneuvoston selonteot</sis1:OtsikkoTeksti>
+                    <vsk:Toimenpide met1:muuTunnus="417809" vsk1:fraasiTunnus="P_K_121">
+                        <vsk:KohtaSisalto>
+                            <sis:KappaleKooste>Valtioneuvosto on 23.4.2020 antanut eduskunnalle selonteon VNS 2/2020 vp sotilasosaston asettamisesta korkeaan valmiuteen osana Alankomaiden, Irlannin, Itävallan, Kroatian, Latvian, Ruotsin, Saksan, Suomen ja Tšekin muodostaman EU:n taisteluosaston valmiusvuoroa 1.7.-31.12.2020.</sis:KappaleKooste>
+                        </vsk:KohtaSisalto>
+                    </vsk:Toimenpide>
+                </vsk:MuuAsiakohta>
+                <vsk:MuuAsiakohta met1:muuTunnus="99534" vsk1:kasittelyvaiheKoodi="KOKVKK" vsk1:kohtaJNro="5" vsk1:kohtatyyppiKoodi="Alikohta" vsk1:paakohtaTunnus="92609" vsk1:yleinenKasittelyvaiheKoodi="KOKOUS">
+                    <vsk1:KohtaNumero>2.3</vsk1:KohtaNumero>
+                    <sis1:OtsikkoTeksti>Vastaukset kirjallisiin kysymyksiin</sis1:OtsikkoTeksti>
+                    <vsk:Toimenpide met1:muuTunnus="417635" vsk1:fraasiTunnus="K_138">
+                        <vsk:KohtaSisalto>
+                            <sis:KappaleKooste>Eduskunnalle ovat saapuneet vastaukset kirjallisiin kysymyksiin KK 130, 160, 173, 175, 181, 189-191, 194, 199-205, 207-209, 214, 220, 230, 237, 239/2020 vp.</sis:KappaleKooste>
+                        </vsk:KohtaSisalto>
+                    </vsk:Toimenpide>
+                </vsk:MuuAsiakohta>
+                <vsk:Asiakohta met1:eduskuntaTunnus="HE 43/2020 vp" met1:muuTunnus="99560" vsk1:hyperlinkkiKoodi="PTK 61/2020/3 vp" vsk1:kasittelyvaiheKoodi="AK" vsk1:kohtaJNro="6" vsk1:kohtatyyppiKoodi="Asiakohta" vsk1:yleinenKasittelyvaiheKoodi="AK">
+                    <vsk1:KohtaNumero>3</vsk1:KohtaNumero>
+                    <vsk:KohtaNimeke>
+                        <met1:NimekeTeksti>Hallituksen esitys eduskunnalle vuoden 2020 toiseksi lisätalousarvioksi</met1:NimekeTeksti>
+                        <met1:NimekeTeksti>Hallituksen esitys eduskunnalle vuoden 2020 toisen lisätalousarvioesityksen (HE 43/2020 vp) täydentämisestä</met1:NimekeTeksti>
+                    </vsk:KohtaNimeke>
+                    <vsk:KohtaAsia vsk1:hyperlinkkiKoodi="HE 43/2020 vp">
+                        <met1:AsiakirjatyyppiNimi>Hallituksen esitys</met1:AsiakirjatyyppiNimi>
+                        <met1:EduskuntaTunnus>HE 43/2020 vp</met1:EduskuntaTunnus>
+                    </vsk:KohtaAsia>
+                    <vsk:KohtaAsia vsk1:hyperlinkkiKoodi="HE 52/2020 vp">
+                        <met1:AsiakirjatyyppiNimi>Hallituksen esitys</met1:AsiakirjatyyppiNimi>
+                        <met1:EduskuntaTunnus>HE 52/2020 vp</met1:EduskuntaTunnus>
+                    </vsk:KohtaAsia>
+                    <vsk:KohtaAsia>
+                        <met1:AsiakirjatyyppiNimi>Lisätalousarvioaloite</met1:AsiakirjatyyppiNimi>
+                        <sis1:MultiViiteTunnus>LTA 9-17/2020 vp</sis1:MultiViiteTunnus>
+                    </vsk:KohtaAsia>
+                    <vsk:KohtaAsiakirja>
+                        <met1:AsiakirjatyyppiNimi>Valiokunnan mietintö</met1:AsiakirjatyyppiNimi>
+                        <met1:EduskuntaTunnus>VaVM 5/2020 vp</met1:EduskuntaTunnus>
+                    </vsk:KohtaAsiakirja>
+                    <vsk:Toimenpide met1:muuTunnus="417785" vsk1:fraasiTunnus="AK_14">
+                        <sis1:ValiotsikkoTeksti>Ainoa käsittely</sis1:ValiotsikkoTeksti>
+                    </vsk:Toimenpide>
+                    <vsk:PaatosToimenpide met1:muuTunnus="417786" vsk1:fraasiTunnus="P_AKE_10">
+                        <sis:KappaleKooste>Eduskunta hyväksyi hallituksen esitykseen HE 43/2020 vp ja sitä täydentävään hallituksen esitykseen HE 52/2020 vp sisältyvän ehdotuksen vuoden 2020 toiseksi lisätalousarvioksi mietinnön mukaisena. Eduskunta hyväksyi mietintöön sisältyvän lausumaehdotuksen. Eduskunta yhtyi valiokunnan ehdotukseen lisätalousarvioaloitteiden LTA 9-17/2020 vp hylkäämisestä. Eduskunta hyväksyi valiokunnan ehdotuksen vuoden 2020 toisen lisätalousarvion soveltamisesta. Asian käsittely päättyi.</sis:KappaleKooste>
+                    </vsk:PaatosToimenpide>
+                </vsk:Asiakohta>
+                <vsk:Asiakohta met1:eduskuntaTunnus="HE 51/2020 vp" met1:muuTunnus="99454" vsk1:hyperlinkkiKoodi="PTK 61/2020/4 vp" vsk1:kasittelyvaiheKoodi="2K" vsk1:kohtaJNro="7" vsk1:kohtatyyppiKoodi="Asiakohta" vsk1:yleinenKasittelyvaiheKoodi="2K">
+                    <vsk1:KohtaNumero>4</vsk1:KohtaNumero>
+                    <vsk:KohtaNimeke>
+                        <met1:NimekeTeksti>Hallituksen esitys eduskunnalle laiksi koronavirusepidemian vuoksi palkatta työstä poissa olevalle maksettavasta väliaikaisesta tuesta</met1:NimekeTeksti>
+                    </vsk:KohtaNimeke>
+                    <vsk:KohtaAsia vsk1:hyperlinkkiKoodi="HE 51/2020 vp">
+                        <met1:AsiakirjatyyppiNimi>Hallituksen esitys</met1:AsiakirjatyyppiNimi>
+                        <met1:EduskuntaTunnus>HE 51/2020 vp</met1:EduskuntaTunnus>
+                    </vsk:KohtaAsia>
+                    <vsk:KohtaAsiakirja>
+                        <met1:AsiakirjatyyppiNimi>Valiokunnan mietintö</met1:AsiakirjatyyppiNimi>
+                        <met1:EduskuntaTunnus>StVM 6/2020 vp</met1:EduskuntaTunnus>
+                    </vsk:KohtaAsiakirja>
+                    <vsk:KohtaAsiakirja vsk1:hyperlinkkiKoodi="EDK-2020-AK-298809">
+                        <met1:AsiakirjatyyppiNimi>Pöytäkirjan liite</met1:AsiakirjatyyppiNimi>
+                        <met:MuuViite>
+                            <sis1:ViiteTeksti>Lausumaehdotukset 24.4.2020</sis1:ViiteTeksti>
+                        </met:MuuViite>
+                        <vsk1:TarkenneTeksti>Liite 4A</vsk1:TarkenneTeksti>
+                    </vsk:KohtaAsiakirja>
+                    <vsk:Toimenpide met1:muuTunnus="417152" vsk1:fraasiTunnus="2K_2">
+                        <sis1:ValiotsikkoTeksti>Toinen käsittely</sis1:ValiotsikkoTeksti>
+                    </vsk:Toimenpide>
+                    <vsk:PaatosToimenpide met1:muuTunnus="417153" vsk1:fraasiTunnus="P_2K_1">
+                        <sis:KappaleKooste>Eduskunta hyväksyi ensimmäisessä käsittelyssä sisällöltään päätetyn, hallituksen esitykseen HE 51/2020 vp sisältyvän lakiehdotuksen. Lakiehdotuksen toinen käsittely päättyi. Asian käsittely päättyi.</sis:KappaleKooste>
+                    </vsk:PaatosToimenpide>
+                </vsk:Asiakohta>
+                <vsk:Asiakohta met1:eduskuntaTunnus="HE 45/2020 vp" met1:muuTunnus="99452" vsk1:hyperlinkkiKoodi="PTK 61/2020/5 vp" vsk1:kasittelyvaiheKoodi="2K" vsk1:kohtaJNro="8" vsk1:kohtatyyppiKoodi="Asiakohta" vsk1:yleinenKasittelyvaiheKoodi="2K">
+                    <vsk1:KohtaNumero>5</vsk1:KohtaNumero>
+                    <vsk:KohtaNimeke>
+                        <met1:NimekeTeksti>Hallituksen esitys eduskunnalle laiksi väliaikaisesta poikkeamisesta osakeyhtiölaista, asunto-osakeyhtiölaista, osuuskuntalaista, yhdistyslaista ja eräistä muista yhteisölaeista Covid-19 epidemian leviämisen rajoittamiseksi</met1:NimekeTeksti>
+                    </vsk:KohtaNimeke>
+                    <vsk:KohtaAsia vsk1:hyperlinkkiKoodi="HE 45/2020 vp">
+                        <met1:AsiakirjatyyppiNimi>Hallituksen esitys</met1:AsiakirjatyyppiNimi>
+                        <met1:EduskuntaTunnus>HE 45/2020 vp</met1:EduskuntaTunnus>
+                    </vsk:KohtaAsia>
+                    <vsk:KohtaAsiakirja>
+                        <met1:AsiakirjatyyppiNimi>Valiokunnan mietintö</met1:AsiakirjatyyppiNimi>
+                        <met1:EduskuntaTunnus>TaVM 8/2020 vp</met1:EduskuntaTunnus>
+                    </vsk:KohtaAsiakirja>
+                    <vsk:Toimenpide met1:muuTunnus="417143" vsk1:fraasiTunnus="2K_2">
+                        <sis1:ValiotsikkoTeksti>Toinen käsittely</sis1:ValiotsikkoTeksti>
+                    </vsk:Toimenpide>
+                    <vsk:PaatosToimenpide met1:muuTunnus="417144" vsk1:fraasiTunnus="P_2K_1">
+                        <sis:KappaleKooste>Eduskunta hyväksyi ensimmäisessä käsittelyssä sisällöltään päätetyn, hallituksen esitykseen HE 45/2020 vp sisältyvän lakiehdotuksen. Lakiehdotuksen toinen käsittely päättyi. Asian käsittely päättyi.</sis:KappaleKooste>
+                    </vsk:PaatosToimenpide>
+                </vsk:Asiakohta>
+                <vsk:Asiakohta met1:eduskuntaTunnus="HE 48/2020 vp" met1:muuTunnus="99446" vsk1:hyperlinkkiKoodi="PTK 61/2020/6 vp" vsk1:kasittelyvaiheKoodi="2K" vsk1:kohtaJNro="9" vsk1:kohtatyyppiKoodi="Asiakohta" vsk1:yleinenKasittelyvaiheKoodi="2K">
+                    <vsk1:KohtaNumero>6</vsk1:KohtaNumero>
+                    <vsk:KohtaNimeke>
+                        <met1:NimekeTeksti>Hallituksen esitys eduskunnalle maa- ja metsätalousministeriön hallinnonalalla covid-19 -epidemian johdosta väliaikaisesti sovellettavia menettelyjä koskeviksi laeiksi</met1:NimekeTeksti>
+                    </vsk:KohtaNimeke>
+                    <vsk:KohtaAsia vsk1:hyperlinkkiKoodi="HE 48/2020 vp">
+                        <met1:AsiakirjatyyppiNimi>Hallituksen esitys</met1:AsiakirjatyyppiNimi>
+                        <met1:EduskuntaTunnus>HE 48/2020 vp</met1:EduskuntaTunnus>
+                    </vsk:KohtaAsia>
+                    <vsk:KohtaAsiakirja>
+                        <met1:AsiakirjatyyppiNimi>Valiokunnan mietintö</met1:AsiakirjatyyppiNimi>
+                        <met1:EduskuntaTunnus>MmVM 4/2020 vp</met1:EduskuntaTunnus>
+                    </vsk:KohtaAsiakirja>
+                    <vsk:Toimenpide met1:muuTunnus="417075" vsk1:fraasiTunnus="2K_2">
+                        <sis1:ValiotsikkoTeksti>Toinen käsittely</sis1:ValiotsikkoTeksti>
+                    </vsk:Toimenpide>
+                    <vsk:PaatosToimenpide met1:muuTunnus="417076" vsk1:fraasiTunnus="P_2K_1">
+                        <sis:KappaleKooste>Eduskunta hyväksyi ensimmäisessä käsittelyssä sisällöltään päätetyt, hallituksen esitykseen HE 48/2020 vp sisältyvät 1.-5. lakiehdotuksen. Lakiehdotusten toinen käsittely päättyi. Asian käsittely päättyi.</sis:KappaleKooste>
+                    </vsk:PaatosToimenpide>
+                </vsk:Asiakohta>
+                <vsk:Asiakohta met1:eduskuntaTunnus="HE 58/2020 vp" met1:muuTunnus="99616" vsk1:hyperlinkkiKoodi="PTK 61/2020/7 vp" vsk1:kasittelyvaiheKoodi="VKPP" vsk1:kohtaJNro="10" vsk1:kohtatyyppiKoodi="Asiakohta" vsk1:yleinenKasittelyvaiheKoodi="VKPP">
+                    <vsk1:KohtaNumero/>
+                    <vsk:KohtaNimeke>
+                        <met1:NimekeTeksti>Hallituksen esitys eduskunnalle laeiksi julkisesta työvoima- ja yrityspalvelusta annetun lain 2 ja 8 luvun sekä työttömyysturvalain 2 a luvun 13 §:n ja 11 luvun väliaikaisesta muuttamisesta</met1:NimekeTeksti>
+                    </vsk:KohtaNimeke>
+                    <vsk:KohtaAsia vsk1:hyperlinkkiKoodi="HE 58/2020 vp">
+                        <met1:AsiakirjatyyppiNimi>Hallituksen esitys</met1:AsiakirjatyyppiNimi>
+                        <met1:EduskuntaTunnus>HE 58/2020 vp</met1:EduskuntaTunnus>
+                    </vsk:KohtaAsia>
+                    <vsk:KohtaAsiakirja>
+                        <met1:AsiakirjatyyppiNimi>Valiokunnan mietintö</met1:AsiakirjatyyppiNimi>
+                        <met1:EduskuntaTunnus>TyVM 6/2020 vp</met1:EduskuntaTunnus>
+                    </vsk:KohtaAsiakirja>
+                    <vsk:PaatosToimenpide met1:muuTunnus="418120" vsk1:fraasiTunnus="P-VKPP_1_b">
+                        <sis1:ValiotsikkoTeksti>Mietinnön pöydällepano</sis1:ValiotsikkoTeksti>
+                        <sis:KappaleKooste>Mietintö pantiin asian kiireellisyyden vuoksi pöydälle seuraavaan, tänään 24.4.2020 pidettävään täysistuntoon.</sis:KappaleKooste>
+                    </vsk:PaatosToimenpide>
+                </vsk:Asiakohta>
+                <vsk:MuuAsiakohta met1:muuTunnus="92610" vsk1:kasittelyvaiheKoodi="KOKSEU" vsk1:kohtaJNro="11" vsk1:kohtatyyppiKoodi="Asiakohta" vsk1:yleinenKasittelyvaiheKoodi="KOKOUS">
+                    <vsk1:KohtaNumero>8</vsk1:KohtaNumero>
+                    <sis1:OtsikkoTeksti>Seuraava täysistunto</sis1:OtsikkoTeksti>
+                    <vsk:Toimenpide met1:muuTunnus="418331" vsk1:fraasiTunnus="K_110">
+                        <vsk:KohtaSisalto>
+                            <sis:KappaleKooste>Eduskunnan seuraava täysistunto on tänään perjantaina 24.4.2020 klo 14.15. Täysistunto lopetettiin klo 14.07.</sis:KappaleKooste>
+                        </vsk:KohtaSisalto>
+                    </vsk:Toimenpide>
+                </vsk:MuuAsiakohta>
+            </ptk:Poytakirja>
+        </RakenneAsiakirja>
+    </SiirtoAsiakirja>
+</ns11:Siirto>

@@ -1,0 +1,17 @@
+.mypy_cache/
+.DS_Store
+README.Aalto
+*.pyc
+
+/.cache/
+/.coverage
+/.env
+/.nox/
+/.python-version
+/.pytype/
+/.vscode/
+/dist/
+/docs/_build/
+/logs/
+/src/*.egg-info/
+__pycache__/

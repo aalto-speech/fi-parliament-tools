@@ -1,0 +1,457 @@
+<ns11:Siirto xmlns:ns11="http://www.eduskunta.fi/skeemat/siirto/2011/09/07">
+    <Sanomavalitys xmlns="http://www.eduskunta.fi/skeemat/siirtokooste/2011/05/17">
+        <ns4:SanomatyyppiNimi xmlns:ns4="http://www.eduskunta.fi/skeemat/siirtoelementit/2011/05/17">VASKI_JULKVP_Record_fi
+        </ns4:SanomatyyppiNimi>
+        <ns4:SanomaTunnus xmlns:ns4="http://www.eduskunta.fi/skeemat/siirtoelementit/2011/05/17">Vaski_VASKI_JULKVP_Record_fi_07-marras-2019_11:12:07:851_EET
+        </ns4:SanomaTunnus>
+        <ns4:LuontiHetki xmlns:ns4="http://www.eduskunta.fi/skeemat/siirtoelementit/2011/05/17">2019-11-07T11:12:07.851+02:00
+        </ns4:LuontiHetki>
+        <ns4:SiirtoKoodi xmlns:ns4="http://www.eduskunta.fi/skeemat/siirtoelementit/2011/05/17">paivitys
+        </ns4:SiirtoKoodi>
+        <Toimija xmlns="http://www.vn.fi/skeemat/metatietokooste/2010/04/27"
+            xmlns:s165="http://www.vn.fi/skeemat/metatietoelementit/2010/04/27" s165:rooliKoodi="lahettaja">
+            <s165:YhteisoTeksti>Eduskunta</s165:YhteisoTeksti>
+        </Toimija>
+        <Toimija xmlns="http://www.vn.fi/skeemat/metatietokooste/2010/04/27"
+            xmlns:s166="http://www.vn.fi/skeemat/metatietoelementit/2010/04/27" s166:rooliKoodi="vastaanottaja">
+            <s166:YhteisoTeksti>Eduskunta</s166:YhteisoTeksti>
+        </Toimija>
+    </Sanomavalitys>
+    <ns11:SiirtoMetatieto>
+        <jme:JulkaisuMetatieto xmlns:asi="http://www.vn.fi/skeemat/asiakirjakooste/2010/04/27"
+            xmlns:asi1="http://www.vn.fi/skeemat/asiakirjaelementit/2010/04/27"
+            xmlns:jme="http://www.eduskunta.fi/skeemat/julkaisusiirtokooste/2011/12/20"
+            xmlns:met="http://www.vn.fi/skeemat/metatietokooste/2010/04/27"
+            xmlns:met1="http://www.vn.fi/skeemat/metatietoelementit/2010/04/27"
+            xmlns:org="http://www.vn.fi/skeemat/organisaatiokooste/2010/02/15"
+            xmlns:org1="http://www.vn.fi/skeemat/organisaatioelementit/2010/02/15"
+            xmlns:sii="http://www.eduskunta.fi/skeemat/siirtokooste/2011/05/17"
+            xmlns:sii1="http://www.eduskunta.fi/skeemat/siirtoelementit/2011/05/17"
+            xmlns:sis="http://www.vn.fi/skeemat/sisaltokooste/2010/04/27"
+            xmlns:sis1="http://www.vn.fi/skeemat/sisaltoelementit/2010/04/27"
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" met1:asiakirjatyyppiNimi="Pöytäkirja" met1:eduskuntaTunnus="PTK 124/2017 vp" met1:identifiointiTunnus="{48EB483E-4FF0-CEF8-854C-6E451F600000}" met1:kieliKoodi="fi" met1:laadintaPvm="2017-11-24" met1:muuTunnus="EDK-2017-AK-159753" met1:paatehtavaKoodi="00 00 03 Poliittinen ohjaus">
+            <asi:IdentifiointiOsa>
+                <met1:AsiakirjatyyppiNimi>Pöytäkirja</met1:AsiakirjatyyppiNimi>
+                <asi:EduskuntaTunniste>
+                    <met1:AsiakirjatyyppiKoodi>PTK</met1:AsiakirjatyyppiKoodi>
+                    <asi1:AsiakirjaNroTeksti>124</asi1:AsiakirjaNroTeksti>
+                    <asi1:ValtiopaivavuosiTeksti>2017</asi1:ValtiopaivavuosiTeksti>
+                </asi:EduskuntaTunniste>
+                <met:Toimija met1:rooliKoodi="Laatija">
+                    <met1:YhteisoTeksti>Täysistunto</met1:YhteisoTeksti>
+                </met:Toimija>
+                <met1:LaadintaPvmTeksti>24.11.2017</met1:LaadintaPvmTeksti>
+                <met:Nimeke met1:vaihtoehtoinenNimekeTeksti="">
+                    <met1:NimekeTeksti>Perjantai 24.11.2017 klo 13.00—13.35</met1:NimekeTeksti>
+                </met:Nimeke>
+            </asi:IdentifiointiOsa>
+            <sii:EsitysmuotoViite met1:muuTunnus="{48EB483E-4FF0-CEF8-854C-6E451F600000}"/>
+        </jme:JulkaisuMetatieto>
+    </ns11:SiirtoMetatieto>
+    <SiirtoAsiakirja xmlns="http://www.eduskunta.fi/skeemat/siirtokooste/2011/05/17">
+        <RakenneAsiakirja>
+            <ptk:Poytakirja xmlns:asi="http://www.vn.fi/skeemat/asiakirjakooste/2010/04/27"
+                xmlns:asi1="http://www.vn.fi/skeemat/asiakirjaelementit/2010/04/27"
+                xmlns:elu="http://www.eduskunta.fi/skeemat/ehdotusluettelo/2014/07/28"
+                xmlns:fra="http://www.eduskunta.fi/skeemat/fraasikooste/2011/01/04"
+                xmlns:fra1="http://www.eduskunta.fi/skeemat/fraasielementit/2011/01/04"
+                xmlns:met="http://www.vn.fi/skeemat/metatietokooste/2010/04/27"
+                xmlns:met1="http://www.vn.fi/skeemat/metatietoelementit/2010/04/27"
+                xmlns:mix="http://www.loc.gov/mix/v20"
+                xmlns:narc="http://www.arkisto.fi/skeemat/sahke2/2011/01/31_vnk"
+                xmlns:org="http://www.vn.fi/skeemat/organisaatiokooste/2010/02/15"
+                xmlns:org1="http://www.vn.fi/skeemat/organisaatioelementit/2010/02/15"
+                xmlns:ptk="http://www.eduskunta.fi/skeemat/poytakirja/2011/01/28"
+                xmlns:saa="http://www.vn.fi/skeemat/saadoskooste/2010/04/27"
+                xmlns:saa1="http://www.vn.fi/skeemat/saadoselementit/2010/04/27"
+                xmlns:sis="http://www.vn.fi/skeemat/sisaltokooste/2010/04/27"
+                xmlns:sis1="http://www.vn.fi/skeemat/sisaltoelementit/2010/04/27"
+                xmlns:tau="http://www.vn.fi/skeemat/taulukkokooste/2010/04/27"
+                xmlns:vsk="http://www.eduskunta.fi/skeemat/vaskikooste/2011/01/04"
+                xmlns:vsk1="http://www.eduskunta.fi/skeemat/vaskielementit/2011/01/04"
+                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" met1:asiakirjatyyppiNimi="Pöytäkirja" met1:eduskuntaTunnus="PTK 124/2017 vp" met1:identifiointiTunnus="bf273fdb-8ec4-c76b-91dd-6e1273200002" met1:kieliKoodi="fi" met1:laadintaPvm="2019-11-07" met1:muuTunnus="bf273fdb-8ec4-c76b-91dd-6e1273200002" met1:rakennemaarittelyNimi="eduskunnanpoytakirja.xsd" met1:tilaKoodi="Valmis" met1:versioTeksti="5.0" vsk1:kokousAloitusHetki="2017-11-24T13:00:00" vsk1:kokousLopetusHetki="2017-11-24T13:30:00">
+                <asi:IdentifiointiOsa>
+                    <met1:AsiakirjatyyppiNimi>Pöytäkirja</met1:AsiakirjatyyppiNimi>
+                    <asi:EduskuntaTunniste>
+                        <met1:AsiakirjatyyppiKoodi>PTK</met1:AsiakirjatyyppiKoodi>
+                        <asi1:AsiakirjaNroTeksti>124</asi1:AsiakirjaNroTeksti>
+                        <asi1:ValtiopaivavuosiTeksti>2017 vp</asi1:ValtiopaivavuosiTeksti>
+                    </asi:EduskuntaTunniste>
+                    <met:Toimija met1:rooliKoodi="Laatija">
+                        <met1:YhteisoTeksti>Täysistunto</met1:YhteisoTeksti>
+                    </met:Toimija>
+                    <met:Nimeke>
+                        <met1:NimekeTeksti>Perjantai 24.11.2017 klo 13.00—13.35</met1:NimekeTeksti>
+                    </met:Nimeke>
+                </asi:IdentifiointiOsa>
+                <asi:SisaltoKuvaus>
+                    <sis:KappaleKooste>Täysistunto alkoi klo 13.00. Täysistunto päättyi klo 13.35.</sis:KappaleKooste>
+                    <sis:KappaleKooste>Puhetta johti ensimmäinen varapuhemies Mauri Pekkarinen (13.00—13.35).</sis:KappaleKooste>
+                    <sis:KappaleKooste/>
+                </asi:SisaltoKuvaus>
+                <vsk:MuuAsiakohta met1:muuTunnus="41432" vsk1:kasittelyvaiheKoodi="KOKNHU" vsk1:kohtaJNro="1" vsk1:kohtatyyppiKoodi="Asiakohta" vsk1:yleinenKasittelyvaiheKoodi="KOKOUS">
+                    <vsk1:KohtaNumero>1</vsk1:KohtaNumero>
+                    <sis1:OtsikkoTeksti>Nimenhuuto</sis1:OtsikkoTeksti>
+                    <vsk:KohtaAsiakirja vsk1:hyperlinkkiKoodi="EDK-2017-AK-159744">
+                        <met1:AsiakirjatyyppiNimi>Nimenhuutoraportti</met1:AsiakirjatyyppiNimi>
+                        <vsk1:TarkenneTeksti>Liite 1 A</vsk1:TarkenneTeksti>
+                    </vsk:KohtaAsiakirja>
+                    <vsk:Toimenpide met1:muuTunnus="177794" vsk1:fraasiTunnus="K_106">
+                        <vsk:KohtaSisalto>
+                            <sis:KappaleKooste>Toimitettiin nimenhuuto.</sis:KappaleKooste>
+                        </vsk:KohtaSisalto>
+                    </vsk:Toimenpide>
+                </vsk:MuuAsiakohta>
+                <vsk:MuuAsiakohta met1:muuTunnus="41433" vsk1:kasittelyvaiheKoodi="KOKILM" vsk1:kohtaJNro="2" vsk1:kohtatyyppiKoodi="Asiakohta" vsk1:yleinenKasittelyvaiheKoodi="KOKOUS">
+                    <vsk1:KohtaNumero>2</vsk1:KohtaNumero>
+                    <sis1:OtsikkoTeksti>Ilmoituksia</sis1:OtsikkoTeksti>
+                </vsk:MuuAsiakohta>
+                <vsk:MuuAsiakohta met1:muuTunnus="50184" vsk1:kasittelyvaiheKoodi="KOKHAL" vsk1:kohtaJNro="3" vsk1:kohtatyyppiKoodi="Alikohta" vsk1:paakohtaTunnus="41433" vsk1:yleinenKasittelyvaiheKoodi="KOKOUS">
+                    <vsk1:KohtaNumero>2.1</vsk1:KohtaNumero>
+                    <sis1:OtsikkoTeksti>Hallituksen esitykset</sis1:OtsikkoTeksti>
+                    <vsk:Toimenpide met1:muuTunnus="215101" vsk1:fraasiTunnus="K_118">
+                        <vsk:KohtaSisalto>
+                            <sis:KappaleKooste>Valtioneuvosto on 23.11.2017 antanut hallituksen esitykset HE 178-180/2017 vp.</sis:KappaleKooste>
+                        </vsk:KohtaSisalto>
+                    </vsk:Toimenpide>
+                </vsk:MuuAsiakohta>
+                <vsk:MuuAsiakohta met1:muuTunnus="50185" vsk1:kasittelyvaiheKoodi="KOKVKK" vsk1:kohtaJNro="4" vsk1:kohtatyyppiKoodi="Alikohta" vsk1:paakohtaTunnus="41433" vsk1:yleinenKasittelyvaiheKoodi="KOKOUS">
+                    <vsk1:KohtaNumero>2.2</vsk1:KohtaNumero>
+                    <sis1:OtsikkoTeksti>Vastaukset kirjallisiin kysymyksiin</sis1:OtsikkoTeksti>
+                    <vsk:Toimenpide met1:muuTunnus="215103" vsk1:fraasiTunnus="K_138">
+                        <vsk:KohtaSisalto>
+                            <sis:KappaleKooste>Eduskunnalle ovat saapuneet vastaukset kirjallisiin kysymyksiin KK 454, 457–459, 461, 462, 464–470, 473–476, 479, 480/2017 vp.</sis:KappaleKooste>
+                        </vsk:KohtaSisalto>
+                    </vsk:Toimenpide>
+                </vsk:MuuAsiakohta>
+                <vsk:Asiakohta met1:eduskuntaTunnus="HE 142/2017 vp" met1:muuTunnus="50054" vsk1:kasittelyvaiheKoodi="AK" vsk1:kohtaJNro="5" vsk1:kohtatyyppiKoodi="Asiakohta" vsk1:yleinenKasittelyvaiheKoodi="AK">
+                    <vsk1:KohtaNumero>3</vsk1:KohtaNumero>
+                    <vsk:KohtaNimeke>
+                        <met1:NimekeTeksti> Hallituksen esitys eduskunnalle vuoden 2017 kolmanneksi lisätalousarvioksi</met1:NimekeTeksti>
+                    </vsk:KohtaNimeke>
+                    <vsk:KohtaAsia vsk1:hyperlinkkiKoodi="HE 142/2017 vp">
+                        <met1:AsiakirjatyyppiNimi>Hallituksen esitys</met1:AsiakirjatyyppiNimi>
+                        <met1:EduskuntaTunnus>HE 142/2017 vp</met1:EduskuntaTunnus>
+                    </vsk:KohtaAsia>
+                    <vsk:KohtaAsia>
+                        <met1:AsiakirjatyyppiNimi>Lisätalousarvioaloite</met1:AsiakirjatyyppiNimi>
+                        <sis1:MultiViiteTunnus>LTA 6-7/2017 vp</sis1:MultiViiteTunnus>
+                    </vsk:KohtaAsia>
+                    <vsk:KohtaAsiakirja>
+                        <met1:AsiakirjatyyppiNimi>Valiokunnan mietintö</met1:AsiakirjatyyppiNimi>
+                        <met1:EduskuntaTunnus>VaVM 16/2017 vp</met1:EduskuntaTunnus>
+                    </vsk:KohtaAsiakirja>
+                    <vsk:Toimenpide met1:muuTunnus="214134" vsk1:fraasiTunnus="AK_14">
+                        <sis1:ValiotsikkoTeksti>Ainoa käsittely</sis1:ValiotsikkoTeksti>
+                        <vsk:KohtaSisalto>
+                            <vsk:PuheenjohtajaRepliikki>
+                                <vsk1:PuheenjohtajaTeksti>Ensimmäinen varapuhemies Mauri Pekkarinen</vsk1:PuheenjohtajaTeksti>
+                                <sis:KappaleKooste>Ainoaan käsittelyyn esitellään päiväjärjestyksen
+                                    <sis1:HarvaKursiiviTeksti>3.</sis1:HarvaKursiiviTeksti> asia. Käsittelyn pohjana on valtiovarainvaliokunnan mietintö VaVM 16/2017 vp. Yleiskeskustelu asiasta päättyi 22.11.2017 pidetyssä täysistunnossa.
+                                </sis:KappaleKooste>
+                                <sis:KappaleKooste>Nyt ryhdytään lisätalousarvioehdotuksen yksityiskohtaiseen käsittelyyn. Pyydän tekemään muutosehdotukset.</sis:KappaleKooste>
+                            </vsk:PuheenjohtajaRepliikki>
+                            <sis:KappaleKooste>Keskustelussa tehtiin seuraavat lisätalousarviota koskevat, hyväksytyn menettelytavan mukaisesti keskuskansliaan kirjallisina jätetyt, edustajille monistettuina ja numeroituina jaetut ehdotukset:</sis:KappaleKooste>
+                            <sis:KappaleKooste>1. Toimi Kankaanniemi ps Ville Vähämäen ps kannattamana 26.40.62: Vähennetään 11 200 000 euroa vastaanottokeskusten asiakkaille maksettavista tuista. (Vastalause 3)</sis:KappaleKooste>
+                            <sis:KappaleKooste>2. Toimi Kankaanniemi ps Ville Vähämäen ps kannattamana 28.70.05: Lausumaehdotus: "Eduskunta edellyttää, että hallitus valmistelee valinnanvapauden tutkitun tiedon pohjalta ja kokeilujen kautta sekä siten, että julkiset sote-palvelut ovat järjestelmän perusta ja yksityiset palveluntuottajat täydentävät julkisia palveluita." (Vastalause 3)</sis:KappaleKooste>
+                            <sis:KappaleKooste>3. Toimi Kankaanniemi ps Ville Vähämäen ps kannattamana 29.40.20: Lisätään 6 200 000 euroa elinkeinoelämää tukevaan ammattikorkeakoulujen tutkimus-, kehitys- ja innovaatiotoimintaan. (Vastalause 3)</sis:KappaleKooste>
+                            <sis:KappaleKooste>4. Krista Kiuru sd Pia Viitasen sd kannattamana 29.40.20: Lisätään 12 000 000 euroa korkeakoulujen tukemiseen positiivisen rakennemuutoksen alueilla. (Vastalause 1)</sis:KappaleKooste>
+                            <sis:KappaleKooste>5. Toimi Kankaanniemi ps Ville Vähämäen ps kannattamana 31.10.77: Lisätään 5 000 000 euroa aluetaloutta ja paikallista elinkeinopolitiikkaa tukeviin väylähankkeisiin. (Vastalause 3)</sis:KappaleKooste>
+                            <sis:KappaleKooste>6. Krista Kiuru sd Pia Viitasen sd kannattamana 31.10.77: Lisätään 10 000 000 euroa aluetaloutta ja paikallista elinkeinopolitiikkaa tukeviin väylähankkeisiin. (Vastalause 1/LTA 7)</sis:KappaleKooste>
+                            <sis:KappaleKooste>7. Krista Kiuru sd Pia Viitasen sd kannattamana 32.20.40: Lisätään 10 000 000 euroa tutkimus-, kehittämis- ja innovaatiotoiminnan tukemiseen. (Vastalause 1)</sis:KappaleKooste>
+                            <sis:KappaleKooste>8. Krista Kiuru sd Pia Viitasen sd kannattamana yleisperustelut: Lausumaehdostus: "Eduskunta edellyttää, että hallitus ryhtyy toimenpiteisiin aluetalouden, paikallisen elinkeinoelämän ja positiivisen rakennemuutoksen vahvistamiseksi tasapuolisesti koko Suomessa." (Vastalause 1)</sis:KappaleKooste>
+                            <sis:KappaleKooste>9. Kari Uotila vas Li Anderssonin vas kannattamana yleisperustelut: Lausumaehdotus: "Eduskunta edellyttää, että kaikkien suurten ja kansallisesti merkittävien liikuntapaikkojen rahoituspäätökset valmistellaan huolellisesti ja Valtion liikuntaneuvoston arviointitehtävää kunnioittaen myös Veikkauksen jakamattomista voittovaroista tulevan rahoituksen osalta ja että rahoituksella tuetaan erityisesti laajojen käyttäjäryhmien liikuntamahdollisuuksia palvelevia hankkeita." (Vastalause 2)</sis:KappaleKooste>
+                            <vsk:AanestysKappaleKooste>Mietintö "jaa", Toimi Kankaanniemen ehdotus 1 "ei".
+                                <vsk:AanestysTulos>
+                                    <vsk1:AanestysTulosTeksti> Äänestyksen tulos: jaa 151, ei 16; poissa 32 </vsk1:AanestysTulosTeksti>
+                                    <vsk:AanestysViite met1:kieliKoodi="fi" vsk1:aanestysNroTeksti="1" vsk1:kokousNroTeksti="124" vsk1:valtiopaivaTeksti="2017 vp" vsk1:valtiopaivavuosiNroTeksti="2017">
+                                        <vsk1:AanestysViiteTeksti>(äänestys 1). </vsk1:AanestysViiteTeksti>
+                                    </vsk:AanestysViite>
+                                </vsk:AanestysTulos> Eduskunta hyväksyi mietinnön.
+                            </vsk:AanestysKappaleKooste>
+                            <vsk:AanestysKappaleKooste>Mietintö "jaa", Toimi Kankaanniemen ehdotus 2 "ei".
+                                <vsk:AanestysTulos>
+                                    <vsk1:AanestysTulosTeksti>Äänestyksen tulos: jaa 98, ei 66; poissa 35 </vsk1:AanestysTulosTeksti>
+                                    <vsk:AanestysViite met1:kieliKoodi="fi" vsk1:aanestysNroTeksti="2" vsk1:kokousNroTeksti="124" vsk1:valtiopaivaTeksti="2017 vp" vsk1:valtiopaivavuosiNroTeksti="2017">
+                                        <vsk1:AanestysViiteTeksti>(äänestys 2). </vsk1:AanestysViiteTeksti>
+                                    </vsk:AanestysViite>
+                                </vsk:AanestysTulos>Eduskunta hyväksyi mietinnön
+                            </vsk:AanestysKappaleKooste>
+                            <vsk:AanestysKappaleKooste>Mietintö "jaa", Toimi Kankaanniemen ehdotus 3 "ei".
+                                <vsk:AanestysTulos>
+                                    <vsk1:AanestysTulosTeksti> Äänestyksen tulos: jaa 102, ei 67; poissa 30 </vsk1:AanestysTulosTeksti>
+                                    <vsk:AanestysViite met1:kieliKoodi="fi" vsk1:aanestysNroTeksti="3" vsk1:kokousNroTeksti="124" vsk1:valtiopaivaTeksti="2017 vp" vsk1:valtiopaivavuosiNroTeksti="2017">
+                                        <vsk1:AanestysViiteTeksti>(äänestys 3). </vsk1:AanestysViiteTeksti>
+                                    </vsk:AanestysViite>
+                                </vsk:AanestysTulos>Eduskunta hyväksyi mietinnön.
+                            </vsk:AanestysKappaleKooste>
+                            <vsk:AanestysKappaleKooste>Mietintö "jaa", Krista Kiurun ehdotus 4 "ei".
+                                <vsk:AanestysTulos>
+                                    <vsk1:AanestysTulosTeksti>Äänestyksen tulos: jaa 102, ei 67; poissa 30 </vsk1:AanestysTulosTeksti>
+                                    <vsk:AanestysViite met1:kieliKoodi="fi" vsk1:aanestysNroTeksti="4" vsk1:kokousNroTeksti="124" vsk1:valtiopaivaTeksti="2017 vp" vsk1:valtiopaivavuosiNroTeksti="2017">
+                                        <vsk1:AanestysViiteTeksti>(äänestys 4). </vsk1:AanestysViiteTeksti>
+                                    </vsk:AanestysViite>
+                                </vsk:AanestysTulos>Eduskunta hyväksyi mietinnön.
+                            </vsk:AanestysKappaleKooste>
+                            <vsk:PuheenjohtajaRepliikki>
+                                <vsk1:PuheenjohtajaTeksti>Ensimmäinen varapuhemies Mauri Pekkarinen</vsk1:PuheenjohtajaTeksti>
+                                <sis:KappaleKooste>Toimi Kankaanniemen ehdotus 5 ja Krista Kiurun ehdotus 6 koskevat samaa asiaa, joten ensin äänestetään Krista Kiurun ehdotuksesta 6 Toimi Kankaanniemen ehdotusta 5 vastaan ja sen jälkeen voittaneesta mietintöä vastaan.</sis:KappaleKooste>
+                            </vsk:PuheenjohtajaRepliikki>
+                            <sis:KappaleKooste>Äänestysjärjestys hyväksyttiin.</sis:KappaleKooste>
+                            <vsk:AanestysKappaleKooste>1) Toimi Kankaanniemen ehdotus 5 "jaa", Krista Kiurun ehdotus 6 "ei".
+                                <vsk:AanestysTulos>
+                                    <vsk1:AanestysTulosTeksti>Äänestyksen tulos: jaa 115, ei 52, tyhjiä 1; poissa 31 </vsk1:AanestysTulosTeksti>
+                                    <vsk:AanestysViite met1:kieliKoodi="fi" vsk1:aanestysNroTeksti="5" vsk1:kokousNroTeksti="124" vsk1:valtiopaivaTeksti="2017 vp" vsk1:valtiopaivavuosiNroTeksti="2017">
+                                        <vsk1:AanestysViiteTeksti>(äänestys 5). </vsk1:AanestysViiteTeksti>
+                                    </vsk:AanestysViite>
+                                </vsk:AanestysTulos> Eduskunta hyväksyi tässä äänestyksessä Toimi Kankaanniemen ehdotuksen 5.
+                            </vsk:AanestysKappaleKooste>
+                            <vsk:AanestysKappaleKooste>2) Mietintö "jaa", Toimi Kankaanniemen ehdotus 5 "ei".
+                                <vsk:AanestysTulos>
+                                    <vsk1:AanestysTulosTeksti>Äänestyksen tulos: jaa 102, ei 67; poissa 30 </vsk1:AanestysTulosTeksti>
+                                    <vsk:AanestysViite met1:kieliKoodi="fi" vsk1:aanestysNroTeksti="6" vsk1:kokousNroTeksti="124" vsk1:valtiopaivaTeksti="2017 vp" vsk1:valtiopaivavuosiNroTeksti="2017">
+                                        <vsk1:AanestysViiteTeksti>(äänestys 6). </vsk1:AanestysViiteTeksti>
+                                    </vsk:AanestysViite>
+                                </vsk:AanestysTulos>  Eduskunta hyväksyi mietinnön.
+                            </vsk:AanestysKappaleKooste>
+                            <vsk:AanestysKappaleKooste>Mietintö "jaa", Krista Kiurun ehdotus 7 "ei".
+                                <vsk:AanestysTulos>
+                                    <vsk1:AanestysTulosTeksti>Äänestyksen tulos: jaa 101, ei 67; poissa 31 </vsk1:AanestysTulosTeksti>
+                                    <vsk:AanestysViite met1:kieliKoodi="fi" vsk1:aanestysNroTeksti="7" vsk1:kokousNroTeksti="124" vsk1:valtiopaivaTeksti="2017 vp" vsk1:valtiopaivavuosiNroTeksti="2017">
+                                        <vsk1:AanestysViiteTeksti>(äänestys 7). </vsk1:AanestysViiteTeksti>
+                                    </vsk:AanestysViite>
+                                </vsk:AanestysTulos>  Eduskunta hyväksyi mietinnön.
+                            </vsk:AanestysKappaleKooste>
+                            <vsk:AanestysKappaleKooste>Mietintö "jaa", Krista Kiurun ehdotus 8 "ei".
+                                <vsk:AanestysTulos>
+                                    <vsk1:AanestysTulosTeksti>Äänestyksen tulos: jaa 101, ei 67; poissa 31 </vsk1:AanestysTulosTeksti>
+                                    <vsk:AanestysViite met1:kieliKoodi="fi" vsk1:aanestysNroTeksti="8" vsk1:kokousNroTeksti="124" vsk1:valtiopaivaTeksti="2017 vp" vsk1:valtiopaivavuosiNroTeksti="2017">
+                                        <vsk1:AanestysViiteTeksti>(äänestys 8). </vsk1:AanestysViiteTeksti>
+                                    </vsk:AanestysViite>
+                                </vsk:AanestysTulos>  Eduskunta hyväksyi mietinnön.
+                            </vsk:AanestysKappaleKooste>
+                            <vsk:AanestysKappaleKooste>Mietintö "jaa", Kari Uotilan ehdotus 9 "ei".
+                                <vsk:AanestysTulos>
+                                    <vsk1:AanestysTulosTeksti>Äänestyksen tulos: jaa 95, ei 73; poissa 31 </vsk1:AanestysTulosTeksti>
+                                    <vsk:AanestysViite met1:kieliKoodi="fi" vsk1:aanestysNroTeksti="9" vsk1:kokousNroTeksti="124" vsk1:valtiopaivaTeksti="2017 vp" vsk1:valtiopaivavuosiNroTeksti="2017">
+                                        <vsk1:AanestysViiteTeksti>(äänestys 9). </vsk1:AanestysViiteTeksti>
+                                    </vsk:AanestysViite>
+                                </vsk:AanestysTulos>  Eduskunta hyväksyi mietinnön.
+                            </vsk:AanestysKappaleKooste>
+                        </vsk:KohtaSisalto>
+                    </vsk:Toimenpide>
+                    <vsk:PaatoksentekoToimenpide met1:muuTunnus="214135" vsk1:fraasiTunnus="P_AK_9">
+                        <vsk:KohtaSisalto>
+                            <sis:KappaleKooste>Eduskunta hyväksyi hallituksen esitykseen HE 142/2017 vp sisältyvän ehdotuksen valtion kolmanneksi lisätalousarvioksi vuodelle 2017 mietinnön mukaisena. Eduskunta yhtyi valiokunnan ehdotukseen lisätalousarvioaloitteiden LTA 6, 7/2017 vp hylkäämisestä. Eduskunta hyväksyi valiokunnan ehdotuksen kolmannen lisätalousarvion soveltamisesta. Asian käsittely päättyi.</sis:KappaleKooste>
+                        </vsk:KohtaSisalto>
+                    </vsk:PaatoksentekoToimenpide>
+                </vsk:Asiakohta>
+                <vsk:Asiakohta met1:eduskuntaTunnus="VK 4/2017 vp" met1:muuTunnus="50278" vsk1:kasittelyvaiheKoodi="ESITT" vsk1:kohtaJNro="6" vsk1:kohtatyyppiKoodi="Asiakohta" vsk1:yleinenKasittelyvaiheKoodi="ESITT">
+                    <vsk1:KohtaNumero>4</vsk1:KohtaNumero>
+                    <vsk:KohtaNimeke>
+                        <met1:NimekeTeksti>Välikysymys eriarvoistumisesta</met1:NimekeTeksti>
+                    </vsk:KohtaNimeke>
+                    <vsk:KohtaAsia vsk1:hyperlinkkiKoodi="VK 4/2017 vp">
+                        <met1:AsiakirjatyyppiNimi>Välikysymys</met1:AsiakirjatyyppiNimi>
+                        <met1:EduskuntaTunnus>VK 4/2017 vp</met1:EduskuntaTunnus>
+                    </vsk:KohtaAsia>
+                    <vsk:Toimenpide met1:muuTunnus="215717" vsk1:fraasiTunnus="P_ESITT_1">
+                        <sis1:ValiotsikkoTeksti>Välikysymyksen esittäminen</sis1:ValiotsikkoTeksti>
+                        <vsk:KohtaSisalto>
+                            <vsk:PuheenjohtajaRepliikki>
+                                <vsk1:PuheenjohtajaTeksti>Ensimmäinen varapuhemies Mauri Pekkarinen</vsk1:PuheenjohtajaTeksti>
+                                <sis:KappaleKooste>Välikysymyksen esittämistä varten esitellään päiväjärjestyksen
+                                    <sis1:HarvaKursiiviTeksti>4.</sis1:HarvaKursiiviTeksti> asia. Suna Kymäläinen ja 48 muuta edustajaa ovat tehneet valtioneuvostolle välikysymyksen VK 4/2017 vp eriarvoistumisesta. Annan nyt puheenvuoron välikysymyksen ensimmäiselle allekirjoittajalle.
+                                </sis:KappaleKooste>
+                            </vsk:PuheenjohtajaRepliikki>
+                            <sis:KappaleKooste>Suna Kymäläinen luki välikysymystekstin.</sis:KappaleKooste>
+                        </vsk:KohtaSisalto>
+                    </vsk:Toimenpide>
+                    <vsk:PaatoksentekoToimenpide met1:muuTunnus="215718" vsk1:fraasiTunnus="P_ESITT_2">
+                        <vsk:KohtaSisalto>
+                            <sis:KappaleKooste>Työjärjestyksen mukaisesti välikysymys lähetettiin keskustelutta valtioneuvostolle vastattavaksi.</sis:KappaleKooste>
+                        </vsk:KohtaSisalto>
+                    </vsk:PaatoksentekoToimenpide>
+                </vsk:Asiakohta>
+                <vsk:Asiakohta met1:eduskuntaTunnus="K 6/2017 vp" met1:muuTunnus="50055" vsk1:kasittelyvaiheKoodi="AK" vsk1:kohtaJNro="7" vsk1:kohtatyyppiKoodi="Asiakohta" vsk1:yleinenKasittelyvaiheKoodi="AK">
+                    <vsk1:KohtaNumero>5</vsk1:KohtaNumero>
+                    <vsk:KohtaNimeke>
+                        <met1:NimekeTeksti>Eduskunnan kirjaston kertomus vuodelta 2016</met1:NimekeTeksti>
+                    </vsk:KohtaNimeke>
+                    <vsk:KohtaAsia vsk1:hyperlinkkiKoodi="K 6/2017 vp">
+                        <met1:AsiakirjatyyppiNimi>Kertomus</met1:AsiakirjatyyppiNimi>
+                        <met1:EduskuntaTunnus>K 6/2017 vp</met1:EduskuntaTunnus>
+                    </vsk:KohtaAsia>
+                    <vsk:KohtaAsiakirja>
+                        <met1:AsiakirjatyyppiNimi>Valiokunnan mietintö</met1:AsiakirjatyyppiNimi>
+                        <met1:EduskuntaTunnus>SiVM 10/2017 vp</met1:EduskuntaTunnus>
+                    </vsk:KohtaAsiakirja>
+                    <vsk:Toimenpide met1:muuTunnus="215905" vsk1:fraasiTunnus="KESK40_AK">
+                        <sis1:ValiotsikkoTeksti>Ainoa käsittely</sis1:ValiotsikkoTeksti>
+                        <vsk:KohtaSisalto>
+                            <sis:KappaleKooste>Asia poistettiin päiväjärjestyksestä.</sis:KappaleKooste>
+                        </vsk:KohtaSisalto>
+                    </vsk:Toimenpide>
+                </vsk:Asiakohta>
+                <vsk:Asiakohta met1:eduskuntaTunnus="HE 109/2017 vp" met1:muuTunnus="50117" vsk1:kasittelyvaiheKoodi="2K" vsk1:kohtaJNro="8" vsk1:kohtatyyppiKoodi="Asiakohta" vsk1:yleinenKasittelyvaiheKoodi="2K">
+                    <vsk1:KohtaNumero>6</vsk1:KohtaNumero>
+                    <vsk:KohtaNimeke>
+                        <met1:NimekeTeksti>Hallituksen esitys eduskunnalle laiksi varainsiirtoverolain muuttamisesta</met1:NimekeTeksti>
+                    </vsk:KohtaNimeke>
+                    <vsk:KohtaAsia vsk1:hyperlinkkiKoodi="HE 109/2017 vp">
+                        <met1:AsiakirjatyyppiNimi>Hallituksen esitys</met1:AsiakirjatyyppiNimi>
+                        <met1:EduskuntaTunnus>HE 109/2017 vp</met1:EduskuntaTunnus>
+                    </vsk:KohtaAsia>
+                    <vsk:KohtaAsiakirja>
+                        <met1:AsiakirjatyyppiNimi>Valiokunnan mietintö</met1:AsiakirjatyyppiNimi>
+                        <met1:EduskuntaTunnus>VaVM 13/2017 vp</met1:EduskuntaTunnus>
+                    </vsk:KohtaAsiakirja>
+                    <vsk:Toimenpide met1:muuTunnus="215906" vsk1:fraasiTunnus="KESK40_2K">
+                        <sis1:ValiotsikkoTeksti>Toinen käsittely</sis1:ValiotsikkoTeksti>
+                        <vsk:KohtaSisalto>
+                            <sis:KappaleKooste>Asia poistettiin päiväjärjestyksestä.</sis:KappaleKooste>
+                        </vsk:KohtaSisalto>
+                    </vsk:Toimenpide>
+                </vsk:Asiakohta>
+                <vsk:Asiakohta met1:eduskuntaTunnus="HE 111/2017 vp" met1:muuTunnus="50118" vsk1:kasittelyvaiheKoodi="2K" vsk1:kohtaJNro="9" vsk1:kohtatyyppiKoodi="Asiakohta" vsk1:yleinenKasittelyvaiheKoodi="2K">
+                    <vsk1:KohtaNumero>7</vsk1:KohtaNumero>
+                    <vsk:KohtaNimeke>
+                        <met1:NimekeTeksti>Hallituksen esitys eduskunnalle laeiksi arvonlisäverolain 30 §:n sekä opetus- ja kulttuuritoimen rahoituksesta annetun lain 32 i §:n muuttamisesta</met1:NimekeTeksti>
+                    </vsk:KohtaNimeke>
+                    <vsk:KohtaAsia vsk1:hyperlinkkiKoodi="HE 111/2017 vp">
+                        <met1:AsiakirjatyyppiNimi>Hallituksen esitys</met1:AsiakirjatyyppiNimi>
+                        <met1:EduskuntaTunnus>HE 111/2017 vp</met1:EduskuntaTunnus>
+                    </vsk:KohtaAsia>
+                    <vsk:KohtaAsiakirja>
+                        <met1:AsiakirjatyyppiNimi>Valiokunnan mietintö</met1:AsiakirjatyyppiNimi>
+                        <met1:EduskuntaTunnus>VaVM 14/2017 vp</met1:EduskuntaTunnus>
+                    </vsk:KohtaAsiakirja>
+                    <vsk:PaatoksentekoToimenpide met1:muuTunnus="214582" vsk1:fraasiTunnus="P_2K_1">
+                        <sis1:ValiotsikkoTeksti>Toinen käsittely</sis1:ValiotsikkoTeksti>
+                        <vsk:KohtaSisalto>
+                            <sis:KappaleKooste>Eduskunta hyväksyi ensimmäisessä käsittelyssä sisällöltään päätetyt, hallituksen esitykseen HE 111/2017 vp sisältyvät 1.-2. lakiehdotuksen. Lakiehdotusten toinen käsittely päättyi. Asian käsittely päättyi.</sis:KappaleKooste>
+                        </vsk:KohtaSisalto>
+                    </vsk:PaatoksentekoToimenpide>
+                </vsk:Asiakohta>
+                <vsk:Asiakohta met1:eduskuntaTunnus="HE 121/2017 vp" met1:muuTunnus="50119" vsk1:kasittelyvaiheKoodi="2K" vsk1:kohtaJNro="10" vsk1:kohtatyyppiKoodi="Asiakohta" vsk1:yleinenKasittelyvaiheKoodi="2K">
+                    <vsk1:KohtaNumero>8</vsk1:KohtaNumero>
+                    <vsk:KohtaNimeke>
+                        <met1:NimekeTeksti>Hallituksen esitys eduskunnalle laiksi työttömyysturvalain muuttamisesta</met1:NimekeTeksti>
+                    </vsk:KohtaNimeke>
+                    <vsk:KohtaAsia vsk1:hyperlinkkiKoodi="HE 121/2017 vp">
+                        <met1:AsiakirjatyyppiNimi>Hallituksen esitys</met1:AsiakirjatyyppiNimi>
+                        <met1:EduskuntaTunnus>HE 121/2017 vp</met1:EduskuntaTunnus>
+                    </vsk:KohtaAsia>
+                    <vsk:KohtaAsiakirja>
+                        <met1:AsiakirjatyyppiNimi>Valiokunnan mietintö</met1:AsiakirjatyyppiNimi>
+                        <met1:EduskuntaTunnus>StVM 10/2017 vp</met1:EduskuntaTunnus>
+                    </vsk:KohtaAsiakirja>
+                    <vsk:PaatoksentekoToimenpide met1:muuTunnus="214585" vsk1:fraasiTunnus="P_2K_1">
+                        <sis1:ValiotsikkoTeksti>Toinen käsittely</sis1:ValiotsikkoTeksti>
+                        <vsk:KohtaSisalto>
+                            <sis:KappaleKooste>Eduskunta hyväksyi ensimmäisessä käsittelyssä sisällöltään päätetyn, hallituksen esitykseen HE 121/2017 vp sisältyvän lakiehdotuksen. Lakiehdotuksen toinen käsittely päättyi. Asian käsittely päättyi.</sis:KappaleKooste>
+                        </vsk:KohtaSisalto>
+                    </vsk:PaatoksentekoToimenpide>
+                </vsk:Asiakohta>
+                <vsk:Asiakohta met1:eduskuntaTunnus="HE 93/2017 vp" met1:muuTunnus="50120" vsk1:kasittelyvaiheKoodi="2K" vsk1:kohtaJNro="11" vsk1:kohtatyyppiKoodi="Asiakohta" vsk1:yleinenKasittelyvaiheKoodi="2K">
+                    <vsk1:KohtaNumero>9</vsk1:KohtaNumero>
+                    <vsk:KohtaNimeke>
+                        <met1:NimekeTeksti>Hallituksen esitys eduskunnalle laiksi ydinenergialain muuttamisesta</met1:NimekeTeksti>
+                    </vsk:KohtaNimeke>
+                    <vsk:KohtaAsia vsk1:hyperlinkkiKoodi="HE 93/2017 vp">
+                        <met1:AsiakirjatyyppiNimi>Hallituksen esitys</met1:AsiakirjatyyppiNimi>
+                        <met1:EduskuntaTunnus>HE 93/2017 vp</met1:EduskuntaTunnus>
+                    </vsk:KohtaAsia>
+                    <vsk:KohtaAsiakirja>
+                        <met1:AsiakirjatyyppiNimi>Valiokunnan mietintö</met1:AsiakirjatyyppiNimi>
+                        <met1:EduskuntaTunnus>TaVM 18/2017 vp</met1:EduskuntaTunnus>
+                    </vsk:KohtaAsiakirja>
+                    <vsk:PaatoksentekoToimenpide met1:muuTunnus="214588" vsk1:fraasiTunnus="P_2K_1">
+                        <sis1:ValiotsikkoTeksti>Toinen käsittely</sis1:ValiotsikkoTeksti>
+                        <vsk:KohtaSisalto>
+                            <sis:KappaleKooste>Eduskunta hyväksyi ensimmäisessä käsittelyssä sisällöltään päätetyn, hallituksen esitykseen HE 93/2017 vp sisältyvän lakiehdotuksen. Lakiehdotuksen toinen käsittely päättyi. Asian käsittely päättyi.</sis:KappaleKooste>
+                        </vsk:KohtaSisalto>
+                    </vsk:PaatoksentekoToimenpide>
+                </vsk:Asiakohta>
+                <vsk:Asiakohta met1:eduskuntaTunnus="HE 139/2017 vp" met1:muuTunnus="50213" vsk1:kasittelyvaiheKoodi="VKPP" vsk1:kohtaJNro="12" vsk1:kohtatyyppiKoodi="Asiakohta" vsk1:yleinenKasittelyvaiheKoodi="VKPP">
+                    <vsk1:KohtaNumero>10</vsk1:KohtaNumero>
+                    <vsk:KohtaNimeke>
+                        <met1:NimekeTeksti>Hallituksen esitys eduskunnalle laiksi opintotukilain muuttamisesta sekä  eräiksi siihen liittyviksi laeiksi</met1:NimekeTeksti>
+                    </vsk:KohtaNimeke>
+                    <vsk:KohtaAsia vsk1:hyperlinkkiKoodi="HE 139/2017 vp">
+                        <met1:AsiakirjatyyppiNimi>Hallituksen esitys</met1:AsiakirjatyyppiNimi>
+                        <met1:EduskuntaTunnus>HE 139/2017 vp</met1:EduskuntaTunnus>
+                    </vsk:KohtaAsia>
+                    <vsk:KohtaAsiakirja>
+                        <met1:AsiakirjatyyppiNimi>Valiokunnan mietintö</met1:AsiakirjatyyppiNimi>
+                        <met1:EduskuntaTunnus>SiVM 11/2017 vp</met1:EduskuntaTunnus>
+                    </vsk:KohtaAsiakirja>
+                    <vsk:PaatoksentekoToimenpide met1:muuTunnus="215191" vsk1:fraasiTunnus="P_VKPP_1">
+                        <sis1:ValiotsikkoTeksti>Mietinnön pöydällepano</sis1:ValiotsikkoTeksti>
+                        <vsk:KohtaSisalto>
+                            <sis:KappaleKooste>Mietintö pantiin pöydälle 28.11.2017 pidettävään täysistuntoon.</sis:KappaleKooste>
+                        </vsk:KohtaSisalto>
+                    </vsk:PaatoksentekoToimenpide>
+                </vsk:Asiakohta>
+                <vsk:Asiakohta met1:eduskuntaTunnus="HE 135/2017 vp" met1:muuTunnus="50253" vsk1:kasittelyvaiheKoodi="VKPP" vsk1:kohtaJNro="13" vsk1:kohtatyyppiKoodi="Asiakohta" vsk1:yleinenKasittelyvaiheKoodi="VKPP">
+                    <vsk1:KohtaNumero>11</vsk1:KohtaNumero>
+                    <vsk:KohtaNimeke>
+                        <met1:NimekeTeksti>Hallituksen esitys eduskunnalle laiksi sosiaalihuollon ammattihenkilöistä  annetun lain 8 ja 32 §:n muuttamisesta</met1:NimekeTeksti>
+                    </vsk:KohtaNimeke>
+                    <vsk:KohtaAsia vsk1:hyperlinkkiKoodi="HE 135/2017 vp">
+                        <met1:AsiakirjatyyppiNimi>Hallituksen esitys</met1:AsiakirjatyyppiNimi>
+                        <met1:EduskuntaTunnus>HE 135/2017 vp</met1:EduskuntaTunnus>
+                    </vsk:KohtaAsia>
+                    <vsk:KohtaAsia vsk1:hyperlinkkiKoodi="TPA 61/2016 vp">
+                        <met1:AsiakirjatyyppiNimi>Toimenpidealoite</met1:AsiakirjatyyppiNimi>
+                        <met1:EduskuntaTunnus>TPA 61/2016 vp</met1:EduskuntaTunnus>
+                    </vsk:KohtaAsia>
+                    <vsk:KohtaAsiakirja>
+                        <met1:AsiakirjatyyppiNimi>Valiokunnan mietintö</met1:AsiakirjatyyppiNimi>
+                        <met1:EduskuntaTunnus>StVM 12/2017 vp</met1:EduskuntaTunnus>
+                    </vsk:KohtaAsiakirja>
+                    <vsk:PaatoksentekoToimenpide met1:muuTunnus="215575" vsk1:fraasiTunnus="P_VKPP_3">
+                        <sis1:ValiotsikkoTeksti>Mietinnön pöydällepano</sis1:ValiotsikkoTeksti>
+                        <vsk:KohtaSisalto>
+                            <sis:KappaleKooste>Mietintö pantiin pöydälle 28.11.2017 pidettävään täysistuntoon.</sis:KappaleKooste>
+                        </vsk:KohtaSisalto>
+                    </vsk:PaatoksentekoToimenpide>
+                </vsk:Asiakohta>
+                <vsk:MuuAsiakohta met1:muuTunnus="41434" vsk1:kasittelyvaiheKoodi="KOKSEU" vsk1:kohtaJNro="14" vsk1:kohtatyyppiKoodi="Asiakohta" vsk1:yleinenKasittelyvaiheKoodi="KOKOUS">
+                    <vsk1:KohtaNumero>12</vsk1:KohtaNumero>
+                    <sis1:OtsikkoTeksti>Seuraava täysistunto</sis1:OtsikkoTeksti>
+                    <vsk:Toimenpide met1:muuTunnus="177796" vsk1:fraasiTunnus="K_110">
+                        <vsk:KohtaSisalto>
+                            <sis:KappaleKooste>Eduskunnan seuraava täysistunto on tiistaina 28.11.2017 klo 14.00. Täysistunto lopetettiin klo 13.35.</sis:KappaleKooste>
+                        </vsk:KohtaSisalto>
+                    </vsk:Toimenpide>
+                </vsk:MuuAsiakohta>
+                <asi:AllekirjoitusOsa>
+                    <asi1:JohdantoTeksti>Pöytäkirjan vakuudeksi:</asi1:JohdantoTeksti>
+                    <asi:Allekirjoittaja>
+                        <org:Henkilo>
+                            <org1:EtuNimi>Maija-Leena</org1:EtuNimi>
+                            <org1:SukuNimi>Paavola</org1:SukuNimi>
+                        </org:Henkilo>
+                    </asi:Allekirjoittaja>
+                </asi:AllekirjoitusOsa>
+            </ptk:Poytakirja>
+        </RakenneAsiakirja>
+    </SiirtoAsiakirja>
+    <SiirtoTiedosto xmlns="http://www.eduskunta.fi/skeemat/siirtokooste/2011/05/17">
+        <Document xmlns="http://www.arkisto.fi/skeemat/sahke2/2011/01/31_vnk">
+            <NativeId>{48EB483E-4FF0-CEF8-854C-6E451F600000}</NativeId>
+            <UseType>Julkaisu</UseType>
+            <File>
+                <Name>48EB483E-4FF0-CEF8-854C-6E451F600000.pdf</Name>
+                <Path>sftp://intpurnukka.eduskunta.fi:22/home/vaskijul/liitteet/tojulkvp/48EB483E-4FF0-CEF8-854C-6E451F600000.pdf</Path>
+            </File>
+            <Format>
+                <Name>application/pdf</Name>
+                <Version/>
+            </Format>
+            <HashAlgorithm>MD5</HashAlgorithm>
+            <HashValue>55702693e639192980ad45b6e5ee854b</HashValue>
+        </Document>
+    </SiirtoTiedosto>
+</ns11:Siirto>

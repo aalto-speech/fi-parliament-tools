@@ -1,0 +1,397 @@
+<ns11:Siirto xmlns:ns11="http://www.eduskunta.fi/skeemat/siirto/2011/09/07">
+    <Sanomavalitys xmlns="http://www.eduskunta.fi/skeemat/siirtokooste/2011/05/17">
+        <ns4:SanomatyyppiNimi xmlns:ns4="http://www.eduskunta.fi/skeemat/siirtoelementit/2011/05/17">VASKI_JULKVP_Record_fi</ns4:SanomatyyppiNimi>
+        <ns4:SanomaTunnus xmlns:ns4="http://www.eduskunta.fi/skeemat/siirtoelementit/2011/05/17">Vaski_VASKI_JULKVP_Record_fi_03-loka-2018_10:45:11:074_EEST</ns4:SanomaTunnus>
+        <ns4:LuontiHetki xmlns:ns4="http://www.eduskunta.fi/skeemat/siirtoelementit/2011/05/17">2018-10-03T10:45:11.074+03:00</ns4:LuontiHetki>
+        <ns4:SiirtoKoodi xmlns:ns4="http://www.eduskunta.fi/skeemat/siirtoelementit/2011/05/17">paivitys</ns4:SiirtoKoodi>
+        <Toimija xmlns="http://www.vn.fi/skeemat/metatietokooste/2010/04/27"
+            xmlns:s877="http://www.vn.fi/skeemat/metatietoelementit/2010/04/27" s877:rooliKoodi="lahettaja">
+            <s877:YhteisoTeksti>Eduskunta</s877:YhteisoTeksti>
+        </Toimija>
+        <Toimija xmlns="http://www.vn.fi/skeemat/metatietokooste/2010/04/27"
+            xmlns:s878="http://www.vn.fi/skeemat/metatietoelementit/2010/04/27" s878:rooliKoodi="vastaanottaja">
+            <s878:YhteisoTeksti>Eduskunta</s878:YhteisoTeksti>
+        </Toimija>
+    </Sanomavalitys>
+    <ns11:SiirtoMetatieto>
+        <jme:JulkaisuMetatieto xmlns:asi="http://www.vn.fi/skeemat/asiakirjakooste/2010/04/27"
+            xmlns:asi1="http://www.vn.fi/skeemat/asiakirjaelementit/2010/04/27"
+            xmlns:jme="http://www.eduskunta.fi/skeemat/julkaisusiirtokooste/2011/12/20"
+            xmlns:met="http://www.vn.fi/skeemat/metatietokooste/2010/04/27"
+            xmlns:met1="http://www.vn.fi/skeemat/metatietoelementit/2010/04/27"
+            xmlns:org="http://www.vn.fi/skeemat/organisaatiokooste/2010/02/15"
+            xmlns:org1="http://www.vn.fi/skeemat/organisaatioelementit/2010/02/15"
+            xmlns:sii="http://www.eduskunta.fi/skeemat/siirtokooste/2011/05/17"
+            xmlns:sii1="http://www.eduskunta.fi/skeemat/siirtoelementit/2011/05/17"
+            xmlns:sis="http://www.vn.fi/skeemat/sisaltokooste/2010/04/27"
+            xmlns:sis1="http://www.vn.fi/skeemat/sisaltoelementit/2010/04/27"
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" met1:asiakirjatyyppiNimi="Pöytäkirja" met1:eduskuntaTunnus="PTK 1/2015 vp" met1:identifiointiTunnus="{FB2C1536-CC98-C77D-B6BA-6638E2200000}" met1:kieliKoodi="fi" met1:laadintaPvm="2015-04-28" met1:muuTunnus="EDK-2015-AK-3211" met1:paatehtavaKoodi="00 00 03 Poliittinen ohjaus">
+            <asi:IdentifiointiOsa>
+                <met1:AsiakirjatyyppiNimi>Pöytäkirja</met1:AsiakirjatyyppiNimi>
+                <asi:EduskuntaTunniste>
+                    <met1:AsiakirjatyyppiKoodi>PTK</met1:AsiakirjatyyppiKoodi>
+                    <asi1:AsiakirjaNroTeksti>1</asi1:AsiakirjaNroTeksti>
+                    <asi1:ValtiopaivavuosiTeksti>2015</asi1:ValtiopaivavuosiTeksti>
+                </asi:EduskuntaTunniste>
+                <met:Toimija met1:rooliKoodi="Laatija">
+                    <met1:YhteisoTeksti>Täysistunto</met1:YhteisoTeksti>
+                </met:Toimija>
+                <met1:LaadintaPvmTeksti>28.04.2015</met1:LaadintaPvmTeksti>
+                <met:Nimeke met1:vaihtoehtoinenNimekeTeksti="">
+                    <met1:NimekeTeksti>Tiistai 28.4.2015 klo 12.01—13.31</met1:NimekeTeksti>
+                </met:Nimeke>
+            </asi:IdentifiointiOsa>
+            <sii:EsitysmuotoViite met1:muuTunnus="{FB2C1536-CC98-C77D-B6BA-6638E2200000}"/>
+        </jme:JulkaisuMetatieto>
+    </ns11:SiirtoMetatieto>
+    <SiirtoAsiakirja xmlns="http://www.eduskunta.fi/skeemat/siirtokooste/2011/05/17">
+        <RakenneAsiakirja>
+            <ptk:Poytakirja xmlns:asi="http://www.vn.fi/skeemat/asiakirjakooste/2010/04/27"
+                xmlns:asi1="http://www.vn.fi/skeemat/asiakirjaelementit/2010/04/27"
+                xmlns:elu="http://www.eduskunta.fi/skeemat/ehdotusluettelo/2014/07/28"
+                xmlns:fra="http://www.eduskunta.fi/skeemat/fraasikooste/2011/01/04"
+                xmlns:fra1="http://www.eduskunta.fi/skeemat/fraasielementit/2011/01/04"
+                xmlns:met="http://www.vn.fi/skeemat/metatietokooste/2010/04/27"
+                xmlns:met1="http://www.vn.fi/skeemat/metatietoelementit/2010/04/27"
+                xmlns:mix="http://www.loc.gov/mix/v20"
+                xmlns:narc="http://www.arkisto.fi/skeemat/sahke2/2011/01/31_vnk"
+                xmlns:org="http://www.vn.fi/skeemat/organisaatiokooste/2010/02/15"
+                xmlns:org1="http://www.vn.fi/skeemat/organisaatioelementit/2010/02/15"
+                xmlns:ptk="http://www.eduskunta.fi/skeemat/poytakirja/2011/01/28"
+                xmlns:saa="http://www.vn.fi/skeemat/saadoskooste/2010/04/27"
+                xmlns:saa1="http://www.vn.fi/skeemat/saadoselementit/2010/04/27"
+                xmlns:sis="http://www.vn.fi/skeemat/sisaltokooste/2010/04/27"
+                xmlns:sis1="http://www.vn.fi/skeemat/sisaltoelementit/2010/04/27"
+                xmlns:tau="http://www.vn.fi/skeemat/taulukkokooste/2010/04/27"
+                xmlns:vsk="http://www.eduskunta.fi/skeemat/vaskikooste/2011/01/04"
+                xmlns:vsk1="http://www.eduskunta.fi/skeemat/vaskielementit/2011/01/04"
+                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" met1:asiakirjatyyppiNimi="Pöytäkirja" met1:eduskuntaTunnus="PTK 1/2015 vp" met1:identifiointiTunnus="27add723-add9-4eca-aab3-2a02545fa48d" met1:kieliKoodi="fi" met1:laadintaPvm="2018-10-03" met1:muuTunnus="27add723-add9-4eca-aab3-2a02545fa48d" met1:rakennemaarittelyNimi="eduskunnanpoytakirja.xsd" met1:tilaKoodi="Valmis" met1:versioTeksti="5.3" vsk1:kokousAloitusHetki="2015-04-28T12:00:00" vsk1:kokousLopetusHetki="2015-04-28T13:00:00">
+                <asi:IdentifiointiOsa>
+                    <met1:AsiakirjatyyppiNimi>Pöytäkirja</met1:AsiakirjatyyppiNimi>
+                    <asi:EduskuntaTunniste>
+                        <met1:AsiakirjatyyppiKoodi>PTK</met1:AsiakirjatyyppiKoodi>
+                        <asi1:AsiakirjaNroTeksti>1</asi1:AsiakirjaNroTeksti>
+                        <asi1:ValtiopaivavuosiTeksti>2015 vp</asi1:ValtiopaivavuosiTeksti>
+                    </asi:EduskuntaTunniste>
+                    <met:Toimija met1:rooliKoodi="Laatija">
+                        <met1:YhteisoTeksti>Täysistunto</met1:YhteisoTeksti>
+                    </met:Toimija>
+                    <met:Nimeke>
+                        <met1:NimekeTeksti>Tiistai 28.4.2015 klo 12.01—13.31</met1:NimekeTeksti>
+                    </met:Nimeke>
+                </asi:IdentifiointiOsa>
+                <asi:SisaltoKuvaus>
+                    <sis:KappaleKooste>Täysistunto alkoi klo 12.01. Täysistunto päättyi klo 13.31.</sis:KappaleKooste>
+                    <sis:KappaleKooste>Puhetta johtivat ikäpuhemies Pertti Salolainen (12.01—13.20) ja puhemies Juha Sipilä (13.20— 13.31).</sis:KappaleKooste>
+                </asi:SisaltoKuvaus>
+                <vsk:MuuAsiakohta met1:muuTunnus="1" vsk1:kasittelyvaiheKoodi="KOKNHU" vsk1:kohtaJNro="1" vsk1:kohtatyyppiKoodi="Asiakohta" vsk1:yleinenKasittelyvaiheKoodi="KOKOUS">
+                    <vsk1:KohtaNumero>1</vsk1:KohtaNumero>
+                    <sis1:OtsikkoTeksti>Nimenhuuto</sis1:OtsikkoTeksti>
+                    <vsk:Toimenpide met1:muuTunnus="5" vsk1:fraasiTunnus="K_106">
+                        <vsk:KohtaSisalto>
+                            <vsk:PuheenjohtajaRepliikki>
+                                <vsk1:PuheenjohtajaTeksti>Ikäpuhemies Pertti Salolainen</vsk1:PuheenjohtajaTeksti>
+                                <sis:KappaleKooste>Täysistunto alkaa. Toivotan kaikki tervetulleiksi tänne Sibelius-taloon Sibeliuksen juhlavuotena aloittamaan vastuullista työtämme isänmaan hyväksi.</sis:KappaleKooste>
+                                <sis:KappaleKooste> Iältäni vanhimpana eduskunnan jäsenenä johdan puhetta tässä valtiopäivien ensimmäisessä täysistunnossa, kunnes eduskunta on työjärjestyksen 4 §:n mukaan valinnut puhemiehen ja kaksi varapuhemiestä ja nämä ovat antaneet eduskunnalle juhlallisen vakuutuksen.</sis:KappaleKooste>
+                                <sis:KappaleKooste>Plenum börjar. Som den riksdagsledamot som är äldst till åren är det min uppgift att föra ordet vid första plenum under riksmötet till dess att riksdagen enligt 4 § i riksdagens arbets-ordning inom sig valt talman och två vice talmän och dessa har avgett högtidlig försäkran inför riksdagen.</sis:KappaleKooste>
+                            </vsk:PuheenjohtajaRepliikki>
+                            <sis:KappaleKooste>Sihteerin toimittamassa nimenhuudossa merkittiin täysistunnosta poissa oleviksi seuraavat 3 edustajaa:</sis:KappaleKooste>
+                            <vsk:OsallistujaOsa>
+                                <met:Toimija>
+                                    <org:Henkilo met1:muuTunnus="116">
+                                        <org1:EtuNimi>Jukka</org1:EtuNimi>
+                                        <org1:SukuNimi>Gustafsson</org1:SukuNimi>
+                                        <org1:LisatietoTeksti>sd</org1:LisatietoTeksti>
+                                    </org:Henkilo>
+                                </met:Toimija>
+                                <met:Toimija>
+                                    <org:Henkilo met1:muuTunnus="808">
+                                        <org1:EtuNimi>Jutta</org1:EtuNimi>
+                                        <org1:SukuNimi>Urpilainen</org1:SukuNimi>
+                                        <org1:LisatietoTeksti>sd</org1:LisatietoTeksti>
+                                    </org:Henkilo>
+                                </met:Toimija>
+                                <met:Toimija>
+                                    <org:Henkilo met1:muuTunnus="300">
+                                        <org1:EtuNimi>Paavo</org1:EtuNimi>
+                                        <org1:SukuNimi>Väyrynen</org1:SukuNimi>
+                                        <org1:LisatietoTeksti>kesk</org1:LisatietoTeksti>
+                                    </org:Henkilo>
+                                </met:Toimija>
+                            </vsk:OsallistujaOsa>
+                        </vsk:KohtaSisalto>
+                    </vsk:Toimenpide>
+                    <sis:NeljannesTyhja/>
+                </vsk:MuuAsiakohta>
+                <vsk:Asiakohta met1:eduskuntaTunnus="VAA 1/2015 vp" met1:muuTunnus="4" vsk1:kasittelyvaiheKoodi="VA" vsk1:kohtaJNro="2" vsk1:kohtatyyppiKoodi="Asiakohta" vsk1:yleinenKasittelyvaiheKoodi="VA">
+                    <vsk1:KohtaNumero>2</vsk1:KohtaNumero>
+                    <vsk:KohtaNimeke>
+                        <met1:NimekeTeksti>Puhemiehen vaali</met1:NimekeTeksti>
+                    </vsk:KohtaNimeke>
+                    <vsk:KohtaAsia>
+                        <met1:AsiakirjatyyppiNimi>Vaali</met1:AsiakirjatyyppiNimi>
+                        <met1:EduskuntaTunnus>VAA 1/2015 vp</met1:EduskuntaTunnus>
+                    </vsk:KohtaAsia>
+                    <vsk:Toimenpide met1:muuTunnus="12" vsk1:fraasiTunnus="P_VA_5">
+                        <sis1:ValiotsikkoTeksti>Vaaleja</sis1:ValiotsikkoTeksti>
+                        <vsk:KohtaSisalto>
+                            <vsk:PuheenjohtajaRepliikki>
+                                <vsk1:PuheenjohtajaTeksti>Ikäpuhemies Pertti Salolainen</vsk1:PuheenjohtajaTeksti>
+                                <sis:KappaleKooste>Nyt seuraa puhemiehen vaali, joka, kuten varapuhemiestenkin vaalit, toimitetaan noudattamalla Suomen perustuslain 34 §:n 2 momentin ja eduskunnan vaalisäännön 5 ja 6 §:n säännöksiä. Vaali toimitetaan siis umpilipuin. Edustajat tuovat äänestyslippunsa uurnaan nimenhuudon mukaan, joka toimitetaan aakkosjärjestyksessä.</sis:KappaleKooste>
+                                <sis:KappaleKooste>Pyydän huomauttaa, että ehdokkaan nimi on yksilöitävä riittävällä tarkkuudella tarvittaessa myös etunimeä käyttäen.</sis:KappaleKooste>
+                                <sis:KappaleKooste>Nu följer val av talman, vilket liksom även valet av vice talmän förrättas enligt 34 § 2 momentet i Finlands grundlag och 5 och 6 § i valstadgan för riksdagen. Valet förrättas således med slutna röstsedlar. Riksdagsledamöterna ska enligt namnupprop i alfabetisk ordning lägga röstsedeln i urnan.</sis:KappaleKooste>
+                                <sis:KappaleKooste>Jag vill påminna om att kandidatens namn ska anges tillräckligt tydligt. Vid behov kan också förnamnet anges.</sis:KappaleKooste>
+                                <sis:KappaleKooste>Avustajiksi äänestyslippujen tarkastamiseen ja äänten laskemiseen vaalissa pyydän seuraavat edustajat: Kimmo Tiilikainen, Jari Lindström, Arto Satonen ja Antti Lindtman.</sis:KappaleKooste>
+                                <sis:KappaleKooste>Jag ber följande riksdagsledamöter granska röstsedlarna och räkna rösterna vid valet: Kimmo Tiilikainen, Jari Lindström, Arto Satonen och Antti Lindtman.</sis:KappaleKooste>
+                                <sis:KappaleKooste>Totean, että annettuja ääniä ei julkilueta.</sis:KappaleKooste>
+                            </vsk:PuheenjohtajaRepliikki>
+                            <sis:KappaleKooste>Vaalitoimitus alkoi.</sis:KappaleKooste>
+                            <vsk:PuheenjohtajaRepliikki>
+                                <vsk1:PuheenjohtajaTeksti>Ikäpuhemies Pertti Salolainen</vsk1:PuheenjohtajaTeksti>
+                                <sis:KappaleKooste>Arvoisat edustajat, joudun toteamaan, että äskeistä äänestystä häiritsi täällä salissa metelöinti, ja eräät edustajat eivät edes kuulleet nimeään tuonne takaosaan. Pyydän, että kunnioitatte eduskunnan työskentelyä sillä tavalla, että täällä ei pidetä meteliä eikä epäjärjestystä. — Kiitos.</sis:KappaleKooste>
+                                <sis:KappaleKooste>Äänestyksen tulos luetaan.</sis:KappaleKooste>
+                            </vsk:PuheenjohtajaRepliikki>
+                            <sis:KappaleKooste>Sihteeri luki: </sis:KappaleKooste>
+                            <sis:KappaleKooste>Äänestyksessä ovat ääniä saaneet edustaja Juha Sipilä 194 ääntä ja edustaja Timo Soini yhden äänen. Vid omröstningen har röster tillfallit ledamot Juha Sipilä 194 röster och ledamot Timo Soini en röst.</sis:KappaleKooste>
+                            <vsk:PuheenjohtajaRepliikki>
+                                <vsk1:PuheenjohtajaTeksti>Ikäpuhemies Pertti Salolainen</vsk1:PuheenjohtajaTeksti>
+                                <sis:KappaleKooste>Kun edustaja Juha Sipilä on saanut vaalissa enemmän kuin puolet annetuista hyväksytyistä äänistä, on hänet valittu eduskunnan puhemieheksi vuoden 2015 valtiopäivien ajaksi.</sis:KappaleKooste>
+                                <sis:KappaleKooste>Eftersom ledamot Juha Sipilä vid valet erhållit mer än hälften av de avgivna godkända rösterna, har han valts till talman vid riksmötet 2015.</sis:KappaleKooste>
+                            </vsk:PuheenjohtajaRepliikki>
+                        </vsk:KohtaSisalto>
+                    </vsk:Toimenpide>
+                    <vsk:PaatoksentekoToimenpide met1:muuTunnus="709" vsk1:fraasiTunnus="P_VA_2">
+                        <vsk:KohtaSisalto>
+                            <sis:KappaleKooste>Eduskunta valitsi eduskunnan puhemieheksi kansanedustaja, diplomi-insinööri Juha Sipilän.</sis:KappaleKooste>
+                        </vsk:KohtaSisalto>
+                    </vsk:PaatoksentekoToimenpide>
+                    <sis:NeljannesTyhja/>
+                </vsk:Asiakohta>
+                <vsk:Asiakohta met1:eduskuntaTunnus="VAA 2/2015 vp" met1:muuTunnus="5" vsk1:kasittelyvaiheKoodi="VA" vsk1:kohtaJNro="3" vsk1:kohtatyyppiKoodi="Asiakohta" vsk1:yleinenKasittelyvaiheKoodi="VA">
+                    <vsk1:KohtaNumero>3</vsk1:KohtaNumero>
+                    <vsk:KohtaNimeke>
+                        <met1:NimekeTeksti>Ensimmäisen varapuhemiehen vaali</met1:NimekeTeksti>
+                    </vsk:KohtaNimeke>
+                    <vsk:KohtaAsia>
+                        <met1:AsiakirjatyyppiNimi>Vaali</met1:AsiakirjatyyppiNimi>
+                        <met1:EduskuntaTunnus>VAA 2/2015 vp</met1:EduskuntaTunnus>
+                    </vsk:KohtaAsia>
+                    <vsk:Toimenpide met1:muuTunnus="15" vsk1:fraasiTunnus="P_VA_5">
+                        <sis1:ValiotsikkoTeksti>Vaaleja</sis1:ValiotsikkoTeksti>
+                        <vsk:KohtaSisalto>
+                            <vsk:PuheenjohtajaRepliikki>
+                                <vsk1:PuheenjohtajaTeksti>Ikäpuhemies Pertti Salolainen</vsk1:PuheenjohtajaTeksti>
+                                <sis:KappaleKooste>Nyt seuraa ensimmäisen varapuhemiehen vaali. Vaali toimitetaan umpilipuin. Edustajat tuovat äänestyslippunsa uurnaan aakkosjärjestyksessä. Avustajiksi vaalissa pyydän seuraavat edustajat: Anne Kalmari, Maria Lohela, Outi Mäkelä ja Johanna Ojala-Niemelä.</sis:KappaleKooste>
+                                <sis:KappaleKooste>Nu följer val av förste vice talman. Valet förrättas med slutna röstsedlar. Riksdagsledamöterna ska i alfabetisk ordning lägga röstsedeln i urnan. Jag ber följande riksdagsledamöter biträda vid valet: Anne Kalmari, Maria Lohela, Outi Mäkelä och Johanna Ojala-Niemelä.</sis:KappaleKooste>
+                            </vsk:PuheenjohtajaRepliikki>
+                            <sis:KappaleKooste>Vaalitoimitus alkoi.</sis:KappaleKooste>
+                            <vsk:PuheenjohtajaRepliikki>
+                                <vsk1:PuheenjohtajaTeksti>Ikäpuhemies Pertti Salolainen</vsk1:PuheenjohtajaTeksti>
+                                <sis:KappaleKooste>Pyydän edustajia rauhoittumaan ja siirtymään paikoilleen.</sis:KappaleKooste>
+                                <sis:KappaleKooste>Äänestyksen tulos luetaan.</sis:KappaleKooste>
+                            </vsk:PuheenjohtajaRepliikki>
+                            <sis:KappaleKooste>Sihteeri luki:</sis:KappaleKooste>
+                            <sis:KappaleKooste>Äänestyksessä ovat ääniä saaneet edustaja Timo Soini 185 ääntä ja edustaja Teuvo Hakkarainen yhden äänen. Tämän lisäksi on annettu 7 tyhjää äänestyslippua. Vid omröstningen har röster tillfallit ledamot Timo Soini 185 röster och ledamot Teuvo Hakkarainen en röst. Dessutom har avgivits 7 blanka röstsedlar. </sis:KappaleKooste>
+                            <vsk:PuheenjohtajaRepliikki>
+                                <vsk1:PuheenjohtajaTeksti>Ikäpuhemies Pertti Salolainen</vsk1:PuheenjohtajaTeksti>
+                                <sis:KappaleKooste>Kun edustaja Timo Soini on saanut vaalissa enemmän kuin puolet annetuista hyväksytyistä äänistä, on hänet valittu eduskunnan ensimmäiseksi varapuhemieheksi vuoden 2015 valtiopäivien ajaksi.</sis:KappaleKooste>
+                                <sis:KappaleKooste>Eftersom ledamot Timo Soini vid valet erhållit mer än hälften av de avgivna godkända rösterna, har han valts till förste vice talman vid riksmötet 2015.</sis:KappaleKooste>
+                            </vsk:PuheenjohtajaRepliikki>
+                        </vsk:KohtaSisalto>
+                    </vsk:Toimenpide>
+                    <vsk:PaatoksentekoToimenpide met1:muuTunnus="728" vsk1:fraasiTunnus="P_VA_2">
+                        <vsk:KohtaSisalto>
+                            <sis:KappaleKooste>Eduskunta valitsi eduskunnan ensimmäiseksi varapuhemieheksi kansanedustaja, valtiotieteiden maisteri Timo Soinin.</sis:KappaleKooste>
+                        </vsk:KohtaSisalto>
+                    </vsk:PaatoksentekoToimenpide>
+                </vsk:Asiakohta>
+                <vsk:Asiakohta met1:eduskuntaTunnus="VAA 3/2015 vp" met1:muuTunnus="6" vsk1:kasittelyvaiheKoodi="VA" vsk1:kohtaJNro="4" vsk1:kohtatyyppiKoodi="Asiakohta" vsk1:yleinenKasittelyvaiheKoodi="VA">
+                    <vsk1:KohtaNumero>4</vsk1:KohtaNumero>
+                    <vsk:KohtaNimeke>
+                        <met1:NimekeTeksti>Toisen varapuhemiehen vaali</met1:NimekeTeksti>
+                    </vsk:KohtaNimeke>
+                    <vsk:KohtaAsia>
+                        <met1:AsiakirjatyyppiNimi>Vaali</met1:AsiakirjatyyppiNimi>
+                        <met1:EduskuntaTunnus>VAA 3/2015 vp</met1:EduskuntaTunnus>
+                    </vsk:KohtaAsia>
+                    <vsk:Toimenpide met1:muuTunnus="18" vsk1:fraasiTunnus="P_VA_5">
+                        <sis1:ValiotsikkoTeksti>Vaaleja</sis1:ValiotsikkoTeksti>
+                        <vsk:KohtaSisalto>
+                            <vsk:PuheenjohtajaRepliikki>
+                                <vsk1:PuheenjohtajaTeksti>Ikäpuhemies Pertti Salolainen</vsk1:PuheenjohtajaTeksti>
+                                <sis:KappaleKooste>Nyt seuraa toisen varapuhemiehen vaali. Vaali toimitetaan umpilipuin. Edustajat tuovat äänestyslippunsa uurnaan aakkosjärjestyksessä. Avustajiksi vaalissa pyydän seuraavat edustajat: Tuomo Puumala, Kaj Turunen, Sinuhe Wallinheimo ja Kristiina Salonen.</sis:KappaleKooste>
+                                <sis:KappaleKooste>Nu följer val av andre vice talman. Valet förrättas med slutna röstsedlar. Riksdagsledamöterna ska i alfabetisk ordning lägga röstsedeln i urnan. Jag ber följande riksdagsledamöter biträda vid valet: Tuomo Puumala, Kaj Turunen, Sinuhe Wallinheimo och Kristiina Salonen.</sis:KappaleKooste>
+                            </vsk:PuheenjohtajaRepliikki>
+                            <sis:KappaleKooste>Vaalitoimitus alkoi.</sis:KappaleKooste>
+                            <vsk:PuheenjohtajaRepliikki>
+                                <vsk1:PuheenjohtajaTeksti>Ikäpuhemies Pertti Salolainen</vsk1:PuheenjohtajaTeksti>
+                                <sis:KappaleKooste>Äänestyksen tulos luetaan.</sis:KappaleKooste>
+                                <sis:KappaleKooste>Omröstningsresultatet avkunnas.</sis:KappaleKooste>
+                            </vsk:PuheenjohtajaRepliikki>
+                            <sis:KappaleKooste>Sihteeri luki:</sis:KappaleKooste>
+                            <sis:KappaleKooste>Äänestyksessä ovat ääniä saaneet edustaja Ben Zyskowicz 193 ääntä ja edustaja Arto Satonen 1 äänen. Tämän lisäksi on annettu 1 tyhjä äänestyslippu. Vid omröstningen har röster tillfallit ledamot Ben Zyskowicz 193 röster och ledamot Arto Satonen 1 röst. Dessutom har avgivits 1 blank rötsedel.</sis:KappaleKooste>
+                            <vsk:PuheenjohtajaRepliikki>
+                                <vsk1:PuheenjohtajaTeksti>Ikäpuhemies Pertti Salolainen</vsk1:PuheenjohtajaTeksti>
+                                <sis:KappaleKooste>Kun edustaja Ben Zyskowicz on saanut vaalissa enemmän kuin puolet annetuista hyväksytyistä äänistä, on hänet valittu eduskunnan toiseksi varapuhemieheksi vuoden 2015 valtiopäivien ajaksi.</sis:KappaleKooste>
+                                <sis:KappaleKooste>Eftersom ledamot Ben Zyskowicz vid valet erhållit mer än hälften av de avgivna godkända rösterna, har han valts till andre vice talman vid riksmötet 2015.</sis:KappaleKooste>
+                            </vsk:PuheenjohtajaRepliikki>
+                        </vsk:KohtaSisalto>
+                    </vsk:Toimenpide>
+                    <sis:NeljannesTyhja/>
+                    <vsk:PaatoksentekoToimenpide met1:muuTunnus="729" vsk1:fraasiTunnus="P_VA_2">
+                        <vsk:KohtaSisalto>
+                            <sis:KappaleKooste>Eduskunta valitsi eduskunnan toiseksi varapuhemieheksi kansanedustaja, oikeustieteen kandidaatti Ben Zyskowiczin.</sis:KappaleKooste>
+                            <sis:KappaleKooste/>
+                        </vsk:KohtaSisalto>
+                    </vsk:PaatoksentekoToimenpide>
+                    <sis:NeljannesTyhja/>
+                </vsk:Asiakohta>
+                <vsk:MuuAsiakohta met1:muuTunnus="7" vsk1:kasittelyvaiheKoodi="KOKMI" vsk1:kohtaJNro="5" vsk1:kohtatyyppiKoodi="Asiakohta" vsk1:yleinenKasittelyvaiheKoodi="KOKOUS">
+                    <vsk1:KohtaNumero>5</vsk1:KohtaNumero>
+                    <sis1:OtsikkoTeksti>Muut ilmoitukset</sis1:OtsikkoTeksti>
+                    <vsk:Toimenpide met1:muuTunnus="20" vsk1:fraasiTunnus="K_135">
+                        <vsk:KohtaSisalto>
+                            <vsk:PuheenjohtajaRepliikki>
+                                <vsk1:PuheenjohtajaTeksti>Ikäpuhemies Pertti Salolainen</vsk1:PuheenjohtajaTeksti>
+                                <sis:KappaleKooste>Pyydän puhemiestä ja varapuhemiehiä kutakin vuorollaan antamaan eduskunnalle työjärjestyksen 4 §:ssä säädetyn juhlallisen vakuutuksen.</sis:KappaleKooste>
+                                <sis:KappaleKooste>Jag ber talmannen och de båda vice talmännen att inför riksdagen i tur och ordning avge sin högtidliga försäkran i enlighet med 4 § i arbetsordningen.</sis:KappaleKooste>
+                            </vsk:PuheenjohtajaRepliikki>
+                            <vsk:PuheenjohtajaRepliikki>
+                                <vsk1:PuheenjohtajaTeksti>Puhemies Juha Sipilä</vsk1:PuheenjohtajaTeksti>
+                                <sis:KappaleKooste>Minä Juha Sipilä vakuutan, että minä puhemiehenä voimieni mukaan puolustan Suomen kansan ja eduskunnan oikeutta valtiosäännön mukaan.</sis:KappaleKooste>
+                                <sis:KappaleKooste>Jag Juha Sipilä försäkrar att jag som talman efter all min förmåga skall försvara finska folkets och riksdagens rättigheter enligt konstitutionen.</sis:KappaleKooste>
+                            </vsk:PuheenjohtajaRepliikki>
+                            <vsk:PuheenjohtajaRepliikki>
+                                <vsk1:PuheenjohtajaTeksti>Ensimmäinen varapuhemies Timo Soini</vsk1:PuheenjohtajaTeksti>
+                                <sis:KappaleKooste>Minä Timo Soini vakuutan, että minä puhemiehenä voimieni mukaan puolustan Suomen kansan ja eduskunnan oikeutta valtiosäännön mukaan.</sis:KappaleKooste>
+                                <sis:KappaleKooste>Jag Timo Soini försäkrar att jag som talman efter all min förmåga skall försvara finska folkets och riksdagens rättigheter enligt konstitutionen.</sis:KappaleKooste>
+                            </vsk:PuheenjohtajaRepliikki>
+                            <vsk:PuheenjohtajaRepliikki>
+                                <vsk1:PuheenjohtajaTeksti>Toinen varapuhemies Ben Zyskowicz</vsk1:PuheenjohtajaTeksti>
+                                <sis:KappaleKooste>Minä Ben Zyskowicz vakuutan, että minä puhemiehenä voimieni mukaan puolustan Suomen kansan ja eduskunnan oikeutta valtiosäännön mukaan.</sis:KappaleKooste>
+                                <sis:KappaleKooste>Jag Ben Zyskowicz försäkrar att jag som talman efter all min förmåga skall försvara finska folkets och riksdagens rättigheter enligt konstitutionen.</sis:KappaleKooste>
+                            </vsk:PuheenjohtajaRepliikki>
+                            <sis:Palstaviiva/>
+                            <vsk:PuheenjohtajaRepliikki>
+                                <vsk1:PuheenjohtajaTeksti>Ikäpuhemies Pertti Salolainen</vsk1:PuheenjohtajaTeksti>
+                                <sis:KappaleKooste>Pyydän herra puhemiestä ottamaan paikkansa eduskunnassa ja ryhtymään toimeensa.</sis:KappaleKooste>
+                                <sis:KappaleKooste>Jag ber riksdagens herr talman inta talmannens plats och börja utöva sin befattning.</sis:KappaleKooste>
+                            </vsk:PuheenjohtajaRepliikki>
+                            <sis:Palstaviiva/>
+                            <vsk:PuheenjohtajaRepliikki>
+                                <vsk1:PuheenjohtajaTeksti>Puhemies Juha Sipilä</vsk1:PuheenjohtajaTeksti>
+                                <sis:KappaleKooste>Arvoisat kansanedustajat, ärade riksdagsledamöter! Kiitän teitä koko valitun puhemiehistön puolesta, herra ikäpuhemies ja arvoisat kollegat, osoittamastanne luottamuksesta, ja samalla onnittelen teitä jokaista suomalaisilta saamastanne valtakirjasta.</sis:KappaleKooste>
+                                <sis:KappaleKooste>På mina egna och de nyvalda vice talmännens vägnar vill jag framföra ett varmt tack till er, herr ålderstalman, och till er, bästa kolleger, för det förtroende som ni visade mig i talmansvalet nyss. Jag vill också gratulera er alla till den fullmakt Finlands folk har gett er.</sis:KappaleKooste>
+                                <sis:KappaleKooste>Moni edellisen vaalikauden läheinen työtoverimme luopui kansanedustajuudesta tai jäi valitsematta. Viime vaalikauteen verrattuna 73 kansanedustajaa vaihtuu. Heistä 57 valittiin nyt ensimmäisen kerran ja 16 kansanedustajaa palaa eduskuntaan tauon jälkeen.</sis:KappaleKooste>
+                                <sis:KappaleKooste>Uuden eduskunnan keski-ikä on vaalikauden alkaessa 47,3 vuotta. Alle 30-vuotiaita kansanedustajia valittiin 14 eli neljä enemmän kuin vuoden 2011 eduskuntavaaleissa. Eduskuntaan valittiin myös kaksi maahanmuuttajataustaista kansanedustajaa. Pidän tätä erittäin myönteisenä kehityksenä.</sis:KappaleKooste>
+                                <sis:KappaleKooste>Sukupuolten tasaisessa edustavuudessa meillä riittää edelleen tehtävää. Uudessa eduskunnassa on 117 miestä ja 83 naista. Naisia valittiin kaksi vähemmän kuin neljä vuotta sitten.</sis:KappaleKooste>
+                                <sis:KappaleKooste>Hyvät kansanedustajat! Aloitamme työmme poikkeuksellisen vaativissa olosuhteissa. Kansainvälinen tilanne on jännitteisempi kuin pitkään aikaan. Suomen oma tilanne on hyvin vaikea, ja meillä on suuria ongelmia ratkaistavina.</sis:KappaleKooste>
+                                <sis:KappaleKooste>Kansalaisten luottamus poliittiseen päätöksentekoon on koetuksella. Edellisten valtiopäivien viimeisten viikkojen tapahtumat eivät saa toistua. Vain me voimme palauttaa luottamuksen omilla toimillamme. Meillä ei ole mitään tärkeämpää tehtävää kuin löytää kestäviä ratkaisuja Suomen vaikeaan tilanteeseen. Päätöksenteon on oltava paljon ratkaisuhakuisempaa kuin tähän saakka.</sis:KappaleKooste>
+                                <sis:KappaleKooste>Meistä jokainen voi vaikuttaa poliittisen keskustelukulttuurin tervehdyttämiseen. Kunnioituksemme toisiamme kohtaan tulee näkyä paremmin niin sosiaalisessa mediassa kuin eduskunnan salityöskentelyssä.</sis:KappaleKooste>
+                                <sis:KappaleKooste>Meidän on jokaisen vakavasti paneuduttava täällä käsiteltäviin asioihin, ja meillä on oltava valmiutta ennakkoluulottomiin ratkaisuihin. Olkoon yhteinen tavoitteemme, että viettäessämme Suomen itsenäisyyden 100-vuotisjuhlallisuuksia olemme saaneet ennakkoluulottomalla yhteistyöllä käänteen aikaan ja vahvistaneet kansallista eheyttä. Tämä on nyt meistä kiinni.</sis:KappaleKooste>
+                                <sis:KappaleKooste>Eduskunnan työ jatkuu pari vuotta väliaikaisissa tiloissa peruskorjauksen vuoksi. Uskon, että tästäkin selvitään kärsivällisyydellä ja eduskunnan osaavan henkilökunnan avulla.</sis:KappaleKooste>
+                                <sis:KappaleKooste>På de nyvalda talmännens vägnar önskar jag er, ärade riksdagsledamöter, och alla som arbetar i huset ett riksmöte fullt av utmanande arbete.</sis:KappaleKooste>
+                                <sis:KappaleKooste>Toivotan meidän valittujen puhemiesten puolesta teille, arvoisat kansanedustajat, ja kaikille tässä talossa työskenteleville työntäyteisiä valtiopäiviä.</sis:KappaleKooste>
+                            </vsk:PuheenjohtajaRepliikki>
+                        </vsk:KohtaSisalto>
+                    </vsk:Toimenpide>
+                </vsk:MuuAsiakohta>
+                <vsk:MuuAsiakohta met1:muuTunnus="8" vsk1:kasittelyvaiheKoodi="KOKMI" vsk1:kohtaJNro="6" vsk1:kohtatyyppiKoodi="Asiakohta" vsk1:yleinenKasittelyvaiheKoodi="KOKOUS">
+                    <vsk1:KohtaNumero>6</vsk1:KohtaNumero>
+                    <sis1:OtsikkoTeksti>Muut ilmoitukset</sis1:OtsikkoTeksti>
+                    <vsk:KohtaAsiakirja vsk1:hyperlinkkiKoodi="EDK-2015-AK-9846">
+                        <met1:AsiakirjatyyppiNimi>Pöytäkirjan liite</met1:AsiakirjatyyppiNimi>
+                        <vsk1:TarkenneTeksti>Liite 6A</vsk1:TarkenneTeksti>
+                    </vsk:KohtaAsiakirja>
+                    <vsk:Toimenpide met1:muuTunnus="22" vsk1:fraasiTunnus="K_135">
+                        <vsk:KohtaSisalto>
+                            <sis:KappaleKooste>Sihteeri luki eduskunnan puhemiehen ja varapuhemiesten vaaleja koskevan tasavallan presidentille osoitetun kirjelmän.</sis:KappaleKooste>
+                        </vsk:KohtaSisalto>
+                    </vsk:Toimenpide>
+                </vsk:MuuAsiakohta>
+                <vsk:MuuAsiakohta met1:muuTunnus="9" vsk1:kasittelyvaiheKoodi="KOKVAA" vsk1:kohtaJNro="7" vsk1:kohtatyyppiKoodi="Asiakohta" vsk1:yleinenKasittelyvaiheKoodi="KOKOUS">
+                    <vsk1:KohtaNumero>7</vsk1:KohtaNumero>
+                    <sis1:OtsikkoTeksti>Vaalien toimittaminen</sis1:OtsikkoTeksti>
+                    <vsk:Toimenpide met1:muuTunnus="24" vsk1:fraasiTunnus="KOKVAA_1">
+                        <vsk:KohtaSisalto>
+                            <vsk:PuheenjohtajaRepliikki>
+                                <vsk1:PuheenjohtajaTeksti>Puhemies Juha Sipilä</vsk1:PuheenjohtajaTeksti>
+                                <sis:KappaleKooste>Ilmoitetaan, että valiokuntien ja kansliatoimikunnan vaalit toimitetaan ensi tiistaina 5. päivänä toukokuuta kello 14 pidettävässä täysistunnossa.</sis:KappaleKooste>
+                                <sis:KappaleKooste>Ehdokaslistat näitä vaaleja varten on jätettävä keskuskansliaan viimeistään ensi maanantaina 4. päivänä toukokuuta kello 12.</sis:KappaleKooste>
+                            </vsk:PuheenjohtajaRepliikki>
+                        </vsk:KohtaSisalto>
+                    </vsk:Toimenpide>
+                </vsk:MuuAsiakohta>
+                <vsk:MuuAsiakohta met1:muuTunnus="10" vsk1:kasittelyvaiheKoodi="KOKMI" vsk1:kohtaJNro="8" vsk1:kohtatyyppiKoodi="Asiakohta" vsk1:yleinenKasittelyvaiheKoodi="KOKOUS">
+                    <vsk1:KohtaNumero>8</vsk1:KohtaNumero>
+                    <sis1:OtsikkoTeksti>Muut ilmoitukset</sis1:OtsikkoTeksti>
+                    <vsk:Toimenpide met1:muuTunnus="26" vsk1:fraasiTunnus="K_135">
+                        <vsk:KohtaSisalto>
+                            <vsk:PuheenjohtajaRepliikki>
+                                <vsk1:PuheenjohtajaTeksti>Puhemies Juha Sipilä</vsk1:PuheenjohtajaTeksti>
+                                <sis:KappaleKooste>Ilmoitan, että edustajat istuvat eduskuntasalissa aakkosellisessa istumajärjestyksessä, kunnes eduskunta puhemiesneuvoston ehdotuksesta toisin päättää.</sis:KappaleKooste>
+                            </vsk:PuheenjohtajaRepliikki>
+                        </vsk:KohtaSisalto>
+                    </vsk:Toimenpide>
+                </vsk:MuuAsiakohta>
+                <vsk:MuuAsiakohta met1:muuTunnus="11" vsk1:kasittelyvaiheKoodi="KOKMI" vsk1:kohtaJNro="9" vsk1:kohtatyyppiKoodi="Asiakohta" vsk1:yleinenKasittelyvaiheKoodi="KOKOUS">
+                    <vsk1:KohtaNumero>9</vsk1:KohtaNumero>
+                    <sis1:OtsikkoTeksti>Muut ilmoitukset</sis1:OtsikkoTeksti>
+                    <vsk:KohtaAsiakirja vsk1:hyperlinkkiKoodi="EDK-2015-AK-9847">
+                        <met1:AsiakirjatyyppiNimi>Pöytäkirjan liite</met1:AsiakirjatyyppiNimi>
+                        <vsk1:TarkenneTeksti>Liite 9A</vsk1:TarkenneTeksti>
+                    </vsk:KohtaAsiakirja>
+                    <vsk:KohtaAsiakirja vsk1:hyperlinkkiKoodi="EDK-2015-AK-9848">
+                        <met1:AsiakirjatyyppiNimi>Pöytäkirjan liite</met1:AsiakirjatyyppiNimi>
+                        <vsk1:TarkenneTeksti>Liite 9B</vsk1:TarkenneTeksti>
+                    </vsk:KohtaAsiakirja>
+                    <vsk:Toimenpide met1:muuTunnus="28" vsk1:fraasiTunnus="K_135">
+                        <vsk:KohtaSisalto>
+                            <vsk:PuheenjohtajaRepliikki>
+                                <vsk1:PuheenjohtajaTeksti>Puhemies Juha Sipilä</vsk1:PuheenjohtajaTeksti>
+                                <sis:KappaleKooste>Arvoisat edustajat! Kutsun teidät vuoden 2015 valtiopäivien avajaisiin, jotka pidetään huomenna keskiviikkona 29.4.2015 sekä ennen avajaisia pidettävään valtiopäiväjumalanpalvelukseen.</sis:KappaleKooste>
+                                <sis:KappaleKooste>Juhlamenoissa noudatetaan puhemiesneuvoston 17.12.2012 hyväksymiä ohjeita.</sis:KappaleKooste>
+                                <sis:KappaleKooste>Ekumeeninen avajaisjumalanpalvelus alkaa Helsingin Tuomiokirkossa kello 12. Pyydän edustajia kokoontumaan ennen jumalanpalvelusta kello 11.30 Kansalliskirjaston edustalle, josta menemme kulkueena Tuomiokirkkoon.</sis:KappaleKooste>
+                                <sis:KappaleKooste>Jumalanpalveluksen jälkeen valtiopäivien avajaiset alkavat Finlandia-talossa, jonne kehotan edustajia siirtymään välittömästi kirkonmenojen päätyttyä. Valtiopäivien avajaisissa Finlandia-talon Finlandia-salissa tasavallan presidentti julistaa vuoden 2015 valtiopäivät avatuiksi.</sis:KappaleKooste>
+                            </vsk:PuheenjohtajaRepliikki>
+                        </vsk:KohtaSisalto>
+                    </vsk:Toimenpide>
+                </vsk:MuuAsiakohta>
+                <vsk:MuuAsiakohta met1:muuTunnus="3" vsk1:kasittelyvaiheKoodi="KOKSEU" vsk1:kohtaJNro="10" vsk1:kohtatyyppiKoodi="Asiakohta" vsk1:yleinenKasittelyvaiheKoodi="KOKOUS">
+                    <vsk1:KohtaNumero>10</vsk1:KohtaNumero>
+                    <sis1:OtsikkoTeksti>Seuraava täysistunto</sis1:OtsikkoTeksti>
+                    <vsk:Toimenpide met1:muuTunnus="9" vsk1:fraasiTunnus="K_110">
+                        <vsk:KohtaSisalto>
+                            <sis:KappaleKooste>Eduskunnan seuraava täysistunto on tiistaina 5.5.2015 klo 14.00. Täysistunto lopetettiin klo 13.31.</sis:KappaleKooste>
+                        </vsk:KohtaSisalto>
+                    </vsk:Toimenpide>
+                </vsk:MuuAsiakohta>
+                <asi:AllekirjoitusOsa>
+                    <asi1:JohdantoTeksti>Pöytäkirjan vakuudeksi:</asi1:JohdantoTeksti>
+                    <asi:Allekirjoittaja>
+                        <org:Henkilo>
+                            <org1:EtuNimi>Seppo</org1:EtuNimi>
+                            <org1:SukuNimi>Tiitinen</org1:SukuNimi>
+                        </org:Henkilo>
+                    </asi:Allekirjoittaja>
+                </asi:AllekirjoitusOsa>
+            </ptk:Poytakirja>
+        </RakenneAsiakirja>
+    </SiirtoAsiakirja>
+    <SiirtoTiedosto xmlns="http://www.eduskunta.fi/skeemat/siirtokooste/2011/05/17">
+        <Document xmlns="http://www.arkisto.fi/skeemat/sahke2/2011/01/31_vnk">
+            <NativeId>{FB2C1536-CC98-C77D-B6BA-6638E2200000}</NativeId>
+            <UseType>Julkaisu</UseType>
+            <File>
+                <Name>FB2C1536-CC98-C77D-B6BA-6638E2200000.pdf</Name>
+                <Path>sftp://intpurnukka.eduskunta.fi:22/home/vaskijul/liitteet/tojulkvp/FB2C1536-CC98-C77D-B6BA-6638E2200000.pdf</Path>
+            </File>
+            <Format>
+                <Name>application/pdf</Name>
+                <Version/>
+            </Format>
+            <HashAlgorithm>MD5</HashAlgorithm>
+            <HashValue>339469fa729145dccba8fa1c1028a286</HashValue>
+        </Document>
+    </SiirtoTiedosto>
+</ns11:Siirto>

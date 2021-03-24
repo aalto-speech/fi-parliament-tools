@@ -1,0 +1,89 @@
+{
+  "_id": "5c80dfc1febec3003eeb1e29",
+  "__v": 0,
+  "path": "5c80dfc1febec3003eeb1e28#5c80dfc1febec3003eeb1e29",
+  "name": "Täysistunnot | Plenum ",
+  "description": "",
+  "slug": "taysistunnot",
+  "parent": "5c80dfc1febec3003eeb1e28",
+  "account": "5a294054964f2207163fe233",
+  "metadata": { "enabled": false, "image": { "url": "" } },
+  "archiveSettings": {
+    "openEventsInSamePage": { "enabled": false },
+    "showHiddenEvents": { "enabled": false, "applyToSubcategories": false },
+    "typeKit": { "enabled": false, "typeKitId": "" }
+  },
+  "events": [
+    {
+      "_id": "5c80dfcbfebec3003eeb1e3f",
+      "title": "Täysistunto 21.12.2018 | Plenum 21.12.2018",
+      "account": "5a294054964f2207163fe233",
+      "media": "video",
+      "state": 1,
+      "tags": [],
+      "eventMeta": "5c80dfcbfebec3003eeb24a9",
+      "chapters": { "sync": [], "set": [], "enabled": false },
+      "publishingDate": "2018-12-21T10:02:55.000Z",
+      "urlName": "taysistunto-136-2018",
+      "previewImg": "/events/eduskunta/2008-2018/thumbs/2018-12-21/upload_1545378870_5c1cc80fe8ea3_l_01_ca59f47d.jpg",
+      "streams": {
+        "smil": "events/eduskunta/2008-2018/ncode/2018-12-21/upload_1545378870_5c1cc80fe8ea3_ipad_ca59f47d.smil",
+        "audio": "",
+        "http": "events/eduskunta/2008-2018/ncode/2018-12-21/upload_1545378870_5c1cc80fe8ea3_432p_ca59f47d.mp4",
+        "hls": "",
+        "hds": ""
+      },
+      "hasRegistration": false,
+      "hasSlides": false
+    },
+    {
+      "_id": "5c80dfcbfebec3003eeb1e42",
+      "title": "Täysistunto 20.12.2018 | Plenum 20.12.2018",
+      "account": "5a294054964f2207163fe233",
+      "media": "video",
+      "state": 1,
+      "tags": [],
+      "eventMeta": "5c80dfcbfebec3003eeb24aa",
+      "chapters": { "sync": [], "set": [], "enabled": false },
+      "publishingDate": "2018-12-20T18:11:00.000Z",
+      "urlName": "taysistunto-135-2018",
+      "previewImg": "/events/eduskunta/2008-2018/thumbs/2018-12-20/upload_1545292473_5c1be808877a4_l_01_2c9e24d2.jpg",
+      "streams": {
+        "smil": "events/eduskunta/2008-2018/ncode/2018-12-20/upload_1545292473_5c1be808877a4_ipad_2c9e24d2.smil",
+        "audio": "",
+        "http": "events/eduskunta/2008-2018/ncode/2018-12-20/upload_1545292473_5c1be808877a4_432p_2c9e24d2.mp4",
+        "hls": "",
+        "hds": ""
+      },
+      "hasRegistration": false,
+      "hasSlides": false
+    }
+  ],
+  "orderNumber": 30,
+  "children": [],
+  "layout": {
+    "header": {
+      "enabled": false,
+      "logo": { "path": "", "width": "" },
+      "fontColor": "#000000",
+      "bgColor": "#ffffff",
+      "contentAlign": "left"
+    },
+    "main": {
+      "innerContent": { "bgColor": "rgb(255, 255, 255)" },
+      "bgColor": "#FFFFFF",
+      "fontColor": "#000000",
+      "linkColor": "#000000",
+      "descriptionFontColor": "#000000",
+      "eventsPerPage": 4
+    },
+    "footer": {
+      "enabled": false,
+      "logo": { "path": "", "width": "" },
+      "fontColor": "#000000",
+      "bgColor": "#ffffff",
+      "contentAlign": "left"
+    }
+  },
+  "eventCount": 1752
+}

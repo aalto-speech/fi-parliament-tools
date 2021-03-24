@@ -1,0 +1,449 @@
+<ns11:Siirto xmlns:ns11="http://www.eduskunta.fi/skeemat/siirto/2011/09/07">
+  <Sanomavalitys xmlns="http://www.eduskunta.fi/skeemat/siirtokooste/2011/05/17">
+    <ns4:SanomatyyppiNimi xmlns:ns4="http://www.eduskunta.fi/skeemat/siirtoelementit/2011/05/17">VASKI_JULKVP_Record_fi</ns4:SanomatyyppiNimi>
+    <ns4:SanomaTunnus xmlns:ns4="http://www.eduskunta.fi/skeemat/siirtoelementit/2011/05/17">Vaski_VASKI_JULKVP_Record_fi_12-elo-2020_09:45:04:853_EEST</ns4:SanomaTunnus>
+    <ns4:LuontiHetki xmlns:ns4="http://www.eduskunta.fi/skeemat/siirtoelementit/2011/05/17">2020-08-12T09:45:04.853+03:00</ns4:LuontiHetki>
+    <ns4:SiirtoKoodi xmlns:ns4="http://www.eduskunta.fi/skeemat/siirtoelementit/2011/05/17">paivitys</ns4:SiirtoKoodi>
+    <Toimija xmlns="http://www.vn.fi/skeemat/metatietokooste/2010/04/27" xmlns:s257="http://www.vn.fi/skeemat/metatietoelementit/2010/04/27" s257:rooliKoodi="lahettaja">
+      <s257:YhteisoTeksti>Eduskunta</s257:YhteisoTeksti>
+    </Toimija>
+    <Toimija xmlns="http://www.vn.fi/skeemat/metatietokooste/2010/04/27" xmlns:s258="http://www.vn.fi/skeemat/metatietoelementit/2010/04/27" s258:rooliKoodi="vastaanottaja">
+      <s258:YhteisoTeksti>Eduskunta</s258:YhteisoTeksti>
+    </Toimija>
+  </Sanomavalitys>
+  <ns11:SiirtoMetatieto>
+    <jme:JulkaisuMetatieto xmlns:asi="http://www.vn.fi/skeemat/asiakirjakooste/2010/04/27" xmlns:asi1="http://www.vn.fi/skeemat/asiakirjaelementit/2010/04/27" xmlns:jme="http://www.eduskunta.fi/skeemat/julkaisusiirtokooste/2011/12/20" xmlns:met="http://www.vn.fi/skeemat/metatietokooste/2010/04/27" xmlns:met1="http://www.vn.fi/skeemat/metatietoelementit/2010/04/27" xmlns:org="http://www.vn.fi/skeemat/organisaatiokooste/2010/02/15" xmlns:org1="http://www.vn.fi/skeemat/organisaatioelementit/2010/02/15" xmlns:sii="http://www.eduskunta.fi/skeemat/siirtokooste/2011/05/17" xmlns:sii1="http://www.eduskunta.fi/skeemat/siirtoelementit/2011/05/17" xmlns:sis="http://www.vn.fi/skeemat/sisaltokooste/2010/04/27" xmlns:sis1="http://www.vn.fi/skeemat/sisaltoelementit/2010/04/27" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" met1:asiakirjatyyppiNimi="Pöytäkirja" met1:eduskuntaTunnus="PTK 7/2020 vp" met1:identifiointiTunnus="{48DE7CCE-57C5-C09B-860D-73E169500000}" met1:kieliKoodi="fi" met1:laadintaPvm="2020-02-14" met1:muuTunnus="EDK-2020-AK-285137" met1:paatehtavaKoodi="00 00 03 Poliittinen ohjaus">
+      <asi:IdentifiointiOsa>
+        <met1:AsiakirjatyyppiNimi>Pöytäkirja</met1:AsiakirjatyyppiNimi>
+        <asi:EduskuntaTunniste>
+          <met1:AsiakirjatyyppiKoodi>PTK</met1:AsiakirjatyyppiKoodi>
+          <asi1:AsiakirjaNroTeksti>7</asi1:AsiakirjaNroTeksti>
+          <asi1:ValtiopaivavuosiTeksti>2020</asi1:ValtiopaivavuosiTeksti>
+        </asi:EduskuntaTunniste>
+        <met:Toimija met1:rooliKoodi="Laatija">
+          <met1:YhteisoTeksti>Täysistunto</met1:YhteisoTeksti>
+        </met:Toimija>
+        <met1:LaadintaPvmTeksti>14.02.2020</met1:LaadintaPvmTeksti>
+        <met:Nimeke met1:vaihtoehtoinenNimekeTeksti="">
+          <met1:NimekeTeksti>Perjantai 14.2.2020 klo 13.00—13.25</met1:NimekeTeksti>
+        </met:Nimeke>
+      </asi:IdentifiointiOsa>
+      <sii:EsitysmuotoViite met1:muuTunnus="{48DE7CCE-57C5-C09B-860D-73E169500000}"/>
+    </jme:JulkaisuMetatieto>
+  </ns11:SiirtoMetatieto>
+  <SiirtoAsiakirja xmlns="http://www.eduskunta.fi/skeemat/siirtokooste/2011/05/17">
+    <RakenneAsiakirja>
+      <ptk:Poytakirja xmlns:asi="http://www.vn.fi/skeemat/asiakirjakooste/2010/04/27" xmlns:asi1="http://www.vn.fi/skeemat/asiakirjaelementit/2010/04/27" xmlns:elu="http://www.eduskunta.fi/skeemat/ehdotusluettelo/2014/07/28" xmlns:fra="http://www.eduskunta.fi/skeemat/fraasikooste/2011/01/04" xmlns:fra1="http://www.eduskunta.fi/skeemat/fraasielementit/2011/01/04" xmlns:met="http://www.vn.fi/skeemat/metatietokooste/2010/04/27" xmlns:met1="http://www.vn.fi/skeemat/metatietoelementit/2010/04/27" xmlns:mix="http://www.loc.gov/mix/v20" xmlns:narc="http://www.arkisto.fi/skeemat/sahke2/2011/01/31_vnk" xmlns:org="http://www.vn.fi/skeemat/organisaatiokooste/2010/02/15" xmlns:org1="http://www.vn.fi/skeemat/organisaatioelementit/2010/02/15" xmlns:ptk="http://www.eduskunta.fi/skeemat/poytakirja/2011/01/28" xmlns:saa="http://www.vn.fi/skeemat/saadoskooste/2010/04/27" xmlns:saa1="http://www.vn.fi/skeemat/saadoselementit/2010/04/27" xmlns:sis="http://www.vn.fi/skeemat/sisaltokooste/2010/04/27" xmlns:sis1="http://www.vn.fi/skeemat/sisaltoelementit/2010/04/27" xmlns:tau="http://www.vn.fi/skeemat/taulukkokooste/2010/04/27" xmlns:vsk="http://www.eduskunta.fi/skeemat/vaskikooste/2011/01/04" xmlns:vsk1="http://www.eduskunta.fi/skeemat/vaskielementit/2011/01/04" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" met1:asiakirjatyyppiNimi="Pöytäkirja" met1:eduskuntaTunnus="PTK 7/2020 vp" met1:identifiointiTunnus="0f9bdf44-3b59-c7f1-870e-705372000000" met1:kieliKoodi="fi" met1:laadintaPvm="2020-08-12" met1:muuTunnus="0f9bdf44-3b59-c7f1-870e-705372000000" met1:rakennemaarittelyNimi="eduskunnanpoytakirja.xsd" met1:tilaKoodi="Valmis" met1:versioTeksti="5.0" vsk1:kokousAloitusHetki="2020-02-14T13:00:00" vsk1:kokousLopetusHetki="2020-02-14T13:30:00">
+        <asi:IdentifiointiOsa>
+          <met1:AsiakirjatyyppiNimi>Pöytäkirja</met1:AsiakirjatyyppiNimi>
+          <asi:EduskuntaTunniste>
+            <met1:AsiakirjatyyppiKoodi>PTK</met1:AsiakirjatyyppiKoodi>
+            <asi1:AsiakirjaNroTeksti>7</asi1:AsiakirjaNroTeksti>
+            <asi1:ValtiopaivavuosiTeksti>2020 vp</asi1:ValtiopaivavuosiTeksti>
+          </asi:EduskuntaTunniste>
+          <met:Toimija met1:rooliKoodi="Laatija">
+            <met1:YhteisoTeksti>Täysistunto</met1:YhteisoTeksti>
+          </met:Toimija>
+          <met:Nimeke>
+            <met1:NimekeTeksti>Perjantai 14.2.2020 klo 13.00—13.25</met1:NimekeTeksti>
+          </met:Nimeke>
+        </asi:IdentifiointiOsa>
+        <asi:SisaltoKuvaus>
+          <sis:KappaleKooste>Täysistunto alkoi klo 13.00. Täysistunto päättyi klo 13.25.</sis:KappaleKooste>
+          <sis:KappaleKooste>Puhetta johti puhemies Matti Vanhanen (13.00—13.25).</sis:KappaleKooste>
+        </asi:SisaltoKuvaus>
+        <vsk:MuuAsiakohta met1:muuTunnus="92578" vsk1:kasittelyvaiheKoodi="KOKNHU" vsk1:kohtaJNro="1" vsk1:kohtatyyppiKoodi="Asiakohta" vsk1:yleinenKasittelyvaiheKoodi="KOKOUS">
+          <vsk1:KohtaNumero>1</vsk1:KohtaNumero>
+          <sis1:OtsikkoTeksti>Nimenhuuto</sis1:OtsikkoTeksti>
+          <vsk:KohtaAsiakirja vsk1:hyperlinkkiKoodi="EDK-2020-AK-285086">
+            <met1:AsiakirjatyyppiNimi>Nimenhuutoraportti</met1:AsiakirjatyyppiNimi>
+            <vsk1:TarkenneTeksti>Liite 1A</vsk1:TarkenneTeksti>
+          </vsk:KohtaAsiakirja>
+          <vsk:Toimenpide met1:muuTunnus="390385" vsk1:fraasiTunnus="K_106">
+            <vsk:KohtaSisalto>
+              <sis:KappaleKooste>Toimitettiin nimenhuuto.</sis:KappaleKooste>
+            </vsk:KohtaSisalto>
+          </vsk:Toimenpide>
+        </vsk:MuuAsiakohta>
+        <vsk:MuuAsiakohta met1:muuTunnus="92579" vsk1:kasittelyvaiheKoodi="KOKILM" vsk1:kohtaJNro="2" vsk1:kohtatyyppiKoodi="Asiakohta" vsk1:yleinenKasittelyvaiheKoodi="KOKOUS">
+          <vsk1:KohtaNumero>2</vsk1:KohtaNumero>
+          <sis1:OtsikkoTeksti>Ilmoituksia</sis1:OtsikkoTeksti>
+        </vsk:MuuAsiakohta>
+        <vsk:MuuAsiakohta met1:muuTunnus="96549" vsk1:kasittelyvaiheKoodi="KOKHAL" vsk1:kohtaJNro="3" vsk1:kohtatyyppiKoodi="Alikohta" vsk1:paakohtaTunnus="92579" vsk1:yleinenKasittelyvaiheKoodi="KOKOUS">
+          <vsk1:KohtaNumero>2.1</vsk1:KohtaNumero>
+          <sis1:OtsikkoTeksti>Hallituksen esitykset</sis1:OtsikkoTeksti>
+          <vsk:Toimenpide met1:muuTunnus="401072" vsk1:fraasiTunnus="K_118">
+            <vsk:KohtaSisalto>
+              <sis:KappaleKooste>Valtioneuvosto on 13.2.2020 antanut hallituksen esitykset HE 6-9/2020 vp.</sis:KappaleKooste>
+            </vsk:KohtaSisalto>
+          </vsk:Toimenpide>
+        </vsk:MuuAsiakohta>
+        <vsk:MuuAsiakohta met1:muuTunnus="96528" vsk1:kasittelyvaiheKoodi="KOKVKK" vsk1:kohtaJNro="4" vsk1:kohtatyyppiKoodi="Alikohta" vsk1:paakohtaTunnus="92579" vsk1:yleinenKasittelyvaiheKoodi="KOKOUS">
+          <vsk1:KohtaNumero>2.2</vsk1:KohtaNumero>
+          <sis1:OtsikkoTeksti>Vastaukset kirjallisiin kysymyksiin</sis1:OtsikkoTeksti>
+          <vsk:Toimenpide met1:muuTunnus="400943" vsk1:fraasiTunnus="K_138">
+            <vsk:KohtaSisalto>
+              <sis:KappaleKooste>Eduskunnalle ovat saapuneet vastaukset kirjallisiin kysymyksiin KK 358, 442, 446-448, 450-454, 456-458, 461, 462, 469/2019 vp.</sis:KappaleKooste>
+            </vsk:KohtaSisalto>
+          </vsk:Toimenpide>
+        </vsk:MuuAsiakohta>
+        <vsk:MuuAsiakohta met1:muuTunnus="96491" vsk1:kasittelyvaiheKoodi="KOKKAA" vsk1:kohtaJNro="5" vsk1:kohtatyyppiKoodi="Alikohta" vsk1:paakohtaTunnus="92579" vsk1:yleinenKasittelyvaiheKoodi="KOKOUS">
+          <vsk1:KohtaNumero>2.3</vsk1:KohtaNumero>
+          <sis1:OtsikkoTeksti>Kansalaisaloitteet</sis1:OtsikkoTeksti>
+          <vsk:Toimenpide met1:muuTunnus="400680" vsk1:fraasiTunnus="K_139">
+            <vsk:KohtaSisalto>
+              <sis:KappaleKooste>Eduskunnalle on 12.2.2020 toimitettu kansalaisaloite KAA 1/2020 vp: Lentovero.</sis:KappaleKooste>
+            </vsk:KohtaSisalto>
+          </vsk:Toimenpide>
+        </vsk:MuuAsiakohta>
+        <vsk:MuuAsiakohta met1:muuTunnus="96580" vsk1:kasittelyvaiheKoodi="KOKVAA" vsk1:kohtaJNro="6" vsk1:kohtatyyppiKoodi="Alikohta" vsk1:paakohtaTunnus="92579" vsk1:yleinenKasittelyvaiheKoodi="KOKOUS">
+          <vsk1:KohtaNumero>2.4</vsk1:KohtaNumero>
+          <sis1:OtsikkoTeksti>Vaalien toimittaminen</sis1:OtsikkoTeksti>
+          <vsk:Toimenpide met1:muuTunnus="401219" vsk1:fraasiTunnus="KOKVAA_1">
+            <vsk:KohtaSisalto>
+              <sis:KappaleKooste>Tiedusteluvalvontavaliokuntaan on valittava valiokunnan jäsenyydestä vapautetun Sofia Vikmanin tilalle uusi jäsen. Tiedusteluvalvontavaliokunnan täydennysvaali toimitetaan tiistaina 18.2.2020 kello 14 pidettävässä täysistunnossa. Ehdokaslistat on jätettävä keskuskansliaan viimeistään 18.2.2020 kello 11.</sis:KappaleKooste>
+            </vsk:KohtaSisalto>
+          </vsk:Toimenpide>
+        </vsk:MuuAsiakohta>
+        <vsk:Asiakohta met1:eduskuntaTunnus="LA 37/2019 vp" met1:muuTunnus="96386" vsk1:kasittelyvaiheKoodi="LK" vsk1:kohtaJNro="7" vsk1:kohtatyyppiKoodi="Asiakohta" vsk1:yleinenKasittelyvaiheKoodi="LK">
+          <vsk1:KohtaNumero>3</vsk1:KohtaNumero>
+          <vsk:KohtaNimeke>
+            <met1:NimekeTeksti>Lakialoite laiksi rikoslain 17 luvun muuttamisesta</met1:NimekeTeksti>
+          </vsk:KohtaNimeke>
+          <vsk:KohtaAsia vsk1:hyperlinkkiKoodi="LA 37/2019 vp">
+            <met1:AsiakirjatyyppiNimi>Lakialoite</met1:AsiakirjatyyppiNimi>
+            <met1:EduskuntaTunnus>LA 37/2019 vp</met1:EduskuntaTunnus>
+            <met:Toimija>
+              <org:Henkilo met1:muuTunnus="1388">
+                <org1:EtuNimi>Mari</org1:EtuNimi>
+                <org1:SukuNimi>Rantanen</org1:SukuNimi>
+                <org1:LisatietoTeksti>ps</org1:LisatietoTeksti>
+                <org1:LisatietoTeksti>ym.</org1:LisatietoTeksti>
+              </org:Henkilo>
+            </met:Toimija>
+          </vsk:KohtaAsia>
+          <vsk:Toimenpide met1:muuTunnus="399968" vsk1:fraasiTunnus="P_LKN375_LA">
+            <sis1:ValiotsikkoTeksti>Lähetekeskustelu</sis1:ValiotsikkoTeksti>
+            <vsk:KohtaSisalto>
+              <vsk:PuheenjohtajaRepliikki>
+                <vsk1:PuheenjohtajaTeksti>Puhemies Matti Vanhanen</vsk1:PuheenjohtajaTeksti>
+                <sis:KappaleKooste>Lähetekeskustelua varten esitellään päiväjärjestyksen <sis1:HarvaKursiiviTeksti>3.</sis1:HarvaKursiiviTeksti> asia. Puhemiesneuvosto ehdottaa, että asia lähetetään lakivaliokuntaan.</sis:KappaleKooste>
+              </vsk:PuheenjohtajaRepliikki>
+            </vsk:KohtaSisalto>
+          </vsk:Toimenpide>
+          <vsk:KeskusteluToimenpide met1:muuTunnus="401595" vsk1:fraasiTunnus="KE_108">
+            <sis1:ValiotsikkoTeksti>Keskustelu</sis1:ValiotsikkoTeksti>
+            <vsk:PuheenvuoroToimenpide met1:muuTunnus="401598" vsk1:puheenvuoroAloitusHetki="2020-02-14T13:01:40" vsk1:puheenvuoroLuokitusKoodi="E">
+              <vsk1:AjankohtaTeksti>13.01</vsk1:AjankohtaTeksti>
+              <met:Toimija>
+                <org:Henkilo met1:muuTunnus="1388">
+                  <org1:EtuNimi>Mari</org1:EtuNimi>
+                  <org1:SukuNimi>Rantanen</org1:SukuNimi>
+                  <org1:LisatietoTeksti>ps</org1:LisatietoTeksti>
+                </org:Henkilo>
+              </met:Toimija>
+              <vsk1:TarkenneTeksti>(esittelypuheenvuoro)</vsk1:TarkenneTeksti>
+              <vsk:PuheenvuoroOsa met1:asiakirjatyyppiNimi="Puheenvuoro" met1:kieliKoodi="fi" met1:muuTunnus="253597" met1:tilaKoodi="Hyväksytty" met1:versioTeksti="1.1" vsk1:puheenvuoroAloitusHetki="2020-02-14T13:01:40" vsk1:puheenvuoroJNro="1" vsk1:puheenvuoroLopetusHetki="2020-02-14T13:10:00">
+                <vsk:KohtaSisalto>
+                  <sis:KappaleKooste>Arvoisa puhemies! Ambulanssin ensihoitajaa puu... [Hälinää — Puhemies koputtaa]</sis:KappaleKooste>
+                  <vsk:PuheenjohtajaRepliikki>
+                    <vsk1:PuheenjohtajaTeksti>Puhemies Matti Vanhanen</vsk1:PuheenjohtajaTeksti>
+                    <sis:KappaleKooste>Odottakaa hetki.</sis:KappaleKooste>
+                  </vsk:PuheenjohtajaRepliikki>
+                  <sis:KappaleKooste>Arvoisa puhemies! ”Ambulanssin ensihoitajaa puukotettiin 23 kertaa” — Uusikaupunki, huhtikuussa 2013. ”Hoito-opiskelija ryösti aseella uhaten ambulanssin hoitolaukun” — Hollola, lokakuussa 2014. ”Ambulanssin uhkaajilta löytyi ase ja räjähteitä” — Kuopio, syyskuussa 2014. Nämä esimerkit eivät ole keksittyjä vaan ovat aivan todellisia uutisotsikoita. Uhkailu, haukkuminen, huorittelu, töniminen ja lyöminen ovat arkipäivää ensihoidossa. ”Väkivallan uhka on todellinen. Menehtyneitä ei ole, mutta osumat ovat arkipäivää”, totesi myös ensihoidon esimies Päivi Heikkinen 6. helmikuuta Kainuun Sanomissa. </sis:KappaleKooste>
+                  <sis:KappaleKooste>Arvoisa puhemies! Ensihoidossa sattuu vuosittain useita satoja uhka- ja väkivaltatilanteita. Väkivalta ilmenee uhkailuna, nimittelynä ja pahimmillaan fyysisenä päällekäymisenä. Suurin osa väkivaltatilanteista ensihoidossa tapahtuu päihtyneen potilaan hoidon yhteydessä ambulanssissa, potilaan kotona tai ulkona. Tyypillisesti väkivaltaisesti käyttäytyvä henkilö uhkaa ensihoitajaa sanallisesti tai tuottaa fyysistä väkivaltaa lyöden, tönien tai uhkaa jollakin aseella. </sis:KappaleKooste>
+                  <sis:KappaleKooste>Pelastuslaitosten kumppanuusverkosto on tilastoinut vuodesta 2014 lähtien henkilöstön kokemia uhka- ja väkivaltatilanteita. Lähes joka vuosi kasvua on ollut noin 15—25 prosenttia ollen vuonna 2019 jo 375 kappaletta. Pelastuslaitoksen kumppanuushankkeen tilastoista on nähtävissä myös vakavia vammoja aiheuttavien tapahtumien kasvu vuosittain, ja tämä on erittäin huolestuttavaa. Vuonna 2019 henkilöstö laati 30 rikosilmoitusta poliisille, mikä on yli puolet enemmän kuin vuonna 2018, mutta rikosilmoituksia tehdään tapauksiin nähden erittäin harvoin. Fyysisten vammojen lisäksi nämä aiheuttavat aina henkistä kuormittavuutta. Suomen Ensihoitoalan Liiton vuonna 2018 tekemän kyselyn mukaan yli 90 prosenttia vastaajista ilmoitti kokeneensa uhka- ja väkivaltatilanteita. Tämä kysely kertoo sen, että tapahtumia on enemmän kuin niitä tosiasiassa ilmoitetaan työnantajalle, saati poliisille. </sis:KappaleKooste>
+                  <sis:KappaleKooste>Arvoisa puhemies! Tällä lakialoitteella pyritään siihen, että ensihoidollisessa tehtävässä oleva henkilö riippumatta ammattinimikkeestään rinnastettaisiin rangaistuksen mittaamisessa virkamieheen. Aloitteen teksti on laadittu siten, että se kattaisi ensivastetehtävissä olevat sekä siirtokuljetuksia tekevän henkilöstön. Pelastusala ja ensihoitajat toivovat rangaistusasteikon koventamista, vaikka väkivaltaa ei tokikaan saada tällä kokonaan poistettua. Rikokseen liitetyllä rangaistusasteikolla voi olla myös ennalta ehkäisevä vaikutus. Uuden pykälän nojalla annettavalla tavallista pahoinpitelyä ankarammalla rangaistuksella olisi lisäksi merkitys työssä olevan ensihoitajan koskemattomuuden korostamisessa. </sis:KappaleKooste>
+                  <sis:KappaleKooste>Kunnioitus ensihoitajia kohtaan on rapautunut. Ennen vanhaan oli itsestäänselvää, että ambulanssia ja ensihoitajia pidettiin auttajina, ei sylkykuppeina. Nykyään ensihoitajan työasusta saatetaan päinvastoin provosoitua ja kiitoksen sijaan auttaja saa nyrkistä.</sis:KappaleKooste>
+                  <sis:KappaleKooste>Arvoisa puhemies! Useissa muissa maissa väkivalta ensihoitajia kohtaan on säädetty erityisen rangaistavaksi. Isossa-Britanniassa, jossa uhkatilanteet ovat myös olleet kasvussa, toteutettiin vuonna 2018 lakimuutos, jonka nojalla väkivaltaan ensihoitajia ja muita pelastusalan henkilöstöä kohtaan syyllistyneiden maksimituomiot kaksinkertaistettiin. Sikäläisen oikeusministerin mukaan ensihoitajan kimppuun käyminen ei ole yksittäistapaus vaan hyökkäys järjestäytynyttä yhteiskuntaa vastaan. Victorian osavaltiossa Australiassa hyökkäys ensihoitajaa vastaan on luokiteltu ykkösluokan rikokseksi muun muassa raiskauksien ja murhien kanssa vuodesta 2018 lähtien. Tämäkin lainsäädäntömuutos on ollut seurausta vakavista hyökkäyksistä ensihoitajia kohtaan. Naapurimaamme Ruotsin kehitys on huolestuttavaa. Hyökkäyksiä tapahtuu sinisillä vilkuilla varustettuja viranomaisia kohtaan. Euroopassa onkin yleistymässä termi ”blue light sabotage”, jolla tarkoitetaan tilanteita, joissa joku esimerkiksi tekee perättömän ilmoituksen hätäkeskukseen, jonka avulla paikalle halutaan saada sinisten vilkkujen viranomaisia. Tämän jälkeen viranomaisia sabotoidaan kivittämällä, heittelemällä pulloja tai ampumalla heitä kohti ilotulitteita. Ruotsissa on tämän vuoden tammikuusta lähtien ollut voimassa laki sabotaasista sinivilkkuja vastaan, jonka perusmuotoisesta teosta maksimirangaistus on 4 vuotta vankeutta ja törkeästä tekomuodosta maksimi on peräti 18 vuotta vankeutta. Lisääntynyt väkivalta ei kosketa vain ensihoitoa, vaan myös poliisi ja pelastusala ovat raportoineet asiasta. On hyvä huomata, että pelastusalan ammattipiireissä varoitellaan Suomen olevan noin kymmenen vuoden päässä Ruotsin tilanteesta. </sis:KappaleKooste>
+                  <sis:KappaleKooste>Arvoisa puhemies! Olen työskennellyt ensihoidossa jo vuonna 97 — uskomatonta kyllä — ja vakuutan teille, että maailma on muuttunut noista ajoista. Silloinkin uhkaavia tilanteita oli mutta ei lähellekään siinä määrin kuin tänä päivänä. Pelastuslaitokset havahtuivat ensihoitajien työssä kokemaan uhkaan ja väkivaltaan vuonna 2012 Kuntakymppi-kyselyn myötä ja alkoivat niin kehittää tilastointia, ohjeita ja koulutusta kuin varustamaan henkilöstöään paremmin. Työnantajat kautta Suomen ovat nähdäkseni tehneet parhaansa omilla resursseillaan parantaakseen ensihoidossa työskentelevien turvallisuutta. Nyt on lainsäätäjän aika tehdä oma roolinsa.</sis:KappaleKooste>
+                  <sis:KappaleKooste>Lainsäädännön tulee heijastella muuttuvia aikoja. Valitettavasti Suomikin seuraa sitä globaalia trendiä, jossa ensihoitajat joutuvat työssään yhä useammin ja yhä vakavampiin uhkatilanteisiin. Meidän ei pidä jäädä odottamaan sitä ensimmäistä tapausta, joka saattaa koitua jonkun ensihoitajan viimeiseksi. Paljon puhutaan toimintaympäristön muutoksesta. Puhuminen ei riitä, vaan ajan ilmiöihin on tehtävä toimenpiteitä. Ensimmäinen askel on saattaa väkivallasta annettavat rangaistukset niille kuuluvalle tasolle. On selvää, että tämä ei riitä, mutta lakimuutos olisi ensimmäinen askel siihen, että me lainsäätäjät annamme viestin: Meillä ei hyväksytä auttajiin kohdistuvaa väkivaltaa. Sille on nollatoleranssi, ja jos siihen syyllistyy, yhteiskunta todella paheksuu toimintaa. Tehy, Suomen Ensihoitoalan Liitto, Suomen Palomiesliitto, Suomen Sopimuspalokuntien Liitto ja Vuoden ensihoitajat ovat vedonneet, että me säätäisimme tämän lain yhtenä toimenpiteenä ensihoidon työturvallisuuden parantamiseksi. Vuoden ensihoitajat julkilausumassaan toivovat lisäksi, ettei tämä asia kaadu puoluepolitikointiin. Tämä on meidän kaikkien yhteinen asia.</sis:KappaleKooste>
+                  <sis:KappaleKooste>Arvoisa puhemies! Vetoan teihin, hyvät edustajakollegat ja Marinin hallitus, kaikkien ensihoitotyötä tekevien puolesta, että tämä laki viimein vuosien jälkeen viedään maaliin ja viimein arkemme turvaajien koskemattomuus ja sen loukkaukset ovat tekoja, joita yhteiskunta paheksuu, ja se myös näkyy rikoslaissa. Näitä tekoja tulisi ehkä ajatella pikemminkin hyökkäyksinä järjestäytynyttä yhteiskuntaa vastaan kuin pahoinpitelyinä.</sis:KappaleKooste>
+                  <sis:KappaleKooste>Arvoisa puhemies! Rohkenen lopuksi esittää ammattilaisten ja liittojen toiveen siitä, että sosiaali- ja terveysministeriö ja sisäministeriö käynnistäisivät yhteistyössä mahdollisimman pian ensihoidon ja pelastusalan työturvallisuuden parantamiseen tähtäävän kansallisen hankkeen, jossa muita toimia, kuten koulutusta, tilastointia ja suojavarusteasioita, voitaisiin yhdessä pohtia ja viedä eteenpäin. — Kiitos. </sis:KappaleKooste>
+                </vsk:KohtaSisalto>
+              </vsk:PuheenvuoroOsa>
+            </vsk:PuheenvuoroToimenpide>
+            <vsk:PuheenvuoroToimenpide met1:muuTunnus="401603" vsk1:puheenvuoroAloitusHetki="2020-02-14T13:10:03" vsk1:puheenvuoroLuokitusKoodi="T">
+              <vsk1:AjankohtaTeksti>13.10</vsk1:AjankohtaTeksti>
+              <met:Toimija>
+                <org:Henkilo met1:muuTunnus="1137">
+                  <org1:EtuNimi>Pauli</org1:EtuNimi>
+                  <org1:SukuNimi>Kiuru</org1:SukuNimi>
+                  <org1:LisatietoTeksti>kok</org1:LisatietoTeksti>
+                </org:Henkilo>
+              </met:Toimija>
+              <vsk:PuheenvuoroOsa met1:asiakirjatyyppiNimi="Puheenvuoro" met1:kieliKoodi="fi" met1:muuTunnus="253600" met1:tilaKoodi="Hyväksytty" met1:versioTeksti="1.1" vsk1:puheenvuoroAloitusHetki="2020-02-14T13:10:03" vsk1:puheenvuoroJNro="1">
+                <vsk:KohtaSisalto>
+                  <sis:KappaleKooste>Arvoisa herra puhemies! Jokaisella on oikeus elämään sekä henkilökohtaiseen vapauteen, koskemattomuuteen ja turvallisuuteen. Ensihoitajat, palomiehet ja pelastuslaitosten sopimushenkilöstö työskentelevät kansalaisten ja yhteiskunnan turvallisuuden puolesta. Valitettavasti he kokevat työssään yhä useammin väkivallan uhkaa tai suoraa väkivaltaa. Ensihoitajista yli 90 prosenttia kertoo kokeneensa työssään uhka- ja väkivaltatilanteita ja joka neljäs oli joutunut pahoinpitelyn kohteeksi. Sopimuspalokuntalaisista 62 prosenttia kertoo oman palokunnan yksikön kohdanneen tai itse henkilökohtaisesti kohdanneensa työssään väkivallan uhkaa.</sis:KappaleKooste>
+                  <sis:KappaleKooste>Näiden ammattilaisten tavoite on auttaminen ja ihmishenkien pelastaminen. Heidän arvokkaan työnsä vaarantaminen on hyökkäys apua tarvitsevia kohtaan, se on hyökkäys auttajia kohtaan, ja se on hyökkäys järjestäytynyttä yhteiskuntaa kohtaan.</sis:KappaleKooste>
+                  <sis:KappaleKooste>Kannatan edustaja Rantasen aloitetta. Olen sen myös allekirjoittanut. Muutos on tehtävä esitetyssä muodossaan tai osana laajempaa lainsäädännön tarkastelua. Vastaava muutos on tehty monissa muissa maissa. Joka vastustaa tai väkivaltaisesti vastustaa ensihoidollisessa tehtävässä toimivaa, on tuomittava vastaavalla tavalla kuin virkamiehen vastustamisesta tai väkivaltaisesta vastustamisesta on säädetty. — Kiitos.</sis:KappaleKooste>
+                </vsk:KohtaSisalto>
+              </vsk:PuheenvuoroOsa>
+            </vsk:PuheenvuoroToimenpide>
+            <vsk:PuheenvuoroToimenpide met1:muuTunnus="401605" vsk1:puheenvuoroAloitusHetki="2020-02-14T13:11:54" vsk1:puheenvuoroLuokitusKoodi="T">
+              <vsk1:AjankohtaTeksti>13.11</vsk1:AjankohtaTeksti>
+              <met:Toimija>
+                <org:Henkilo met1:muuTunnus="1118">
+                  <org1:EtuNimi>Kari</org1:EtuNimi>
+                  <org1:SukuNimi>Tolvanen</org1:SukuNimi>
+                  <org1:LisatietoTeksti>kok</org1:LisatietoTeksti>
+                </org:Henkilo>
+              </met:Toimija>
+              <vsk:PuheenvuoroOsa met1:asiakirjatyyppiNimi="Puheenvuoro" met1:kieliKoodi="fi" met1:muuTunnus="253602" met1:tilaKoodi="Hyväksytty" met1:versioTeksti="1.1" vsk1:puheenvuoroAloitusHetki="2020-02-14T13:11:54" vsk1:puheenvuoroJNro="1" vsk1:puheenvuoroLopetusHetki="2020-02-14T13:14:17">
+                <vsk:KohtaSisalto>
+                  <sis:KappaleKooste>Arvoisa herra puhemies! Tämä aloite on erittäin kannatettava, ja itse asiassa viime kaudella tätä yritettiin ja yritin jo saada eteenpäin, mutta oikeusministeriön virkamiehet silloin totesivat, että he eivät halua tehdä tällaista pistemäistä lainsäädäntöä vaan hyvin paljon laajempaa. No, ehkä näin on, mutta kyllä tämä asia nyt pitää saada hoidettua kuntoon tällä kaudella.</sis:KappaleKooste>
+                  <sis:KappaleKooste>Itse asiassa 14 vuotta sitten, vuonna 2006, tässä läheisillä VR:n makasiineilla käsittääkseni ensimmäistä kertaa kivitettiin palomiehiä ja pelastajia — toki poliiseja siinä sivussa, mutta myös pelastajia — ja se oli minun mielestäni semmoinen käänteentekevä juttu. Tunnen tapauksen vähän liiankin hyvin. Ja nythän väkivalta kaikkia viranomaisia mutta myös ensihoitajia vastaan on räjähdysmäisesti lisääntynyt, ja se ei ole todellakaan hyväksyttävää, koska he menevät auttamaan, eivät, niin kuin poliisit monasti, käyttämään pakkovaltaa ihmisiä vastaan — pelastajat auttavat.</sis:KappaleKooste>
+                  <sis:KappaleKooste>Ja kriminalisointi on todella tärkeää, se on eräs hyvä ennalta estävä keino. Täytyy muistaa, että se on vain yksi keino, se pitää tehdä. Mutta sen lisäksi, niin kuin edustaja Rantanen täällä sanoi, pitää kiinnittää huomiota työturvallisuusvälineisiin — joihin on kiinnitetty, mutta ei riittävästi — koulutukseen, ihan siihen, miten sijoittaudutaan tehtäväpaikoilla. Pitää opettaa lukemaan asiakkaan sanatonta viestintää, ja sitten kun jotain tapahtuu, pitää jälkihoitokin hoitaa. Tämä on kokonaispaketti, ja tähän pitää suhtautua vakavasti. Tämä lakialoite on yksi keino siihen, ja se on hyvä lähtökohta.</sis:KappaleKooste>
+                  <sis:KappaleKooste>Kaiken kaikkiaan todella toivon — me tiedämme, että yksittäisen kansanedustajan lakialoitteen menestymismahdollisuudet ovat hyvin vähäiset — että hallitus ja oikeusministeri nyt ryhtyvät toimimaan ja tekevät mielellään vaikka tämän pistemäisen uudistuksen nopealla aikataululla ja tekevät sen laajemman uudistuksen sitten paljon myöhemmin, kun se vaatii aikaa. Siellä on lääkäreitä, sosiaaliviranomaisia, opettajia ja monia muita, joiden on hyvä saada tämä sama suoja, mutta ensihoitajat tällä hetkellä ovat niitä, voi sanoa, hädänalaisimpia.</sis:KappaleKooste>
+                </vsk:KohtaSisalto>
+              </vsk:PuheenvuoroOsa>
+            </vsk:PuheenvuoroToimenpide>
+            <vsk:PuheenvuoroToimenpide met1:muuTunnus="401608" vsk1:puheenvuoroAloitusHetki="2020-02-14T13:14:20" vsk1:puheenvuoroLuokitusKoodi="V">
+              <vsk1:AjankohtaTeksti>13.14</vsk1:AjankohtaTeksti>
+              <met:Toimija>
+                <org:Henkilo met1:muuTunnus="1341">
+                  <org1:EtuNimi>Antti</org1:EtuNimi>
+                  <org1:SukuNimi>Kurvinen</org1:SukuNimi>
+                  <org1:LisatietoTeksti>kesk</org1:LisatietoTeksti>
+                </org:Henkilo>
+              </met:Toimija>
+              <vsk1:TarkenneTeksti>(vastauspuheenvuoro)</vsk1:TarkenneTeksti>
+              <vsk:PuheenvuoroOsa met1:asiakirjatyyppiNimi="Puheenvuoro" met1:kieliKoodi="fi" met1:muuTunnus="253603" met1:tilaKoodi="Hyväksytty" met1:versioTeksti="1.1" vsk1:puheenvuoroAloitusHetki="2020-02-14T13:14:20" vsk1:puheenvuoroJNro="1" vsk1:puheenvuoroLopetusHetki="2020-02-14T13:15:22">
+                <vsk:KohtaSisalto>
+                  <sis:KappaleKooste>Arvoisa herra puhemies! Täällä tuli oppositiopuolue kokoomuksesta erittäin asiantunteva ja hyvä puheenvuoro edustaja Tolvaselta, ja ajattelin ikään kuin hallituksen näkökulmasta tätä asiaa kommentoida. </sis:KappaleKooste>
+                  <sis:KappaleKooste>Haluan kiittää edustaja Rantasta aivan erinomaisesta lakialoitteesta. Olen sen ajatuksen kanssa täysin samaa mieltä. Olen jutellut paljon ensihoitajien kanssa ja olen jutellut myös muun hoitohenkilöstön edustajien kanssa ja myös tiedän pelastajien tilanteen, ja on surullista, että meidän yhteiskunta on kehittynyt sellaiseen pisteeseen, että syrjäytyminen ja vääränlainen auktoriteettien mureneminen ja ihmisiä auttavien henkilöitten kunnioituksen mureneminen ovat johtaneet siihen, että väkivallan uhkaa on entistä enemmän hoitotyössä. Oikeusministeri ei tällä hetkellä ole paikalla, mutta voin omasta puolestani todeta [Leena Meri: Hän on lehterillä!] — no niin, mutta hän ei ole nyt aitiossa — että toivon, että oikeusministeri katsoisi tämän lakialoitteen, ja toivon, että hallitus tutkii, voisiko tämän muutoksen tehdä, koska tämä olisi paikallaan ja kuvastaisi yhteiskunnan arvoja näitä ihmisiä kohtaan.</sis:KappaleKooste>
+                </vsk:KohtaSisalto>
+              </vsk:PuheenvuoroOsa>
+            </vsk:PuheenvuoroToimenpide>
+            <vsk:PuheenvuoroToimenpide met1:muuTunnus="401610" vsk1:puheenvuoroAloitusHetki="2020-02-14T13:15:25" vsk1:puheenvuoroLuokitusKoodi="V">
+              <vsk1:AjankohtaTeksti>13.15</vsk1:AjankohtaTeksti>
+              <met:Toimija>
+                <org:Henkilo met1:muuTunnus="1388">
+                  <org1:EtuNimi>Mari</org1:EtuNimi>
+                  <org1:SukuNimi>Rantanen</org1:SukuNimi>
+                  <org1:LisatietoTeksti>ps</org1:LisatietoTeksti>
+                </org:Henkilo>
+              </met:Toimija>
+              <vsk1:TarkenneTeksti>(vastauspuheenvuoro)</vsk1:TarkenneTeksti>
+              <vsk:PuheenvuoroOsa met1:asiakirjatyyppiNimi="Puheenvuoro" met1:kieliKoodi="fi" met1:muuTunnus="253604" met1:tilaKoodi="Hyväksytty" met1:versioTeksti="1.1" vsk1:puheenvuoroAloitusHetki="2020-02-14T13:15:25" vsk1:puheenvuoroJNro="1" vsk1:puheenvuoroLopetusHetki="2020-02-14T13:16:09">
+                <vsk:KohtaSisalto>
+                  <sis:KappaleKooste>Arvoisa puhemies! On hienoa, että tästä salista löytyy kannatusta tälle asialle, mutta kuten tässä on todettu omassa puheenvuorossani sekä edustaja Tolvasenkin puheenvuorossa, tämä lakiasia on yksi, mikä pitäisi saada nopeasti maaliin, mutta toinen olisi se — ihan vakavasti vetoan hallituspuolueisiin — että sisäministeriö ja sosiaali- ja terveysministeriö perustaisivat kansallisen hankkeen, jossa käydään läpi suojavarusteasiat, tilastointiasiat ja koulutusasiat. Ne ovat erittäin tärkeitä myös tässä ennalta ehkäisevässä työssä. Toivoisin, että viette tätä viestiä omiin ryhmiinne.</sis:KappaleKooste>
+                </vsk:KohtaSisalto>
+              </vsk:PuheenvuoroOsa>
+            </vsk:PuheenvuoroToimenpide>
+            <vsk:PuheenvuoroToimenpide met1:muuTunnus="401611" vsk1:puheenvuoroAloitusHetki="2020-02-14T13:16:09" vsk1:puheenvuoroLuokitusKoodi="V">
+              <vsk1:AjankohtaTeksti>13.16</vsk1:AjankohtaTeksti>
+              <met:Toimija>
+                <org:Henkilo met1:muuTunnus="1467">
+                  <org1:EtuNimi>Petri</org1:EtuNimi>
+                  <org1:SukuNimi>Huru</org1:SukuNimi>
+                  <org1:LisatietoTeksti>ps</org1:LisatietoTeksti>
+                </org:Henkilo>
+              </met:Toimija>
+              <vsk1:TarkenneTeksti>(vastauspuheenvuoro)</vsk1:TarkenneTeksti>
+              <vsk:PuheenvuoroOsa met1:asiakirjatyyppiNimi="Puheenvuoro" met1:kieliKoodi="fi" met1:muuTunnus="253605" met1:tilaKoodi="Hyväksytty" met1:versioTeksti="1.1" vsk1:puheenvuoroAloitusHetki="2020-02-14T13:16:09" vsk1:puheenvuoroJNro="1" vsk1:puheenvuoroLopetusHetki="2020-02-14T13:16:51">
+                <vsk:KohtaSisalto>
+                  <sis:KappaleKooste>Arvoisa puhemies! Vielä kun näyttää oikeusministeri ehkä olevan kuulolla, haluan todellakin tuoda tähän ammattilaisen näkökantaa, mihin edustaja Kurvinen viittasi. Olen 32 vuotta toiminut alalla palomiehenä ja sairaankuljettajana. Maailma todellakin on muuttunut. Jos ennen vanhaan niin sanotut kunnon juopot olivat ennalta arvattavia käytökseltään, ovat tämän päivän erinäköiset aineidenkäyttäjät todellakin ennalta arvaamattomia, ja tämän lakialoitteen, mitä on jo aikaisemminkin esitetty, on todellakin suotavaa mennä maaliin asti. — Kiitos.</sis:KappaleKooste>
+                </vsk:KohtaSisalto>
+              </vsk:PuheenvuoroOsa>
+            </vsk:PuheenvuoroToimenpide>
+            <vsk:PuheenvuoroToimenpide met1:muuTunnus="401612" vsk1:puheenvuoroAloitusHetki="2020-02-14T13:17:02" vsk1:puheenvuoroLuokitusKoodi="V">
+              <vsk1:AjankohtaTeksti>13.17</vsk1:AjankohtaTeksti>
+              <met:Toimija>
+                <org:Henkilo met1:muuTunnus="1154">
+                  <org1:EtuNimi>Jari</org1:EtuNimi>
+                  <org1:SukuNimi>Myllykoski</org1:SukuNimi>
+                  <org1:LisatietoTeksti>vas</org1:LisatietoTeksti>
+                </org:Henkilo>
+              </met:Toimija>
+              <vsk1:TarkenneTeksti>(vastauspuheenvuoro)</vsk1:TarkenneTeksti>
+              <vsk:PuheenvuoroOsa met1:asiakirjatyyppiNimi="Puheenvuoro" met1:kieliKoodi="fi" met1:muuTunnus="253606" met1:tilaKoodi="Hyväksytty" met1:versioTeksti="1.1" vsk1:puheenvuoroAloitusHetki="2020-02-14T13:17:02" vsk1:puheenvuoroJNro="1" vsk1:puheenvuoroLopetusHetki="2020-02-14T13:18:06">
+                <vsk:KohtaSisalto>
+                  <sis:KappaleKooste>Arvoisa herra puhemies! Ei voi olla kannattamatta tätä lakialoitetta ja näkemättä sitä tarpeellisena ja nopeassa tahdissa tehtävänä. En ainakaan tule vastaan äänestämään, jos tämä tänne saliin päätyisi mietintövaiheessa — toivottavasti. Vaikka edustamme erilaista poliittista suuntausta, niin tässä kohtaa en usko, että tässä salissa tulee sitä poliittista peliä, ja ainakin minä haluan jo tässä kohtaa pestä käteni siitä. </sis:KappaleKooste>
+                  <sis:KappaleKooste>Toivon, että tämä olisi laajempaa, sillä tiedän henkilöitä, jotka ovat viranomaistoimituksessa pelastamassa lapsia, huostaanottotilanteissa. Niissä on hyvin paljon mahdollinen juuri semmoinen aggressiivinen tilanne. Poliisin puukottamisesta on seuraamuksia, mutta sosiaalityöntekijä, joka on virkatehtävässä, viranomaistehtävässä, on erilaisessa suojassa.</sis:KappaleKooste>
+                </vsk:KohtaSisalto>
+              </vsk:PuheenvuoroOsa>
+            </vsk:PuheenvuoroToimenpide>
+            <vsk:PuheenvuoroToimenpide met1:muuTunnus="401616" vsk1:puheenvuoroAloitusHetki="2020-02-14T13:18:06" vsk1:puheenvuoroLuokitusKoodi="V">
+              <vsk1:AjankohtaTeksti>13.18</vsk1:AjankohtaTeksti>
+              <met:Toimija>
+                <org:Henkilo met1:muuTunnus="1323">
+                  <org1:EtuNimi>Mari-Leena</org1:EtuNimi>
+                  <org1:SukuNimi>Talvitie</org1:SukuNimi>
+                  <org1:LisatietoTeksti>kok</org1:LisatietoTeksti>
+                </org:Henkilo>
+              </met:Toimija>
+              <vsk1:TarkenneTeksti>(vastauspuheenvuoro)</vsk1:TarkenneTeksti>
+              <vsk:PuheenvuoroOsa met1:asiakirjatyyppiNimi="Puheenvuoro" met1:kieliKoodi="fi" met1:muuTunnus="253608" met1:tilaKoodi="Hyväksytty" met1:versioTeksti="1.1" vsk1:puheenvuoroAloitusHetki="2020-02-14T13:18:06" vsk1:puheenvuoroJNro="1" vsk1:puheenvuoroLopetusHetki="2020-02-14T13:19:13">
+                <vsk:KohtaSisalto>
+                  <sis:KappaleKooste>Arvoisa puhemies! Tämä edustaja Rantasen lakialoite on todellakin kannatettava. Sen jatkon ratkaisee käsittely tuolla lakivaliokunnassa, ja toivottavasti lakivaliokunta puheenjohtaja Meren johdolla ottaa sen käsittelyyn. Tietenkin on kyse vain yksittäisestä edustajan lakialoitteesta, mutta kuten tässä jo aikaisemminkin todettiin, vetoan kyllä hallitukseen. Viime kaudella hallintovaliokunnassa näitä asioita sivuttiin ja on useammassa valiokunnassa varmasti sivuttu, ja kuten edustaja Huru ja edustaja Tolvanen toivat esiin, tilanne on muuttunut. Erilaiset ennalta arvaamattomat tilanteet ovat arkipäivää ympäri Suomen, on pelastusoperaatiot hälytysajoneuvolla, lähdetään vanhustentaloon, kerrostaloon tai hyvin erilaisillekin paikoille, puhumattakaan mielenosoituksista ja muista. Toivottavasti lakialoite saa arvoisensa käsittelyn ja saadaan myöskin ripeyttä asioiden eteenpäin viemiseen.</sis:KappaleKooste>
+                  <vsk:PuheenjohtajaRepliikki>
+                    <vsk1:PuheenjohtajaTeksti>Puhemies Matti Vanhanen</vsk1:PuheenjohtajaTeksti>
+                    <sis:KappaleKooste>Vielä vastauspuheenvuoro edustaja Merelle, sen jälkeen puhujalistaan.</sis:KappaleKooste>
+                  </vsk:PuheenjohtajaRepliikki>
+                </vsk:KohtaSisalto>
+              </vsk:PuheenvuoroOsa>
+            </vsk:PuheenvuoroToimenpide>
+            <vsk:PuheenvuoroToimenpide met1:muuTunnus="401617" vsk1:puheenvuoroAloitusHetki="2020-02-14T13:19:13" vsk1:puheenvuoroLuokitusKoodi="V">
+              <vsk1:AjankohtaTeksti>13.19</vsk1:AjankohtaTeksti>
+              <met:Toimija>
+                <org:Henkilo met1:muuTunnus="1349">
+                  <org1:EtuNimi>Leena</org1:EtuNimi>
+                  <org1:SukuNimi>Meri</org1:SukuNimi>
+                  <org1:LisatietoTeksti>ps</org1:LisatietoTeksti>
+                </org:Henkilo>
+              </met:Toimija>
+              <vsk1:TarkenneTeksti>(vastauspuheenvuoro)</vsk1:TarkenneTeksti>
+              <vsk:PuheenvuoroOsa met1:asiakirjatyyppiNimi="Puheenvuoro" met1:kieliKoodi="fi" met1:muuTunnus="253609" met1:tilaKoodi="Hyväksytty" met1:versioTeksti="1.1" vsk1:puheenvuoroJNro="1" vsk1:puheenvuoroLopetusHetki="2020-02-14T13:20:11">
+                <vsk:KohtaSisalto>
+                  <sis:KappaleKooste>Kiitos, arvoisa puhemies! Asia tulee tosiaan meille lakivaliokuntaan. Nyt kun kuuntelen täällä salissa ihmisiä, niin kaikki ylistävät tätä, mutta ihmettelen, että lakialoite on kuitenkin saanut vain 44 allekirjoitusta. Meillähän on eduskunnassa käytäntönä se, että jotta valiokunta ottaisi aloitteen käsittelyyn, niin siinä tulisi olla sadan kansanedustajan allekirjoitus. Toki tästä voi valiokunta myös poiketa. </sis:KappaleKooste>
+                  <sis:KappaleKooste>Mutta nyt oikeastaan ehdotan edustaja Rantaselle, että keräisitte yhtä mieltä olevien allekirjoitukset, jos eivät kaikki ole allekirjoittaneet, kun täälläkin on varmaan 60 ihmistä, niin että pääsemme lakivaliokunnassa välittömästi tämän asian kimppuun ja minullakin on valiokunnan puheenjohtajana selkänoja todeta, että täällä on yli sata nimeä. Ei täällä tunnu kukaan tätä vastustavan, mutta nimiä ei ole löytynyt siinä vaiheessa. Nyt on niiden mahdollisuus allekirjoittaa, joilta puuttuu.</sis:KappaleKooste>
+                  <vsk:PuheenjohtajaRepliikki>
+                    <vsk1:PuheenjohtajaTeksti>Puhemies Matti Vanhanen</vsk1:PuheenjohtajaTeksti>
+                    <sis:KappaleKooste>Takaisin puhujalistaan.</sis:KappaleKooste>
+                  </vsk:PuheenjohtajaRepliikki>
+                </vsk:KohtaSisalto>
+              </vsk:PuheenvuoroOsa>
+            </vsk:PuheenvuoroToimenpide>
+            <vsk:PuheenvuoroToimenpide met1:muuTunnus="401618" vsk1:puheenvuoroAloitusHetki="2020-02-14T13:20:15" vsk1:puheenvuoroLuokitusKoodi="T">
+              <vsk1:AjankohtaTeksti>13.20</vsk1:AjankohtaTeksti>
+              <met:Toimija>
+                <org:Henkilo met1:muuTunnus="1451">
+                  <org1:EtuNimi>Sebastian</org1:EtuNimi>
+                  <org1:SukuNimi>Tynkkynen</org1:SukuNimi>
+                  <org1:LisatietoTeksti>ps</org1:LisatietoTeksti>
+                </org:Henkilo>
+              </met:Toimija>
+              <vsk:PuheenvuoroOsa met1:asiakirjatyyppiNimi="Puheenvuoro" met1:kieliKoodi="fi" met1:muuTunnus="253610" met1:tilaKoodi="Hyväksytty" met1:versioTeksti="1.1" vsk1:puheenvuoroAloitusHetki="2020-02-14T13:20:15" vsk1:puheenvuoroJNro="1" vsk1:puheenvuoroLopetusHetki="2020-02-14T13:22:39">
+                <vsk:KohtaSisalto>
+                  <sis:KappaleKooste>Arvoisa herra puhemies! Meidän täällä eduskunnassa on varmistettava, että ne ihmiset, jotka toimivat terveytemme turvaamiseksi, ovat itsekin turvassa. Me kansanedustajat olemme täällä eduskunnassa työssämme turvassa, paksujen suojamuurien sisällä ja turvamiesten jatkuvassa valvonnassa. Ei meillä ole hätää. Täällä on liiankin helppo unohtaa, mitä ammattilaiset arjessaan kokevat.</sis:KappaleKooste>
+                  <sis:KappaleKooste>Kuvitellaan hetki itsemme ensihoitajan asemaan. Hälytys tulee, ajat kaupungin lähiöön. Rivitalon piha näyttää sotkuiselta. Sinun tehtäväsi on mennä sisään, kun ulos tulee sekavasti käyttäytyvä nuori mies. Sisällä odottaa henkilö, jota tulisi auttaa, mutta hän käyttäytyy aineiden vaikutuksesta selvästi uhkaavasti, vaikka onkin avun tarpeessa. Kuvittele, että autettava on fyysisesti sinua huomattavasti isompi ja voimakkaampi. Sinuun kohdistuu uhka, mutta sinulla on velvollisuus auttaa häntä.</sis:KappaleKooste>
+                  <sis:KappaleKooste>Arvoisa puhemies! Meidän on muutettava lakia niin, että se, joka käyttää tai uhkaa käyttää väkivaltaa ensihoidollisessa tehtävässä toimivaa henkilöä kohtaan, on tuomittava ensihoidollisessa tehtävässä toimivan henkilön väkivaltaisesta vastustamisesta vankeuteen vähintään neljäksi kuukaudeksi ja enintään neljäksi vuodeksi. Tällaisen lakimuutoksen me voimme nyt tehdä perussuomalaisten kansanedustaja Mari Rantasen jättämän lakialoitteen myötä.</sis:KappaleKooste>
+                  <sis:KappaleKooste>Vain kolme päivää sitten Tehy, Suomen Ensihoitoalan Liitto, Suomen Palomiesliitto ja Suomen Sopimuspalokuntien Liitto julkaisivat kannanoton, jossa he antoivat kaikki tukensa tälle lakialoitteelle. He tietävät, mistä puhuvat. He edustavat laaja-alaisesti ensihoidon kenttää. Ymmärrän, että hallituksella on paljon omia tärkeitä hankkeita maailmalla, mutta toivoisin, että näiden ensihoidon ja pelastusalan ammattilaisten hätä otettaisiin tosissaan ja priorisoitaisiin.</sis:KappaleKooste>
+                  <sis:KappaleKooste>Lakivaliokunnan jäsenenä annan tälle lakialoitteelle täyden tukeni.</sis:KappaleKooste>
+                </vsk:KohtaSisalto>
+              </vsk:PuheenvuoroOsa>
+            </vsk:PuheenvuoroToimenpide>
+            <vsk:PuheenvuoroToimenpide met1:muuTunnus="401620" vsk1:puheenvuoroAloitusHetki="2020-02-14T13:22:42" vsk1:puheenvuoroLuokitusKoodi="T">
+              <vsk1:AjankohtaTeksti>13.22</vsk1:AjankohtaTeksti>
+              <met:Toimija>
+                <org:Henkilo met1:muuTunnus="1391">
+                  <org1:EtuNimi>Ari</org1:EtuNimi>
+                  <org1:SukuNimi>Koponen</org1:SukuNimi>
+                  <org1:LisatietoTeksti>ps</org1:LisatietoTeksti>
+                </org:Henkilo>
+              </met:Toimija>
+              <vsk:PuheenvuoroOsa met1:asiakirjatyyppiNimi="Puheenvuoro" met1:kieliKoodi="fi" met1:muuTunnus="253612" met1:tilaKoodi="Hyväksytty" met1:versioTeksti="1.1" vsk1:puheenvuoroAloitusHetki="2020-02-14T13:22:42" vsk1:puheenvuoroJNro="1" vsk1:puheenvuoroLopetusHetki="2020-02-14T13:24:26">
+                <vsk:KohtaSisalto>
+                  <sis:KappaleKooste>Arvoisa herra puhemies! Aloitteessa ehdotetaan lisättäväksi rikoslakiin uusi säännös ensihoidollisessa tehtävässä toimivan henkilön väkivaltaisesta vastustamisesta. Suhtaudun erittäin myönteisesti tähän lakialoitteeseen, sillä tämänhetkinen käytäntö asettaa ensihoidollisessa tehtävässä toimivan henkilöstön eriarvoiseen asemaan monen muun julkista tehtävää suorittavan toimijan kanssa. Ensihoitotyötä tekevän pahoinpitelystä rangaistaan tällä hetkellä vain pahoinpitelyrikoksena. </sis:KappaleKooste>
+                  <sis:KappaleKooste>Väkivallan ja uhkan kokemuksesta ensihoidon kentältä on kerätty runsaasti tietoa järjestöjen ja pelastuslaitosten toimesta. Suomen Ensihoitoalan Liitto toteutti vuonna 2018 kyselyn, johon vastanneista ensihoitajista yli 90 prosenttia kertoi kokeneensa työssään uhka‑ ja väkivaltatilanteita ja joka neljäs oli joutunut pahoinpitelyn kohteeksi. Näiden tilanteiden kasvu on ollut vuosittain noin 15—25 prosenttia. </sis:KappaleKooste>
+                  <sis:KappaleKooste>Eri järjestöt ovat ajaneet rikoslakiin muutosta jo usean vuoden ajan. Ensihoidon tehtävissä autetaan avuntarpeessa olevia hädänalaisia ihmisiä ja pelastetaan henkiä. On kohtuutonta, että heidän joutuessaan uhkailun ja väkivallan kohteeksi seurauksena on ainoastaan sakkoja. </sis:KappaleKooste>
+                  <sis:KappaleKooste>Arvoisa herra puhemies! Rikoslakia muuttamalla meillä on mahdollisuus parantaa arvokasta työtä tekevien ensihoitajien turvallisuutta. Juuri työn arvostuksen kannalta olisi tärkeää, että ensihoitajiin kohdistuvasta väkivallasta annettavat rangaistukset saataisiin samalle viivalle virkamiehen väkivaltaisen vastustamisen kanssa. </sis:KappaleKooste>
+                  <vsk:PuheenjohtajaRepliikki>
+                    <vsk1:PuheenjohtajaTeksti>Puhemies Matti Vanhanen</vsk1:PuheenjohtajaTeksti>
+                    <sis:KappaleKooste>Myönnän vielä puheenvuoron edustaja Pelkoselle.</sis:KappaleKooste>
+                  </vsk:PuheenjohtajaRepliikki>
+                </vsk:KohtaSisalto>
+              </vsk:PuheenvuoroOsa>
+            </vsk:PuheenvuoroToimenpide>
+            <vsk:PuheenvuoroToimenpide met1:muuTunnus="401624" vsk1:puheenvuoroAloitusHetki="2020-02-14T13:24:28" vsk1:puheenvuoroLuokitusKoodi="T">
+              <vsk1:AjankohtaTeksti>13.24</vsk1:AjankohtaTeksti>
+              <met:Toimija>
+                <org:Henkilo met1:muuTunnus="1098">
+                  <org1:EtuNimi>Jaana</org1:EtuNimi>
+                  <org1:SukuNimi>Pelkonen</org1:SukuNimi>
+                  <org1:LisatietoTeksti>kok</org1:LisatietoTeksti>
+                </org:Henkilo>
+              </met:Toimija>
+              <vsk:PuheenvuoroOsa met1:asiakirjatyyppiNimi="Puheenvuoro" met1:kieliKoodi="fi" met1:muuTunnus="253613" met1:tilaKoodi="Hyväksytty" met1:versioTeksti="1.1" vsk1:puheenvuoroAloitusHetki="2020-02-14T13:24:28" vsk1:puheenvuoroJNro="1">
+                <vsk:KohtaSisalto>
+                  <sis:KappaleKooste>Arvoisa herra puhemies! Salissa on kuultu monia erittäin hyviä ja tärkeitä puheenvuoroja, ja lämpimät kiitokset edustaja Rantaselle tästä tärkeästä aloitteesta. </sis:KappaleKooste>
+                  <sis:KappaleKooste>Ensihoidon ammattilaiset ovat niitä arkienkeleitä, jotka pitävät meidät tiukan paikan tullen hengissä. He eivät saa joutua tekemään vaativaa työtänsä peläten oman henkensä puolesta. Tilanne, jossa heidän pitää pystyä tekemään sekunneissa toisen ihmisen elämää suojaavia päätöksiä ja keskittyä tekemään työnsä hyvin, ei saa olla tilanne, jossa heidän pitää pelätä, mitä heille itselleen tulee tapahtumaan. Rikoslakia muuttamalla meillä on mahdollisuus antaa signaali, että me arvostamme ensihoitohenkilöstön arvokasta työtä ja haluamme muuttaa heihin kohdistuneen lisääntyneen väkivallan kulttuurin pysyvästi kunnioittavaksi kulttuuriksi. Tähän asiaan on todellakin korkea aika saada muutos. </sis:KappaleKooste>
+                </vsk:KohtaSisalto>
+              </vsk:PuheenvuoroOsa>
+            </vsk:PuheenvuoroToimenpide>
+          </vsk:KeskusteluToimenpide>
+          <vsk:Toimenpide met1:muuTunnus="401625" vsk1:fraasiTunnus="P_KESK_40LK">
+            <vsk:KohtaSisalto>
+              <sis:KappaleKooste>Keskustelu ja asian käsittely keskeytettiin.</sis:KappaleKooste>
+            </vsk:KohtaSisalto>
+          </vsk:Toimenpide>
+        </vsk:Asiakohta>
+        <vsk:Asiakohta met1:eduskuntaTunnus="HE 106/2019 vp" met1:muuTunnus="96575" vsk1:kasittelyvaiheKoodi="VKPP" vsk1:kohtaJNro="8" vsk1:kohtatyyppiKoodi="Asiakohta" vsk1:yleinenKasittelyvaiheKoodi="VKPP">
+          <vsk1:KohtaNumero>4</vsk1:KohtaNumero>
+          <vsk:KohtaNimeke>
+            <met1:NimekeTeksti>Hallituksen esitys eduskunnalle Amerikan yhdysvaltojen,  Euroopan  unionin  ja  sen jäsenvaltioiden, Islannin sekä Norjan kuningaskunnan välisen  lentoliikennesopimuksen sekä lentoliikennesopimuksen  soveltamisesta  tehdyn  lisäsopimuksen  hyväksymiseksi   ja  voimaansaattamiseksi</met1:NimekeTeksti>
+          </vsk:KohtaNimeke>
+          <vsk:KohtaAsia vsk1:hyperlinkkiKoodi="HE 106/2019 vp">
+            <met1:AsiakirjatyyppiNimi>Hallituksen esitys</met1:AsiakirjatyyppiNimi>
+            <met1:EduskuntaTunnus>HE 106/2019 vp</met1:EduskuntaTunnus>
+          </vsk:KohtaAsia>
+          <vsk:KohtaAsiakirja>
+            <met1:AsiakirjatyyppiNimi>Valiokunnan mietintö</met1:AsiakirjatyyppiNimi>
+            <met1:EduskuntaTunnus>LiVM 1/2020 vp</met1:EduskuntaTunnus>
+          </vsk:KohtaAsiakirja>
+          <vsk:PaatoksentekoToimenpide met1:muuTunnus="401201" vsk1:fraasiTunnus="P_VKPP_7">
+            <sis1:ValiotsikkoTeksti>Mietinnön pöydällepano</sis1:ValiotsikkoTeksti>
+            <vsk:KohtaSisalto>
+              <sis:KappaleKooste>Mietintö pantiin pöydälle 18.2.2020 pidettävään täysistuntoon.</sis:KappaleKooste>
+            </vsk:KohtaSisalto>
+          </vsk:PaatoksentekoToimenpide>
+        </vsk:Asiakohta>
+        <vsk:Asiakohta met1:eduskuntaTunnus="HE 101/2019 vp" met1:muuTunnus="96631" vsk1:kasittelyvaiheKoodi="VKPP" vsk1:kohtaJNro="9" vsk1:kohtatyyppiKoodi="Asiakohta" vsk1:yleinenKasittelyvaiheKoodi="VKPP">
+          <vsk1:KohtaNumero>5</vsk1:KohtaNumero>
+          <vsk:KohtaNimeke>
+            <met1:NimekeTeksti>Hallituksen esitys eduskunnalle laeiksi ampuma-aselain muuttamisesta annetun lain voimaantulosäännöksen muuttamisesta annetun lain kumoamisesta, ampuma-aselain muuttamisesta, ampuma-aselain muuttamisesta annetun  lain voimaantulosäännöksen muuttamisesta sekä ampumaratalain 2 §:n muuttamisesta </met1:NimekeTeksti>
+          </vsk:KohtaNimeke>
+          <vsk:KohtaAsia vsk1:hyperlinkkiKoodi="HE 101/2019 vp">
+            <met1:AsiakirjatyyppiNimi>Hallituksen esitys</met1:AsiakirjatyyppiNimi>
+            <met1:EduskuntaTunnus>HE 101/2019 vp</met1:EduskuntaTunnus>
+          </vsk:KohtaAsia>
+          <vsk:KohtaAsiakirja>
+            <met1:AsiakirjatyyppiNimi>Valiokunnan mietintö</met1:AsiakirjatyyppiNimi>
+            <met1:EduskuntaTunnus>HaVM 2/2020 vp</met1:EduskuntaTunnus>
+          </vsk:KohtaAsiakirja>
+          <vsk:PaatoksentekoToimenpide met1:muuTunnus="401581" vsk1:fraasiTunnus="P_VKPP_1">
+            <sis1:ValiotsikkoTeksti>Mietinnön pöydällepano</sis1:ValiotsikkoTeksti>
+            <vsk:KohtaSisalto>
+              <sis:KappaleKooste>Mietintö pantiin pöydälle 18.2.2020 pidettävään täysistuntoon.</sis:KappaleKooste>
+            </vsk:KohtaSisalto>
+          </vsk:PaatoksentekoToimenpide>
+        </vsk:Asiakohta>
+        <vsk:MuuAsiakohta met1:muuTunnus="92580" vsk1:kasittelyvaiheKoodi="KOKSEU" vsk1:kohtaJNro="10" vsk1:kohtatyyppiKoodi="Asiakohta" vsk1:yleinenKasittelyvaiheKoodi="KOKOUS">
+          <vsk1:KohtaNumero>6</vsk1:KohtaNumero>
+          <sis1:OtsikkoTeksti>Seuraava täysistunto</sis1:OtsikkoTeksti>
+          <vsk:Toimenpide met1:muuTunnus="390387" vsk1:fraasiTunnus="K_110">
+            <vsk:KohtaSisalto>
+              <sis:KappaleKooste>Eduskunnan seuraava täysistunto on tiistaina 18.2.2020 klo 14.00. Täysistunto lopetettiin klo 13.25.</sis:KappaleKooste>
+            </vsk:KohtaSisalto>
+          </vsk:Toimenpide>
+        </vsk:MuuAsiakohta>
+        <asi:AllekirjoitusOsa>
+          <asi1:JohdantoTeksti>Pöytäkirjan vakuudeksi:</asi1:JohdantoTeksti>
+          <asi:Allekirjoittaja>
+            <org:Henkilo>
+              <org1:EtuNimi>Maija-Leena</org1:EtuNimi>
+              <org1:SukuNimi>Paavola</org1:SukuNimi>
+            </org:Henkilo>
+          </asi:Allekirjoittaja>
+        </asi:AllekirjoitusOsa>
+      </ptk:Poytakirja>
+    </RakenneAsiakirja>
+  </SiirtoAsiakirja>
+  <SiirtoTiedosto xmlns="http://www.eduskunta.fi/skeemat/siirtokooste/2011/05/17">
+    <Document xmlns="http://www.arkisto.fi/skeemat/sahke2/2011/01/31_vnk">
+      <NativeId>{48DE7CCE-57C5-C09B-860D-73E169500000}</NativeId>
+      <UseType>Julkaisu</UseType>
+      <File>
+        <Name>48DE7CCE-57C5-C09B-860D-73E169500000.pdf</Name>
+        <Path>sftp://intpurnukka.eduskunta.fi:22/home/vaskijul/liitteet/tojulkvp/48DE7CCE-57C5-C09B-860D-73E169500000.pdf</Path>
+      </File>
+      <Format>
+        <Name>application/pdf</Name>
+        <Version/>
+      </Format>
+      <HashAlgorithm>MD5</HashAlgorithm>
+      <HashValue>5f937553260c71dae3a34eebf7a86beb</HashValue>
+    </Document>
+  </SiirtoTiedosto>
+</ns11:Siirto>
