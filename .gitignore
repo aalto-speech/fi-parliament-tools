@@ -12,6 +12,7 @@ README.Aalto
 /.vscode/
 /dist/
 /docs/_build/
+/generated/
 /logs/
 /src/*.egg-info/
 __pycache__/
