@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-# coding=utf-8
 """Test speaker and chairman statement classes."""
 from dataclasses import asdict
 from typing import Dict

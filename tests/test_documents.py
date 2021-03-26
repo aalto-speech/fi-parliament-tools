@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-# coding=utf-8
 """Test post-2015 session parsing."""
 from dataclasses import asdict
 from typing import Any

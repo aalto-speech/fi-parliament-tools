@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-# coding=utf-8
 """Parsers for handling different parliament documents published after 2015."""
 import json
 import pathlib

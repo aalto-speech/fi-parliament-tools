@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-# coding=utf-8
 """Command line client for preprocessing Finnish parliament transcripts."""
 import json
 from logging import Logger

@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-# coding=utf-8
 """Several dataclasses for storing all transcript related data.
 
 Statements are split into two varietes, embedded and speaker statements. Embedded statement appears

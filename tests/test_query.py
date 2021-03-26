@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-# coding=utf-8
 """Test queries to the parliament open data API."""
 from typing import Callable
 from unittest.mock import MagicMock

@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-# coding=utf-8
 """Command line client for downloading Finnish parliament data."""
 import pathlib
 import shutil
