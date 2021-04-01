@@ -24,6 +24,7 @@ jobs:
 
     env:
       NOXSESSION: ${{ matrix.session }}
+      PYTHONUTF8: 1
 
     steps:
       - name: Check out the repository
