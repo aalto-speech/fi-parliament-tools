@@ -8,7 +8,6 @@ from typing import Optional
 from typing import Tuple
 from typing import Union
 
-import py
 from lxml import etree
 
 from fi_parliament_tools.transcriptParser.data_structures import EmbeddedStatement
@@ -269,7 +268,7 @@ class Session:
             [start_time] = self.xml_transcript.xpath(". /@*[local-name() = 'kokousAloitusHetki']")
         return start_time
 
-    def parse_to_json(self, path: Union[str, pathlib.Path, py.path.local]) -> None:
+    def parse_to_json(self, path: Union[str, pathlib.Path]) -> None:
         """Parse the session transcript into a JSON file defined in the path.
 
         Args:

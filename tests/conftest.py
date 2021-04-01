@@ -36,7 +36,7 @@ def json_test_data(request: SubRequest) -> Any:
     Yields:
         list: lines of the csv file
     """
-    input_json = open(request.param, "r", newline="")
+    input_json = open(request.param, "r", encoding="utf-8", newline="")
     yield json.load(input_json)
     input_json.close()
 

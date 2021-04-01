@@ -71,7 +71,8 @@ def read_xml_string() -> Callable[[int, int, str], str]:
     """Read an XML file to a string. Subsection string needs to include a prepending '-'."""
 
     def _read_xml_string(number: int, year: int, subsection: str) -> str:
-        with open(f"tests/data/xmls/session-{number:03}-{year}{subsection}.xml", "r") as infile:
+        xmlfile = f"tests/data/xmls/session-{number:03}-{year}{subsection}.xml"
+        with open(xmlfile, "r", encoding="utf-8") as infile:
             lines = infile.readlines()
             return " ".join([line.strip() for line in lines])
 

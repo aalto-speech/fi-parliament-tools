@@ -15,7 +15,6 @@ from typing import Tuple
 from unittest import mock
 from unittest.mock import MagicMock
 
-import py
 import pytest
 from _pytest.fixtures import SubRequest
 from click.testing import CliRunner
@@ -55,15 +54,17 @@ def logger() -> Logger:
 
 
 @pytest.fixture
-def tmpfile(tmpdir: py.path.local) -> py.path.local:
+def tmpfile(tmp_path: Path) -> Path:
     """Create a file in the tmp directory."""
-    return tmpdir.join("tmp_output.txt")
+    return tmp_path / "tmp_output.txt"
 
 
 @pytest.fixture
 def transcript() -> Any:
     """Read the dummy transcript from a json."""
-    input_json = open("tests/data/jsons/preprocessing_test_sample.json", "r", newline="")
+    input_json = open(
+        "tests/data/jsons/preprocessing_test_sample.json", "r", encoding="utf-8", newline=""
+    )
     yield json.load(input_json, object_hook=preprocessing.decode_transcript)
     input_json.close()
 
@@ -72,7 +73,7 @@ def transcript() -> Any:
 def mock_downloads_requests_get(mocker: MockerFixture) -> MagicMock:
     """Mock returned jsons of the requests.get calls in downloads module."""
     mock: MagicMock = mocker.patch("fi_parliament_tools.downloads.requests.get")
-    with open("tests/data/jsons/video_query.json", "r") as infile:
+    with open("tests/data/jsons/video_query.json", "r", encoding="utf-8") as infile:
         mock.return_value.__enter__.return_value.json.return_value = json.load(infile)
     return mock
 
@@ -141,13 +142,13 @@ def test_preprocessor(runner: CliRunner) -> None:
     workdir = os.getcwd()
     with runner.isolated_filesystem():
         transcript_file = Path(f"{workdir}/tests/data/transcripts_for_preprocessing_tests.list")
-        for json_file in transcript_file.read_text().splitlines():
+        for json_file in transcript_file.read_text("utf-8").splitlines():
             shutil.copy(f"{workdir}/{json_file}", ".")
 
         Path("recipes").mkdir(parents=True, exist_ok=True)
         shutil.copy(f"{workdir}/recipes/words_elative.txt", "recipes/words_elative.txt")
 
-        with open("transcript.list", "w") as outfile:
+        with open("transcript.list", "w", encoding="utf-8") as outfile:
             for transcript in glob.glob("*.json"):
                 outfile.write(transcript + "\n")
 
@@ -164,15 +165,14 @@ def test_preprocessor(runner: CliRunner) -> None:
         assert "Found 5 transcripts in file list, proceed to preprocessing." in result.output
         assert "Finished successfully!" in result.output
         for text in glob.glob("*.text"):
-            with open(text, "r") as outf, open(f"{workdir}/tests/data/jsons/{text}", "r") as truef:
+            with open(text, "r", encoding="utf-8") as outf, open(
+                f"{workdir}/tests/data/jsons/{text}", "r", encoding="utf-8"
+            ) as truef:
                 assert outf.read() + "\n" == truef.read()
 
 
 def test_preprocessor_unaccepted_chars_capture(
-    load_recipe: Callable[[str], Any],
-    transcript: Transcript,
-    logger: logging.Logger,
-    tmpfile: py.path.local,
+    load_recipe: Callable[[str], Any], transcript: Transcript, logger: logging.Logger, tmpfile: Path
 ) -> None:
     """Ensure UnacceptedCharsError is captured, logged and recovered from."""
     errors: List[str] = []
@@ -185,10 +185,7 @@ def test_preprocessor_unaccepted_chars_capture(
 
 
 def test_preprocessor_exception(
-    load_recipe: Callable[[str], Any],
-    transcript: Transcript,
-    logger: logging.Logger,
-    tmpfile: py.path.local,
+    load_recipe: Callable[[str], Any], transcript: Transcript, logger: logging.Logger, tmpfile: Path
 ) -> None:
     """Ensure Exception is captured, logged and recovered from."""
     errors: List[str] = []
