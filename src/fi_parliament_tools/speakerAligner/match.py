@@ -58,4 +58,22 @@ def load_to_dataframe(filename: str) -> pd.DataFrame:
     )
     df["session_start"] = df["seg_start"] + df["word_start"]
     df.drop(columns=["session", "ch", "prob", "tmpA", "tmpB"], inplace=True)
+    check_missing_segments(df)
     return df
+
+
+def check_missing_segments(df: pd.DataFrame) -> None:
+    """Check that first segment starts from 0 and that there are no missing segments.
+
+    The segmentation script splits each audio into equally long pieces (except for the last one).
+    Therefore the distance to the start of the next item in the frame should be either 0 (same
+    segment) or the length of the segments (adjacent segments).
+
+    Args:
+        df (pd.DataFrame): the dataframe to check
+    """
+    assert df.seg_start.loc[0] == 0.0
+    diffs = df.seg_start - df.seg_start.shift(1, fill_value=0.0)
+    unique_diffs = diffs.unique()
+    assert len(unique_diffs) <= 2
+    assert 0.0 in unique_diffs

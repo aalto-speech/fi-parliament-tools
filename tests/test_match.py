@@ -23,9 +23,17 @@ def test_split_segment_id(
     assert word_index == true_word_index
 
 
-def test_read_table() -> None:
+@pytest.mark.parametrize(
+    "filename",
+    [
+        "generated/realign_tmp/05h/session-129-2016_ctm_edits.segmented",
+        "generated/realign_tmp/02h/session-064-2020_ctm_edits.segmented",
+        "generated/realign_tmp/15h/session-144-2017_ctm_edits.segmented",
+    ],
+)
+def test_read_table(filename: str) -> None:
     """Perform a surface level check that a ctm_edits.segmented file is correctly loaded."""
-    df = match.load_to_dataframe("generated/realign_tmp/05h/session-129-2016_ctm_edits.segmented")
+    df = match.load_to_dataframe(filename)
     assert list(df.columns) == [
         "word_start",
         "word_duration",
@@ -41,5 +49,4 @@ def test_read_table() -> None:
         "session_start",
     ]
     assert df.isna().sum().sum() == 0
-    assert list(df.taint.unique()) == ["", "tainted", "do-not-include-in-text"]
-    assert list(df.edit.unique()) == ["ins", "fix", "sil", "cor", "del", "sub"]
+    assert set(df.edit.unique()) == set(["ins", "fix", "sil", "cor", "del", "sub"])
