@@ -21,31 +21,32 @@ requests = "^2.25.1"
 pandas = "^1.2.3"
 aalto-asr-preprocessor = "^2021.3.10"
 toml = "^0.10.2"
+py = "^1.10.0"
 
 [tool.poetry.dev-dependencies]
-pytest = "^6.2.2"
-coverage = {extras = ["toml"], version = "^5.4"}
-safety = "^1.10.3"
-mypy = "^0.800"
-typeguard = "^2.10.0"
-xdoctest = {extras = ["colors"], version = "^0.15.3"}
-sphinx = "^3.4.3"
-sphinx-autobuild = "^2020.9.1"
-pre-commit = "^2.10.0"
-flake8 = "^3.8.4"
 black = "^20.8b1"
+coverage = {extras = ["toml"], version = "^5.4"}
+darglint = "^1.5.8"
+flake8 = "^3.8.4"
 flake8-bandit = "^2.1.2"
 flake8-bugbear = "^20.11.1"
 flake8-docstrings = "^1.5.0"
 flake8-rst-docstrings = "^0.0.14"
+mypy = "^0.800"
 pep8-naming = "^0.11.1"
-darglint = "^1.5.8"
-reorder-python-imports = "^2.3.6"
+pre-commit = "^2.10.0"
 pre-commit-hooks = "^3.4.0"
-sphinx-rtd-theme = "^0.5.1"
-sphinx-click = "^2.5.0"
 Pygments = "^2.7.4"
+pytest = "^6.2.2"
 pytest-mock = "^3.5.1"
+reorder-python-imports = "^2.3.6"
+safety = "^1.10.3"
+sphinx = "^3.4.3"
+sphinx-autobuild = "^2020.9.1"
+sphinx-click = "^2.5.0"
+sphinx-rtd-theme = "^0.5.1"
+typeguard = "^2.10.0"
+xdoctest = {extras = ["colors"], version = "^0.15.3"}
 
 [tool.poetry.scripts]
 fi-parliament-tools = "fi_parliament_tools.__main__:main"
@@ -64,3 +65,9 @@ fail_under = 100
 [build-system]
 requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+addopts = "-ra -q"
+testpaths = [
+    "tests",
+]
