@@ -29,7 +29,7 @@ def setup_logger(logfile: str) -> logging.Logger:
     log_path = f"logs/{logfile}"
     Path(log_path).parent.mkdir(parents=True, exist_ok=True)
 
-    file_handler = logging.FileHandler(log_path)
+    file_handler = logging.FileHandler(log_path, encoding="utf-8")
     file_handler.setLevel(logging.DEBUG)
     file_handler.setFormatter(formatter)
     log.addHandler(file_handler)
@@ -137,7 +137,7 @@ def download(
 
 
 @main.command()
-@click.argument("transcript-file", type=click.File())
+@click.argument("transcript-file", type=click.File(encoding="utf-8"))
 @click.argument("recipe-file", type=click.Path(exists=True))
 def preprocess(transcript_file: TextIO, recipe_file: str) -> None:
     """Preprocessing parliament transcripts listed in TRANSCRIPT_FILE using RECIPE_FILE."""

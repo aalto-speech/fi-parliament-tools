@@ -34,11 +34,13 @@ def apply_recipe(recipe: Any, transcripts: List[str], log: Logger, errors: List[
     with alive_bar(len(transcripts)) as bar:
         for transcript_path in transcripts:
             input_path = Path(transcript_path)
-            with input_path.open(mode="r", newline="") as infile:
+            with input_path.open(mode="r", encoding="utf-8", newline="") as infile:
                 transcript = json.load(infile, object_hook=decode_transcript)
             t = input_path.with_suffix(".text")
             w = input_path.with_suffix(".words")
-            with t.open("w", newline="") as textfile, w.open("w", newline="") as wordfile:
+            with t.open("w", encoding="utf-8", newline="") as textfile, w.open(
+                "w", encoding="utf-8", newline=""
+            ) as wordfile:
                 bytecount = textfile.write(input_path.stem)
                 unique_words = preprocess_transcript(recipe, transcript, textfile, log, errors)
                 if textfile.tell() == bytecount:
