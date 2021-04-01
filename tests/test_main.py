@@ -15,7 +15,6 @@ from typing import Tuple
 from unittest import mock
 from unittest.mock import MagicMock
 
-import py
 import pytest
 from _pytest.fixtures import SubRequest
 from click.testing import CliRunner
@@ -55,9 +54,9 @@ def logger() -> Logger:
 
 
 @pytest.fixture
-def tmpfile(tmpdir: py.path.local) -> py.path.local:
+def tmpfile(tmp_path: Path) -> Path:
     """Create a file in the tmp directory."""
-    return tmpdir.join("tmp_output.txt")
+    return tmp_path / "tmp_output.txt"
 
 
 @pytest.fixture
@@ -173,10 +172,7 @@ def test_preprocessor(runner: CliRunner) -> None:
 
 
 def test_preprocessor_unaccepted_chars_capture(
-    load_recipe: Callable[[str], Any],
-    transcript: Transcript,
-    logger: logging.Logger,
-    tmpfile: py.path.local,
+    load_recipe: Callable[[str], Any], transcript: Transcript, logger: logging.Logger, tmpfile: Path
 ) -> None:
     """Ensure UnacceptedCharsError is captured, logged and recovered from."""
     errors: List[str] = []
@@ -189,10 +185,7 @@ def test_preprocessor_unaccepted_chars_capture(
 
 
 def test_preprocessor_exception(
-    load_recipe: Callable[[str], Any],
-    transcript: Transcript,
-    logger: logging.Logger,
-    tmpfile: py.path.local,
+    load_recipe: Callable[[str], Any], transcript: Transcript, logger: logging.Logger, tmpfile: Path
 ) -> None:
     """Ensure Exception is captured, logged and recovered from."""
     errors: List[str] = []
