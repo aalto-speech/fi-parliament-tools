@@ -63,7 +63,9 @@ def tmpfile(tmpdir: py.path.local) -> py.path.local:
 @pytest.fixture
 def transcript() -> Any:
     """Read the dummy transcript from a json."""
-    input_json = open("tests/data/jsons/preprocessing_test_sample.json", "r", newline="")
+    input_json = open(
+        "tests/data/jsons/preprocessing_test_sample.json", "r", encoding="utf-8", newline=""
+    )
     yield json.load(input_json, object_hook=preprocessing.decode_transcript)
     input_json.close()
 
@@ -72,7 +74,7 @@ def transcript() -> Any:
 def mock_downloads_requests_get(mocker: MockerFixture) -> MagicMock:
     """Mock returned jsons of the requests.get calls in downloads module."""
     mock: MagicMock = mocker.patch("fi_parliament_tools.downloads.requests.get")
-    with open("tests/data/jsons/video_query.json", "r") as infile:
+    with open("tests/data/jsons/video_query.json", "r", encoding="utf-8") as infile:
         mock.return_value.__enter__.return_value.json.return_value = json.load(infile)
     return mock
 
@@ -147,7 +149,7 @@ def test_preprocessor(runner: CliRunner) -> None:
         Path("recipes").mkdir(parents=True, exist_ok=True)
         shutil.copy(f"{workdir}/recipes/words_elative.txt", "recipes/words_elative.txt")
 
-        with open("transcript.list", "w") as outfile:
+        with open("transcript.list", "w", encoding="utf-8") as outfile:
             for transcript in glob.glob("*.json"):
                 outfile.write(transcript + "\n")
 
@@ -164,7 +166,9 @@ def test_preprocessor(runner: CliRunner) -> None:
         assert "Found 5 transcripts in file list, proceed to preprocessing." in result.output
         assert "Finished successfully!" in result.output
         for text in glob.glob("*.text"):
-            with open(text, "r") as outf, open(f"{workdir}/tests/data/jsons/{text}", "r") as truef:
+            with open(text, "r", encoding="utf-8") as outf, open(
+                f"{workdir}/tests/data/jsons/{text}", "r", encoding="utf-8"
+            ) as truef:
                 assert outf.read() + "\n" == truef.read()
 
 
