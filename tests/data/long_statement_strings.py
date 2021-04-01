@@ -225,6 +225,6 @@ def interpellation_4_2017_text() -> str:
     Returns:
         str: full interpellation statement as one very long string
     """
-    with open("tests/data/interpellation_4_2017_text.txt", "r") as infile:
+    with open("tests/data/interpellation_4_2017_text.txt", "r", encoding="utf-8") as infile:
         interpellation_text = infile.read().replace("\n", " ")
     return interpellation_text.strip()

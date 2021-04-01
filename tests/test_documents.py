@@ -2,13 +2,13 @@
 # coding=utf-8
 """Test post-2015 session parsing."""
 from dataclasses import asdict
+from pathlib import Path
 from typing import Any
 from typing import Collection
 from typing import Dict
 from typing import List
 from typing import Tuple
 
-import py
 import pytest
 
 from fi_parliament_tools.transcriptParser.documents import Session
@@ -216,15 +216,15 @@ def test_embedded_chairman_statement(
     ],
     indirect=["session"],
 )
-def test_parse_to_json(session: Session, true_output_path: str, tmpdir: py.path.local) -> None:
+def test_parse_to_json(session: Session, true_output_path: str, tmp_path: Path) -> None:
     """Test that a session transcript is correctly parsed into a JSON file.
 
     Args:
         session (Session): parliament plenary session to parse
         true_output_path (str): path to the file used as comparison
-        tmpdir (py.path.local): built-in pytest fixture for creating temporary output files
+        tmp_path (Path): built-in pytest fixture for creating temporary output files
     """
-    tmpfile = tmpdir.join("tmp_output_test.json")
+    tmpfile = tmp_path / "tmp_output_test.json"
     session.parse_to_json(tmpfile)
     with open(true_output_path, "r", encoding="utf-8") as true_file:
-        assert tmpfile.read() == true_file.read()
+        assert tmpfile.read_text("utf-8") == true_file.read()

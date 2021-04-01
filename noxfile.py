@@ -27,7 +27,7 @@ def activate_virtualenv_in_precommit_hooks(session: Session) -> None:
     that environment when invoked from git.
 
     Args:
-        session: The Session object.
+        session (Session): The Session object.
     """
     if session.bin is None:
         return
@@ -135,14 +135,6 @@ def coverage(session: Session) -> None:
         session.run("coverage", "combine")
 
     session.run("coverage", *args)
-
-
-@session(python=python_versions)
-def typeguard(session: Session) -> None:
-    """Runtime type checking using Typeguard."""
-    session.install(".")
-    session.install("pytest", "typeguard", "pygments")
-    session.run("pytest", f"--typeguard-packages={package}", *session.posargs)
 
 
 @session(name="docs-build", python="3.8")
