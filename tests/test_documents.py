@@ -227,4 +227,4 @@ def test_parse_to_json(session: Session, true_output_path: str, tmpdir: py.path.
     tmpfile = tmpdir.join("tmp_output_test.json")
     session.parse_to_json(tmpfile)
     with open(true_output_path, "r", encoding="utf-8") as true_file:
-        assert tmpfile.read() == true_file.read()
+        assert tmpfile.read_text("utf-8") == true_file.read()

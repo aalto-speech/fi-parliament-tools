@@ -128,6 +128,7 @@ def download(
         log.warning(f"Encountered {len(errors)} non-breaking error(s).")
         for error_text in errors:
             log.error(error_text)
+
     log.info("Finished successfully!")
 
     for handler in log.handlers:

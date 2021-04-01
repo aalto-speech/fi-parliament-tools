@@ -57,7 +57,7 @@ WORD_INFLECTIONS: List[Tuple[str, str]] = [
     (r"[a-zåäö]{2,}n$", "GEN"),
 ]
 
-ELATIVE_WORDS = Path("recipes/words_elative.txt").read_text().split()
+ELATIVE_WORDS = Path("recipes/words_elative.txt").read_text("utf-8").split()
 
 SECTION_CHAR_MAPPING: Dict[str, Tuple[str, str]] = {
     "": ("pykälä", "JNOM"),

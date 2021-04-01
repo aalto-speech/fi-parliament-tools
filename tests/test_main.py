@@ -143,7 +143,7 @@ def test_preprocessor(runner: CliRunner) -> None:
     workdir = os.getcwd()
     with runner.isolated_filesystem():
         transcript_file = Path(f"{workdir}/tests/data/transcripts_for_preprocessing_tests.list")
-        for json_file in transcript_file.read_text().splitlines():
+        for json_file in transcript_file.read_text("utf-8").splitlines():
             shutil.copy(f"{workdir}/{json_file}", ".")
 
         Path("recipes").mkdir(parents=True, exist_ok=True)
