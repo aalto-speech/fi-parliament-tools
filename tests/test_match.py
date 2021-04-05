@@ -23,17 +23,9 @@ def test_split_segment_id(
     assert word_index == true_word_index
 
 
-@pytest.mark.parametrize(
-    "filename",
-    [
-        "generated/realign_tmp/05h/session-129-2016_ctm_edits.segmented",
-        "generated/realign_tmp/02h/session-064-2020_ctm_edits.segmented",
-        "generated/realign_tmp/15h/session-144-2017_ctm_edits.segmented",
-    ],
-)
-def test_read_table(filename: str) -> None:
+def test_read_table() -> None:
     """Perform a surface level check that a ctm_edits.segmented file is correctly loaded."""
-    df = match.load_to_dataframe(filename)
+    df = match.load_to_dataframe("tests/data/ctms/session-071-2017_ctm_edits.segmented")
     assert list(df.columns) == [
         "word_start",
         "word_duration",
@@ -49,4 +41,17 @@ def test_read_table(filename: str) -> None:
         "session_start",
     ]
     assert df.isna().sum().sum() == 0
-    assert set(df.edit.unique()) == set(["ins", "fix", "sil", "cor", "del", "sub"])
+    assert set(df.edit.unique()) == set(["ins", "sil", "cor", "del", "sub"])
+
+
+@pytest.mark.parametrize(
+    "filename, message",
+    [
+        ("tests/data/ctms/session-061-2020_ctm_edits.segmented", r"First segment is missing."),
+        ("tests/data/ctms/session-129-2016_ctm_edits.segmented", r"There is a missing segment."),
+    ],
+)
+def test_missing_segments(filename: str, message: str) -> None:
+    """Check that missing segments raise an error."""
+    with pytest.raises(ValueError, match=message):
+        match.load_to_dataframe(filename)

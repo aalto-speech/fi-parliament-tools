@@ -71,9 +71,13 @@ def check_missing_segments(df: pd.DataFrame) -> None:
 
     Args:
         df (pd.DataFrame): the dataframe to check
+
+    Raises:
+        ValueError: warn about a missing segment
     """
-    assert df.seg_start.loc[0] == 0.0
+    if not df.seg_start.loc[0] == 0.0:
+        raise ValueError("First segment is missing.")
     diffs = df.seg_start - df.seg_start.shift(1, fill_value=0.0)
     unique_diffs = diffs.unique()
-    assert len(unique_diffs) <= 2
-    assert 0.0 in unique_diffs
+    if not len(unique_diffs) <= 2 or 0.0 not in unique_diffs:
+        raise ValueError("There is a missing segment.")
