@@ -951,7 +951,7 @@ python-versions = "*"
 
 [[package]]
 name = "typeguard"
-version = "2.11.1"
+version = "2.12.0"
 description = "Run-time type checker for Python"
 category = "dev"
 optional = false
@@ -1023,7 +1023,7 @@ tests = ["pytest", "pytest-cov", "codecov", "scikit-build", "cmake", "ninja", "p
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.8"
-content-hash = "d8f1d9fb0e42b282b7b28f68c04daca7b4f8f6a8a5a7a5e2acac4bed781734c3"
+content-hash = "ddbcace647e174c671fb2465584dc5e530667e6a7b1e28d7232334c39190b756"
 
 [metadata.files]
 aalto-asr-preprocessor = [
@@ -1718,8 +1718,8 @@ typed-ast = [
     {file = "typed_ast-1.4.2.tar.gz", hash = "sha256:9fc0b3cb5d1720e7141d103cf4819aea239f7d136acf9ee4a69b047b7986175a"},
 ]
 typeguard = [
-    {file = "typeguard-2.11.1-py3-none-any.whl", hash = "sha256:c62706201ec6c14962162fa67d70bd2762753247533d70ff2442e5ac08f94fa2"},
-    {file = "typeguard-2.11.1.tar.gz", hash = "sha256:33243c1cbfcb9736a06c6db22dd08876b5f297e6344aa272a2862c0f8e669f64"},
+    {file = "typeguard-2.12.0-py3-none-any.whl", hash = "sha256:7d1cf82b35e9ff3cd083133ebda54ad1d7a40296471397e6c6b229cf07fe5307"},
+    {file = "typeguard-2.12.0.tar.gz", hash = "sha256:fca77fd4ccba63465b421cdbbab5a1a8e3994e6d6f18b45da2bb475c09f147ef"},
 ]
 typing-extensions = [
     {file = "typing_extensions-3.7.4.3-py2-none-any.whl", hash = "sha256:dafc7639cde7f1b6e1acc0f457842a83e722ccca8eef5270af2d74792619a89f"},
