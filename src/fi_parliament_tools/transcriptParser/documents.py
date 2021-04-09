@@ -185,10 +185,10 @@ class Session:
         Returns:
             Statement: all the statement data
         """
-        title, firstname, lastname = self.get_chairman_info(xml_element)
+        title, first, last = self.get_chairman_info(xml_element)
         text = self.get_short_statement_text(xml_element)
-        embedded = EmbeddedStatement("", "", "", "")
-        return Statement("C", 0, firstname, lastname, "", title, "", "", "", text, embedded)
+        embed = EmbeddedStatement(0, "", "", "", "", "", -1.0, -1.0)
+        return Statement("C", 0, first, last, "", title, "", "", "", text, -1.0, -1.0, embed)
 
     def compose_short_statement(self, xml_element: etree._Element) -> Statement:
         """Compose a short speaker statement object from the given XML element.
@@ -200,10 +200,10 @@ class Session:
             Statement: a data object that contains all speaker statement data
         """
         [speaker_element] = xml_element.xpath(". /*[local-name() = 'Toimija']")
-        mp_id, firstname, lastname, party, title = self.get_speaker_info(speaker_element)
+        mp_id, first, last, party, title = self.get_speaker_info(speaker_element)
         text = self.get_short_statement_text(xml_element)
-        embedded = EmbeddedStatement("", "", "", "")
-        return Statement("S", mp_id, firstname, lastname, party, title, "", "", "", text, embedded)
+        embed = EmbeddedStatement(0, "", "", "", "", "", -1.0, -1.0)
+        return Statement("S", mp_id, first, last, party, title, "", "", "", text, -1.0, -1.0, embed)
 
     def compose_speaker_statements(self, xml_element: etree._Element) -> List[Statement]:
         """Compose long statements from the given xml_element.
@@ -219,7 +219,7 @@ class Session:
         """
         [speaker_element] = xml_element.xpath(". /*[local-name() = 'Toimija']")
         speech_elements = xml_element.xpath(". /*[local-name() = 'PuheenvuoroOsa']")
-        mp_id, fname, lname, party, title = self.get_speaker_info(speaker_element)
+        mp_id, first, last, party, title = self.get_speaker_info(speaker_element)
         statements = []
         for speech in speech_elements:
             start, end = self.get_speaker_statement_timestamps(speech)
@@ -228,7 +228,9 @@ class Session:
             embed = self.check_embedded_statement(speech, texts)
             text = " ".join(texts)
             statements.append(
-                Statement("L", mp_id, fname, lname, party, title, start, end, lang, text, embed)
+                Statement(
+                    "L", mp_id, first, last, party, title, start, end, lang, text, -1.0, -1.0, embed
+                )
             )
         return statements
 
@@ -249,11 +251,11 @@ class Session:
         """
         for i, element in enumerate(xml_element.xpath(". /*[local-name() = 'KohtaSisalto']/*")):
             if "PuheenjohtajaRepliikki" in element.tag:
-                title, firstname, lastname = self.get_chairman_info(element)
+                title, first, last = self.get_chairman_info(element)
                 text = self.get_short_statement_text(element)
                 main_text.insert(i, "#ch_statement")
-                return EmbeddedStatement(title, firstname, lastname, text)
-        return EmbeddedStatement("", "", "", "")
+                return EmbeddedStatement(0, title, first, last, "", text, -1.0, -1.0)
+        return EmbeddedStatement(0, "", "", "", "", "", -1.0, -1.0)
 
     def get_session_start_time(self) -> str:
         """Get the true session start time from a database.
@@ -414,10 +416,10 @@ class Interpellation(Session):
         [speaker_element] = self.xml_transcript.xpath(
             ". /*[local-name() = 'IdentifiointiOsa']/*[local-name() = 'Toimija']"
         )
-        mp_id, firstname, lastname, party, title = self.get_speaker_info(speaker_element)
+        mp_id, first, last, party, title = self.get_speaker_info(speaker_element)
         text = self.get_interpellation_text()
         start = self.query_timestamp(str(mp_id))
-        embedded = EmbeddedStatement("", "", "", "")
+        embed = EmbeddedStatement(0, "", "", "", "", "", -1.0, -1.0)
         return Statement(
-            "L", mp_id, firstname, lastname, party, title, start, "", "fi", text, embedded
+            "L", mp_id, first, last, party, title, start, "", "fi", text, -1.0, -1.0, embed
         )

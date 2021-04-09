@@ -103,9 +103,9 @@ def decode_transcript(
     Returns:
         documents.Object: the dictionary as a correct custom object
     """
-    if "title" in dct.keys() and len(dct) == 4:
+    if "title" in dct.keys() and len(dct) == 8:
         return EmbeddedStatement(**dct)
-    if "title" in dct.keys() and len(dct) > 4:
+    if "title" in dct.keys() and len(dct) > 8:
         return Statement(**dct)
     if "statements" in dct.keys():
         return Subsection(**dct)

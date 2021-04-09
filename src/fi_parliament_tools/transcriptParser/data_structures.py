@@ -17,16 +17,29 @@ from typing import List
 
 @dataclass(frozen=True)
 class EmbeddedStatement:
-    """An embedded statement consists of only the speaker name, title and the statement itself.
+    """Embedded statements are chairman comments contained within long speaker statements.
 
-    Embedded statements are chairman comments contained within long speaker statements.
+    Timestamps and party are never defined for embedded statements, so they are left out.
     """
 
-    __slots__ = ["title", "firstname", "lastname", "text"]
+    __slots__ = [
+        "mp_id",
+        "title",
+        "firstname",
+        "lastname",
+        "language",
+        "text",
+        "offset",
+        "duration",
+    ]
+    mp_id: int
     title: str
     firstname: str
     lastname: str
+    language: str
     text: str
+    offset: float
+    duration: float
 
 
 @dataclass(frozen=True)
@@ -35,8 +48,11 @@ class Statement:
 
     Speaker statistics related to the statement include the first and last names of the speaker,
     their party/title and a unique mp id.
-    Statement related data contains start and end timestamps, language and the statement
-    transcript.
+    Statement related data contains rough start and end timestamps (in datetime format), language,
+    and the statement transcript text.
+    Offset and duration mark the beginning of the statement and its duration in seconds in the
+    audio file. These are determined in the postprocessing of alignment results, they do not exist
+    in the XML transcripts.
     Some speaker statements also contain embedded chairman statements within them, spoken somewhere
     in the middle of the speaker statement. These need to be included for later processing stages.
 
@@ -60,6 +76,8 @@ class Statement:
         "end_time",
         "language",
         "text",
+        "offset",
+        "duration",
         "embedded_statement",
     ]
     type: str
@@ -72,6 +90,8 @@ class Statement:
     end_time: str
     language: str
     text: str
+    offset: float
+    duration: float
     embedded_statement: EmbeddedStatement
 
 

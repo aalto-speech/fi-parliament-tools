@@ -17,11 +17,17 @@
           "end_time": "",
           "language": "en",
           "text": "This json is used to test exceptions in preprocessor code. To include a character that the simple test recipe process, let's say greetings in German: Schöne Grüße!",
+          "offset": -1.0,
+          "duration": -1.0,
           "embedded_statement": {
+            "mp_id": 0,
             "title": "",
             "firstname": "",
             "lastname": "",
-            "text": ""
+            "language": "",
+            "text": "",
+            "offset": -1.0,
+            "duration": -1.0
           }
         },
         {
@@ -35,11 +41,17 @@
           "end_time": "",
           "language": "en",
           "text": "A second statement text.",
+          "offset": -1.0,
+          "duration": -1.0,
           "embedded_statement": {
+            "mp_id": 0,
             "title": "",
             "firstname": "",
             "lastname": "",
-            "text": ""
+            "language": "",
+            "text": "",
+            "offset": -1.0,
+            "duration": -1.0
           }
         }
       ]
