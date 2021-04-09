@@ -2,6 +2,8 @@
 .DS_Store
 README.Aalto
 *.pyc
+*tmp*
+corpus
 
 /.cache/
 /.coverage
