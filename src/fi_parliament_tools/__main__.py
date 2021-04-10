@@ -43,6 +43,19 @@ def setup_logger(logfile: str) -> logging.Logger:
     return log
 
 
+def final_report(log: logging.Logger, errors: List[str]) -> None:
+    """List all encountered errors at the end of log for easy browsing.
+
+    Args:
+        log (logging.Logger): logger object
+        errors (List[str]): descriptions of all encountered errors
+    """
+    log.warning(f"Encountered {len(errors)} non-breaking error(s).")
+    for error_text in errors:
+        log.error(error_text)
+    log.info("Finished successfully!")
+
+
 @click.group()
 @click.version_option()
 def main() -> None:
@@ -125,42 +138,44 @@ def download(
             log.info(f"Found {len(df)} videos, proceed to download videos and extract audio.")
             downloads.process_metadata_table(df, "mp4", downloads.download_video, log, errors)
     finally:
-        log.warning(f"Encountered {len(errors)} non-breaking error(s).")
-        for error_text in errors:
-            log.error(error_text)
-
-    log.info("Finished successfully!")
-
-    for handler in log.handlers:
-        handler.close()
-        log.removeHandler(handler)
+        final_report(log, errors)
 
 
 @main.command()
-@click.argument("transcript-file", type=click.File(encoding="utf-8"))
+@click.argument("transcript-list", type=click.File(encoding="utf-8"))
 @click.argument("recipe-file", type=click.Path(exists=True))
-def preprocess(transcript_file: TextIO, recipe_file: str) -> None:
-    """Preprocessing parliament transcripts listed in TRANSCRIPT_FILE using RECIPE_FILE."""
+def preprocess(transcript_list: TextIO, recipe_file: str) -> None:
+    """Preprocessing parliament transcripts listed in TRANSCRIPT_LIST using RECIPE_FILE."""
     log = setup_logger(f"{date.today()}-preprocess.log")
     errors: List[str] = []
 
     try:
-        transcripts = transcript_file.read().split()
+        transcripts = transcript_list.read().split()
         spec = importlib.util.spec_from_file_location("recipe", recipe_file)
         recipe = importlib.util.module_from_spec(spec)
         spec.loader.exec_module(recipe)  # type: ignore
         log.info(f"Found {len(transcripts)} transcripts in file list, proceed to preprocessing.")
         preprocessing.apply_recipe(recipe, transcripts, log, errors)
     finally:
-        log.warning(f"Encountered {len(errors)} non-breaking error(s).")
-        for error_text in errors:
-            log.error(error_text)
+        final_report(log, errors)
 
-    log.info("Finished successfully!")
 
-    for handler in log.handlers:
-        handler.close()
-        log.removeHandler(handler)
+@main.command()
+@click.argument("segments-list", type=click.File(encoding="utf-8"))
+@click.argument("recipe-file", type=click.Path(exists=True))
+def postprocess(segments_list: TextIO, recipe_file: str) -> None:
+    """Assign speakers to segmentation results listed in SEGMENTS_LIST.
+
+    RECIPE_FILE is needed for preprocessing the original transcript to the aligned text. Use the
+    same RECIPE_FILE as with preprocess command.
+    """  # noqa: DAR101, ignore missing argument docs
+    log = setup_logger(f"{date.today()}-postprocess.log")
+    errors: List[str] = []
+
+    try:
+        pass
+    finally:
+        final_report(log, errors)
 
 
 if __name__ == "__main__":

@@ -377,3 +377,26 @@ def test_transcript_download_error(
         mock_get_full_table.assert_called_once()
         assert len(mocked_etree.method_calls) == 2
         assert mock_downloads_form_path.call_count == 2
+
+
+def test_postprocessor(runner: CliRunner) -> None:
+    """It successfully postprocesses the files given the list file."""
+    workdir = os.getcwd()
+    with runner.isolated_filesystem():
+        Path("recipes").mkdir(parents=True, exist_ok=True)
+        shutil.copy(f"{workdir}/recipes/words_elative.txt", "recipes/words_elative.txt")
+
+        with open("segments.list", "w", encoding="utf-8") as outfile:
+            outfile.write("This is just a dummy for now.\n")
+
+        result = runner.invoke(
+            __main__.main,
+            [
+                "postprocess",
+                "segments.list",
+                f"{workdir}/recipes/parl_to_kaldi_text.py",
+            ],
+        )
+        assert result.exit_code == 0
+        assert "Output is logged to" in result.output
+        assert "Finished successfully!" in result.output
