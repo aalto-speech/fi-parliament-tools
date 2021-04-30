@@ -8,8 +8,10 @@ from typing import List
 from typing import TextIO
 
 import click
+import pandas as pd
 
 from fi_parliament_tools import downloads
+from fi_parliament_tools import postprocessing
 from fi_parliament_tools import preprocessing
 
 
@@ -168,14 +170,22 @@ def postprocess(segments_list: TextIO, recipe_file: str) -> None:
 
     RECIPE_FILE is needed for preprocessing the original transcript to the aligned text. Use the
     same RECIPE_FILE as with preprocess command.
-    """  # noqa: DAR101, ignore missing argument docs
+    """  # noqa: DAR101, ignore missing arg documentation
     log = setup_logger(f"{date.today()}-postprocess.log")
     errors: List[str] = []
+    stats = pd.DataFrame()
 
     try:
-        pass
+        sessions = segments_list.read().split()
+        spec = importlib.util.spec_from_file_location("recipe", recipe_file)
+        recipe = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(recipe)  # type: ignore
+        log.info(f"Found {len(sessions)} sessions in file list, proceed to postprocessing.")
+        stats = postprocessing.process_sessions(sessions, recipe, log, errors)
     finally:
         final_report(log, errors)
+        if not stats.empty:
+            postprocessing.report_statistics(log, stats)
 
 
 if __name__ == "__main__":
