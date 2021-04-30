@@ -25,12 +25,12 @@ TRANSCRIPT_FILES=$3
 # 1. Find all transcript JSONs.
 # find $CORPUS_DIR -type f -name "*.json" | sort > transcripts.list
 
-# 2. Find all JSON files changed/created within the last 5 days 
+# 2. Find all JSON files changed/created within the last 5 days
 # find $CORPUS_DIR -type f -name "*.json" -ctime -5 | sort > transcripts.list
 
 # 3. Find all JSON files without corresponding preprocessed '.text' file.
 # for f in $(find "${CORPUS_DIR}" -type f -name "*.json" | sort);
-# do 
+# do
 #     [ ! -f "${f%.*}.text" ] && echo "$f" >> transcripts.list;
 # done
 
@@ -43,7 +43,7 @@ poetry run fi-parliament-tools preprocess $TRANSCRIPT_FILES $RECIPE
 # Sort all word files on their own first (Just printing all files to stdout with cat and sorting the
 # stdout does not work. Some words vanish in the process for unknown reason unless files are
 # presorted and merged. Maybe a memory issue?)
-for f in $(find "${CORPUS_DIR}" -type f -name "*.words" | sort); 
+for f in $(find "${CORPUS_DIR}" -type f -name "*.words" | sort);
 do
 	sort -uo $f{,}
 done
@@ -51,11 +51,10 @@ done
 UNFILTERED="unfiltered_words.txt"
 sort -m -u $(find "${CORPUS_DIR}" -type f -name "*.words" | sort) > $UNFILTERED
 
-# Filter the Swedish words that usually appear in transcript statements that are not explicitly 
+# Filter the Swedish words that usually appear in transcript statements that are not explicitly
 # labeled to be Swedish
 comm -23 <(sort -u $UNFILTERED) <(sort -u recipes/swedish_words.txt) > new_vocab
 
 # Cleanup
 rm $TRANSCRIPT_FILES $UNFILTERED
 find $CORPUS_DIR -type f -name "*.words" -delete
-

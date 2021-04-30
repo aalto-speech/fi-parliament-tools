@@ -17,16 +17,16 @@ CORPUS=$3
 
 mkdir -p $OUTPUT
 
-# Sort and merge new segments 
+# Sort and merge new segments
 # (This approach is copied from 02_preprocess_text, see there for reasoning.)
-for f in $(find "${INPUT}" -type f -name "*segments_new" | sort); 
+for f in $(find "${INPUT}" -type f -name "*segments_new" | sort);
 do
 	sort -uo $f{,}
 done
 sort -m -u $(find "${INPUT}" -type f -name "*segments_new" | sort) > $OUTPUT/segments
 
 # text
-for f in $(find "${INPUT}" -type f -name "*text_new" | sort); 
+for f in $(find "${INPUT}" -type f -name "*text_new" | sort);
 do
 	sort -uo $f{,}
 done
