@@ -4,6 +4,8 @@ README.Aalto
 *.pyc
 *tmp*
 corpus
+*.list
+new_vocab
 
 /.cache/
 /.coverage
