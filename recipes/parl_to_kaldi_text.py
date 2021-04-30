@@ -176,7 +176,7 @@ def change_to_ordinal(match: Match[str]) -> str:
     return f"{numbers} {word}"
 
 
-def expand_section_sign(match: Match[str]) -> str:
+def expand_numbers_with_section_sign(match: Match[str]) -> str:
     """Handle the inflection of § sign and the numbers immediately preceding it.
 
     Determines the inflection from the suffix associated with §. If there are multiple numbers, then
@@ -200,6 +200,20 @@ def expand_section_sign(match: Match[str]) -> str:
     if form == "NOM":
         return f"{section_word}{suffix} {numbers}"
     return f"{numbers} {section_word}{suffix}{clitic}"
+
+
+def expand_section_sign(match: Match[str]) -> str:
+    """Handle the inflection of a lone § sign.
+
+    Args:
+        match (Match): number(s) and the inflection of the section sign
+
+    Returns:
+        str: section sign expanded in the correct inflected form
+    """
+    suffix = match.group(1)
+    section_word, _ = SECTION_CHAR_MAPPING[suffix]
+    return f"{section_word}{suffix}"
 
 
 def school_classes(match: Match[str]) -> Any:
@@ -390,8 +404,9 @@ REGEXPS = [
     # associated numbers
     (
         r"((?:\d+(?: [a-z])?, )*\d+(?: [a-z])?(?:—|-| ja ))?(\d+(?: *[a-z])?) *§:?([a-zåäö]*)",
-        expand_section_sign,
+        expand_numbers_with_section_sign,
     ),
+    (r"§:?([a-zåäö])", expand_section_sign),
     # Ruotsinkielisessä tekstissä pykälämerkki tulee ennen numeroa. Käsitellään toistaiseksi näin
     # koska pelkällä poistolla virheet edellisessä regexpissä jäävät huomaamatta = This format
     # appears in Swedish texts, handle like this for now so errors with above regexp aren't missed
@@ -494,7 +509,9 @@ TRANSLATIONS = {
     "ø": "ö",
     "æ": "ä",
     "š": "s",
+    "ş": "s",
     "ß": "ss",
+    "ž": "z",
     # Weird special characters encountered in Swedish text
     "ı": "i",
     "ﬁ": "fi",
