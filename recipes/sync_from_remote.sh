@@ -1,10 +1,12 @@
 #!/bin/bash
 
 if [ $# -ne 2 ]; then
+	echo "Usage: recipes/sync_from_remote.sh <from_dir> <to_dir>"
+	echo "e.g.: $0 /path/to/remote/project_folder /path/to/local/project_folder"
+	echo
 	echo "This script synchronizes decoding and segmentation results required in the"
-	echo "realignment process from a remote computing cluster. The script expects two"
-	echo "arguments, path to the project folder locally and remotely:"
-	echo "$0 /path/to/remote/project_folder /path/to/local/project_folder"
+	echo "realignment process from a remote computing cluster."
+	echo
 	exit 1
 fi
 
