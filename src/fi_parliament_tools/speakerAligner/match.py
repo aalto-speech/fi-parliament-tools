@@ -1,7 +1,6 @@
 """Test speaker aligining loop."""
 from __future__ import annotations  # for difflib.SequenceMatcher type annotation
 
-import csv
 import difflib
 import json
 import logging
@@ -231,18 +230,18 @@ def rewrite_segments_and_text(
     """Rewrite files so that only segments with one speaker are included and convert timestamps."""
     with open(json_file, mode="r", encoding="utf-8", newline="") as infile:
         transcript = json.load(infile, object_hook=decode_transcript)
-    df = IO.ctm_edits_to_dataframe(f"{basepath}/session-{session}_ctm_edits.segmented")
+
+    kaldictm = IO.KaldiCTMSegmented(f"{basepath}/session-{session}_ctm_edits.segmented")
+    df = kaldictm.get_df()
     df.attrs["session"] = session
+    kaldisegments = IO.KaldiSegments(f"{basepath}/session-{session}_segments")
+    segments_df = kaldisegments.get_df()
+    kalditext = IO.KaldiText(f"{basepath}/session-{session}_text")
+    text_df = kalditext.get_df()
 
     info = df.segment_info.str.extractall(r"start-segment-(\d+)\[start=(\d+),end=(\d+)").astype(int)
     info.rename(columns={0: "seg_num", 1: "seg_start_idx", 2: "seg_end_idx"}, inplace=True)
     info["word_id"] = df.word_id[info.index.get_level_values(None)].values
-
-    segments_df = IO.segments_to_dataframe(f"{basepath}/session-{session}_segments")
-    text_df = pd.read_csv(f"{basepath}/session-{session}_text", sep="\n", names=["uttid"])
-    split = text_df.uttid.str.split(" ", n=1, expand=True)
-    text_df.uttid = split[0]
-    text_df = text_df.assign(text=split[1], new_uttid="")
 
     if len(info) != len(segments_df):
         raise RuntimeError("Different amount of segments in ctm_edits and Kaldi segments files.")
@@ -291,6 +290,8 @@ def rewrite_segments_and_text(
     )
     segments_df.recordid = session
     text_df["new_uttid"] = segments_df["new_uttid"]
+    kaldisegments.save_df(segments_df[segments_df.new_uttid != ""])
+    kalditext.save_df(text_df[text_df.new_uttid != ""])
 
     dropped_segments = segments_df[segments_df.new_uttid == ""]
     stat_row["segments"] = len(segments_df)
@@ -299,22 +300,4 @@ def rewrite_segments_and_text(
     stat_row["dropped_len"] = (dropped_segments.end - dropped_segments.start).sum()
 
     stats.loc[f"session-{session}"] = stat_row
-
-    segments_df[segments_df.new_uttid != ""].to_csv(
-        f"{basepath}/session-{session}_segments_new",
-        sep=" ",
-        float_format="%.2f",
-        columns=["new_uttid", "recordid", "start", "end"],
-        header=False,
-        index=False,
-    )
-    text_df[text_df.new_uttid != ""].to_csv(
-        f"{basepath}/session-{session}_text_new",
-        sep=" ",
-        columns=["new_uttid", "text"],
-        header=False,
-        index=False,
-        quoting=csv.QUOTE_NONE,
-        escapechar=" ",
-    )
     return stats

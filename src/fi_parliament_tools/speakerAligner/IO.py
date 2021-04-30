@@ -5,6 +5,176 @@ from typing import Tuple
 import pandas as pd
 
 
+class KaldiFile:
+    """Kaldi file template for loading different Kaldi files processing."""
+
+    def __init__(self, filename: str) -> None:
+        """Initialize basic properties filename and column names.
+
+        Args:
+            filename (str): path to the file
+        """
+        self.filename = filename
+        self.cols = ["left", "right"]
+
+    def load(self, separator: str = " ") -> pd.DataFrame:
+        """Load a Kaldi file with even columns into a DataFrame.
+
+        Args:
+            separator (str): character that separates columns. Defaults to " ".
+
+        Returns:
+            pd.DataFrame: loaded DataFrame
+        """
+        return pd.read_csv(self.filename, sep=separator, names=self.cols)
+
+    def load_uneven_columns(self) -> pd.DataFrame:
+        """Load a Kaldi file with uneven columns into a DataFrame.
+
+        Returns:
+            pd.DataFrame: loaded DataFrame
+        """
+        rows = []
+        last = self.cols[-1]
+        with open(self.filename, "r") as input:
+            for row in csv.DictReader(
+                input, delimiter=" ", fieldnames=self.cols[:-1], restkey=last, skipinitialspace=True
+            ):
+                try:
+                    row[last] = " ".join(row[last])
+                except KeyError:
+                    row[last] = ""
+                rows.append(row)
+        return pd.DataFrame(rows, columns=self.cols)
+
+
+class KaldiCTMSegmented(KaldiFile):
+    """Kaldi CTM edits segmented file."""
+
+    def __init__(self, filename: str) -> None:
+        """Initialize and define columns specific to this filetype.
+
+        Args:
+            filename (str): path to the file
+        """
+        super().__init__(filename)
+        self.cols = [
+            "session",
+            "ch",
+            "word_start",
+            "word_duration",
+            "asr",
+            "prob",
+            "transcript",
+            "edit",
+            "segment_info",
+        ]
+
+    def get_df(self) -> pd.DataFrame:
+        """Convert data in the file into a DataFrame that can be used in postprocessing.
+
+        Returns:
+            pd.DataFrame: prepared DataFrame
+        """
+        df = self.load_uneven_columns()
+        df = df.assign(speaker="unknown", mpid=0)
+        df[["seg_start", "seg_end", "word_id"]] = df.session.apply(
+            lambda x: pd.Series(split_segment_id(x))
+        )
+        numtypes = {"word_start": "float64", "word_duration": "float64", "word_id": "int64"}
+        df = df.astype(numtypes)
+        df["session_start"] = df["seg_start"] + df["word_start"]
+        df.drop(columns=["session", "ch", "prob"], inplace=True)
+        check_missing_segments(df)
+        return df
+
+
+class KaldiSegments(KaldiFile):
+    """Kaldi segments file."""
+
+    def __init__(self, filename: str) -> None:
+        """Initialize and define columns specific to this filetype.
+
+        Args:
+            filename (str): path to the file
+        """
+        super().__init__(filename)
+        self.cols = ["uttid", "recordid", "start", "end"]
+        self.saved_cols = ["new_uttid", "recordid", "start", "end"]
+
+    def get_df(self) -> pd.DataFrame:
+        """Convert data in the file into a DataFrame that can be used in postprocessing.
+
+        Returns:
+            pd.DataFrame: prepared DataFrame
+        """
+        df = self.load()
+        df = df.assign(new_uttid="")
+        df[["seg_start", "seg_end", "seg_id"]] = df.uttid.apply(
+            lambda x: pd.Series(split_segment_id(x))
+        )
+        df.start += df.seg_start
+        df.end += df.seg_start
+        return df
+
+    def save_df(self, df: pd.DataFrame) -> None:
+        """Save DataFrame into a CSV file.
+
+        Args:
+            df (pd.DataFrame): data to save
+        """
+        df.to_csv(
+            f"{self.filename}.new",
+            sep=" ",
+            float_format="%.2f",
+            columns=self.saved_cols,
+            header=False,
+            index=False,
+        )
+
+
+class KaldiText(KaldiFile):
+    """Kaldi text file."""
+
+    def __init__(self, filename: str) -> None:
+        """Initialize and define columns specific to this filetype.
+
+        Args:
+            filename (str): path to the file
+        """
+        super().__init__(filename)
+        self.cols = ["uttid"]
+        self.saved_cols = ["new_uttid", "text"]
+
+    def get_df(self) -> pd.DataFrame:
+        """Convert data in the file into a DataFrame that can be used in postprocessing.
+
+        Returns:
+            pd.DataFrame: prepared DataFrame
+        """
+        df = self.load(separator="\n")
+        split = df.uttid.str.split(" ", n=1, expand=True)
+        df.uttid = split[0]
+        df = df.assign(text=split[1], new_uttid="")
+        return df
+
+    def save_df(self, df: pd.DataFrame) -> None:
+        """Save DataFrame into a CSV file.
+
+        Args:
+            df (pd.DataFrame): data to save
+        """
+        df.to_csv(
+            f"{self.filename}.new",
+            sep=" ",
+            columns=self.saved_cols,
+            header=False,
+            index=False,
+            quoting=csv.QUOTE_NONE,
+            escapechar=" ",
+        )
+
+
 def split_segment_id(segment_id: str) -> Tuple[float, float, int]:
     """Split a segment ID to segment begin, segment end, and a running number.
 
@@ -22,53 +192,6 @@ def split_segment_id(segment_id: str) -> Tuple[float, float, int]:
     else:
         _, begin, end, number = segment_id.rsplit("-", 3)
     return float(begin) / 100.0, float(end) / 100.0, int(number)
-
-
-def ctm_edits_to_dataframe(filename: str) -> pd.DataFrame:
-    """Load a ctm_edits.segmented file to a DataFrame and prepare it for speaker alignment.
-
-    The temporary columns are used to handle the varying number of space-separated tokens per line.
-
-    Args:
-        filename (str): the file to read
-
-    Returns:
-        pd.DataFrame: segmentation data for realignment
-    """
-    cols = [
-        "session",
-        "ch",
-        "word_start",
-        "word_duration",
-        "asr",
-        "prob",
-        "transcript",
-        "edit",
-        "segment_info",
-    ]
-    rows = []
-    with open(filename, "r") as infile:
-        for row in csv.DictReader(
-            infile, delimiter=" ", fieldnames=cols[:-1], restkey=cols[-1], skipinitialspace=True
-        ):
-            try:
-                row["segment_info"] = " ".join(row["segment_info"])
-            except KeyError:
-                row["segment_info"] = ""
-            rows.append(row)
-
-    df = pd.DataFrame(rows, columns=cols)
-    df = df.assign(speaker="unknown", mpid=0)
-    df[["seg_start", "seg_end", "word_id"]] = df.session.apply(
-        lambda x: pd.Series(split_segment_id(x))
-    )
-    df = df.astype({"word_start": "float64", "word_duration": "float64", "word_id": "int64"})
-    df["session_start"] = df["seg_start"] + df["word_start"]
-
-    df.drop(columns=["session", "ch", "prob"], inplace=True)
-    check_missing_segments(df)
-
-    return df
 
 
 def check_missing_segments(df: pd.DataFrame) -> None:
@@ -90,23 +213,3 @@ def check_missing_segments(df: pd.DataFrame) -> None:
     unique_diffs = diffs.unique()
     if not len(unique_diffs) <= 2 or 0.0 not in unique_diffs:
         raise ValueError("There is a missing segment.")
-
-
-def segments_to_dataframe(filename: str) -> pd.DataFrame:
-    """Load a segments file to a DataFrame and prepare it for rewrite.
-
-    Args:
-        filename (str): the file to read
-
-    Returns:
-        pd.DataFrame: segments file
-    """
-    cols = ["uttid", "recordid", "start", "end"]
-    df = pd.read_csv(filename, sep=" ", names=cols)
-    df = df.assign(new_uttid="")
-    df[["seg_start", "seg_end", "seg_id"]] = df.uttid.apply(
-        lambda x: pd.Series(split_segment_id(x))
-    )
-    df.start += df.seg_start
-    df.end += df.seg_start
-    return df
