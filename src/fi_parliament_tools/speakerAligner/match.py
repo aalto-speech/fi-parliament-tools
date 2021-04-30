@@ -5,6 +5,7 @@ import difflib
 import json
 import logging
 from collections import deque
+from collections import namedtuple
 from itertools import islice
 from pathlib import Path
 from typing import Any
@@ -24,6 +25,9 @@ from fi_parliament_tools.transcriptParser.data_structures import EmbeddedStateme
 from fi_parliament_tools.transcriptParser.data_structures import Statement
 
 
+Match = namedtuple("Match", "a b size")
+
+
 def adjust_indices(df: pd.DataFrame, start_idx: int, end_idx: int) -> Tuple[int, int]:
     """Update statement end index if ASR hypothesis does not match transcript.
 
@@ -36,13 +40,13 @@ def adjust_indices(df: pd.DataFrame, start_idx: int, end_idx: int) -> Tuple[int,
         end_idx (int): current end point for a statement
 
     Raises:
-        RuntimeError: alignment has failed if start and end indices are the same
+        ValueError: alignment has failed if start and end indices are the same
 
     Returns:
         Tuple[int, int]: updated end point for a statement
     """
     if start_idx == end_idx:
-        raise RuntimeError("No alignment found!")
+        raise ValueError("Found segment is of length 0.")
     cors = df.iloc[start_idx:end_idx].edit.values == "cor"
     first_cor_idx: int = cors.argmax()
     last_cor_idx: int = cors[::-1].argmax()
@@ -52,35 +56,22 @@ def adjust_indices(df: pd.DataFrame, start_idx: int, end_idx: int) -> Tuple[int,
 
 
 def assign_speaker(
-    df: pd.DataFrame,
-    start_idx: int,
-    end_idx: int,
-    text: str,
-    statement: Union[Statement, EmbeddedStatement],
-) -> Tuple[int, int]:
+    df: pd.DataFrame, text: str, statement: Union[Statement, EmbeddedStatement]
+) -> None:
     """Assign speaker to a statement in the aligned CTM.
 
     Args:
         df (pd.DataFrame): aligned CTM
-        start_idx (int): start of the statement in the masked CTM
-        end_idx (int): end of the statement in the masked CTM
         text (str): preprocessed statement text
         statement (Union[Statement, EmbeddedStatement]): statement object
-
-    Returns:
-        Tuple[int, int]: updated start and end points for next statements
     """
-    start_idx = end_idx
-
-    start_idx, end_idx = statement_is_aligned(
-        df[["transcript", "edit"]], text.split(), start_idx, statement.language
+    start_idx, end_idx = find_statement(
+        df[["transcript", "edit"]], text.split(), statement.language
     )
     if not statement.language == "sv":
         start_idx, end_idx = adjust_indices(df, start_idx, end_idx)
     df.loc[start_idx:end_idx, "speaker"] = statement.firstname + " " + statement.lastname
     df.loc[start_idx:end_idx, "mpid"] = statement.mp_id
-
-    return start_idx, end_idx
 
 
 def get_segment_speaker(row: pd.Series, main_df: pd.DataFrame, sil_mask: pd.Series) -> int:
@@ -124,64 +115,71 @@ def form_new_utterance_id(row: pd.Series, session: str) -> str:
     return ""
 
 
-def statement_is_aligned(
-    df: pd.DataFrame, text: List[str], start_idx: int, lang: str, match_limit: int = 20
+def find_statement(
+    df: pd.DataFrame, text: List[str], lang: str, match_limit: int = 30, step: int = 7500
 ) -> Tuple[int, int]:
     """Find where the statement text starts and ends in the alignment CTM.
 
     Args:
         df (pd.DataFrame): alignment CTM
         text (List[str]): statement text to find as a list of words
-        start_idx (int): starting point for the search (end of last statement)
         lang (str): handle Swedish and Finnish different
-        match_limit (int): the number of words to match in search, defaults to 20
+        match_limit (int): the number of words to match in search, defaults to 30
+        step (int): the step size of the sliding window, defaults to 7500.
 
     Raises:
-        RuntimeError: raised if no alignment could be found
+        ValueError: no alignment could be found
 
     Returns:
         Tuple[int, int]: start and end indices of statement text
     """
-    remaining = df.iloc[start_idx::]
-    masked = remaining[(remaining.transcript != "<eps>") & (remaining.transcript != "<UNK>")]
-    matched = min(len(text), match_limit)
-    for w in sliding_window(masked.transcript.values):
-        diffs = difflib.SequenceMatcher(None, list(w), text[:matched])
-        hits = sum(match.size for match in diffs.get_matching_blocks())
-        shift = diffs.get_matching_blocks()[0].a
-        if hits / matched > 0.75:
-            edit_ratios = masked.edit[shift : shift + hits].value_counts(normalize=True)
-            if lang == "sv" or ("cor" in edit_ratios and edit_ratios["cor"] > 0.5):
-                return masked.index[shift], find_end(masked.transcript[shift:], text)
-        if shift == 0:
-            shift += matched
-        if len(diffs.get_matching_blocks()) < 5:
-            return statement_is_aligned(df, text, masked.index[shift], lang)
-        break
-    raise RuntimeError("No alignment found!")
+    masked = df[(df.transcript != "<eps>") & (df.transcript != "<UNK>")]
+    words_matched = min(len(text), match_limit)
+    for i, w in enumerate(sliding_window(masked.transcript.values)):
+        start, window = (0, list(w))
+        diff = difflib.SequenceMatcher(None, window, text[:words_matched])
+        while start < step:
+            min_m = min(words_matched, 5)
+            match = next((m for m in diff.get_matching_blocks() if m.size >= min_m), Match(0, 0, 0))
+            start += match.a
+            if match.size > 0:
+                s = start + i * step
+                edit_ratios = masked.edit[s : s + match.size].value_counts(normalize=True)
+                if lang == "sv" or ("cor" in edit_ratios and edit_ratios["cor"] > 0.5):
+                    return masked.index[s], find_end_index(masked.transcript[s:], text)
+                start += words_matched
+                diff.set_seq1(window[start:])
+            else:
+                break
+    raise ValueError("Alignment not found.")
 
 
-def find_end(masked: pd.DataFrame, text: List[str]) -> int:
+def find_end_index(masked: pd.DataFrame, text: List[str]) -> int:
     """Find the last index of the statement text in the transcript column of the alignment CTM.
 
     Args:
         masked (pd.DataFrame): silence and unk masked transcript
         text (List[str]): statement text as a list of words
 
+    Raises:
+        ValueError: end index not found
+
     Returns:
         int: last index of the statement
     """
     search_end = min(len(text) + 100, len(masked) - 1)
-    diffs = difflib.SequenceMatcher(None, masked.iloc[:search_end].values, text)
-    ops = diffs.get_opcodes()
+    diff = difflib.SequenceMatcher(None, masked.iloc[:search_end].values, text)
+    ops = diff.get_opcodes()
     if ops[-1][0] == "equal":
         return int(masked.index[ops[-1][2]])
-    matches = diffs.get_matching_blocks()
-    return int(masked.index[next(m.a + m.size for m in matches[::-1] if m.size > 1)])
+    matches = diff.get_matching_blocks()
+    if end_idx := next((m.a + m.size for m in matches[::-1] if m.size > 1), 0):
+        return int(masked.index[end_idx])
+    raise ValueError("Statement end index not found.")
 
 
 def sliding_window(
-    iterable: Iterable[Any], size: int = 500, step: int = 250, fillvalue: Optional[Any] = None
+    iterable: Iterable[Any], size: int = 10000, step: int = 7500, fillvalue: Optional[Any] = None
 ) -> Iterator[Any]:
     """Form a deque-based sliding window for iterables with variable size and step.
 
@@ -189,8 +187,8 @@ def sliding_window(
 
     Args:
         iterable (Iterable[Any]): the target of the sliding window
-        size (int): size/length of the window, defaults to 300
-        step (int): move window forward by step on each iteration, defaults to 150
+        size (int): size/length of the window, defaults to 10000
+        step (int): move window forward by step on each iteration, defaults to 7500
         fillvalue (Any, optional): padding in the last window (if needed), defaults to None
 
     Raises:
@@ -256,7 +254,6 @@ def rewrite_segments_and_text(
         "dropped_len": 0,
     }
 
-    start_idx = end_idx = 0
     for sub in transcript.subsections:
         for statement in sub.statements:
             texts = [statement.text]
@@ -275,8 +272,8 @@ def rewrite_segments_and_text(
             stat_row["statements"] += len(texts)
             for txt, statement in zip(texts, statements):
                 try:
-                    start_idx, end_idx = assign_speaker(df, start_idx, end_idx, txt, statement)
-                except RuntimeError as err:
+                    assign_speaker(df, txt, statement)
+                except (ValueError, RuntimeError) as err:
                     stat_row["failed_statements"] += 1
                     msg = f"Cannot align statement {statement} in {session} because '{err}'."
                     errors.append(msg)

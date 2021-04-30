@@ -1,13 +1,13 @@
 """Command line client logic for postprocessing Finnish parliament data."""
-
-from datetime import date
 import logging
 import re
+from datetime import date
 from pathlib import Path
-from typing import Any, List
+from typing import Any
+from typing import List
 
-from alive_progress import alive_bar
 import pandas as pd
+from alive_progress import alive_bar
 
 from fi_parliament_tools.speakerAligner import match
 
