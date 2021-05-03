@@ -30,7 +30,7 @@ grep -f $records $INPUT/wav.scp | sort | awk '{print $2}' > $wavs
 
 tar -cf $OUTPUT $texts
 
-while read p; 
+while read p;
 do
     name=$(echo $p | cut -f1 -d" ")
     sess=$(echo $p | cut -f2 -d" ")
@@ -44,4 +44,3 @@ do
 done < $samples
 
 rm $samples $utts $records $wavs $texts
-

@@ -26,6 +26,7 @@ from fi_parliament_tools.transcriptParser.data_structures import Transcript
 
 
 Match = namedtuple("Match", "a b size")
+StatementsList = List[Union[Statement, EmbeddedStatement]]
 
 
 def adjust_indices(df: pd.DataFrame, start_idx: int, end_idx: int) -> Tuple[int, int]:
@@ -287,13 +288,13 @@ def match_speakers_to_ctm(
     """
     total = failed = 0
     for sub in transcript.subsections:
-        for statement in sub.statements:
-            texts = [statement.text]
-            statements = [statement]
-            if statement.embedded_statement.text:
-                texts = list(statement.text.partition("#ch_statement"))
-                texts[1] = statement.embedded_statement.text
-                statements = [statement, statement.embedded_statement, statement]
+        for main_statement in sub.statements:
+            texts = [main_statement.text]
+            statements: StatementsList = [main_statement]
+            if main_statement.embedded_statement.text:
+                texts = list(main_statement.text.partition("#ch_statement"))
+                texts[1] = main_statement.embedded_statement.text
+                statements = [main_statement, main_statement.embedded_statement, main_statement]
             texts = [
                 preprocessor.apply(
                     txt, recipe.REGEXPS, recipe.UNACCEPTED_CHARS, recipe.TRANSLATIONS
@@ -302,11 +303,11 @@ def match_speakers_to_ctm(
                 if len(txt.strip().split(" ")) > 1
             ]
             total += len(texts)
-            for txt, statement in zip(texts, statements):
+            for txt, stmnt in zip(texts, statements):
                 try:
-                    assign_speaker(df, txt, statement)
+                    assign_speaker(df, txt, stmnt)
                 except (ValueError, RuntimeError) as err:
                     failed += 1
-                    msg = f"Cannot align statement {statement} in {df.attrs['session']}: {err}."
+                    msg = f"Cannot align statement {stmnt} in {df.attrs['session']}: {err}."
                     errors.append(msg)
     return total, failed

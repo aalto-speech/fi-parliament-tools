@@ -67,7 +67,7 @@ def match_session(
         json_file = f"corpus/{year}/session-{session}.json"
         try:
             return match.rewrite_segments_and_text(
-                basepath, session, json_file, recipe, stats, log, errors
+                basepath, session, json_file, recipe, stats, errors
             )
         except Exception as err:
             log.exception(f"Postprocessing failed in {session}. Caught error: {err}")
