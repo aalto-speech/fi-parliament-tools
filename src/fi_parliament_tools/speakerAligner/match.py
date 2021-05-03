@@ -18,8 +18,8 @@ from typing import Union
 import pandas as pd
 from aalto_asr_preprocessor import preprocessor
 
-from fi_parliament_tools.preprocessing import decode_transcript
 from fi_parliament_tools.speakerAligner import IO
+from fi_parliament_tools.transcriptParser.data_structures import decode_transcript
 from fi_parliament_tools.transcriptParser.data_structures import EmbeddedStatement
 from fi_parliament_tools.transcriptParser.data_structures import Statement
 from fi_parliament_tools.transcriptParser.data_structures import Transcript

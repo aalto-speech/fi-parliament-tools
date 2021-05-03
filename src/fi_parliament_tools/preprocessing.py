@@ -3,18 +3,14 @@ import json
 from logging import Logger
 from pathlib import Path
 from typing import Any
-from typing import Dict
 from typing import List
 from typing import Set
 from typing import TextIO
-from typing import Union
 
 from aalto_asr_preprocessor import preprocessor
 from alive_progress import alive_bar
 
-from fi_parliament_tools.transcriptParser.data_structures import EmbeddedStatement
-from fi_parliament_tools.transcriptParser.data_structures import Statement
-from fi_parliament_tools.transcriptParser.data_structures import Subsection
+from fi_parliament_tools.transcriptParser.data_structures import decode_transcript
 from fi_parliament_tools.transcriptParser.data_structures import Transcript
 
 
@@ -90,25 +86,3 @@ def preprocess_transcript(
                 )
                 errors.append(f"Caught an exception in {outfile.name}.")
     return unique_words
-
-
-def decode_transcript(
-    dct: Dict[Any, Any],
-) -> Union[EmbeddedStatement, Statement, Subsection, Transcript, Dict[Any, Any]]:
-    """Deserialize transcript json into a custom document object.
-
-    Args:
-        dct (dict): a (nested) dict in the JSON to deserialize
-
-    Returns:
-        documents.Object: the dictionary as a correct custom object
-    """
-    if "title" in dct.keys() and len(dct) == 8:
-        return EmbeddedStatement(**dct)
-    if "title" in dct.keys() and len(dct) > 8:
-        return Statement(**dct)
-    if "statements" in dct.keys():
-        return Subsection(**dct)
-    if "subsections" in dct.keys():
-        return Transcript(**dct)
-    return dct  # pragma: no cover

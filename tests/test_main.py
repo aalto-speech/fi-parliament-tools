@@ -23,6 +23,7 @@ from pytest_mock.plugin import MockerFixture  # type: ignore
 from fi_parliament_tools import __main__
 from fi_parliament_tools import downloads
 from fi_parliament_tools import preprocessing
+from fi_parliament_tools.transcriptParser.data_structures import decode_transcript
 from fi_parliament_tools.transcriptParser.data_structures import Transcript
 
 
@@ -65,7 +66,7 @@ def transcript() -> Any:
     input_json = open(
         "tests/data/jsons/preprocessing_test_sample.json", "r", encoding="utf-8", newline=""
     )
-    yield json.load(input_json, object_hook=preprocessing.decode_transcript)
+    yield json.load(input_json, object_hook=decode_transcript)
     input_json.close()
 
 

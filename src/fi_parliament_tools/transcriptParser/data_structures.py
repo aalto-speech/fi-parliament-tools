@@ -12,7 +12,10 @@ Slots are used to optimize memory consumption and processing speed.
 """
 from dataclasses import dataclass
 from dataclasses import field
+from typing import Any
+from typing import Dict
 from typing import List
+from typing import Union
 
 
 @dataclass(frozen=True)
@@ -119,3 +122,25 @@ class Transcript:
     year: int
     begin_time: str
     subsections: List[Subsection] = field(default_factory=list)
+
+
+def decode_transcript(
+    dct: Dict[Any, Any],
+) -> Union[EmbeddedStatement, Statement, Subsection, Transcript, Dict[Any, Any]]:
+    """Deserialize transcript json into a custom document object.
+
+    Args:
+        dct (dict): a (nested) dict in the JSON to deserialize
+
+    Returns:
+        documents.Object: the dictionary as a correct custom object
+    """
+    if "title" in dct.keys() and len(dct) == 8:
+        return EmbeddedStatement(**dct)
+    if "title" in dct.keys() and len(dct) > 8:
+        return Statement(**dct)
+    if "statements" in dct.keys():
+        return Subsection(**dct)
+    if "subsections" in dct.keys():
+        return Transcript(**dct)
+    return dct  # pragma: no cover
