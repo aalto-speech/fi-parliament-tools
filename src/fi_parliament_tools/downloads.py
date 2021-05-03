@@ -12,7 +12,6 @@ from typing import Optional
 
 import pandas as pd
 import requests
-import toml
 from alive_progress import alive_bar
 from lxml import etree
 
@@ -21,7 +20,6 @@ from fi_parliament_tools.transcriptParser.documents import Session
 from fi_parliament_tools.transcriptParser.query import Query
 from fi_parliament_tools.transcriptParser.query import VaskiQuery
 
-CONFIG = toml.load("src/fi_parliament_tools/config.toml")
 VIDEO_API = "https://eduskunta.videosync.fi/api/v1/events"
 
 
@@ -32,12 +30,12 @@ def form_path(num: int, year: int, suffix: str, errors: List[str]) -> Optional[p
         num (int): running number of the session, used to form filename
         year (int): year of the session, used to form filename
         suffix (str): file extension
-        errors (list): a list of error strings for reporting
+        errors (list): descriptions of all encountered errors
 
     Returns:
         pathlib.Path: path to a new file or None if duplicate exists already
     """
-    p = Path(f"{CONFIG['paths']['corpus_dir']}/{year}/session-{num:03}-{year}.{suffix}")
+    p = Path(f"corpus/{year}/session-{num:03}-{year}.{suffix}").resolve()
     if p.exists():
         errors.append(f"File {p} exists, will not overwrite.")
         return None
@@ -128,8 +126,8 @@ def process_metadata_table(
         df (pandas.DataFrame): metadata of files to download
         extension (str): file extension for the file resulting from processing
         processing_func (func): processing function applied to the table entries
-        log (Logger): for logging output
-        errors (list): a list of error strings for reporting
+        log (Logger): logger object
+        errors (list): descriptions of all encountered errors
     """
     with alive_bar(len(df)) as bar:
         for index, num, year in zip(df.index, df.num, df.year):
@@ -145,8 +143,8 @@ def download_transcript(path: pathlib.Path, log: Logger, errors: List[str], **kw
 
     Args:
         path (pathlib.Path): path to save the parsed transcript to
-        log (Logger): for logging output
-        errors (list): a list of error strings for reporting
+        log (Logger): logger object
+        errors (list): descriptions of all encountered errors
         kwargs (dict): expected to contain 'num' and 'year', which identify a plenary session
     """
     num, year = kwargs["num"], kwargs["year"]
@@ -166,8 +164,8 @@ def download_video(path: pathlib.Path, log: Logger, errors: List[str], **kwargs:
 
     Args:
         path (pathlib.Path): path to save the video file to
-        log (Logger): for logging output
-        errors (list): a list of error strings for reporting
+        log (Logger): logger object
+        errors (list): descriptions of all encountered errors
         kwargs (dict): expected to contain 'index', an unique identifier for the video
     """
     url = f"{VIDEO_API}/{kwargs['index']}/video/download"
@@ -185,8 +183,8 @@ def extract_wav(path: pathlib.Path, log: Logger, errors: List[str]) -> None:
 
     Args:
         path (pathlib.Path): path to the video file
-        log (Logger): for logging output
-        errors (list): a list of error strings for reporting
+        log (Logger): logger object
+        errors (list): descriptions of all encountered errors
     """
     log.debug(f"Will attempt to extract audio from the video {path.name}.")
     try:

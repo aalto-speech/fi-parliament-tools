@@ -953,7 +953,7 @@ pbr = ">=2.0.0,<2.1.0 || >2.1.0"
 name = "toml"
 version = "0.10.2"
 description = "Python Library for Tom's Obvious, Minimal Language"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=2.6, !=3.0.*, !=3.1.*, !=3.2.*"
 
@@ -1047,7 +1047,7 @@ tests = ["pytest", "pytest-cov", "codecov", "scikit-build", "cmake", "ninja", "p
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.8"
-content-hash = "48320d7f6c859b558f71f8fd3b5004a805ebf255d912b2087a4d3f24d5c4aced"
+content-hash = "9f070b7b84a29b7e4b12d55f0d2cd6c9a5d736de10cd70abe7f3665d440c83a1"
 
 [metadata.files]
 aalto-asr-preprocessor = [

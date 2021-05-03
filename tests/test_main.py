@@ -95,8 +95,8 @@ def mock_get_full_table(
 def mock_downloads_path(mocker: MockerFixture) -> MagicMock:
     """Mock path formed in form_path of downloads module."""
     mock: MagicMock = mocker.patch("fi_parliament_tools.downloads.Path")
-    mock.return_value.exists.side_effect = [False, True]
-    mock.return_value.__str__.return_value = "tests/testing.test"
+    mock.return_value.resolve.return_value.__str__.return_value = "tests/testing.test"
+    mock.return_value.resolve.return_value.exists.side_effect = [False, True]
     return mock
 
 

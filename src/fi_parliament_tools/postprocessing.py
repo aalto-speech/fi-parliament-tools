@@ -1,7 +1,7 @@
 """Command line client logic for postprocessing Finnish parliament data."""
-import logging
 import re
 from datetime import date
+from logging import Logger
 from pathlib import Path
 from typing import Any
 from typing import List
@@ -23,14 +23,14 @@ STATS_COLUMNS = [
 
 
 def process_sessions(
-    sessions: List[str], recipe: Any, log: logging.Logger, errors: List[str]
+    sessions: List[str], recipe: Any, log: Logger, errors: List[str]
 ) -> pd.DataFrame:
     """Postprocess the given sessions one by one and visualize progress.
 
     Args:
         sessions (List[str]): sessions to postprocess
         recipe (Any): preprocessing recipe for text
-        log (logging.Logger): logger object
+        log (Logger): logger object
         errors (List[str]): descriptions of all encountered errors
 
     Returns:
@@ -46,7 +46,7 @@ def process_sessions(
 
 
 def match_session(
-    session_path: str, recipe: Any, stats: pd.DataFrame, log: logging.Logger, errors: List[str]
+    session_path: str, recipe: Any, stats: pd.DataFrame, log: Logger, errors: List[str]
 ) -> pd.DataFrame:
     """Find original JSON transcript and match the statements in it to the alignment CTM.
 
@@ -54,13 +54,13 @@ def match_session(
         session_path (str): alignment CTM filepath
         recipe (Any): preprocessing recipe for text
         stats (pd.DataFrame): statistics for reporting
-        log (logging.Logger): logger object
-        errors (List[str]): description of all encountered errors
+        log (Logger): logger object
+        errors (List[str]): descriptions of all encountered errors
 
     Returns:
         pd.DataFrame: updated statistics for reporting
     """
-    basepath = Path(session_path).parent
+    basepath = Path(session_path).resolve().parent
     if hit := re.search(r"session-(\d+)-(\d+)", session_path):
         num, year = hit.groups()
         session = f"{num}-{year}"
@@ -76,11 +76,11 @@ def match_session(
     return stats
 
 
-def report_statistics(log: logging.Logger, stats: pd.DataFrame) -> None:
+def report_statistics(log: Logger, stats: pd.DataFrame) -> None:
     """Write a summary of collected statistics to the log and save detailed stats to a file.
 
     Args:
-        log (logging.Logger): logger object
+        log (Logger): logger object
         stats (pd.DataFrame): collected statistics
     """
     csv_name = f"logs/{date.today()}-postprocess-statistics.csv"

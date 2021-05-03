@@ -22,12 +22,12 @@ def apply_recipe(recipe: Any, transcripts: List[str], log: Logger, errors: List[
     Args:
         recipe (Any): a recipe file loaded as a module
         transcripts (list): paths to transcripts to preprocess
-        log (Logger): for logging output
-        errors (list): a list of error strings for reporting
+        log (Logger): logger object
+        errors (list): descriptions of all encountered errors
     """
     with alive_bar(len(transcripts)) as bar:
         for transcript_path in transcripts:
-            input_path = Path(transcript_path)
+            input_path = Path(transcript_path).resolve()
             with input_path.open(mode="r", encoding="utf-8", newline="") as infile:
                 transcript = json.load(infile, object_hook=decode_transcript)
             t = input_path.with_suffix(".text")
@@ -57,8 +57,8 @@ def preprocess_transcript(
         recipe (Any): a recipe file loaded as a module
         transcript (Transcript): a transcript to preprocess
         outfile (TextIO): a file handle for writing output
-        log (Logger): for logging output
-        errors (list): a list of error strings for reporting
+        log (Logger): logger object
+        errors (list): descriptions of all encountered errors
 
     Returns:
         set: a set of unique Finnish words within the transcript
