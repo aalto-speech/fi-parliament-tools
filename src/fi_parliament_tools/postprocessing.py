@@ -125,7 +125,7 @@ def report_statistics(log: logging.Logger, stats: pd.DataFrame) -> None:
     )
     log.info(
         f"{total.dropped_segments} out of {total.segments} segments ({total.dropped_p:.2f}%) "
-        "were dropped because they had more than one speaker."
+        "were dropped because speaker info was missing or they had more than one speaker."
     )
     log.info(f"Full statistics are saved to {csv_name}.")
     stats.to_csv(csv_name, sep="\t", float_format="%.2f")

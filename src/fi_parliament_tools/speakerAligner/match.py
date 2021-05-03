@@ -3,7 +3,6 @@ from __future__ import annotations  # for difflib.SequenceMatcher type annotatio
 
 import difflib
 import json
-import logging
 from collections import deque
 from collections import namedtuple
 from itertools import islice
@@ -23,6 +22,7 @@ from fi_parliament_tools.preprocessing import decode_transcript
 from fi_parliament_tools.speakerAligner import IO
 from fi_parliament_tools.transcriptParser.data_structures import EmbeddedStatement
 from fi_parliament_tools.transcriptParser.data_structures import Statement
+from fi_parliament_tools.transcriptParser.data_structures import Transcript
 
 
 Match = namedtuple("Match", "a b size")
@@ -222,19 +222,18 @@ def rewrite_segments_and_text(
     json_file: str,
     recipe: Any,
     stats: pd.DataFrame,
-    log: logging.Logger,
     errors: List[str],
 ) -> pd.DataFrame:
     """Rewrite files so that only segments with one speaker are included and convert timestamps."""
     with open(json_file, mode="r", encoding="utf-8", newline="") as infile:
         transcript = json.load(infile, object_hook=decode_transcript)
 
-    kaldictm = IO.KaldiCTMSegmented(f"{basepath}/session-{session}_ctm_edits.segmented")
+    kaldictm = IO.KaldiCTMSegmented(f"{basepath}/session-{session}.ctm_edits.segmented")
     df = kaldictm.get_df()
     df.attrs["session"] = session
-    kaldisegments = IO.KaldiSegments(f"{basepath}/session-{session}_segments")
+    kaldisegments = IO.KaldiSegments(f"{basepath}/session-{session}.segments")
     segments_df = kaldisegments.get_df()
-    kalditext = IO.KaldiText(f"{basepath}/session-{session}_text")
+    kalditext = IO.KaldiText(f"{basepath}/session-{session}.text")
     text_df = kalditext.get_df()
 
     info = df.segment_info.str.extractall(r"start-segment-(\d+)\[start=(\d+),end=(\d+)").astype(int)
@@ -244,16 +243,49 @@ def rewrite_segments_and_text(
     if len(info) != len(segments_df):
         raise RuntimeError("Different amount of segments in ctm_edits and Kaldi segments files.")
 
+    statements, failed = match_speakers_to_ctm(df, transcript, recipe, errors)
+
+    mask = (df.edit != "sil") & (df.edit != "fix")
+    segments_df["mpid"] = (
+        info.apply(lambda x: get_segment_speaker(x, df, mask), axis=1).astype(int).values
+    )
+    segments_df["new_uttid"] = segments_df.apply(
+        lambda x: form_new_utterance_id(x, df.attrs["session"]), axis=1
+    )
+    segments_df.recordid = session
+    text_df["new_uttid"] = segments_df["new_uttid"]
+    kaldisegments.save_df(segments_df[segments_df.new_uttid != ""])
+    kalditext.save_df(text_df[text_df.new_uttid != ""])
+
+    dropped_segments = segments_df[segments_df.new_uttid == ""]
     stat_row = {
         "length": df.session_start.iloc[-1] + df.word_duration.iloc[-1],
-        "statements": 0,
-        "failed_statements": 0,
-        "segments": 0,
-        "dropped_segments": 0,
-        "segments_len": 0,
-        "dropped_len": 0,
+        "statements": statements,
+        "failed_statements": failed,
+        "segments": len(segments_df),
+        "dropped_segments": len(dropped_segments),
+        "segments_len": (segments_df.end - segments_df.start).sum(),
+        "dropped_len": (dropped_segments.end - dropped_segments.start).sum(),
     }
+    stats.loc[f"session-{session}"] = stat_row
+    return stats
 
+
+def match_speakers_to_ctm(
+    df: pd.DataFrame, transcript: Transcript, recipe: Any, errors: List[str]
+) -> Tuple[int, int]:
+    """Iterate through statements in the transcript and try to find them in the aligned CTM.
+
+    Args:
+        df (pd.DataFrame): alignment CTM
+        transcript (Transcript): session transcript
+        recipe (Any): preprocessing recipe for text
+        errors (List[str]): description of all encountered errors
+
+    Returns:
+        Tuple[int, int]: counts of total statements and failed statements
+    """
+    total = failed = 0
     for sub in transcript.subsections:
         for statement in sub.statements:
             texts = [statement.text]
@@ -269,32 +301,12 @@ def rewrite_segments_and_text(
                 for txt in texts
                 if len(txt.strip().split(" ")) > 1
             ]
-            stat_row["statements"] += len(texts)
+            total += len(texts)
             for txt, statement in zip(texts, statements):
                 try:
                     assign_speaker(df, txt, statement)
                 except (ValueError, RuntimeError) as err:
-                    stat_row["failed_statements"] += 1
-                    msg = f"Cannot align statement {statement} in {session} because '{err}'."
+                    failed += 1
+                    msg = f"Cannot align statement {statement} in {df.attrs['session']}: {err}."
                     errors.append(msg)
-
-    mask = (df.edit != "sil") & (df.edit != "fix")
-    segments_df["mpid"] = (
-        info.apply(lambda x: get_segment_speaker(x, df, mask), axis=1).astype(int).values
-    )
-    segments_df["new_uttid"] = segments_df.apply(
-        lambda x: form_new_utterance_id(x, df.attrs["session"]), axis=1
-    )
-    segments_df.recordid = session
-    text_df["new_uttid"] = segments_df["new_uttid"]
-    kaldisegments.save_df(segments_df[segments_df.new_uttid != ""])
-    kalditext.save_df(text_df[text_df.new_uttid != ""])
-
-    dropped_segments = segments_df[segments_df.new_uttid == ""]
-    stat_row["segments"] = len(segments_df)
-    stat_row["segments_len"] = (segments_df.end - segments_df.start).sum()
-    stat_row["dropped_segments"] = len(dropped_segments)
-    stat_row["dropped_len"] = (dropped_segments.end - dropped_segments.start).sum()
-
-    stats.loc[f"session-{session}"] = stat_row
-    return stats
+    return total, failed
