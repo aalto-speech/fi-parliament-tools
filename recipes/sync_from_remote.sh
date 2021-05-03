@@ -14,4 +14,4 @@ SOURCE_DIR=$1
 TARGET_DIR=$2
 
 echo "Synchronize segmentation results from ${SOURCE_DIR}."
-rsync -Phauvz --exclude "**ivectors**" --exclude "*.gz" --exclude "*.mdl" --exclude "**.backup**" --exclude "**log**" --exclude "**split**" --exclude "**phones**" --exclude "**fsts**" --exclude "**temp**" -e "ssh" --chmod=g+s,g+rw --group=t405-puhe "${SOURCE_DIR}/generated/work" "${TARGET_DIR}/generated"
+rsync -Pharumvz --include "*/" --include "/*/*/segments" --include "text" --include "ctm_edits.segmented" --exclude "*" -e "ssh" --chmod=g+s,g+rw --group=t405-puhe "${SOURCE_DIR}/generated/work" "${TARGET_DIR}/generated"

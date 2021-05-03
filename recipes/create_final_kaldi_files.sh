@@ -19,18 +19,20 @@ mkdir -p $OUTPUT
 
 # Sort and merge new segments
 # (This approach is copied from 02_preprocess_text, see there for reasoning.)
-for f in $(find "${INPUT}" -type f -name "*segments_new" | sort);
+for f in $(find "${INPUT}" -type f -name "*segments.new" | sort);
 do
 	sort -uo $f{,}
 done
-sort -m -u $(find "${INPUT}" -type f -name "*segments_new" | sort) > $OUTPUT/segments
+sort -m -u $(find "${INPUT}" -type f -name "*segments.new" | sort) > $OUTPUT/segments
 
 # text
-for f in $(find "${INPUT}" -type f -name "*text_new" | sort);
+for f in $(find "${INPUT}" -type f -name "*text.new" | sort);
 do
 	sort -uo $f{,}
 done
-sort -m -u $(find "${INPUT}" -type f -name "*text_new" | sort) > $OUTPUT/text
+# sed is needed for the double spaces outputted by the CSV writer of Python
+# when it is made to output a file like Kaldi text (that is not a csv file)
+sort -m -u $(find "${INPUT}" -type f -name "*text.new" | sort) | sed 's/  / /g' > $OUTPUT/text
 
 # wav.scp
 awk 'BEGIN { FS=" " } { print $2 }' $OUTPUT/segments | sort -u > $OUTPUT/wav

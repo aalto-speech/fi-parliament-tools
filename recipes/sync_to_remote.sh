@@ -15,10 +15,10 @@ SOURCE_DIR=$1
 REMOTE_DIR=$2
 
 echo "Start by synchronizing wav and (preprocessed) text files first because it is much faster."
-rsync -Phauvz --include '*/' --include '*.wav' --include '*.text' --exclude '*' -e "ssh" --chmod=g+s,g+rw --group=t405-puhe $SOURCE_DIR $REMOTE_DIR
+rsync -Phauvz --include "*/" --include "*.wav" --include "*.text" --exclude "*" -e "ssh" --chmod=g+s,g+rw --group=t405-puhe $SOURCE_DIR $REMOTE_DIR
 
 echo "Moving on to synchronizing mp4 files. This will take time."
-rsync -Phauv --include '*/' --include '*.mp4' --exclude '*' -e "ssh" --chmod=g+s,g+rw --group=t405-puhe $SOURCE_DIR $REMOTE_DIR
+rsync -Phauv --include "*/" --include "*.mp4" --exclude "*" -e "ssh" --chmod=g+s,g+rw --group=t405-puhe $SOURCE_DIR $REMOTE_DIR
 
 # Handle notes:
 # -P outputs progress and makes it possible to continue an interrupted rsync which is helpful with big transfers
