@@ -5,6 +5,7 @@ README.Aalto
 *tmp*
 corpus
 *.list
+*.tar
 new_vocab
 
 /.cache/
