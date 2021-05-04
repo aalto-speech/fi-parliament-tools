@@ -1,8 +1,8 @@
 #!/bin/bash
 
-if [ $# -ne 1 ]; then
-    echo "Usage: recipes/split_files_by_session.sh <inputdir>"
-    echo "e.g.: $0 generated/work/2021-01-01"
+if [ $# -ne 2 ]; then
+    echo "Usage: recipes/split_files_by_session.sh <inputdir> <outputdir>"
+    echo "e.g.: $0 generated/work/2021-01-01 generated/realign"
     echo
     echo "This script splits the ctm_edits.segmented, segments, and text files"
     echo "to session specific files, so we can do the realignment on a session-by-session"
@@ -12,14 +12,14 @@ if [ $# -ne 1 ]; then
 fi
 
 INPUT=$1
+OUTPUT=$2
 
 maindir=$(pwd)
-outdir="generated/realign"
-mkdir -p $outdir
+mkdir -p $OUTPUT
 
 
-echo "Move and write output to $outdir."
-cd $outdir
+echo "Move and write output to $OUTPUT."
+cd $OUTPUT
 
 # In the below awk commands, we find the 16 chars long session identifier on each line,
 # and then print the line to a file that has the session ID in its name.
@@ -31,6 +31,6 @@ echo "Splitting done, move back to $maindir."
 cd $maindir
 
 echo "Write input list for postprocessing to segments.list."
-find $outdir -iname "*ctm_edits*" | sort > segments.list
+find $OUTPUT -iname "*ctm_edits*" | sort > segments.list
 
 echo "Done."

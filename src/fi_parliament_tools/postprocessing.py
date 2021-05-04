@@ -17,6 +17,9 @@ STATS_COLUMNS = [
     "failed_statements",
     "segments",
     "dropped_segments",
+    "failed_segments",
+    "multiple_spk",
+    "swedish",
     "segments_len",
     "dropped_len",
 ]
@@ -86,7 +89,6 @@ def report_statistics(log: Logger, stats: pd.DataFrame) -> None:
     csv_name = f"logs/{date.today()}-postprocess-statistics.csv"
     i, f, td = ("int64", "float64", "timedelta64[s]")
 
-    stats = stats.astype({})
     stats.loc["total"] = stats.sum()
     stats["segments_p"] = 100 * stats.segments_len / stats.length
     stats["failed_p"] = 100 * stats.failed_statements / stats.statements
@@ -124,8 +126,13 @@ def report_statistics(log: Logger, stats: pd.DataFrame) -> None:
         "could not be aligned with speaker info."
     )
     log.info(
-        f"{total.dropped_segments} out of {total.segments} segments ({total.dropped_p:.2f}%) "
-        "were dropped because speaker info was missing or they had more than one speaker."
+        f"Because of this, {total.failed_segments} segments had no speaker info. In addition, "
+        f"{total.multiple_spk} segments had more than one speaker and {total.swedish} segments "
+        f"contained Swedish."
+    )
+    log.info(
+        f"In total, {total.dropped_segments} ({total.dropped_p:.2f}%) out of {total.segments} "
+        "segments were dropped."
     )
     log.info(f"Full statistics are saved to {csv_name}.")
     stats.to_csv(csv_name, sep="\t", float_format="%.2f")

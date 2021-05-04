@@ -1,5 +1,7 @@
 """Functions for matching the speaker turns in Kaldi CTMs and segments files."""
 import csv
+from typing import List
+from typing import Optional
 from typing import Tuple
 
 import pandas as pd
@@ -77,7 +79,7 @@ class KaldiCTMSegmented(KaldiFile):
             pd.DataFrame: prepared DataFrame
         """
         df = self.load_uneven_columns()
-        df = df.assign(speaker="unknown", mpid=0)
+        df = df.assign(speaker="unknown", mpid=0, lang="")
         df[["seg_start", "seg_end", "word_id"]] = df.session.apply(
             lambda x: pd.Series(split_segment_id(x))
         )
@@ -100,7 +102,6 @@ class KaldiSegments(KaldiFile):
         """
         super().__init__(filename)
         self.cols = ["uttid", "recordid", "start", "end"]
-        self.saved_cols = ["new_uttid", "recordid", "start", "end"]
 
     def get_df(self) -> pd.DataFrame:
         """Convert data in the file into a DataFrame that can be used in postprocessing.
@@ -117,17 +118,23 @@ class KaldiSegments(KaldiFile):
         df.end += df.seg_start
         return df
 
-    def save_df(self, df: pd.DataFrame) -> None:
+    def save_df(
+        self, df: pd.DataFrame, suffix: str = ".new", cols: Optional[List[str]] = None
+    ) -> None:
         """Save DataFrame into a CSV file.
 
         Args:
             df (pd.DataFrame): data to save
+            suffix (str): suffix for the file
+            cols (List[str], optional): columns to save, defaults to None
         """
+        if cols is None:
+            cols = ["new_uttid", "recordid", "start", "end"]
         df.to_csv(
-            f"{self.filename}.new",
+            f"{self.filename}{suffix}",
             sep=" ",
             float_format="%.2f",
-            columns=self.saved_cols,
+            columns=cols,
             header=False,
             index=False,
         )
@@ -144,7 +151,6 @@ class KaldiText(KaldiFile):
         """
         super().__init__(filename)
         self.cols = ["uttid"]
-        self.saved_cols = ["new_uttid", "text"]
 
     def get_df(self) -> pd.DataFrame:
         """Convert data in the file into a DataFrame that can be used in postprocessing.
@@ -158,16 +164,22 @@ class KaldiText(KaldiFile):
         df = df.assign(text=split[1], new_uttid="")
         return df
 
-    def save_df(self, df: pd.DataFrame) -> None:
+    def save_df(
+        self, df: pd.DataFrame, suffix: str = ".new", cols: Optional[List[str]] = None
+    ) -> None:
         """Save DataFrame into a CSV file.
 
         Args:
             df (pd.DataFrame): data to save
+            suffix (str): suffix for the file
+            cols (List[str], optional): columns to save, defaults to None
         """
+        if cols is None:
+            cols = ["new_uttid", "text"]
         df.to_csv(
-            f"{self.filename}.new",
+            f"{self.filename}{suffix}",
             sep=" ",
-            columns=self.saved_cols,
+            columns=cols,
             header=False,
             index=False,
             quoting=csv.QUOTE_NONE,
