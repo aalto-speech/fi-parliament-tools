@@ -18,7 +18,7 @@ from typing import List
 from typing import Union
 
 
-@dataclass(frozen=True)
+@dataclass
 class EmbeddedStatement:
     """Embedded statements are chairman comments contained within long speaker statements.
 
@@ -45,7 +45,7 @@ class EmbeddedStatement:
     duration: float
 
 
-@dataclass(frozen=True)
+@dataclass
 class Statement:
     """A statement contains speaker+statement statistics and a possible embedded short statement.
 
@@ -64,7 +64,7 @@ class Statement:
         They might also contain embedded statements.
      2. Short statements are spoken by MPs, but they are missing timestamps and language. They also
         will not contain embedded statements. These appear in sessions with voting.
-     3. Chairman statements have always only firstname, lastname, title and text defined.
+     3. Chairman statements have only firstname, lastname, title and text defined.
 
     """
 
@@ -104,6 +104,12 @@ class Subsection:
 
     Each subsection has a number according to the transcript table of contents and the associated
     statements. Only subsections with statements are saved in parsing, rest are ignored.
+
+    Note that on rare occasions subsections do not follow strictly chronological order. In these
+    cases, discussion on a subsection topic begins and continues so long that chairman decides to
+    interrupt it. Then following subsections are discussed first before returning to the subsection
+    with the long discussion. In other words, statements are chronologically ordered within a
+    subsection but not always on the transcript level.
     """
 
     number: str
@@ -114,8 +120,10 @@ class Subsection:
 class Transcript:
     """A session transcript is the main data structure for saving parsed transcripts.
 
-    Each session is associated with a running number and parliamentary working year. Session start
-    time is also recorded. Each transcript is further split into subsections.
+    Each session is associated with a running number and parliamentary working year. The working
+    year differs from calendar year on election years. Session start time is recorded but its
+    accuracy may vary because sometimes only the planned start time is available. Each transcript
+    is further split into subsections.
     """
 
     number: int
@@ -127,10 +135,10 @@ class Transcript:
 def decode_transcript(
     dct: Dict[Any, Any],
 ) -> Union[EmbeddedStatement, Statement, Subsection, Transcript, Dict[Any, Any]]:
-    """Deserialize transcript json into a custom document object.
+    """Deserialize transcript json back into a custom document object.
 
     Args:
-        dct (dict): a (nested) dict in the JSON to deserialize
+        dct (dict): a (nested) dict in the JSON file to deserialize
 
     Returns:
         documents.Object: the dictionary as a correct custom object

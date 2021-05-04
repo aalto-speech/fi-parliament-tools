@@ -158,12 +158,14 @@ def test_preprocessor(runner: CliRunner) -> None:
             [
                 "preprocess",
                 "transcript.list",
+                f"{workdir}/recipes/lid.176.bin",
                 f"{workdir}/recipes/parl_to_kaldi_text.py",
             ],
         )
         assert result.exit_code == 0
         assert "Output is logged to" in result.output
-        assert "Found 5 transcripts in file list, proceed to preprocessing." in result.output
+        assert "Got 5 transcripts, proceed to predict missing language labels." in result.output
+        assert "Next, preprocess all 5 transcripts." in result.output
         assert "Finished successfully!" in result.output
         for text in glob.glob("*.text"):
             with open(text, "r", encoding="utf-8") as outf, open(

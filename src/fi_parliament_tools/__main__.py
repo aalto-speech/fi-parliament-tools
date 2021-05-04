@@ -145,18 +145,25 @@ def download(
 
 @main.command()
 @click.argument("transcript-list", type=click.File(encoding="utf-8"))
+@click.argument("lid-model", type=click.Path(exists=True))
 @click.argument("recipe-file", type=click.Path(exists=True))
-def preprocess(transcript_list: TextIO, recipe_file: str) -> None:
-    """Preprocessing parliament transcripts listed in TRANSCRIPT_LIST using RECIPE_FILE."""
+def preprocess(transcript_list: TextIO, lid_model: str, recipe_file: str) -> None:
+    """Preprocess parliament transcripts in TRANSCRIPT_LIST using LID_MODEL and RECIPE_FILE.
+
+    LID_MODEL predicts language (fi/sv/both) for those statements that do not have a language label
+    in the XMLs. RECIPE_FILE is used to preprocess text for speech recognition.
+    """  # noqa: DAR101, ignore missing arg documentation
     log = setup_logger(f"{date.today()}-preprocess.log")
     errors: List[str] = []
 
     try:
         transcripts = transcript_list.read().split()
+        log.info(f"Got {len(transcripts)} transcripts, proceed to predict missing language labels.")
+        preprocessing.apply_fasttext_lid(lid_model, transcripts, log, errors)
         spec = importlib.util.spec_from_file_location("recipe", recipe_file)
         recipe = importlib.util.module_from_spec(spec)
         spec.loader.exec_module(recipe)  # type: ignore
-        log.info(f"Found {len(transcripts)} transcripts in file list, proceed to preprocessing.")
+        log.info(f"Next, preprocess all {len(transcripts)} transcripts.")
         preprocessing.apply_recipe(recipe, transcripts, log, errors)
     finally:
         final_report(log, errors)
