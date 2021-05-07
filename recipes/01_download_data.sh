@@ -1,5 +1,4 @@
 #!/bin/bash
-### An example of how to use the download client
 
-# Initiate download. Run `./src/download_client.py -h` in the root folder to see all options
-python src/download_client.py --start_session 20/2020
+# An example of how to use the download client (use --help handle to find out more)
+poetry run fi-parliament-tools download --start_session 1/2020

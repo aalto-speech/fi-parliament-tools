@@ -2,7 +2,7 @@
 
 if [ $# -ne 3 ]; then
     echo "Usage: recipes/sample_segments.sh <num> <kaldi_dir> <output_tar>"
-    echo "e.g.: $0 20 generated/new_data sample_filename"
+    echo "e.g.: $0 20 generated/new_data sample.tar"
     echo
     echo "This script picks <num> samples from the segments in <kaldi_dir>, gets the"
     echo "corresponding audio and text, and packs the samples into a tar archive <output_tar>."

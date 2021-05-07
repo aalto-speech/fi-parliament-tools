@@ -1,7 +1,9 @@
 #!/bin/bash
 
+export LC_ALL=C
+
 if [ $# -ne 2 ]; then
-    echo "Usage: recipes/split_files_by_session.sh <inputdir> <outputdir>"
+    echo "Usage: recipes/split_ctm_by_session.sh <inputdir> <outputdir>"
     echo "e.g.: $0 generated/work/2021-01-01 generated/realign"
     echo
     echo "This script splits the ctm_edits.segmented, segments, and text files"
@@ -16,7 +18,6 @@ OUTPUT=$2
 
 maindir=$(pwd)
 mkdir -p $OUTPUT
-
 
 echo "Move and write output to $OUTPUT."
 cd $OUTPUT
