@@ -1,0 +1,1830 @@
+session-129-2016-00000000-00090000[0] 1 0.15 0.21 jani 1.0 <eps> ins
+session-129-2016-00000000-00090000[1] 1 0.36 0.15 me 1.0 <eps> ins
+session-129-2016-00000000-00090000[2] 1 0.51 0.39 huutaa 1.0 <eps> ins
+session-129-2016-00000000-00090000[3] 1 0.9 0.03 <UNK> 1.0 <UNK> fix tainted
+session-129-2016-00000000-00090000[4] 1 0.93 0.03 <eps> 1.0 <eps> sil tainted
+session-129-2016-00000000-00090000[5] 1 0.96 0.03 <UNK> 1.0 <UNK> fix tainted
+session-129-2016-00000000-00090000[6] 1 0.99 9.15 <eps> 1.0 <eps> sil tainted
+session-129-2016-00000000-00090000[7] 1 10.14 0.63 arvoisat 1.0 <eps> ins
+session-129-2016-00000000-00090000[8] 1 10.77 0.81 edustajat 1.0 <eps> ins
+session-129-2016-00000000-00090000[9] 1 11.58 2.7 <eps> 1.0 <eps> sil tainted
+session-129-2016-00000000-00090000[10] 1 14.28 0.54 pyytäisin 1.0 <eps> ins
+session-129-2016-00000000-00090000[11] 1 14.82 0.36 rauhassa 1.0 <eps> ins
+session-129-2016-00000000-00090000[12] 1 15.18 0.39 omista 1.0 <eps> ins
+session-129-2016-00000000-00090000[13] 1 15.57 0.3 ja 1.0 <eps> ins
+session-129-2016-00000000-00090000[14] 1 15.87 0.03 <eps> 1.0 <eps> sil tainted
+session-129-2016-00000000-00090000[15] 1 15.9 0.27 asiat 1.0 <eps> ins
+session-129-2016-00000000-00090000[16] 1 16.17 0.33 omista 1.0 <eps> ins
+session-129-2016-00000000-00090000[17] 1 16.5 0.63 paikalleen 1.0 <eps> ins
+session-129-2016-00000000-00090000[18] 1 17.13 0.84 ja 1.0 <eps> ins
+session-129-2016-00000000-00090000[19] 1 17.97 1.5 <eps> 1.0 <eps> sil tainted
+session-129-2016-00000000-00090000[20] 1 19.47 0.24 muu 1.0 <eps> ins
+session-129-2016-00000000-00090000[21] 1 19.71 0.39 tulos 1.0 <eps> ins
+session-129-2016-00000000-00090000[22] 1 20.1 0.27 jolla 1.0 <eps> ins
+session-129-2016-00000000-00090000[23] 1 20.37 0.33 täällä 1.0 <eps> ins
+session-129-2016-00000000-00090000[24] 1 20.7 0.15 ei 1.0 <eps> ins
+session-129-2016-00000000-00090000[25] 1 20.85 0.27 ole 1.0 <eps> ins
+session-129-2016-00000000-00090000[26] 1 21.12 0.12 <eps> 1.0 <eps> sil tainted
+session-129-2016-00000000-00090000[27] 1 21.24 0.54 asiaa 1.0 <eps> ins
+session-129-2016-00000000-00090000[28] 1 21.78 0.03 <eps> 1.0 <eps> sil tainted
+session-129-2016-00000000-00090000[29] 1 21.81 0.39 ystävät 1.0 <eps> ins
+session-129-2016-00000000-00090000[30] 1 22.2 0.21 asti 1.0 <eps> ins
+session-129-2016-00000000-00090000[31] 1 22.41 0.27 näin 1.0 <eps> ins
+session-129-2016-00000000-00090000[32] 1 22.68 0.45 toivon 1.0 <eps> ins
+session-129-2016-00000000-00090000[33] 1 23.13 0.06 <eps> 1.0 <eps> sil tainted
+session-129-2016-00000000-00090000[34] 1 23.19 0.12 ja 1.0 <eps> ins
+session-129-2016-00000000-00090000[35] 1 23.31 0.36 pyydän 1.0 <eps> ins
+session-129-2016-00000000-00090000[36] 1 23.67 2.19 <eps> 1.0 <eps> sil tainted
+session-129-2016-00000000-00090000[37] 1 25.86 0.66 valtioneuvosto 1.0 <eps> ins
+session-129-2016-00000000-00090000[38] 1 26.52 0.18 on 1.0 <eps> ins
+session-129-2016-00000000-00090000[39] 1 26.7 0.03 <eps> 1.0 <eps> sil tainted
+session-129-2016-00000000-00090000[40] 1 26.73 0.51 kahdeksasta 1.0 <eps> ins
+session-129-2016-00000000-00090000[41] 1 27.24 0.6 kahdettatoista 1.0 <eps> ins
+session-129-2016-00000000-00090000[42] 1 27.84 0.3 kasvanut 1.0 <eps> ins
+session-129-2016-00000000-00090000[43] 1 28.14 0.03 <eps> 1.0 <eps> sil tainted
+session-129-2016-00000000-00090000[44] 1 28.17 0.45 kuusitoista 1.0 <eps> ins
+session-129-2016-00000000-00090000[45] 1 28.62 0.36 toimittaja 1.0 <eps> ins
+session-129-2016-00000000-00090000[46] 1 28.98 0.06 jo 1.0 <eps> ins
+session-129-2016-00000000-00090000[47] 1 29.04 0.66 eduskunnalle 1.0 <eps> ins
+session-129-2016-00000000-00090000[48] 1 29.7 0.42 <eps> 1.0 <eps> sil tainted
+session-129-2016-00000000-00090000[49] 1 30.12 0.48 euroopan 1.0 <eps> ins
+session-129-2016-00000000-00090000[50] 1 30.6 0.03 <eps> 1.0 <eps> sil tainted
+session-129-2016-00000000-00090000[51] 1 30.63 0.48 unionia 1.0 <eps> ins
+session-129-2016-00000000-00090000[52] 1 31.11 0.03 <eps> 1.0 <eps> sil tainted
+session-129-2016-00000000-00090000[53] 1 31.14 0.54 asiat 1.0 <eps> ins
+session-129-2016-00000000-00090000[54] 1 31.68 0.27 ut 1.0 <eps> ins
+session-129-2016-00000000-00090000[55] 1 31.95 0.06 <eps> 1.0 <eps> sil tainted
+session-129-2016-00000000-00090000[56] 1 32.01 0.27 usko 1.0 <eps> ins
+session-129-2016-00000000-00090000[57] 1 32.28 0.09 nyt 1.0 <eps> ins
+session-129-2016-00000000-00090000[58] 1 32.37 0.3 neljä 1.0 <eps> ins
+session-129-2016-00000000-00090000[59] 1 32.67 0.24 viiva 1.0 <eps> ins
+session-129-2016-00000000-00090000[60] 1 32.91 0.24 kuusi 1.0 <eps> ins
+session-129-2016-00000000-00090000[61] 1 33.15 0.03 <eps> 1.0 <eps> sil tainted
+session-129-2016-00000000-00090000[62] 1 33.18 0.12 nyt 1.0 <eps> ins
+session-129-2016-00000000-00090000[63] 1 33.3 0.63 yhdeksän 1.0 <eps> ins
+session-129-2016-00000000-00090000[64] 1 33.93 0.18 <eps> 1.0 <eps> sil tainted
+session-129-2016-00000000-00090000[65] 1 34.11 0.21 näiltä 1.0 <eps> ins
+session-129-2016-00000000-00090000[66] 1 34.32 0.27 valtio 1.0 <eps> ins
+session-129-2016-00000000-00090000[67] 1 34.59 0.33 päivinä 1.0 <eps> ins
+session-129-2016-00000000-00090000[68] 1 34.92 0.3 itä 1.0 <eps> ins
+session-129-2016-00000000-00090000[69] 1 35.22 0.42 <eps> 1.0 <eps> sil tainted
+session-129-2016-00000000-00090000[70] 1 35.64 0.18 ja 1.0 <eps> ins
+session-129-2016-00000000-00090000[71] 1 35.82 0.03 <eps> 1.0 <eps> sil tainted
+session-129-2016-00000000-00090000[72] 1 35.85 0.36 puhemies 1.0 <eps> ins
+session-129-2016-00000000-00090000[73] 1 36.21 0.06 jo 1.0 <eps> ins
+session-129-2016-00000000-00090000[74] 1 36.27 0.39 lähetti 1.0 <eps> ins
+session-129-2016-00000000-00090000[75] 1 36.66 0.03 <eps> 1.0 <eps> sil tainted
+session-129-2016-00000000-00090000[76] 1 36.69 0.09 nyt 1.0 <eps> ins
+session-129-2016-00000000-00090000[77] 1 36.78 0.09 ne 1.0 <eps> ins
+session-129-2016-00000000-00090000[78] 1 36.87 0.69 käsiteltäväksi 1.0 <eps> ins
+session-129-2016-00000000-00090000[79] 1 37.56 0.6 suuren 1.0 <eps> ins
+session-129-2016-00000000-00090000[80] 1 38.16 0.93 valiokuntaan 1.0 <eps> ins
+session-129-2016-00000000-00090000[81] 1 39.09 0.18 <eps> 1.0 <eps> sil tainted
+session-129-2016-00000000-00090000[82] 1 39.27 0.48 jollain 1.0 <eps> ins
+session-129-2016-00000000-00090000[83] 1 39.75 0.63 <eps> 1.0 <eps> sil tainted
+session-129-2016-00000000-00090000[84] 1 40.38 0.39 puhuu 1.0 <eps> ins
+session-129-2016-00000000-00090000[85] 1 40.77 0.42 kuusi 1.0 <eps> ins
+session-129-2016-00000000-00090000[86] 1 41.19 0.12 nyt 1.0 <eps> ins
+session-129-2016-00000000-00090000[87] 1 41.31 0.3 neljä 1.0 <eps> ins
+session-129-2016-00000000-00090000[88] 1 41.61 0.27 kuusi 1.0 <eps> ins
+session-129-2016-00000000-00090000[89] 1 41.88 0.12 nyt 1.0 <eps> ins
+session-129-2016-00000000-00090000[90] 1 42.0 0.39 kuusi 1.0 <eps> ins
+session-129-2016-00000000-00090000[91] 1 42.39 0.66 <eps> 1.0 <eps> sil tainted
+session-129-2016-00000000-00090000[92] 1 43.05 1.47 valtiovarainvaliokunnan 1.0 <eps> ins
+session-129-2016-00000000-00090000[93] 1 44.52 0.03 <eps> 1.0 <eps> sil tainted
+session-129-2016-00000000-00090000[94] 1 44.55 0.63 asioista 1.0 <eps> ins
+session-129-2016-00000000-00090000[95] 1 45.18 0.27 uusi 1.0 <eps> ins
+session-129-2016-00000000-00090000[96] 1 45.45 0.24 kuusi 1.0 <eps> ins
+session-129-2016-00000000-00090000[97] 1 45.69 0.12 nyt 1.0 <eps> ins
+session-129-2016-00000000-00090000[98] 1 45.81 0.78 seitsemän 1.0 <eps> ins
+session-129-2016-00000000-00090000[99] 1 46.59 0.3 <eps> 1.0 <eps> sil tainted
+session-129-2016-00000000-00090000[100] 1 46.89 0.12 ja 1.0 <eps> ins
+session-129-2016-00000000-00090000[101] 1 47.01 0.27 kuusi 1.0 <eps> ins
+session-129-2016-00000000-00090000[102] 1 47.28 0.12 nyt 1.0 <eps> ins
+session-129-2016-00000000-00090000[103] 1 47.4 0.48 kahdeksan 1.0 <eps> ins
+session-129-2016-00000000-00090000[104] 1 47.88 0.36 liikkeelle 1.0 <eps> ins
+session-129-2016-00000000-00090000[105] 1 48.24 0.09 ja 1.0 <eps> ins
+session-129-2016-00000000-00090000[106] 1 48.33 0.24 viestin 1.0 <eps> ins
+session-129-2016-00000000-00090000[107] 1 48.57 0.09 te 1.0 <eps> ins
+session-129-2016-00000000-00090000[108] 1 48.66 0.75 valiokunnan 1.0 <eps> ins
+session-129-2016-00000000-00090000[109] 1 49.41 0.18 <eps> 1.0 <eps> sil tainted
+session-129-2016-00000000-00090000[110] 1 49.59 0.33 sekä 1.0 <eps> ins
+session-129-2016-00000000-00090000[111] 1 49.92 0.6 asiasta 1.0 <eps> ins
+session-129-2016-00000000-00090000[112] 1 50.52 0.06 <eps> 1.0 <eps> sil tainted
+session-129-2016-00000000-00090000[113] 1 50.58 0.45 ut 1.0 <eps> ins
+session-129-2016-00000000-00090000[114] 1 51.03 0.24 <eps> 1.0 <eps> sil tainted
+session-129-2016-00000000-00090000[115] 1 51.27 0.3 usko 1.0 <eps> ins
+session-129-2016-00000000-00090000[116] 1 51.57 0.06 ut 1.0 <eps> ins
+session-129-2016-00000000-00090000[117] 1 51.63 0.63 yhdeksän 1.0 <eps> ins
+session-129-2016-00000000-00090000[118] 1 52.26 0.24 <eps> 1.0 <eps> sil tainted
+session-129-2016-00000000-00090000[119] 1 52.5 0.36 ympäri 1.0 <eps> ins
+session-129-2016-00000000-00090000[120] 1 52.86 0.12 <eps> 1.0 <eps> sil tainted
+session-129-2016-00000000-00090000[121] 1 52.98 0.69 valiokunnan 1.0 <eps> ins
+session-129-2016-00000000-00090000[122] 1 53.67 0.06 <eps> 1.0 <eps> sil tainted
+session-129-2016-00000000-00090000[123] 1 53.73 0.3 on 1.0 <eps> ins
+session-129-2016-00000000-00090000[124] 1 54.03 0.03 <eps> 1.0 <eps> sil tainted
+session-129-2016-00000000-00090000[125] 1 54.06 0.51 annettua 1.0 <eps> ins
+session-129-2016-00000000-00090000[126] 1 54.57 0.51 lausunto 1.0 <eps> ins
+session-129-2016-00000000-00090000[127] 1 55.08 2.28 <eps> 1.0 <eps> sil tainted start-segment-1[start=127,end=144,unk-padding=0.00,0.00,keep-proportion=0.22,0.50,start-time=56.86,end-time=63.67,debug-str=((core-start=128,core-end=134/merged-with-adjacent/core-start=134,core-end=136)/merged-with-adjacent/core-start=137,core-end=151)]=56.86
+session-129-2016-00000000-00090000[128] 1 57.36 0.36 toiseen 1.0 toiseen cor
+session-129-2016-00000000-00090000[129] 1 57.72 0.45 käsittelyyn 1.0 käsittelyyn cor
+session-129-2016-00000000-00090000[130] 1 58.17 0.57 esitellään 1.0 esitellään cor
+session-129-2016-00000000-00090000[131] 1 58.74 0.03 <eps> 1.0 <eps> sil
+session-129-2016-00000000-00090000[132] 1 58.77 0.93 päiväjärjestyksen 1.0 päiväjärjestyksen cor
+session-129-2016-00000000-00090000[133] 1 59.7 0.51 kolmas 1.0 kolmas cor
+session-129-2016-00000000-00090000[134] 1 60.21 0.6 aasiaan 1.0 <eps> ins
+session-129-2016-00000000-00090000[135] 1 60.81 0.0 <eps> 1.0 asia del
+session-129-2016-00000000-00090000[136] 1 60.81 0.45 <eps> 1.0 <eps> sil tainted
+session-129-2016-00000000-00090000[137] 1 61.26 0.15 nyt 1.0 nyt cor
+session-129-2016-00000000-00090000[138] 1 61.41 0.27 voidaan 1.0 voidaan cor
+session-129-2016-00000000-00090000[139] 1 61.68 0.36 hyväksyä 1.0 hyväksyä cor
+session-129-2016-00000000-00090000[140] 1 62.04 0.18 tai 1.0 tai cor
+session-129-2016-00000000-00090000[141] 1 62.22 0.33 hylätä 1.0 hylätä cor
+session-129-2016-00000000-00090000[142] 1 62.55 0.93 lakiehdotukset 1.0 lakiehdotukset cor
+session-129-2016-00000000-00090000[143] 1 63.48 0.39 <eps> 1.0 <eps> sil end-segment-1=63.68 start-segment-2[start=143,end=152,unk-padding=0.00,0.00,keep-proportion=0.50,0.64,start-time=63.67,end-time=67.91,debug-str=((core-start=128,core-end=134/merged-with-adjacent/core-start=134,core-end=136)/merged-with-adjacent/core-start=137,core-end=151)]=63.68
+session-129-2016-00000000-00090000[144] 1 63.87 0.27 joiden 1.0 joiden cor
+session-129-2016-00000000-00090000[145] 1 64.14 0.75 sisällöstä 1.0 sisällöstä cor
+session-129-2016-00000000-00090000[146] 1 64.89 0.03 <eps> 1.0 <eps> sil
+session-129-2016-00000000-00090000[147] 1 64.92 0.75 päätettiin 1.0 päätettiin cor
+session-129-2016-00000000-00090000[148] 1 65.67 0.03 <eps> 1.0 <eps> sil
+session-129-2016-00000000-00090000[149] 1 65.7 0.81 ensimmäisessä 1.0 ensimmäisessä cor
+session-129-2016-00000000-00090000[150] 1 66.51 0.9 käsittelyssä 1.0 käsittelyssä cor
+session-129-2016-00000000-00090000[151] 1 67.41 0.78 <eps> 1.0 <eps> sil tainted end-segment-2=67.91
+session-129-2016-00000000-00090000[152] 1 68.19 0.96 keskustelu 1.0 <eps> ins
+session-129-2016-00000000-00090000[153] 1 69.15 0.78 <eps> 1.0 <eps> sil tainted
+session-129-2016-00000000-00090000[154] 1 69.93 0.78 edustaja 1.0 <eps> ins
+session-129-2016-00000000-00090000[155] 1 70.71 0.03 <eps> 1.0 <eps> sil tainted
+session-129-2016-00000000-00090000[156] 1 70.74 0.72 uotila 1.0 <eps> ins
+session-129-2016-00000000-00090000[157] 1 71.46 14.67 <eps> 1.0 <eps> sil tainted
+session-129-2016-00000000-00090000[158] 1 86.13 0.18 niin 1.0 <eps> ins start-segment-3[start=159,end=165,unk-padding=0.05,0.00,keep-proportion=1.00,0.26,start-time=86.26,end-time=88.88,debug-str=((core-start=159,core-end=172/merged-with-adjacent/core-start=173,core-end=175)/merged-with-adjacent/((core-start=176,core-end=191/merged-with-adjacent/core-start=191,core-end=192)/merged-with-adjacent/core-start=193,core-end=195))]=86.26
+session-129-2016-00000000-00090000[159] 1 86.31 0.66 arvoisa 1.0 arvoisa cor
+session-129-2016-00000000-00090000[160] 1 86.97 0.09 <eps> 1.0 <eps> sil
+session-129-2016-00000000-00090000[161] 1 87.06 0.6 herra 1.0 herra cor
+session-129-2016-00000000-00090000[162] 1 87.66 0.03 <eps> 1.0 <eps> sil
+session-129-2016-00000000-00090000[163] 1 87.69 0.69 puhemies 1.0 puhemies cor
+session-129-2016-00000000-00090000[164] 1 88.38 1.92 <eps> 1.0 <eps> sil end-segment-3=88.88 start-segment-4[start=164,end=170,unk-padding=0.00,0.00,keep-proportion=0.26,0.93,start-time=89.80,end-time=93.23,debug-str=((core-start=159,core-end=172/merged-with-adjacent/core-start=173,core-end=175)/merged-with-adjacent/((core-start=176,core-end=191/merged-with-adjacent/core-start=191,core-end=192)/merged-with-adjacent/core-start=193,core-end=195))]=89.8
+session-129-2016-00000000-00090000[165] 1 90.3 0.99 verotuksen 1.0 verotuksen cor
+session-129-2016-00000000-00090000[166] 1 91.29 0.03 <eps> 1.0 <eps> sil
+session-129-2016-00000000-00090000[167] 1 91.32 0.39 kolme 1.0 kolme cor
+session-129-2016-00000000-00090000[168] 1 91.71 1.02 keskeistä 1.0 keskeistä cor
+session-129-2016-00000000-00090000[169] 1 92.73 0.54 <eps> 1.0 <eps> sil start-segment-5[start=169,end=184,unk-padding=0.00,0.00,keep-proportion=0.93,0.50,start-time=92.77,end-time=100.92,debug-str=((core-start=159,core-end=172/merged-with-adjacent/core-start=173,core-end=175)/merged-with-adjacent/((core-start=176,core-end=191/merged-with-adjacent/core-start=191,core-end=192)/merged-with-adjacent/core-start=193,core-end=195)),overlaps-previous-segment]=92.77 end-segment-4=93.23
+session-129-2016-00000000-00090000[170] 1 93.27 0.78 periaatetta 1.0 periaatetta cor
+session-129-2016-00000000-00090000[171] 1 94.05 0.54 ovat 1.0 ovat cor
+session-129-2016-00000000-00090000[172] 1 94.59 0.69 <eps> 1.0 <eps> sil tainted
+session-129-2016-00000000-00090000[173] 1 95.28 0.78 yksi 1.0 seuraavat sub
+session-129-2016-00000000-00090000[174] 1 96.06 0.0 <eps> 1.0 ensinnäkin del
+session-129-2016-00000000-00090000[175] 1 96.06 0.87 <eps> 1.0 <eps> sil tainted
+session-129-2016-00000000-00090000[176] 1 96.93 0.45 veroja 1.0 veroja cor
+session-129-2016-00000000-00090000[177] 1 97.38 0.6 pitää 1.0 pitää cor
+session-129-2016-00000000-00090000[178] 1 97.98 0.03 <eps> 1.0 <eps> sil
+session-129-2016-00000000-00090000[179] 1 98.01 0.42 kerätä 1.0 kerätä cor
+session-129-2016-00000000-00090000[180] 1 98.43 1.47 veronmaksukyvyn 1.0 veronmaksukyvyn cor
+session-129-2016-00000000-00090000[181] 1 99.9 0.06 <eps> 1.0 <eps> sil
+session-129-2016-00000000-00090000[182] 1 99.96 0.72 mukaan 1.0 mukaan cor
+session-129-2016-00000000-00090000[183] 1 100.68 0.48 <eps> 1.0 <eps> sil end-segment-5=100.92 start-segment-6[start=183,end=189,unk-padding=0.00,0.00,keep-proportion=0.50,0.88,start-time=100.92,end-time=104.18,debug-str=((core-start=159,core-end=172/merged-with-adjacent/core-start=173,core-end=175)/merged-with-adjacent/((core-start=176,core-end=191/merged-with-adjacent/core-start=191,core-end=192)/merged-with-adjacent/core-start=193,core-end=195))]=100.92
+session-129-2016-00000000-00090000[184] 1 101.16 0.6 mikäli 1.0 mikäli cor
+session-129-2016-00000000-00090000[185] 1 101.76 0.21 <eps> 1.0 <eps> sil
+session-129-2016-00000000-00090000[186] 1 101.97 0.93 veronmaksukyky 1.0 veronmaksukyky cor
+session-129-2016-00000000-00090000[187] 1 102.9 0.78 paranee 1.0 paranee cor
+session-129-2016-00000000-00090000[188] 1 103.68 0.57 <eps> 1.0 <eps> sil start-segment-7[start=188,end=195,unk-padding=0.00,0.05,keep-proportion=0.88,1.00,start-time=103.75,end-time=107.63,debug-str=((core-start=159,core-end=172/merged-with-adjacent/core-start=173,core-end=175)/merged-with-adjacent/((core-start=176,core-end=191/merged-with-adjacent/core-start=191,core-end=192)/merged-with-adjacent/core-start=193,core-end=195)),overlaps-previous-segment]=103.75 end-segment-6=104.18
+session-129-2016-00000000-00090000[189] 1 104.25 0.48 tulojen 1.0 tulojen cor
+session-129-2016-00000000-00090000[190] 1 104.73 1.14 kasvamisen 1.0 kasvamisen cor
+session-129-2016-00000000-00090000[191] 1 105.87 0.0 <eps> 1.0 tai del
+session-129-2016-00000000-00090000[192] 1 105.87 0.39 <eps> 1.0 <eps> sil tainted
+session-129-2016-00000000-00090000[193] 1 106.26 0.72 omaisuuden 1.0 omaisuuden cor
+session-129-2016-00000000-00090000[194] 1 106.98 0.6 kasvamisen 1.0 kasvamisen cor
+session-129-2016-00000000-00090000[195] 1 107.58 0.15 tai 1.0 <eps> ins end-segment-7=107.63
+session-129-2016-00000000-00090000[196] 1 107.73 0.75 yleensä 1.0 <eps> ins
+session-129-2016-00000000-00090000[197] 1 108.48 0.06 <eps> 1.0 <eps> sil tainted
+session-129-2016-00000000-00090000[198] 1 108.54 0.84 veronmaksukyvyn 1.0 <eps> ins
+session-129-2016-00000000-00090000[199] 1 109.38 0.6 mukaan 1.0 <eps> ins
+session-129-2016-00000000-00090000[200] 1 109.98 1.11 <eps> 1.0 <eps> sil tainted
+session-129-2016-00000000-00090000[201] 1 111.09 0.24 tai 1.0 <eps> ins
+session-129-2016-00000000-00090000[202] 1 111.33 0.33 eron 1.0 <eps> ins
+session-129-2016-00000000-00090000[203] 1 111.66 0.51 <eps> 1.0 <eps> sil tainted
+session-129-2016-00000000-00090000[204] 1 112.17 0.57 lisää 1.0 myötä sub start-segment-8[start=205,end=233,unk-padding=0.05,0.00,keep-proportion=1.00,1.00,start-time=112.69,end-time=124.38,wer=5.00,num-incorrect-words=1,num-tainted-words=0,num-words=20,incorrect-length=0.33,silence-length=1.17,tainted-nonsilence-length=0.00,total-length=11.64,debug-str=((core-start=205,core-end=220/merged-with-adjacent/core-start=220,core-end=221)/merged-with-adjacent/core-start=221,core-end=232)]=112.69
+session-129-2016-00000000-00090000[205] 1 112.74 0.18 niin 1.0 niin cor
+session-129-2016-00000000-00090000[206] 1 112.92 0.27 pitää 1.0 pitää cor
+session-129-2016-00000000-00090000[207] 1 113.19 0.27 myöskin 1.0 myöskin cor
+session-129-2016-00000000-00090000[208] 1 113.46 0.72 veroja 1.0 veroja cor
+session-129-2016-00000000-00090000[209] 1 114.18 0.3 <eps> 1.0 <eps> sil
+session-129-2016-00000000-00090000[210] 1 114.48 0.54 kerätä 1.0 kerätä cor
+session-129-2016-00000000-00090000[211] 1 115.02 0.03 <eps> 1.0 <eps> sil
+session-129-2016-00000000-00090000[212] 1 115.05 0.51 enemmän 1.0 enemmän cor
+session-129-2016-00000000-00090000[213] 1 115.56 0.03 <eps> 1.0 <eps> sil
+session-129-2016-00000000-00090000[214] 1 115.59 0.3 toinen 1.0 toinen cor
+session-129-2016-00000000-00090000[215] 1 115.89 0.75 periaate 1.0 periaate cor
+session-129-2016-00000000-00090000[216] 1 116.64 0.15 <eps> 1.0 <eps> sil
+session-129-2016-00000000-00090000[217] 1 116.79 0.66 suomalaisessa 1.0 suomalaisessa cor
+session-129-2016-00000000-00090000[218] 1 117.45 0.54 verotuksessa 1.0 verotuksessa cor
+session-129-2016-00000000-00090000[219] 1 117.99 0.09 on 1.0 on cor
+session-129-2016-00000000-00090000[220] 1 118.08 0.33 pitkä 1.0 pitkään sub
+session-129-2016-00000000-00090000[221] 1 118.41 0.18 ollut 1.0 ollut cor
+session-129-2016-00000000-00090000[222] 1 118.59 0.15 että 1.0 että cor
+session-129-2016-00000000-00090000[223] 1 118.74 0.81 pyritään 1.0 pyritään cor
+session-129-2016-00000000-00090000[224] 1 119.55 0.3 <eps> 1.0 <eps> sil
+session-129-2016-00000000-00090000[225] 1 119.85 0.96 mahdollisimman 1.0 mahdollisimman cor
+session-129-2016-00000000-00090000[226] 1 120.81 0.06 <eps> 1.0 <eps> sil
+session-129-2016-00000000-00090000[227] 1 120.87 0.75 yhtenäiseen 1.0 yhtenäiseen cor
+session-129-2016-00000000-00090000[228] 1 121.62 1.29 verotukseen 1.0 verotukseen cor
+session-129-2016-00000000-00090000[229] 1 122.91 0.06 <eps> 1.0 <eps> sil
+session-129-2016-00000000-00090000[230] 1 122.97 0.51 mieluummin 1.0 mieluummin cor
+session-129-2016-00000000-00090000[231] 1 123.48 0.66 mataliin 1.0 mataliin cor
+session-129-2016-00000000-00090000[232] 1 124.14 0.24 <eps> 1.0 <eps> sil tainted end-segment-8=124.38
+session-129-2016-00000000-00090000[233] 1 124.38 1.05 veron 1.0 <eps> ins
+session-129-2016-00174000-00264000[0] 1 29.82 0.57 hallitus 1.0 hallitus cor start-segment-1[start=0,end=21,unk-padding=0.05,0.05,keep-proportion=1.00,1.00,start-time=29.77,end-time=40.22,debug-str=core-start=0,core-end=21]=29.77
+session-129-2016-00174000-00264000[1] 1 30.39 0.12 on 1.0 on cor
+session-129-2016-00174000-00264000[2] 1 30.51 0.54 asettanut 1.0 asettanut cor
+session-129-2016-00174000-00264000[3] 1 31.05 0.66 miettimään 1.0 <eps> ins
+session-129-2016-00174000-00264000[4] 1 31.71 0.03 <eps> 1.0 <eps> sil tainted
+session-129-2016-00174000-00264000[5] 1 31.74 0.66 erilaisia 1.0 erilaisia cor
+session-129-2016-00174000-00264000[6] 1 32.4 1.11 virkamiestyöryhmiä 1.0 virkamiestyöryhmiä cor
+session-129-2016-00174000-00264000[7] 1 33.51 0.24 meillä 1.0 meillä cor
+session-129-2016-00174000-00264000[8] 1 33.75 0.42 on 1.0 on cor
+session-129-2016-00174000-00264000[9] 1 34.17 0.06 <eps> 1.0 <eps> sil
+session-129-2016-00174000-00264000[10] 1 34.23 0.42 yksi 1.0 yksi cor
+session-129-2016-00174000-00264000[11] 1 34.65 0.03 <eps> 1.0 <eps> sil
+session-129-2016-00174000-00264000[12] 1 34.68 0.45 työryhmä 1.0 työryhmä cor
+session-129-2016-00174000-00264000[13] 1 35.13 0.57 miettimässä 1.0 miettimässä cor
+session-129-2016-00174000-00264000[14] 1 35.7 0.9 verotuksellisia 1.0 verotuksellisia cor
+session-129-2016-00174000-00264000[15] 1 36.6 0.96 ratkaisuja 1.0 ratkaisuja cor
+session-129-2016-00174000-00264000[16] 1 37.56 0.03 <eps> 1.0 <eps> sil
+session-129-2016-00174000-00264000[17] 1 37.59 0.54 toinen 1.0 toinen cor
+session-129-2016-00174000-00264000[18] 1 38.13 0.45 työryhmä 1.0 työryhmä cor
+session-129-2016-00174000-00264000[19] 1 38.58 0.57 miettimässä 1.0 miettimässä cor
+session-129-2016-00174000-00264000[20] 1 39.15 1.02 kannustinloukkujen 1.0 kannustinloukkujen cor start-segment-2[start=21,end=39,unk-padding=0.05,0.00,keep-proportion=1.00,0.46,start-time=40.12,end-time=48.74,debug-str=core-start=21,core-end=39,overlaps-previous-segment]=40.12
+session-129-2016-00174000-00264000[21] 1 40.17 0.9 purkamista 1.0 purkamista cor end-segment-1=40.22
+session-129-2016-00174000-00264000[22] 1 41.07 0.03 <eps> 1.0 <eps> sil
+session-129-2016-00174000-00264000[23] 1 41.1 0.33 sen 1.0 sen cor
+session-129-2016-00174000-00264000[24] 1 41.43 0.51 lisäksi 1.0 lisäksi cor
+session-129-2016-00174000-00264000[25] 1 41.94 0.15 jo 1.0 jo cor
+session-129-2016-00174000-00264000[26] 1 42.09 1.08 hallitusohjelmassa 1.0 hallitusohjelmassa cor
+session-129-2016-00174000-00264000[27] 1 43.17 0.03 <eps> 1.0 <eps> sil
+session-129-2016-00174000-00264000[28] 1 43.2 0.24 on 1.0 on cor
+session-129-2016-00174000-00264000[29] 1 43.44 0.36 ollut 1.0 ollut cor
+session-129-2016-00174000-00264000[30] 1 43.8 0.78 esillä 1.0 esillä cor
+session-129-2016-00174000-00264000[31] 1 44.58 0.24 <eps> 1.0 <eps> sil
+session-129-2016-00174000-00264000[32] 1 44.82 0.9 työmarkkinoiden 1.0 työmarkkinoiden cor
+session-129-2016-00174000-00264000[33] 1 45.72 0.03 <eps> 1.0 <eps> sil
+session-129-2016-00174000-00264000[34] 1 45.75 0.84 uudistaminen 1.0 uudistaminen cor
+session-129-2016-00174000-00264000[35] 1 46.59 0.66 yrittäjyyttä 1.0 yrittäjyyttä cor
+session-129-2016-00174000-00264000[36] 1 47.25 0.48 tukevaan 1.0 tukevaan cor
+session-129-2016-00174000-00264000[37] 1 47.73 0.51 suuntaan 1.0 suuntaan cor
+session-129-2016-00174000-00264000[38] 1 48.24 1.08 <eps> 1.0 <eps> sil end-segment-2=48.74
+session-129-2016-00174000-00264000[39] 1 49.32 0.21 ja 1.0 ja cor
+session-129-2016-00174000-00264000[40] 1 49.53 0.18 nyt 1.0 nyt cor
+session-129-2016-00174000-00264000[41] 1 49.71 0.0 <eps> 1.0 on del
+session-129-2016-00174000-00264000[42] 1 49.71 1.2 vastauspuheenvuoro 1.0 vastauspuheenvuoro cor
+session-129-2016-00174000-00264000[43] 1 50.91 0.21 <eps> 1.0 <eps> sil
+session-129-2016-00174000-00264000[44] 1 51.12 0.45 tämän 1.0 tämän cor
+session-129-2016-00174000-00264000[45] 1 51.57 0.03 <eps> 1.0 <eps> sil
+session-129-2016-00174000-00264000[46] 1 51.6 0.63 debatin 1.0 debatin cor
+session-129-2016-00174000-00264000[47] 1 52.23 0.03 <eps> 1.0 <eps> sil
+session-129-2016-00174000-00264000[48] 1 52.26 1.2 virittäneellä 1.0 virittäneellä cor
+session-129-2016-00174000-00264000[49] 1 53.46 0.09 <eps> 1.0 <eps> sil
+session-129-2016-00174000-00264000[50] 1 53.55 0.6 edustaja 1.0 edustaja cor
+session-129-2016-00174000-00264000[51] 1 54.15 0.6 harakalla 1.0 harakalla cor
+session-129-2016-00174000-00264000[52] 1 54.75 1.47 <eps> 1.0 <eps> sil
+session-129-2016-00174000-00264000[53] 1 56.22 0.33 arvoisa 1.0 arvoisa cor
+session-129-2016-00174000-00264000[54] 1 56.55 0.03 <eps> 1.0 <eps> sil
+session-129-2016-00174000-00264000[55] 1 56.58 0.75 puhemies 1.0 puhemies cor
+session-129-2016-00174000-00264000[56] 1 57.33 0.06 <eps> 1.0 <eps> sil
+session-129-2016-00174000-00264000[57] 1 57.39 0.27 itse 1.0 itse cor
+session-129-2016-00174000-00264000[58] 1 57.66 0.33 asiassa 1.0 asiassa cor
+session-129-2016-00174000-00264000[59] 1 57.99 1.05 valtiovarainministeriöstä 1.0 valtiovarainministeriöstä cor
+session-129-2016-00174000-00264000[60] 1 59.04 0.12 on 1.0 on cor
+session-129-2016-00174000-00264000[61] 1 59.16 0.03 <eps> 1.0 <eps> sil
+session-129-2016-00174000-00264000[62] 1 59.19 0.57 kerrottu 1.0 kerrottu cor
+session-129-2016-00174000-00264000[63] 1 59.76 0.36 että 1.0 että cor
+session-129-2016-00174000-00264000[64] 1 60.12 0.12 <eps> 1.0 <eps> sil
+session-129-2016-00174000-00264000[65] 1 60.24 0.6 kehysriihi 1.0 kehysriihi cor
+session-129-2016-00174000-00264000[66] 1 60.84 0.6 voidaan 1.0 voidaan cor
+session-129-2016-00174000-00264000[67] 1 61.44 0.03 <eps> 1.0 <eps> sil
+session-129-2016-00174000-00264000[68] 1 61.47 0.78 pitää 1.0 pitää cor
+session-129-2016-00174000-00264000[69] 1 62.25 0.12 <eps> 1.0 <eps> sil
+session-129-2016-00174000-00264000[70] 1 62.37 0.84 kunnallisvaalien 1.0 kunnallisvaalien cor
+session-129-2016-00174000-00264000[71] 1 63.21 0.99 alusviikolla 1.0 alusviikolla cor
+session-129-2016-00174000-00264000[72] 1 64.2 0.33 <eps> 1.0 <eps> sil
+session-129-2016-00174000-00264000[73] 1 64.53 0.21 eli 1.0 eli cor
+session-129-2016-00174000-00264000[74] 1 64.74 0.27 tässä 1.0 <eps> ins
+session-129-2016-00174000-00264000[75] 1 65.01 0.12 ei 1.0 ei cor
+session-129-2016-00174000-00264000[76] 1 65.13 0.12 ole 1.0 ole cor
+session-129-2016-00174000-00264000[77] 1 65.25 0.45 teknistä 1.0 teknistä cor
+session-129-2016-00174000-00264000[78] 1 65.7 0.27 syytä 1.0 syytä cor
+session-129-2016-00174000-00264000[79] 1 65.97 0.48 siirtää 1.0 siirtää cor
+session-129-2016-00174000-00264000[80] 1 66.45 0.48 sitä 1.0 sitä cor
+session-129-2016-00174000-00264000[81] 1 66.93 0.12 <eps> 1.0 <eps> sil tainted
+session-129-2016-00174000-00264000[82] 1 67.05 0.45 sinne 1.0 <eps> ins
+session-129-2016-00174000-00264000[83] 1 67.5 0.03 <eps> 1.0 <eps> sil tainted
+session-129-2016-00174000-00264000[84] 1 67.53 0.45 sinne 1.0 <eps> ins
+session-129-2016-00174000-00264000[85] 1 67.98 0.06 <eps> 1.0 <eps> sil tainted
+session-129-2016-00174000-00264000[86] 1 68.04 0.33 sinne 1.0 <eps> ins
+session-129-2016-00174000-00264000[87] 1 68.37 0.3 tuota 1.0 <eps> ins start-segment-3[start=88,end=101,unk-padding=0.05,0.00,keep-proportion=1.00,0.50,start-time=68.62,end-time=72.57,debug-str=((((core-start=88,core-end=90/merged-with-adjacent/core-start=90,core-end=91)/merged-with-adjacent/core-start=91,core-end=106)/merged-with-adjacent/core-start=107,core-end=110)/merged-with-adjacent/((core-start=110,core-end=113/merged-with-adjacent/core-start=113,core-end=114)/merged-with-adjacent/((core-start=115,core-end=117/merged-with-adjacent/core-start=117,core-end=118)/merged-with-adjacent/core-start=118,core-end=170)))]=68.62
+session-129-2016-00174000-00264000[88] 1 68.67 0.36 vaalien 1.0 vaalien cor
+session-129-2016-00174000-00264000[89] 1 69.03 0.39 jälkeen 1.0 jälkeen cor
+session-129-2016-00174000-00264000[90] 1 69.42 0.06 on 1.0 <eps> ins
+session-129-2016-00174000-00264000[91] 1 69.48 0.33 joten 1.0 joten cor
+session-129-2016-00174000-00264000[92] 1 69.81 0.24 <eps> 1.0 <eps> sil
+session-129-2016-00174000-00264000[93] 1 70.05 0.24 joten 1.0 joten cor
+session-129-2016-00174000-00264000[94] 1 70.29 0.27 kyllä 1.0 kyllä cor
+session-129-2016-00174000-00264000[95] 1 70.56 0.06 se 1.0 se cor
+session-129-2016-00174000-00264000[96] 1 70.62 0.27 meille 1.0 meille cor
+session-129-2016-00174000-00264000[97] 1 70.89 0.33 sopii 1.0 sopii cor
+session-129-2016-00174000-00264000[98] 1 71.22 0.21 aivan 1.0 aivan cor
+session-129-2016-00174000-00264000[99] 1 71.43 0.9 erinomaisesti 1.0 erinomaisesti cor start-segment-4[start=100,end=126,unk-padding=0.00,0.00,keep-proportion=1.00,0.50,start-time=72.33,end-time=81.68,debug-str=((((core-start=88,core-end=90/merged-with-adjacent/core-start=90,core-end=91)/merged-with-adjacent/core-start=91,core-end=106)/merged-with-adjacent/core-start=107,core-end=110)/merged-with-adjacent/((core-start=110,core-end=113/merged-with-adjacent/core-start=113,core-end=114)/merged-with-adjacent/((core-start=115,core-end=117/merged-with-adjacent/core-start=117,core-end=118)/merged-with-adjacent/core-start=118,core-end=170))),overlaps-previous-segment]=72.33
+session-129-2016-00174000-00264000[100] 1 72.33 0.48 <eps> 1.0 <eps> sil end-segment-3=72.57
+session-129-2016-00174000-00264000[101] 1 72.81 0.48 sopiiko 1.0 sopiiko cor
+session-129-2016-00174000-00264000[102] 1 73.29 0.03 <eps> 1.0 <eps> sil
+session-129-2016-00174000-00264000[103] 1 73.32 0.6 sopiiko 1.0 sopiiko cor
+session-129-2016-00174000-00264000[104] 1 73.92 0.06 <eps> 1.0 <eps> sil
+session-129-2016-00174000-00264000[105] 1 73.98 0.78 hallitukselle 1.0 hallitukselle cor
+session-129-2016-00174000-00264000[106] 1 74.76 0.21 <eps> 1.0 <eps> sil tainted
+session-129-2016-00174000-00264000[107] 1 74.97 0.42 mutta 1.0 <eps> ins
+session-129-2016-00174000-00264000[108] 1 75.39 0.15 <eps> 1.0 <eps> sil tainted
+session-129-2016-00174000-00264000[109] 1 75.54 0.3 arvoisat 1.0 arvoisa sub
+session-129-2016-00174000-00264000[110] 1 75.84 0.27 puhemies 1.0 puhemies cor
+session-129-2016-00174000-00264000[111] 1 76.11 0.3 kolme 1.0 kolme cor
+session-129-2016-00174000-00264000[112] 1 76.41 1.05 veropointtia 1.0 veropointtia cor
+session-129-2016-00174000-00264000[113] 1 77.46 0.0 <eps> 1.0 ensiksi del
+session-129-2016-00174000-00264000[114] 1 77.46 0.51 <eps> 1.0 <eps> sil tainted
+session-129-2016-00174000-00264000[115] 1 77.97 0.24 kun 1.0 kun cor
+session-129-2016-00174000-00264000[116] 1 78.21 0.9 kotitalousvähennystä 1.0 kotitalousvähennystä cor
+session-129-2016-00174000-00264000[117] 1 79.11 0.12 ei 1.0 eivät sub
+session-129-2016-00174000-00264000[118] 1 79.23 0.18 voi 1.0 voi cor
+session-129-2016-00174000-00264000[119] 1 79.41 0.48 käyttää 1.0 käyttää cor
+session-129-2016-00174000-00264000[120] 1 79.89 0.27 kuin 1.0 kuin cor
+session-129-2016-00174000-00264000[121] 1 80.16 0.36 keski 1.0 keski cor
+session-129-2016-00174000-00264000[122] 1 80.52 0.09 ja 1.0 ja cor
+session-129-2016-00174000-00264000[123] 1 80.61 0.06 ja 1.0 ja cor
+session-129-2016-00174000-00264000[124] 1 80.67 0.84 hyvätuloiset 1.0 hyvätuloiset cor start-segment-5[start=125,end=161,unk-padding=0.00,0.00,keep-proportion=1.00,0.50,start-time=81.51,end-time=94.82,debug-str=((((core-start=88,core-end=90/merged-with-adjacent/core-start=90,core-end=91)/merged-with-adjacent/core-start=91,core-end=106)/merged-with-adjacent/core-start=107,core-end=110)/merged-with-adjacent/((core-start=110,core-end=113/merged-with-adjacent/core-start=113,core-end=114)/merged-with-adjacent/((core-start=115,core-end=117/merged-with-adjacent/core-start=117,core-end=118)/merged-with-adjacent/core-start=118,core-end=170))),overlaps-previous-segment]=81.51
+session-129-2016-00174000-00264000[125] 1 81.51 0.33 <eps> 1.0 <eps> sil end-segment-4=81.68
+session-129-2016-00174000-00264000[126] 1 81.84 0.18 niin 1.0 niin cor
+session-129-2016-00174000-00264000[127] 1 82.02 0.75 veronmaksajat 1.0 veronmaksajat cor
+session-129-2016-00174000-00264000[128] 1 82.77 0.12 on 1.0 on cor
+session-129-2016-00174000-00264000[129] 1 82.89 0.54 esittänyt 1.0 esittänyt cor
+session-129-2016-00174000-00264000[130] 1 83.43 0.18 että 1.0 että cor
+session-129-2016-00174000-00264000[131] 1 83.61 0.75 luovuttaisiin 1.0 luovuttaisiin cor
+session-129-2016-00174000-00264000[132] 1 84.36 0.42 sadan 1.0 sadan cor
+session-129-2016-00174000-00264000[133] 1 84.78 0.03 <eps> 1.0 <eps> sil
+session-129-2016-00174000-00264000[134] 1 84.81 0.36 euron 1.0 euron cor
+session-129-2016-00174000-00264000[135] 1 85.17 1.05 omavastuusta 1.0 omavastuusta cor
+session-129-2016-00174000-00264000[136] 1 86.22 0.03 <eps> 1.0 <eps> sil
+session-129-2016-00174000-00264000[137] 1 86.25 0.27 sillä 1.0 sillä cor
+session-129-2016-00174000-00264000[138] 1 86.52 0.6 saataisiin 1.0 saataisiin cor
+session-129-2016-00174000-00264000[139] 1 87.12 0.42 mukaan 1.0 mukaan cor
+session-129-2016-00174000-00264000[140] 1 87.54 0.3 paljon 1.0 paljon cor
+session-129-2016-00174000-00264000[141] 1 87.84 0.54 enemmän 1.0 enemmän cor
+session-129-2016-00174000-00264000[142] 1 88.38 0.12 <eps> 1.0 <eps> sil
+session-129-2016-00174000-00264000[143] 1 88.5 0.69 ihmisiä 1.0 ihmisiä cor
+session-129-2016-00174000-00264000[144] 1 89.19 0.03 <eps> 1.0 <eps> sil
+session-129-2016-00174000-00264000[145] 1 89.22 0.9 pienituloisempiakin 1.0 pienituloisempiakin cor
+session-129-2016-00174000-00264000[146] 1 90.12 0.48 ihmisiä 1.0 ihmisiä cor
+session-129-2016-00174000-00264000[147] 1 90.6 0.03 <eps> 1.0 <eps> sil
+session-129-2016-00174000-00264000[148] 1 90.63 0.66 hyödyntämään 1.0 hyödyntämään cor
+session-129-2016-00174000-00264000[149] 1 91.29 0.51 sitä 1.0 sitä cor
+session-129-2016-00174000-00264000[150] 1 91.8 0.09 <eps> 1.0 <eps> sil
+session-129-2016-00174000-00264000[151] 1 91.89 0.15 se 1.0 se cor
+session-129-2016-00174000-00264000[152] 1 92.04 0.12 on 1.0 on cor
+session-129-2016-00174000-00264000[153] 1 92.16 0.03 <eps> 1.0 <eps> sil
+session-129-2016-00174000-00264000[154] 1 92.19 0.57 sdpn 1.0 sdpn cor
+session-129-2016-00174000-00264000[155] 1 92.76 0.57 reilumpi 1.0 reilumpi cor
+session-129-2016-00174000-00264000[156] 1 93.33 0.03 <eps> 1.0 <eps> sil
+session-129-2016-00174000-00264000[157] 1 93.36 0.36 malli 1.0 malli cor
+session-129-2016-00174000-00264000[158] 1 93.72 0.54 tarttukaa 1.0 tarttukaa cor
+session-129-2016-00174000-00264000[159] 1 94.26 0.39 siihen 1.0 siihen cor
+session-129-2016-00174000-00264000[160] 1 94.65 0.33 <eps> 1.0 <eps> sil start-segment-6[start=160,end=171,unk-padding=0.00,0.00,keep-proportion=0.50,1.00,start-time=94.81,end-time=99.09,debug-str=((((core-start=88,core-end=90/merged-with-adjacent/core-start=90,core-end=91)/merged-with-adjacent/core-start=91,core-end=106)/merged-with-adjacent/core-start=107,core-end=110)/merged-with-adjacent/((core-start=110,core-end=113/merged-with-adjacent/core-start=113,core-end=114)/merged-with-adjacent/((core-start=115,core-end=117/merged-with-adjacent/core-start=117,core-end=118)/merged-with-adjacent/core-start=118,core-end=170))),overlaps-previous-segment]=94.82 end-segment-5=94.82
+session-129-2016-00174000-00264000[161] 1 94.98 0.63 toisekseen 1.0 toisekseen cor
+session-129-2016-00174000-00264000[162] 1 95.61 0.24 <eps> 1.0 <eps> sil
+session-129-2016-00174000-00264000[163] 1 95.85 0.15 niin 1.0 niin cor
+session-129-2016-00174000-00264000[164] 1 96.0 0.33 sanottu 1.0 sanottu cor
+session-129-2016-00174000-00264000[165] 1 96.33 0.9 yrittäjävähennys 1.0 yrittäjävähennys cor
+session-129-2016-00174000-00264000[166] 1 97.23 0.06 se 1.0 se cor
+session-129-2016-00174000-00264000[167] 1 97.29 0.12 on 1.0 on cor
+session-129-2016-00174000-00264000[168] 1 97.41 0.36 täyttä 1.0 täyttä cor
+session-129-2016-00174000-00264000[169] 1 97.77 0.87 humpuukia 1.0 humpuukia cor
+session-129-2016-00174000-00264000[170] 1 98.64 0.45 <eps> 1.0 <eps> sil tainted end-segment-6=99.09
+session-129-2016-00174000-00264000[171] 1 99.09 0.99 pienituloisimmat 1.0 <eps> ins
+session-129-2016-00174000-00264000[172] 1 100.08 0.03 <eps> 1.0 <eps> sil tainted
+session-129-2016-00174000-00264000[173] 1 100.11 0.81 pienituloiset 1.0 pienituloisista sub start-segment-7[start=174,end=196,unk-padding=0.05,0.05,keep-proportion=1.00,1.00,start-time=100.87,end-time=111.02,debug-str=core-start=174,core-end=196]=100.87
+session-129-2016-00174000-00264000[174] 1 100.92 1.29 ammatinharjoittajista 1.0 ammatinharjoittajista cor
+session-129-2016-00174000-00264000[175] 1 102.21 0.15 <eps> 1.0 <eps> sil
+session-129-2016-00174000-00264000[176] 1 102.36 1.11 elinkeinonharjoittajista 1.0 elinkeinonharjoittajista cor
+session-129-2016-00174000-00264000[177] 1 103.47 0.27 heistä 1.0 <eps> ins
+session-129-2016-00174000-00264000[178] 1 103.74 0.69 yhdeksänkymmentä 1.0 yhdeksänkymmentä cor
+session-129-2016-00174000-00264000[179] 1 104.43 0.63 prosenttia 1.0 prosenttia cor
+session-129-2016-00174000-00264000[180] 1 105.06 0.54 verotetaan 1.0 verotetaan cor
+session-129-2016-00174000-00264000[181] 1 105.6 0.75 ansiotulon 1.0 ansiotulon cor
+session-129-2016-00174000-00264000[182] 1 106.35 0.6 mukaan 1.0 mukaan cor
+session-129-2016-00174000-00264000[183] 1 106.95 0.24 <eps> 1.0 <eps> sil
+session-129-2016-00174000-00264000[184] 1 107.19 0.24 eli 1.0 eli cor
+session-129-2016-00174000-00264000[185] 1 107.43 0.24 tämä 1.0 tämä cor
+session-129-2016-00174000-00264000[186] 1 107.67 0.63 ansiotulon 1.0 ansiotulon cor
+session-129-2016-00174000-00264000[187] 1 108.3 0.33 alennus 1.0 alennus cor
+session-129-2016-00174000-00264000[188] 1 108.63 0.21 josta 1.0 jota sub
+session-129-2016-00174000-00264000[189] 1 108.84 0.27 tässä 1.0 tässä cor
+session-129-2016-00174000-00264000[190] 1 109.11 0.12 nyt 1.0 nyt cor
+session-129-2016-00174000-00264000[191] 1 109.23 0.51 käsitellään 1.0 käsitellään cor
+session-129-2016-00174000-00264000[192] 1 109.74 0.06 on 1.0 on cor
+session-129-2016-00174000-00264000[193] 1 109.8 0.24 heille 1.0 heille cor
+session-129-2016-00174000-00264000[194] 1 110.04 0.24 paljon 1.0 paljon cor
+session-129-2016-00174000-00264000[195] 1 110.28 0.69 merkittävämpi 1.0 merkittävämpi cor start-segment-8[start=196,end=213,unk-padding=0.05,0.00,keep-proportion=1.00,0.62,start-time=110.92,end-time=117.71,debug-str=core-start=196,core-end=213,overlaps-previous-segment]=110.92
+session-129-2016-00174000-00264000[196] 1 110.97 0.15 kuin 1.0 kuin cor end-segment-7=111.02
+session-129-2016-00174000-00264000[197] 1 111.12 0.09 kun 1.0 <eps> ins
+session-129-2016-00174000-00264000[198] 1 111.21 0.33 tämä 1.0 tämä cor
+session-129-2016-00174000-00264000[199] 1 111.54 0.18 <eps> 1.0 <eps> sil
+session-129-2016-00174000-00264000[200] 1 111.72 1.17 seitsemänkymmenenviiden 1.0 seitsemänkymmenenviiden cor
+session-129-2016-00174000-00264000[201] 1 112.89 0.57 miljoonan 1.0 miljoonan cor
+session-129-2016-00174000-00264000[202] 1 113.46 0.03 <eps> 1.0 <eps> sil
+session-129-2016-00174000-00264000[203] 1 113.49 0.48 euron 1.0 euron cor
+session-129-2016-00174000-00264000[204] 1 113.97 0.24 <eps> 1.0 <eps> sil
+session-129-2016-00174000-00264000[205] 1 114.21 0.78 käsittämätön 1.0 käsittämätön cor
+session-129-2016-00174000-00264000[206] 1 114.99 0.03 <eps> 1.0 <eps> sil
+session-129-2016-00174000-00264000[207] 1 115.02 0.48 lahja 1.0 lahja cor
+session-129-2016-00174000-00264000[208] 1 115.5 0.48 kahteen 1.0 kahteen cor
+session-129-2016-00174000-00264000[209] 1 115.98 0.51 ylimpään 1.0 ylimpään cor
+session-129-2016-00174000-00264000[210] 1 116.49 0.72 tuloluokkaan 1.0 tuloluokkaan cor
+session-129-2016-00174000-00264000[211] 1 117.21 0.0 <eps> 1.0 kolmanneksi del
+session-129-2016-00174000-00264000[212] 1 117.21 0.81 <eps> 1.0 <eps> sil tainted end-segment-8=117.71
+session-129-2016-00174000-00264000[213] 1 118.02 0.15 me 1.0 me cor
+session-129-2016-00174000-00264000[214] 1 118.17 0.24 olemme 1.0 olemme cor
+session-129-2016-00174000-00264000[215] 1 118.41 0.75 esittäneet 1.0 esittäneet cor
+session-129-2016-00174000-00264000[216] 1 119.16 1.23 <eps> 1.0 <eps> sil
+session-129-2016-00174000-00264000[217] 1 120.39 1.05 arvonlisäveron 1.0 arvonlisäveron cor
+session-129-2016-00174000-00264000[218] 1 121.44 0.21 <eps> 1.0 <eps> sil
+session-129-2016-00174000-00264000[219] 1 121.65 0.54 alarajan 1.0 alarajan cor
+session-129-2016-00174000-00264000[220] 1 122.19 0.45 nostamista 1.0 nostamista cor
+session-129-2016-00174000-00264000[221] 1 122.64 0.21 niin 1.0 niin cor
+session-129-2016-00174000-00264000[222] 1 122.85 0.15 että 1.0 että cor
+session-129-2016-00174000-00264000[223] 1 123.0 0.42 aidosti 1.0 aidosti cor
+session-129-2016-00174000-00264000[224] 1 123.42 0.36 pienet 1.0 pienet cor
+session-129-2016-00174000-00264000[225] 1 123.78 0.45 yrittäjät 1.0 yrittäjät cor
+session-129-2016-00174000-00264000[226] 1 124.23 0.39 voisivat 1.0 voisivat cor
+session-129-2016-00174000-00264000[227] 1 124.62 0.36 siitä 1.0 siitä cor
+session-129-2016-00174000-00264000[228] 1 124.98 0.06 <eps> 1.0 <eps> sil
+session-129-2016-00174000-00264000[229] 1 125.04 0.51 hyötyä 1.0 hyötyä cor
+session-129-2016-00174000-00264000[230] 1 125.55 0.99 <eps> 1.0 <eps> sil tainted
+session-129-2016-00174000-00264000[231] 1 126.54 0.18 ja 1.0 <eps> ins
+session-129-2016-00174000-00264000[232] 1 126.72 0.45 vielä 1.0 <eps> ins
+session-129-2016-00174000-00264000[233] 1 127.17 0.03 <eps> 1.0 <eps> sil tainted
+session-129-2016-00174000-00264000[234] 1 127.2 0.57 edustaja 1.0 <eps> ins
+session-129-2016-00174000-00264000[235] 1 127.77 0.03 <eps> 1.0 <eps> sil tainted
+session-129-2016-00174000-00264000[236] 1 127.8 0.63 pakkanen 1.0 <eps> ins
+session-129-2016-00174000-00264000[237] 1 128.43 0.03 <eps> 1.0 <eps> sil tainted
+session-129-2016-00174000-00264000[238] 1 128.46 0.84 vastauspuheenvuoro 1.0 <eps> ins
+session-129-2016-00174000-00264000[239] 1 129.3 0.36 teille 1.0 <eps> ins
+session-129-2016-00174000-00264000[240] 1 129.66 0.87 <eps> 1.0 <eps> sil tainted start-segment-9[start=240,end=274,unk-padding=0.00,0.00,keep-proportion=0.57,0.50,start-time=130.03,end-time=141.50,debug-str=((((core-start=241,core-end=246/merged-with-adjacent/core-start=246,core-end=247)/merged-with-adjacent/((((((core-start=248,core-end=257/merged-with-adjacent/core-start=257,core-end=258)/merged-with-adjacent/core-start=259,core-end=261)/merged-with-adjacent/core-start=261,core-end=262)/merged-with-adjacent/((core-start=262,core-end=263/merged-with-adjacent/core-start=263,core-end=264)/merged-with-adjacent/core-start=265,core-end=286))/merged-with-adjacent/core-start=286,core-end=287)/merged-with-adjacent/((core-start=287,core-end=288/merged-with-adjacent/core-start=288,core-end=289)/merged-with-adjacent/((core-start=290,core-end=305/merged-with-adjacent/core-start=305,core-end=306)/merged-with-adjacent/core-start=306,core-end=320))))/merged-with-adjacent/core-start=320,core-end=323)/merged-with-adjacent/((core-start=323,core-end=333/merged-with-adjacent/core-start=333,core-end=334)/merged-with-adjacent/core-start=334,core-end=341))]=130.03
+session-129-2016-00174000-00264000[241] 1 130.53 0.66 arvoisa 1.0 arvoisa cor
+session-129-2016-00174000-00264000[242] 1 131.19 0.03 <eps> 1.0 <eps> sil
+session-129-2016-00174000-00264000[243] 1 131.22 0.21 herra 1.0 herra cor
+session-129-2016-00174000-00264000[244] 1 131.43 0.03 <eps> 1.0 <eps> sil
+session-129-2016-00174000-00264000[245] 1 131.46 0.6 puhemies 1.0 puhemies cor
+session-129-2016-00174000-00264000[246] 1 132.06 0.51 tässä 1.0 <eps> ins
+session-129-2016-00174000-00264000[247] 1 132.57 0.03 <eps> 1.0 <eps> sil tainted
+session-129-2016-00174000-00264000[248] 1 132.6 1.02 yrittäjävähennyksestä 1.0 yrittäjävähennyksestä cor
+session-129-2016-00174000-00264000[249] 1 133.62 0.3 käytiin 1.0 käytiin cor
+session-129-2016-00174000-00264000[250] 1 133.92 0.27 viime 1.0 viime cor
+session-129-2016-00174000-00264000[251] 1 134.19 0.42 viikolla 1.0 viikolla cor
+session-129-2016-00174000-00264000[252] 1 134.61 0.48 ansiokas 1.0 ansiokas cor
+session-129-2016-00174000-00264000[253] 1 135.09 0.63 keskustelu 1.0 keskustelu cor
+session-129-2016-00174000-00264000[254] 1 135.72 0.39 täällä 1.0 täällä cor
+session-129-2016-00174000-00264000[255] 1 136.11 0.15 ja 1.0 ja cor
+session-129-2016-00174000-00264000[256] 1 136.26 0.42 täällä 1.0 täällä cor
+session-129-2016-00174000-00264000[257] 1 136.68 0.0 <eps> 1.0 salissa del
+session-129-2016-00174000-00264000[258] 1 136.68 0.27 <eps> 1.0 <eps> sil tainted
+session-129-2016-00174000-00264000[259] 1 136.95 0.21 muun 1.0 muun cor
+session-129-2016-00174000-00264000[260] 1 137.16 0.21 muassa 1.0 muassa cor
+session-129-2016-00174000-00264000[261] 1 137.37 0.45 salissa 1.0 <eps> ins
+session-129-2016-00174000-00264000[262] 1 137.82 0.6 todettiin 1.0 todettiin cor
+session-129-2016-00174000-00264000[263] 1 138.42 0.0 <eps> 1.0 että del
+session-129-2016-00174000-00264000[264] 1 138.42 0.03 <eps> 1.0 <eps> sil tainted
+session-129-2016-00174000-00264000[265] 1 138.45 0.36 tämä 1.0 tämä cor
+session-129-2016-00174000-00264000[266] 1 138.81 0.03 <eps> 1.0 <eps> sil
+session-129-2016-00174000-00264000[267] 1 138.84 0.9 arvonlisäveron 1.0 arvonlisäveron cor
+session-129-2016-00174000-00264000[268] 1 139.74 0.03 <eps> 1.0 <eps> sil
+session-129-2016-00174000-00264000[269] 1 139.77 0.54 alarajan 1.0 alarajan cor
+session-129-2016-00174000-00264000[270] 1 140.31 0.36 nosto 1.0 nosto cor
+session-129-2016-00174000-00264000[271] 1 140.67 0.09 ei 1.0 ei cor
+session-129-2016-00174000-00264000[272] 1 140.76 0.54 näillä 1.0 näillä cor
+session-129-2016-00174000-00264000[273] 1 141.3 0.39 <eps> 1.0 <eps> sil end-segment-9=141.5 start-segment-10[start=273,end=280,unk-padding=0.00,0.00,keep-proportion=0.50,0.56,start-time=141.50,end-time=144.29,debug-str=((((core-start=241,core-end=246/merged-with-adjacent/core-start=246,core-end=247)/merged-with-adjacent/((((((core-start=248,core-end=257/merged-with-adjacent/core-start=257,core-end=258)/merged-with-adjacent/core-start=259,core-end=261)/merged-with-adjacent/core-start=261,core-end=262)/merged-with-adjacent/((core-start=262,core-end=263/merged-with-adjacent/core-start=263,core-end=264)/merged-with-adjacent/core-start=265,core-end=286))/merged-with-adjacent/core-start=286,core-end=287)/merged-with-adjacent/((core-start=287,core-end=288/merged-with-adjacent/core-start=288,core-end=289)/merged-with-adjacent/((core-start=290,core-end=305/merged-with-adjacent/core-start=305,core-end=306)/merged-with-adjacent/core-start=306,core-end=320))))/merged-with-adjacent/core-start=320,core-end=323)/merged-with-adjacent/((core-start=323,core-end=333/merged-with-adjacent/core-start=333,core-end=334)/merged-with-adjacent/core-start=334,core-end=341))]=141.5
+session-129-2016-00174000-00264000[274] 1 141.69 0.54 näkymin 1.0 näkymin cor
+session-129-2016-00174000-00264000[275] 1 142.23 0.03 <eps> 1.0 <eps> sil
+session-129-2016-00174000-00264000[276] 1 142.26 0.24 ole 1.0 ole cor
+session-129-2016-00174000-00264000[277] 1 142.5 0.75 mahdollista 1.0 mahdollista cor
+session-129-2016-00174000-00264000[278] 1 143.25 0.54 eusta 1.0 eusta cor
+session-129-2016-00174000-00264000[279] 1 143.79 0.9 <eps> 1.0 <eps> sil start-segment-11[start=279,end=296,unk-padding=0.00,0.00,keep-proportion=0.56,0.43,start-time=144.19,end-time=151.16,debug-str=((((core-start=241,core-end=246/merged-with-adjacent/core-start=246,core-end=247)/merged-with-adjacent/((((((core-start=248,core-end=257/merged-with-adjacent/core-start=257,core-end=258)/merged-with-adjacent/core-start=259,core-end=261)/merged-with-adjacent/core-start=261,core-end=262)/merged-with-adjacent/((core-start=262,core-end=263/merged-with-adjacent/core-start=263,core-end=264)/merged-with-adjacent/core-start=265,core-end=286))/merged-with-adjacent/core-start=286,core-end=287)/merged-with-adjacent/((core-start=287,core-end=288/merged-with-adjacent/core-start=288,core-end=289)/merged-with-adjacent/((core-start=290,core-end=305/merged-with-adjacent/core-start=305,core-end=306)/merged-with-adjacent/core-start=306,core-end=320))))/merged-with-adjacent/core-start=320,core-end=323)/merged-with-adjacent/((core-start=323,core-end=333/merged-with-adjacent/core-start=333,core-end=334)/merged-with-adjacent/core-start=334,core-end=341)),overlaps-previous-segment]=144.19 end-segment-10=144.29
+session-129-2016-00174000-00264000[280] 1 144.69 0.36 tulleen 1.0 tulleen cor
+session-129-2016-00174000-00264000[281] 1 145.05 0.36 tiedon 1.0 tiedon cor
+session-129-2016-00174000-00264000[282] 1 145.41 0.42 mukaan 1.0 mukaan cor
+session-129-2016-00174000-00264000[283] 1 145.83 0.51 mutta 1.0 mutta cor
+session-129-2016-00174000-00264000[284] 1 146.34 0.03 <eps> 1.0 <eps> sil
+session-129-2016-00174000-00264000[285] 1 146.37 0.18 se 1.0 se cor
+session-129-2016-00174000-00264000[286] 1 146.55 0.6 keskustelu 1.0 <eps> ins
+session-129-2016-00174000-00264000[287] 1 147.15 0.42 siitä 1.0 siitä cor
+session-129-2016-00174000-00264000[288] 1 147.57 0.0 <eps> 1.0 keskustelusta del
+session-129-2016-00174000-00264000[289] 1 147.57 0.36 <eps> 1.0 <eps> sil tainted
+session-129-2016-00174000-00264000[290] 1 147.93 0.3 itse 1.0 itse cor
+session-129-2016-00174000-00264000[291] 1 148.23 0.24 pidän 1.0 pidän cor
+session-129-2016-00174000-00264000[292] 1 148.47 1.05 kotitalousvähennystä 1.0 kotitalousvähennystä cor
+session-129-2016-00174000-00264000[293] 1 149.52 0.48 erittäin 1.0 erittäin cor
+session-129-2016-00174000-00264000[294] 1 150.0 0.66 tärkeänä 1.0 tärkeänä cor
+session-129-2016-00174000-00264000[295] 1 150.66 1.17 <eps> 1.0 <eps> sil end-segment-11=151.16 start-segment-12[start=295,end=327,unk-padding=0.00,0.05,keep-proportion=0.43,1.00,start-time=151.33,end-time=161.45,debug-str=core-start=295,core-end=327]=151.33
+session-129-2016-00174000-00264000[296] 1 151.83 0.6 muotona 1.0 muotona cor
+session-129-2016-00174000-00264000[297] 1 152.43 0.03 <eps> 1.0 <eps> sil
+session-129-2016-00174000-00264000[298] 1 152.46 0.3 koska 1.0 koska cor
+session-129-2016-00174000-00264000[299] 1 152.76 0.24 sillä 1.0 sillä cor
+session-129-2016-00174000-00264000[300] 1 153.0 0.48 pystytään 1.0 pystytään cor
+session-129-2016-00174000-00264000[301] 1 153.48 0.72 työllistämään 1.0 työllistämään cor
+session-129-2016-00174000-00264000[302] 1 154.2 0.06 ja 1.0 ja cor
+session-129-2016-00174000-00264000[303] 1 154.26 0.54 työllisyys 1.0 työllisyys cor
+session-129-2016-00174000-00264000[304] 1 154.8 0.15 on 1.0 on cor
+session-129-2016-00174000-00264000[305] 1 154.95 0.24 tämä 1.0 tämän sub
+session-129-2016-00174000-00264000[306] 1 155.19 0.48 kaiken 1.0 kaiken cor
+session-129-2016-00174000-00264000[307] 1 155.67 0.03 <eps> 1.0 <eps> sil
+session-129-2016-00174000-00264000[308] 1 155.7 0.21 a 1.0 a cor
+session-129-2016-00174000-00264000[309] 1 155.91 0.09 ja 1.0 ja cor
+session-129-2016-00174000-00264000[310] 1 156.0 0.21 o 1.0 o cor
+session-129-2016-00174000-00264000[311] 1 156.21 0.36 jotta 1.0 jotta cor
+session-129-2016-00174000-00264000[312] 1 156.57 0.3 näitä 1.0 näitä cor
+session-129-2016-00174000-00264000[313] 1 156.87 0.03 <eps> 1.0 <eps> sil
+session-129-2016-00174000-00264000[314] 1 156.9 0.36 uusia 1.0 uusia cor
+session-129-2016-00174000-00264000[315] 1 157.26 0.72 työpaikkoja 1.0 työpaikkoja cor
+session-129-2016-00174000-00264000[316] 1 157.98 0.39 täällä 1.0 täällä cor
+session-129-2016-00174000-00264000[317] 1 158.37 0.21 <eps> 1.0 <eps> sil
+session-129-2016-00174000-00264000[318] 1 158.58 0.51 suomessa 1.0 suomessa cor
+session-129-2016-00174000-00264000[319] 1 159.09 0.45 syntyy 1.0 syntyy cor
+session-129-2016-00174000-00264000[320] 1 159.54 0.0 <eps> 1.0 tämä del
+session-129-2016-00174000-00264000[321] 1 159.54 0.0 <eps> 1.0 kotitalousvähennyksen del
+session-129-2016-00174000-00264000[322] 1 159.54 0.12 se 1.0 mahdollisuus sub
+session-129-2016-00174000-00264000[323] 1 159.66 0.09 on 1.0 on cor
+session-129-2016-00174000-00264000[324] 1 159.75 0.18 myös 1.0 myös cor
+session-129-2016-00174000-00264000[325] 1 159.93 0.57 mahdollisuus 1.0 mahdollisuus cor
+session-129-2016-00174000-00264000[326] 1 160.5 0.9 pienyrittäjille 1.0 pienyrittäjille cor start-segment-13[start=327,end=341,unk-padding=0.00,0.05,keep-proportion=1.00,1.00,start-time=161.40,end-time=166.79,debug-str=core-start=327,core-end=341,overlaps-previous-segment]=161.4
+session-129-2016-00174000-00264000[327] 1 161.4 0.18 <eps> 1.0 <eps> sil end-segment-12=161.45
+session-129-2016-00174000-00264000[328] 1 161.58 0.27 mutta 1.0 mutta cor
+session-129-2016-00174000-00264000[329] 1 161.85 0.27 myös 1.0 myös cor
+session-129-2016-00174000-00264000[330] 1 162.12 0.27 niille 1.0 niille cor
+session-129-2016-00174000-00264000[331] 1 162.39 0.96 pienituloisille 1.0 pienituloisille cor
+session-129-2016-00174000-00264000[332] 1 163.35 0.18 jos 1.0 jos cor
+session-129-2016-00174000-00264000[333] 1 163.53 0.12 me 1.0 he sub
+session-129-2016-00174000-00264000[334] 1 163.65 0.45 keksivät 1.0 keksivät cor
+session-129-2016-00174000-00264000[335] 1 164.1 0.24 siitä 1.0 siitä cor
+session-129-2016-00174000-00264000[336] 1 164.34 0.42 oivan 1.0 oivan cor
+session-129-2016-00174000-00264000[337] 1 164.76 0.21 <eps> 1.0 <eps> sil
+session-129-2016-00174000-00264000[338] 1 164.97 0.69 yrityksen 1.0 yrityksen cor
+session-129-2016-00174000-00264000[339] 1 165.66 0.15 tai 1.0 tai cor
+session-129-2016-00174000-00264000[340] 1 165.81 0.93 lisäansiomuodon 1.0 lisäansiomuodon cor
+session-129-2016-00174000-00264000[341] 1 166.74 0.36 tämä 1.0 <eps> ins end-segment-13=166.79
+session-129-2016-00174000-00264000[342] 1 167.1 0.42 <eps> 1.0 <eps> sil tainted
+session-129-2016-00174000-00264000[343] 1 167.52 1.35 kotitalousvähennyksen 1.0 <eps> ins
+session-129-2016-00174000-00264000[344] 1 168.87 0.75 mahdollisuus 1.0 <eps> ins start-segment-14[start=345,end=352,unk-padding=0.00,0.05,keep-proportion=1.00,1.00,start-time=169.62,end-time=171.26,wer=16.67,num-incorrect-words=1,num-tainted-words=0,num-words=6,incorrect-length=0.00,silence-length=0.48,tainted-nonsilence-length=0.00,total-length=1.59,debug-str=((core-start=346,core-end=350/merged-with-adjacent/core-start=350,core-end=351)/merged-with-adjacent/core-start=351,core-end=352)]=169.62
+session-129-2016-00174000-00264000[345] 1 169.62 0.48 <eps> 1.0 <eps> sil tainted
+session-129-2016-00174000-00264000[346] 1 170.1 0.3 sitten 1.0 sitten cor
+session-129-2016-00174000-00264000[347] 1 170.4 0.27 täällä 1.0 täällä cor
+session-129-2016-00174000-00264000[348] 1 170.67 0.06 on 1.0 on cor
+session-129-2016-00174000-00264000[349] 1 170.73 0.15 myös 1.0 myös cor
+session-129-2016-00174000-00264000[350] 1 170.88 0.0 <eps> 1.0 nostettu del
+session-129-2016-00174000-00264000[351] 1 170.88 0.33 pariin 1.0 pariin cor
+session-129-2016-00174000-00264000[352] 1 171.21 0.69 kertaa 1.0 <eps> ins end-segment-14=171.26
+session-129-2016-00174000-00264000[353] 1 171.9 0.06 <eps> 1.0 <eps> sil tainted
+session-129-2016-01305000-01395000[0] 1 0.0 0.39 erilaisin 1.0 erilaisin cor start-segment-1[start=0,end=17,unk-padding=0.00,0.05,keep-proportion=1.00,1.00,start-time=0.00,end-time=7.31,wer=8.33,num-incorrect-words=1,num-tainted-words=0,num-words=12,incorrect-length=0.12,silence-length=0.36,tainted-nonsilence-length=0.00,total-length=7.26,debug-str=((core-start=0,core-end=13/merged-with-adjacent/core-start=13,core-end=14)/merged-with-adjacent/core-start=14,core-end=17)]=0
+session-129-2016-01305000-01395000[1] 1 0.39 0.99 kannustein 1.0 kannustein cor
+session-129-2016-01305000-01395000[2] 1 1.38 0.24 <eps> 1.0 <eps> sil
+session-129-2016-01305000-01395000[3] 1 1.62 0.57 tuemme 1.0 tuemme cor
+session-129-2016-01305000-01395000[4] 1 2.19 0.03 <eps> 1.0 <eps> sil
+session-129-2016-01305000-01395000[5] 1 2.22 1.59 elintarviketeollisuutta 1.0 elintarviketeollisuutta cor
+session-129-2016-01305000-01395000[6] 1 3.81 0.03 <eps> 1.0 <eps> sil
+session-129-2016-01305000-01395000[7] 1 3.84 0.54 tavallaan 1.0 tavallaan cor
+session-129-2016-01305000-01395000[8] 1 4.38 0.03 <eps> 1.0 <eps> sil
+session-129-2016-01305000-01395000[9] 1 4.41 0.63 kepillä 1.0 kepillä cor
+session-129-2016-01305000-01395000[10] 1 5.04 0.03 <eps> 1.0 <eps> sil
+session-129-2016-01305000-01395000[11] 1 5.07 0.42 siihen 1.0 siihen cor
+session-129-2016-01305000-01395000[12] 1 5.49 0.63 suuntaan 1.0 suuntaan cor
+session-129-2016-01305000-01395000[13] 1 6.12 0.12 ja 1.0 <eps> ins
+session-129-2016-01305000-01395000[14] 1 6.24 0.3 sitten 1.0 sitten cor
+session-129-2016-01305000-01395000[15] 1 6.54 0.45 samoin 1.0 samoin cor
+session-129-2016-01305000-01395000[16] 1 6.99 0.27 myös 1.0 myös cor
+session-129-2016-01305000-01395000[17] 1 7.26 0.3 ettei 1.0 <eps> ins end-segment-1=7.31
+session-129-2016-01305000-01395000[18] 1 7.56 0.18 jos 1.0 <eps> ins
+session-129-2016-01305000-01395000[19] 1 7.74 0.48 <eps> 1.0 <eps> sil tainted
+session-129-2016-01305000-01395000[20] 1 8.22 0.45 ne 1.0 <eps> ins
+session-129-2016-01305000-01395000[21] 1 8.67 0.0 <eps> 1.0 niistä del
+session-129-2016-01305000-01395000[22] 1 8.67 0.24 <eps> 1.0 <eps> sil tainted
+session-129-2016-01305000-01395000[23] 1 8.91 0.51 tuotteet 1.0 tuotteista sub start-segment-2[start=24,end=43,unk-padding=0.05,0.00,keep-proportion=1.00,0.57,start-time=9.37,end-time=16.64,debug-str=((((core-start=24,core-end=25/merged-with-adjacent/core-start=25,core-end=27)/merged-with-adjacent/((core-start=28,core-end=31/merged-with-adjacent/core-start=31,core-end=32)/merged-with-adjacent/core-start=32,core-end=57))/merged-with-adjacent/core-start=58,core-end=60)/merged-with-adjacent/((((((((((((core-start=61,core-end=74/merged-with-adjacent/core-start=74,core-end=75)/merged-with-adjacent/((core-start=75,core-end=78/merged-with-adjacent/core-start=78,core-end=79)/merged-with-adjacent/((core-start=79,core-end=82/merged-with-adjacent/core-start=82,core-end=83)/merged-with-adjacent/core-start=83,core-end=121)))/merged-with-adjacent/core-start=121,core-end=124)/merged-with-adjacent/core-start=125,core-end=126)/merged-with-adjacent/core-start=126,core-end=127)/merged-with-adjacent/core-start=127,core-end=128)/merged-with-adjacent/core-start=128,core-end=129)/merged-with-adjacent/core-start=129,core-end=134)/merged-with-adjacent/core-start=134,core-end=135)/merged-with-adjacent/core-start=136,core-end=137)/merged-with-adjacent/core-start=137,core-end=138)/merged-with-adjacent/core-start=139,core-end=140))]=9.37
+session-129-2016-01305000-01395000[24] 1 9.42 0.3 jotka 1.0 jotka cor
+session-129-2016-01305000-01395000[25] 1 9.72 0.33 ovat 1.0 <eps> ins
+session-129-2016-01305000-01395000[26] 1 10.05 0.21 en 1.0 <eps> ins
+session-129-2016-01305000-01395000[27] 1 10.26 0.03 <eps> 1.0 <eps> sil tainted
+session-129-2016-01305000-01395000[28] 1 10.29 0.6 sisältävät 1.0 sisältävät cor
+session-129-2016-01305000-01395000[29] 1 10.89 0.3 enemmän 1.0 enemmän cor
+session-129-2016-01305000-01395000[30] 1 11.19 0.48 sokeria 1.0 sokeria cor
+session-129-2016-01305000-01395000[31] 1 11.67 0.15 tämän 1.0 tai sub
+session-129-2016-01305000-01395000[32] 1 11.82 0.24 muita 1.0 muita cor
+session-129-2016-01305000-01395000[33] 1 12.06 0.57 haitallisia 1.0 haitallisia cor
+session-129-2016-01305000-01395000[34] 1 12.63 0.36 aineita 1.0 aineita cor
+session-129-2016-01305000-01395000[35] 1 12.99 0.24 joita 1.0 joita cor
+session-129-2016-01305000-01395000[36] 1 13.23 0.33 voidaan 1.0 voidaan cor
+session-129-2016-01305000-01395000[37] 1 13.56 0.21 myös 1.0 myös cor
+session-129-2016-01305000-01395000[38] 1 13.77 0.66 verottaa 1.0 verottaa cor
+session-129-2016-01305000-01395000[39] 1 14.43 0.39 <eps> 1.0 <eps> sil
+session-129-2016-01305000-01395000[40] 1 14.82 0.6 kuluttaja 1.0 kuluttaja cor
+session-129-2016-01305000-01395000[41] 1 15.42 0.72 valitsee 1.0 valitsee cor
+session-129-2016-01305000-01395000[42] 1 16.14 0.87 <eps> 1.0 <eps> sil start-segment-3[start=42,end=58,unk-padding=0.00,0.00,keep-proportion=0.57,0.22,start-time=16.51,end-time=22.58,debug-str=((((core-start=24,core-end=25/merged-with-adjacent/core-start=25,core-end=27)/merged-with-adjacent/((core-start=28,core-end=31/merged-with-adjacent/core-start=31,core-end=32)/merged-with-adjacent/core-start=32,core-end=57))/merged-with-adjacent/core-start=58,core-end=60)/merged-with-adjacent/((((((((((((core-start=61,core-end=74/merged-with-adjacent/core-start=74,core-end=75)/merged-with-adjacent/((core-start=75,core-end=78/merged-with-adjacent/core-start=78,core-end=79)/merged-with-adjacent/((core-start=79,core-end=82/merged-with-adjacent/core-start=82,core-end=83)/merged-with-adjacent/core-start=83,core-end=121)))/merged-with-adjacent/core-start=121,core-end=124)/merged-with-adjacent/core-start=125,core-end=126)/merged-with-adjacent/core-start=126,core-end=127)/merged-with-adjacent/core-start=127,core-end=128)/merged-with-adjacent/core-start=128,core-end=129)/merged-with-adjacent/core-start=129,core-end=134)/merged-with-adjacent/core-start=134,core-end=135)/merged-with-adjacent/core-start=136,core-end=137)/merged-with-adjacent/core-start=137,core-end=138)/merged-with-adjacent/core-start=139,core-end=140)),overlaps-previous-segment]=16.51 end-segment-2=16.64
+session-129-2016-01305000-01395000[43] 1 17.01 0.3 ja 1.0 ja cor
+session-129-2016-01305000-01395000[44] 1 17.31 0.03 <eps> 1.0 <eps> sil
+session-129-2016-01305000-01395000[45] 1 17.34 0.27 saa 1.0 saa cor
+session-129-2016-01305000-01395000[46] 1 17.61 0.48 <eps> 1.0 <eps> sil
+session-129-2016-01305000-01395000[47] 1 18.09 0.72 kannustuksen 1.0 kannustuksen cor
+session-129-2016-01305000-01395000[48] 1 18.81 0.33 <eps> 1.0 <eps> sil
+session-129-2016-01305000-01395000[49] 1 19.14 0.63 valita 1.0 valita cor
+session-129-2016-01305000-01395000[50] 1 19.77 0.03 <eps> 1.0 <eps> sil
+session-129-2016-01305000-01395000[51] 1 19.8 0.87 terveellisemmin 1.0 terveellisemmin cor
+session-129-2016-01305000-01395000[52] 1 20.67 0.12 <eps> 1.0 <eps> sil
+session-129-2016-01305000-01395000[53] 1 20.79 0.33 tähän 1.0 tähän cor
+session-129-2016-01305000-01395000[54] 1 21.12 0.21 meidän 1.0 meidän cor
+session-129-2016-01305000-01395000[55] 1 21.33 0.24 tulee 1.0 tulee cor
+session-129-2016-01305000-01395000[56] 1 21.57 0.51 pyrkiä 1.0 pyrkiä cor
+session-129-2016-01305000-01395000[57] 1 22.08 2.28 <eps> 1.0 <eps> sil tainted end-segment-3=22.58 start-deleted-segment-4[start=57,end=61,unk-padding=0.00,0.00,keep-proportion=0.22,0.38,start-time=23.86,end-time=25.37,debug-str=((((core-start=24,core-end=25/merged-with-adjacent/core-start=25,core-end=27)/merged-with-adjacent/((core-start=28,core-end=31/merged-with-adjacent/core-start=31,core-end=32)/merged-with-adjacent/core-start=32,core-end=57))/merged-with-adjacent/core-start=58,core-end=60)/merged-with-adjacent/((((((((((((core-start=61,core-end=74/merged-with-adjacent/core-start=74,core-end=75)/merged-with-adjacent/((core-start=75,core-end=78/merged-with-adjacent/core-start=78,core-end=79)/merged-with-adjacent/((core-start=79,core-end=82/merged-with-adjacent/core-start=82,core-end=83)/merged-with-adjacent/core-start=83,core-end=121)))/merged-with-adjacent/core-start=121,core-end=124)/merged-with-adjacent/core-start=125,core-end=126)/merged-with-adjacent/core-start=126,core-end=127)/merged-with-adjacent/core-start=127,core-end=128)/merged-with-adjacent/core-start=128,core-end=129)/merged-with-adjacent/core-start=129,core-end=134)/merged-with-adjacent/core-start=134,core-end=135)/merged-with-adjacent/core-start=136,core-end=137)/merged-with-adjacent/core-start=137,core-end=138)/merged-with-adjacent/core-start=139,core-end=140))[deleted-because-no-scored-non-oov-words]]=23.86
+session-129-2016-01305000-01395000[58] 1 24.36 0.51 timo 1.0 <eps> ins
+session-129-2016-01305000-01395000[59] 1 24.87 0.0 <eps> 1.0 arvoisa del
+session-129-2016-01305000-01395000[60] 1 24.87 1.32 <eps> 1.0 <eps> sil tainted end-deleted-segment-4=25.37 start-segment-4[start=60,end=80,unk-padding=0.00,0.05,keep-proportion=0.38,1.00,start-time=25.69,end-time=35.18,debug-str=core-start=60,core-end=80]=25.69
+session-129-2016-01305000-01395000[61] 1 26.19 0.75 puhemies 1.0 puhemies cor
+session-129-2016-01305000-01395000[62] 1 26.94 0.06 <eps> 1.0 <eps> sil
+session-129-2016-01305000-01395000[63] 1 27.0 0.54 odotan 1.0 odotan cor
+session-129-2016-01305000-01395000[64] 1 27.54 0.24 <eps> 1.0 <eps> sil
+session-129-2016-01305000-01395000[65] 1 27.78 0.84 hallituksen 1.0 hallituksen cor
+session-129-2016-01305000-01395000[66] 1 28.62 0.24 <eps> 1.0 <eps> sil
+session-129-2016-01305000-01395000[67] 1 28.86 0.63 selvitystä 1.0 selvitystä cor
+session-129-2016-01305000-01395000[68] 1 29.49 1.38 terveysperusteisesta 1.0 terveysperusteisesta cor
+session-129-2016-01305000-01395000[69] 1 30.87 1.41 valmisteverosta 1.0 valmisteverosta cor
+session-129-2016-01305000-01395000[70] 1 32.28 0.27 täällä 1.0 täällä cor
+session-129-2016-01305000-01395000[71] 1 32.55 0.06 on 1.0 on cor
+session-129-2016-01305000-01395000[72] 1 32.61 0.21 hyvin 1.0 hyvin cor
+session-129-2016-01305000-01395000[73] 1 32.82 0.27 tullut 1.0 tullut cor
+session-129-2016-01305000-01395000[74] 1 33.09 0.39 esillä 1.0 esille sub
+session-129-2016-01305000-01395000[75] 1 33.48 0.18 että 1.0 että cor
+session-129-2016-01305000-01395000[76] 1 33.66 0.3 sosiaali 1.0 sosiaali cor
+session-129-2016-01305000-01395000[77] 1 33.96 0.06 ja 1.0 ja cor
+session-129-2016-01305000-01395000[78] 1 34.02 0.84 terveysvaliokunta 1.0 terveysvaliokunnassa sub
+session-129-2016-01305000-01395000[79] 1 34.86 0.27 jonka 1.0 jonka cor start-segment-5[start=80,end=100,unk-padding=0.00,0.05,keep-proportion=1.00,1.00,start-time=35.13,end-time=45.20,debug-str=core-start=80,core-end=100,overlaps-previous-segment]=35.13
+session-129-2016-01305000-01395000[80] 1 35.13 0.03 <eps> 1.0 <eps> sil
+session-129-2016-01305000-01395000[81] 1 35.16 0.57 jäsenenä 1.0 jäsenenä cor end-segment-4=35.18
+session-129-2016-01305000-01395000[82] 1 35.73 0.3 olemme 1.0 olen sub
+session-129-2016-01305000-01395000[83] 1 36.03 0.27 teimme 1.0 teimme cor
+session-129-2016-01305000-01395000[84] 1 36.3 0.54 lausuman 1.0 lausuman cor
+session-129-2016-01305000-01395000[85] 1 36.84 0.36 jossa 1.0 jossa cor
+session-129-2016-01305000-01395000[86] 1 37.2 0.06 <eps> 1.0 <eps> sil
+session-129-2016-01305000-01395000[87] 1 37.26 0.69 edellytimme 1.0 edellytimme cor
+session-129-2016-01305000-01395000[88] 1 37.95 0.42 sitä 1.0 sitä cor
+session-129-2016-01305000-01395000[89] 1 38.37 0.21 että 1.0 että cor
+session-129-2016-01305000-01395000[90] 1 38.58 0.78 aloitettaisiin 1.0 aloitettaisiin cor
+session-129-2016-01305000-01395000[91] 1 39.36 0.66 valmistelu 1.0 valmistelu cor
+session-129-2016-01305000-01395000[92] 1 40.02 1.29 terveysperusteisesta 1.0 terveysperusteisesta cor
+session-129-2016-01305000-01395000[93] 1 41.31 1.35 valmisteverosta 1.0 valmisteverosta cor
+session-129-2016-01305000-01395000[94] 1 42.66 0.03 <eps> 1.0 <eps> sil
+session-129-2016-01305000-01395000[95] 1 42.69 0.18 tuo 1.0 tuo cor
+session-129-2016-01305000-01395000[96] 1 42.87 0.54 lausunto 1.0 lausunto cor
+session-129-2016-01305000-01395000[97] 1 43.41 0.27 meni 1.0 meni cor
+session-129-2016-01305000-01395000[98] 1 43.68 0.27 sitten 1.0 sitten cor
+session-129-2016-01305000-01395000[99] 1 43.95 1.2 valtiovarainvaliokunnan 1.0 valtiovarainvaliokunnan cor start-segment-6[start=100,end=136,unk-padding=0.05,0.00,keep-proportion=1.00,0.46,start-time=45.10,end-time=57.50,debug-str=core-start=100,core-end=136,overlaps-previous-segment]=45.1
+session-129-2016-01305000-01395000[100] 1 45.15 0.69 käsittelyyn 1.0 käsittelyyn cor end-segment-5=45.2
+session-129-2016-01305000-01395000[101] 1 45.84 0.24 jonka 1.0 jonka cor
+session-129-2016-01305000-01395000[102] 1 46.08 0.3 jäsen 1.0 jäsen cor
+session-129-2016-01305000-01395000[103] 1 46.38 0.39 myöskin 1.0 myöskin cor
+session-129-2016-01305000-01395000[104] 1 46.77 0.27 olen 1.0 olen cor
+session-129-2016-01305000-01395000[105] 1 47.04 0.18 ja 1.0 ja cor
+session-129-2016-01305000-01395000[106] 1 47.22 0.03 <eps> 1.0 <eps> sil
+session-129-2016-01305000-01395000[107] 1 47.25 0.36 toivon 1.0 toivon cor
+session-129-2016-01305000-01395000[108] 1 47.61 0.18 että 1.0 että cor
+session-129-2016-01305000-01395000[109] 1 47.79 0.3 olette 1.0 olette cor
+session-129-2016-01305000-01395000[110] 1 48.09 0.63 lukeneet 1.0 lukeneet cor
+session-129-2016-01305000-01395000[111] 1 48.72 0.03 <eps> 1.0 <eps> sil
+session-129-2016-01305000-01395000[112] 1 48.75 0.21 tuon 1.0 tuon cor
+session-129-2016-01305000-01395000[113] 1 48.96 0.54 mietinnön 1.0 mietinnön cor
+session-129-2016-01305000-01395000[114] 1 49.5 0.18 siinä 1.0 siinä cor
+session-129-2016-01305000-01395000[115] 1 49.68 0.54 mietinnössä 1.0 mietinnössä cor
+session-129-2016-01305000-01395000[116] 1 50.22 0.48 todellakin 1.0 todellakin cor
+session-129-2016-01305000-01395000[117] 1 50.7 0.57 todetaan 1.0 todetaan cor
+session-129-2016-01305000-01395000[118] 1 51.27 0.72 että 1.0 että cor
+session-129-2016-01305000-01395000[119] 1 51.99 0.06 <eps> 1.0 <eps> sil
+session-129-2016-01305000-01395000[120] 1 52.05 0.6 tarkoitus 1.0 tarkoitus cor
+session-129-2016-01305000-01395000[121] 1 52.65 0.33 on 1.0 <eps> ins
+session-129-2016-01305000-01395000[122] 1 52.98 0.06 <eps> 1.0 <eps> sil tainted
+session-129-2016-01305000-01395000[123] 1 53.04 0.3 ja 1.0 <eps> ins
+session-129-2016-01305000-01395000[124] 1 53.34 0.03 <eps> 1.0 <eps> sil tainted
+session-129-2016-01305000-01395000[125] 1 53.37 0.27 on 1.0 on cor
+session-129-2016-01305000-01395000[126] 1 53.64 0.24 niin 1.0 <eps> ins
+session-129-2016-01305000-01395000[127] 1 53.88 0.24 että 1.0 että cor
+session-129-2016-01305000-01395000[128] 1 54.12 0.12 me 1.0 <eps> ins
+session-129-2016-01305000-01395000[129] 1 54.24 0.21 vm 1.0 vm cor
+session-129-2016-01305000-01395000[130] 1 54.45 0.57 selvittää 1.0 selvittää cor
+session-129-2016-01305000-01395000[131] 1 55.02 0.81 mahdollisuuksia 1.0 mahdollisuuksia cor
+session-129-2016-01305000-01395000[132] 1 55.83 0.03 <eps> 1.0 <eps> sil
+session-129-2016-01305000-01395000[133] 1 55.86 0.57 säätää 1.0 säätää cor
+session-129-2016-01305000-01395000[134] 1 56.43 0.57 tämä 1.0 <eps> ins
+session-129-2016-01305000-01395000[135] 1 57.0 1.08 <eps> 1.0 <eps> sil tainted end-segment-6=57.5
+session-129-2016-01305000-01395000[136] 1 58.08 0.6 tällainen 1.0 tällainen cor
+session-129-2016-01305000-01395000[137] 1 58.68 0.0 <eps> 1.0 terveysperusteinen del
+session-129-2016-01305000-01395000[138] 1 58.68 0.03 <eps> 1.0 <eps> sil tainted
+session-129-2016-01305000-01395000[139] 1 58.71 0.57 vero 1.0 vero cor
+session-129-2016-01305000-01395000[140] 1 59.28 1.2 terveysperusteinen 1.0 <eps> ins start-segment-7[start=141,end=167,unk-padding=0.05,0.05,keep-proportion=1.00,1.00,start-time=60.43,end-time=71.00,debug-str=core-start=141,core-end=167]=60.43
+session-129-2016-01305000-01395000[141] 1 60.48 0.09 se 1.0 se cor
+session-129-2016-01305000-01395000[142] 1 60.57 0.09 on 1.0 on cor
+session-129-2016-01305000-01395000[143] 1 60.66 0.42 laajempi 1.0 laajempi cor
+session-129-2016-01305000-01395000[144] 1 61.08 0.0 <eps> 1.0 kysymys del
+session-129-2016-01305000-01395000[145] 1 61.08 0.36 kysymys 1.0 kysymys cor
+session-129-2016-01305000-01395000[146] 1 61.44 0.09 ei 1.0 ei cor
+session-129-2016-01305000-01395000[147] 1 61.53 0.12 ole 1.0 ole cor
+session-129-2016-01305000-01395000[148] 1 61.65 0.57 pelkästään 1.0 pelkästään cor
+session-129-2016-01305000-01395000[149] 1 62.22 0.81 sokeriverosta 1.0 sokeriverosta cor
+session-129-2016-01305000-01395000[150] 1 63.03 0.15 vaan 1.0 vaan cor
+session-129-2016-01305000-01395000[151] 1 63.18 1.14 terveysperusteisesta 1.0 terveysperusteisesta cor
+session-129-2016-01305000-01395000[152] 1 64.32 1.32 valmisteverosta 1.0 valmisteverosta cor
+session-129-2016-01305000-01395000[153] 1 65.64 0.27 ja 1.0 <eps> ins
+session-129-2016-01305000-01395000[154] 1 65.91 0.15 ja 1.0 ja cor
+session-129-2016-01305000-01395000[155] 1 66.06 0.15 ja 1.0 ja cor
+session-129-2016-01305000-01395000[156] 1 66.21 0.54 todellakin 1.0 todellakin cor
+session-129-2016-01305000-01395000[157] 1 66.75 0.45 mietinnön 1.0 mietinnön cor
+session-129-2016-01305000-01395000[158] 1 67.2 0.57 mukaisesti 1.0 mukaisesti cor
+session-129-2016-01305000-01395000[159] 1 67.77 0.48 toivomme 1.0 toivomme cor
+session-129-2016-01305000-01395000[160] 1 68.25 0.18 että 1.0 että cor
+session-129-2016-01305000-01395000[161] 1 68.43 0.24 <eps> 1.0 <eps> sil
+session-129-2016-01305000-01395000[162] 1 68.67 0.21 tuo 1.0 tuo cor
+session-129-2016-01305000-01395000[163] 1 68.88 0.72 selvitystyö 1.0 selvitystyö cor
+session-129-2016-01305000-01395000[164] 1 69.6 0.66 tuodaan 1.0 tuodaan cor
+session-129-2016-01305000-01395000[165] 1 70.26 0.03 <eps> 1.0 <eps> sil
+session-129-2016-01305000-01395000[166] 1 70.29 0.66 eduskunnan 1.0 eduskunnan cor start-segment-8[start=167,end=199,unk-padding=0.05,0.00,keep-proportion=1.00,1.00,start-time=70.90,end-time=81.51,debug-str=core-start=167,core-end=199,overlaps-previous-segment]=70.9
+session-129-2016-01305000-01395000[167] 1 70.95 0.63 käsittelyyn 1.0 käsittelyyn cor end-segment-7=71
+session-129-2016-01305000-01395000[168] 1 71.58 0.09 ja 1.0 <eps> ins
+session-129-2016-01305000-01395000[169] 1 71.67 0.18 kyllä 1.0 kyllä cor
+session-129-2016-01305000-01395000[170] 1 71.85 0.21 tässä 1.0 tässä cor
+session-129-2016-01305000-01395000[171] 1 72.06 0.63 oppositiolle 1.0 oppositiolle cor
+session-129-2016-01305000-01395000[172] 1 72.69 0.27 pitää 1.0 pitää cor
+session-129-2016-01305000-01395000[173] 1 72.96 0.39 sanoa 1.0 sanoa cor
+session-129-2016-01305000-01395000[174] 1 73.35 0.03 <eps> 1.0 <eps> sil
+session-129-2016-01305000-01395000[175] 1 73.38 0.12 jos 1.0 jos cor
+session-129-2016-01305000-01395000[176] 1 73.5 0.42 tämä 1.0 tämä cor
+session-129-2016-01305000-01395000[177] 1 73.92 0.03 <eps> 1.0 <eps> sil
+session-129-2016-01305000-01395000[178] 1 73.95 0.36 vero 1.0 vero cor
+session-129-2016-01305000-01395000[179] 1 74.31 0.33 olisi 1.0 olisi cor
+session-129-2016-01305000-01395000[180] 1 74.64 0.18 niin 1.0 niin cor
+session-129-2016-01305000-01395000[181] 1 74.82 0.33 helppo 1.0 helppo cor
+session-129-2016-01305000-01395000[182] 1 75.15 0.48 säätää 1.0 säätää cor
+session-129-2016-01305000-01395000[183] 1 75.63 0.12 niin 1.0 <eps> ins
+session-129-2016-01305000-01395000[184] 1 75.75 0.24 miksi 1.0 miksi cor
+session-129-2016-01305000-01395000[185] 1 75.99 0.36 esimerkiksi 1.0 esimerkiksi cor
+session-129-2016-01305000-01395000[186] 1 76.35 1.47 valtiovarainministeri 1.0 valtiovarainministeri cor
+session-129-2016-01305000-01395000[187] 1 77.82 0.36 rinne 1.0 rinne cor
+session-129-2016-01305000-01395000[188] 1 78.18 0.0 <eps> 1.0 ei del
+session-129-2016-01305000-01395000[189] 1 78.18 0.72 tuota 1.0 tuota cor
+session-129-2016-01305000-01395000[190] 1 78.9 0.12 <eps> 1.0 <eps> sil
+session-129-2016-01305000-01395000[191] 1 79.02 0.45 veroa 1.0 veroa cor
+session-129-2016-01305000-01395000[192] 1 79.47 0.03 <eps> 1.0 <eps> sil
+session-129-2016-01305000-01395000[193] 1 79.5 0.6 säätänyt 1.0 säätänyt cor
+session-129-2016-01305000-01395000[194] 1 80.1 0.45 näin 1.0 näin cor
+session-129-2016-01305000-01395000[195] 1 80.55 0.09 <eps> 1.0 <eps> sil
+session-129-2016-01305000-01395000[196] 1 80.64 0.27 näin 1.0 näin cor
+session-129-2016-01305000-01395000[197] 1 80.91 0.27 ei 1.0 ei cor
+session-129-2016-01305000-01395000[198] 1 81.18 0.33 <eps> 1.0 <eps> sil end-segment-8=81.51
+session-129-2016-01305000-01395000[199] 1 81.51 0.66 tapahtunut 1.0 tapahtunut cor
+session-129-2016-01305000-01395000[200] 1 82.17 0.06 te 1.0 ja sub
+session-129-2016-01305000-01395000[201] 1 82.23 0.48 mielestäni 1.0 mielestäni cor
+session-129-2016-01305000-01395000[202] 1 82.71 0.12 on 1.0 on cor
+session-129-2016-01305000-01395000[203] 1 82.83 0.3 hyvä 1.0 hyvä cor
+session-129-2016-01305000-01395000[204] 1 83.13 0.27 että 1.0 että cor
+session-129-2016-01305000-01395000[205] 1 83.4 0.03 <eps> 1.0 <eps> sil
+session-129-2016-01305000-01395000[206] 1 83.43 0.45 hallitus 1.0 hallitus cor
+session-129-2016-01305000-01395000[207] 1 83.88 0.27 tässä 1.0 tässä cor
+session-129-2016-01305000-01395000[208] 1 84.15 0.15 nyt 1.0 nyt cor
+session-129-2016-01305000-01395000[209] 1 84.3 0.45 toimii 1.0 toimii cor
+session-129-2016-01392000-01482000[0] 1 0.0 0.27 ja 1.0 minä sub
+session-129-2016-01392000-01482000[1] 1 0.27 0.0 <eps> 1.0 kannatan del
+session-129-2016-01392000-01482000[2] 1 0.27 0.12 <eps> 1.0 <eps> sil tainted
+session-129-2016-01392000-01482000[3] 1 0.39 0.51 jatkamista 1.0 edustaja sub
+session-129-2016-01392000-01482000[4] 1 0.9 0.0 <eps> 1.0 jarvan del
+session-129-2016-01392000-01482000[5] 1 0.9 0.51 <eps> 1.0 <eps> sil tainted
+session-129-2016-01392000-01482000[6] 1 1.41 1.17 edustaja 1.0 ehdotusta sub
+session-129-2016-01392000-01482000[7] 1 2.58 0.0 <eps> 1.0 asian del
+session-129-2016-01392000-01482000[8] 1 2.58 0.24 <eps> 1.0 <eps> sil tainted
+session-129-2016-01392000-01482000[9] 1 2.82 0.78 kankaanniemi 1.0 käsittelyn sub
+session-129-2016-01392000-01482000[10] 1 3.6 0.0 <eps> 1.0 jatkamisesta del
+session-129-2016-01392000-01482000[11] 1 3.6 1.35 <eps> 1.0 <eps> sil tainted start-segment-1[start=11,end=18,unk-padding=0.00,0.00,keep-proportion=0.37,0.48,start-time=4.45,end-time=7.04,debug-str=((core-start=12,core-end=41/merged-with-adjacent/core-start=42,core-end=43)/merged-with-adjacent/((core-start=44,core-end=68/merged-with-adjacent/core-start=68,core-end=69)/merged-with-adjacent/core-start=70,core-end=71))]=4.45
+session-129-2016-01392000-01482000[12] 1 4.95 0.21 arvoisa 1.0 arvoisa cor
+session-129-2016-01392000-01482000[13] 1 5.16 0.12 <eps> 1.0 <eps> sil
+session-129-2016-01392000-01482000[14] 1 5.28 0.42 herra 1.0 herra cor
+session-129-2016-01392000-01482000[15] 1 5.7 0.03 <eps> 1.0 <eps> sil
+session-129-2016-01392000-01482000[16] 1 5.73 0.81 puhemies 1.0 puhemies cor
+session-129-2016-01392000-01482000[17] 1 6.54 1.05 <eps> 1.0 <eps> sil end-segment-1=7.04 start-segment-2[start=17,end=22,unk-padding=0.00,0.00,keep-proportion=0.48,0.50,start-time=7.09,end-time=10.66,debug-str=((core-start=12,core-end=41/merged-with-adjacent/core-start=42,core-end=43)/merged-with-adjacent/((core-start=44,core-end=68/merged-with-adjacent/core-start=68,core-end=69)/merged-with-adjacent/core-start=70,core-end=71))]=7.09
+session-129-2016-01392000-01482000[18] 1 7.59 1.11 sosialidemokraatit 1.0 sosialidemokraatit cor
+session-129-2016-01392000-01482000[19] 1 8.7 0.51 poistivat 1.0 poistivat cor
+session-129-2016-01392000-01482000[20] 1 9.21 1.29 varallisuusveron 1.0 varallisuusveron cor start-segment-3[start=21,end=42,unk-padding=0.00,0.00,keep-proportion=1.00,0.50,start-time=10.50,end-time=19.80,debug-str=((core-start=12,core-end=41/merged-with-adjacent/core-start=42,core-end=43)/merged-with-adjacent/((core-start=44,core-end=68/merged-with-adjacent/core-start=68,core-end=69)/merged-with-adjacent/core-start=70,core-end=71)),overlaps-previous-segment]=10.5
+session-129-2016-01392000-01482000[21] 1 10.5 0.33 <eps> 1.0 <eps> sil end-segment-2=10.67
+session-129-2016-01392000-01482000[22] 1 10.83 0.66 suomen 1.0 suomen cor
+session-129-2016-01392000-01482000[23] 1 11.49 0.06 <eps> 1.0 <eps> sil
+session-129-2016-01392000-01482000[24] 1 11.55 1.47 neljältäkymmeneltätuhannelta 1.0 neljältäkymmeneltätuhannelta cor
+session-129-2016-01392000-01482000[25] 1 13.02 0.84 rikkaimmalta 1.0 rikkaimmalta cor
+session-129-2016-01392000-01482000[26] 1 13.86 0.42 kymmenen 1.0 kymmenen cor
+session-129-2016-01392000-01482000[27] 1 14.28 0.33 vuotta 1.0 vuotta cor
+session-129-2016-01392000-01482000[28] 1 14.61 0.51 sitten 1.0 sitten cor
+session-129-2016-01392000-01482000[29] 1 15.12 0.15 <eps> 1.0 <eps> sil
+session-129-2016-01392000-01482000[30] 1 15.27 0.39 siitä 1.0 siitä cor
+session-129-2016-01392000-01482000[31] 1 15.66 0.09 on 1.0 on cor
+session-129-2016-01392000-01482000[32] 1 15.75 0.48 kertynyt 1.0 kertynyt cor
+session-129-2016-01392000-01482000[33] 1 16.23 0.54 valtava 1.0 valtava cor
+session-129-2016-01392000-01482000[34] 1 16.77 0.57 potti 1.0 potti cor
+session-129-2016-01392000-01482000[35] 1 17.34 0.09 <eps> 1.0 <eps> sil
+session-129-2016-01392000-01482000[36] 1 17.43 0.45 näille 1.0 näille cor
+session-129-2016-01392000-01482000[37] 1 17.88 0.39 jotka 1.0 jotka cor
+session-129-2016-01392000-01482000[38] 1 18.27 0.3 siitä 1.0 siitä cor
+session-129-2016-01392000-01482000[39] 1 18.57 0.36 hyödyn 1.0 hyödyn cor
+session-129-2016-01392000-01482000[40] 1 18.93 0.66 saivat 1.0 saivat cor
+session-129-2016-01392000-01482000[41] 1 19.59 0.42 <eps> 1.0 <eps> sil tainted end-segment-3=19.8 start-segment-4[start=41,end=51,unk-padding=0.00,0.00,keep-proportion=0.50,1.00,start-time=19.80,end-time=23.43,debug-str=((core-start=12,core-end=41/merged-with-adjacent/core-start=42,core-end=43)/merged-with-adjacent/((core-start=44,core-end=68/merged-with-adjacent/core-start=68,core-end=69)/merged-with-adjacent/core-start=70,core-end=71))]=19.8
+session-129-2016-01392000-01482000[42] 1 20.01 0.45 ja 1.0 <eps> ins
+session-129-2016-01392000-01482000[43] 1 20.46 0.03 <eps> 1.0 <eps> sil tainted
+session-129-2016-01392000-01482000[44] 1 20.49 0.39 myös 1.0 myös cor
+session-129-2016-01392000-01482000[45] 1 20.88 0.18 se 1.0 se cor
+session-129-2016-01392000-01482000[46] 1 21.06 0.03 <eps> 1.0 <eps> sil
+session-129-2016-01392000-01482000[47] 1 21.09 0.81 yhteisöveron 1.0 yhteisöveron cor
+session-129-2016-01392000-01482000[48] 1 21.9 0.48 alennus 1.0 alennus cor
+session-129-2016-01392000-01482000[49] 1 22.38 0.66 koitui 1.0 koitui cor
+session-129-2016-01392000-01482000[50] 1 23.04 0.39 <eps> 1.0 <eps> sil start-segment-5[start=50,end=63,unk-padding=0.00,0.00,keep-proportion=0.50,0.83,start-time=23.23,end-time=29.69,debug-str=((core-start=12,core-end=41/merged-with-adjacent/core-start=42,core-end=43)/merged-with-adjacent/((core-start=44,core-end=68/merged-with-adjacent/core-start=68,core-end=69)/merged-with-adjacent/core-start=70,core-end=71)),overlaps-previous-segment]=23.24 end-segment-4=23.43
+session-129-2016-01392000-01482000[51] 1 23.43 0.84 rikkaille 1.0 rikkaille cor
+session-129-2016-01392000-01482000[52] 1 24.27 0.36 <eps> 1.0 <eps> sil
+session-129-2016-01392000-01482000[53] 1 24.63 0.39 tässä 1.0 tässä cor
+session-129-2016-01392000-01482000[54] 1 25.02 0.15 nyt 1.0 nyt cor
+session-129-2016-01392000-01482000[55] 1 25.17 0.84 suomalaisille 1.0 suomalaisille cor
+session-129-2016-01392000-01482000[56] 1 26.01 1.05 pienyrittäjille 1.0 pienyrittäjille cor
+session-129-2016-01392000-01482000[57] 1 27.06 0.27 ja 1.0 ja cor
+session-129-2016-01392000-01482000[58] 1 27.33 0.03 <eps> 1.0 <eps> sil
+session-129-2016-01392000-01482000[59] 1 27.36 0.63 viljelijöille 1.0 viljelijöille cor
+session-129-2016-01392000-01482000[60] 1 27.99 0.45 annetaan 1.0 annetaan cor
+session-129-2016-01392000-01482000[61] 1 28.44 0.75 mahdollisuus 1.0 mahdollisuus cor
+session-129-2016-01392000-01482000[62] 1 29.19 0.6 <eps> 1.0 <eps> sil start-segment-6[start=62,end=71,unk-padding=0.00,0.05,keep-proportion=0.83,1.00,start-time=29.29,end-time=33.14,debug-str=((core-start=12,core-end=41/merged-with-adjacent/core-start=42,core-end=43)/merged-with-adjacent/((core-start=44,core-end=68/merged-with-adjacent/core-start=68,core-end=69)/merged-with-adjacent/core-start=70,core-end=71)),overlaps-previous-segment]=29.29 end-segment-5=29.69
+session-129-2016-01392000-01482000[63] 1 29.79 0.78 perinnön 1.0 perinnön cor
+session-129-2016-01392000-01482000[64] 1 30.57 0.21 <eps> 1.0 <eps> sil
+session-129-2016-01392000-01482000[65] 1 30.78 0.93 luovuttamiseen 1.0 luovuttamiseen cor
+session-129-2016-01392000-01482000[66] 1 31.71 0.24 sillä 1.0 sillä cor
+session-129-2016-01392000-01482000[67] 1 31.95 0.42 lailla 1.0 lailla cor
+session-129-2016-01392000-01482000[68] 1 32.37 0.39 ettei 1.0 <eps> ins
+session-129-2016-01392000-01482000[69] 1 32.76 0.06 <eps> 1.0 <eps> sil tainted
+session-129-2016-01392000-01482000[70] 1 32.82 0.27 että 1.0 että cor
+session-129-2016-01392000-01482000[71] 1 33.09 0.51 verotus 1.0 <eps> ins end-segment-6=33.14
+session-129-2016-01392000-01482000[72] 1 33.6 0.18 ei 1.0 <eps> ins
+session-129-2016-01392000-01482000[73] 1 33.78 0.45 sitä 1.0 <eps> ins start-segment-7[start=74,end=104,unk-padding=0.00,0.00,keep-proportion=1.00,0.45,start-time=34.23,end-time=45.65,debug-str=((core-start=75,core-end=80/merged-with-adjacent/core-start=80,core-end=82)/merged-with-adjacent/((((core-start=83,core-end=85/merged-with-adjacent/core-start=85,core-end=86)/merged-with-adjacent/((core-start=87,core-end=112/merged-with-adjacent/core-start=112,core-end=113)/merged-with-adjacent/core-start=113,core-end=120))/merged-with-adjacent/core-start=120,core-end=121)/merged-with-adjacent/core-start=122,core-end=125))]=34.23
+session-129-2016-01392000-01482000[74] 1 34.23 0.03 <eps> 1.0 <eps> sil tainted
+session-129-2016-01392000-01482000[75] 1 34.26 0.9 perintöverotus 1.0 perintöverotus cor
+session-129-2016-01392000-01482000[76] 1 35.16 0.06 <eps> 1.0 <eps> sil
+session-129-2016-01392000-01482000[77] 1 35.22 0.15 ja 1.0 ja cor
+session-129-2016-01392000-01482000[78] 1 35.37 0.6 lahjaverotus 1.0 lahjaverotus cor
+session-129-2016-01392000-01482000[79] 1 35.97 0.15 ei 1.0 ei cor
+session-129-2016-01392000-01482000[80] 1 36.12 0.3 sitä 1.0 <eps> ins
+session-129-2016-01392000-01482000[81] 1 36.42 0.69 tapa 1.0 <eps> ins
+session-129-2016-01392000-01482000[82] 1 37.11 0.12 <eps> 1.0 <eps> sil tainted
+session-129-2016-01392000-01482000[83] 1 37.23 0.18 sitä 1.0 sitä cor
+session-129-2016-01392000-01482000[84] 1 37.41 0.72 yritystä 1.0 yritystä cor
+session-129-2016-01392000-01482000[85] 1 38.13 0.0 <eps> 1.0 tapa del
+session-129-2016-01392000-01482000[86] 1 38.13 0.15 <eps> 1.0 <eps> sil tainted
+session-129-2016-01392000-01482000[87] 1 38.28 0.18 se 1.0 se cor
+session-129-2016-01392000-01482000[88] 1 38.46 0.27 on 1.0 on cor
+session-129-2016-01392000-01482000[89] 1 38.73 0.03 <eps> 1.0 <eps> sil
+session-129-2016-01392000-01482000[90] 1 38.76 0.39 minusta 1.0 minusta cor
+session-129-2016-01392000-01482000[91] 1 39.15 1.05 vastuullista 1.0 vastuullista cor
+session-129-2016-01392000-01482000[92] 1 40.2 0.24 <eps> 1.0 <eps> sil
+session-129-2016-01392000-01482000[93] 1 40.44 1.02 toimintaa 1.0 toimintaa cor
+session-129-2016-01392000-01482000[94] 1 41.46 0.03 <eps> 1.0 <eps> sil
+session-129-2016-01392000-01482000[95] 1 41.49 0.6 kateus 1.0 kateus cor
+session-129-2016-01392000-01482000[96] 1 42.09 0.33 tässä 1.0 tässä cor
+session-129-2016-01392000-01482000[97] 1 42.42 0.6 suhteessa 1.0 suhteessa cor
+session-129-2016-01392000-01482000[98] 1 43.02 0.12 on 1.0 on cor
+session-129-2016-01392000-01482000[99] 1 43.14 0.39 minusta 1.0 minusta cor
+session-129-2016-01392000-01482000[100] 1 43.53 0.33 aika 1.0 aika cor
+session-129-2016-01392000-01482000[101] 1 43.86 0.69 sairas 1.0 sairas cor
+session-129-2016-01392000-01482000[102] 1 44.55 0.6 ilmiö 1.0 ilmiö cor
+session-129-2016-01392000-01482000[103] 1 45.15 1.11 <eps> 1.0 <eps> sil end-segment-7=45.65 start-segment-8[start=103,end=122,unk-padding=0.00,0.00,keep-proportion=0.45,0.50,start-time=45.76,end-time=53.62,debug-str=((core-start=75,core-end=80/merged-with-adjacent/core-start=80,core-end=82)/merged-with-adjacent/((((core-start=83,core-end=85/merged-with-adjacent/core-start=85,core-end=86)/merged-with-adjacent/((core-start=87,core-end=112/merged-with-adjacent/core-start=112,core-end=113)/merged-with-adjacent/core-start=113,core-end=120))/merged-with-adjacent/core-start=120,core-end=121)/merged-with-adjacent/core-start=122,core-end=125))]=45.76
+session-129-2016-01392000-01482000[104] 1 46.26 0.33 herra 1.0 herra cor
+session-129-2016-01392000-01482000[105] 1 46.59 0.78 puhemies 1.0 puhemies cor
+session-129-2016-01392000-01482000[106] 1 47.37 0.09 <eps> 1.0 <eps> sil
+session-129-2016-01392000-01482000[107] 1 47.46 0.69 vielä 1.0 vielä cor
+session-129-2016-01392000-01482000[108] 1 48.15 0.3 <eps> 1.0 <eps> sil
+session-129-2016-01392000-01482000[109] 1 48.45 0.36 tässä 1.0 tässä cor
+session-129-2016-01392000-01482000[110] 1 48.81 0.36 vaiheessa 1.0 vaiheessa cor
+session-129-2016-01392000-01482000[111] 1 49.17 0.15 kun 1.0 kun cor
+session-129-2016-01392000-01482000[112] 1 49.32 0.42 kasvoi 1.0 <eps> ins
+session-129-2016-01392000-01482000[113] 1 49.74 0.78 käsitellään 1.0 käsitellään cor
+session-129-2016-01392000-01482000[114] 1 50.52 0.27 tätä 1.0 tätä cor
+session-129-2016-01392000-01482000[115] 1 50.79 0.18 niin 1.0 niin cor
+session-129-2016-01392000-01482000[116] 1 50.97 0.42 sanottua 1.0 sanottua cor
+session-129-2016-01392000-01482000[117] 1 51.39 0.6 kolmatta 1.0 kolmatta cor
+session-129-2016-01392000-01482000[118] 1 51.99 0.48 iloista 1.0 iloista cor
+session-129-2016-01392000-01482000[119] 1 52.47 0.66 rosvoa 1.0 rosvoa cor
+session-129-2016-01392000-01482000[120] 1 53.13 0.33 niin 1.0 <eps> ins
+session-129-2016-01392000-01482000[121] 1 53.46 0.33 <eps> 1.0 <eps> sil tainted end-segment-8=53.63 start-segment-9[start=121,end=126,unk-padding=0.00,0.00,keep-proportion=0.50,0.72,start-time=53.62,end-time=56.18,debug-str=((core-start=75,core-end=80/merged-with-adjacent/core-start=80,core-end=82)/merged-with-adjacent/((((core-start=83,core-end=85/merged-with-adjacent/core-start=85,core-end=86)/merged-with-adjacent/((core-start=87,core-end=112/merged-with-adjacent/core-start=112,core-end=113)/merged-with-adjacent/core-start=113,core-end=120))/merged-with-adjacent/core-start=120,core-end=121)/merged-with-adjacent/core-start=122,core-end=125))]=53.63
+session-129-2016-01392000-01482000[122] 1 53.79 0.42 kysyn 1.0 kysyn cor
+session-129-2016-01392000-01482000[123] 1 54.21 0.48 edustaja 1.0 edustaja cor
+session-129-2016-01392000-01482000[124] 1 54.69 0.99 harakalta 1.0 harakalta cor
+session-129-2016-01392000-01482000[125] 1 55.68 0.69 <eps> 1.0 <eps> sil tainted end-segment-9=56.18
+session-129-2016-01392000-01482000[126] 1 56.37 0.54 miten 1.0 <eps> ins
+session-129-2016-01392000-01482000[127] 1 56.91 0.48 te 1.0 <eps> ins
+session-129-2016-01392000-01482000[128] 1 57.39 0.45 <eps> 1.0 <eps> sil tainted start-segment-10[start=128,end=147,unk-padding=0.00,0.00,keep-proportion=1.00,0.54,start-time=57.39,end-time=65.54,debug-str=((core-start=129,core-end=131/merged-with-adjacent/core-start=131,core-end=132)/merged-with-adjacent/core-start=133,core-end=163)]=57.39
+session-129-2016-01392000-01482000[129] 1 57.84 0.48 ketkä 1.0 ketkä cor
+session-129-2016-01392000-01482000[130] 1 58.32 0.39 ovat 1.0 ovat cor
+session-129-2016-01392000-01482000[131] 1 58.71 0.18 ne 1.0 <eps> ins
+session-129-2016-01392000-01482000[132] 1 58.89 0.45 <eps> 1.0 <eps> sil tainted
+session-129-2016-01392000-01482000[133] 1 59.34 1.17 todellisuudessa 1.0 todellisuudessa cor
+session-129-2016-01392000-01482000[134] 1 60.51 0.06 <eps> 1.0 <eps> sil
+session-129-2016-01392000-01482000[135] 1 60.57 0.15 ne 1.0 ne cor
+session-129-2016-01392000-01482000[136] 1 60.72 0.45 iloiset 1.0 iloiset cor
+session-129-2016-01392000-01482000[137] 1 61.17 0.66 rosvot 1.0 rosvot cor
+session-129-2016-01392000-01482000[138] 1 61.83 0.21 <eps> 1.0 <eps> sil
+session-129-2016-01392000-01482000[139] 1 62.04 0.27 eihän 1.0 eihän cor
+session-129-2016-01392000-01482000[140] 1 62.31 0.45 laki 1.0 laki cor
+session-129-2016-01392000-01482000[141] 1 62.76 0.51 <eps> 1.0 <eps> sil
+session-129-2016-01392000-01482000[142] 1 63.27 0.51 sinänsä 1.0 sinänsä cor
+session-129-2016-01392000-01482000[143] 1 63.78 0.24 ole 1.0 ole cor
+session-129-2016-01392000-01482000[144] 1 64.02 0.39 mikään 1.0 mikään cor
+session-129-2016-01392000-01482000[145] 1 64.41 0.63 rosvo 1.0 rosvo cor
+session-129-2016-01392000-01482000[146] 1 65.04 0.93 <eps> 1.0 <eps> sil start-segment-11[start=146,end=164,unk-padding=0.00,0.00,keep-proportion=0.54,0.35,start-time=65.47,end-time=72.59,debug-str=((core-start=129,core-end=131/merged-with-adjacent/core-start=131,core-end=132)/merged-with-adjacent/core-start=133,core-end=163),overlaps-previous-segment]=65.47 end-segment-10=65.54
+session-129-2016-01392000-01482000[147] 1 65.97 0.36 ketä 1.0 ketä cor
+session-129-2016-01392000-01482000[148] 1 66.33 0.12 te 1.0 te cor
+session-129-2016-01392000-01482000[149] 1 66.45 0.72 tarkoitatte 1.0 tarkoitatte cor
+session-129-2016-01392000-01482000[150] 1 67.17 0.42 rosvot 1.0 rosvot cor
+session-129-2016-01392000-01482000[151] 1 67.59 0.21 ovat 1.0 ovat cor
+session-129-2016-01392000-01482000[152] 1 67.8 0.24 aina 1.0 aina cor
+session-129-2016-01392000-01482000[153] 1 68.04 0.69 ihmisiä 1.0 ihmisiä cor
+session-129-2016-01392000-01482000[154] 1 68.73 0.39 <eps> 1.0 <eps> sil
+session-129-2016-01392000-01482000[155] 1 69.12 0.42 ketkä 1.0 ketkä cor
+session-129-2016-01392000-01482000[156] 1 69.54 0.24 ovat 1.0 ovat cor
+session-129-2016-01392000-01482000[157] 1 69.78 0.36 teidän 1.0 teidän cor
+session-129-2016-01392000-01482000[158] 1 70.14 0.63 mielestänne 1.0 mielestänne cor
+session-129-2016-01392000-01482000[159] 1 70.77 0.12 ne 1.0 ne cor
+session-129-2016-01392000-01482000[160] 1 70.89 0.3 kolme 1.0 kolme cor
+session-129-2016-01392000-01482000[161] 1 71.19 0.42 iloista 1.0 iloista cor
+session-129-2016-01392000-01482000[162] 1 71.61 0.48 rosvoa 1.0 rosvoa cor
+session-129-2016-01392000-01482000[163] 1 72.09 1.44 <eps> 1.0 <eps> sil tainted end-segment-11=72.59
+session-129-2016-01392000-01482000[164] 1 73.53 0.36 viides 1.0 <eps> ins
+session-129-2016-01392000-01482000[165] 1 73.89 0.12 ja 1.0 <eps> ins
+session-129-2016-01392000-01482000[166] 1 74.01 3.18 <eps> 1.0 <eps> sil tainted
+session-129-2016-01392000-01482000[167] 1 77.19 0.54 kiitetty 1.0 <eps> ins start-segment-12[start=168,end=176,unk-padding=0.00,0.05,keep-proportion=1.00,1.00,start-time=77.73,end-time=81.05,wer=0.00,num-incorrect-words=0,num-tainted-words=0,num-words=6,incorrect-length=0.00,silence-length=0.87,tainted-nonsilence-length=0.00,total-length=3.27,debug-str=core-start=169,core-end=176]=77.73
+session-129-2016-01392000-01482000[168] 1 77.73 0.03 <eps> 1.0 <eps> sil tainted
+session-129-2016-01392000-01482000[169] 1 77.76 0.51 arvoisa 1.0 arvoisa cor
+session-129-2016-01392000-01482000[170] 1 78.27 0.72 puhemies 1.0 puhemies cor
+session-129-2016-01392000-01482000[171] 1 78.99 0.84 <eps> 1.0 <eps> sil
+session-129-2016-01392000-01482000[172] 1 79.83 0.3 minua 1.0 minua cor
+session-129-2016-01392000-01482000[173] 1 80.13 0.21 vähän 1.0 vähän cor
+session-129-2016-01392000-01482000[174] 1 80.34 0.42 nauratti 1.0 nauratti cor
+session-129-2016-01392000-01482000[175] 1 80.76 0.24 tämä 1.0 tämä cor
+session-129-2016-01392000-01482000[176] 1 81.0 0.24 minä 1.0 <eps> ins end-segment-12=81.05
+session-129-2016-01392000-01482000[177] 1 81.24 0.39 <eps> 1.0 <eps> sil tainted
+session-129-2016-01392000-01482000[178] 1 81.63 0.33 jo 1.0 <eps> ins
+session-129-2016-01392000-01482000[179] 1 81.96 0.36 <eps> 1.0 <eps> sil tainted
+session-129-2016-01392000-01482000[180] 1 82.32 0.3 ne 1.0 <eps> ins
+session-129-2016-01392000-01482000[181] 1 82.62 0.24 <eps> 1.0 <eps> sil tainted
+session-129-2016-01392000-01482000[182] 1 82.86 0.48 tässä 1.0 no sub start-segment-13[start=184,end=195,unk-padding=0.00,0.00,keep-proportion=1.00,0.46,start-time=83.34,end-time=86.72,debug-str=((core-start=185,core-end=186/merged-with-adjacent/core-start=186,core-end=189)/merged-with-adjacent/((((core-start=189,core-end=192/merged-with-adjacent/core-start=192,core-end=194)/merged-with-adjacent/((core-start=195,core-end=199/merged-with-adjacent/core-start=199,core-end=200)/merged-with-adjacent/core-start=200,core-end=201))/merged-with-adjacent/core-start=201,core-end=205)/merged-with-adjacent/((((core-start=205,core-end=207/merged-with-adjacent/core-start=207,core-end=208)/merged-with-adjacent/core-start=208,core-end=216)/merged-with-adjacent/core-start=217,core-end=219)/merged-with-adjacent/core-start=220,core-end=222)))]=83.34
+session-129-2016-01392000-01482000[183] 1 83.34 0.0 <eps> 1.0 tästä del
+session-129-2016-01392000-01482000[184] 1 83.34 0.21 <eps> 1.0 <eps> sil tainted
+session-129-2016-01392000-01482000[185] 1 83.55 0.24 tuli 1.0 tuli cor
+session-129-2016-01392000-01482000[186] 1 83.79 0.39 mieleen 1.0 <eps> ins
+session-129-2016-01392000-01482000[187] 1 84.18 0.12 niin 1.0 mieleeni sub
+session-129-2016-01392000-01482000[188] 1 84.3 0.12 kuin 1.0 kun sub
+session-129-2016-01392000-01482000[189] 1 84.42 0.24 täällä 1.0 täällä cor
+session-129-2016-01392000-01482000[190] 1 84.66 0.48 puhuttiin 1.0 puhuttiin cor
+session-129-2016-01392000-01482000[191] 1 85.14 0.63 tosiaankin 1.0 tosiaankin cor
+session-129-2016-01392000-01482000[192] 1 85.77 0.45 että 1.0 <eps> ins
+session-129-2016-01392000-01482000[193] 1 86.22 0.0 <eps> 1.0 siitä del
+session-129-2016-01392000-01482000[194] 1 86.22 1.08 <eps> 1.0 <eps> sil tainted end-segment-13=86.72 start-segment-14[start=194,end=222,unk-padding=0.00,0.05,keep-proportion=0.46,1.00,start-time=86.80,end-time=95.69,debug-str=((core-start=185,core-end=186/merged-with-adjacent/core-start=186,core-end=189)/merged-with-adjacent/((((core-start=189,core-end=192/merged-with-adjacent/core-start=192,core-end=194)/merged-with-adjacent/((core-start=195,core-end=199/merged-with-adjacent/core-start=199,core-end=200)/merged-with-adjacent/core-start=200,core-end=201))/merged-with-adjacent/core-start=201,core-end=205)/merged-with-adjacent/((((core-start=205,core-end=207/merged-with-adjacent/core-start=207,core-end=208)/merged-with-adjacent/core-start=208,core-end=216)/merged-with-adjacent/core-start=217,core-end=219)/merged-with-adjacent/core-start=220,core-end=222)))]=86.8
+session-129-2016-01392000-01482000[195] 1 87.3 0.48 minkälaista 1.0 minkälaista cor
+session-129-2016-01392000-01482000[196] 1 87.78 0.63 politiikkaa 1.0 politiikkaa cor
+session-129-2016-01392000-01482000[197] 1 88.41 0.45 hallitus 1.0 hallitus cor
+session-129-2016-01392000-01482000[198] 1 88.86 0.42 tekee 1.0 tekee cor
+session-129-2016-01392000-01482000[199] 1 89.28 0.24 millä 1.0 <eps> ins
+session-129-2016-01392000-01482000[200] 1 89.52 0.06 ja 1.0 ja cor
+session-129-2016-01392000-01482000[201] 1 89.58 0.0 <eps> 1.0 siitä del
+session-129-2016-01392000-01482000[202] 1 89.58 0.0 <eps> 1.0 että del
+session-129-2016-01392000-01482000[203] 1 89.58 0.0 <eps> 1.0 meillä del
+session-129-2016-01392000-01482000[204] 1 89.58 0.0 <eps> 1.0 ei del
+session-129-2016-01392000-01482000[205] 1 89.58 0.24 olisi 1.0 olisi cor
+session-129-2016-01392000-01482000[206] 1 89.82 0.3 tähän 1.0 tähän cor
+session-129-2016-01392000-01482000[207] 1 90.12 0.39 väärää 1.0 varaa sub
+session-129-2016-01392000-01482000[208] 1 90.51 0.24 otan 1.0 otan cor
+session-129-2016-01392000-01482000[209] 1 90.75 0.27 tähän 1.0 tähän cor
+session-129-2016-01392000-01482000[210] 1 91.02 0.15 nyt 1.0 nyt cor
+session-129-2016-01392000-01482000[211] 1 91.17 0.27 yhden 1.0 yhden cor
+session-129-2016-01392000-01482000[212] 1 91.44 0.63 näkökulman 1.0 näkökulman cor
+session-129-2016-01392000-01482000[213] 1 92.07 0.21 olen 1.0 olen cor
+session-129-2016-01392000-01482000[214] 1 92.28 0.24 itse 1.0 itse cor
+session-129-2016-01392000-01482000[215] 1 92.52 0.24 ollut 1.0 ollut cor
+session-129-2016-01392000-01482000[216] 1 92.76 0.15 <eps> 1.0 <eps> sil tainted
+session-129-2016-01392000-01482000[217] 1 92.91 0.75 holhoustoimen 1.0 vuosikausia sub
+session-129-2016-01392000-01482000[218] 1 93.66 0.0 <eps> 1.0 töissä del
+session-129-2016-01392000-01482000[219] 1 93.66 0.69 <eps> 1.0 <eps> sil tainted
+session-129-2016-01392000-01482000[220] 1 94.35 0.6 holhoustoimen 1.0 holhoustoimen cor
+session-129-2016-01392000-01482000[221] 1 94.95 0.69 edunvalvonnassa 1.0 edunvalvonnassa cor
+session-129-2016-01392000-01482000[222] 1 95.64 0.69 vuosikausia 1.0 <eps> ins end-segment-14=95.69
+session-129-2016-01392000-01482000[223] 1 96.33 0.42 töissä 1.0 <eps> ins
+session-129-2016-01392000-01482000[224] 1 96.75 0.06 <eps> 1.0 <eps> sil tainted
+session-129-2016-01392000-01482000[225] 1 96.81 0.27 iässä 1.0 jossa sub start-segment-15[start=226,end=243,unk-padding=0.05,0.00,keep-proportion=1.00,0.79,start-time=97.03,end-time=103.10,debug-str=((((core-start=226,core-end=231/merged-with-adjacent/core-start=231,core-end=232)/merged-with-adjacent/((core-start=232,core-end=237/merged-with-adjacent/core-start=237,core-end=238)/merged-with-adjacent/core-start=238,core-end=265))/merged-with-adjacent/core-start=265,core-end=266)/merged-with-adjacent/((((core-start=266,core-end=270/merged-with-adjacent/core-start=270,core-end=271)/merged-with-adjacent/core-start=272,core-end=289)/merged-with-adjacent/core-start=289,core-end=290)/merged-with-adjacent/core-start=291,core-end=295))]=97.03
+session-129-2016-01392000-01482000[226] 1 97.08 0.06 on 1.0 on cor
+session-129-2016-01392000-01482000[227] 1 97.14 0.63 alaikäisten 1.0 alaikäisten cor
+session-129-2016-01392000-01482000[228] 1 97.77 0.63 varallisuuden 1.0 varallisuuden cor
+session-129-2016-01392000-01482000[229] 1 98.4 0.54 valvonnasta 1.0 valvonnasta cor
+session-129-2016-01392000-01482000[230] 1 98.94 0.33 kyse 1.0 kyse cor
+session-129-2016-01392000-01482000[231] 1 99.27 0.15 ja 1.0 <eps> ins
+session-129-2016-01392000-01482000[232] 1 99.42 0.39 siellähän 1.0 siellähän cor
+session-129-2016-01392000-01482000[233] 1 99.81 0.21 on 1.0 on cor
+session-129-2016-01392000-01482000[234] 1 100.02 0.18 <eps> 1.0 <eps> sil
+session-129-2016-01392000-01482000[235] 1 100.2 0.69 alaikäisiä 1.0 alaikäisiä cor
+session-129-2016-01392000-01482000[236] 1 100.89 0.36 lapsia 1.0 lapsia cor
+session-129-2016-01392000-01482000[237] 1 101.25 0.06 ja 1.0 <eps> ins
+session-129-2016-01392000-01482000[238] 1 101.31 0.18 jotka 1.0 jotka cor
+session-129-2016-01392000-01482000[239] 1 101.49 0.18 ovat 1.0 ovat cor
+session-129-2016-01392000-01482000[240] 1 101.67 0.36 saaneet 1.0 saaneet cor
+session-129-2016-01392000-01482000[241] 1 102.03 0.57 perinnön 1.0 perinnön cor
+session-129-2016-01392000-01482000[242] 1 102.6 0.63 <eps> 1.0 <eps> sil start-segment-16[start=242,end=245,unk-padding=0.00,0.00,keep-proportion=0.79,0.50,start-time=102.73,end-time=104.16,debug-str=((((core-start=226,core-end=231/merged-with-adjacent/core-start=231,core-end=232)/merged-with-adjacent/((core-start=232,core-end=237/merged-with-adjacent/core-start=237,core-end=238)/merged-with-adjacent/core-start=238,core-end=265))/merged-with-adjacent/core-start=265,core-end=266)/merged-with-adjacent/((((core-start=266,core-end=270/merged-with-adjacent/core-start=270,core-end=271)/merged-with-adjacent/core-start=272,core-end=289)/merged-with-adjacent/core-start=289,core-end=290)/merged-with-adjacent/core-start=291,core-end=295)),overlaps-previous-segment]=102.73 end-segment-15=103.1
+session-129-2016-01392000-01482000[243] 1 103.23 0.69 usein 1.0 usein cor start-segment-17[start=244,end=251,unk-padding=0.00,0.00,keep-proportion=1.00,0.50,start-time=103.92,end-time=106.33,debug-str=((((core-start=226,core-end=231/merged-with-adjacent/core-start=231,core-end=232)/merged-with-adjacent/((core-start=232,core-end=237/merged-with-adjacent/core-start=237,core-end=238)/merged-with-adjacent/core-start=238,core-end=265))/merged-with-adjacent/core-start=265,core-end=266)/merged-with-adjacent/((((core-start=266,core-end=270/merged-with-adjacent/core-start=270,core-end=271)/merged-with-adjacent/core-start=272,core-end=289)/merged-with-adjacent/core-start=289,core-end=290)/merged-with-adjacent/core-start=291,core-end=295)),overlaps-previous-segment]=103.92
+session-129-2016-01392000-01482000[244] 1 103.92 0.48 <eps> 1.0 <eps> sil end-segment-16=104.16
+session-129-2016-01392000-01482000[245] 1 104.4 0.18 ja 1.0 ja cor
+session-129-2016-01392000-01482000[246] 1 104.58 0.66 pääasiassa 1.0 pääasiassa cor
+session-129-2016-01392000-01482000[247] 1 105.24 0.03 <eps> 1.0 <eps> sil
+session-129-2016-01392000-01482000[248] 1 105.27 0.36 lähes 1.0 lähes cor
+session-129-2016-01392000-01482000[249] 1 105.63 0.48 aina 1.0 aina cor start-segment-18[start=250,end=272,unk-padding=0.00,0.00,keep-proportion=1.00,0.50,start-time=106.11,end-time=113.30,debug-str=((((core-start=226,core-end=231/merged-with-adjacent/core-start=231,core-end=232)/merged-with-adjacent/((core-start=232,core-end=237/merged-with-adjacent/core-start=237,core-end=238)/merged-with-adjacent/core-start=238,core-end=265))/merged-with-adjacent/core-start=265,core-end=266)/merged-with-adjacent/((((core-start=266,core-end=270/merged-with-adjacent/core-start=270,core-end=271)/merged-with-adjacent/core-start=272,core-end=289)/merged-with-adjacent/core-start=289,core-end=290)/merged-with-adjacent/core-start=291,core-end=295)),overlaps-previous-segment]=106.11
+session-129-2016-01392000-01482000[250] 1 106.11 0.45 <eps> 1.0 <eps> sil end-segment-17=106.34
+session-129-2016-01392000-01482000[251] 1 106.56 0.45 kyseessä 1.0 kyseessä cor
+session-129-2016-01392000-01482000[252] 1 107.01 0.18 ovat 1.0 ovat cor
+session-129-2016-01392000-01482000[253] 1 107.19 0.51 tavalliset 1.0 tavalliset cor
+session-129-2016-01392000-01482000[254] 1 107.7 0.39 ihmiset 1.0 ihmiset cor
+session-129-2016-01392000-01482000[255] 1 108.09 0.24 joilla 1.0 joilla cor
+session-129-2016-01392000-01482000[256] 1 108.33 0.06 on 1.0 on cor
+session-129-2016-01392000-01482000[257] 1 108.39 0.03 <eps> 1.0 <eps> sil
+session-129-2016-01392000-01482000[258] 1 108.42 0.63 asunto 1.0 asunto cor
+session-129-2016-01392000-01482000[259] 1 109.05 0.03 <eps> 1.0 <eps> sil
+session-129-2016-01392000-01482000[260] 1 109.08 0.48 auto 1.0 auto cor
+session-129-2016-01392000-01482000[261] 1 109.56 0.09 ja 1.0 ja cor
+session-129-2016-01392000-01482000[262] 1 109.65 0.3 jotain 1.0 jotain cor
+session-129-2016-01392000-01482000[263] 1 109.95 0.33 pientä 1.0 pientä cor
+session-129-2016-01392000-01482000[264] 1 110.28 0.51 omaisuutta 1.0 omaisuutta cor
+session-129-2016-01392000-01482000[265] 1 110.79 0.27 siihen 1.0 <eps> ins
+session-129-2016-01392000-01482000[266] 1 111.06 0.39 toinen 1.0 toinen cor
+session-129-2016-01392000-01482000[267] 1 111.45 0.21 jää 1.0 jää cor
+session-129-2016-01392000-01482000[268] 1 111.66 0.39 yksin 1.0 yksin cor
+session-129-2016-01392000-01482000[269] 1 112.05 1.08 yksinhuoltajaksi 1.0 yksinhuoltajaksi cor
+session-129-2016-01392000-01482000[270] 1 113.13 0.0 <eps> 1.0 kun del
+session-129-2016-01392000-01482000[271] 1 113.13 0.33 <eps> 1.0 <eps> sil tainted start-segment-19[start=271,end=295,unk-padding=0.00,0.05,keep-proportion=0.50,1.00,start-time=113.29,end-time=120.74,debug-str=((((core-start=226,core-end=231/merged-with-adjacent/core-start=231,core-end=232)/merged-with-adjacent/((core-start=232,core-end=237/merged-with-adjacent/core-start=237,core-end=238)/merged-with-adjacent/core-start=238,core-end=265))/merged-with-adjacent/core-start=265,core-end=266)/merged-with-adjacent/((((core-start=266,core-end=270/merged-with-adjacent/core-start=270,core-end=271)/merged-with-adjacent/core-start=272,core-end=289)/merged-with-adjacent/core-start=289,core-end=290)/merged-with-adjacent/core-start=291,core-end=295)),overlaps-previous-segment]=113.29 end-segment-18=113.3
+session-129-2016-01392000-01482000[272] 1 113.46 0.51 puoliso 1.0 puoliso cor
+session-129-2016-01392000-01482000[273] 1 113.97 0.18 on 1.0 on cor
+session-129-2016-01392000-01482000[274] 1 114.15 0.03 <eps> 1.0 <eps> sil
+session-129-2016-01392000-01482000[275] 1 114.18 0.6 kuollut 1.0 kuollut cor
+session-129-2016-01392000-01482000[276] 1 114.78 0.3 <eps> 1.0 <eps> sil
+session-129-2016-01392000-01482000[277] 1 115.08 0.42 aivan 1.0 aivan cor
+session-129-2016-01392000-01482000[278] 1 115.5 0.45 kuten 1.0 kuten cor
+session-129-2016-01392000-01482000[279] 1 115.95 0.3 <eps> 1.0 <eps> sil
+session-129-2016-01392000-01482000[280] 1 116.25 0.51 edustaja 1.0 edustaja cor
+session-129-2016-01392000-01482000[281] 1 116.76 0.66 kankaanniemi 1.0 kankaanniemi cor
+session-129-2016-01392000-01482000[282] 1 117.42 0.21 sanoi 1.0 sanoi cor
+session-129-2016-01392000-01482000[283] 1 117.63 0.03 <eps> 1.0 <eps> sil
+session-129-2016-01392000-01482000[284] 1 117.66 0.42 sanoi 1.0 sanoi cor
+session-129-2016-01392000-01482000[285] 1 118.08 0.45 kateus 1.0 kateus cor
+session-129-2016-01392000-01482000[286] 1 118.53 0.09 on 1.0 on cor
+session-129-2016-01392000-01482000[287] 1 118.62 0.42 sairas 1.0 sairas cor
+session-129-2016-01392000-01482000[288] 1 119.04 0.3 ilmiö 1.0 ilmiö cor
+session-129-2016-01392000-01482000[289] 1 119.34 0.09 ja 1.0 <eps> ins
+session-129-2016-01392000-01482000[290] 1 119.43 0.03 <eps> 1.0 <eps> sil tainted
+session-129-2016-01392000-01482000[291] 1 119.46 0.21 kyllä 1.0 kyllä cor
+session-129-2016-01392000-01482000[292] 1 119.67 0.15 se 1.0 se cor
+session-129-2016-01392000-01482000[293] 1 119.82 0.33 tässä 1.0 tässä cor
+session-129-2016-01392000-01482000[294] 1 120.15 0.54 yhteydessä 1.0 yhteydessä cor
+session-129-2016-01392000-01482000[295] 1 120.69 0.0 <eps> 1.0 on del
+session-129-2016-01392000-01482000[296] 1 120.69 0.21 onko 1.0 kun sub end-segment-19=120.74 start-segment-20[start=297,end=326,unk-padding=0.05,0.05,keep-proportion=1.00,1.00,start-time=120.85,end-time=131.30,debug-str=core-start=297,core-end=326]=120.85
+session-129-2016-01392000-01482000[297] 1 120.9 0.39 puhutaan 1.0 puhutaan cor
+session-129-2016-01392000-01482000[298] 1 121.29 0.54 perinnöstä 1.0 perinnöstä cor
+session-129-2016-01392000-01482000[299] 1 121.83 0.21 siinä 1.0 siinä cor
+session-129-2016-01392000-01482000[300] 1 122.04 0.06 on 1.0 on cor
+session-129-2016-01392000-01482000[301] 1 122.1 0.3 aina 1.0 aina cor
+session-129-2016-01392000-01482000[302] 1 122.4 0.57 läheinen 1.0 läheinen cor
+session-129-2016-01392000-01482000[303] 1 122.97 0.42 ihminen 1.0 ihminen cor
+session-129-2016-01392000-01482000[304] 1 123.39 0.6 menehtynyt 1.0 menehtynyt cor
+session-129-2016-01392000-01482000[305] 1 123.99 0.93 lopullisesti 1.0 lopullisesti cor
+session-129-2016-01392000-01482000[306] 1 124.92 0.06 <eps> 1.0 <eps> sil
+session-129-2016-01392000-01482000[307] 1 124.98 0.15 se 1.0 se cor
+session-129-2016-01392000-01482000[308] 1 125.13 0.33 suru 1.0 suru cor
+session-129-2016-01392000-01482000[309] 1 125.46 0.15 on 1.0 on cor
+session-129-2016-01392000-01482000[310] 1 125.61 0.66 valtava 1.0 valtava cor
+session-129-2016-01392000-01482000[311] 1 126.27 0.21 <eps> 1.0 <eps> sil tainted
+session-129-2016-01392000-01482000[312] 1 126.48 0.09 ja 1.0 <eps> ins
+session-129-2016-01392000-01482000[313] 1 126.57 0.12 ja 1.0 jos sub
+session-129-2016-01392000-01482000[314] 1 126.69 0.33 siihen 1.0 siihen cor
+session-129-2016-01392000-01482000[315] 1 127.02 0.27 tulee 1.0 tulee cor
+session-129-2016-01392000-01482000[316] 1 127.29 0.27 vielä 1.0 vielä cor
+session-129-2016-01392000-01482000[317] 1 127.56 0.87 taloudellisia 1.0 taloudellisia cor
+session-129-2016-01392000-01482000[318] 1 128.43 0.57 ongelmia 1.0 ongelmia cor
+session-129-2016-01392000-01482000[319] 1 129.0 0.48 päälle 1.0 päälle cor
+session-129-2016-01392000-01482000[320] 1 129.48 0.15 <eps> 1.0 <eps> sil
+session-129-2016-01392000-01482000[321] 1 129.63 0.18 niin 1.0 niin cor
+session-129-2016-01392000-01482000[322] 1 129.81 0.12 ei 1.0 ei cor
+session-129-2016-01392000-01482000[323] 1 129.93 0.27 siinä 1.0 siinä cor
+session-129-2016-01392000-01482000[324] 1 130.2 0.45 ketään 1.0 ketään cor
+session-129-2016-01392000-01482000[325] 1 130.65 0.6 naurata 1.0 naurata cor start-segment-21[start=326,end=358,unk-padding=0.00,0.05,keep-proportion=1.00,1.00,start-time=131.25,end-time=141.83,debug-str=core-start=326,core-end=358,overlaps-previous-segment]=131.25
+session-129-2016-01392000-01482000[326] 1 131.25 0.24 <eps> 1.0 <eps> sil tainted end-segment-20=131.3
+session-129-2016-01392000-01482000[327] 1 131.49 0.21 ole 1.0 olen sub
+session-129-2016-01392000-01482000[328] 1 131.7 0.24 niin 1.0 niin cor
+session-129-2016-01392000-01482000[329] 1 131.94 0.27 monta 1.0 monta cor
+session-129-2016-01392000-01482000[330] 1 132.21 0.39 kertaa 1.0 kertaa cor
+session-129-2016-01392000-01482000[331] 1 132.6 0.36 jutellut 1.0 jutellut cor
+session-129-2016-01392000-01482000[332] 1 132.96 0.84 yksinhuoltajaäidin 1.0 yksinhuoltajaäidin cor
+session-129-2016-01392000-01482000[333] 1 133.8 0.33 kanssa 1.0 kanssa cor
+session-129-2016-01392000-01482000[334] 1 134.13 0.12 kun 1.0 <eps> ins
+session-129-2016-01392000-01482000[335] 1 134.25 0.12 hän 1.0 joka sub
+session-129-2016-01392000-01482000[336] 1 134.37 0.36 miettii 1.0 miettii cor
+session-129-2016-01392000-01482000[337] 1 134.73 0.03 <eps> 1.0 <eps> sil
+session-129-2016-01392000-01482000[338] 1 134.76 0.3 mistä 1.0 mistä cor
+session-129-2016-01392000-01482000[339] 1 135.06 0.24 minä 1.0 minä cor
+session-129-2016-01392000-01482000[340] 1 135.3 0.21 saan 1.0 saan cor
+session-129-2016-01392000-01482000[341] 1 135.51 0.54 rahat 1.0 rahat cor
+session-129-2016-01392000-01482000[342] 1 136.05 0.09 <eps> 1.0 <eps> sil
+session-129-2016-01392000-01482000[343] 1 136.14 0.42 lapset 1.0 lapset cor
+session-129-2016-01392000-01482000[344] 1 136.56 0.39 nimittäin 1.0 nimittäin cor
+session-129-2016-01392000-01482000[345] 1 136.95 0.39 saavat 1.0 saavat cor
+session-129-2016-01392000-01482000[346] 1 137.34 0.15 sen 1.0 sen cor
+session-129-2016-01392000-01482000[347] 1 137.49 0.78 perintöveron 1.0 perintöveron cor
+session-129-2016-01392000-01482000[348] 1 138.27 0.03 <eps> 1.0 <eps> sil
+session-129-2016-01392000-01482000[349] 1 138.3 0.9 maksettavakseen 1.0 maksettavakseen cor
+session-129-2016-01392000-01482000[350] 1 139.2 0.21 <eps> 1.0 <eps> sil
+session-129-2016-01392000-01482000[351] 1 139.41 0.48 tälläkin 1.0 tälläkin cor
+session-129-2016-01392000-01482000[352] 1 139.89 0.45 hetkellä 1.0 hetkellä cor
+session-129-2016-01392000-01482000[353] 1 140.34 0.24 mistä 1.0 mistä cor
+session-129-2016-01392000-01482000[354] 1 140.58 0.21 minä 1.0 minä cor
+session-129-2016-01392000-01482000[355] 1 140.79 0.27 saan 1.0 saan cor
+session-129-2016-01392000-01482000[356] 1 141.06 0.0 <eps> 1.0 rahat del
+session-129-2016-01392000-01482000[357] 1 141.06 0.72 perintöveroon 1.0 perintöveroon cor start-segment-22[start=358,end=380,unk-padding=0.00,0.00,keep-proportion=1.00,0.98,start-time=141.78,end-time=148.94,debug-str=core-start=358,core-end=380,overlaps-previous-segment]=141.78
+session-129-2016-01392000-01482000[358] 1 141.78 0.15 <eps> 1.0 <eps> sil end-segment-21=141.83
+session-129-2016-01392000-01482000[359] 1 141.93 0.24 millä 1.0 millä cor
+session-129-2016-01392000-01482000[360] 1 142.17 0.21 minä 1.0 minä cor
+session-129-2016-01392000-01482000[361] 1 142.38 0.36 maksan 1.0 maksan cor
+session-129-2016-01392000-01482000[362] 1 142.74 0.72 hautajaiskulut 1.0 hautajaiskulut cor
+session-129-2016-01392000-01482000[363] 1 143.46 0.21 meillä 1.0 meillä cor
+session-129-2016-01392000-01482000[364] 1 143.67 0.06 on 1.0 on cor
+session-129-2016-01392000-01482000[365] 1 143.73 0.33 kaikki 1.0 kaikki cor
+session-129-2016-01392000-01482000[366] 1 144.06 0.48 omaisuus 1.0 omaisuus cor
+session-129-2016-01392000-01482000[367] 1 144.54 0.36 tässä 1.0 tässä cor
+session-129-2016-01392000-01482000[368] 1 144.9 0.48 kiinni 1.0 kiinni cor
+session-129-2016-01392000-01482000[369] 1 145.38 0.09 <eps> 1.0 <eps> sil
+session-129-2016-01392000-01482000[370] 1 145.47 0.27 meillä 1.0 meillä cor
+session-129-2016-01392000-01482000[371] 1 145.74 0.18 ei 1.0 ei cor
+session-129-2016-01392000-01482000[372] 1 145.92 0.18 ole 1.0 ole cor
+session-129-2016-01392000-01482000[373] 1 146.1 0.15 kuin 1.0 kuin cor
+session-129-2016-01392000-01482000[374] 1 146.25 0.3 pienet 1.0 pienet cor
+session-129-2016-01392000-01482000[375] 1 146.55 0.75 henkivakuutukset 1.0 henkivakuutukset cor
+session-129-2016-01392000-01482000[376] 1 147.3 0.21 mitkä 1.0 mitkä cor
+session-129-2016-01392000-01482000[377] 1 147.51 0.33 tulevat 1.0 tulevat cor
+session-129-2016-01392000-01482000[378] 1 147.84 0.6 kaikille 1.0 kaikille cor
+session-129-2016-01392000-01482000[379] 1 148.44 0.51 <eps> 1.0 <eps> sil tainted end-segment-22=148.94
+session-129-2016-01392000-01482000[380] 1 148.95 0.27 että 1.0 <eps> ins
+session-129-2016-01392000-01482000[381] 1 149.22 0.42 <eps> 1.0 <eps> sil tainted
+session-129-2016-01740000-01830000[0] 1 30.12 0.24 että 1.0 että cor start-segment-1[start=0,end=4,unk-padding=0.05,0.00,keep-proportion=1.00,1.00,start-time=30.07,end-time=31.17,wer=0.00,num-incorrect-words=0,num-tainted-words=0,num-words=3,incorrect-length=0.00,silence-length=0.06,tainted-nonsilence-length=0.00,total-length=1.05,debug-str=core-start=0,core-end=3]=30.07
+session-129-2016-01740000-01830000[1] 1 30.36 0.33 nyt 1.0 nyt cor
+session-129-2016-01740000-01830000[2] 1 30.69 0.42 jo 1.0 jo cor
+session-129-2016-01740000-01830000[3] 1 31.11 0.06 <eps> 1.0 <eps> sil tainted end-segment-1=31.17
+session-129-2016-01740000-01830000[4] 1 31.17 0.42 nämä 1.0 <eps> ins
+session-129-2016-01740000-01830000[5] 1 31.59 0.24 <eps> 1.0 <eps> sil tainted
+session-129-2016-01740000-01830000[6] 1 31.83 1.53 kolmekymmentäkaksituhatta 1.0 <eps> ins
+session-129-2016-01740000-01830000[7] 1 33.36 0.0 <eps> 1.0 näistä del
+session-129-2016-01740000-01830000[8] 1 33.36 0.03 <eps> 1.0 <eps> sil tainted
+session-129-2016-01740000-01830000[9] 1 33.39 0.6 nuorta 1.0 kolmestakymmenestäkahdestatuhannesta sub start-segment-2[start=11,end=29,unk-padding=0.00,0.00,keep-proportion=1.00,0.88,start-time=33.99,end-time=40.64,debug-str=((((core-start=12,core-end=16/merged-with-adjacent/core-start=16,core-end=17)/merged-with-adjacent/core-start=17,core-end=28)/merged-with-adjacent/core-start=29,core-end=31)/merged-with-adjacent/((core-start=31,core-end=56/merged-with-adjacent/core-start=57,core-end=58)/merged-with-adjacent/core-start=58,core-end=70))]=33.99
+session-129-2016-01740000-01830000[10] 1 33.99 0.0 <eps> 1.0 nuoresta del
+session-129-2016-01740000-01830000[11] 1 33.99 0.03 <eps> 1.0 <eps> sil tainted
+session-129-2016-01740000-01830000[12] 1 34.02 0.33 jotka 1.0 jotka cor
+session-129-2016-01740000-01830000[13] 1 34.35 0.24 ovat 1.0 ovat cor
+session-129-2016-01740000-01830000[14] 1 34.59 0.3 vailla 1.0 vailla cor
+session-129-2016-01740000-01830000[15] 1 34.89 0.96 perustutkintoa 1.0 perustutkintoa cor
+session-129-2016-01740000-01830000[16] 1 35.85 0.0 <eps> 1.0 ja del
+session-129-2016-01740000-01830000[17] 1 35.85 0.24 joilla 1.0 joilla cor
+session-129-2016-01740000-01830000[18] 1 36.09 0.24 ei 1.0 ei cor
+session-129-2016-01740000-01830000[19] 1 36.33 0.18 ole 1.0 ole cor
+session-129-2016-01740000-01830000[20] 1 36.51 0.6 ammatillista 1.0 ammatillista cor
+session-129-2016-01740000-01830000[21] 1 37.11 0.54 tutkintoa 1.0 tutkintoa cor
+session-129-2016-01740000-01830000[22] 1 37.65 0.06 ja 1.0 ja cor
+session-129-2016-01740000-01830000[23] 1 37.71 0.21 jotka 1.0 jotka cor
+session-129-2016-01740000-01830000[24] 1 37.92 0.24 ovat 1.0 ovat cor
+session-129-2016-01740000-01830000[25] 1 38.16 0.66 syrjäytyneet 1.0 syrjäytyneet cor
+session-129-2016-01740000-01830000[26] 1 38.82 0.57 yhteiskunnan 1.0 yhteiskunnan cor
+session-129-2016-01740000-01830000[27] 1 39.39 0.75 ulkopuolelle 1.0 ulkopuolelle cor
+session-129-2016-01740000-01830000[28] 1 40.14 0.57 <eps> 1.0 <eps> sil tainted start-segment-3[start=28,end=45,unk-padding=0.00,0.00,keep-proportion=0.88,1.00,start-time=40.21,end-time=48.00,debug-str=((((core-start=12,core-end=16/merged-with-adjacent/core-start=16,core-end=17)/merged-with-adjacent/core-start=17,core-end=28)/merged-with-adjacent/core-start=29,core-end=31)/merged-with-adjacent/((core-start=31,core-end=56/merged-with-adjacent/core-start=57,core-end=58)/merged-with-adjacent/core-start=58,core-end=70)),overlaps-previous-segment]=40.21 end-segment-2=40.64
+session-129-2016-01740000-01830000[29] 1 40.71 0.24 niin 1.0 <eps> ins
+session-129-2016-01740000-01830000[30] 1 40.95 0.45 heistä 1.0 <eps> ins
+session-129-2016-01740000-01830000[31] 1 41.4 0.63 aiheutuva 1.0 aiheutuva cor
+session-129-2016-01740000-01830000[32] 1 42.03 0.75 yhteiskunnan 1.0 yhteiskunnan cor
+session-129-2016-01740000-01830000[33] 1 42.78 0.63 menetys 1.0 menetys cor
+session-129-2016-01740000-01830000[34] 1 43.41 0.21 <eps> 1.0 <eps> sil
+session-129-2016-01740000-01830000[35] 1 43.62 0.3 on 1.0 on cor
+session-129-2016-01740000-01830000[36] 1 43.92 0.21 noin 1.0 noin cor
+session-129-2016-01740000-01830000[37] 1 44.13 0.3 yksi 1.0 yksi cor
+session-129-2016-01740000-01830000[38] 1 44.43 0.36 pilkku 1.0 pilkku cor
+session-129-2016-01740000-01830000[39] 1 44.79 0.39 neljä 1.0 neljä cor
+session-129-2016-01740000-01830000[40] 1 45.18 0.93 miljardia 1.0 miljardia cor
+session-129-2016-01740000-01830000[41] 1 46.11 0.6 euroa 1.0 euroa cor
+session-129-2016-01740000-01830000[42] 1 46.71 0.27 per 1.0 per cor
+session-129-2016-01740000-01830000[43] 1 46.98 0.63 vuosi 1.0 vuosi cor
+session-129-2016-01740000-01830000[44] 1 47.61 0.39 <eps> 1.0 <eps> sil start-segment-4[start=44,end=70,unk-padding=0.00,0.05,keep-proportion=0.50,1.00,start-time=47.80,end-time=56.57,debug-str=((((core-start=12,core-end=16/merged-with-adjacent/core-start=16,core-end=17)/merged-with-adjacent/core-start=17,core-end=28)/merged-with-adjacent/core-start=29,core-end=31)/merged-with-adjacent/((core-start=31,core-end=56/merged-with-adjacent/core-start=57,core-end=58)/merged-with-adjacent/core-start=58,core-end=70)),overlaps-previous-segment]=47.81 end-segment-3=48
+session-129-2016-01740000-01830000[45] 1 48.0 0.12 ja 1.0 ja cor
+session-129-2016-01740000-01830000[46] 1 48.12 0.18 kun 1.0 kun cor
+session-129-2016-01740000-01830000[47] 1 48.3 0.12 me 1.0 me cor
+session-129-2016-01740000-01830000[48] 1 48.42 0.48 tiedämme 1.0 tiedämme cor
+session-129-2016-01740000-01830000[49] 1 48.9 0.12 että 1.0 että cor
+session-129-2016-01740000-01830000[50] 1 49.02 0.27 tämä 1.0 tämä cor
+session-129-2016-01740000-01830000[51] 1 49.29 0.03 <eps> 1.0 <eps> sil
+session-129-2016-01740000-01830000[52] 1 49.32 0.66 kertautuu 1.0 kertautuu cor
+session-129-2016-01740000-01830000[53] 1 49.98 0.3 vuosi 1.0 vuosi cor
+session-129-2016-01740000-01830000[54] 1 50.28 0.45 toisensa 1.0 toisensa cor
+session-129-2016-01740000-01830000[55] 1 50.73 0.63 jälkeen 1.0 jälkeen cor
+session-129-2016-01740000-01830000[56] 1 51.36 0.06 <eps> 1.0 <eps> sil tainted
+session-129-2016-01740000-01830000[57] 1 51.42 0.21 niin 1.0 <eps> ins
+session-129-2016-01740000-01830000[58] 1 51.63 0.21 on 1.0 on cor
+session-129-2016-01740000-01830000[59] 1 51.84 0.93 hämmästyttävää 1.0 hämmästyttävää cor
+session-129-2016-01740000-01830000[60] 1 52.77 0.27 <eps> 1.0 <eps> sil
+session-129-2016-01740000-01830000[61] 1 53.04 0.33 että 1.0 että cor
+session-129-2016-01740000-01830000[62] 1 53.37 0.15 me 1.0 me cor
+session-129-2016-01740000-01830000[63] 1 53.52 0.36 emme 1.0 emme cor
+session-129-2016-01740000-01830000[64] 1 53.88 0.3 <eps> 1.0 <eps> sil
+session-129-2016-01740000-01830000[65] 1 54.18 0.51 panosta 1.0 panosta cor
+session-129-2016-01740000-01830000[66] 1 54.69 0.27 näihin 1.0 näihin cor
+session-129-2016-01740000-01830000[67] 1 54.96 0.54 nuoriin 1.0 nuoriin cor
+session-129-2016-01740000-01830000[68] 1 55.5 0.75 esimerkiksi 1.0 esimerkiksi cor
+session-129-2016-01740000-01830000[69] 1 56.25 0.27 tätä 1.0 tätä cor
+session-129-2016-01740000-01830000[70] 1 56.52 1.11 satayhdeksänkymmentä 1.0 sataayhdeksääkymmentä sub end-segment-4=56.57 start-segment-5[start=71,end=96,unk-padding=0.05,0.00,keep-proportion=1.00,0.60,start-time=57.58,end-time=67.40,debug-str=((core-start=71,core-end=82/merged-with-adjacent/core-start=83,core-end=87)/merged-with-adjacent/((core-start=87,core-end=105/merged-with-adjacent/core-start=105,core-end=106)/merged-with-adjacent/core-start=106,core-end=119))]=57.58
+session-129-2016-01740000-01830000[71] 1 57.63 0.66 miljoonaa 1.0 miljoonaa cor
+session-129-2016-01740000-01830000[72] 1 58.29 0.33 <eps> 1.0 <eps> sil
+session-129-2016-01740000-01830000[73] 1 58.62 0.36 siltä 1.0 siltä cor
+session-129-2016-01740000-01830000[74] 1 58.98 0.27 osin 1.0 osin cor
+session-129-2016-01740000-01830000[75] 1 59.25 0.09 me 1.0 me cor
+session-129-2016-01740000-01830000[76] 1 59.34 0.33 voimme 1.0 voimme cor
+session-129-2016-01740000-01830000[77] 1 59.67 0.51 todeta 1.0 todeta cor
+session-129-2016-01740000-01830000[78] 1 60.18 0.36 että 1.0 että cor
+session-129-2016-01740000-01830000[79] 1 60.54 0.09 <eps> 1.0 <eps> sil
+session-129-2016-01740000-01830000[80] 1 60.63 0.66 tämäntyyppinen 1.0 tämäntyyppinen cor
+session-129-2016-01740000-01830000[81] 1 61.29 0.84 säästö 1.0 säästö cor
+session-129-2016-01740000-01830000[82] 1 62.13 0.6 <eps> 1.0 <eps> sil tainted
+session-129-2016-01740000-01830000[83] 1 62.73 0.33 niin 1.0 <eps> ins
+session-129-2016-01740000-01830000[84] 1 63.06 0.3 niin 1.0 <eps> ins
+session-129-2016-01740000-01830000[85] 1 63.36 0.06 <eps> 1.0 <eps> sil tainted
+session-129-2016-01740000-01830000[86] 1 63.42 0.33 se 1.0 <eps> ins
+session-129-2016-01740000-01830000[87] 1 63.75 0.21 ei 1.0 ei cor
+session-129-2016-01740000-01830000[88] 1 63.96 0.15 ole 1.0 ole cor
+session-129-2016-01740000-01830000[89] 1 64.11 0.39 millään 1.0 millään cor
+session-129-2016-01740000-01830000[90] 1 64.5 0.33 tavalla 1.0 tavalla cor
+session-129-2016-01740000-01830000[91] 1 64.83 0.66 järkevää 1.0 järkevää cor
+session-129-2016-01740000-01830000[92] 1 65.49 0.03 <eps> 1.0 <eps> sil
+session-129-2016-01740000-01830000[93] 1 65.52 0.3 eikä 1.0 eikä cor
+session-129-2016-01740000-01830000[94] 1 65.82 1.08 perusteltua 1.0 perusteltua cor
+session-129-2016-01740000-01830000[95] 1 66.9 0.84 <eps> 1.0 <eps> sil start-segment-6[start=95,end=119,unk-padding=0.00,0.05,keep-proportion=0.60,1.00,start-time=67.24,end-time=75.23,debug-str=((core-start=71,core-end=82/merged-with-adjacent/core-start=83,core-end=87)/merged-with-adjacent/((core-start=87,core-end=105/merged-with-adjacent/core-start=105,core-end=106)/merged-with-adjacent/core-start=106,core-end=119)),overlaps-previous-segment]=67.24 end-segment-5=67.4
+session-129-2016-01740000-01830000[96] 1 67.74 0.36 tämän 1.0 tämän cor
+session-129-2016-01740000-01830000[97] 1 68.1 0.45 lisäksi 1.0 lisäksi cor
+session-129-2016-01740000-01830000[98] 1 68.55 0.51 haluaisin 1.0 haluaisin cor
+session-129-2016-01740000-01830000[99] 1 69.06 0.03 <eps> 1.0 <eps> sil
+session-129-2016-01740000-01830000[100] 1 69.09 0.51 nostaa 1.0 nostaa cor
+session-129-2016-01740000-01830000[101] 1 69.6 0.42 myös 1.0 myös cor
+session-129-2016-01740000-01830000[102] 1 70.02 0.09 <eps> 1.0 <eps> sil
+session-129-2016-01740000-01830000[103] 1 70.11 0.45 niiden 1.0 niiden cor
+session-129-2016-01740000-01830000[104] 1 70.56 0.54 nuorten 1.0 nuorten cor
+session-129-2016-01740000-01830000[105] 1 71.1 0.42 asia 1.0 asian sub
+session-129-2016-01740000-01830000[106] 1 71.52 0.27 joka 1.0 joka cor
+session-129-2016-01740000-01830000[107] 1 71.79 0.27 viime 1.0 viime cor
+session-129-2016-01740000-01830000[108] 1 72.06 0.63 kaudella 1.0 kaudella cor
+session-129-2016-01740000-01830000[109] 1 72.69 0.03 <eps> 1.0 <eps> sil
+session-129-2016-01740000-01830000[110] 1 72.72 0.27 oli 1.0 oli cor
+session-129-2016-01740000-01830000[111] 1 72.99 0.48 lähellä 1.0 lähellä cor
+session-129-2016-01740000-01830000[112] 1 73.47 0.03 <eps> 1.0 <eps> sil
+session-129-2016-01740000-01830000[113] 1 73.5 0.69 sydäntäni 1.0 sydäntäni cor
+session-129-2016-01740000-01830000[114] 1 74.19 0.21 ja 1.0 ja cor
+session-129-2016-01740000-01830000[115] 1 74.4 0.03 <eps> 1.0 <eps> sil
+session-129-2016-01740000-01830000[116] 1 74.43 0.27 ja 1.0 ja cor
+session-129-2016-01740000-01830000[117] 1 74.7 0.03 <eps> 1.0 <eps> sil
+session-129-2016-01740000-01830000[118] 1 74.73 0.45 olisin 1.0 olisin cor
+session-129-2016-01740000-01830000[119] 1 75.18 0.54 toivonut 1.0 <eps> ins end-segment-6=75.23
+session-129-2016-01740000-01830000[120] 1 75.72 0.57 että 1.0 <eps> ins
+session-129-2016-01740000-01830000[121] 1 76.29 0.33 <eps> 1.0 <eps> sil tainted
+session-129-2016-01740000-01830000[122] 1 76.62 0.15 ja 1.0 <eps> ins start-segment-7[start=123,end=130,unk-padding=0.05,0.00,keep-proportion=1.00,0.64,start-time=76.72,end-time=79.40,debug-str=((core-start=123,core-end=124/merged-with-adjacent/core-start=124,core-end=127)/merged-with-adjacent/((((core-start=127,core-end=184/merged-with-adjacent/core-start=184,core-end=186)/merged-with-adjacent/core-start=187,core-end=188)/merged-with-adjacent/core-start=188,core-end=190)/merged-with-adjacent/((core-start=191,core-end=195/merged-with-adjacent/core-start=195,core-end=196)/merged-with-adjacent/((core-start=197,core-end=234/merged-with-adjacent/core-start=235,core-end=236)/merged-with-adjacent/core-start=236,core-end=241))))]=76.72
+session-129-2016-01740000-01830000[123] 1 76.77 0.42 tietenkin 1.0 tietenkin cor
+session-129-2016-01740000-01830000[124] 1 77.19 0.12 olen 1.0 <eps> ins
+session-129-2016-01740000-01830000[125] 1 77.31 0.39 vieläkään 1.0 <eps> ins
+session-129-2016-01740000-01830000[126] 1 77.7 0.3 olisin 1.0 <eps> ins
+session-129-2016-01740000-01830000[127] 1 78.0 0.51 toivonut 1.0 toivonut cor
+session-129-2016-01740000-01830000[128] 1 78.51 0.39 että 1.0 että cor
+session-129-2016-01740000-01830000[129] 1 78.9 0.78 <eps> 1.0 <eps> sil start-segment-8[start=129,end=151,unk-padding=0.00,0.00,keep-proportion=0.64,0.50,start-time=79.18,end-time=88.50,debug-str=((core-start=123,core-end=124/merged-with-adjacent/core-start=124,core-end=127)/merged-with-adjacent/((((core-start=127,core-end=184/merged-with-adjacent/core-start=184,core-end=186)/merged-with-adjacent/core-start=187,core-end=188)/merged-with-adjacent/core-start=188,core-end=190)/merged-with-adjacent/((core-start=191,core-end=195/merged-with-adjacent/core-start=195,core-end=196)/merged-with-adjacent/((core-start=197,core-end=234/merged-with-adjacent/core-start=235,core-end=236)/merged-with-adjacent/core-start=236,core-end=241)))),overlaps-previous-segment]=79.18 end-segment-7=79.4
+session-129-2016-01740000-01830000[130] 1 79.68 0.48 silloinen 1.0 silloinen cor
+session-129-2016-01740000-01830000[131] 1 80.16 0.51 ministeri 1.0 ministeri cor
+session-129-2016-01740000-01830000[132] 1 80.67 0.48 kiuru 1.0 kiuru cor
+session-129-2016-01740000-01830000[133] 1 81.15 0.03 <eps> 1.0 <eps> sil
+session-129-2016-01740000-01830000[134] 1 81.18 0.33 olisi 1.0 olisi cor
+session-129-2016-01740000-01830000[135] 1 81.51 0.45 ehtinyt 1.0 ehtinyt cor
+session-129-2016-01740000-01830000[136] 1 81.96 0.66 saada 1.0 saada cor
+session-129-2016-01740000-01830000[137] 1 82.62 0.33 <eps> 1.0 <eps> sil
+session-129-2016-01740000-01830000[138] 1 82.95 0.36 tämän 1.0 tämän cor
+session-129-2016-01740000-01830000[139] 1 83.31 0.63 esityksensä 1.0 esityksensä cor
+session-129-2016-01740000-01830000[140] 1 83.94 0.72 loppuun 1.0 loppuun cor
+session-129-2016-01740000-01830000[141] 1 84.66 0.06 <eps> 1.0 <eps> sil
+session-129-2016-01740000-01830000[142] 1 84.72 0.21 se 1.0 se cor
+session-129-2016-01740000-01830000[143] 1 84.93 0.51 koski 1.0 koski cor
+session-129-2016-01740000-01830000[144] 1 85.44 0.03 <eps> 1.0 <eps> sil
+session-129-2016-01740000-01830000[145] 1 85.47 0.69 nimenomaan 1.0 nimenomaan cor
+session-129-2016-01740000-01830000[146] 1 86.16 0.48 erityistä 1.0 erityistä cor
+session-129-2016-01740000-01830000[147] 1 86.64 0.33 tukea 1.0 tukea cor
+session-129-2016-01740000-01830000[148] 1 86.97 0.66 tarvitsevia 1.0 tarvitsevia cor
+session-129-2016-01740000-01830000[149] 1 87.63 0.69 nuoria 1.0 nuoria cor start-segment-9[start=150,end=177,unk-padding=0.00,0.05,keep-proportion=1.00,1.00,start-time=88.32,end-time=98.51,debug-str=core-start=150,core-end=177,overlaps-previous-segment]=88.32
+session-129-2016-01740000-01830000[150] 1 88.32 0.36 <eps> 1.0 <eps> sil end-segment-8=88.5
+session-129-2016-01740000-01830000[151] 1 88.68 0.33 heidän 1.0 heidän cor
+session-129-2016-01740000-01830000[152] 1 89.01 0.57 tilanteensa 1.0 tilanteensa cor
+session-129-2016-01740000-01830000[153] 1 89.58 0.36 tällä 1.0 tällä cor
+session-129-2016-01740000-01830000[154] 1 89.94 0.51 hetkellä 1.0 hetkellä cor
+session-129-2016-01740000-01830000[155] 1 90.45 0.03 <eps> 1.0 <eps> sil
+session-129-2016-01740000-01830000[156] 1 90.48 0.36 on 1.0 on cor
+session-129-2016-01740000-01830000[157] 1 90.84 0.03 <eps> 1.0 <eps> sil
+session-129-2016-01740000-01830000[158] 1 90.87 0.42 todella 1.0 todella cor
+session-129-2016-01740000-01830000[159] 1 91.29 0.6 vaikea 1.0 vaikea cor
+session-129-2016-01740000-01830000[160] 1 91.89 0.03 <eps> 1.0 <eps> sil
+session-129-2016-01740000-01830000[161] 1 91.92 0.15 me 1.0 me cor
+session-129-2016-01740000-01830000[162] 1 92.07 0.57 tiedämme 1.0 tiedämme cor
+session-129-2016-01740000-01830000[163] 1 92.64 0.27 että 1.0 että cor
+session-129-2016-01740000-01830000[164] 1 92.91 0.36 osa 1.0 osa cor
+session-129-2016-01740000-01830000[165] 1 93.27 0.03 <eps> 1.0 <eps> sil
+session-129-2016-01740000-01830000[166] 1 93.3 0.36 näistä 1.0 näistä cor
+session-129-2016-01740000-01830000[167] 1 93.66 0.48 nuorista 1.0 nuorista cor
+session-129-2016-01740000-01830000[168] 1 94.14 0.63 tarvitsee 1.0 tarvitsee cor
+session-129-2016-01740000-01830000[169] 1 94.77 0.48 vahvaa 1.0 vahvaa cor
+session-129-2016-01740000-01830000[170] 1 95.25 0.69 tukea 1.0 tukea cor
+session-129-2016-01740000-01830000[171] 1 95.94 0.24 <eps> 1.0 <eps> sil
+session-129-2016-01740000-01830000[172] 1 96.18 0.42 jotkut 1.0 jotkut cor
+session-129-2016-01740000-01830000[173] 1 96.6 0.03 <eps> 1.0 <eps> sil
+session-129-2016-01740000-01830000[174] 1 96.63 0.39 myös 1.0 myös cor
+session-129-2016-01740000-01830000[175] 1 97.02 0.03 <eps> 1.0 <eps> sil
+session-129-2016-01740000-01830000[176] 1 97.05 1.41 terveyspalveluita 1.0 terveyspalveluita cor start-segment-10[start=177,end=206,unk-padding=0.00,0.00,keep-proportion=1.00,1.00,start-time=98.46,end-time=108.90,debug-str=core-start=177,core-end=206,overlaps-previous-segment]=98.46
+session-129-2016-01740000-01830000[177] 1 98.46 0.21 <eps> 1.0 <eps> sil end-segment-9=98.51
+session-129-2016-01740000-01830000[178] 1 98.67 0.63 vanhempien 1.0 vanhempien cor
+session-129-2016-01740000-01830000[179] 1 99.3 0.12 ja 1.0 ja cor
+session-129-2016-01740000-01830000[180] 1 99.42 0.6 perheiden 1.0 perheiden cor
+session-129-2016-01740000-01830000[181] 1 100.02 0.33 tuki 1.0 tuki cor
+session-129-2016-01740000-01830000[182] 1 100.35 0.15 on 1.0 on cor
+session-129-2016-01740000-01830000[183] 1 100.5 0.51 erittäin 1.0 erittäin cor
+session-129-2016-01740000-01830000[184] 1 101.01 0.66 tärkeä 1.0 <eps> ins
+session-129-2016-01740000-01830000[185] 1 101.67 0.0 <eps> 1.0 tärkeää del
+session-129-2016-01740000-01830000[186] 1 101.67 0.21 <eps> 1.0 <eps> sil tainted
+session-129-2016-01740000-01830000[187] 1 101.88 0.24 nyt 1.0 nyt cor
+session-129-2016-01740000-01830000[188] 1 102.12 0.15 on 1.0 <eps> ins
+session-129-2016-01740000-01830000[189] 1 102.27 0.42 jollakin 1.0 <eps> ins
+session-129-2016-01740000-01830000[190] 1 102.69 0.12 <eps> 1.0 <eps> sil tainted
+session-129-2016-01740000-01830000[191] 1 102.81 0.24 on 1.0 on cor
+session-129-2016-01740000-01830000[192] 1 103.05 0.39 todella 1.0 todella cor
+session-129-2016-01740000-01830000[193] 1 103.44 0.27 <eps> 1.0 <eps> sil
+session-129-2016-01740000-01830000[194] 1 103.71 0.78 hämmentävää 1.0 hämmentävää cor
+session-129-2016-01740000-01830000[195] 1 104.49 0.24 se 1.0 <eps> ins
+session-129-2016-01740000-01830000[196] 1 104.73 0.03 <eps> 1.0 <eps> sil tainted
+session-129-2016-01740000-01830000[197] 1 104.76 0.36 että 1.0 että cor
+session-129-2016-01740000-01830000[198] 1 105.12 0.03 <eps> 1.0 <eps> sil
+session-129-2016-01740000-01830000[199] 1 105.15 0.33 nämä 1.0 nämä cor
+session-129-2016-01740000-01830000[200] 1 105.48 0.42 nuoret 1.0 nuoret cor
+session-129-2016-01740000-01830000[201] 1 105.9 0.51 joutuvat 1.0 joutuvat cor
+session-129-2016-01740000-01830000[202] 1 106.41 0.72 matkustamaan 1.0 matkustamaan cor
+session-129-2016-01740000-01830000[203] 1 107.13 0.45 satoja 1.0 satoja cor
+session-129-2016-01740000-01830000[204] 1 107.58 0.96 kilometrejä 1.0 kilometrejä cor
+session-129-2016-01740000-01830000[205] 1 108.54 0.36 <eps> 1.0 <eps> sil end-segment-10=108.9
+session-129-2016-01740000-01830000[206] 1 108.9 0.36 pois 1.0 pois cor
+session-129-2016-01740000-01830000[207] 1 109.26 0.39 omalta 1.0 omalta cor
+session-129-2016-01740000-01830000[208] 1 109.65 0.93 paikkakunnaltaan 1.0 paikkakunnaltaan cor
+session-129-2016-01740000-01830000[209] 1 110.58 0.33 jotta 1.0 jotta cor
+session-129-2016-01740000-01830000[210] 1 110.91 0.12 he 1.0 he cor
+session-129-2016-01740000-01830000[211] 1 111.03 0.51 saisivat 1.0 saisivat cor
+session-129-2016-01740000-01830000[212] 1 111.54 0.57 itselleen 1.0 itselleen cor
+session-129-2016-01740000-01830000[213] 1 112.11 0.75 tutkinnon 1.0 tutkinnon cor
+session-129-2016-01740000-01830000[214] 1 112.86 0.45 <eps> 1.0 <eps> sil
+session-129-2016-01740000-01830000[215] 1 113.31 0.12 ja 1.0 ja cor
+session-129-2016-01740000-01830000[216] 1 113.43 0.3 nyt 1.0 nyt cor
+session-129-2016-01740000-01830000[217] 1 113.73 0.03 <eps> 1.0 <eps> sil
+session-129-2016-01740000-01830000[218] 1 113.76 0.36 tämä 1.0 tämä cor
+session-129-2016-01740000-01830000[219] 1 114.12 1.2 sadanyhdeksänkymmenen 1.0 sadanyhdeksänkymmenen cor
+session-129-2016-01740000-01830000[220] 1 115.32 0.45 miljoonan 1.0 miljoonan cor
+session-129-2016-01740000-01830000[221] 1 115.77 0.3 euron 1.0 euron cor
+session-129-2016-01740000-01830000[222] 1 116.07 0.75 säästö 1.0 säästö cor
+session-129-2016-01740000-01830000[223] 1 116.82 0.21 <eps> 1.0 <eps> sil
+session-129-2016-01740000-01830000[224] 1 117.03 0.27 ei 1.0 ei cor
+session-129-2016-01740000-01830000[225] 1 117.3 0.45 ainakaan 1.0 ainakaan cor
+session-129-2016-01740000-01830000[226] 1 117.75 0.18 tule 1.0 tule cor
+session-129-2016-01740000-01830000[227] 1 117.93 0.03 <eps> 1.0 <eps> sil
+session-129-2016-01740000-01830000[228] 1 117.96 0.63 helpottamaan 1.0 helpottamaan cor
+session-129-2016-01740000-01830000[229] 1 118.59 0.3 heidän 1.0 heidän cor
+session-129-2016-01740000-01830000[230] 1 118.89 0.63 tilannettaan 1.0 tilannettaan cor
+session-129-2016-01740000-01830000[231] 1 119.52 0.18 vaan 1.0 vaan cor
+session-129-2016-01740000-01830000[232] 1 119.7 0.57 pikemminkin 1.0 pikemminkin cor
+session-129-2016-01740000-01830000[233] 1 120.27 0.96 vaikeuttamaan 1.0 vaikeuttamaan cor
+session-129-2016-01740000-01830000[234] 1 121.23 0.3 <eps> 1.0 <eps> sil tainted
+session-129-2016-01740000-01830000[235] 1 121.53 0.15 niin 1.0 <eps> ins
+session-129-2016-01740000-01830000[236] 1 121.68 0.36 miten 1.0 miten cor
+session-129-2016-01740000-01830000[237] 1 122.04 0.15 me 1.0 me cor
+session-129-2016-01740000-01830000[238] 1 122.19 0.66 turvaamme 1.0 turvaamme cor
+session-129-2016-01740000-01830000[239] 1 122.85 0.03 <eps> 1.0 <eps> sil
+session-129-2016-01740000-01830000[240] 1 122.88 0.24 että 1.0 että cor
+session-129-2016-01740000-01830000[241] 1 123.12 0.66 jokainen 1.0 <eps> ins
+session-129-2016-01740000-01830000[242] 1 123.78 0.66 nuori 1.0 jokaiselle sub start-segment-11[start=244,end=252,unk-padding=0.00,0.00,keep-proportion=1.00,0.72,start-time=124.44,end-time=127.61,debug-str=((core-start=245,core-end=246/merged-with-adjacent/core-start=246,core-end=247)/merged-with-adjacent/((core-start=247,core-end=258/merged-with-adjacent/core-start=259,core-end=260)/merged-with-adjacent/core-start=260,core-end=271))]=124.44
+session-129-2016-01740000-01830000[243] 1 124.44 0.0 <eps> 1.0 nuorelle del
+session-129-2016-01740000-01830000[244] 1 124.44 0.06 <eps> 1.0 <eps> sil tainted
+session-129-2016-01740000-01830000[245] 1 124.5 0.3 myös 1.0 myös cor
+session-129-2016-01740000-01830000[246] 1 124.8 0.27 nämä 1.0 näille sub
+session-129-2016-01740000-01830000[247] 1 125.07 0.51 erityistä 1.0 erityistä cor
+session-129-2016-01740000-01830000[248] 1 125.58 0.36 tukea 1.0 tukea cor
+session-129-2016-01740000-01830000[249] 1 125.94 0.63 tarvitseville 1.0 tarvitseville cor
+session-129-2016-01740000-01830000[250] 1 126.57 0.54 nuorille 1.0 nuorille cor
+session-129-2016-01740000-01830000[251] 1 127.11 0.69 <eps> 1.0 <eps> sil start-segment-12[start=251,end=263,unk-padding=0.00,0.00,keep-proportion=0.72,0.50,start-time=127.30,end-time=131.84,debug-str=((core-start=245,core-end=246/merged-with-adjacent/core-start=246,core-end=247)/merged-with-adjacent/((core-start=247,core-end=258/merged-with-adjacent/core-start=259,core-end=260)/merged-with-adjacent/core-start=260,core-end=271)),overlaps-previous-segment]=127.3 end-segment-11=127.61
+session-129-2016-01740000-01830000[252] 1 127.8 0.69 tarjotaan 1.0 tarjotaan cor
+session-129-2016-01740000-01830000[253] 1 128.49 0.03 <eps> 1.0 <eps> sil
+session-129-2016-01740000-01830000[254] 1 128.52 0.27 myös 1.0 myös cor
+session-129-2016-01740000-01830000[255] 1 128.79 0.6 tutkintoon 1.0 tutkintoon cor
+session-129-2016-01740000-01830000[256] 1 129.39 0.45 johtavaa 1.0 johtavaa cor
+session-129-2016-01740000-01830000[257] 1 129.84 0.87 koulutusta 1.0 koulutusta cor
+session-129-2016-01740000-01830000[258] 1 130.71 0.21 <eps> 1.0 <eps> sil tainted
+session-129-2016-01740000-01830000[259] 1 130.92 0.15 ja 1.0 <eps> ins
+session-129-2016-01740000-01830000[260] 1 131.07 0.33 tämä 1.0 tämä cor
+session-129-2016-01740000-01830000[261] 1 131.4 0.21 on 1.0 on cor
+session-129-2016-01740000-01830000[262] 1 131.61 0.45 <eps> 1.0 <eps> sil end-segment-12=131.84 start-segment-13[start=262,end=272,unk-padding=0.00,0.00,keep-proportion=0.50,0.18,start-time=131.84,end-time=135.95,debug-str=((core-start=245,core-end=246/merged-with-adjacent/core-start=246,core-end=247)/merged-with-adjacent/((core-start=247,core-end=258/merged-with-adjacent/core-start=259,core-end=260)/merged-with-adjacent/core-start=260,core-end=271))]=131.84
+session-129-2016-01740000-01830000[263] 1 132.06 0.3 tämän 1.0 tämän cor
+session-129-2016-01740000-01830000[264] 1 132.36 0.48 tulevan 1.0 tulevan cor
+session-129-2016-01740000-01830000[265] 1 132.84 0.03 <eps> 1.0 <eps> sil
+session-129-2016-01740000-01830000[266] 1 132.87 0.72 reformin 1.0 reformin cor
+session-129-2016-01740000-01830000[267] 1 133.59 0.6 yksi 1.0 yksi cor
+session-129-2016-01740000-01830000[268] 1 134.19 0.03 <eps> 1.0 <eps> sil
+session-129-2016-01740000-01830000[269] 1 134.22 0.63 tärkeä 1.0 tärkeä cor
+session-129-2016-01740000-01830000[270] 1 134.85 0.6 huomio 1.0 huomio cor
+session-129-2016-01740000-01830000[271] 1 135.45 2.76 <eps> 1.0 <eps> sil tainted end-segment-13=135.95
+session-129-2016-01740000-01830000[272] 1 138.21 0.42 edustaja 1.0 <eps> ins
+session-129-2016-01740000-01830000[273] 1 138.63 0.66 nylander 1.0 <eps> ins
+session-129-2016-01740000-01830000[274] 1 139.29 1.47 <eps> 1.0 <eps> sil tainted
+session-129-2016-01740000-01830000[275] 1 140.76 0.33 saman 1.0 <eps> ins
+session-129-2016-01740000-01830000[276] 1 141.09 1.53 <eps> 1.0 <eps> sil tainted
+session-129-2016-01740000-01830000[277] 1 142.62 0.09 me 1.0 <eps> ins
+session-129-2016-01740000-01830000[278] 1 142.71 0.27 tiedämme 1.0 värderade sub
+session-129-2016-01740000-01830000[279] 1 142.98 0.18 että 1.0 talman sub
+session-129-2016-01740000-01830000[280] 1 143.16 0.12 nämä 1.0 ledamöterna sub start-segment-14[start=281,end=292,unk-padding=0.05,0.00,keep-proportion=1.00,1.00,start-time=143.23,end-time=146.43,wer=28.57,num-incorrect-words=2,num-tainted-words=0,num-words=7,incorrect-length=0.00,silence-length=0.87,tainted-nonsilence-length=0.00,total-length=3.15,debug-str=((core-start=281,core-end=287/merged-with-adjacent/core-start=287,core-end=289)/merged-with-adjacent/core-start=290,core-end=291)]=143.23
+session-129-2016-01740000-01830000[281] 1 143.28 0.42 andersson 1.0 andersson cor
+session-129-2016-01740000-01830000[282] 1 143.7 0.03 <eps> 1.0 <eps> sil
+session-129-2016-01740000-01830000[283] 1 143.73 0.51 gustafsson 1.0 gustafsson cor
+session-129-2016-01740000-01830000[284] 1 144.24 0.09 och 1.0 och cor
+session-129-2016-01740000-01830000[285] 1 144.33 0.03 <eps> 1.0 <eps> sil
+session-129-2016-01740000-01830000[286] 1 144.36 0.6 biaudet 1.0 biaudet cor
+session-129-2016-01740000-01830000[287] 1 144.96 0.0 <eps> 1.0 tog del
+session-129-2016-01740000-01830000[288] 1 144.96 0.0 <eps> 1.0 upp del
+session-129-2016-01740000-01830000[289] 1 144.96 0.78 <eps> 1.0 <eps> sil tainted
+session-129-2016-01740000-01830000[290] 1 145.74 0.66 viktiga 1.0 viktiga cor
+session-129-2016-01740000-01830000[291] 1 146.4 0.03 <eps> 1.0 <eps> sil tainted end-segment-14=146.43
+session-129-2016-01740000-01830000[292] 1 146.43 0.03 <UNK> 1.0 <UNK> fix tainted
+session-129-2016-01740000-01830000[293] 1 146.46 0.03 <eps> 1.0 <eps> sil tainted
+session-129-2016-01740000-01830000[294] 1 146.49 0.36 stort 1.0 <eps> ins
+session-129-2016-01740000-01830000[295] 1 146.85 0.54 pistää 1.0 <eps> ins
+session-129-2016-01740000-01830000[296] 1 147.39 0.63 <eps> 1.0 <eps> sil tainted
+session-129-2016-01740000-01830000[297] 1 148.02 0.24 ne 1.0 <eps> ins
+session-129-2016-01740000-01830000[298] 1 148.26 0.0 <eps> 1.0 aspekter del
+session-129-2016-01740000-01830000[299] 1 148.26 0.12 <eps> 1.0 <eps> sil tainted start-segment-15[start=300,end=305,unk-padding=0.05,0.00,keep-proportion=1.00,1.00,start-time=148.33,end-time=149.43,wer=0.00,num-incorrect-words=0,num-tainted-words=1,num-words=3,incorrect-length=0.00,silence-length=0.06,tainted-nonsilence-length=0.03,total-length=1.05,debug-str=core-start=301,core-end=304]=148.33
+session-129-2016-01740000-01830000[300] 1 148.38 0.03 <UNK> 1.0 gällande cor tainted
+session-129-2016-01740000-01830000[301] 1 148.41 0.66 behovet 1.0 behovet cor
+session-129-2016-01740000-01830000[302] 1 149.07 0.03 <eps> 1.0 <eps> sil
+session-129-2016-01740000-01830000[303] 1 149.1 0.3 av 1.0 av cor
+session-129-2016-01740000-01830000[304] 1 149.4 0.03 <eps> 1.0 <eps> sil tainted end-segment-15=149.43
+session-129-2016-01740000-01830000[305] 1 149.43 0.21 ovat 1.0 <eps> ins
+session-129-2016-01740000-01830000[306] 1 149.64 0.57 sitten 1.0 <eps> ins
+session-129-2016-01740000-01830000[307] 1 150.21 0.03 <eps> 1.0 <eps> sil tainted
+session-129-2016-01740000-01830000[308] 1 150.24 0.48 illan 1.0 <eps> ins
+session-129-2016-01740000-01830000[309] 1 150.72 0.51 jakso 1.0 <eps> ins
+session-129-2016-01740000-01830000[310] 1 151.23 0.27 <eps> 1.0 <eps> sil tainted
+session-129-2016-01740000-01830000[311] 1 151.5 0.39 pitkää 1.0 <eps> ins
+session-129-2016-01740000-01830000[312] 1 151.89 0.36 ja 1.0 <eps> ins
+session-129-2016-01740000-01830000[313] 1 152.25 0.39 <eps> 1.0 <eps> sil tainted
+session-129-2016-01740000-01830000[314] 1 152.64 0.21 kun 1.0 <eps> ins
+session-129-2016-01740000-01830000[315] 1 152.85 0.12 <eps> 1.0 <eps> sil tainted
+session-129-2016-01740000-01830000[316] 1 152.97 0.33 fakta 1.0 <eps> ins
+session-129-2016-01740000-01830000[317] 1 153.3 0.06 <eps> 1.0 <eps> sil tainted
+session-129-2016-01740000-01830000[318] 1 153.36 0.24 elä 1.0 <eps> ins
+session-129-2016-01740000-01830000[319] 1 153.6 0.3 näe 1.0 <eps> ins
+session-129-2016-01740000-01830000[320] 1 153.9 0.21 ryn 1.0 <eps> ins
+session-129-2016-01740000-01830000[321] 1 154.11 0.24 nämä 1.0 och sub
+session-129-2016-01740000-01830000[322] 1 154.35 0.42 viides 1.0 också sub
+session-129-2016-01740000-01830000[323] 1 154.77 0.42 niin 1.0 rätten sub
+session-129-2016-01740000-01830000[324] 1 155.19 0.0 <eps> 1.0 tycker del
+session-129-2016-01740000-01830000[325] 1 155.19 0.72 <eps> 1.0 <eps> sil tainted
+session-129-2016-01740000-01830000[326] 1 155.91 0.18 nämä 1.0 jag sub
+session-129-2016-01740000-01830000[327] 1 156.09 0.24 siihen 1.0 till sub
+session-129-2016-01740000-01830000[328] 1 156.33 0.36 varassa 1.0 kontakt sub
+session-129-2016-01740000-01830000[329] 1 156.69 0.0 <eps> 1.0 eller del
+session-129-2016-01740000-01830000[330] 1 156.69 0.09 <eps> 1.0 <eps> sil tainted
+session-129-2016-01740000-01830000[331] 1 156.78 0.69 reformeja 1.0 närundervisning sub
+session-129-2016-01740000-01830000[332] 1 157.47 0.18 nyt 1.0 och sub
+session-129-2016-01740000-01830000[333] 1 157.65 0.0 <eps> 1.0 när del
+session-129-2016-01740000-01830000[334] 1 157.65 0.09 <eps> 1.0 <eps> sil tainted
+session-129-2016-01740000-01830000[335] 1 157.74 0.39 sen 1.0 själva sub
+session-129-2016-01740000-01830000[336] 1 158.13 0.0 <eps> 1.0 reformen del
+session-129-2016-01740000-01830000[337] 1 158.13 0.24 <eps> 1.0 <eps> sil tainted
+session-129-2016-01740000-01830000[338] 1 158.37 0.15 se 1.0 nu sub
+session-129-2016-01740000-01830000[339] 1 158.52 0.0 <eps> 1.0 sedan del
+session-129-2016-01740000-01830000[340] 1 158.52 0.06 <eps> 1.0 <eps> sil tainted
+session-129-2016-01740000-01830000[341] 1 158.58 0.12 det 1.0 i sub
+session-129-2016-01740000-01830000[342] 1 158.7 0.54 ahdinkoon 1.0 februari sub
+session-129-2016-01740000-01830000[343] 1 159.24 0.24 määrä 1.0 kommer sub start-segment-16[start=344,end=347,unk-padding=0.05,0.05,keep-proportion=1.00,1.00,start-time=159.43,end-time=160.73,wer=0.00,num-incorrect-words=0,num-tainted-words=0,num-words=2,incorrect-length=0.00,silence-length=0.30,tainted-nonsilence-length=0.00,total-length=1.20,debug-str=core-start=344,core-end=347]=159.43
+session-129-2016-01740000-01830000[344] 1 159.48 0.27 till 1.0 till cor
+session-129-2016-01740000-01830000[345] 1 159.75 0.3 <eps> 1.0 <eps> sil
+session-129-2016-01740000-01830000[346] 1 160.05 0.63 riksdagen 1.0 riksdagen cor
+session-129-2016-01740000-01830000[347] 1 160.68 0.42 semmoista 1.0 <eps> ins end-segment-16=160.73
+session-129-2016-01740000-01830000[348] 1 161.1 0.0 <eps> 1.0 måste del
+session-129-2016-01740000-01830000[349] 1 161.1 0.27 <eps> 1.0 <eps> sil tainted
+session-129-2016-01740000-01830000[350] 1 161.37 0.63 minutkin 1.0 vi sub
+session-129-2016-01740000-01830000[351] 1 162.0 0.33 uuden 1.0 mycket sub start-segment-17[start=353,end=361,unk-padding=0.00,0.05,keep-proportion=1.00,1.00,start-time=162.33,end-time=163.73,wer=40.00,num-incorrect-words=2,num-tainted-words=0,num-words=5,incorrect-length=0.24,silence-length=0.24,tainted-nonsilence-length=0.00,total-length=1.35,debug-str=((core-start=354,core-end=355/merged-with-adjacent/core-start=355,core-end=358)/merged-with-adjacent/core-start=358,core-end=361)]=162.33
+session-129-2016-01740000-01830000[352] 1 162.33 0.0 <eps> 1.0 noga del
+session-129-2016-01740000-01830000[353] 1 162.33 0.03 <eps> 1.0 <eps> sil tainted
+session-129-2016-01740000-01830000[354] 1 162.36 0.36 titta 1.0 titta cor
+session-129-2016-01740000-01830000[355] 1 162.72 0.0 <eps> 1.0 på del
+session-129-2016-01740000-01830000[356] 1 162.72 0.03 <eps> 1.0 <eps> sil tainted
+session-129-2016-01740000-01830000[357] 1 162.75 0.24 vuoden 1.0 det sub
+session-129-2016-01740000-01830000[358] 1 162.99 0.3 här 1.0 här cor
+session-129-2016-01740000-01830000[359] 1 163.29 0.18 <eps> 1.0 <eps> sil
+session-129-2016-01740000-01830000[360] 1 163.47 0.21 hur 1.0 hur cor
+session-129-2016-01740000-01830000[361] 1 163.68 0.36 vikaa 1.0 <eps> ins end-segment-17=163.73
+session-129-2016-01740000-01830000[362] 1 164.04 0.03 <eps> 1.0 <eps> sil tainted
+session-129-2016-01740000-01830000[363] 1 164.07 0.87 kuinka 1.0 <eps> ins
+session-129-2016-01740000-01830000[364] 1 164.94 0.3 <eps> 1.0 <eps> sil tainted
+session-129-2016-01740000-01830000[365] 1 165.24 0.66 sitten 1.0 <eps> ins
+session-129-2016-01740000-01830000[366] 1 165.9 0.36 <eps> 1.0 <eps> sil tainted
+session-129-2016-01740000-01830000[367] 1 166.26 0.48 när 1.0 <eps> ins
+session-129-2016-01740000-01830000[368] 1 166.74 0.0 <eps> 1.0 vi del
+session-129-2016-01740000-01830000[369] 1 166.74 0.03 <eps> 1.0 <eps> sil tainted
+session-129-2016-01740000-01830000[370] 1 166.77 0.21 kun 1.0 kan sub
+session-129-2016-01740000-01830000[371] 1 166.98 0.21 nämä 1.0 trygga sub
+session-129-2016-01740000-01830000[372] 1 167.19 0.36 viisi 1.0 rätten sub
+session-129-2016-01740000-01830000[373] 1 167.55 0.21 niin 1.0 till sub start-segment-18[start=375,end=381,unk-padding=0.00,0.05,keep-proportion=1.00,1.00,start-time=167.76,end-time=168.98,wer=0.00,num-incorrect-words=0,num-tainted-words=0,num-words=3,incorrect-length=0.00,silence-length=0.24,tainted-nonsilence-length=0.00,total-length=1.17,debug-str=core-start=376,core-end=381]=167.76
+session-129-2016-01740000-01830000[374] 1 167.76 0.0 <eps> 1.0 närundervisning del
+session-129-2016-01740000-01830000[375] 1 167.76 0.18 <eps> 1.0 <eps> sil tainted
+session-129-2016-01740000-01830000[376] 1 167.94 0.15 för 1.0 för cor
+session-129-2016-01740000-01830000[377] 1 168.09 0.03 <eps> 1.0 <eps> sil
+session-129-2016-01740000-01830000[378] 1 168.12 0.42 dem 1.0 dem cor
+session-129-2016-01740000-01830000[379] 1 168.54 0.03 <eps> 1.0 <eps> sil
+session-129-2016-01740000-01830000[380] 1 168.57 0.36 som 1.0 som cor
+session-129-2016-01740000-01830000[381] 1 168.93 0.06 vi 1.0 <eps> ins end-segment-18=168.98
+session-129-2016-01740000-01830000[382] 1 168.99 0.27 he 1.0 <eps> ins
+session-129-2016-01740000-01830000[383] 1 169.26 0.36 eväät 1.0 <eps> ins
+session-129-2016-01740000-01830000[384] 1 169.62 0.03 <eps> 1.0 <eps> sil tainted
+session-129-2016-01740000-01830000[385] 1 169.65 0.24 ne 1.0 behöver sub
+session-129-2016-01740000-01830000[386] 1 169.89 0.0 <eps> 1.0 det del
+session-129-2016-01740000-01830000[387] 1 169.89 0.27 <eps> 1.0 <eps> sil tainted
+session-129-2016-01740000-01830000[388] 1 170.16 0.21 ja 1.0 jag sub
+session-129-2016-01740000-01830000[389] 1 170.37 0.0 <eps> 1.0 tror del
+session-129-2016-01740000-01830000[390] 1 170.37 0.09 <eps> 1.0 <eps> sil tainted
+session-129-2016-01740000-01830000[391] 1 170.46 0.42 suorat 1.0 att sub
+session-129-2016-01740000-01830000[392] 1 170.88 0.0 <eps> 1.0 det del
+session-129-2016-01740000-01830000[393] 1 170.88 0.03 <eps> 1.0 <eps> sil tainted
+session-129-2016-01740000-01830000[394] 1 170.91 0.18 de 1.0 är sub start-segment-19[start=395,end=412,unk-padding=0.05,0.05,keep-proportion=1.00,1.00,start-time=171.04,end-time=175.85,wer=46.15,num-incorrect-words=6,num-tainted-words=0,num-words=13,incorrect-length=1.41,silence-length=1.20,tainted-nonsilence-length=0.00,total-length=4.71,debug-str=((core-start=395,core-end=397/merged-with-adjacent/core-start=398,core-end=402)/merged-with-adjacent/((core-start=402,core-end=403/merged-with-adjacent/core-start=403,core-end=406)/merged-with-adjacent/core-start=407,core-end=412))]=171.04
+session-129-2016-01740000-01830000[395] 1 171.09 0.12 en 1.0 en cor
+session-129-2016-01740000-01830000[396] 1 171.21 0.33 av 1.0 av cor
+session-129-2016-01740000-01830000[397] 1 171.54 0.03 <eps> 1.0 <eps> sil tainted
+session-129-2016-01740000-01830000[398] 1 171.57 0.24 att 1.0 <eps> ins
+session-129-2016-01740000-01830000[399] 1 171.81 0.03 <eps> 1.0 <eps> sil tainted
+session-129-2016-01740000-01830000[400] 1 171.84 0.24 som 1.0 de sub
+session-129-2016-01740000-01830000[401] 1 172.08 0.24 just 1.0 absolut sub
+session-129-2016-01740000-01830000[402] 1 172.32 0.6 viktigaste 1.0 viktigaste cor
+session-129-2016-01740000-01830000[403] 1 172.92 0.27 tror 1.0 <eps> ins
+session-129-2016-01740000-01830000[404] 1 173.19 0.42 kokonaan 1.0 <eps> ins
+session-129-2016-01740000-01830000[405] 1 173.61 0.0 <eps> 1.0 frågorna del
+session-129-2016-01740000-01830000[406] 1 173.61 0.75 <eps> 1.0 <eps> sil tainted
+session-129-2016-01740000-01830000[407] 1 174.36 0.27 som 1.0 som cor
+session-129-2016-01740000-01830000[408] 1 174.63 0.06 vi 1.0 vi cor
+session-129-2016-01740000-01830000[409] 1 174.69 0.36 ska 1.0 ska cor
+session-129-2016-01740000-01830000[410] 1 175.05 0.39 <eps> 1.0 <eps> sil
+session-129-2016-01740000-01830000[411] 1 175.44 0.36 titta 1.0 titta cor
+session-129-2016-01740000-01830000[412] 1 175.8 0.51 puheeseeni 1.0 på sub end-segment-19=175.85
+session-129-2016-01740000-01830000[413] 1 176.31 0.15 sen 1.0 sedan sub
+session-129-2016-01740000-01830000[414] 1 176.46 0.36 veroa 1.0 i sub
+session-129-2016-01740000-01830000[415] 1 176.82 0.0 <eps> 1.0 februari del
+session-129-2016-02001000-02128448[0] 1 0.0 0.27 jää 1.0 kahvinkeittäjä sub start-segment-1[start=0,end=14,unk-padding=0.00,0.00,keep-proportion=1.00,0.98,start-time=0.00,end-time=7.40,debug-str=(core-start=0,core-end=1/merged-with-adjacent/core-start=1,core-end=41)]=0
+session-129-2016-02001000-02128448[1] 1 0.27 0.54 taikka 1.0 taikka cor
+session-129-2016-02001000-02128448[2] 1 0.81 0.33 <eps> 1.0 <eps> sil
+session-129-2016-02001000-02128448[3] 1 1.14 0.54 muuten 1.0 muuten cor
+session-129-2016-02001000-02128448[4] 1 1.68 0.33 siellä 1.0 siellä cor
+session-129-2016-02001000-02128448[5] 1 2.01 0.78 työpaikalla 1.0 työpaikalla cor
+session-129-2016-02001000-02128448[6] 1 2.79 0.27 mutta 1.0 mutta cor
+session-129-2016-02001000-02128448[7] 1 3.06 0.18 sitä 1.0 sitä cor
+session-129-2016-02001000-02128448[8] 1 3.24 1.08 konkreettista 1.0 konkreettista cor
+session-129-2016-02001000-02128448[9] 1 4.32 0.21 <eps> 1.0 <eps> sil
+session-129-2016-02001000-02128448[10] 1 4.53 1.08 työssäoppimista 1.0 työssäoppimista cor
+session-129-2016-02001000-02128448[11] 1 5.61 0.24 ei 1.0 ei cor
+session-129-2016-02001000-02128448[12] 1 5.85 1.05 mahdollisteta 1.0 mahdollisteta cor
+session-129-2016-02001000-02128448[13] 1 6.9 0.51 <eps> 1.0 <eps> sil start-segment-2[start=13,end=34,unk-padding=0.00,0.05,keep-proportion=0.98,1.00,start-time=6.91,end-time=17.27,debug-str=core-start=13,core-end=34,overlaps-previous-segment]=6.91 end-segment-1=7.4
+session-129-2016-02001000-02128448[14] 1 7.41 0.39 siinä 1.0 siinä cor
+session-129-2016-02001000-02128448[15] 1 7.8 0.48 mielessä 1.0 mielessä cor
+session-129-2016-02001000-02128448[16] 1 8.28 0.03 <eps> 1.0 <eps> sil
+session-129-2016-02001000-02128448[17] 1 8.31 0.69 reformia 1.0 reformia cor
+session-129-2016-02001000-02128448[18] 1 9.0 0.57 varmasti 1.0 varmasti cor
+session-129-2016-02001000-02128448[19] 1 9.57 0.9 odotellaan 1.0 odotellaan cor
+session-129-2016-02001000-02128448[20] 1 10.47 0.3 <eps> 1.0 <eps> sil
+session-129-2016-02001000-02128448[21] 1 10.77 0.33 mutta 1.0 mutta cor
+session-129-2016-02001000-02128448[22] 1 11.1 0.36 tämä 1.0 tämä cor
+session-129-2016-02001000-02128448[23] 1 11.46 0.15 on 1.0 on cor
+session-129-2016-02001000-02128448[24] 1 11.61 0.36 väärä 1.0 väärä cor
+session-129-2016-02001000-02128448[25] 1 11.97 0.96 lähestymistapa 1.0 lähestymistapa cor
+session-129-2016-02001000-02128448[26] 1 12.93 0.18 että 1.0 että cor
+session-129-2016-02001000-02128448[27] 1 13.11 0.12 me 1.0 me cor
+session-129-2016-02001000-02128448[28] 1 13.23 0.66 leikkaamme 1.0 leikkaamme cor
+session-129-2016-02001000-02128448[29] 1 13.89 1.2 satayhdeksänkymmentä 1.0 satayhdeksänkymmentä cor
+session-129-2016-02001000-02128448[30] 1 15.09 0.81 miljoonaa 1.0 miljoonaa cor
+session-129-2016-02001000-02128448[31] 1 15.9 0.18 <eps> 1.0 <eps> sil
+session-129-2016-02001000-02128448[32] 1 16.08 0.42 niistä 1.0 niistä cor
+session-129-2016-02001000-02128448[33] 1 16.5 0.72 resursseista 1.0 resursseista cor start-segment-3[start=34,end=42,unk-padding=0.05,0.00,keep-proportion=1.00,0.30,start-time=17.17,end-time=21.32,debug-str=core-start=34,core-end=42,overlaps-previous-segment]=17.17
+session-129-2016-02001000-02128448[34] 1 17.22 0.51 joittenka 1.0 joittenka cor end-segment-2=17.27
+session-129-2016-02001000-02128448[35] 1 17.73 0.75 pitäisi 1.0 pitäisi cor
+session-129-2016-02001000-02128448[36] 1 18.48 0.03 <eps> 1.0 <eps> sil
+session-129-2016-02001000-02128448[37] 1 18.51 0.63 todellakin 1.0 todellakin cor
+session-129-2016-02001000-02128448[38] 1 19.14 0.72 toteuttaa 1.0 toteuttaa cor
+session-129-2016-02001000-02128448[39] 1 19.86 0.27 tämä 1.0 tämä cor
+session-129-2016-02001000-02128448[40] 1 20.13 0.69 reformi 1.0 reformi cor
+session-129-2016-02001000-02128448[41] 1 20.82 1.65 <eps> 1.0 <eps> sil tainted end-segment-3=21.32
+session-129-2016-02001000-02128448[42] 1 22.47 0.84 edustaja 1.0 <eps> ins
+session-129-2016-02001000-02128448[43] 1 23.31 0.03 <eps> 1.0 <eps> sil tainted
+session-129-2016-02001000-02128448[44] 1 23.34 0.51 järvinen 1.0 <eps> ins
+session-129-2016-02001000-02128448[45] 1 23.85 2.25 <eps> 1.0 <eps> sil tainted
+session-129-2016-02001000-02128448[46] 1 26.1 0.15 hän 1.0 <eps> ins
+session-129-2016-02001000-02128448[47] 1 26.25 0.21 pyysi 1.0 <eps> ins
+session-129-2016-02001000-02128448[48] 1 26.46 0.42 juttunne 1.0 <eps> ins
+session-129-2016-02001000-02128448[49] 1 26.88 1.89 <eps> 1.0 <eps> sil tainted start-segment-4[start=49,end=56,unk-padding=0.00,0.00,keep-proportion=0.26,0.93,start-time=28.27,end-time=30.98,debug-str=((core-start=50,core-end=72/merged-with-adjacent/core-start=72,core-end=73)/merged-with-adjacent/((core-start=74,core-end=82/merged-with-adjacent/core-start=82,core-end=83)/merged-with-adjacent/core-start=84,core-end=115))]=28.27
+session-129-2016-02001000-02128448[50] 1 28.77 0.51 arvoisa 1.0 arvoisa cor
+session-129-2016-02001000-02128448[51] 1 29.28 0.42 <eps> 1.0 <eps> sil
+session-129-2016-02001000-02128448[52] 1 29.7 0.15 herra 1.0 herra cor
+session-129-2016-02001000-02128448[53] 1 29.85 0.06 <eps> 1.0 <eps> sil
+session-129-2016-02001000-02128448[54] 1 29.91 0.57 puhemies 1.0 puhemies cor
+session-129-2016-02001000-02128448[55] 1 30.48 0.54 <eps> 1.0 <eps> sil start-segment-5[start=55,end=65,unk-padding=0.00,0.00,keep-proportion=0.93,0.50,start-time=30.52,end-time=35.53,debug-str=((core-start=50,core-end=72/merged-with-adjacent/core-start=72,core-end=73)/merged-with-adjacent/((core-start=74,core-end=82/merged-with-adjacent/core-start=82,core-end=83)/merged-with-adjacent/core-start=84,core-end=115)),overlaps-previous-segment]=30.52 end-segment-4=30.98
+session-129-2016-02001000-02128448[56] 1 31.02 0.57 edelliseen 1.0 edelliseen cor
+session-129-2016-02001000-02128448[57] 1 31.59 0.9 puheenvuoroon 1.0 puheenvuoroon cor
+session-129-2016-02001000-02128448[58] 1 32.49 0.03 <eps> 1.0 <eps> sil
+session-129-2016-02001000-02128448[59] 1 32.52 0.21 on 1.0 on cor
+session-129-2016-02001000-02128448[60] 1 32.73 0.36 helppo 1.0 helppo cor
+session-129-2016-02001000-02128448[61] 1 33.09 0.66 jatkaa 1.0 jatkaa cor
+session-129-2016-02001000-02128448[62] 1 33.75 0.03 <eps> 1.0 <eps> sil
+session-129-2016-02001000-02128448[63] 1 33.78 1.59 oppisopimuskoulutuksesta 1.0 oppisopimuskoulutuksesta cor start-segment-6[start=64,end=84,unk-padding=0.00,0.00,keep-proportion=1.00,0.50,start-time=35.37,end-time=45.09,debug-str=((core-start=50,core-end=72/merged-with-adjacent/core-start=72,core-end=73)/merged-with-adjacent/((core-start=74,core-end=82/merged-with-adjacent/core-start=82,core-end=83)/merged-with-adjacent/core-start=84,core-end=115)),overlaps-previous-segment]=35.37
+session-129-2016-02001000-02128448[64] 1 35.37 0.33 <eps> 1.0 <eps> sil end-segment-5=35.53
+session-129-2016-02001000-02128448[65] 1 35.7 0.45 tässä 1.0 tässä cor
+session-129-2016-02001000-02128448[66] 1 36.15 0.03 <eps> 1.0 <eps> sil
+session-129-2016-02001000-02128448[67] 1 36.18 0.78 valiokunnan 1.0 valiokunnan cor
+session-129-2016-02001000-02128448[68] 1 36.96 0.03 <eps> 1.0 <eps> sil
+session-129-2016-02001000-02128448[69] 1 36.99 0.72 mietinnössä 1.0 mietinnössä cor
+session-129-2016-02001000-02128448[70] 1 37.71 0.6 kerrotaan 1.0 kerrotaan cor
+session-129-2016-02001000-02128448[71] 1 38.31 0.18 että 1.0 että cor
+session-129-2016-02001000-02128448[72] 1 38.49 0.18 tämän 1.0 <eps> ins
+session-129-2016-02001000-02128448[73] 1 38.67 0.03 <eps> 1.0 <eps> sil tainted
+session-129-2016-02001000-02128448[74] 1 38.7 1.47 oppisopimuskoulutus 1.0 oppisopimuskoulutus cor
+session-129-2016-02001000-02128448[75] 1 40.17 0.15 on 1.0 on cor
+session-129-2016-02001000-02128448[76] 1 40.32 1.26 järjestämiskustannuksiltaan 1.0 järjestämiskustannuksiltaan cor
+session-129-2016-02001000-02128448[77] 1 41.58 0.06 ja 1.0 ja cor
+session-129-2016-02001000-02128448[78] 1 41.64 0.78 yksikköhinnaltaan 1.0 yksikköhinnaltaan cor
+session-129-2016-02001000-02128448[79] 1 42.42 0.93 oppilaitosmuotoista 1.0 oppilaitosmuotoista cor
+session-129-2016-02001000-02128448[80] 1 43.35 0.6 koulutusta 1.0 koulutusta cor
+session-129-2016-02001000-02128448[81] 1 43.95 0.69 edullisempaa 1.0 edullisempaa cor
+session-129-2016-02001000-02128448[82] 1 44.64 0.24 ja 1.0 <eps> ins
+session-129-2016-02001000-02128448[83] 1 44.88 0.42 <eps> 1.0 <eps> sil tainted end-segment-6=45.09 start-segment-7[start=83,end=108,unk-padding=0.00,0.00,keep-proportion=0.50,0.88,start-time=45.09,end-time=55.16,debug-str=((core-start=50,core-end=72/merged-with-adjacent/core-start=72,core-end=73)/merged-with-adjacent/((core-start=74,core-end=82/merged-with-adjacent/core-start=82,core-end=83)/merged-with-adjacent/core-start=84,core-end=115))]=45.09
+session-129-2016-02001000-02128448[84] 1 45.3 0.24 olen 1.0 olen cor
+session-129-2016-02001000-02128448[85] 1 45.54 0.24 itse 1.0 itse cor
+session-129-2016-02001000-02128448[86] 1 45.78 0.51 hoitoalan 1.0 hoitoalan cor
+session-129-2016-02001000-02128448[87] 1 46.29 0.45 edustaja 1.0 edustaja cor
+session-129-2016-02001000-02128448[88] 1 46.74 0.06 ja 1.0 ja cor
+session-129-2016-02001000-02128448[89] 1 46.8 0.33 täytyy 1.0 täytyy cor
+session-129-2016-02001000-02128448[90] 1 47.13 0.33 sanoa 1.0 sanoa cor
+session-129-2016-02001000-02128448[91] 1 47.46 0.12 että 1.0 että cor
+session-129-2016-02001000-02128448[92] 1 47.58 0.3 siinä 1.0 siinä cor
+session-129-2016-02001000-02128448[93] 1 47.88 0.45 vaiheessa 1.0 vaiheessa cor
+session-129-2016-02001000-02128448[94] 1 48.33 0.15 kun 1.0 kun cor
+session-129-2016-02001000-02128448[95] 1 48.48 0.54 työmaalle 1.0 työmaalle cor
+session-129-2016-02001000-02128448[96] 1 49.02 0.84 ilmestyivät 1.0 ilmestyivät cor
+session-129-2016-02001000-02128448[97] 1 49.86 0.21 <eps> 1.0 <eps> sil
+session-129-2016-02001000-02128448[98] 1 50.07 0.81 innokkaat 1.0 innokkaat cor
+session-129-2016-02001000-02128448[99] 1 50.88 0.03 <eps> 1.0 <eps> sil
+session-129-2016-02001000-02128448[100] 1 50.91 1.56 oppisopimusopiskelijat 1.0 oppisopimusopiskelijat cor
+session-129-2016-02001000-02128448[101] 1 52.47 0.24 niin 1.0 niin cor
+session-129-2016-02001000-02128448[102] 1 52.71 0.39 kyllähän 1.0 kyllähän cor
+session-129-2016-02001000-02128448[103] 1 53.1 0.12 se 1.0 se cor
+session-129-2016-02001000-02128448[104] 1 53.22 0.21 oli 1.0 oli cor
+session-129-2016-02001000-02128448[105] 1 53.43 0.27 myös 1.0 myös cor
+session-129-2016-02001000-02128448[106] 1 53.7 0.96 työpaikalle 1.0 työpaikalle cor
+session-129-2016-02001000-02128448[107] 1 54.66 0.57 <eps> 1.0 <eps> sil start-segment-8[start=107,end=115,unk-padding=0.00,0.05,keep-proportion=0.88,1.00,start-time=54.73,end-time=57.95,debug-str=((core-start=50,core-end=72/merged-with-adjacent/core-start=72,core-end=73)/merged-with-adjacent/((core-start=74,core-end=82/merged-with-adjacent/core-start=82,core-end=83)/merged-with-adjacent/core-start=84,core-end=115)),overlaps-previous-segment]=54.73 end-segment-7=55.16
+session-129-2016-02001000-02128448[108] 1 55.23 0.63 uudistus 1.0 uudistus cor
+session-129-2016-02001000-02128448[109] 1 55.86 0.06 <eps> 1.0 <eps> sil
+session-129-2016-02001000-02128448[110] 1 55.92 0.78 uudistus 1.0 uudistus cor
+session-129-2016-02001000-02128448[111] 1 56.7 0.21 ja 1.0 ja cor
+session-129-2016-02001000-02128448[112] 1 56.91 0.12 <eps> 1.0 <eps> sil
+session-129-2016-02001000-02128448[113] 1 57.03 0.45 iloinen 1.0 iloinen cor
+session-129-2016-02001000-02128448[114] 1 57.48 0.42 asia 1.0 asia cor
+session-129-2016-02001000-02128448[115] 1 57.9 0.45 ja 1.0 <eps> ins end-segment-8=57.95 start-segment-9[start=116,end=145,unk-padding=0.00,0.05,keep-proportion=1.00,1.00,start-time=58.35,end-time=68.75,debug-str=core-start=116,core-end=145]=58.35
+session-129-2016-02001000-02128448[116] 1 58.35 0.06 <eps> 1.0 <eps> sil tainted
+session-129-2016-02001000-02128448[117] 1 58.41 0.39 monet 1.0 monet cor
+session-129-2016-02001000-02128448[118] 1 58.8 0.33 nuoret 1.0 nuoret cor
+session-129-2016-02001000-02128448[119] 1 59.13 0.36 ottavat 1.0 ottavat cor
+session-129-2016-02001000-02128448[120] 1 59.49 0.42 yhteyttä 1.0 yhteyttä cor
+session-129-2016-02001000-02128448[121] 1 59.91 0.09 ja 1.0 ja cor
+session-129-2016-02001000-02128448[122] 1 60.0 0.51 kysyvät 1.0 kysyvät cor
+session-129-2016-02001000-02128448[123] 1 60.51 0.03 <eps> 1.0 <eps> sil
+session-129-2016-02001000-02128448[124] 1 60.54 0.27 toki 1.0 toki cor
+session-129-2016-02001000-02128448[125] 1 60.81 0.18 myös 1.0 myös cor
+session-129-2016-02001000-02128448[126] 1 60.99 0.45 aikuiset 1.0 aikuiset cor
+session-129-2016-02001000-02128448[127] 1 61.44 0.33 ihmiset 1.0 ihmiset cor
+session-129-2016-02001000-02128448[128] 1 61.77 0.36 kuinka 1.0 kuinka cor
+session-129-2016-02001000-02128448[129] 1 62.13 0.36 päästä 1.0 päästä cor
+session-129-2016-02001000-02128448[130] 1 62.49 1.11 uudelleenkouluttautumaan 1.0 uudelleenkouluttautumaan cor
+session-129-2016-02001000-02128448[131] 1 63.6 1.32 oppisopimuskoulutukseen 1.0 oppisopimuskoulutukseen cor
+session-129-2016-02001000-02128448[132] 1 64.92 0.27 <eps> 1.0 <eps> sil
+session-129-2016-02001000-02128448[133] 1 65.19 0.15 se 1.0 se cor
+session-129-2016-02001000-02128448[134] 1 65.34 0.15 on 1.0 on cor
+session-129-2016-02001000-02128448[135] 1 65.49 0.72 haluttu 1.0 haluttu cor
+session-129-2016-02001000-02128448[136] 1 66.21 0.03 <eps> 1.0 <eps> sil
+session-129-2016-02001000-02128448[137] 1 66.24 0.12 ja 1.0 ja cor
+session-129-2016-02001000-02128448[138] 1 66.36 0.09 se 1.0 se cor
+session-129-2016-02001000-02128448[139] 1 66.45 0.15 on 1.0 on cor
+session-129-2016-02001000-02128448[140] 1 66.6 0.81 toivottu 1.0 toivottu cor
+session-129-2016-02001000-02128448[141] 1 67.41 0.18 <eps> 1.0 <eps> sil
+session-129-2016-02001000-02128448[142] 1 67.59 0.42 ja 1.0 ja cor
+session-129-2016-02001000-02128448[143] 1 68.01 0.03 <eps> 1.0 <eps> sil
+session-129-2016-02001000-02128448[144] 1 68.04 0.66 todellakin 1.0 todellakin cor start-segment-10[start=145,end=171,unk-padding=0.05,0.00,keep-proportion=1.00,1.00,start-time=68.65,end-time=78.78,debug-str=core-start=145,core-end=171,overlaps-previous-segment]=68.65
+session-129-2016-02001000-02128448[145] 1 68.7 0.24 näen 1.0 näen cor end-segment-9=68.75
+session-129-2016-02001000-02128448[146] 1 68.94 0.15 että 1.0 että cor
+session-129-2016-02001000-02128448[147] 1 69.09 0.24 olisi 1.0 olisi cor
+session-129-2016-02001000-02128448[148] 1 69.33 0.51 toivottavaa 1.0 toivottavaa cor
+session-129-2016-02001000-02128448[149] 1 69.84 0.15 että 1.0 että cor
+session-129-2016-02001000-02128448[150] 1 69.99 0.27 niitä 1.0 niitä cor
+session-129-2016-02001000-02128448[151] 1 70.26 0.57 paikkoja 1.0 paikkoja cor
+session-129-2016-02001000-02128448[152] 1 70.83 0.21 mihin 1.0 mihin cor
+session-129-2016-02001000-02128448[153] 1 71.04 0.54 opiskelija 1.0 opiskelija cor
+session-129-2016-02001000-02128448[154] 1 71.58 0.48 pääsisi 1.0 pääsisi cor
+session-129-2016-02001000-02128448[155] 1 72.06 0.39 olisi 1.0 olisi cor
+session-129-2016-02001000-02128448[156] 1 72.45 0.33 myös 1.0 myös cor
+session-129-2016-02001000-02128448[157] 1 72.78 0.24 <eps> 1.0 <eps> sil
+session-129-2016-02001000-02128448[158] 1 73.02 0.6 hoitoala 1.0 hoitoala cor
+session-129-2016-02001000-02128448[159] 1 73.62 0.15 on 1.0 on cor
+session-129-2016-02001000-02128448[160] 1 73.77 0.24 yksi 1.0 yksi cor
+session-129-2016-02001000-02128448[161] 1 74.01 0.48 sellainen 1.0 sellainen cor
+session-129-2016-02001000-02128448[162] 1 74.49 0.21 joka 1.0 joka cor
+session-129-2016-02001000-02128448[163] 1 74.7 0.9 kiitettävästi 1.0 kiitettävästi cor
+session-129-2016-02001000-02128448[164] 1 75.6 0.03 <eps> 1.0 <eps> sil
+session-129-2016-02001000-02128448[165] 1 75.63 0.27 näitä 1.0 näitä cor
+session-129-2016-02001000-02128448[166] 1 75.9 1.77 oppisopimuspaikkoja 1.0 oppisopimuspaikkoja cor
+session-129-2016-02001000-02128448[167] 1 77.67 0.03 <eps> 1.0 <eps> sil
+session-129-2016-02001000-02128448[168] 1 77.7 0.84 tarjoaa 1.0 tarjoaa cor
+session-129-2016-02001000-02128448[169] 1 78.54 0.09 <eps> 1.0 <eps> sil tainted
+session-129-2016-02001000-02128448[170] 1 78.63 0.15 ja 1.0 <eps> ins start-segment-11[start=171,end=194,unk-padding=0.05,0.05,keep-proportion=1.00,1.00,start-time=78.73,end-time=89.66,debug-str=core-start=171,core-end=194,overlaps-previous-segment]=78.73 end-segment-10=78.78
+session-129-2016-02001000-02128448[171] 1 78.78 0.69 toki 1.0 toki cor
+session-129-2016-02001000-02128448[172] 1 79.47 0.03 <eps> 1.0 <eps> sil
+session-129-2016-02001000-02128448[173] 1 79.5 0.45 paljon 1.0 paljon cor
+session-129-2016-02001000-02128448[174] 1 79.95 0.39 riippuu 1.0 riippuu cor
+session-129-2016-02001000-02128448[175] 1 80.34 0.24 myös 1.0 myös cor
+session-129-2016-02001000-02128448[176] 1 80.58 0.39 siitä 1.0 siitä cor
+session-129-2016-02001000-02128448[177] 1 80.97 0.12 <eps> 1.0 <eps> sil
+session-129-2016-02001000-02128448[178] 1 81.09 0.63 millainen 1.0 millainen cor
+session-129-2016-02001000-02128448[179] 1 81.72 0.48 sattuu 1.0 sattuu cor
+session-129-2016-02001000-02128448[180] 1 82.2 0.39 olemaan 1.0 olemaan cor
+session-129-2016-02001000-02128448[181] 1 82.59 0.33 sitten 1.0 sitten cor
+session-129-2016-02001000-02128448[182] 1 82.92 0.15 se 1.0 se cor
+session-129-2016-02001000-02128448[183] 1 83.07 1.59 oppisopimusopiskelijan 1.0 oppisopimusopiskelijan cor
+session-129-2016-02001000-02128448[184] 1 84.66 0.24 <eps> 1.0 <eps> sil
+session-129-2016-02001000-02128448[185] 1 84.9 1.02 henkilökohtainen 1.0 henkilökohtainen cor
+session-129-2016-02001000-02128448[186] 1 85.92 0.48 ohjaaja 1.0 ohjaaja cor
+session-129-2016-02001000-02128448[187] 1 86.4 0.09 ja 1.0 ja cor
+session-129-2016-02001000-02128448[188] 1 86.49 0.66 kouluttaja 1.0 kouluttaja cor
+session-129-2016-02001000-02128448[189] 1 87.15 0.36 siellä 1.0 siellä cor
+session-129-2016-02001000-02128448[190] 1 87.51 0.18 eli 1.0 eli cor
+session-129-2016-02001000-02128448[191] 1 87.69 0.24 siinä 1.0 siinä cor
+session-129-2016-02001000-02128448[192] 1 87.93 0.57 tarvitaan 1.0 tarvitaan cor
+session-129-2016-02001000-02128448[193] 1 88.5 1.11 yhteenpuhaltamista 1.0 yhteenpuhaltamista cor start-segment-12[start=194,end=229,unk-padding=0.05,0.00,keep-proportion=1.00,1.00,start-time=89.56,end-time=102.06,debug-str=core-start=194,core-end=229,overlaps-previous-segment]=89.56
+session-129-2016-02001000-02128448[194] 1 89.61 0.3 ja 1.0 ja cor end-segment-11=89.66
+session-129-2016-02001000-02128448[195] 1 89.91 0.27 <eps> 1.0 <eps> sil
+session-129-2016-02001000-02128448[196] 1 90.18 0.12 ja 1.0 ja cor
+session-129-2016-02001000-02128448[197] 1 90.3 0.48 sellaista 1.0 sellaista cor
+session-129-2016-02001000-02128448[198] 1 90.78 0.75 yhteisen 1.0 yhteisen cor
+session-129-2016-02001000-02128448[199] 1 91.53 0.21 <eps> 1.0 <eps> sil
+session-129-2016-02001000-02128448[200] 1 91.74 0.63 tekemisen 1.0 tekemisen cor
+session-129-2016-02001000-02128448[201] 1 92.37 0.39 halua 1.0 halua cor
+session-129-2016-02001000-02128448[202] 1 92.76 0.18 että 1.0 että cor
+session-129-2016-02001000-02128448[203] 1 92.94 0.54 opetetaan 1.0 opetetaan cor
+session-129-2016-02001000-02128448[204] 1 93.48 0.06 ja 1.0 ja cor
+session-129-2016-02001000-02128448[205] 1 93.54 0.45 neuvotaan 1.0 neuvotaan cor
+session-129-2016-02001000-02128448[206] 1 93.99 0.33 toinen 1.0 toinen cor
+session-129-2016-02001000-02128448[207] 1 94.32 0.63 toistamme 1.0 toistamme cor
+session-129-2016-02001000-02128448[208] 1 94.95 0.09 ja 1.0 ja cor
+session-129-2016-02001000-02128448[209] 1 95.04 0.21 sitä 1.0 sitä cor
+session-129-2016-02001000-02128448[210] 1 95.25 0.3 kautta 1.0 kautta cor
+session-129-2016-02001000-02128448[211] 1 95.55 0.3 saadaan 1.0 saadaan cor
+session-129-2016-02001000-02128448[212] 1 95.85 0.36 hyviä 1.0 hyviä cor
+session-129-2016-02001000-02128448[213] 1 96.21 0.69 ammattilaisia 1.0 ammattilaisia cor
+session-129-2016-02001000-02128448[214] 1 96.9 0.15 ja 1.0 <eps> ins
+session-129-2016-02001000-02128448[215] 1 97.05 0.21 <eps> 1.0 <eps> sil tainted
+session-129-2016-02001000-02128448[216] 1 97.26 0.63 todellakin 1.0 todellakin cor
+session-129-2016-02001000-02128448[217] 1 97.89 0.24 yhä 1.0 yhä cor
+session-129-2016-02001000-02128448[218] 1 98.13 0.45 useampi 1.0 useampi cor
+session-129-2016-02001000-02128448[219] 1 98.58 1.11 oppisopimusopiskelija 1.0 oppisopimusopiskelija cor
+session-129-2016-02001000-02128448[220] 1 99.69 0.12 kun 1.0 kun cor
+session-129-2016-02001000-02128448[221] 1 99.81 0.57 valmistuu 1.0 valmistuu cor
+session-129-2016-02001000-02128448[222] 1 100.38 0.09 <eps> 1.0 <eps> sil
+session-129-2016-02001000-02128448[223] 1 100.47 0.36 saattaa 1.0 saattaa cor
+session-129-2016-02001000-02128448[224] 1 100.83 0.24 jopa 1.0 jopa cor
+session-129-2016-02001000-02128448[225] 1 101.07 0.27 jäädä 1.0 jäädä cor
+session-129-2016-02001000-02128448[226] 1 101.34 0.39 sinne 1.0 <eps> ins
+session-129-2016-02001000-02128448[227] 1 101.73 0.0 <eps> 1.0 siihen del
+session-129-2016-02001000-02128448[228] 1 101.73 0.33 <eps> 1.0 <eps> sil tainted end-segment-12=102.06
+session-129-2016-02001000-02128448[229] 1 102.06 0.57 työpaikkaan 1.0 työpaikkaan cor
+session-129-2016-02001000-02128448[230] 1 102.63 0.21 missä 1.0 missä cor
+session-129-2016-02001000-02128448[231] 1 102.84 0.15 hän 1.0 <eps> ins
+session-129-2016-02001000-02128448[232] 1 102.99 0.09 on 1.0 on cor
+session-129-2016-02001000-02128448[233] 1 103.08 0.63 opiskellut 1.0 opiskellut cor

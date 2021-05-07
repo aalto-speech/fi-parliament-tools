@@ -8,7 +8,7 @@
       "statements": [
         {
           "type": "C",
-          "mp_id": "",
+          "mp_id": 0,
           "firstname": "Arto",
           "lastname": "Satonen",
           "party": "",
@@ -17,11 +17,17 @@
           "end_time": "",
           "language": "",
           "text": "Pyydän edustajia kokoontumaan Tuomiokirkkoon menoa varten Kansalliskirjaston edustalle keskiviikkona itsenäisyyspäivänä kello 11.40.",
+          "offset": -1.0,
+          "duration": -1.0,
           "embedded_statement": {
+            "mp_id": 0,
             "title": "",
             "firstname": "",
             "lastname": "",
-            "text": ""
+            "language": "",
+            "text": "",
+            "offset": -1.0,
+            "duration": -1.0
           }
         }
       ]
@@ -31,7 +37,7 @@
       "statements": [
         {
           "type": "C",
-          "mp_id": "",
+          "mp_id": 0,
           "firstname": "Arto",
           "lastname": "Satonen",
           "party": "",
@@ -40,11 +46,17 @@
           "end_time": "",
           "language": "",
           "text": "Ensimmäiseen käsittelyyn esitellään päiväjärjestyksen 3. asia. Käsittelyn pohjana on sivistysvaliokunnan mietintö SiVM 18/2017 vp. Nyt päätetään lakiehdotuksen sisällöstä.",
+          "offset": -1.0,
+          "duration": -1.0,
           "embedded_statement": {
+            "mp_id": 0,
             "title": "",
             "firstname": "",
             "lastname": "",
-            "text": ""
+            "language": "",
+            "text": "",
+            "offset": -1.0,
+            "duration": -1.0
           }
         },
         {
@@ -58,11 +70,17 @@
           "end_time": "2017-12-04T22:11:59",
           "language": "sv",
           "text": "Ärade talman! I övermorgon ska vi fira att vårt land fyller hundra år, Yhdessä —Tillsammans. Finlands två språk är en alldeles fundamental del av Finlands historia och identitet. Det här förslaget om ett språkförsök kommer dock göra att det svenska språket får en mer undanträngd roll i den finländska skolan. Försöket är både för litet och för stort. Det är för litet eftersom 2 200 elever är så avgränsat att det kommer att bli svårt att dra några slutsatser av försöket. Av den anledningen ifrågasätter jag hela språkförsöket. Det känns nämligen inte som om man gör språkförsöket för att få reda på något nytt, utan att man gör det för att minska svenska språkets ställning i vårt land. Det gör mig både ledsen och konfunderad, för varför vill man minska svenska språkets ställning i vårt land då det inte enbart är en kontaktlänk till en stor del av vårt lands historia, utan också en bro och en kontaktyta till övriga Norden? Jag är naturligtvis glad att försöket ändå är så litet som det är, och jag vill tacka alla dem som har jobbat för att försöket ska vara så litet som möjligt. Samtidigt är försöket inte någon liten sak för dem som deltar i det. 2 200 elever kommer att välja bort det andra inhemska språket, ett val som de eller i praktiken deras föräldrar kommer att göra och som kan påverka deras liv och deras framtida karriärer om de vill söka sig till ett jobb som kräver kunskaper i svenska, inte bara formellt utan också i praktiken. Vad händer också med de elever som ångrar sig under försökets gång eller vars familjer under försöket flyttar till en svenskspråkig kommun? De här är stora öppna frågor och risker med försöket. Ärade talman! Svenskakunskaperna i statsförvaltningen och hos statliga myndigheter har försämrats om man blickar tillbaka i ett lite längre perspektiv. Det här har också konstaterats i tidigare utlåtanden från grundlagsutskottet. Då vi för ett par veckor sedan behandlade tingsrättsreformen konstaterade vi också att språkkunskaperna i domstolsväsendet riskerar att försämras. Vi borde därför i stället diskutera hur vi kan vända på den här utvecklingen, hur svenskundervisningen kan utvecklas och förstärkas, inte avvecklas och försvagas. De försämrade svenskakunskaperna i statsförvaltning och myndigheter märks också på Åland. För hundra år sedan drev ålänningarna en kamp för att få bli återförenat med Sverige, för att svenska språkets ställning skulle tryggas. Nationernas förbund beslöt dock att Åland ska förbli en del av Finland men bli en självstyrd autonomi för att trygga den svenskspråkiga kulturen. Som en del av överenskommelsen och beslutet förband sig Finland att sköta alla förbindelser och åtaganden för och på Åland på svenska. Det här har riket under hundra år skött på ett för det mesta föredömligt och oklanderligt sätt. Ålänningarna har blivit nöjda och stolta över sin självstyrelse, att vara en del av Finland, men där man har kunnat utveckla samhället och där det svenska språket och kulturen har tryggats. De senaste åren har vi dock märkt en försämring i svenskakunskaperna i kontakterna med Åland, och därför är det skäl att också i detta hänseende påminna om den internationella överenskommelsen och de förpliktelser Finland gett det internationella samfundet att kunna sköta kontakterna med Åland på svenska. Det är naturligtvis framför allt en annan fråga än detta språkförsök, men frågorna hör ändå ihop, för om allt färre läser och lär sig svenska i skolan så blir det på sikt svårare att också trygga de språkliga rättigheterna enligt grundlagen och de av Finland internationellt angivna förpliktelserna om att kommunikationen med Åland ska kunna ske på svenska också i praktiken. Språkkunskaper öppnar dörrar och är inte tungt att bära med sig. Av den anledningen borde vi i stället diskutera hur vi kan utveckla svenskundervisningen i skolan, inte som detta förslag att försöka börja en avveckling av den.",
+          "offset": -1.0,
+          "duration": -1.0,
           "embedded_statement": {
+            "mp_id": 0,
             "title": "",
             "firstname": "",
             "lastname": "",
-            "text": ""
+            "language": "",
+            "text": "",
+            "offset": -1.0,
+            "duration": -1.0
           }
         },
         {
@@ -76,11 +94,17 @@
           "end_time": "2017-12-04T22:17:49",
           "language": "fi",
           "text": "Arvoisa puhemies! Edustaja Löfström puhui hyvin, enkä lähde vielä ainakaan tässä vaiheessa iltaa sitä kaikkea toistamaan. Varmaan tästä hieman keskustelua syntyykin. Itse haluaisin muistuttaa meitä siitä, mistä me oikein elämme ja millä hyvinvointimme aidosti rahoitetaan. Suomi pienenä maana elää viennistä, vain ja ainoastaan viennistä ja ulkomaankaupasta, ja koska ulkomailla ei pelkällä suomen kielellä hirveästi kauppasuhteita synny, tarvitsemme kieliosaamista ja monikielisyyttä luodaksemme hyvinvointia. Tämä pitäisi meidän kaikkien ymmärtää. Jo ruotsin kielellä saadaan Pohjoismaissa aika paljon kauppaa aikaiseksi. Meillä on noin 30 miljoonan ihmisen markkinat täällä, ja yleensä juuri Ruotsin ja muitten Pohjoismaitten kautta lähdetään sitten muualle Eurooppaan viemään tavaroita ja palveluita ja sieltä edelleen Aasiaan ja Amerikkaan. Elikkä tarvitsemme monikielisyyttä, kieliosaamista luodaksemme hyvinvointia, koska elämme ulkomaankaupasta. Harvoin on niin, että joku lähtee pelkällä suomen ja kiinan kielellä suoraan Aasiaan. Yleensä Pohjoismaitten kautta lähdetään. Pohjoismaat on tärkeä viiteryhmä meille, ja kun katsotaan meidän yritysstruktuuria, yrityskenttää, yritysklustereita, niin olemme eläneet jo satoja vuosia yhdessä, kimpassa, Yhdessä — Tillsammans. Tietenkin toivoisin myös itse, että nämä voimat, jotka tätä nyt vahvasti ja jopa intohimoisesti ajavat, edistäisivät myös vientiä edistäviä elementtejä yhtä intohimoisesti, koska ainoastaan viennistä elämme ja se vaatii monipuolista kieliosaamista.",
+          "offset": -1.0,
+          "duration": -1.0,
           "embedded_statement": {
+            "mp_id": 0,
             "title": "",
             "firstname": "",
             "lastname": "",
-            "text": ""
+            "language": "",
+            "text": "",
+            "offset": -1.0,
+            "duration": -1.0
           }
         },
         {
@@ -94,11 +118,17 @@
           "end_time": "2017-12-04T22:17:59",
           "language": "sv",
           "text": "Det är knappast en slump heller när man ser på vilka områden i Finland det är där exporten faktiskt drar i dag.",
+          "offset": -1.0,
+          "duration": -1.0,
           "embedded_statement": {
+            "mp_id": 0,
             "title": "",
             "firstname": "",
             "lastname": "",
-            "text": ""
+            "language": "",
+            "text": "",
+            "offset": -1.0,
+            "duration": -1.0
           }
         },
         {
@@ -112,11 +142,17 @@
           "end_time": "2017-12-04T22:18:12",
           "language": "fi",
           "text": "Elikkä kun katsotaan niitä maakuntia, missä vienti aidosti vetää, missä tuodaan enemmän rahaa tämän maan palveluitten rahoittamiseksi kuin mitä itse kulutetaan, niin kyllä siellä osataan laajasti kieliä, kolmea, neljää, viittä kieltä, ja ruotsi on aina ollut yksi näistä.",
+          "offset": -1.0,
+          "duration": -1.0,
           "embedded_statement": {
+            "mp_id": 0,
             "title": "",
             "firstname": "",
             "lastname": "",
-            "text": ""
+            "language": "",
+            "text": "",
+            "offset": -1.0,
+            "duration": -1.0
           }
         },
         {
@@ -130,11 +166,17 @@
           "end_time": "2017-12-04T22:18:18",
           "language": "sv",
           "text": "Vi behöver fler språk, inte färre. Jag är själv också glad för att det här är ett väldigt begränsat försök, vilket också ledamot Löfström var inne på.",
+          "offset": -1.0,
+          "duration": -1.0,
           "embedded_statement": {
+            "mp_id": 0,
             "title": "",
             "firstname": "",
             "lastname": "",
-            "text": ""
+            "language": "",
+            "text": "",
+            "offset": -1.0,
+            "duration": -1.0
           }
         },
         {
@@ -148,11 +190,17 @@
           "end_time": "2017-12-04T22:19:00",
           "language": "fi",
           "text": "Minun mielestäni on myös hienoa, että jopa valiokunta kiinnitti huomiota siihen, että ruotsin kielen osaamisella on merkitystä suomen ulkomaankaupan kannalta. Ruotsi on Suomen tärkeimpiä vientimaita, ja asiantuntijakuulemisissa on tuotu esille myös Elinkeinoelämän keskusliiton selvitys siitä, että jäsenyrityksissä ruotsi on kolmanneksi käytetyin kieli suomen ja englannin jälkeen. Suomen kielellä ei ulkomaankauppaa synny. Kauppasuhteita ei ulkomailla synny suomen kielellä, elikkä ruotsi ja englanti ovat nämä tärkeimmät siinä. Valiokunta kiinnitti myös huomiota Suomen asemaan Pohjolassa ja siihen, että ruotsin kieli on väylä pohjoismaiseen kulttuuriyhteisöön. Kaksikielisyys on osa yhteiskuntaamme ja 100-vuotiasta Suomea, ja jatketaan tästä keskustelua.",
+          "offset": -1.0,
+          "duration": -1.0,
           "embedded_statement": {
+            "mp_id": 0,
             "title": "",
             "firstname": "",
             "lastname": "",
-            "text": ""
+            "language": "",
+            "text": "",
+            "offset": -1.0,
+            "duration": -1.0
           }
         },
         {
@@ -166,11 +214,17 @@
           "end_time": "2017-12-04T22:24:07",
           "language": "fi",
           "text": "Arvoisa puhemies! Käsittelyssä on hallitusohjelman vapaata kielivalintaa koskevan alueellisen kielikokeilun täytäntöönpano tällä lakiesityksellä. Hallituksen esityksen mukaan kokeilun tavoitteena on mahdollistaa alueelliset kokeilut kielivalikoiman laajentamiseksi ilman velvoittavaa toisen kotimaisen kielen opiskelua ja lisäksi tämän kokeilun tarkoituksena on lisätä sekä monipuolistaa kielten opiskelua peruskoulussa. Muutoinkin tässä ensi vuonna liikkeelle lähtevässä kokeilussa — ja laki olisi siis voimassa vuoden 2024 loppuun — on tarkoitus seurata kokeilun vaikutuksia muun muassa oppimistuloksiin sekä tehtyihin kielivalintoihin. On varsin oletettavaa, että tämä kokeilu tulee lisäämään muun muassa venäjän, ranskan ja saksan opiskelua niissä kouluissa, jotka osallistuvat tähän kokeiluun, ja pitkällä tähtäimellä kielten monipuolinen osaaminen ja sen merkitys korostuvat myös elinkeinoelämässä ja kansainvälisessä kaupassa. Perussuomalaisten eduskuntaryhmä kannattaa pääpiirteissään tätä hallituksen esitystä, sillä vapaa kielivalinta on sisältynyt jo pitkään puolueemme ohjelmaan, ja me perussuomalaiset saimme kirjautettua tämän kielikokeilun myös hallitusohjelmaan keväällä 2015. Pidämme tähän kokeiluun osallistuvien oppilaiden lukumäärää eli esityksessä olevaa 2 200:aa kuitenkin aivan liian pienenä. Tähän oppilasmäärän pienuuteen viittasi edellä myös edustaja Löfström, ja onkin selvä, että suuremmalla osallistujamäärällä olisi mahdollista saavuttaa tarkempia tuloksia tässä kokeilun seurantavaiheessa. Näkemyksemme mukaan kokeiluun osallistuvien oppilaiden määrä, joka on siis määritelty lakiehdotuksen 5 §:ssä, olisi syytä nostaa 5 000 oppilaaseen. Arvoisa puhemies! Tällä ehdottamallamme laajemmalla oppilasmäärällä kokeilun todellisten vaikutusten tieteellinen arviointi olisi ehdottomasti tarkempaa hallituksen esitykseen verrattuna. Perussuomalaiset tietenkin tiedostavat, että kokeilu aiheuttaa jonkin verran kustannuksia ja ne riippuvat siitä, kuinka monta oppilasta kokeiluun eri kunnissa osallistuu. Eduskuntaryhmämme on varautunut tähän nyt vastalauseessa tekemäämme muutosesitykseen ja sen aiheuttamiin kustannusvaikutuksiin jättämällä syksyllä tähän asiaan liittyvän talousarvioaloitteen ja siinä lisämäärärahoja kokeilun laajentamiseksi. Arvoisa puhemies! Vaikka kielikokeilun pitkän tähtäimen vaikutukset koulutusjärjestelmäämme jäävät myöhemmän tarkastelun varaan, me perussuomalaiset katsomme kielikokeilun ja sen tulosten hyödyttävän merkittävästi koulujärjestelmämme kehittämistä. Pidämme erinomaisena asiana sitä, että tässä lakiehdotuksessa kokeiluun osallistuminen ei estä opiskelijoiden siirtymistä toiselle asteelle, koska kokeiluun osallistuneet voidaan myöhemmin vapauttaa toisen kotimaisen kielen opinnoista myös toisella asteella hakemuksen perusteella. Asiantuntijakuulemisissa sivistysvaliokunnassa kävi kuitenkin ilmi, että vapauttaminen olisi tarpeen myös korkeakouluopinnoissa niiden osalta, jotka tähän kokeiluun ovat aikanaan osallistuneet, ja  siltä  osin valiokunnassa olemme tehneet muu-tosehdotuksen, joka on tässä vastalauseessa esitetty. Tämä muutosehdotus koskee siis lakiehdotuksen 8 §:ää, ja siinä tosiaan on lisätty momentti, että \"mitä edellä 1 momentissa säädetään erityisistä opetusjärjestelyistä kokeiluun osallistuneen hakemuksen päättämisestä ja muutoksenhausta sovelletaan myös korkeakouluopintoihin\". Arvoisa puhemies! Teenkin nämä vastalauseessa 1 mainitut ja sen mukaiset muutosehdotukset. Aivan lopuksi haluan korostaa kielikokeilusta tiedottamisen tärkeyttä, joka nousi esille monessa asiantuntijakuulemisessa, joita sivistysvaliokunnassa kävimme. Tämä tiedottaminen on pääosin Opetushallituksen vastuulla, ja se tiedottamisen tarve siellä todella paistoi moneen otteeseen. On tärkeää, että tiedotus on kunnossa ja tietoa kokeilusta saavat sekä opetuksen järjestäjät että kokeiluun osallistuvat lapset ja heidän huoltajansa. Näin sekä turvataan yhdenmukainen kokeilujärjestely eri puolilla Suomea että tietenkin kokeiluun osallistuvien velvollisuudet ja oikeudet tulevat kaikille selväksi. Näin ollen tästä kokeilusta tulee varmasti hyvä.",
+          "offset": -1.0,
+          "duration": -1.0,
           "embedded_statement": {
+            "mp_id": 0,
             "title": "",
             "firstname": "",
             "lastname": "",
-            "text": ""
+            "language": "",
+            "text": "",
+            "offset": -1.0,
+            "duration": -1.0
           }
         },
         {
@@ -184,11 +238,17 @@
           "end_time": "2017-12-04T22:25:15",
           "language": "fi",
           "text": "Arvoisa puhemies! Kannatan edustaja Savion tekemää muutosesitystä. Mainituin perustein on selvää, että kokeilun tulee ensinnäkin olla hallituksen esittämää laajempi ja toisenakin koskea myös korkeakouluopiskelijoita. Kielikokeilu asiana on totta kai erittäin kannatettava. On hyvä, että laajennamme valinnanvapautta kielten opiskelussa. Itse olen vapaan kielivalinnan kannattaja. Uskon, että olisi kaikkien, myös ja erityisesti ruotsinkielisten, etu, että voisimme vapaasti valita opiskeltavan kielemme. Se lisäisi motivaatiota kielten opiskeluun ja vähentäisi vastakkainasettelua. Jos olen oikein ymmärtänyt, Ahvenanmaa on edustava esimerkki tässä kielivalinnan vapaudessa, sillä tiettävästi siellä ei ole pakko opiskella suomeakaan. Nyt kun kielikokeilu jossain muodossa kuitenkin tulee voimaan, kuntapäättäjien kannattaa huomioida se, että kunnilta vaaditaan aktiivisuutta hakeutua tähän kielikokeiluun. Kannustankin laatimaan asiaa koskevia valtuustoaloitteita, elleivät kunnan viranhaltijat itse huomaa tätä mahdollisuutta. Apua aloitteiden laadintaan on tarjolla tarvittaessa.",
+          "offset": -1.0,
+          "duration": -1.0,
           "embedded_statement": {
+            "mp_id": 0,
             "title": "",
             "firstname": "",
             "lastname": "",
-            "text": ""
+            "language": "",
+            "text": "",
+            "offset": -1.0,
+            "duration": -1.0
           }
         },
         {
@@ -202,11 +262,17 @@
           "end_time": "2017-12-04T22:27:23",
           "language": "fi",
           "text": "Arvoisa herra puhemies! Nyt käsittelyssä oleva lakiesitys kielikokeilusta on hyvä ja perusteltu. Se on totta, että perustuslakimme mukaan Suomella on kaksi virallista kieltä, suomi ja ruotsi. Näiden kielten opetus on tässä maassa järjestetty kieltämättä hyvin, ja niin sen olla pitääkin, tasavertaiset kielet — ja hyvä näin. Mutta se, että kokeillaan uutta järjestelmää, jossa voisi oppilas valita jonkun muun kielen toisen kotimaisen kielen sijasta, on, aivan kuten perustuslakivaliokunta omassa lausunnossaan toteaa, ihan perusteltu esitys. Vaikka tämä kokeilu on suppea, siitä huolimatta tällä haetaan sitä kokemusta, mitä tällaisella kokeilulla saavutettaisiin. Tuolla Pohjois-Karjalassa itärajan pinnassa venäjän kielen opetusta on pyritty järjestämään, ja on ihan luonnollista, että kun siinä itärajan pinnassa asutaan, niin kauppasuhteita ja erilaisia suhteita on sidottu vuosikymmenten ja vuosisatojen aikana itään päin, ja siellä venäjän kielen opiskelulle on selvää tarvetta. Voin mainita, että esimerkiksi naapurikunnassa Tohmajärvellä yläasteen ja lukion oppilaille on tarjottu mahdollisuutta venäjän opiskeluun erittäin aktiivisesti. Siellä on sen niminen kaveri kuin rehtori Arto Juntunen aikanaan tehnyt erittäin hyvää työtä erilaisia kokeiluja järjestäen ja niin, että saataisiin tämä mahdollisuus. Hän on toiminut myös aktiivisesti sen puolesta, että tällainen kokeilu saataisiin. No, nythän tämä tulee. Perustuslakivaliokunta on todennut omassa lausunnossaan, että hyväksyttävyyden ja oikeasuhtaisuuden kannalta merkityksellistä on, että oppilaan osallistuminen kokeiluun perustuu suostumukseen, ja siihen suostumukseen, että sekä oppilas itse että myös oppilaan vanhemmat haluavat sitä ja että heille on annettu riittävä informointi asiasta, että tietävät, mistä tässä on kysymys. Viimeisenä asiana, arvoisa puhemies, se, että perustuslakivaliokunnan lausunto painottaa myös sitä, että oppilaalla pitää olla mahdollisuus tarvittaessa perua se kokeilu, jos hän niin haluaa, elikkä ei hän putoa tyhjän päälle, jos kokee tehneensä suuren virheen. Tämän takia tässä kokeilussa on arvokasta myös tämä huomio, jonka perustuslakivaliokunta on tehnyt.",
+          "offset": -1.0,
+          "duration": -1.0,
           "embedded_statement": {
+            "mp_id": 0,
             "title": "",
             "firstname": "",
             "lastname": "",
-            "text": ""
+            "language": "",
+            "text": "",
+            "offset": -1.0,
+            "duration": -1.0
           }
         },
         {
@@ -220,11 +286,17 @@
           "end_time": "2017-12-04T22:28:30",
           "language": "sv",
           "text": "Ärade talman! Ledamot Savio sade att genom att svenskan blir frivillig så kan man lära sig flera andra främmande språk i skolan. Det skulle vara intressant att veta vad han baserar sig på när han säger det, för sedan svenskan blev frivillig i studentexamen har det blivit en drastisk nedgång i främmande språk som man skriver i studentexamen. Antalet elever som skriver svenskan i studentexamen i finska skolor har halverats på tio år, men antalet elever som skriver lång tyska har minskat med 70 procent på tio år, lång franska har minskat med 40 procent, italienskan har minskat med över 60 procent på tio år. Så det har skett en drastisk nedgång i alla främmande språk. Vi borde lära oss fler språk som ett litet land, inte färre språk. Och det är inget nollsummespel mellan språken, så därför är den här utvecklingen verkligen inte en utveckling som vi borde gå längs.",
+          "offset": -1.0,
+          "duration": -1.0,
           "embedded_statement": {
+            "mp_id": 0,
             "title": "",
             "firstname": "",
             "lastname": "",
-            "text": ""
+            "language": "",
+            "text": "",
+            "offset": -1.0,
+            "duration": -1.0
           }
         },
         {
@@ -238,11 +310,17 @@
           "end_time": "2017-12-04T22:30:08",
           "language": "fi",
           "text": "Värderade talman! Minä tartun tässä kahteen sanaan, ne olivat \"pakko\" ja \"vapaus\". Ensinnäkin itseäni harmittaa se, että ei ollut pakkovenäjää, pakkokiinaa, pakkoespanjaa. Olisi aivan mahtavaa, jos osaisi viisi kuusi kieltä sujuvasti. Sitten on puhuttu tästä sanasta \"vapaus\", vapaudesta valita: Itse näen sen sillä lailla, että nimenomaan kieliosaaminen eli vahva, monipuolinen kieliosaaminen on se, joka luo sitä vapautta sille yksilölle aikuisena. Meillä on muutenkin äärimmäisen hieno koulutusjärjestelmä Suomessa. Akateeminen koulutus yhdistettynä monipuoliseen kieliosaamiseen, kielitaitoon, ja voit tehdä ihan mitä vaan, sinulla on vapaus tehdä oikeastaan ihan mitä vaan tässä maailmassa. Yleensä nimenomaan suppea tai heikko kieliosaaminen on se, mikä rajoittaa de facto ihmisen vapautta aikuisiässä.",
+          "offset": -1.0,
+          "duration": -1.0,
           "embedded_statement": {
+            "mp_id": 0,
             "title": "",
             "firstname": "",
             "lastname": "",
-            "text": ""
+            "language": "",
+            "text": "",
+            "offset": -1.0,
+            "duration": -1.0
           }
         },
         {
@@ -256,11 +334,17 @@
           "end_time": "2017-12-04T22:30:23",
           "language": "sv",
           "text": "Så jag vill bara kort konstatera att när man pratar om frihet att välja är det ofta det att du har dåliga språkkunskaper, ensidiga språkkunskaper som gör att du inte som vuxen har frihet att välja bland arbetsplatser, att välja i vilket land du kanske vill arbeta i, och att du inte heller bidrar till att ta in pengar till det här landet via utrikeshandeln.",
+          "offset": -1.0,
+          "duration": -1.0,
           "embedded_statement": {
+            "mp_id": 0,
             "title": "",
             "firstname": "",
             "lastname": "",
-            "text": ""
+            "language": "",
+            "text": "",
+            "offset": -1.0,
+            "duration": -1.0
           }
         },
         {
@@ -274,11 +358,17 @@
           "end_time": "2017-12-04T22:31:05",
           "language": "fi",
           "text": "Arvoisa puhemies! Hieman täsmennän tuohon edustaja Hoskosen puheenvuoroon, että Suomessa ei ole varsinaisesti olemassa virallisia kieliä vaan perustuslain mukaan meillä on kaksi kansalliskieltä. Lisäksi perustuslaki turvaa tietyille vähemmistökielille tunnustetun aseman. Yksi yleinen väärä käsitys tässä keskustelussa on se, ja tämä korjattakoon, että perustuslaki velvoittaisi suomalaiset opiskelemaan toista kansalliskieltä. Näin ei ole. Tätä velvollisuutta meillä ei ole olemassa. Päätös pakollisesta ruotsin opiskelusta tai sen poistamisesta on tavallisen lainsäädännön asia. Palvelut yhteiskunnan on tarjottava perustuslain mukaan molemmilla kielillä, mutta mikään ei vaadi, että kaikkien on osattava näitä kieliä.",
+          "offset": -1.0,
+          "duration": -1.0,
           "embedded_statement": {
+            "mp_id": 0,
             "title": "",
             "firstname": "",
             "lastname": "",
-            "text": ""
+            "language": "",
+            "text": "",
+            "offset": -1.0,
+            "duration": -1.0
           }
         },
         {
@@ -292,11 +382,17 @@
           "end_time": "2017-12-04T22:32:14",
           "language": "fi",
           "text": "Arvoisa puhemies! Kiitoksia edustaja Mäkelälle tarkennuksesta, juuri näin on. On kuitenkin huomattava tässä kokeilussa se, että tämähän on hyvin pieni, vaatimaton kokeilu, ja kuten perustuslakivaliokunta omassa lausunnossaan toteaa, tällä rajatulla kokeilulla haetaan kokemuksia, ja myös sivistysvaliokunta mietinnössään toteaa, että tällä haetaan kokemuksia. Meillä on muillakin hallinnonaloilla ollut tällaisia kokeiluja. Kaikki muistavat kuntapuolelta tämän Kainuun hallintomallin kokeilun, jolla aikanaan näitä sote-asioita siellä Kainuussa toteutettiin poikkeuslain perusteella. Siinäkin asiassa perustuslakivaliokunta perusteli, että tällainen kokeilu on ihan sallittu ja laillinen ja sillä on oikea laillisuuspohja, koska sillä haetaan kokemuksia siitä, miten tämä asia toimii käytännössä. Jos emme mitään kokeile, ei sitten mitään tämmöistä kehitystä tapahdukaan. Että ei tässä varmaan kenenkään kannata mustasukkainen olla sen suhteen, että jokin tässä vaarantuu, että äidinkielen asema tai suomen tai ruotsin kielen asema vaarantuisi tällä kokeilulla, en usko sellaiseen. Mutta uusia kokemuksia tarvitaan, ja niitä hankittakoon, ja sen jälkeen on johtopäätösten aika.",
+          "offset": -1.0,
+          "duration": -1.0,
           "embedded_statement": {
+            "mp_id": 0,
             "title": "",
             "firstname": "",
             "lastname": "",
-            "text": ""
+            "language": "",
+            "text": "",
+            "offset": -1.0,
+            "duration": -1.0
           }
         },
         {
@@ -310,11 +406,17 @@
           "end_time": "2017-12-04T22:34:21",
           "language": "fi",
           "text": "Arvoisa puhemies! Edustaja Löfström viittasi edellä siihen, että kun ruotsia ei enää vaadita pakollisena aineena ylioppilaskirjoituksissa, kielten opiskelu on vähentynyt yleisestikin samaan aikaan merkittävästi. No, itse en näe suoraa syy—seuraussuhdetta tämän ruotsin kielen ylioppilaskirjoituksissa vapauttamisen ja tämän muun kielten opiskelun vähenemisen välillä vaan katsoisin tämän pikemminkin yleisemmäksi kehityskuluksi, joka johtunee pitkälti englannin ylivallan kasvusta. Siihen on tietenkin jollain tavalla pyrittävä vastaamaan, jotta kielten opiskelu lisääntyy ja kielten opiskelua saadaan monipuolisemmaksi. Mielestäni, ja myös valiokunnan asiantuntijakuulemisten perusteella, motivaatio kielten opiskeluun todennäköisesti lisääntyy hyvinkin merkittävästi, jos opiskelu perustuu vapaaehtoisuuteen, siis siihen, että opiskelija saa itse valita haluamansa kielen. Tällä kokeilullahan on siis tarkoitus nimenomaan lisätä kielten opiskelua, ei vähentää sitä eikä varsinaisesti vapauttaa oppilasta kielten opiskelusta kokonaan: hän ainoastaan saisi valita, huoltajiensa suostumuksella, jonkin kielen, joka on valittavissa. Arvoisa puhemies! Uskon vahvasti, että myös ruotsia opiskeltaisiin huomattavasti motivoituneemmin ja monipuolisemmin, jos tämä vapaaehtoisuus tulisi voimaan. He, jotka ruotsin valitsisivat, olisivat motivoituneita ja varmasti jaksaisivat läksynsä tehdä paljon aktiivisemmin, ja siten heidän kielitaitonsa myös ruotsin osalta kohentuisi. Kuten edustaja Hoskonen edellä totesi, tätä kokeilua on kannatettu erityisesti itärajan kunnissa ja tähän kielikokeiluun suhtaudutaan siellä erittäin myönteisesti. Edustaja Hoskonen vetosi myös yleiseen kokeilukulttuuriin, joka tällä vaalikaudella on ollut paljon käytössä. Tämä kielikokeilu jatkaa tätä samaa hyvää jatkumoa ja linjaa.",
+          "offset": -1.0,
+          "duration": -1.0,
           "embedded_statement": {
+            "mp_id": 0,
             "title": "",
             "firstname": "",
             "lastname": "",
-            "text": ""
+            "language": "",
+            "text": "",
+            "offset": -1.0,
+            "duration": -1.0
           }
         },
         {
@@ -328,11 +430,17 @@
           "end_time": "2017-12-04T22:35:41",
           "language": "sv",
           "text": "Ärade talman! Precis som ledamot Strand här tidigare var inne på har språk betydelse för vår utrikeshandel, vår export. Vi är ett litet exportbetonat land, och Sverige är en av våra absolut största exportmarknader. Också de övriga nordiska länderna har betydelse, och för att vi ska kunna vara framgångsrika i vår ekonomi handlar det om att kunna handla med andra länder, där de nordiska länderna är helt centrala. Men det här språkförsöket handlar inte bara om att lära sig svenska i skolan, det handlar inte bara om att förbereda sig på export och handel, utan det handlar också om kultur och att vårt land också ska ha en levande tvåspråkighet där man ska kunna ha kontakt till sin historia och hela det kulturarbete som finns i vårt land och som har byggts upp på två språk, Yhdessä — Tillsammans. Därför är det här språkförsöket ett steg helt i fel riktning. Nu när Finland firar 100 år borde vi i stället fokusera på hur vi kan vända på utvecklingen och lära oss förstärka svenskundervisningen och stärka kunskaperna i våra båda två språk.",
+          "offset": -1.0,
+          "duration": -1.0,
           "embedded_statement": {
+            "mp_id": 0,
             "title": "",
             "firstname": "",
             "lastname": "",
-            "text": ""
+            "language": "",
+            "text": "",
+            "offset": -1.0,
+            "duration": -1.0
           }
         },
         {
@@ -346,11 +454,17 @@
           "end_time": "2017-12-04T22:37:12",
           "language": "fi",
           "text": "Värderade talman! Tässä hieman puhuttiin myös, että tulee kehittääkin kielten opetusta, ja siitä me olemme varmasti samaa mieltä, että tulee kehittää, minä en vaan näe, mitä te aiotte aidosti kehittää. Siis se on selvä, että kielikylpy- ja kielisuihkuopetuksesta on paljon hyviä kokemuksia. Ja itse toivoisin myös, että osaksi kieliopetusta tulisi ehkä myös enemmän taloushistoriaa, sen kyseisen yhteiskunnan ymmärtämistä. Ja kyllähän me olemme osa Pohjoismaita. Ainakin minä toivon, että olemme jatkossakin osa länsimaita, osa Pohjoismaita.",
+          "offset": -1.0,
+          "duration": -1.0,
           "embedded_statement": {
+            "mp_id": 0,
             "title": "",
             "firstname": "",
             "lastname": "",
-            "text": ""
+            "language": "",
+            "text": "",
+            "offset": -1.0,
+            "duration": -1.0
           }
         },
         {
@@ -364,11 +478,17 @@
           "end_time": "2017-12-04T22:37:28",
           "language": "sv",
           "text": "Jag ser det här också liksom kollegan ledamot Löfström var inne på, att är vi en del av den nordiska sfären så måste man nog på något sätt också kunna kommunicera på de språken. Det tror jag Finland har allt att vinna på också ur ett bredare perspektiv.",
+          "offset": -1.0,
+          "duration": -1.0,
           "embedded_statement": {
+            "mp_id": 0,
             "title": "",
             "firstname": "",
             "lastname": "",
-            "text": ""
+            "language": "",
+            "text": "",
+            "offset": -1.0,
+            "duration": -1.0
           }
         },
         {
@@ -382,11 +502,17 @@
           "end_time": "2017-12-04T22:37:46",
           "language": "fi",
           "text": "Kokeiluissa ei ole mitään väärää, jos laitetaan se pieni aika, mitä meillä on, järkeviin kokeiluihin — vaikka johonkin vientikokeiluun, niin että pakotettaisiin hieman meidän hyviä firmojamme lähtemään vaikka Pohjois-Norjaan, Pohjois-Ruotsiin katsomaan, mitä siellä tehdään, miten voidaan viedä palveluita ja tavaroita. Minun mielestäni kyllä tällaisen kokeilun järjestäminen on vähän niin kuin ajan ja resurssien haaskausta.",
+          "offset": -1.0,
+          "duration": -1.0,
           "embedded_statement": {
+            "mp_id": 0,
             "title": "",
             "firstname": "",
             "lastname": "",
-            "text": ""
+            "language": "",
+            "text": "",
+            "offset": -1.0,
+            "duration": -1.0
           }
         }
       ]
@@ -396,7 +522,7 @@
       "statements": [
         {
           "type": "C",
-          "mp_id": "",
+          "mp_id": 0,
           "firstname": "Arto",
           "lastname": "Satonen",
           "party": "",
@@ -405,11 +531,17 @@
           "end_time": "",
           "language": "",
           "text": "Ensimmäiseen käsittelyyn esitellään päiväjärjestyksen 8. asia. Käsittelyn pohjana on hallintovaliokunnan mietintö HaVM 26/2017 vp. Nyt päätetään lakiehdotusten sisällöstä.",
+          "offset": -1.0,
+          "duration": -1.0,
           "embedded_statement": {
+            "mp_id": 0,
             "title": "",
             "firstname": "",
             "lastname": "",
-            "text": ""
+            "language": "",
+            "text": "",
+            "offset": -1.0,
+            "duration": -1.0
           }
         },
         {
@@ -423,11 +555,17 @@
           "end_time": "2017-12-04T22:40:55",
           "language": "fi",
           "text": "Arvoisa puhemies! Muistan, kun tätä lakiesitystä käsiteltiin aikanaan lähetekeskustelussa. Se oli pitkä ja monipolvinen lähetekeskustelu, jossa kiinnitettiin huomiota muun muassa siihen, että vaikka periaatteessa kaikki toivovatkin, että maahan saataisiin lisää kasvuyrittäjiä, niin ilmeni aiheellista huolta siitä, ettei tästä vain muodostuisi taas yksi keino sosiaaliperäisen maahanmuuton kanavaksi. Nyt valiokunta on mietinnössään kiinnittänyt mielestäni hyvin huomiota lain vaatimiin tarkennuksiin. On myös hyvä, että, toisin kuin jotkut lähetekeskustelussa ehdottivat, tässä kuitenkin arviointi tämän liiketoiminnan aitoudesta pysyy yhteiskunnallisten toimijoiden hallussa ja myös Maahanmuuttovirastolla voi olla siihen sanansa sanottavanaan — sen sijaan, että tämä harkintavalta ulkoistettaisiin yrityksille, kuten jotkut jopa esittivät. Tähän ei ole onneksi lähdetty, ja tästä kiitos valiokunnalle.",
+          "offset": -1.0,
+          "duration": -1.0,
           "embedded_statement": {
+            "mp_id": 0,
             "title": "",
             "firstname": "",
             "lastname": "",
-            "text": ""
+            "language": "",
+            "text": "",
+            "offset": -1.0,
+            "duration": -1.0
           }
         }
       ]

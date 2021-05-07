@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-# coding=utf-8
 """Several dataclasses for storing all transcript related data.
 
 Statements are split into two varietes, embedded and speaker statements. Embedded statement appears
@@ -14,31 +12,50 @@ Slots are used to optimize memory consumption and processing speed.
 """
 from dataclasses import dataclass
 from dataclasses import field
+from typing import Any
+from typing import Dict
 from typing import List
+from typing import Union
 
 
-@dataclass(frozen=True)
+@dataclass
 class EmbeddedStatement:
-    """An embedded statement consists of only the speaker name, title and the statement itself.
+    """Embedded statements are chairman comments contained within long speaker statements.
 
-    Embedded statements are chairman comments contained within long speaker statements.
+    Timestamps and party are never defined for embedded statements, so they are left out.
     """
 
-    __slots__ = ["title", "firstname", "lastname", "text"]
+    __slots__ = [
+        "mp_id",
+        "title",
+        "firstname",
+        "lastname",
+        "language",
+        "text",
+        "offset",
+        "duration",
+    ]
+    mp_id: int
     title: str
     firstname: str
     lastname: str
+    language: str
     text: str
+    offset: float
+    duration: float
 
 
-@dataclass(frozen=True)
+@dataclass
 class Statement:
     """A statement contains speaker+statement statistics and a possible embedded short statement.
 
     Speaker statistics related to the statement include the first and last names of the speaker,
     their party/title and a unique mp id.
-    Statement related data contains start and end timestamps, language and the statement
-    transcript.
+    Statement related data contains rough start and end timestamps (in datetime format), language,
+    and the statement transcript text.
+    Offset and duration mark the beginning of the statement and its duration in seconds in the
+    audio file. These are determined in the postprocessing of alignment results, they do not exist
+    in the XML transcripts.
     Some speaker statements also contain embedded chairman statements within them, spoken somewhere
     in the middle of the speaker statement. These need to be included for later processing stages.
 
@@ -47,7 +64,7 @@ class Statement:
         They might also contain embedded statements.
      2. Short statements are spoken by MPs, but they are missing timestamps and language. They also
         will not contain embedded statements. These appear in sessions with voting.
-     3. Chairman statements have always only firstname, lastname, title and text defined.
+     3. Chairman statements have only firstname, lastname, title and text defined.
 
     """
 
@@ -62,6 +79,8 @@ class Statement:
         "end_time",
         "language",
         "text",
+        "offset",
+        "duration",
         "embedded_statement",
     ]
     type: str
@@ -74,6 +93,8 @@ class Statement:
     end_time: str
     language: str
     text: str
+    offset: float
+    duration: float
     embedded_statement: EmbeddedStatement
 
 
@@ -83,6 +104,12 @@ class Subsection:
 
     Each subsection has a number according to the transcript table of contents and the associated
     statements. Only subsections with statements are saved in parsing, rest are ignored.
+
+    Note that on rare occasions subsections do not follow strictly chronological order. In these
+    cases, discussion on a subsection topic begins and continues so long that chairman decides to
+    interrupt it. Then following subsections are discussed first before returning to the subsection
+    with the long discussion. In other words, statements are chronologically ordered within a
+    subsection but not always on the transcript level.
     """
 
     number: str
@@ -93,11 +120,35 @@ class Subsection:
 class Transcript:
     """A session transcript is the main data structure for saving parsed transcripts.
 
-    Each session is associated with a running number and parliamentary working year. Session start
-    time is also recorded. Each transcript is further split into subsections.
+    Each session is associated with a running number and parliamentary working year. The working
+    year differs from calendar year on election years. Session start time is recorded but its
+    accuracy may vary because sometimes only the planned start time is available. Each transcript
+    is further split into subsections.
     """
 
     number: int
     year: int
     begin_time: str
     subsections: List[Subsection] = field(default_factory=list)
+
+
+def decode_transcript(
+    dct: Dict[Any, Any],
+) -> Union[EmbeddedStatement, Statement, Subsection, Transcript, Dict[Any, Any]]:
+    """Deserialize transcript json back into a custom document object.
+
+    Args:
+        dct (dict): a (nested) dict in the JSON file to deserialize
+
+    Returns:
+        documents.Object: the dictionary as a correct custom object
+    """
+    if "title" in dct.keys() and len(dct) == 8:
+        return EmbeddedStatement(**dct)
+    if "title" in dct.keys() and len(dct) > 8:
+        return Statement(**dct)
+    if "statements" in dct.keys():
+        return Subsection(**dct)
+    if "subsections" in dct.keys():
+        return Transcript(**dct)
+    return dct  # pragma: no cover

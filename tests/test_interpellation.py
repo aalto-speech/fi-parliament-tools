@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-# coding=utf-8
 """Test interpellation parsing."""
 from dataclasses import asdict
 
@@ -17,8 +15,19 @@ true_interpellation_statement = {
     "start_time": "2017-11-24 13:08:47.023",
     "end_time": "",
     "language": "fi",
+    "offset": -1.0,
+    "duration": -1.0,
     "text": "The true text is fetched from a file using a fixture.",
-    "embedded_statement": {"title": "", "firstname": "", "lastname": "", "text": ""},
+    "embedded_statement": {
+        "mp_id": 0,
+        "title": "",
+        "firstname": "",
+        "lastname": "",
+        "language": "",
+        "text": "",
+        "offset": -1.0,
+        "duration": -1.0,
+    },
 }
 
 

@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-# coding=utf-8
 """Helper functions for downloading plenary session videos.
 
 The current video API is documented at `https://verkkolahetys.eduskunta.fi/api-documentation/`.

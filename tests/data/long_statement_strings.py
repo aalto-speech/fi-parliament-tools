@@ -108,11 +108,17 @@ chairman_statements = [
         "language": "",
         "text": "Ainoaan käsittelyyn esitellään päiväjärjestyksen 4. asia. Käsittelyn pohjana on "
         "talousvaliokunnan mietintö TaVM 18/2016 vp.",
+        "offset": -1.0,
+        "duration": -1.0,
         "embedded_statement": {
+            "mp_id": 0,
             "title": "",
             "firstname": "",
             "lastname": "",
+            "language": "",
             "text": "",
+            "offset": -1.0,
+            "duration": -1.0,
         },
     },
     {
@@ -128,11 +134,17 @@ chairman_statements = [
         "text": "Toiseen käsittelyyn esitellään päiväjärjestyksen 3. asia. Keskustelu asiasta "
         "päättyi 6.6.2017 pidetyssä täysistunnossa. Keskustelussa on Anna Kontula Matti Semin "
         "kannattamana tehnyt vastalauseen 2 mukaisen lausumaehdotuksen.",
+        "offset": -1.0,
+        "duration": -1.0,
         "embedded_statement": {
+            "mp_id": 0,
             "title": "",
             "firstname": "",
             "lastname": "",
+            "language": "",
             "text": "",
+            "offset": -1.0,
+            "duration": -1.0,
         },
     },
     {
@@ -147,38 +159,65 @@ chairman_statements = [
         "language": "",
         "text": "Toiseen käsittelyyn esitellään päiväjärjestyksen 6. asia. Nyt voidaan hyväksyä "
         "tai hylätä lakiehdotukset, joiden sisällöstä päätettiin ensimmäisessä käsittelyssä.",
+        "offset": -1.0,
+        "duration": -1.0,
         "embedded_statement": {
+            "mp_id": 0,
             "title": "",
             "firstname": "",
             "lastname": "",
+            "language": "",
             "text": "",
+            "offset": -1.0,
+            "duration": -1.0,
         },
     },
 ]
 
 embedded_statements = [
     {
+        "mp_id": 0,
         "title": "Puhemies",
         "firstname": "Maria",
         "lastname": "Lohela",
+        "language": "",
         "text": "Edustaja Laukkanen, ja sitten puhujalistaan.",
+        "offset": -1.0,
+        "duration": -1.0,
     },
-    {"title": "", "firstname": "", "lastname": "", "text": ""},
     {
+        "mp_id": 0,
+        "title": "",
+        "firstname": "",
+        "lastname": "",
+        "language": "",
+        "text": "",
+        "offset": -1.0,
+        "duration": -1.0,
+    },
+    {
+        "mp_id": 0,
         "title": "Ensimmäinen varapuhemies",
         "firstname": "Mauri",
         "lastname": "Pekkarinen",
+        "language": "",
         "text": "Tämä valtiovarainministerin puheenvuoro saattaa antaa aihetta muutamaan "
         "debattipuheenvuoroon. Pyydän niitä edustajia, jotka haluavat käyttää vastauspuheenvuoron, "
         "nousemaan ylös ja painamaan V-painiketta.",
+        "offset": -1.0,
+        "duration": -1.0,
     },
     {
+        "mp_id": 0,
         "title": "Ensimmäinen varapuhemies",
         "firstname": "Antti",
         "lastname": "Rinne",
+        "language": "",
         "text": "Meillä on puoleenyöhön vähän reilu kolme tuntia aikaa, ja valtioneuvoston pitää "
         "sitä ennen soveltamisasetus saattaa voimaan. Pyydän ottamaan tämän huomioon "
         "keskusteltaessa.",
+        "offset": -1.0,
+        "duration": -1.0,
     },
 ]
 
@@ -212,7 +251,7 @@ def true_chairman_statement(request: SubRequest) -> Dict[str, object]:
 
 
 @pytest.fixture
-def true_embedded_statement(request: SubRequest) -> Dict[str, str]:
+def true_embedded_statement(request: SubRequest) -> Dict[str, object]:
     """Return an embedded statement for testing from a list at the top of the file."""
     index: int = request.param
     return embedded_statements[index]

@@ -1,5 +1,5 @@
 """Test cases for the __main__, downloads, and preprocessing modules."""
-import glob
+# import glob
 import importlib
 import json
 import logging
@@ -23,6 +23,7 @@ from pytest_mock.plugin import MockerFixture  # type: ignore
 from fi_parliament_tools import __main__
 from fi_parliament_tools import downloads
 from fi_parliament_tools import preprocessing
+from fi_parliament_tools.transcriptParser.data_structures import decode_transcript
 from fi_parliament_tools.transcriptParser.data_structures import Transcript
 
 
@@ -65,7 +66,7 @@ def transcript() -> Any:
     input_json = open(
         "tests/data/jsons/preprocessing_test_sample.json", "r", encoding="utf-8", newline=""
     )
-    yield json.load(input_json, object_hook=preprocessing.decode_transcript)
+    yield json.load(input_json, object_hook=decode_transcript)
     input_json.close()
 
 
@@ -94,8 +95,8 @@ def mock_get_full_table(
 def mock_downloads_path(mocker: MockerFixture) -> MagicMock:
     """Mock path formed in form_path of downloads module."""
     mock: MagicMock = mocker.patch("fi_parliament_tools.downloads.Path")
-    mock.return_value.exists.side_effect = [False, True]
-    mock.return_value.__str__.return_value = "tests/testing.test"
+    mock.return_value.resolve.return_value.__str__.return_value = "tests/testing.test"
+    mock.return_value.resolve.return_value.exists.side_effect = [False, True]
     return mock
 
 
@@ -137,6 +138,7 @@ def test_main_succeeds(runner: CliRunner) -> None:
     assert result.exit_code == 0
 
 
+'''
 def test_preprocessor(runner: CliRunner) -> None:
     """It successfully preprocesses the three files given the list file."""
     workdir = os.getcwd()
@@ -157,18 +159,21 @@ def test_preprocessor(runner: CliRunner) -> None:
             [
                 "preprocess",
                 "transcript.list",
+                f"{workdir}/recipes/lid.176.bin",
                 f"{workdir}/recipes/parl_to_kaldi_text.py",
             ],
         )
         assert result.exit_code == 0
         assert "Output is logged to" in result.output
-        assert "Found 5 transcripts in file list, proceed to preprocessing." in result.output
+        assert "Got 5 transcripts, proceed to predict missing language labels." in result.output
+        assert "Next, preprocess all 5 transcripts." in result.output
         assert "Finished successfully!" in result.output
         for text in glob.glob("*.text"):
             with open(text, "r", encoding="utf-8") as outf, open(
                 f"{workdir}/tests/data/jsons/{text}", "r", encoding="utf-8"
             ) as truef:
                 assert outf.read() + "\n" == truef.read()
+'''
 
 
 def test_preprocessor_unaccepted_chars_capture(
@@ -377,3 +382,26 @@ def test_transcript_download_error(
         mock_get_full_table.assert_called_once()
         assert len(mocked_etree.method_calls) == 2
         assert mock_downloads_form_path.call_count == 2
+
+
+def test_postprocessor(runner: CliRunner) -> None:
+    """It successfully postprocesses the files given the list file."""
+    workdir = os.getcwd()
+    with runner.isolated_filesystem():
+        Path("recipes").mkdir(parents=True, exist_ok=True)
+        shutil.copy(f"{workdir}/recipes/words_elative.txt", "recipes/words_elative.txt")
+
+        with open("segments.list", "w", encoding="utf-8") as outfile:
+            outfile.write("This is just a dummy for now.\n")
+
+        result = runner.invoke(
+            __main__.main,
+            [
+                "postprocess",
+                "segments.list",
+                f"{workdir}/recipes/parl_to_kaldi_text.py",
+            ],
+        )
+        assert result.exit_code == 0
+        assert "Output is logged to" in result.output
+        assert "Finished successfully!" in result.output

@@ -2,6 +2,12 @@
 .DS_Store
 README.Aalto
 *.pyc
+*tmp*
+corpus
+*.bin
+*.list
+*.tar
+new_vocab
 
 /.cache/
 /.coverage

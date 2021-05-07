@@ -1,5 +1,3 @@
-#!/usr/bin/env python
-# coding=utf-8
 """Configuration file for pytest.
 
 Initialize different fixtures for automatically loading test transcripts and creating objects for

@@ -1,23 +1,94 @@
-#!/usr/bin/env python3
-# coding=utf-8
 """Command line client for preprocessing Finnish parliament transcripts."""
 import json
+from dataclasses import asdict
 from logging import Logger
 from pathlib import Path
 from typing import Any
-from typing import Dict
 from typing import List
 from typing import Set
 from typing import TextIO
+from typing import Type
 from typing import Union
 
+import fasttext  # type: ignore
 from aalto_asr_preprocessor import preprocessor
 from alive_progress import alive_bar
 
+from fi_parliament_tools.transcriptParser.data_structures import decode_transcript
 from fi_parliament_tools.transcriptParser.data_structures import EmbeddedStatement
 from fi_parliament_tools.transcriptParser.data_structures import Statement
-from fi_parliament_tools.transcriptParser.data_structures import Subsection
 from fi_parliament_tools.transcriptParser.data_structures import Transcript
+
+FastTextModel = Type[fasttext.FastText._FastText]
+
+
+def apply_fasttext_lid(
+    lid_model: str, transcripts: List[str], log: Logger, errors: List[str]
+) -> None:
+    """Add missing language labels to statements using FastText LID model.
+
+    Args:
+        lid_model (str): path to the model binary
+        transcripts (List[str]): transcripts to process
+        log (Logger): logger object
+        errors (List[str]): descriptions of all encountered errors
+    """
+    model = fasttext.load_model(lid_model)
+    with alive_bar(len(transcripts)) as bar:
+        for transcript_path in transcripts:
+            input_path = Path(transcript_path).resolve()
+            with input_path.open(mode="r", encoding="utf-8", newline="") as infile:
+                transcript = json.load(infile, object_hook=decode_transcript)
+            transcript = recognize_language(model, transcript)
+            with input_path.open(mode="w", encoding="utf-8", newline="") as outfile:
+                json.dump(asdict(transcript), outfile, ensure_ascii=False, indent=2)
+            bar()
+
+
+def recognize_language(model: FastTextModel, transcript: Transcript) -> Transcript:
+    """Loop through transcript to recognize language for statements without language label.
+
+    Args:
+        model (FastTextModel): language identification model
+        transcript (Transcript): transcript to process
+
+    Returns:
+        Transcript: updated transcript
+    """
+    for sub in transcript.subsections:
+        for statement in sub.statements:
+            if statement.text and not statement.language:
+                statement.language = determine_language_label(model, statement)
+            embedded = statement.embedded_statement
+            if embedded.text and not embedded.language:
+                embedded.language = determine_language_label(model, embedded)
+    return transcript
+
+
+def determine_language_label(
+    model: FastTextModel, statement: Union[Statement, EmbeddedStatement]
+) -> str:
+    """Predict and select language label for the statement.
+
+    Assume statement is Finnish if predicted labels do not contain either Finnish or Swedish.
+    Some statements have both Finnish and Swedish speech in them which is why top two labels
+    are predicted. The '.p' notation is used to differentiate predicted labels from true labels.
+
+    Args:
+        model (FastTextModel): language identification model
+        statement (Union[Statement, EmbeddedStatement]): statement to label
+
+    Returns:
+        str: selected language label
+    """
+    labels, _ = model.predict(statement.text, k=2)
+    labels = [label.replace("__label__", "") for label in labels]
+    label = "fi.p"
+    if "fi" in labels and "sv" in labels:
+        label = "fi+sv.p"
+    elif "sv" in labels:
+        label = "sv.p"
+    return label
 
 
 def apply_recipe(recipe: Any, transcripts: List[str], log: Logger, errors: List[str]) -> None:
@@ -28,12 +99,12 @@ def apply_recipe(recipe: Any, transcripts: List[str], log: Logger, errors: List[
     Args:
         recipe (Any): a recipe file loaded as a module
         transcripts (list): paths to transcripts to preprocess
-        log (Logger): for logging output
-        errors (list): a list of error strings for reporting
+        log (Logger): logger object
+        errors (list): descriptions of all encountered errors
     """
     with alive_bar(len(transcripts)) as bar:
         for transcript_path in transcripts:
-            input_path = Path(transcript_path)
+            input_path = Path(transcript_path).resolve()
             with input_path.open(mode="r", encoding="utf-8", newline="") as infile:
                 transcript = json.load(infile, object_hook=decode_transcript)
             t = input_path.with_suffix(".text")
@@ -63,8 +134,8 @@ def preprocess_transcript(
         recipe (Any): a recipe file loaded as a module
         transcript (Transcript): a transcript to preprocess
         outfile (TextIO): a file handle for writing output
-        log (Logger): for logging output
-        errors (list): a list of error strings for reporting
+        log (Logger): logger object
+        errors (list): descriptions of all encountered errors
 
     Returns:
         set: a set of unique Finnish words within the transcript
@@ -79,7 +150,7 @@ def preprocess_transcript(
                 txt = preprocessor.apply(
                     txt, recipe.REGEXPS, recipe.UNACCEPTED_CHARS, recipe.TRANSLATIONS
                 )
-                if not statement.language == "sv":
+                if "fi" in statement.language:
                     unique_words = unique_words.union(set(txt.split()))
                 outfile.write(" " + txt.lower())
             except preprocessor.UnacceptedCharsError as e:
@@ -92,25 +163,3 @@ def preprocess_transcript(
                 )
                 errors.append(f"Caught an exception in {outfile.name}.")
     return unique_words
-
-
-def decode_transcript(
-    dct: Dict[Any, Any],
-) -> Union[EmbeddedStatement, Statement, Subsection, Transcript, Dict[Any, Any]]:
-    """Deserialize transcript json into a custom document object.
-
-    Args:
-        dct (dict): a (nested) dict in the JSON to deserialize
-
-    Returns:
-        documents.Object: the dictionary as a correct custom object
-    """
-    if "title" in dct.keys() and len(dct) == 4:
-        return EmbeddedStatement(**dct)
-    if "title" in dct.keys() and len(dct) > 4:
-        return Statement(**dct)
-    if "statements" in dct.keys():
-        return Subsection(**dct)
-    if "subsections" in dct.keys():
-        return Transcript(**dct)
-    return dct  # pragma: no cover
