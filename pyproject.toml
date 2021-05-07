@@ -59,7 +59,7 @@ source = ["fi_parliament_tools"]
 
 [tool.coverage.report]
 show_missing = true
-fail_under = 100
+fail_under = 75
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
