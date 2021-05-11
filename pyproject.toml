@@ -23,7 +23,7 @@ aalto-asr-preprocessor = "^2021.3.10"
 fasttext = "^0.9.2"
 
 [tool.poetry.dev-dependencies]
-black = "^20.8b1"
+black = "^21.5b1"
 coverage = {extras = ["toml"], version = "^5.4"}
 darglint = "^1.5.8"
 flake8 = "^3.8.4"
