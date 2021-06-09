@@ -2,7 +2,6 @@
 from __future__ import annotations  # for difflib.SequenceMatcher type annotation
 
 import difflib
-
 from collections import deque
 from collections import namedtuple
 from itertools import islice

@@ -58,7 +58,8 @@ class KaldiCTMSegmented(KaldiFile):
         """Initialize and define columns specific to this filetype.
 
         Args:
-            filename (str): path to the file
+            filename (str): path to the file without suffix
+            suffix (str): suffix for the file
         """
         super().__init__(f"{filename}.{suffix}")
         self.cols = [
@@ -100,7 +101,8 @@ class KaldiSegments(KaldiFile):
         """Initialize and define columns specific to this filetype.
 
         Args:
-            filename (str): path to the file
+            filename (str): path to the file without suffix
+            suffix (str): suffix for the file
         """
         super().__init__(f"{filename}.{suffix}")
         self.cols = ["uttid", "recordid", "start", "end"]
@@ -150,7 +152,8 @@ class KaldiText(KaldiFile):
         """Initialize and define columns specific to this filetype.
 
         Args:
-            filename (str): path to the file
+            filename (str): path to the file without suffix
+            suffix (str): suffix for the file
         """
         super().__init__(f"{filename}.{suffix}")
         self.cols = ["uttid"]
