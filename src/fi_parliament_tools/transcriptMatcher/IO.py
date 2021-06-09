@@ -122,7 +122,7 @@ class KaldiSegments(KaldiFile):
         return df
 
     def save_df(
-        self, df: pd.DataFrame = None, suffix: str = ".new", cols: Optional[List[str]] = None
+        self, df: pd.DataFrame, suffix: str = ".new", cols: Optional[List[str]] = None
     ) -> None:
         """Save DataFrame into a CSV file.
 
@@ -229,5 +229,3 @@ def check_missing_segments(df: pd.DataFrame) -> None:
     unique_diffs = diffs.unique()
     if not len(unique_diffs) <= 2 or 0.0 not in unique_diffs:
         raise ValueError("There is a missing segment.")
-
-
