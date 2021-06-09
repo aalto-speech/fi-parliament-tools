@@ -134,11 +134,11 @@ def download(
         if not video_only:
             df = downloads.query_transcripts(args)
             log.info(f"Found {len(df)} transcripts, proceed to download transcripts.")
-            downloads.process_metadata_table(df, "json", downloads.download_transcript, log, errors)
+            downloads.iterate_metadata_table(df, "json", downloads.download_transcript, log, errors)
         if not transcript_only:
             df = downloads.query_videos(args)
             log.info(f"Found {len(df)} videos, proceed to download videos and extract audio.")
-            downloads.process_metadata_table(df, "mp4", downloads.download_video, log, errors)
+            downloads.iterate_metadata_table(df, "mp4", downloads.download_video, log, errors)
     finally:
         final_report(log, errors)
 
@@ -164,7 +164,7 @@ def preprocess(transcript_list: TextIO, lid_model: str, recipe_file: str) -> Non
         recipe = importlib.util.module_from_spec(spec)
         spec.loader.exec_module(recipe)  # type: ignore
         log.info(f"Next, preprocess all {len(transcripts)} transcripts.")
-        preprocessing.apply_recipe(recipe, transcripts, log, errors)
+        preprocessing.iterate_transcripts(transcripts, recipe, log, errors)
     finally:
         final_report(log, errors)
 
@@ -188,7 +188,7 @@ def postprocess(segments_list: TextIO, recipe_file: str) -> None:
         recipe = importlib.util.module_from_spec(spec)
         spec.loader.exec_module(recipe)  # type: ignore
         log.info(f"Found {len(sessions)} sessions in file list, proceed to postprocessing.")
-        stats = postprocessing.process_sessions(sessions, recipe, log, errors)
+        stats = postprocessing.iterate_sessions(sessions, recipe, log, errors)
     finally:
         final_report(log, errors)
         if not stats.empty:

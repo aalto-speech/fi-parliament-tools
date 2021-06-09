@@ -2,11 +2,10 @@
 from __future__ import annotations  # for difflib.SequenceMatcher type annotation
 
 import difflib
-import json
+
 from collections import deque
 from collections import namedtuple
 from itertools import islice
-from pathlib import Path
 from typing import Any
 from typing import Iterable
 from typing import Iterator
@@ -18,19 +17,93 @@ from typing import Union
 import pandas as pd
 from aalto_asr_preprocessor import preprocessor
 
-from fi_parliament_tools.speakerAligner import IO
-from fi_parliament_tools.transcriptParser.data_structures import decode_transcript
+from fi_parliament_tools.transcriptMatcher.IO import KaldiCTMSegmented
+from fi_parliament_tools.transcriptMatcher.IO import KaldiSegments
+from fi_parliament_tools.transcriptMatcher.IO import KaldiText
 from fi_parliament_tools.transcriptParser.data_structures import EmbeddedStatement
 from fi_parliament_tools.transcriptParser.data_structures import Statement
 from fi_parliament_tools.transcriptParser.data_structures import Transcript
-
 
 Match = namedtuple("Match", "a b size")
 StatementsList = List[Union[Statement, EmbeddedStatement]]
 
 
+def label_segments(
+    transcript: Transcript,
+    ctm: KaldiCTMSegmented,
+    segments: KaldiSegments,
+    kalditext: KaldiText,
+    recipe: Any,
+    errors: List[str],
+) -> Tuple[KaldiSegments, KaldiText]:
+    """Assign language and speakers to each segment and corresponding text transcript.
+
+    Args:
+        transcript (Transcript): original transcript
+        ctm (KaldiCTMSegmented): Kaldi ctm_edits.segmented file
+        segments (KaldiSegments): Kaldi segments file
+        kalditext (KaldiText): Kaldi text file
+        recipe (Any): preprocessing recipe for text
+        errors (List[str]): description of all encountered errors
+
+    Raises:
+        RuntimeError: ctm_edits.segmented and segments have different amounts of segments
+
+    Returns:
+        Tuple[KaldiSegments, KaldiText]: matched
+    """
+    ctm.df = match_ctm_to_transcript(ctm.df, transcript, recipe, errors)
+    info = parse_segment_info(ctm.df)
+    if len(info) != len(segments.df):
+        raise RuntimeError("Different amount of segments in ctm_edits and Kaldi segments files.")
+    segments.df = get_labels(ctm.df, segments.df, info)
+    kalditext.df[["new_uttid", "lang", "mpid"]] = segments.df[["new_uttid", "lang", "mpid"]]
+    return segments, kalditext
+
+
+def match_ctm_to_transcript(
+    df: pd.DataFrame, transcript: Transcript, recipe: Any, errors: List[str]
+) -> pd.DataFrame:
+    """Iterate through statements in the transcript and try to find them in the aligned CTM.
+
+    Args:
+        df (pd.DataFrame): alignment CTM
+        transcript (Transcript): session transcript
+        recipe (Any): preprocessing recipe for text
+        errors (List[str]): description of all encountered errors
+
+    Returns:
+        pd.DataFrame: updated CTM
+    """
+    df.attrs["statements"] = df.attrs["failed"] = 0
+    for sub in transcript.subsections:
+        for main_statement in sub.statements:
+            texts = [main_statement.text]
+            statements: StatementsList = [main_statement]
+            if main_statement.embedded_statement.text:
+                texts = list(main_statement.text.partition("#ch_statement"))
+                texts[1] = main_statement.embedded_statement.text
+                statements = [main_statement, main_statement.embedded_statement, main_statement]
+            texts = [
+                preprocessor.apply(
+                    txt, recipe.REGEXPS, recipe.UNACCEPTED_CHARS, recipe.TRANSLATIONS
+                )
+                for txt in texts
+                if len(txt.strip().split(" ")) > 1
+            ]
+            df.attrs["statements"] += len(texts)
+            for txt, stmnt in zip(texts, statements):
+                try:
+                    df = assign_speaker(df, txt, stmnt)
+                except (ValueError, RuntimeError) as err:
+                    df.attrs["failed"] += 1
+                    msg = f"Cannot align statement {stmnt} in {df.attrs['session']}: {err}"
+                    errors.append(msg)
+    return df
+
+
 def adjust_indices(df: pd.DataFrame, start_idx: int, end_idx: int) -> Tuple[int, int]:
-    """Update statement end index if ASR hypothesis does not match transcript.
+    """Update statement start and end indices if ASR hypothesis does not match transcript.
 
     The Kaldi alignment may have matched the last words of a statement to untranscribed speech
     following the statement.
@@ -78,70 +151,6 @@ def assign_speaker(
     df.loc[start_idx:end_idx, "mpid"] = statement.mp_id
     df.loc[start_idx:end_idx, "lang"] = statement.language
     return df
-
-
-def get_segment_speaker(row: pd.Series, main_df: pd.DataFrame, sil_mask: pd.Series) -> int:
-    """Determine the speaker ID of a segment or return -1 if a segment has more than one speaker.
-
-    Args:
-        row (pd.Series): row in the list of segments
-        main_df (pd.DataFrame): aligned CTM with speaker assignments
-        sil_mask (pd.Series): hides sil and UNK tokens
-
-    Returns:
-        int: MP ID of the segment speaker or -1 if more than one speaker
-    """
-    shift = row.seg_start_idx - row.word_id
-    length = row.seg_end_idx - row.seg_start_idx
-    start = row.name[0] + shift
-    slice = main_df.mpid.iloc[start : start + length].loc[sil_mask]
-    mpids: List[int] = slice.unique()
-    mpids.sort()
-    if len(mpids) == 2 and 0 in mpids and sum(slice == 0) < 2:
-        return mpids[1]
-    elif len(mpids) > 1:
-        return -1
-    return mpids[0]
-
-
-def get_segment_language(row: pd.Series, main_df: pd.DataFrame, sil_mask: pd.Series) -> str:
-    """Determine the language of a segment.
-
-    Args:
-        row (pd.Series): row in the list of segments
-        main_df (pd.DataFrame): aligned CTM with language assignments
-        sil_mask (pd.Series): hides sil and UNK tokens
-
-    Returns:
-        str: language label of the segment
-    """
-    shift = row.seg_start_idx - row.word_id
-    length = row.seg_end_idx - row.seg_start_idx
-    start = row.name[0] + shift
-    slice = main_df.lang.iloc[start : start + length].loc[sil_mask]
-    langs = " ".join(slice.unique())
-    if "fi" in langs and "sv" in langs:
-        return "fi+sv"
-    elif "sv" in langs:
-        return "sv"
-    return "fi"
-
-
-def form_new_utterance_id(row: pd.Series, session: str) -> str:
-    """Form a new utterance id based on the row values.
-
-    Args:
-        row (pd.Series): a row from the segments DataFrame
-        session (str): session id
-
-    Returns:
-        str: new utterance id or empty string if a segment has more than one speaker
-    """
-    if row.mpid > 0:
-        s = int(row.start * 100)
-        e = int(row.end * 100)
-        return f"{row.mpid:05}-{session}-{s:08}-{e:08}"
-    return ""
 
 
 def find_statement(
@@ -245,35 +254,32 @@ def sliding_window(
         q.extend(next(it, fillvalue) for _ in range(step - 1))
 
 
-def rewrite_segments_and_text(
-    basepath: Path,
-    session: str,
-    json_file: str,
-    recipe: Any,
-    stats: pd.DataFrame,
-    errors: List[str],
-) -> pd.DataFrame:
-    """Rewrite files so that only segments with one speaker are included and convert timestamps."""
-    with open(json_file, mode="r", encoding="utf-8", newline="") as infile:
-        transcript = json.load(infile, object_hook=decode_transcript)
+def parse_segment_info(df: pd.DataFrame) -> pd.DataFrame:
+    """Get segment ID, start index and end index from the segment info column.
 
-    kaldictm = IO.KaldiCTMSegmented(f"{basepath}/session-{session}.ctm_edits.segmented")
-    df = kaldictm.get_df()
-    df.attrs["session"] = session
-    kaldisegments = IO.KaldiSegments(f"{basepath}/session-{session}.segments")
-    segments_df = kaldisegments.get_df()
-    kalditext = IO.KaldiText(f"{basepath}/session-{session}.text")
-    text_df = kalditext.get_df()
+    Args:
+        df (pd.DataFrame): alignment CTM
 
+    Returns:
+        pd.DataFrame: parsed segment info
+    """
     info = df.segment_info.str.extractall(r"start-segment-(\d+)\[start=(\d+),end=(\d+)").astype(int)
     info.rename(columns={0: "seg_num", 1: "seg_start_idx", 2: "seg_end_idx"}, inplace=True)
     info["word_id"] = df.word_id[info.index.get_level_values(None)].values
+    return info
 
-    if len(info) != len(segments_df):
-        raise RuntimeError("Different amount of segments in ctm_edits and Kaldi segments files.")
 
-    df, statements, failed = match_speakers_to_ctm(df, transcript, recipe, errors)
+def get_labels(df: pd.DataFrame, segments_df: pd.DataFrame, info: pd.DataFrame) -> pd.DataFrame:
+    """Get speaker and language labels for segments and form new utterance ids.
 
+    Args:
+        df (pd.DataFrame): alignment CTM
+        segments_df (pd.DataFrame): Kaldi segments file
+        info (pd.DataFrame): contains segment id, segment start and end word indices
+
+    Returns:
+        pd.DataFrame: updated segments file
+    """
     mask = (df.edit != "sil") & (df.edit != "fix")
     segments_df["mpid"] = (
         info.apply(lambda x: get_segment_speaker(x, df, mask), axis=1).astype(int).values
@@ -282,71 +288,69 @@ def rewrite_segments_and_text(
     segments_df["new_uttid"] = segments_df.apply(
         lambda x: form_new_utterance_id(x, df.attrs["session"]), axis=1
     )
-    segments_df.recordid = session
-    kept_segments = (segments_df.new_uttid != "") & (segments_df.lang == "fi")
-    text_df[["new_uttid", "lang", "mpid"]] = segments_df[["new_uttid", "lang", "mpid"]]
-    kaldisegments.save_df(segments_df[kept_segments])
-    kalditext.save_df(text_df[kept_segments])
-    kaldisegments.save_df(
-        segments_df[~kept_segments],
-        ".dropped",
-        ["uttid", "recordid", "start", "end", "mpid", "lang"],
-    )
-    kalditext.save_df(text_df[~kept_segments], ".dropped", ["uttid", "lang", "mpid", "text"])
-
-    dropped_segments = segments_df[~kept_segments]
-    stat_row = {
-        "length": df.session_start.iloc[-1] + df.word_duration.iloc[-1],
-        "statements": statements,
-        "failed_statements": failed,
-        "segments": len(segments_df),
-        "dropped_segments": len(dropped_segments),
-        "failed_segments": sum(dropped_segments.mpid == 0),
-        "multiple_spk": sum(dropped_segments.mpid == -1),
-        "swedish": sum(dropped_segments.lang.str.contains("sv")),
-        "segments_len": (segments_df.end - segments_df.start).sum(),
-        "dropped_len": (dropped_segments.end - dropped_segments.start).sum(),
-    }
-    stats.loc[f"session-{session}"] = stat_row
-    return stats
+    segments_df.recordid = df.attrs["session"]
+    return segments_df
 
 
-def match_speakers_to_ctm(
-    df: pd.DataFrame, transcript: Transcript, recipe: Any, errors: List[str]
-) -> Tuple[pd.DataFrame, int, int]:
-    """Iterate through statements in the transcript and try to find them in the aligned CTM.
+def get_segment_speaker(row: pd.Series, main_df: pd.DataFrame, sil_mask: pd.Series) -> int:
+    """Determine the speaker ID of a segment or return -1 if a segment has more than one speaker.
 
     Args:
-        df (pd.DataFrame): alignment CTM
-        transcript (Transcript): session transcript
-        recipe (Any): preprocessing recipe for text
-        errors (List[str]): description of all encountered errors
+        row (pd.Series): row in the list of segments
+        main_df (pd.DataFrame): aligned CTM with speaker assignments
+        sil_mask (pd.Series): hides sil and UNK tokens
 
     Returns:
-        Tuple[pd.DataFrame, int, int]: updated CTM and counts of total statements and failed ones
+        int: MP ID of the segment speaker or -1 if more than one speaker
     """
-    total = failed = 0
-    for sub in transcript.subsections:
-        for main_statement in sub.statements:
-            texts = [main_statement.text]
-            statements: StatementsList = [main_statement]
-            if main_statement.embedded_statement.text:
-                texts = list(main_statement.text.partition("#ch_statement"))
-                texts[1] = main_statement.embedded_statement.text
-                statements = [main_statement, main_statement.embedded_statement, main_statement]
-            texts = [
-                preprocessor.apply(
-                    txt, recipe.REGEXPS, recipe.UNACCEPTED_CHARS, recipe.TRANSLATIONS
-                )
-                for txt in texts
-                if len(txt.strip().split(" ")) > 1
-            ]
-            total += len(texts)
-            for txt, stmnt in zip(texts, statements):
-                try:
-                    df = assign_speaker(df, txt, stmnt)
-                except (ValueError, RuntimeError) as err:
-                    failed += 1
-                    msg = f"Cannot align statement {stmnt} in {df.attrs['session']}: {err}"
-                    errors.append(msg)
-    return df, total, failed
+    shift = row.seg_start_idx - row.word_id
+    length = row.seg_end_idx - row.seg_start_idx
+    start = row.name[0] + shift
+    slice = main_df.mpid.iloc[start : start + length].loc[sil_mask]
+    mpids: List[int] = slice.unique()
+    mpids.sort()
+    if len(mpids) == 2 and 0 in mpids and sum(slice == 0) < 2:
+        return mpids[1]
+    elif len(mpids) > 1:
+        return -1
+    return mpids[0]
+
+
+def get_segment_language(row: pd.Series, main_df: pd.DataFrame, sil_mask: pd.Series) -> str:
+    """Determine the language of a segment.
+
+    Args:
+        row (pd.Series): row in the list of segments
+        main_df (pd.DataFrame): aligned CTM with language assignments
+        sil_mask (pd.Series): hides sil and UNK tokens
+
+    Returns:
+        str: language label of the segment
+    """
+    shift = row.seg_start_idx - row.word_id
+    length = row.seg_end_idx - row.seg_start_idx
+    start = row.name[0] + shift
+    slice = main_df.lang.iloc[start : start + length].loc[sil_mask]
+    langs = " ".join(slice.unique())
+    if "fi" in langs and "sv" in langs:
+        return "fi+sv"
+    elif "sv" in langs:
+        return "sv"
+    return "fi"
+
+
+def form_new_utterance_id(row: pd.Series, session: str) -> str:
+    """Form a new utterance id based on the row values.
+
+    Args:
+        row (pd.Series): a row from the segments DataFrame
+        session (str): session id
+
+    Returns:
+        str: new utterance id or empty string if a segment has more than one speaker
+    """
+    if row.mpid > 0:
+        s = int(row.start * 100)
+        e = int(row.end * 100)
+        return f"{row.mpid:05}-{session}-{s:08}-{e:08}"
+    return ""

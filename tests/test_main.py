@@ -183,7 +183,7 @@ def test_preprocessor_unaccepted_chars_capture(
     errors: List[str] = []
     recipe = load_recipe("tests/data/simple_recipe.py")
     with open(tmpfile, "w", encoding="utf-8") as tmp_out:
-        words = preprocessing.preprocess_transcript(recipe, transcript, tmp_out, logger, errors)
+        words = preprocessing.preprocess_transcript(transcript, recipe, tmp_out, logger, errors)
 
     assert f"UnacceptedCharsError in {tmpfile}. See log for debug info." == errors[0]
     assert words == set(["A", "second", "statement", "text"])
@@ -196,7 +196,7 @@ def test_preprocessor_exception(
     errors: List[str] = []
     recipe = load_recipe("tests/data/faulty_recipe.py")
     with open(tmpfile, "w", encoding="utf-8") as tmp_out:
-        words = preprocessing.preprocess_transcript(recipe, transcript, tmp_out, logger, errors)
+        words = preprocessing.preprocess_transcript(transcript, recipe, tmp_out, logger, errors)
 
     assert f"Caught an exception in {tmpfile}." == errors[0]
     assert words == set()

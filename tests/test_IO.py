@@ -1,7 +1,7 @@
 """Test the matching of Kaldi CTMs and segments to the transcript statements."""
 import pytest
 
-from fi_parliament_tools.speakerAligner import IO
+from fi_parliament_tools.transcriptMatcher import IO
 
 
 @pytest.mark.parametrize(
@@ -25,7 +25,7 @@ def test_split_segment_id(
 
 def test_read_table() -> None:
     """Perform a surface level check that a ctm_edits.segmented file is correctly loaded."""
-    df = IO.KaldiCTMSegmented("tests/data/ctms/session-071-2017_ctm_edits.segmented").get_df()
+    df = IO.KaldiCTMSegmented("tests/data/ctms/session-071-2017").get_df()
     assert list(df.columns) == [
         "word_start",
         "word_duration",
@@ -48,8 +48,8 @@ def test_read_table() -> None:
 @pytest.mark.parametrize(
     "filename, message",
     [
-        ("tests/data/ctms/session-061-2020_ctm_edits.segmented", r"First segment is missing."),
-        ("tests/data/ctms/session-129-2016_ctm_edits.segmented", r"There is a missing segment."),
+        ("tests/data/ctms/session-061-2020", r"First segment is missing."),
+        ("tests/data/ctms/session-129-2016", r"There is a missing segment."),
     ],
 )
 def test_missing_segments(filename: str, message: str) -> None:
