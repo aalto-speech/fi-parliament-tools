@@ -1,5 +1,5 @@
 """Test cases for the __main__, downloads, and preprocessing modules."""
-# import glob
+import glob
 import importlib
 import json
 import logging
@@ -132,13 +132,30 @@ def mock_vaskiquery(request: SubRequest, mocker: MockerFixture) -> MagicMock:
     return mock
 
 
+@pytest.fixture
+def mock_fasttextmodel(mocker: MockerFixture) -> MagicMock:
+    """Mock FastTextModel for the preprocessing module."""
+    mock: MagicMock = mocker.patch("fi_parliament_tools.preprocessing.FastTextModel")
+    mock.predict.side_effect = [
+        (("__label__fi", "__label__sv"), None),
+        (("__label__en", "__label__sv"), None),
+    ]
+    return mock
+
+
+@pytest.fixture
+def mock_statement(mocker: MockerFixture) -> MagicMock:
+    """Mock Statement object for the preprocessing module."""
+    mock: MagicMock = mocker.patch("fi_parliament_tools.preprocessing.Statement")
+    return mock
+
+
 def test_main_succeeds(runner: CliRunner) -> None:
     """It exits with a status code of zero."""
     result = runner.invoke(__main__.main)
     assert result.exit_code == 0
 
 
-'''
 def test_preprocessor(runner: CliRunner) -> None:
     """It successfully preprocesses the three files given the list file."""
     workdir = os.getcwd()
@@ -173,7 +190,14 @@ def test_preprocessor(runner: CliRunner) -> None:
                 f"{workdir}/tests/data/jsons/{text}", "r", encoding="utf-8"
             ) as truef:
                 assert outf.read() + "\n" == truef.read()
-'''
+
+
+def test_determine_language_label(mock_fasttextmodel: MagicMock, mock_statement: MagicMock) -> None:
+    """It labels text as Finnish, Swedish, or both."""
+    label = preprocessing.determine_language_label(mock_fasttextmodel, mock_statement)
+    assert label == "fi+sv.p"
+    label = preprocessing.determine_language_label(mock_fasttextmodel, mock_statement)
+    assert label == "sv.p"
 
 
 def test_preprocessor_unaccepted_chars_capture(
