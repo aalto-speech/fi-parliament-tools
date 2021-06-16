@@ -97,14 +97,14 @@ class KaldiCTMSegmented(KaldiFile):
 class KaldiSegments(KaldiFile):
     """Kaldi segments file."""
 
-    def __init__(self, filename: str, suffix: str = "segments") -> None:
+    def __init__(self, filename: str, suffix: str = ".segments") -> None:
         """Initialize and define columns specific to this filetype.
 
         Args:
             filename (str): path to the file without suffix
             suffix (str): suffix for the file
         """
-        super().__init__(f"{filename}.{suffix}")
+        super().__init__(f"{filename}{suffix}")
         self.cols = ["uttid", "recordid", "start", "end"]
         self.df = self.get_df()
 
@@ -148,14 +148,14 @@ class KaldiSegments(KaldiFile):
 class KaldiText(KaldiFile):
     """Kaldi text file."""
 
-    def __init__(self, filename: str, suffix: str = "text") -> None:
+    def __init__(self, filename: str, suffix: str = ".text") -> None:
         """Initialize and define columns specific to this filetype.
 
         Args:
             filename (str): path to the file without suffix
             suffix (str): suffix for the file
         """
-        super().__init__(f"{filename}.{suffix}")
+        super().__init__(f"{filename}{suffix}")
         self.cols = ["uttid"]
         self.df = self.get_df()
 

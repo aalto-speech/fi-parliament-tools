@@ -1,4 +1,4 @@
-"""Test the matching of Kaldi CTMs and segments to the transcript statements."""
+"""Test the reading and writing of Kaldi files."""
 import csv
 from typing import List
 from typing import Optional
