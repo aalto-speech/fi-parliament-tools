@@ -1,4 +1,4 @@
-"""Test speaker aligining loop."""
+"""Label segments with language and speaker by matching original transcript to CTM."""
 from __future__ import annotations  # for difflib.SequenceMatcher type annotation
 
 import difflib
@@ -45,16 +45,11 @@ def label_segments(
         recipe (Any): preprocessing recipe for text
         errors (List[str]): description of all encountered errors
 
-    Raises:
-        RuntimeError: ctm_edits.segmented and segments have different amounts of segments
-
     Returns:
         Tuple[KaldiSegments, KaldiText]: matched
     """
     ctm.df = match_ctm_to_transcript(ctm.df, transcript, recipe, errors)
     info = parse_segment_info(ctm.df)
-    if len(info) != len(segments.df):
-        raise RuntimeError("Different amount of segments in ctm_edits and Kaldi segments files.")
     segments.df = get_labels(ctm.df, segments.df, info)
     kalditext.df[["new_uttid", "lang", "mpid"]] = segments.df[["new_uttid", "lang", "mpid"]]
     return segments, kalditext
@@ -144,7 +139,7 @@ def assign_speaker(
     start_idx, end_idx = find_statement(
         df[["transcript", "edit"]], text.split(), statement.language
     )
-    if not statement.language == "sv":
+    if "sv" not in statement.language:
         start_idx, end_idx = adjust_indices(df, start_idx, end_idx)
     df.loc[start_idx:end_idx, "speaker"] = statement.firstname + " " + statement.lastname
     df.loc[start_idx:end_idx, "mpid"] = statement.mp_id
@@ -153,7 +148,12 @@ def assign_speaker(
 
 
 def find_statement(
-    df: pd.DataFrame, text: List[str], lang: str, match_limit: int = 30, step: int = 7500
+    df: pd.DataFrame,
+    text: List[str],
+    lang: str,
+    match_limit: int = 30,
+    size: int = 10000,
+    step: int = 7500,
 ) -> Tuple[int, int]:
     """Find where the statement text starts and ends in the alignment CTM.
 
@@ -162,7 +162,8 @@ def find_statement(
         text (List[str]): statement text to find as a list of words
         lang (str): handle Swedish and Finnish different
         match_limit (int): the number of words to match in search, defaults to 30
-        step (int): the step size of the sliding window, defaults to 7500.
+        size (int): the size of the sliding window, defaults to 10 000
+        step (int): the step size of the sliding window, defaults to 7500
 
     Raises:
         ValueError: no alignment could be found
@@ -172,31 +173,32 @@ def find_statement(
     """
     masked = df[(df.transcript != "<eps>") & (df.transcript != "<UNK>")]
     words_matched = min(len(text), match_limit)
-    for i, w in enumerate(sliding_window(masked.transcript.values)):
+    for i, w in enumerate(sliding_window(masked.transcript.values, size=size, step=step)):
         start, window = (0, list(w))
         diff = difflib.SequenceMatcher(None, window, text[:words_matched])
         while start < step:
             min_m = min(words_matched, 5)
             match = next((m for m in diff.get_matching_blocks() if m.size >= min_m), Match(0, 0, 0))
             start += match.a
-            if match.size > 0:
+            if match.size <= 0:
+                break
+            else:
                 s = start + i * step
                 edit_ratios = masked.edit[s : s + match.size].value_counts(normalize=True)
                 if "sv" in lang or ("cor" in edit_ratios and edit_ratios["cor"] > 0.5):
                     return masked.index[s], find_end_index(masked.transcript[s:], text)
                 start += words_matched
                 diff.set_seq1(window[start:])
-            else:
-                break
     raise ValueError("Alignment not found.")
 
 
-def find_end_index(masked: pd.DataFrame, text: List[str]) -> int:
+def find_end_index(masked: pd.DataFrame, text: List[str], added_range: int = 100) -> int:
     """Find the last index of the statement text in the transcript column of the alignment CTM.
 
     Args:
         masked (pd.DataFrame): silence and unk masked transcript
         text (List[str]): statement text as a list of words
+        added_range (int): search the word up to the added range, defaults to 100
 
     Raises:
         ValueError: end index not found
@@ -204,7 +206,7 @@ def find_end_index(masked: pd.DataFrame, text: List[str]) -> int:
     Returns:
         int: last index of the statement
     """
-    search_end = min(len(text) + 100, len(masked) - 1)
+    search_end = min(len(text) + added_range, len(masked) - 1)
     diff = difflib.SequenceMatcher(None, masked.iloc[:search_end].values, text)
     ops = diff.get_opcodes()
     if ops[-1][0] == "equal":
@@ -254,7 +256,7 @@ def sliding_window(
 
 
 def parse_segment_info(df: pd.DataFrame) -> pd.DataFrame:
-    """Get segment ID, start index and end index from the segment info column.
+    """Get segment id, start index and end index from the segment info column.
 
     Args:
         df (pd.DataFrame): alignment CTM
@@ -292,7 +294,7 @@ def get_labels(df: pd.DataFrame, segments_df: pd.DataFrame, info: pd.DataFrame) 
 
 
 def get_segment_speaker(row: pd.Series, main_df: pd.DataFrame, sil_mask: pd.Series) -> int:
-    """Determine the speaker ID of a segment or return -1 if a segment has more than one speaker.
+    """Determine the speaker id of a segment or return -1 if a segment has more than one speaker.
 
     Args:
         row (pd.Series): row in the list of segments
@@ -300,7 +302,7 @@ def get_segment_speaker(row: pd.Series, main_df: pd.DataFrame, sil_mask: pd.Seri
         sil_mask (pd.Series): hides sil and UNK tokens
 
     Returns:
-        int: MP ID of the segment speaker or -1 if more than one speaker
+        int: MP id of the segment speaker or -1 if more than one speaker
     """
     shift = row.seg_start_idx - row.word_id
     length = row.seg_end_idx - row.seg_start_idx
@@ -318,8 +320,10 @@ def get_segment_speaker(row: pd.Series, main_df: pd.DataFrame, sil_mask: pd.Seri
 def get_segment_language(row: pd.Series, main_df: pd.DataFrame, sil_mask: pd.Series) -> str:
     """Determine the language of a segment.
 
+    The variable row.name corresponds to the index in the main_df where the segment was defined.
+
     Args:
-        row (pd.Series): row in the list of segments
+        row (pd.Series): row in the segment info DataFrame
         main_df (pd.DataFrame): aligned CTM with language assignments
         sil_mask (pd.Series): hides sil and UNK tokens
 
@@ -339,7 +343,12 @@ def get_segment_language(row: pd.Series, main_df: pd.DataFrame, sil_mask: pd.Ser
 
 
 def form_new_utterance_id(row: pd.Series, session: str) -> str:
-    """Form a new utterance id based on the row values.
+    """Form a new utterance id based on the row values if the segment has only one speaker.
+
+    MP id can take three values:
+        - `mpid > 0` -> valid MP id
+        - `mpid == 0` -> speaker matching failed or no speaker
+        - `mpid == -1` -> multiple speakers
 
     Args:
         row (pd.Series): a row from the segments DataFrame
