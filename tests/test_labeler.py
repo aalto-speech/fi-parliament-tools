@@ -104,12 +104,14 @@ def test_find_statement(test_df: pd.DataFrame) -> None:
         ),
         (
             133,
-            "this speaker repeats their words often and the repetitions need to be handled as well somehow because the transcribers omit them these are the last words",
+            "this speaker repeats their words often and the repetitions need to be handled as well "
+            "somehow because the transcribers omit them these are the last words",
             417,
         ),
     ],
 )
 def test_find_end_index(masked_start: int, text: str, true_end: int, test_df: pd.DataFrame) -> None:
+    """Find the end of statement in the CTM."""
     masked = test_df[(test_df.transcript != "<eps>") & (test_df.transcript != "<UNK>")]
     end_idx = labeler.find_end_index(masked.transcript[masked_start:], text.split(), added_range=10)
     assert end_idx == true_end
