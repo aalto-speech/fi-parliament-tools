@@ -152,19 +152,23 @@ def preprocess(transcript_list: TextIO, lid_model: str, recipe_file: str) -> Non
 
     LID_MODEL predicts language (fi/sv/both) for those statements that do not have a language label
     in the XMLs. RECIPE_FILE is used to preprocess text for speech recognition.
-    """  # noqa: DAR101, ignore missing arg documentation
+    """  # noqa: DAR101, DAR401, ignore missing arg documentation
     log = setup_logger(f"{date.today()}-preprocess.log")
     errors: List[str] = []
 
     try:
         transcripts = transcript_list.read().split()
         log.info(f"Got {len(transcripts)} transcripts, proceed to predict missing language labels.")
-        preprocessing.apply_fasttext_lid(lid_model, transcripts, log, errors)
-        spec = importlib.util.spec_from_file_location("recipe", recipe_file)
-        recipe = importlib.util.module_from_spec(spec)
-        spec.loader.exec_module(recipe)  # type: ignore
-        log.info(f"Next, preprocess all {len(transcripts)} transcripts.")
-        preprocessing.iterate_transcripts(transcripts, recipe, log, errors)
+        if spec := importlib.util.spec_from_file_location("recipe", recipe_file):
+            recipe = importlib.util.module_from_spec(spec)
+            spec.loader.exec_module(recipe)  # type: ignore
+            preprocessing.apply_fasttext_lid(lid_model, transcripts, log, errors)
+            log.info(f"Next, preprocess all {len(transcripts)} transcripts.")
+            preprocessing.iterate_transcripts(transcripts, recipe, log, errors)
+        else:
+            raise click.ClickException(
+                f"Failed to import recipe '{recipe_file}', is it a python file?"
+            )
     finally:
         final_report(log, errors)
 
@@ -177,18 +181,23 @@ def postprocess(segments_list: TextIO, recipe_file: str) -> None:
 
     RECIPE_FILE is needed for preprocessing the original transcript to the aligned text. Use the
     same RECIPE_FILE as with preprocess command.
-    """  # noqa: DAR101, ignore missing arg documentation
+    """  # noqa: DAR101, DAR401, ignore missing arg documentation
     log = setup_logger(f"{date.today()}-postprocess.log")
     errors: List[str] = []
     stats = pd.DataFrame()
 
     try:
         sessions = segments_list.read().split()
-        spec = importlib.util.spec_from_file_location("recipe", recipe_file)
-        recipe = importlib.util.module_from_spec(spec)
-        spec.loader.exec_module(recipe)  # type: ignore
-        log.info(f"Found {len(sessions)} sessions in file list, proceed to postprocessing.")
-        stats = postprocessing.iterate_sessions(sessions, recipe, log, errors)
+        if spec := importlib.util.spec_from_file_location("recipe", recipe_file):
+            recipe = importlib.util.module_from_spec(spec)
+            spec.loader.exec_module(recipe)  # type: ignore
+            log.info(f"Found {len(sessions)} sessions in file list, proceed to postprocessing.")
+            stats = postprocessing.iterate_sessions(sessions, recipe, log, errors)
+        else:
+            raise click.ClickException(
+                f"Failed to import recipe '{recipe_file}', is it a python file?"
+            )
+
     finally:
         final_report(log, errors)
         if not stats.empty:

@@ -38,10 +38,10 @@ def load_recipe() -> Callable[[str], Any]:
     """Load a recipe module for testing purposes."""
 
     def _load_recipe(recipe_path: str) -> Any:
-        spec = importlib.util.spec_from_file_location("recipe", recipe_path)
-        recipe = importlib.util.module_from_spec(spec)
-        spec.loader.exec_module(recipe)  # type: ignore
-        return recipe
+        if spec := importlib.util.spec_from_file_location("recipe", recipe_path):
+            recipe = importlib.util.module_from_spec(spec)
+            spec.loader.exec_module(recipe)  # type: ignore
+            return recipe
 
     return _load_recipe
 
@@ -191,6 +191,25 @@ def test_preprocessor(runner: CliRunner) -> None:
                 f"{workdir}/tests/data/jsons/{text}", "r", encoding="utf-8"
             ) as truef:
                 assert outf.read() + "\n" == truef.read()
+
+
+def test_preprocessor_with_bad_recipe_file(runner: CliRunner) -> None:
+    """It exits if recipe file is not a python file."""
+    workdir = os.getcwd()
+    with runner.isolated_filesystem():
+        with open("transcript.list", "w", encoding="utf-8") as outfile:
+            outfile.write("dummy.json\n")
+
+        result = runner.invoke(
+            __main__.main,
+            [
+                "preprocess",
+                "transcript.list",
+                f"{workdir}/recipes/lid.176.bin",
+                f"{workdir}/recipes/swedish_words.txt",
+            ],
+        )
+        assert result.exit_code == 1
 
 
 def test_determine_language_label(mock_fasttextmodel: MagicMock, mock_statement: MagicMock) -> None:
@@ -431,6 +450,24 @@ def test_postprocessor_without_input(runner: CliRunner) -> None:
         assert "Output is logged to" in result.output
         assert "Found 0 sessions in file list, proceed to postprocessing." in result.output
         assert "Finished successfully!" in result.output
+
+
+def test_postprocessor_with_bad_recipe_file(runner: CliRunner) -> None:
+    """It exits if recipe file is not a python file."""
+    workdir = os.getcwd()
+    with runner.isolated_filesystem():
+        with open("ctms.list", "w", encoding="utf-8") as outfile:
+            outfile.write("\n")
+
+        result = runner.invoke(
+            __main__.main,
+            [
+                "postprocess",
+                "ctms.list",
+                f"{workdir}/recipes/swedish_words.txt",
+            ],
+        )
+        assert result.exit_code == 1
 
 
 def test_postprocessor(runner: CliRunner) -> None:
