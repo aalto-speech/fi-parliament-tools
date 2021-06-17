@@ -5,18 +5,21 @@ from pathlib import Path
 from textwrap import dedent
 
 import nox
-from nox_poetry import Session
-from nox_poetry import session
+
+try:
+    from nox_poetry import Session
+    from nox_poetry import session
+except ImportError:
+    message = f"""\
+    Nox failed to import the 'nox-poetry' package.
+    Please install it using the following command:
+    {sys.executable} -m pip install nox-poetry"""
+    raise SystemExit(dedent(message))
 
 package = "fi_parliament_tools"
 python_versions = ["3.9", "3.8"]
-nox.options.sessions = (
-    "pre-commit",
-    "safety",
-    "mypy",
-    "tests",
-    "docs-build",
-)
+nox.needs_version = ">= 2021.6.6"
+nox.options.sessions = ("pre-commit", "safety", "mypy", "tests", "docs-build")
 
 
 def activate_virtualenv_in_precommit_hooks(session: Session) -> None:
@@ -118,20 +121,17 @@ def tests(session: Session) -> None:
         session.run("coverage", "run", "--parallel", "-m", "pytest", *session.posargs)
     finally:
         if session.interactive:
-            session.notify("coverage")
+            session.notify("coverage", posargs=[])
 
 
 @session
 def coverage(session: Session) -> None:
     """Produce the coverage report."""
-    # Do not use session.posargs unless this is the only session.
-    nsessions = len(session._runner.manifest)
-    has_args = session.posargs and nsessions == 1
-    args = session.posargs if has_args else ["report"]
+    args = session.posargs or ["report"]
 
     session.install("coverage[toml]")
 
-    if not has_args and any(Path().glob(".coverage.*")):
+    if not session.posargs and any(Path().glob(".coverage.*")):
         session.run("coverage", "combine")
 
     session.run("coverage", *args)
