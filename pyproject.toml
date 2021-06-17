@@ -14,36 +14,36 @@ Changelog = "https://github.com/aalto-speech/fi-parliament-tools/releases"
 
 [tool.poetry.dependencies]
 python = "^3.8"
-click = "^7.0"
+click = "^8.0.1"
 lxml = "^4.6.2"
 alive-progress = "^1.6.2"
 requests = "^2.25.1"
 pandas = "^1.2.4"
-aalto-asr-preprocessor = "^2021.3.10"
+aalto-asr-preprocessor = "^2021.6.16"
 fasttext = "^0.9.2"
 
 [tool.poetry.dev-dependencies]
 black = "^21.6b0"
 coverage = {extras = ["toml"], version = "^5.4"}
-darglint = "^1.5.8"
-flake8 = "^3.8.4"
+darglint = "^1.8.0"
+flake8 = "^3.9.2"
 flake8-bandit = "^2.1.2"
-flake8-bugbear = "^21.3.2"
+flake8-bugbear = "^21.4.3"
 flake8-docstrings = "^1.6.0"
 flake8-rst-docstrings = "^0.2.3"
-mypy = "^0.812"
+mypy = "^0.902"
 pep8-naming = "^0.11.1"
 pre-commit = "^2.12.1"
-pre-commit-hooks = "^3.4.0"
+pre-commit-hooks = "^4.0.1"
 Pygments = "^2.9.0"
 pytest = "^6.2.4"
 pytest-mock = "^3.6.1"
 reorder-python-imports = "^2.5.0"
 safety = "^1.10.3"
-sphinx = "^4.0.1"
+sphinx = "^4.0.2"
 sphinx-autobuild = "^2021.3.14"
-sphinx-click = "^3.0.0"
-sphinx-rtd-theme = "^0.5.1"
+sphinx-click = "^3.0.1"
+sphinx-rtd-theme = "^0.5.2"
 typeguard = "^2.10.0"
 xdoctest = {extras = ["colors"], version = "^0.15.3"}
 
@@ -61,12 +61,27 @@ source = ["fi_parliament_tools"]
 show_missing = true
 fail_under = 100
 
-[build-system]
-requires = ["poetry-core>=1.0.0"]
-build-backend = "poetry.core.masonry.api"
+[tool.mypy]
+strict = true
+pretty = true
+show_column_numbers = true
+show_error_codes = true
+show_error_context = true
+
+[[tool.mypy.overrides]]
+module = [
+    "alive_progress",
+    "lxml",
+    "pandas"
+]
+ignore_missing_imports = true
 
 [tool.pytest.ini_options]
 addopts = "-ra -q"
 testpaths = [
     "tests",
 ]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
