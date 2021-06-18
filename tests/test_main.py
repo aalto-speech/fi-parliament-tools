@@ -133,7 +133,16 @@ def mock_vaskiquery(request: SubRequest, mocker: MockerFixture) -> MagicMock:
 
 
 @pytest.fixture
-def mock_fasttextmodel(mocker: MockerFixture) -> MagicMock:
+def mock_fasttextmodel_load(mocker: MockerFixture) -> MagicMock:
+    """Mock FastTextModel loading from a binary file."""
+    mock: MagicMock = mocker.patch("fi_parliament_tools.preprocessing.fasttext.load_model")
+    mock.return_value = mocker.patch("fi_parliament_tools.preprocessing.FastTextModel")
+    mock.return_value.predict.return_value = (("__label__fi", "__label__et"), None)
+    return mock
+
+
+@pytest.fixture
+def mock_fasttextmodel_predict(mocker: MockerFixture) -> MagicMock:
     """Mock FastTextModel for the preprocessing module."""
     mock: MagicMock = mocker.patch("fi_parliament_tools.preprocessing.FastTextModel")
     mock.predict.side_effect = [
@@ -157,7 +166,7 @@ def test_main_succeeds(runner: CliRunner) -> None:
     assert result.exit_code == 0
 
 
-def test_preprocessor(runner: CliRunner) -> None:
+def test_preprocessor(mock_fasttextmodel_load: MagicMock, runner: CliRunner) -> None:
     """It successfully preprocesses the three files given the list file."""
     workdir = os.getcwd()
     with runner.isolated_filesystem():
@@ -166,10 +175,11 @@ def test_preprocessor(runner: CliRunner) -> None:
             shutil.copy(f"{workdir}/{json_file}", ".")
 
         Path("recipes").mkdir(parents=True, exist_ok=True)
+        Path("recipes/lid.176.bin").touch()
         shutil.copy(f"{workdir}/recipes/words_elative.txt", "recipes/words_elative.txt")
 
         with open("transcript.list", "w", encoding="utf-8") as outfile:
-            for transcript in glob.glob("*.json"):
+            for transcript in sorted(glob.glob("*.json")):
                 outfile.write(transcript + "\n")
 
         result = runner.invoke(
@@ -177,7 +187,7 @@ def test_preprocessor(runner: CliRunner) -> None:
             [
                 "preprocess",
                 "transcript.list",
-                f"{workdir}/recipes/lid.176.bin",
+                "recipes/lid.176.bin",
                 f"{workdir}/recipes/parl_to_kaldi_text.py",
             ],
         )
@@ -186,6 +196,9 @@ def test_preprocessor(runner: CliRunner) -> None:
         assert "Got 5 transcripts, proceed to predict missing language labels." in result.output
         assert "Next, preprocess all 5 transcripts." in result.output
         assert "Finished successfully!" in result.output
+        mock_fasttextmodel_load.assert_called_once_with("recipes/lid.176.bin")
+        assert mock_fasttextmodel_load.return_value.predict.call_count == 29
+
         for text in glob.glob("*.text"):
             with open(text, "r", encoding="utf-8") as outf, open(
                 f"{workdir}/tests/data/jsons/{text}", "r", encoding="utf-8"
@@ -200,23 +213,27 @@ def test_preprocessor_with_bad_recipe_file(runner: CliRunner) -> None:
         with open("transcript.list", "w", encoding="utf-8") as outfile:
             outfile.write("dummy.json\n")
 
+        Path("lid.176.bin").touch()
+
         result = runner.invoke(
             __main__.main,
             [
                 "preprocess",
                 "transcript.list",
-                f"{workdir}/recipes/lid.176.bin",
+                "lid.176.bin",
                 f"{workdir}/recipes/swedish_words.txt",
             ],
         )
         assert result.exit_code == 1
 
 
-def test_determine_language_label(mock_fasttextmodel: MagicMock, mock_statement: MagicMock) -> None:
+def test_determine_language_label(
+    mock_fasttextmodel_predict: MagicMock, mock_statement: MagicMock
+) -> None:
     """It labels text as Finnish, Swedish, or both."""
     true_labels = ["fi.p", "fi+sv.p", "sv.p"]
     for true_label in true_labels:
-        label = preprocessing.determine_language_label(mock_fasttextmodel, mock_statement)
+        label = preprocessing.determine_language_label(mock_fasttextmodel_predict, mock_statement)
         assert label == true_label
 
 
