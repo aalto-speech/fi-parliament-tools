@@ -111,7 +111,7 @@ def query_videos(args: Dict[str, str]) -> pd.DataFrame:
     return filter_metadata_table(df, args)
 
 
-def process_metadata_table(
+def iterate_metadata_table(
     df: pd.DataFrame,
     extension: str,
     processing_func: Callable[..., None],

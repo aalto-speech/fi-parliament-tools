@@ -91,14 +91,16 @@ def determine_language_label(
     return label
 
 
-def apply_recipe(recipe: Any, transcripts: List[str], log: Logger, errors: List[str]) -> None:
-    """Apply preprocessing recipe to each transcript and write result to a file.
+def iterate_transcripts(
+    transcripts: List[str], recipe: Any, log: Logger, errors: List[str]
+) -> None:
+    """Iterate transcript list and write each result to a file.
 
     Also writes all unique Finnish words within the transcript to a file.
 
     Args:
-        recipe (Any): a recipe file loaded as a module
         transcripts (list): paths to transcripts to preprocess
+        recipe (Any): a recipe file loaded as a module
         log (Logger): logger object
         errors (list): descriptions of all encountered errors
     """
@@ -113,7 +115,7 @@ def apply_recipe(recipe: Any, transcripts: List[str], log: Logger, errors: List[
                 "w", encoding="utf-8", newline=""
             ) as wordfile:
                 bytecount = textfile.write(input_path.stem)
-                unique_words = preprocess_transcript(recipe, transcript, textfile, log, errors)
+                unique_words = preprocess_transcript(transcript, recipe, textfile, log, errors)
                 if textfile.tell() == bytecount:
                     errors.append(f"Preprocessing output was empty for {input_path.stem}.")
                 wordfile.writelines("\n".join(unique_words))
@@ -121,7 +123,7 @@ def apply_recipe(recipe: Any, transcripts: List[str], log: Logger, errors: List[
 
 
 def preprocess_transcript(
-    recipe: Any, transcript: Transcript, outfile: TextIO, log: Logger, errors: List[str]
+    transcript: Transcript, recipe: Any, outfile: TextIO, log: Logger, errors: List[str]
 ) -> Set[str]:
     """Preprocess and write a transcript to a file given a recipe and return unique Finnish words.
 
@@ -131,8 +133,8 @@ def preprocess_transcript(
     included too.
 
     Args:
-        recipe (Any): a recipe file loaded as a module
         transcript (Transcript): a transcript to preprocess
+        recipe (Any): a recipe file loaded as a module
         outfile (TextIO): a file handle for writing output
         log (Logger): logger object
         errors (list): descriptions of all encountered errors

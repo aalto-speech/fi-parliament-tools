@@ -1,5 +1,5 @@
-"""Test cases for the __main__, downloads, and preprocessing modules."""
-# import glob
+"""Test cases for the __main__, downloads, preprocessing, and postprocessing modules."""
+import glob
 import importlib
 import json
 import logging
@@ -38,10 +38,10 @@ def load_recipe() -> Callable[[str], Any]:
     """Load a recipe module for testing purposes."""
 
     def _load_recipe(recipe_path: str) -> Any:
-        spec = importlib.util.spec_from_file_location("recipe", recipe_path)
-        recipe = importlib.util.module_from_spec(spec)
-        spec.loader.exec_module(recipe)  # type: ignore
-        return recipe
+        if spec := importlib.util.spec_from_file_location("recipe", recipe_path):
+            recipe = importlib.util.module_from_spec(spec)
+            spec.loader.exec_module(recipe)  # type: ignore
+            return recipe
 
     return _load_recipe
 
@@ -132,14 +132,41 @@ def mock_vaskiquery(request: SubRequest, mocker: MockerFixture) -> MagicMock:
     return mock
 
 
+@pytest.fixture
+def mock_fasttextmodel_load(mocker: MockerFixture) -> MagicMock:
+    """Mock FastTextModel loading from a binary file."""
+    mock: MagicMock = mocker.patch("fi_parliament_tools.preprocessing.fasttext.load_model")
+    mock.return_value = mocker.patch("fi_parliament_tools.preprocessing.FastTextModel")
+    mock.return_value.predict.return_value = (("__label__fi", "__label__et"), None)
+    return mock
+
+
+@pytest.fixture
+def mock_fasttextmodel_predict(mocker: MockerFixture) -> MagicMock:
+    """Mock FastTextModel for the preprocessing module."""
+    mock: MagicMock = mocker.patch("fi_parliament_tools.preprocessing.FastTextModel")
+    mock.predict.side_effect = [
+        (("__label__fi", "__label__et"), None),
+        (("__label__fi", "__label__sv"), None),
+        (("__label__en", "__label__sv"), None),
+    ]
+    return mock
+
+
+@pytest.fixture
+def mock_statement(mocker: MockerFixture) -> MagicMock:
+    """Mock Statement object for the preprocessing module."""
+    mock: MagicMock = mocker.patch("fi_parliament_tools.preprocessing.Statement")
+    return mock
+
+
 def test_main_succeeds(runner: CliRunner) -> None:
     """It exits with a status code of zero."""
     result = runner.invoke(__main__.main)
     assert result.exit_code == 0
 
 
-'''
-def test_preprocessor(runner: CliRunner) -> None:
+def test_preprocessor(mock_fasttextmodel_load: MagicMock, runner: CliRunner) -> None:
     """It successfully preprocesses the three files given the list file."""
     workdir = os.getcwd()
     with runner.isolated_filesystem():
@@ -148,10 +175,11 @@ def test_preprocessor(runner: CliRunner) -> None:
             shutil.copy(f"{workdir}/{json_file}", ".")
 
         Path("recipes").mkdir(parents=True, exist_ok=True)
+        Path("recipes/lid.176.bin").touch()
         shutil.copy(f"{workdir}/recipes/words_elative.txt", "recipes/words_elative.txt")
 
         with open("transcript.list", "w", encoding="utf-8") as outfile:
-            for transcript in glob.glob("*.json"):
+            for transcript in sorted(glob.glob("*.json")):
                 outfile.write(transcript + "\n")
 
         result = runner.invoke(
@@ -159,7 +187,7 @@ def test_preprocessor(runner: CliRunner) -> None:
             [
                 "preprocess",
                 "transcript.list",
-                f"{workdir}/recipes/lid.176.bin",
+                "recipes/lid.176.bin",
                 f"{workdir}/recipes/parl_to_kaldi_text.py",
             ],
         )
@@ -168,12 +196,45 @@ def test_preprocessor(runner: CliRunner) -> None:
         assert "Got 5 transcripts, proceed to predict missing language labels." in result.output
         assert "Next, preprocess all 5 transcripts." in result.output
         assert "Finished successfully!" in result.output
+        mock_fasttextmodel_load.assert_called_once_with("recipes/lid.176.bin")
+        assert mock_fasttextmodel_load.return_value.predict.call_count == 29
+
         for text in glob.glob("*.text"):
             with open(text, "r", encoding="utf-8") as outf, open(
                 f"{workdir}/tests/data/jsons/{text}", "r", encoding="utf-8"
             ) as truef:
                 assert outf.read() + "\n" == truef.read()
-'''
+
+
+def test_preprocessor_with_bad_recipe_file(runner: CliRunner) -> None:
+    """It exits if recipe file is not a python file."""
+    workdir = os.getcwd()
+    with runner.isolated_filesystem():
+        with open("transcript.list", "w", encoding="utf-8") as outfile:
+            outfile.write("dummy.json\n")
+
+        Path("lid.176.bin").touch()
+
+        result = runner.invoke(
+            __main__.main,
+            [
+                "preprocess",
+                "transcript.list",
+                "lid.176.bin",
+                f"{workdir}/recipes/swedish_words.txt",
+            ],
+        )
+        assert result.exit_code == 1
+
+
+def test_determine_language_label(
+    mock_fasttextmodel_predict: MagicMock, mock_statement: MagicMock
+) -> None:
+    """It labels text as Finnish, Swedish, or both."""
+    true_labels = ["fi.p", "fi+sv.p", "sv.p"]
+    for true_label in true_labels:
+        label = preprocessing.determine_language_label(mock_fasttextmodel_predict, mock_statement)
+        assert label == true_label
 
 
 def test_preprocessor_unaccepted_chars_capture(
@@ -183,7 +244,7 @@ def test_preprocessor_unaccepted_chars_capture(
     errors: List[str] = []
     recipe = load_recipe("tests/data/simple_recipe.py")
     with open(tmpfile, "w", encoding="utf-8") as tmp_out:
-        words = preprocessing.preprocess_transcript(recipe, transcript, tmp_out, logger, errors)
+        words = preprocessing.preprocess_transcript(transcript, recipe, tmp_out, logger, errors)
 
     assert f"UnacceptedCharsError in {tmpfile}. See log for debug info." == errors[0]
     assert words == set(["A", "second", "statement", "text"])
@@ -196,7 +257,7 @@ def test_preprocessor_exception(
     errors: List[str] = []
     recipe = load_recipe("tests/data/faulty_recipe.py")
     with open(tmpfile, "w", encoding="utf-8") as tmp_out:
-        words = preprocessing.preprocess_transcript(recipe, transcript, tmp_out, logger, errors)
+        words = preprocessing.preprocess_transcript(transcript, recipe, tmp_out, logger, errors)
 
     assert f"Caught an exception in {tmpfile}." == errors[0]
     assert words == set()
@@ -384,24 +445,76 @@ def test_transcript_download_error(
         assert mock_downloads_form_path.call_count == 2
 
 
-def test_postprocessor(runner: CliRunner) -> None:
-    """It successfully postprocesses the files given the list file."""
+def test_postprocessor_without_input(runner: CliRunner) -> None:
+    """It exits cleanly when no files to postprocess given."""
     workdir = os.getcwd()
     with runner.isolated_filesystem():
         Path("recipes").mkdir(parents=True, exist_ok=True)
         shutil.copy(f"{workdir}/recipes/words_elative.txt", "recipes/words_elative.txt")
 
-        with open("segments.list", "w", encoding="utf-8") as outfile:
-            outfile.write("This is just a dummy for now.\n")
+        with open("ctms.list", "w", encoding="utf-8") as outfile:
+            outfile.write("\n")
 
         result = runner.invoke(
             __main__.main,
             [
                 "postprocess",
-                "segments.list",
+                "ctms.list",
                 f"{workdir}/recipes/parl_to_kaldi_text.py",
             ],
         )
         assert result.exit_code == 0
         assert "Output is logged to" in result.output
+        assert "Found 0 sessions in file list, proceed to postprocessing." in result.output
         assert "Finished successfully!" in result.output
+
+
+def test_postprocessor_with_bad_recipe_file(runner: CliRunner) -> None:
+    """It exits if recipe file is not a python file."""
+    workdir = os.getcwd()
+    with runner.isolated_filesystem():
+        with open("ctms.list", "w", encoding="utf-8") as outfile:
+            outfile.write("\n")
+
+        result = runner.invoke(
+            __main__.main,
+            [
+                "postprocess",
+                "ctms.list",
+                f"{workdir}/recipes/swedish_words.txt",
+            ],
+        )
+        assert result.exit_code == 1
+
+
+def test_postprocessor(runner: CliRunner) -> None:
+    """It successfully postprocesses the files given the list file."""
+    workdir = os.getcwd()
+    session = "session-019-2016"
+    with runner.isolated_filesystem():
+        for kaldi_file in glob.glob(f"{workdir}/tests/data/ctms/*"):
+            shutil.copy(kaldi_file, ".")
+
+        Path("corpus/2016").mkdir(parents=True, exist_ok=True)
+        shutil.copy(f"{workdir}/tests/data/jsons/{session}.json", f"corpus/2016/{session}.json")
+
+        Path("recipes").mkdir(parents=True, exist_ok=True)
+        shutil.copy(f"{workdir}/recipes/words_elative.txt", "recipes/words_elative.txt")
+
+        with open("ctms.list", "w", encoding="utf-8") as outfile:
+            for ctm in glob.glob("*.ctm_edits.segmented"):
+                outfile.write(ctm + "\n")
+
+        result = runner.invoke(
+            __main__.main,
+            [
+                "postprocess",
+                "ctms.list",
+                f"{workdir}/recipes/parl_to_kaldi_text.py",
+            ],
+        )
+        assert result.exit_code == 0
+        assert "Output is logged to" in result.output
+        assert "Found 4 sessions in file list, proceed to postprocessing." in result.output
+        assert "Finished successfully!" in result.output
+        assert "Statistics of the speaker alignment" in result.output

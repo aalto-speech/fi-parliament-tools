@@ -8,7 +8,7 @@ import pandas as pd
 
 
 class KaldiFile:
-    """Kaldi file template for loading different Kaldi files processing."""
+    """Kaldi file template for loading different Kaldi files."""
 
     def __init__(self, filename: str) -> None:
         """Initialize basic properties filename and column names.
@@ -18,6 +18,7 @@ class KaldiFile:
         """
         self.filename = filename
         self.cols = ["left", "right"]
+        self.df = pd.DataFrame()
 
     def load(self, separator: str = " ") -> pd.DataFrame:
         """Load a Kaldi file with even columns into a DataFrame.
@@ -53,13 +54,14 @@ class KaldiFile:
 class KaldiCTMSegmented(KaldiFile):
     """Kaldi CTM edits segmented file."""
 
-    def __init__(self, filename: str) -> None:
+    def __init__(self, filename: str, suffix: str = "ctm_edits.segmented") -> None:
         """Initialize and define columns specific to this filetype.
 
         Args:
-            filename (str): path to the file
+            filename (str): path to the file without suffix
+            suffix (str): suffix for the file
         """
-        super().__init__(filename)
+        super().__init__(f"{filename}.{suffix}")
         self.cols = [
             "session",
             "ch",
@@ -71,6 +73,7 @@ class KaldiCTMSegmented(KaldiFile):
             "edit",
             "segment_info",
         ]
+        self.df = self.get_df()
 
     def get_df(self) -> pd.DataFrame:
         """Convert data in the file into a DataFrame that can be used in postprocessing.
@@ -94,14 +97,16 @@ class KaldiCTMSegmented(KaldiFile):
 class KaldiSegments(KaldiFile):
     """Kaldi segments file."""
 
-    def __init__(self, filename: str) -> None:
+    def __init__(self, filename: str, suffix: str = ".segments") -> None:
         """Initialize and define columns specific to this filetype.
 
         Args:
-            filename (str): path to the file
+            filename (str): path to the file without suffix
+            suffix (str): suffix for the file
         """
-        super().__init__(filename)
+        super().__init__(f"{filename}{suffix}")
         self.cols = ["uttid", "recordid", "start", "end"]
+        self.df = self.get_df()
 
     def get_df(self) -> pd.DataFrame:
         """Convert data in the file into a DataFrame that can be used in postprocessing.
@@ -143,14 +148,16 @@ class KaldiSegments(KaldiFile):
 class KaldiText(KaldiFile):
     """Kaldi text file."""
 
-    def __init__(self, filename: str) -> None:
+    def __init__(self, filename: str, suffix: str = ".text") -> None:
         """Initialize and define columns specific to this filetype.
 
         Args:
-            filename (str): path to the file
+            filename (str): path to the file without suffix
+            suffix (str): suffix for the file
         """
-        super().__init__(filename)
+        super().__init__(f"{filename}{suffix}")
         self.cols = ["uttid"]
+        self.df = self.get_df()
 
     def get_df(self) -> pd.DataFrame:
         """Convert data in the file into a DataFrame that can be used in postprocessing.

@@ -39,9 +39,9 @@ def form_event_query(args: Dict[str, str]) -> str:
     Returns:
         str: a URL query to the video API
     """
-    if (start_date := args["startDate"]) :
+    if start_date := args["startDate"]:
         start_date = form_date_parameter(start_date, "startDate")
-    if (end_date := args["endDate"]) :
+    if end_date := args["endDate"]:
         end_date = form_date_parameter(end_date, "endDate")
 
     return (
