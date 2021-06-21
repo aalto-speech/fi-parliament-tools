@@ -5,6 +5,7 @@
   "subsections": [
     {
       "number": "1",
+      "title": "The title defines the topic of the discussion",
       "statements": [
         {
           "type": "C",

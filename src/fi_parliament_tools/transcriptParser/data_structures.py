@@ -102,8 +102,9 @@ class Statement:
 class Subsection:
     """A session transcript is split into subsections.
 
-    Each subsection has a number according to the transcript table of contents and the associated
-    statements. Only subsections with statements are saved in parsing, rest are ignored.
+    Each subsection has a number and a topic title according to the transcript table of contents
+    and the associated statements. Only subsections with statements are saved in parsing, rest are
+    ignored.
 
     Note that on rare occasions subsections do not follow strictly chronological order. In these
     cases, discussion on a subsection topic begins and continues so long that chairman decides to
@@ -113,6 +114,7 @@ class Subsection:
     """
 
     number: str
+    title: str
     statements: List[Statement] = field(default_factory=list)
 
 
