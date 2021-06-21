@@ -207,10 +207,11 @@ def test_embedded_chairman_statement(
 @pytest.mark.parametrize(
     "session, true_output_path",
     [
-        ((34, 2015), "tests/data/jsons/session-034-2015.json"),
-        ((19, 2016), "tests/data/jsons/session-019-2016.json"),
-        ((35, 2018), "tests/data/jsons/session-035-2018.json"),
         ((7, 2020), "tests/data/jsons/session-007-2020.json"),
+        ((19, 2016), "tests/data/jsons/session-019-2016.json"),
+        ((34, 2015), "tests/data/jsons/session-034-2015.json"),
+        ((35, 2018), "tests/data/jsons/session-035-2018.json"),
+        ((130, 2017), "tests/data/jsons/session-130-2017.json"),
     ],
     indirect=["session"],
 )
