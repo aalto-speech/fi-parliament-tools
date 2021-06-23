@@ -304,8 +304,10 @@ class Session:
         if not statement_elements:
             return None
         [subsection_number] = xml_element.xpath(". /*[local-name() = 'KohtaNumero']/text()")
-        [subsection_title] = xml_element.xpath(
-            ". //*[local-name() = 'NimekeTeksti' or local-name() = 'OtsikkoTeksti']/text()"
+        subsection_title = ". ".join(
+            xml_element.xpath(
+                ". //*[local-name() = 'NimekeTeksti' or local-name() = 'OtsikkoTeksti']/text()"
+            )
         )
         subsection = Subsection(subsection_number, subsection_title)
         for element in statement_elements:
