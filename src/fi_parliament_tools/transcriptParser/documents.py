@@ -298,8 +298,9 @@ class Session:
             Subsection: a subsection if there are any speech transcripts in it
         """
         statement_elements = xml_element.xpath(
-            ". /*[local-name() = 'Toimenpide' or local-name() = 'PaatoksentekoToimenpide']//*[local-name() = 'PuheenjohtajaRepliikki' or "
-            "local-name() = 'PuhujaRepliikki'] | . //*[local-name() = 'PuheenvuoroToimenpide']"
+            ". /*[local-name() = 'Toimenpide' or local-name() = 'PaatoksentekoToimenpide']"
+            "//*[local-name() = 'PuheenjohtajaRepliikki' or local-name() = 'PuhujaRepliikki']"
+            " | . //*[local-name() = 'PuheenvuoroToimenpide']"
         )
         if not statement_elements:
             return None
