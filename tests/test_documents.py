@@ -212,6 +212,7 @@ def test_embedded_chairman_statement(
         ((34, 2015), "tests/data/jsons/session-034-2015.json"),
         ((35, 2018), "tests/data/jsons/session-035-2018.json"),
         ((130, 2017), "tests/data/jsons/session-130-2017.json"),
+        ((141, 2017), "tests/data/jsons/session-141-2017.json"),
     ],
     indirect=["session"],
 )
