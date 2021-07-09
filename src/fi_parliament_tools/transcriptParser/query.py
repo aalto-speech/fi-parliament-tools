@@ -250,3 +250,14 @@ class StatementQuery(Query):
                 if empty_statement_type_and_manner and has_spoker_first:
                     return row[4]
         return ""
+
+
+class MPQuery(Query):
+    """A class for querying the MemberOfParliament table.
+
+    The table contains information about members of parliament.
+    """
+
+    def __init__(self):
+        """Form an API query with given parameters."""
+        super().__init__("MemberOfParliament")
