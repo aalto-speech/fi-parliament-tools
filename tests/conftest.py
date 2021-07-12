@@ -61,20 +61,6 @@ def mpinfo(request: SubRequest) -> MPInfo:
 
 
 @pytest.fixture(scope="module")
-def embedded_statement(request: SubRequest) -> Tuple[EmbeddedStatement, Dict[str, str]]:
-    """Initialize and return an embedded statement object for given data, return also the data."""
-    return (EmbeddedStatement(*request.param.values()), request.param)
-
-
-@pytest.fixture(scope="module")
-def speaker_statement(
-    request: SubRequest,
-) -> Tuple[Statement, Dict[str, Union[str, int]]]:
-    """Initialize and return a speaker statement object for given data, return also the data."""
-    return (Statement(*request.param.values()), request.param)
-
-
-@pytest.fixture(scope="module")
 def query() -> Query:
     """Initialize a dummy Query object."""
     return Query("DummyTable")
