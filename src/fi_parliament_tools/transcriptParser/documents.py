@@ -429,3 +429,58 @@ class Interpellation(Session):
         return Statement(
             "L", mp_id, first, last, party, title, start, "", "fi", text, -1.0, -1.0, embed
         )
+
+
+class MPInfo:
+    """Parse MP information from an XML document."""
+
+    def __init__(self, xml_root: etree) -> None:
+        """Initialize MPInfo object with the given xml.
+
+        Args:
+            xml_root (etree): root of the XML document containing MP information
+        """
+        [self.xml] = xml_root.xpath("/*[local-name() = 'Henkilo']")
+
+    def get_gender(self) -> str:
+        """Parse gender from the MP info XML.
+
+        Returns:
+            str: m/f/o for male/female/other
+        """
+        [gender] = self.xml.xpath("./SukuPuoliKoodi/text()")
+        if gender == "Mies":
+            return "m"
+        elif gender == "Nainen":
+            return "f"
+        return "o"
+
+    def get_language(self) -> str:
+        """Parse mother tongue of the MP from the MP info XML."""
+        [lang] = self.xml.xpath("./@kieliKoodi")
+        return str(lang).lower()
+
+    def get_birthyear(self) -> int:
+        """Parse the birth year from the MP info XML."""
+        [year] = self.xml.xpath("./SyntymaPvm/text()")
+        return int(year)
+
+    def get_party(self) -> str:
+        """Parse the current party (or parliamentary group) affiliation from the MP info XML."""
+        [party] = self.xml.xpath("./Eduskuntaryhmat/NykyinenEduskuntaryhma/Nimi/text()")
+        return party
+
+    def get_profession(self) -> str:
+        """Parse the profession(s) from the MP info XML."""
+        [profession] = self.xml.xpath("./Ammatti/text()")
+        return profession
+
+    def get_city(self) -> str:
+        """Parse the current home city/municipality from the MP info XML."""
+        [city] = self.xml.xpath("./NykyinenKotikunta/text()")
+        return city
+
+    def get_pob(self) -> str:
+        """Parse the place of birth from the MP info XML."""
+        [pob] = self.xml.xpath("./SyntymaPaikka/text()")
+        return pob
