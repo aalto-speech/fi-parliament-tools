@@ -1,0 +1,613 @@
+<?xml version="1.0" standalone="no"?>
+<Henkilo kieliKoodi="FI" tyyppiKoodi="Kansanedustaja">
+    <HenkiloNro>508</HenkiloNro>
+    <EtunimetNimi>Anu Helena</EtunimetNimi>
+    <SukuNimi>Vehviläinen</SukuNimi>
+    <LajitteluNimi>vehviläinen anu</LajitteluNimi>
+    <KutsumaNimi>Anu</KutsumaNimi>
+    <MatrikkeliNimi>Vehviläinen, Anu Helena</MatrikkeliNimi>
+    <Puh>09 432 3002</Puh>
+    <SahkoPosti>anu.vehvilainen@parliament.fi</SahkoPosti>
+    <KotiSivu>www.anuvehvilainen.fi</KotiSivu>
+    <Ammatti>Master of Arts</Ammatti>
+    <SyntymaPvm>1963</SyntymaPvm>
+    <SyntymaPaikka>Leppävirta</SyntymaPaikka>
+    <KuolemaPvm/>
+    <KuolemaPaikka/>
+    <SukuPuoliKoodi>Nainen</SukuPuoliKoodi>
+    <NykyinenKotikunta>Joensuu</NykyinenKotikunta>
+    <KansanedustajuusPaattynytPvm/>
+    <Koulutukset>
+        <Koulutus>
+            <Nimi>matriculated</Nimi>
+            <Oppilaitos>Savonlinnan Taidelukio</Oppilaitos>
+            <Vuosi>1982</Vuosi>
+        </Koulutus>
+        <Koulutus>
+            <Nimi>secretary for cultural affairs</Nimi>
+            <Oppilaitos>Alkio-opisto</Oppilaitos>
+            <Vuosi>1984</Vuosi>
+        </Koulutus>
+        <Koulutus>
+            <Nimi>Master of Arts</Nimi>
+            <Oppilaitos>University of Joensuu</Oppilaitos>
+            <Vuosi>1994</Vuosi>
+        </Koulutus>
+    </Koulutukset>
+    <TyoUra>
+        <Tyo>
+            <Nimi>acting cultural secretary for the Union of Rural Education and Culture in Helsinki</Nimi>
+            <AikaJakso>1986</AikaJakso>
+        </Tyo>
+        <Tyo>
+            <Nimi>adviser to the Minister for Foreign Affairs</Nimi>
+            <AikaJakso>1991-1993</AikaJakso>
+        </Tyo>
+        <Tyo>
+            <Nimi>information officer for Dr Paavo Väyrynen&#146;s presidential campaign in Helsinki</Nimi>
+            <AikaJakso>1993-1994</AikaJakso>
+        </Tyo>
+        <Tyo>
+            <Nimi>secretary for Vierailuteatteri (drama company)</Nimi>
+            <AikaJakso>1994</AikaJakso>
+        </Tyo>
+        <Tyo>
+            <Nimi>managing director of Joensuun Röntgen Oy</Nimi>
+            <AikaJakso>2003-2004</AikaJakso>
+        </Tyo>
+        <Tyo>
+            <Nimi>director of the North Karelia district of the Mannerheim League for Child Welfare</Nimi>
+            <AikaJakso>2003-2005</AikaJakso>
+        </Tyo>
+    </TyoUra>
+    <Vanhemmat/>
+    <Puolisot/>
+    <Lapset/>
+    <Arvonimet>
+        <Arvonimi>
+            <Nimi/>
+            <Oppilaitos/>
+            <Vuosi/>
+            <LisaTieto/>
+        </Arvonimi>
+    </Arvonimet>
+    <Sotilasarvo/>
+    <AseetonpalvelusVuosi/>
+    <SiviilipalvelusVuosi/>
+    <Vaalipiirit>
+        <NykyinenVaalipiiri>
+            <Nimi>Electoral District of Savo-Karelia</Nimi>
+            <AlkuPvm>22.04.2015</AlkuPvm>
+            <Tunnus>saka01</Tunnus>
+        </NykyinenVaalipiiri>
+        <EdellisetVaalipiirit>
+            <VaaliPiiri>
+                <Nimi>Pohjois-Karjala constituencey</Nimi>
+                <AlkuPvm>24.03.1995</AlkuPvm>
+                <LoppuPvm>23.03.1999</LoppuPvm>
+                <Tunnus>pka02</Tunnus>
+            </VaaliPiiri>
+            <VaaliPiiri>
+                <Nimi>Pohjois-Karjala constituency</Nimi>
+                <AlkuPvm>24.03.1999</AlkuPvm>
+                <LoppuPvm>18.03.2003</LoppuPvm>
+                <Tunnus>pka03</Tunnus>
+            </VaaliPiiri>
+            <VaaliPiiri>
+                <Nimi>Pohjois-Karjala constituency</Nimi>
+                <AlkuPvm>21.03.2007</AlkuPvm>
+                <LoppuPvm>21.04.2015</LoppuPvm>
+                <Tunnus>pka03</Tunnus>
+            </VaaliPiiri>
+        </EdellisetVaalipiirit>
+    </Vaalipiirit>
+    <Edustajatoimet>
+        <Edustajatoimi>
+            <AlkuPvm>24.03.1995</AlkuPvm>
+            <LoppuPvm>18.03.2003</LoppuPvm>
+        </Edustajatoimi>
+        <Edustajatoimi>
+            <AlkuPvm>21.03.2007</AlkuPvm>
+            <LoppuPvm/>
+        </Edustajatoimi>
+    </Edustajatoimet>
+    <Eduskuntaryhmat>
+        <NykyinenEduskuntaryhma>
+            <Nimi>Centre Party Parliamentary Group</Nimi>
+            <EntNimi>
+                <Nimi>Finnish Centre Party</Nimi>
+                <AlkuPvm/>
+                <LoppuPvm>16.02.2016</LoppuPvm>
+            </EntNimi>
+            <Tunnus>kesk01</Tunnus>
+            <AlkuPvm>21.03.2007</AlkuPvm>
+        </NykyinenEduskuntaryhma>
+        <EdellisetEduskuntaryhmat>
+            <Eduskuntaryhma>
+                <Nimi>Centre Party Parliamentary Group</Nimi>
+                <EntNimi>
+                    <Nimi>Finnish Centre Party</Nimi>
+                    <AlkuPvm/>
+                    <LoppuPvm>16.02.2016</LoppuPvm>
+                </EntNimi>
+                <Tunnus>kesk01</Tunnus>
+                <Jasenyys>
+                    <AlkuPvm>24.03.1995</AlkuPvm>
+                    <LoppuPvm>18.03.2003</LoppuPvm>
+                    <AikaJakso/>
+                </Jasenyys>
+            </Eduskuntaryhma>
+        </EdellisetEduskuntaryhmat>
+        <TehtavatEduskuntaryhmassa>
+            <Eduskuntaryhma>
+                <Nimi/>
+                <EntNimi>
+                    <Nimi/>
+                    <AlkuPvm/>
+                    <LoppuPvm/>
+                </EntNimi>
+                <Tunnus/>
+                <ToimielinNimi/>
+                <ToimielinTunnus/>
+                <Tehtava>
+                    <Rooli/>
+                    <AlkuPvm/>
+                    <LoppuPvm/>
+                    <AikaJakso/>
+                </Tehtava>
+            </Eduskuntaryhma>
+        </TehtavatEduskuntaryhmassa>
+        <TehtavatAiemmissaEduskuntaryhmissa>
+            <Eduskuntaryhma>
+                <Nimi>Centre Party Parliamentary Group</Nimi>
+                <EntNimi>
+                    <Nimi>Finnish Centre Party</Nimi>
+                    <AlkuPvm/>
+                    <LoppuPvm>16.02.2016</LoppuPvm>
+                </EntNimi>
+                <Tunnus>kesk01</Tunnus>
+                <ToimielinNimi/>
+                <ToimielinTunnus/>
+                <Tehtava>
+                    <Rooli>1st vice chair</Rooli>
+                    <AlkuPvm>1995</AlkuPvm>
+                    <LoppuPvm>1999</LoppuPvm>
+                    <AikaJakso/>
+                </Tehtava>
+                <Tehtava>
+                    <Rooli>1st vice chair</Rooli>
+                    <AlkuPvm>04.02.2002</AlkuPvm>
+                    <LoppuPvm>18.03.2003</LoppuPvm>
+                    <AikaJakso/>
+                </Tehtava>
+                <Tehtava>
+                    <Rooli>1st vice chair</Rooli>
+                    <AlkuPvm>22.03.2007</AlkuPvm>
+                    <LoppuPvm>18.04.2007</LoppuPvm>
+                    <AikaJakso/>
+                </Tehtava>
+            </Eduskuntaryhma>
+        </TehtavatAiemmissaEduskuntaryhmissa>
+    </Eduskuntaryhmat>
+    <NykyisetToimielinjasenyydet>
+        <Toimielin OnkoValiokunta="false">
+            <Nimi>Speakers</Nimi>
+            <EntNimi>
+                <Nimi/>
+                <AlkuPvm/>
+                <LoppuPvm/>
+            </EntNimi>
+            <Tunnus>pmt01</Tunnus>
+            <Jasenyys>
+                <Rooli>Speaker</Rooli>
+                <AlkuPvm>09.06.2020</AlkuPvm>
+                <LoppuPvm/>
+                <AikaJakso/>
+            </Jasenyys>
+        </Toimielin>
+        <Toimielin OnkoValiokunta="false">
+            <Nimi>Speaker's Council</Nimi>
+            <EntNimi>
+                <Nimi/>
+                <AlkuPvm/>
+                <LoppuPvm/>
+            </EntNimi>
+            <Tunnus>pmn01</Tunnus>
+            <Jasenyys>
+                <Rooli>member</Rooli>
+                <AlkuPvm>18.06.2019</AlkuPvm>
+                <LoppuPvm/>
+                <AikaJakso/>
+            </Jasenyys>
+            <Jasenyys>
+                <Rooli>Speaker</Rooli>
+                <AlkuPvm>09.06.2020</AlkuPvm>
+                <LoppuPvm/>
+                <AikaJakso/>
+            </Jasenyys>
+        </Toimielin>
+        <Toimielin OnkoValiokunta="false">
+            <Nimi>Chancellery Commission</Nimi>
+            <EntNimi>
+                <Nimi/>
+                <AlkuPvm/>
+                <LoppuPvm/>
+            </EntNimi>
+            <Tunnus>ktk01</Tunnus>
+            <Jasenyys>
+                <Rooli>Speaker</Rooli>
+                <AlkuPvm>09.06.2020</AlkuPvm>
+                <LoppuPvm/>
+                <AikaJakso/>
+            </Jasenyys>
+        </Toimielin>
+        <Toimielin OnkoValiokunta="false">
+            <Nimi>Supervisory Board for the Finnish Innovation Fund Sitra</Nimi>
+            <EntNimi>
+                <Nimi/>
+                <AlkuPvm/>
+                <LoppuPvm/>
+            </EntNimi>
+            <Tunnus>str01</Tunnus>
+            <Jasenyys>
+                <Rooli>member</Rooli>
+                <AlkuPvm>20.02.2020</AlkuPvm>
+                <LoppuPvm/>
+                <AikaJakso/>
+            </Jasenyys>
+        </Toimielin>
+        <Toimielin OnkoValiokunta="false">
+            <Nimi>Forum for International Affairs</Nimi>
+            <EntNimi>
+                <Nimi/>
+                <AlkuPvm/>
+                <LoppuPvm/>
+            </EntNimi>
+            <Tunnus>kvf01</Tunnus>
+            <Jasenyys>
+                <Rooli>member</Rooli>
+                <AlkuPvm>18.06.2019</AlkuPvm>
+                <LoppuPvm/>
+                <AikaJakso/>
+            </Jasenyys>
+            <Jasenyys>
+                <Rooli>Speaker</Rooli>
+                <AlkuPvm>09.06.2020</AlkuPvm>
+                <LoppuPvm/>
+                <AikaJakso/>
+            </Jasenyys>
+        </Toimielin>
+    </NykyisetToimielinjasenyydet>
+    <AiemmatToimielinjasenyydet>
+        <Toimielin OnkoValiokunta="true">
+            <Nimi>Foreign Affairs Committee</Nimi>
+            <EntNimi>
+                <Nimi/>
+                <AlkuPvm/>
+                <LoppuPvm/>
+            </EntNimi>
+            <Tunnus>uav01</Tunnus>
+            <Jasenyys>
+                <Rooli>deputy member</Rooli>
+                <AlkuPvm>05.04.1995</AlkuPvm>
+                <LoppuPvm>25.04.1995</LoppuPvm>
+                <AikaJakso/>
+            </Jasenyys>
+        </Toimielin>
+        <Toimielin OnkoValiokunta="true">
+            <Nimi>Administration Committee</Nimi>
+            <EntNimi>
+                <Nimi/>
+                <AlkuPvm/>
+                <LoppuPvm/>
+            </EntNimi>
+            <Tunnus>hav01</Tunnus>
+            <Jasenyys>
+                <Rooli>deputy member</Rooli>
+                <AlkuPvm>05.04.1995</AlkuPvm>
+                <LoppuPvm>23.03.1999</LoppuPvm>
+                <AikaJakso/>
+            </Jasenyys>
+            <Jasenyys>
+                <Rooli>member</Rooli>
+                <AlkuPvm>03.04.2007</AlkuPvm>
+                <LoppuPvm>18.04.2007</LoppuPvm>
+                <AikaJakso/>
+            </Jasenyys>
+        </Toimielin>
+        <Toimielin OnkoValiokunta="true">
+            <Nimi>Commerce Committee</Nimi>
+            <EntNimi>
+                <Nimi/>
+                <AlkuPvm/>
+                <LoppuPvm/>
+            </EntNimi>
+            <Tunnus>tav01</Tunnus>
+            <Jasenyys>
+                <Rooli>member</Rooli>
+                <AlkuPvm>05.04.1995</AlkuPvm>
+                <LoppuPvm>25.04.1995</LoppuPvm>
+                <AikaJakso/>
+            </Jasenyys>
+            <Jasenyys>
+                <Rooli>deputy member</Rooli>
+                <AlkuPvm>28.04.1995</AlkuPvm>
+                <LoppuPvm>14.05.1996</LoppuPvm>
+                <AikaJakso/>
+            </Jasenyys>
+        </Toimielin>
+        <Toimielin OnkoValiokunta="true">
+            <Nimi>Environment Committee</Nimi>
+            <EntNimi>
+                <Nimi/>
+                <AlkuPvm/>
+                <LoppuPvm/>
+            </EntNimi>
+            <Tunnus>ymv01</Tunnus>
+            <Jasenyys>
+                <Rooli>member</Rooli>
+                <AlkuPvm>05.04.1995</AlkuPvm>
+                <LoppuPvm>25.04.1995</LoppuPvm>
+                <AikaJakso/>
+            </Jasenyys>
+            <Jasenyys>
+                <Rooli>deputy member</Rooli>
+                <AlkuPvm>28.04.1995</AlkuPvm>
+                <LoppuPvm>14.04.1997</LoppuPvm>
+                <AikaJakso/>
+            </Jasenyys>
+            <Jasenyys>
+                <Rooli>member</Rooli>
+                <AlkuPvm>15.04.1997</AlkuPvm>
+                <LoppuPvm>03.09.1997</LoppuPvm>
+                <AikaJakso/>
+            </Jasenyys>
+            <Jasenyys>
+                <Rooli>deputy member</Rooli>
+                <AlkuPvm>05.09.1997</AlkuPvm>
+                <LoppuPvm>23.03.1999</LoppuPvm>
+                <AikaJakso/>
+            </Jasenyys>
+            <Jasenyys>
+                <Rooli>deputy member</Rooli>
+                <AlkuPvm>03.04.2007</AlkuPvm>
+                <LoppuPvm>18.04.2007</LoppuPvm>
+                <AikaJakso/>
+            </Jasenyys>
+            <Jasenyys>
+                <Rooli>deputy member</Rooli>
+                <AlkuPvm>03.04.2020</AlkuPvm>
+                <LoppuPvm>10.06.2020</LoppuPvm>
+                <AikaJakso/>
+            </Jasenyys>
+        </Toimielin>
+        <Toimielin OnkoValiokunta="true">
+            <Nimi>Education and Culture Committee</Nimi>
+            <EntNimi>
+                <Nimi/>
+                <AlkuPvm/>
+                <LoppuPvm/>
+            </EntNimi>
+            <Tunnus>siv01</Tunnus>
+            <Jasenyys>
+                <Rooli>member</Rooli>
+                <AlkuPvm>28.04.1995</AlkuPvm>
+                <LoppuPvm>23.03.1999</LoppuPvm>
+                <AikaJakso/>
+            </Jasenyys>
+            <Jasenyys>
+                <Rooli>deputy member</Rooli>
+                <AlkuPvm>03.04.2007</AlkuPvm>
+                <LoppuPvm>18.04.2007</LoppuPvm>
+                <AikaJakso/>
+            </Jasenyys>
+        </Toimielin>
+        <Toimielin OnkoValiokunta="true">
+            <Nimi>Finance Committee</Nimi>
+            <EntNimi>
+                <Nimi/>
+                <AlkuPvm/>
+                <LoppuPvm/>
+            </EntNimi>
+            <Tunnus>vav01</Tunnus>
+            <Jasenyys>
+                <Rooli>deputy member</Rooli>
+                <AlkuPvm>07.04.1999</AlkuPvm>
+                <LoppuPvm>24.11.2000</LoppuPvm>
+                <AikaJakso/>
+            </Jasenyys>
+            <Jasenyys>
+                <Rooli>deputy member</Rooli>
+                <AlkuPvm>07.09.2001</AlkuPvm>
+                <LoppuPvm>18.03.2003</LoppuPvm>
+                <AikaJakso/>
+            </Jasenyys>
+            <Jasenyys>
+                <Rooli>member</Rooli>
+                <AlkuPvm>05.05.2015</AlkuPvm>
+                <LoppuPvm>28.05.2015</LoppuPvm>
+                <AikaJakso/>
+            </Jasenyys>
+        </Toimielin>
+        <Toimielin OnkoValiokunta="true">
+            <Nimi>Committee for the Future</Nimi>
+            <EntNimi>
+                <Nimi/>
+                <AlkuPvm/>
+                <LoppuPvm/>
+            </EntNimi>
+            <Tunnus>tuv01</Tunnus>
+            <Jasenyys>
+                <Rooli>member</Rooli>
+                <AlkuPvm>23.04.1999</AlkuPvm>
+                <LoppuPvm>21.09.1999</LoppuPvm>
+                <AikaJakso/>
+            </Jasenyys>
+            <Jasenyys>
+                <Rooli>deputy member</Rooli>
+                <AlkuPvm>09.09.2014</AlkuPvm>
+                <LoppuPvm>28.05.2015</LoppuPvm>
+                <AikaJakso/>
+            </Jasenyys>
+        </Toimielin>
+        <Toimielin OnkoValiokunta="true">
+            <Nimi>Social Affairs and Health Committee</Nimi>
+            <EntNimi>
+                <Nimi/>
+                <AlkuPvm/>
+                <LoppuPvm/>
+            </EntNimi>
+            <Tunnus>stv01</Tunnus>
+            <Jasenyys>
+                <Rooli>member</Rooli>
+                <AlkuPvm>30.06.2011</AlkuPvm>
+                <LoppuPvm>21.04.2015</LoppuPvm>
+                <AikaJakso/>
+            </Jasenyys>
+            <Jasenyys>
+                <Rooli>Chair</Rooli>
+                <AlkuPvm>18.06.2019</AlkuPvm>
+                <LoppuPvm>10.06.2020</LoppuPvm>
+                <AikaJakso/>
+            </Jasenyys>
+        </Toimielin>
+        <Toimielin OnkoValiokunta="true">
+            <Nimi>Employment and Equality Committee</Nimi>
+            <EntNimi>
+                <Nimi/>
+                <AlkuPvm/>
+                <LoppuPvm/>
+            </EntNimi>
+            <Tunnus>tyv01</Tunnus>
+            <Jasenyys>
+                <Rooli>deputy member</Rooli>
+                <AlkuPvm>30.06.2011</AlkuPvm>
+                <LoppuPvm>18.11.2014</LoppuPvm>
+                <AikaJakso/>
+            </Jasenyys>
+        </Toimielin>
+        <Toimielin OnkoValiokunta="true">
+            <Nimi>Audit Committee</Nimi>
+            <EntNimi>
+                <Nimi/>
+                <AlkuPvm/>
+                <LoppuPvm/>
+            </EntNimi>
+            <Tunnus>trv01</Tunnus>
+            <Jasenyys>
+                <Rooli>deputy member</Rooli>
+                <AlkuPvm>18.06.2019</AlkuPvm>
+                <LoppuPvm>10.06.2020</LoppuPvm>
+                <AikaJakso/>
+            </Jasenyys>
+        </Toimielin>
+        <Toimielin OnkoValiokunta="false">
+            <Nimi>Electors</Nimi>
+            <EntNimi>
+                <Nimi/>
+                <AlkuPvm/>
+                <LoppuPvm/>
+            </EntNimi>
+            <Tunnus>val01</Tunnus>
+            <Jasenyys>
+                <Rooli>deputy member</Rooli>
+                <AlkuPvm>31.03.1995</AlkuPvm>
+                <LoppuPvm>23.03.1999</LoppuPvm>
+                <AikaJakso/>
+            </Jasenyys>
+        </Toimielin>
+    </AiemmatToimielinjasenyydet>
+    <ValtiollisetLuottamustehtavat>
+        <Tehtava>
+            <Nimi/>
+            <AikaJakso/>
+        </Tehtava>
+    </ValtiollisetLuottamustehtavat>
+    <KansanvalisetLuottamustehtavat>
+        <Tehtava>
+            <Nimi/>
+            <AikaJakso/>
+        </Tehtava>
+    </KansanvalisetLuottamustehtavat>
+    <KunnallisetLuottamustehtavat>
+        <Tehtava>
+            <Nimi/>
+            <AikaJakso/>
+        </Tehtava>
+    </KunnallisetLuottamustehtavat>
+    <MuutLuottamustehtavat>
+        <Tehtava>
+            <Nimi/>
+            <AikaJakso/>
+        </Tehtava>
+    </MuutLuottamustehtavat>
+    <ValtioneuvostonJasenyydet>
+        <Jasenyys>
+            <Ministeriys>Minister</Ministeriys>
+            <Nimi>Minister of Transport</Nimi>
+            <Hallitus>Vanhanen II</Hallitus>
+            <AlkuPvm>19.04.2007</AlkuPvm>
+            <LoppuPvm>21.06.2010</LoppuPvm>
+        </Jasenyys>
+        <Jasenyys>
+            <Ministeriys>Minister</Ministeriys>
+            <Nimi>Minister of Transport</Nimi>
+            <Hallitus>Kiviniemi</Hallitus>
+            <AlkuPvm>22.06.2010</AlkuPvm>
+            <LoppuPvm>21.06.2011</LoppuPvm>
+        </Jasenyys>
+        <Jasenyys>
+            <Ministeriys>Minister</Ministeriys>
+            <Nimi>Minister of Local Government and Public Reforms</Nimi>
+            <Hallitus>Sipilä</Hallitus>
+            <AlkuPvm>29.05.2015</AlkuPvm>
+            <LoppuPvm>28.05.2019</LoppuPvm>
+        </Jasenyys>
+        <Jasenyys>
+            <Ministeriys>Minister</Ministeriys>
+            <Nimi>Minister of Local Government and Transport</Nimi>
+            <Hallitus>Sipilä</Hallitus>
+            <AlkuPvm>29.05.2019</AlkuPvm>
+            <LoppuPvm>05.06.2019</LoppuPvm>
+        </Jasenyys>
+    </ValtioneuvostonJasenyydet>
+    <Sidonnaisuudet>
+        <Sidonnaisuus>
+            <Sidonta/>
+            <Otsikko/>
+            <RyhmaOtsikko/>
+        </Sidonnaisuus>
+    </Sidonnaisuudet>
+    <LisaTiedot>Commander of the Order of the White Rose of Finland 2008, Order of Merit for Motor Traffic 2013, golden badge of honour of the Association of Finnish Local and Regional Authorities</LisaTiedot>
+    <EdustajanJulkaisut>
+        <EdustajanJulkaisu>
+            <Nimi/>
+            <Vuosi/>
+            <Tekijat/>
+        </EdustajanJulkaisu>
+    </EdustajanJulkaisut>
+    <KirjallisuuttaEdustajasta>
+        <Julkaisu>
+            <Nimi/>
+            <Vuosi/>
+            <Tekijat/>
+        </Julkaisu>
+    </KirjallisuuttaEdustajasta>
+    <EdustajatoimiKeskeytynyt>
+        <ToimenKeskeytys>
+            <Selite/>
+            <TilallaHenkilo/>
+            <AlkuPvm/>
+            <LoppuPvm/>
+        </ToimenKeskeytys>
+    </EdustajatoimiKeskeytynyt>
+    <Kansanedustajana>
+        <Keskeytys>
+            <Selite/>
+            <TilallaSelite/>
+            <TilallaHenkilo/>
+            <AlkuPvm/>
+            <LoppuPvm/>
+        </Keskeytys>
+    </Kansanedustajana>
+</Henkilo>

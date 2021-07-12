@@ -17,6 +17,7 @@ from lxml import etree
 
 from fi_parliament_tools.transcriptParser.data_structures import EmbeddedStatement
 from fi_parliament_tools.transcriptParser.data_structures import Statement
+from fi_parliament_tools.transcriptParser.documents import MPInfo
 from fi_parliament_tools.transcriptParser.documents import Session
 from fi_parliament_tools.transcriptParser.query import Query
 from fi_parliament_tools.transcriptParser.query import SessionQuery
@@ -49,6 +50,14 @@ def session(request: SubRequest) -> Session:
     number, year = request.param
     xml = etree.parse(f"tests/data/xmls/session-{number:03}-{year}.xml")
     return Session(number, year, xml)
+
+
+@pytest.fixture(scope="module")
+def mpinfo(request: SubRequest) -> MPInfo:
+    """Initialize and return an MPInfo object for given XML."""
+    xml_path = request.param
+    xml = etree.parse(xml_path)
+    return MPInfo(xml)
 
 
 @pytest.fixture(scope="module")

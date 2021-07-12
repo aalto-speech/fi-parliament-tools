@@ -1,0 +1,390 @@
+<?xml version="1.0" standalone="no"?>
+<Henkilo kieliKoodi="SV" tyyppiKoodi="Kansanedustaja">
+    <HenkiloNro>1374</HenkiloNro>
+    <EtunimetNimi>Veronica Elisabeth</EtunimetNimi>
+    <SukuNimi> Rehn-Kivi</SukuNimi>
+    <LajitteluNimi>rehn-kivi veronica</LajitteluNimi>
+    <KutsumaNimi>Veronica</KutsumaNimi>
+    <MatrikkeliNimi>Rehn-Kivi, Veronica Elisabeth</MatrikkeliNimi>
+    <Puh>09 432 3027</Puh>
+    <SahkoPosti>veronica.rehn-kivi@parliament.fi</SahkoPosti>
+    <KotiSivu>www.rehnkivi.fi</KotiSivu>
+    <Ammatti>architect, building supervsion manager</Ammatti>
+    <SyntymaPvm>1956</SyntymaPvm>
+    <SyntymaPaikka>Helsinki</SyntymaPaikka>
+    <KuolemaPvm/>
+    <KuolemaPaikka/>
+    <SukuPuoliKoodi>Nainen</SukuPuoliKoodi>
+    <NykyinenKotikunta>Kauniainen</NykyinenKotikunta>
+    <KansanedustajuusPaattynytPvm/>
+    <Koulutukset>
+        <Koulutus>
+            <Nimi>architect</Nimi>
+            <Oppilaitos>Helsinki University of Technology</Oppilaitos>
+            <Vuosi>1988</Vuosi>
+        </Koulutus>
+    </Koulutukset>
+    <TyoUra>
+        <Tyo>
+            <Nimi>Arkkitehtitoimisto Kaija ja Heikki Siren (sittemmin Siren Arkkitehdit Oy), suunnittelija</Nimi>
+            <AikaJakso>1981-1991</AikaJakso>
+        </Tyo>
+        <Tyo>
+            <Nimi>Eriksson Arkkitehdit Oy, suunnittelija</Nimi>
+            <AikaJakso>1994-1996</AikaJakso>
+        </Tyo>
+        <Tyo>
+            <Nimi>Espoon kaupunki, rakennusvirasto:</Nimi>
+            <AikaJakso/>
+        </Tyo>
+        <Tyo>
+            <Nimi>tarkastusarkkitehti</Nimi>
+            <AikaJakso>1997-2001</AikaJakso>
+        </Tyo>
+        <Tyo>
+            <Nimi>kaupunkikuva-arkkitehti</Nimi>
+            <AikaJakso>2001-2003</AikaJakso>
+        </Tyo>
+        <Tyo>
+            <Nimi>rakennuslupapäällikkö</Nimi>
+            <AikaJakso>2003-2007</AikaJakso>
+        </Tyo>
+        <Tyo>
+            <Nimi>rakennusvalvontapäällikkö</Nimi>
+            <AikaJakso>2008-</AikaJakso>
+        </Tyo>
+    </TyoUra>
+    <Vanhemmat/>
+    <Puolisot/>
+    <Lapset/>
+    <Arvonimet>
+        <Arvonimi>
+            <Nimi/>
+            <Oppilaitos/>
+            <Vuosi/>
+            <LisaTieto/>
+        </Arvonimi>
+    </Arvonimet>
+    <Sotilasarvo/>
+    <AseetonpalvelusVuosi/>
+    <SiviilipalvelusVuosi/>
+    <Vaalipiirit>
+        <NykyinenVaalipiiri>
+            <Nimi>Electoral District of Uusimaa</Nimi>
+            <AlkuPvm>09.08.2016</AlkuPvm>
+            <Tunnus>uus02</Tunnus>
+        </NykyinenVaalipiiri>
+        <EdellisetVaalipiirit>
+            <VaaliPiiri>
+                <Nimi/>
+                <AlkuPvm/>
+                <LoppuPvm/>
+                <Tunnus/>
+            </VaaliPiiri>
+        </EdellisetVaalipiirit>
+    </Vaalipiirit>
+    <Edustajatoimet>
+        <Edustajatoimi>
+            <AlkuPvm>09.08.2016</AlkuPvm>
+            <LoppuPvm/>
+        </Edustajatoimi>
+    </Edustajatoimet>
+    <Eduskuntaryhmat>
+        <NykyinenEduskuntaryhma>
+            <Nimi>Swedish Parliamentary Group</Nimi>
+            <EntNimi>
+                <Nimi/>
+                <AlkuPvm/>
+                <LoppuPvm/>
+            </EntNimi>
+            <Tunnus>r01</Tunnus>
+            <AlkuPvm>09.08.2016</AlkuPvm>
+        </NykyinenEduskuntaryhma>
+        <EdellisetEduskuntaryhmat>
+            <Eduskuntaryhma>
+                <Nimi/>
+                <EntNimi>
+                    <Nimi/>
+                    <AlkuPvm/>
+                    <LoppuPvm/>
+                </EntNimi>
+                <Tunnus/>
+                <Jasenyys>
+                    <AlkuPvm/>
+                    <LoppuPvm/>
+                    <AikaJakso/>
+                </Jasenyys>
+            </Eduskuntaryhma>
+        </EdellisetEduskuntaryhmat>
+        <TehtavatEduskuntaryhmassa>
+            <Eduskuntaryhma>
+                <Nimi/>
+                <EntNimi>
+                    <Nimi/>
+                    <AlkuPvm/>
+                    <LoppuPvm/>
+                </EntNimi>
+                <Tunnus/>
+                <ToimielinNimi/>
+                <ToimielinTunnus/>
+                <Tehtava>
+                    <Rooli/>
+                    <AlkuPvm/>
+                    <LoppuPvm/>
+                    <AikaJakso/>
+                </Tehtava>
+            </Eduskuntaryhma>
+        </TehtavatEduskuntaryhmassa>
+        <TehtavatAiemmissaEduskuntaryhmissa>
+            <Eduskuntaryhma>
+                <Nimi/>
+                <EntNimi>
+                    <Nimi/>
+                    <AlkuPvm/>
+                    <LoppuPvm/>
+                </EntNimi>
+                <Tunnus/>
+                <ToimielinNimi/>
+                <ToimielinTunnus/>
+                <Tehtava>
+                    <Rooli/>
+                    <AlkuPvm/>
+                    <LoppuPvm/>
+                    <AikaJakso/>
+                </Tehtava>
+            </Eduskuntaryhma>
+        </TehtavatAiemmissaEduskuntaryhmissa>
+    </Eduskuntaryhmat>
+    <NykyisetToimielinjasenyydet>
+        <Toimielin OnkoValiokunta="true">
+            <Nimi>Social Affairs and Health Committee</Nimi>
+            <EntNimi>
+                <Nimi/>
+                <AlkuPvm/>
+                <LoppuPvm/>
+            </EntNimi>
+            <Tunnus>stv01</Tunnus>
+            <Jasenyys>
+                <Rooli>member</Rooli>
+                <AlkuPvm>18.06.2019</AlkuPvm>
+                <LoppuPvm/>
+                <AikaJakso/>
+            </Jasenyys>
+        </Toimielin>
+        <Toimielin OnkoValiokunta="true">
+            <Nimi>Intelligence Supervision Committee</Nimi>
+            <EntNimi>
+                <Nimi/>
+                <AlkuPvm/>
+                <LoppuPvm/>
+            </EntNimi>
+            <Tunnus>tiv01</Tunnus>
+            <Jasenyys>
+                <Rooli>member</Rooli>
+                <AlkuPvm>26.06.2019</AlkuPvm>
+                <LoppuPvm/>
+                <AikaJakso/>
+            </Jasenyys>
+        </Toimielin>
+        <Toimielin OnkoValiokunta="true">
+            <Nimi>Employment and Equality Committee</Nimi>
+            <EntNimi>
+                <Nimi/>
+                <AlkuPvm/>
+                <LoppuPvm/>
+            </EntNimi>
+            <Tunnus>tyv01</Tunnus>
+            <Jasenyys>
+                <Rooli>deputy member</Rooli>
+                <AlkuPvm>03.04.2020</AlkuPvm>
+                <LoppuPvm/>
+                <AikaJakso/>
+            </Jasenyys>
+        </Toimielin>
+    </NykyisetToimielinjasenyydet>
+    <AiemmatToimielinjasenyydet>
+        <Toimielin OnkoValiokunta="true">
+            <Nimi>Social Affairs and Health Committee</Nimi>
+            <EntNimi>
+                <Nimi/>
+                <AlkuPvm/>
+                <LoppuPvm/>
+            </EntNimi>
+            <Tunnus>stv01</Tunnus>
+            <Jasenyys>
+                <Rooli>member</Rooli>
+                <AlkuPvm>08.09.2016</AlkuPvm>
+                <LoppuPvm>16.04.2019</LoppuPvm>
+                <AikaJakso/>
+            </Jasenyys>
+        </Toimielin>
+        <Toimielin OnkoValiokunta="true">
+            <Nimi>Employment and Equality Committee</Nimi>
+            <EntNimi>
+                <Nimi/>
+                <AlkuPvm/>
+                <LoppuPvm/>
+            </EntNimi>
+            <Tunnus>tyv01</Tunnus>
+            <Jasenyys>
+                <Rooli>member</Rooli>
+                <AlkuPvm>08.09.2016</AlkuPvm>
+                <LoppuPvm>17.06.2019</LoppuPvm>
+                <AikaJakso/>
+            </Jasenyys>
+        </Toimielin>
+        <Toimielin OnkoValiokunta="true">
+            <Nimi>Finance Committee</Nimi>
+            <EntNimi>
+                <Nimi/>
+                <AlkuPvm/>
+                <LoppuPvm/>
+            </EntNimi>
+            <Tunnus>vav01</Tunnus>
+            <Jasenyys>
+                <Rooli>deputy member</Rooli>
+                <AlkuPvm>02.05.2019</AlkuPvm>
+                <LoppuPvm>17.06.2019</LoppuPvm>
+                <AikaJakso/>
+            </Jasenyys>
+            <Jasenyys>
+                <Rooli>deputy member</Rooli>
+                <AlkuPvm>18.06.2019</AlkuPvm>
+                <LoppuPvm>18.02.2021</LoppuPvm>
+                <AikaJakso/>
+            </Jasenyys>
+        </Toimielin>
+        <Toimielin OnkoValiokunta="true">
+            <Nimi>Subcommittee for Education and Science</Nimi>
+            <EntNimi>
+                <Nimi/>
+                <AlkuPvm/>
+                <LoppuPvm/>
+            </EntNimi>
+            <Tunnus>sitj01</Tunnus>
+            <Jasenyys>
+                <Rooli>member</Rooli>
+                <AlkuPvm>06.09.2019</AlkuPvm>
+                <LoppuPvm>18.02.2021</LoppuPvm>
+                <AikaJakso/>
+            </Jasenyys>
+        </Toimielin>
+        <Toimielin OnkoValiokunta="true">
+            <Nimi>Communications Subcommittee</Nimi>
+            <EntNimi>
+                <Nimi/>
+                <AlkuPvm/>
+                <LoppuPvm/>
+            </EntNimi>
+            <Tunnus>lij01</Tunnus>
+            <Jasenyys>
+                <Rooli>member</Rooli>
+                <AlkuPvm>06.09.2019</AlkuPvm>
+                <LoppuPvm>18.02.2021</LoppuPvm>
+                <AikaJakso/>
+            </Jasenyys>
+        </Toimielin>
+        <Toimielin OnkoValiokunta="true">
+            <Nimi>Subcommittee for Municipal and Health Affairs</Nimi>
+            <EntNimi>
+                <Nimi/>
+                <AlkuPvm/>
+                <LoppuPvm/>
+            </EntNimi>
+            <Tunnus>sotj01</Tunnus>
+            <Jasenyys>
+                <Rooli>additional member</Rooli>
+                <AlkuPvm>06.09.2019</AlkuPvm>
+                <LoppuPvm>18.02.2021</LoppuPvm>
+                <AikaJakso/>
+            </Jasenyys>
+        </Toimielin>
+        <Toimielin OnkoValiokunta="false">
+            <Nimi>Council to the Itsenäisyyden juhlavuoden lastensäätiö</Nimi>
+            <EntNimi>
+                <Nimi/>
+                <AlkuPvm/>
+                <LoppuPvm/>
+            </EntNimi>
+            <Tunnus>itla01</Tunnus>
+            <Jasenyys>
+                <Rooli>deputy member</Rooli>
+                <AlkuPvm>23.02.2018</AlkuPvm>
+                <LoppuPvm>17.06.2019</LoppuPvm>
+                <AikaJakso/>
+            </Jasenyys>
+        </Toimielin>
+    </AiemmatToimielinjasenyydet>
+    <ValtiollisetLuottamustehtavat>
+        <Tehtava>
+            <Nimi/>
+            <AikaJakso/>
+        </Tehtava>
+    </ValtiollisetLuottamustehtavat>
+    <KansanvalisetLuottamustehtavat>
+        <Tehtava>
+            <Nimi/>
+            <AikaJakso/>
+        </Tehtava>
+    </KansanvalisetLuottamustehtavat>
+    <KunnallisetLuottamustehtavat>
+        <Tehtava>
+            <Nimi/>
+            <AikaJakso/>
+        </Tehtava>
+    </KunnallisetLuottamustehtavat>
+    <MuutLuottamustehtavat>
+        <Tehtava>
+            <Nimi/>
+            <AikaJakso/>
+        </Tehtava>
+    </MuutLuottamustehtavat>
+    <ValtioneuvostonJasenyydet>
+        <Jasenyys>
+            <Ministeriys/>
+            <Nimi/>
+            <Hallitus/>
+            <AlkuPvm/>
+            <LoppuPvm/>
+        </Jasenyys>
+    </ValtioneuvostonJasenyydet>
+    <Sidonnaisuudet>
+        <Sidonnaisuus>
+            <Sidonta/>
+            <Otsikko/>
+            <RyhmaOtsikko/>
+        </Sidonnaisuus>
+    </Sidonnaisuudet>
+    <LisaTiedot/>
+    <EdustajanJulkaisut>
+        <EdustajanJulkaisu>
+            <Nimi/>
+            <Vuosi/>
+            <Tekijat/>
+        </EdustajanJulkaisu>
+    </EdustajanJulkaisut>
+    <KirjallisuuttaEdustajasta>
+        <Julkaisu>
+            <Nimi/>
+            <Vuosi/>
+            <Tekijat/>
+        </Julkaisu>
+    </KirjallisuuttaEdustajasta>
+    <EdustajatoimiKeskeytynyt>
+        <ToimenKeskeytys>
+            <Selite/>
+            <TilallaHenkilo/>
+            <AlkuPvm/>
+            <LoppuPvm/>
+        </ToimenKeskeytys>
+    </EdustajatoimiKeskeytynyt>
+    <Kansanedustajana>
+        <Keskeytys>
+            <Selite/>
+            <TilallaSelite>Predecessor as an MP</TilallaSelite>
+            <TilallaHenkilo>Carl Haglund /</TilallaHenkilo>
+            <AlkuPvm>09.08.2016</AlkuPvm>
+            <LoppuPvm/>
+        </Keskeytys>
+    </Kansanedustajana>
+</Henkilo>
