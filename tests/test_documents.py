@@ -345,16 +345,18 @@ def test_get_pob(mpinfo: MPInfo, true_pob: str) -> None:
 
 
 @pytest.mark.parametrize(
-    "mpinfo, true_mp",
+    "mpinfo, mpid, firstname, lastname, true_mp",
     [
-        ("tests/data/xmls/haavisto.xml", 0),
-        ("tests/data/xmls/kilpi.xml", 1),
-        ("tests/data/xmls/rehn-kivi.xml", 2),
-        ("tests/data/xmls/vehvilainen.xml", 3),
+        ("tests/data/xmls/haavisto.xml", 118, "Pekka", "Haavisto", 0),
+        ("tests/data/xmls/kilpi.xml", 1432, "Marko", "Kilpi", 1),
+        ("tests/data/xmls/rehn-kivi.xml", 1374, "Veronica", "Rehn-Kivi", 2),
+        ("tests/data/xmls/vehvilainen.xml", 508, "Anu", "Vehviläinen", 3),
     ],
-    indirect=True,
+    indirect=["mpinfo", "true_mp"],
 )
-def test_mpinfo_parse(mpinfo: MPInfo, true_mp: MP) -> None:
+def test_mpinfo_parse(
+    mpinfo: MPInfo, mpid: int, firstname: str, lastname: str, true_mp: MP
+) -> None:
     """Test that MP info is correctly parsed from the XML to an MP object."""
-    mp = mpinfo.parse()
+    mp = mpinfo.parse(mpid, firstname, lastname)
     assert mp == true_mp

@@ -486,6 +486,25 @@ class MPInfo:
         [pob] = self.xml.xpath("./SyntymaPaikka/text()")
         return pob
 
-    def parse(self) -> MP:
-        """Parse data from MP XML to MP data structure."""
-        pass
+    def parse(self, mpid: int, firstname: str, lastname: str) -> MP:
+        """Parse data from MP XML to MP data structure.
+
+        The first three fields (mpid, firstname, lastname) are returned in the same query as the
+        XML parsed here so there is no need to parse them from the XML.
+
+        Args:
+            mpid (int): unique id of the MP
+            firstname (str): firstname of the MP
+            lastname (str): lastname of the MP
+
+        Returns:
+            MP: an object that contains all parsed info
+        """
+        gender = self.get_gender()
+        lang = self.get_language()
+        birthyear = self.get_birthyear()
+        party = self.get_party()
+        profession = self.get_profession()
+        city = self.get_city()
+        pob = self.get_pob()
+        return MP(mpid, firstname, lastname, gender, lang, birthyear, party, profession, city, pob)
