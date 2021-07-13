@@ -235,9 +235,9 @@ def test_parse_to_json(session: Session, true_output_path: str, tmp_path: Path) 
     "mpinfo, true_gender",
     [
         ("tests/data/xmls/haavisto.xml", "m"),
-        ("tests/data/xmls/haatainen.xml", "f"),
         ("tests/data/xmls/kilpi.xml", "m"),
         ("tests/data/xmls/rehn-kivi.xml", "f"),
+        ("tests/data/xmls/vehvilainen.xml", "f"),
     ],
     indirect=["mpinfo"],
 )
@@ -251,9 +251,9 @@ def test_get_gender(mpinfo: MPInfo, true_gender: str) -> None:
     "mpinfo, true_language",
     [
         ("tests/data/xmls/haavisto.xml", "fi"),
-        ("tests/data/xmls/haatainen.xml", "fi"),
         ("tests/data/xmls/kilpi.xml", "fi"),
         ("tests/data/xmls/rehn-kivi.xml", "sv"),
+        ("tests/data/xmls/vehvilainen.xml", "fi"),
     ],
     indirect=["mpinfo"],
 )
@@ -267,9 +267,9 @@ def test_get_language(mpinfo: MPInfo, true_language: str) -> None:
     "mpinfo, true_birthyear",
     [
         ("tests/data/xmls/haavisto.xml", 1958),
-        ("tests/data/xmls/haatainen.xml", 1963),
         ("tests/data/xmls/kilpi.xml", 1969),
         ("tests/data/xmls/rehn-kivi.xml", 1956),
+        ("tests/data/xmls/vehvilainen.xml", 1963),
     ],
     indirect=["mpinfo"],
 )
@@ -283,9 +283,9 @@ def test_get_birthyear(mpinfo: MPInfo, true_birthyear: int) -> None:
     "mpinfo, true_party",
     [
         ("tests/data/xmls/haavisto.xml", "Green Parliamentary Group"),
-        ("tests/data/xmls/haatainen.xml", "Centre Party Parliamentary Group"),
         ("tests/data/xmls/kilpi.xml", "Parliamentary Group of the National Coalition Party"),
         ("tests/data/xmls/rehn-kivi.xml", "Swedish Parliamentary Group"),
+        ("tests/data/xmls/vehvilainen.xml", "Centre Party Parliamentary Group"),
     ],
     indirect=["mpinfo"],
 )
@@ -299,9 +299,9 @@ def test_get_party(mpinfo: MPInfo, true_party: str) -> None:
     "mpinfo, true_profession",
     [
         ("tests/data/xmls/haavisto.xml", "Member of Parliament"),
-        ("tests/data/xmls/haatainen.xml", "Master of Arts"),
         ("tests/data/xmls/kilpi.xml", "police officer, writer"),
-        ("tests/data/xmls/rehn-kivi.xml", "architect, building supervsion manager"),
+        ("tests/data/xmls/rehn-kivi.xml", "architect, building supervision manager"),
+        ("tests/data/xmls/vehvilainen.xml", "Master of Arts"),
     ],
     indirect=["mpinfo"],
 )
@@ -315,9 +315,9 @@ def test_get_profession(mpinfo: MPInfo, true_profession: str) -> None:
     "mpinfo, true_city",
     [
         ("tests/data/xmls/haavisto.xml", "Helsinki"),
-        ("tests/data/xmls/haatainen.xml", "Joensuu"),
         ("tests/data/xmls/kilpi.xml", "Kuopio"),
         ("tests/data/xmls/rehn-kivi.xml", "Kauniainen"),
+        ("tests/data/xmls/vehvilainen.xml", "Joensuu"),
     ],
     indirect=["mpinfo"],
 )
@@ -331,9 +331,9 @@ def test_get_city(mpinfo: MPInfo, true_city: str) -> None:
     "mpinfo, true_pob",
     [
         ("tests/data/xmls/haavisto.xml", "Helsinki"),
-        ("tests/data/xmls/haatainen.xml", "Leppävirta"),
         ("tests/data/xmls/kilpi.xml", "Rovaniemi"),
         ("tests/data/xmls/rehn-kivi.xml", "Helsinki"),
+        ("tests/data/xmls/vehvilainen.xml", "Leppävirta"),
     ],
     indirect=["mpinfo"],
 )
