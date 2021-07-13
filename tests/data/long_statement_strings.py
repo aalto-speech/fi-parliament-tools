@@ -9,6 +9,8 @@ from typing import Tuple
 import pytest
 from _pytest.fixtures import SubRequest
 
+from fi_parliament_tools.transcriptParser.data_structures import MP
+
 chairman_texts = [
     "Ilmoitetaan, että valiokuntien ja kansliatoimikunnan vaalit toimitetaan ensi tiistaina 5. "
     "päivänä toukokuuta kello 14 pidettävässä täysistunnossa. Ehdokaslistat näitä vaaleja varten "
@@ -221,6 +223,57 @@ embedded_statements = [
     },
 ]
 
+mps = [
+    MP(
+        118,
+        "Pekka",
+        "Haavisto",
+        "m",
+        "fi",
+        1958,
+        "Green Parliamentary Group",
+        "Member of Parliament",
+        "Helsinki",
+        "Helsinki",
+    ),
+    MP(
+        1432,
+        "Marko",
+        "Kilpi",
+        "m",
+        "fi",
+        1969,
+        "Parliamentary Group of the National Coalition Party",
+        "police officer, writer",
+        "Kuopio",
+        "Rovaniemi",
+    ),
+    MP(
+        1374,
+        "Veronica",
+        "Rehn-Kivi",
+        "f",
+        "sv",
+        1956,
+        "Swedish Parliamentary Group",
+        "architect, building supervision manager",
+        "Kauniainen",
+        "Helsinki",
+    ),
+    MP(
+        508,
+        "Anu",
+        "Vehviläinen",
+        "f",
+        "fi",
+        1963,
+        "Centre Party Parliamentary Group",
+        "Master of Arts",
+        "Joensuu",
+        "Leppävirta",
+    ),
+]
+
 
 @pytest.fixture
 def true_chairman_text(request: SubRequest) -> str:
@@ -255,6 +308,13 @@ def true_embedded_statement(request: SubRequest) -> Dict[str, object]:
     """Return an embedded statement for testing from a list at the top of the file."""
     index: int = request.param
     return embedded_statements[index]
+
+
+@pytest.fixture
+def true_mp(request: SubRequest) -> MP:
+    """Return an MP data object for testing from a list at the top of the file."""
+    index: int = request.param
+    return mps[index]
 
 
 @pytest.fixture

@@ -7,16 +7,11 @@ are defined separately in `data/long_strings.py`.
 """
 import json
 from typing import Any
-from typing import Dict
-from typing import Tuple
-from typing import Union
 
 import pytest
 from _pytest.fixtures import SubRequest
 from lxml import etree
 
-from fi_parliament_tools.transcriptParser.data_structures import EmbeddedStatement
-from fi_parliament_tools.transcriptParser.data_structures import Statement
 from fi_parliament_tools.transcriptParser.documents import MPInfo
 from fi_parliament_tools.transcriptParser.documents import Session
 from fi_parliament_tools.transcriptParser.query import Query

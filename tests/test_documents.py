@@ -9,6 +9,7 @@ from typing import Tuple
 
 import pytest
 
+from fi_parliament_tools.transcriptParser.data_structures import MP
 from fi_parliament_tools.transcriptParser.documents import MPInfo
 from fi_parliament_tools.transcriptParser.documents import Session
 
@@ -341,3 +342,19 @@ def test_get_pob(mpinfo: MPInfo, true_pob: str) -> None:
     """Test that place of birth is correctly parsed from the XML."""
     pob = mpinfo.get_pob()
     assert pob == true_pob
+
+
+@pytest.mark.parametrize(
+    "mpinfo, true_mp",
+    [
+        ("tests/data/xmls/haavisto.xml", 0),
+        ("tests/data/xmls/kilpi.xml", 1),
+        ("tests/data/xmls/rehn-kivi.xml", 2),
+        ("tests/data/xmls/vehvilainen.xml", 3),
+    ],
+    indirect=True,
+)
+def test_mpinfo_parse(mpinfo: MPInfo, true_mp: MP) -> None:
+    """Test that MP info is correctly parsed from the XML to an MP object."""
+    mp = mpinfo.parse()
+    assert mp == true_mp

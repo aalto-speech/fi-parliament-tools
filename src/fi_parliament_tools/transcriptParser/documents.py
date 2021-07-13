@@ -11,6 +11,7 @@ from typing import Union
 from lxml import etree
 
 from fi_parliament_tools.transcriptParser.data_structures import EmbeddedStatement
+from fi_parliament_tools.transcriptParser.data_structures import MP
 from fi_parliament_tools.transcriptParser.data_structures import Statement
 from fi_parliament_tools.transcriptParser.data_structures import Subsection
 from fi_parliament_tools.transcriptParser.data_structures import Transcript
@@ -484,3 +485,7 @@ class MPInfo:
         """Parse the place of birth from the MP info XML."""
         [pob] = self.xml.xpath("./SyntymaPaikka/text()")
         return pob
+
+    def parse(self) -> MP:
+        """Parse data from MP XML to MP data structure."""
+        pass
