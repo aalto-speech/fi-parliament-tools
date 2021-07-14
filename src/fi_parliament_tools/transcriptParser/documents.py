@@ -449,7 +449,7 @@ class MPInfo:
         Returns:
             str: m/f/o for male/female/other
         """
-        [gender] = self.xml.xpath("./SukuPuoliKoodi/text()")
+        gender = "".join(self.xml.xpath("./SukuPuoliKoodi/text()"))
         if gender == "Mies":
             return "m"
         elif gender == "Nainen":
@@ -467,24 +467,47 @@ class MPInfo:
         return int(year)
 
     def get_party(self) -> str:
-        """Parse the current party (or parliamentary group) affiliation from the MP info XML."""
-        [party] = self.xml.xpath("./Eduskuntaryhmat/NykyinenEduskuntaryhma/Nimi/text()")
-        return party
+        """Parse the current party (or parliamentary group) from the MP info XML.
+
+        If current party is not defined (former MPs), all previous parties are joined into one
+        string.
+
+        Returns:
+            str: party or comma-separated string of former parties
+        """
+        if party := self.xml.xpath("./Eduskuntaryhmat/NykyinenEduskuntaryhma/Nimi/text()"):
+            return ", ".join(party)
+        return ", ".join(self.xml.xpath("./Eduskuntaryhmat/EdellisetEduskuntaryhmat/*/Nimi/text()"))
 
     def get_profession(self) -> str:
-        """Parse the profession(s) from the MP info XML."""
-        [profession] = self.xml.xpath("./Ammatti/text()")
-        return profession
+        """Parse the profession(s) from the MP info XML.
+
+        Returns:
+            str: professions listed in a string or empty string if not defined
+        """
+        if profession := self.xml.xpath("./Ammatti/text()"):
+            return ", ".join(profession)
+        return ""
 
     def get_city(self) -> str:
-        """Parse the current home city/municipality from the MP info XML."""
-        [city] = self.xml.xpath("./NykyinenKotikunta/text()")
-        return city
+        """Parse the current home city/municipality from the MP info XML.
+
+        Returns:
+            str: city or empty string if not defined
+        """
+        if city := self.xml.xpath("./NykyinenKotikunta/text()"):
+            return ", ".join(city)
+        return ""
 
     def get_pob(self) -> str:
-        """Parse the place of birth from the MP info XML."""
-        [pob] = self.xml.xpath("./SyntymaPaikka/text()")
-        return pob
+        """Parse the place of birth from the MP info XML.
+
+        Returns:
+            str: place of birth or empty string if not defined
+        """
+        if pob := self.xml.xpath("./SyntymaPaikka/text()"):
+            return ", ".join(pob)
+        return ""
 
     def parse(self, mpid: int, firstname: str, lastname: str) -> MP:
         """Parse data from MP XML to MP data structure.
