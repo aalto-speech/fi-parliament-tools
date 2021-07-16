@@ -1,4 +1,5 @@
 """Build a table with basic info on members of parliament."""
+from logging import Logger
 from pathlib import Path
 from typing import List
 
@@ -10,19 +11,23 @@ from fi_parliament_tools.transcriptParser.documents import MPInfo
 from fi_parliament_tools.transcriptParser.query import MPQuery
 
 
-def build_table(use_english: bool, update_old: bool) -> None:
+def build_table(get_english: bool, update_old: bool, log: Logger) -> None:
     """Build a new or update an existing table containing MP information.
 
     Args:
-        use_english (bool): parse English XMLs if available
+        get_english (bool): parse English XMLs if available
         update_old (bool): update old, existing table with new values
+        log (Logger): logger object
     """
+    log.info("Fetch all MP data.")
     data = get_data()
-    new_table = parse_mp_data(data, use_english)
+    log.info("Parse fetched data.")
+    new_table = parse_mp_data(data, get_english)
     if Path("generated/mp-table.csv").exists():
-        # TODO: Add logger
+        log.info("Existing table found at 'generated/mp-table.csv'.")
         old_table = pd.read_csv("generated/mp-table.csv", sep=":", index_col="mp_id")
-        new_table = add_new_mps(old_table, new_table, update_old=update_old)
+        new_table = add_new_mps(old_table, new_table, log, update_old=update_old)
+    log.info("Saving resulting table to 'generated/mp-table.csv'.")
     new_table.to_csv("generated/mp-table.csv", sep=":", index=False)
 
 
@@ -40,7 +45,7 @@ def get_data() -> List[List[str]]:
     return filtered
 
 
-def parse_mp_data(data: List[List[str]], use_english=False) -> pd.DataFrame:
+def parse_mp_data(data: List[List[str]], get_english=False) -> pd.DataFrame:
     """Parse MP data from XMLs to a pandas DataFrame table.
 
     The code will parse either Finnish or English XML. English translation is usually available only
@@ -49,7 +54,7 @@ def parse_mp_data(data: List[List[str]], use_english=False) -> pd.DataFrame:
 
     Args:
         data (List[List[str]]): MPQuery results
-        use_english (bool, optional): Parse English XML if available. Defaults to False.
+        get_english (bool, optional): Parse English XML if available. Defaults to False.
 
     Returns:
         pd.DataFrame: parsed MP data
@@ -57,7 +62,7 @@ def parse_mp_data(data: List[List[str]], use_english=False) -> pd.DataFrame:
     mps = []
     for item in data:
         mpid, lastname, firstname = item[0:3]
-        if use_english and not contains_empty_tag("Ammatti", item[8]):
+        if get_english and not contains_empty_tag("Ammatti", item[8]):
             xml = etree.fromstring(item[8])
         else:
             xml = etree.fromstring(item[7])
@@ -80,7 +85,7 @@ def contains_empty_tag(tag: str, xml: str) -> bool:
 
 
 def add_new_mps(
-    old_table: pd.DataFrame, new_table: pd.DataFrame, update_old: bool = False
+    old_table: pd.DataFrame, new_table: pd.DataFrame, log: Logger, update_old: bool = False
 ) -> pd.DataFrame:
     """Add new MP entries from a freshly built table to an existing table.
 
@@ -89,12 +94,16 @@ def add_new_mps(
     Args:
         old_table (pd.DataFrame): existing table
         new_table (pd.DataFrame): freshly built table
+        log (Logger): logger object
         update_old (bool): update values in old table, defaults to False
 
     Returns:
         pd.DataFrame: existing table updated with new entries
     """
+    log.info("Add new MPs to existing table.")
     combined_table = old_table.combine_first(new_table)
     if update_old:
+        log.info("Update old entries with new data.")
+        log.warn("Updating old entries may cause data loss!")
         combined_table.update(new_table)
     return combined_table

@@ -11,6 +11,7 @@ import click
 import pandas as pd
 
 from fi_parliament_tools import downloads
+from fi_parliament_tools import mptable
 from fi_parliament_tools import postprocessing
 from fi_parliament_tools import preprocessing
 
@@ -202,6 +203,29 @@ def postprocess(segments_list: TextIO, recipe_file: str) -> None:
         final_report(log, errors)
         if not stats.empty:
             postprocessing.report_statistics(log, stats)
+
+
+@main.command()
+@click.option("-e", "--get-english", is_flag=True, help="Get English data if available. If English data is not available, Finnish data is used instead.")
+@click.option("-u", "--update-old", is_flag=True, help="Update outdated values in an existing MP table.")
+def build_mptable(get_english: bool, update_old: bool) -> None:
+    """Build an MP data table or update an existing one with new MPs.
+
+    With --get-english handle, English data is used if available. English data is usually available
+    only for current MPs. Using the handle will result in table with some MP entries in English and
+    the rest in Finnish.
+
+    If a previous table exists at 'generated/mp-table.csv', running this command will add new MP
+    entries to it. Using --update-old handle will cause old MP entries to get updated as well. Be
+    warned however, this may cause data loss (e.g. party or home city may change)!
+    """  # noqa: DAR101, DAR401, ignore missing arg documentation
+    log = setup_logger(f"{date.today()}-mptable.log")
+
+    try:
+        log.info("Begin building MP data table.")
+        mptable.build_table(get_english, update_old, log)
+    finally:
+        final_report(log, [])
 
 
 if __name__ == "__main__":
