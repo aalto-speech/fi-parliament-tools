@@ -45,7 +45,7 @@ def get_data() -> List[List[str]]:
     return filtered
 
 
-def parse_mp_data(data: List[List[str]], get_english=False) -> pd.DataFrame:
+def parse_mp_data(data: List[List[str]], get_english: bool = False) -> pd.DataFrame:
     """Parse MP data from XMLs to a pandas DataFrame table.
 
     The code will parse either Finnish or English XML. English translation is usually available only
@@ -54,7 +54,7 @@ def parse_mp_data(data: List[List[str]], get_english=False) -> pd.DataFrame:
 
     Args:
         data (List[List[str]]): MPQuery results
-        get_english (bool, optional): Parse English XML if available. Defaults to False.
+        get_english (bool): parse English XML if available, defaults to False.
 
     Returns:
         pd.DataFrame: parsed MP data
