@@ -13,7 +13,7 @@ import pandas as pd
 from fi_parliament_tools import downloads
 from fi_parliament_tools import mptable
 from fi_parliament_tools import postprocessing
-from fi_parliament_tools import preprocessing
+from fi_parliament_tools.preprocessing import PreprocessingPipeline
 
 
 def setup_logger(logfile: str) -> logging.Logger:
@@ -147,25 +147,32 @@ def download(
 @main.command()
 @click.argument("transcript-list", type=click.File(encoding="utf-8"))
 @click.argument("lid-model", type=click.Path(exists=True))
+@click.argument("mptable-file", type=click.Path(exists=True))
 @click.argument("recipe-file", type=click.Path(exists=True))
-def preprocess(transcript_list: TextIO, lid_model: str, recipe_file: str) -> None:
-    """Preprocess parliament transcripts in TRANSCRIPT_LIST using LID_MODEL and RECIPE_FILE.
+def preprocess(
+    transcript_list: TextIO, lid_model: str, mptable_file: str, recipe_file: str
+) -> None:
+    """Preprocess parliament transcripts in TRANSCRIPT_LIST using given file arguments.
 
     LID_MODEL predicts language (fi/sv/both) for those statements that do not have a language label
-    in the XMLs. RECIPE_FILE is used to preprocess text for speech recognition.
+    in the XMLs.
+
+    MPTABLE_FILE is used to add MP ids to (chairman) statements without them. Table can be created
+    or updated with the 'mptable' command.
+
+    RECIPE_FILE is used to preprocess text for speech recognition.
     """  # noqa: DAR101, DAR401, ignore missing arg documentation
     log = setup_logger(f"{date.today()}-preprocess.log")
     errors: List[str] = []
 
     try:
         transcripts = transcript_list.read().split()
-        log.info(f"Got {len(transcripts)} transcripts, proceed to predict missing language labels.")
+        log.info(f"Got {len(transcripts)} transcripts, begin preprocessing.")
         if spec := importlib.util.spec_from_file_location("recipe", recipe_file):
             recipe = importlib.util.module_from_spec(spec)
             spec.loader.exec_module(recipe)  # type: ignore
-            preprocessing.apply_fasttext_lid(lid_model, transcripts, log, errors)
-            log.info(f"Next, preprocess all {len(transcripts)} transcripts.")
-            preprocessing.iterate_transcripts(transcripts, recipe, log, errors)
+            pipeline = PreprocessingPipeline(transcripts, log, lid_model, mptable_file, recipe)
+            errors = pipeline.run()
         else:
             raise click.ClickException(
                 f"Failed to import recipe '{recipe_file}', is it a python file?"
@@ -206,8 +213,15 @@ def postprocess(segments_list: TextIO, recipe_file: str) -> None:
 
 
 @main.command()
-@click.option("-e", "--get-english", is_flag=True, help="Get English data if available. If English data is not available, Finnish data is used instead.")
-@click.option("-u", "--update-old", is_flag=True, help="Update outdated values in an existing MP table.")
+@click.option(
+    "-e",
+    "--get-english",
+    is_flag=True,
+    help="Get English data if available. If English data is not available, Finnish data is used instead.",
+)
+@click.option(
+    "-u", "--update-old", is_flag=True, help="Update outdated values in an existing MP table."
+)
 def build_mptable(get_english: bool, update_old: bool) -> None:
     """Build an MP data table or update an existing one with new MPs.
 
@@ -220,6 +234,8 @@ def build_mptable(get_english: bool, update_old: bool) -> None:
     warned however, this may cause data loss (e.g. party or home city may change)!
     """  # noqa: DAR101, DAR401, ignore missing arg documentation
     log = setup_logger(f"{date.today()}-mptable.log")
+
+    Path("generated").mkdir(exist_ok=True)
 
     try:
         log.info("Begin building MP data table.")
