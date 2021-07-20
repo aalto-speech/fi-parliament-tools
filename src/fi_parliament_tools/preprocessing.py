@@ -37,18 +37,19 @@ class PreprocessingPipeline(Pipeline):
     """
 
     def __init__(
-        self, input_files: List[str], log: Logger, lid_model: str, mptable: str, recipe: Any
+        self, log: Logger, input_files: List[str], lid_model: str, mptable: str, recipe: Any
     ) -> None:
         """Initialize common parameters and preprocessing specific parameters.
 
         Args:
-            input_files (List[str]): parliament transcripts (.json) to process
             log (Logger): logger object
+            input_files (List[str]): parliament transcripts (.json) to process
             lid_model (str): path to LID model for predicting text language
             mptable (str): path to CSV table of MP information
             recipe (Any): a preprocessing recipe file loaded as a module
         """
-        super().__init__(input_files, log)
+        super().__init__(log)
+        self.input_files = [Path(input_file).resolve() for input_file in input_files]
         self.lid = fasttext.load_model(lid_model)
         self.recipe = recipe
         self.mptable = pd.read_csv(mptable, sep=":", index_col="mp_id")

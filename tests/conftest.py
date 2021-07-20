@@ -80,7 +80,7 @@ def statement_query() -> StatementQuery:
     return StatementQuery("0000/00")
 
 
-@pytest.fixture
+@pytest.fixture(scope="module")
 def logger() -> logging.Logger:
     """Initialize a default logger for tests."""
     log = logging.getLogger("test-logger")

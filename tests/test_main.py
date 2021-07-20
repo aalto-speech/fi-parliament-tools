@@ -20,7 +20,7 @@ from click.testing import CliRunner
 from pytest_mock.plugin import MockerFixture  # type: ignore
 
 from fi_parliament_tools import __main__
-from fi_parliament_tools import downloads
+from fi_parliament_tools.downloads import DownloadPipeline
 from fi_parliament_tools.preprocessing import PreprocessingPipeline
 from fi_parliament_tools.transcriptParser.data_structures import decode_transcript
 
@@ -61,11 +61,18 @@ def transcript() -> Any:
 
 
 @pytest.fixture
+def download_pipeline(logger: Logger) -> DownloadPipeline:
+    """Initialize DownloadPipeline."""
+    pipeline = DownloadPipeline(logger)
+    return pipeline
+
+
+@pytest.fixture
 def preprocess_pipeline(logger: Logger, mocker: MockerFixture) -> PreprocessingPipeline:
     """Initialize PreprocessingPipeline with mocked LID model and MP table."""
     mocker.patch("fi_parliament_tools.preprocessing.fasttext.load_model")
     mocker.patch("fi_parliament_tools.preprocessing.pd.read_csv")
-    pipeline = PreprocessingPipeline([], logger, "lid_dummy", "mptable_dummy", "recipe_dummy")
+    pipeline = PreprocessingPipeline(logger, [], "lid_dummy", "mptable_dummy", "recipe_dummy")
     return pipeline
 
 
@@ -118,7 +125,7 @@ def mock_shutil_copyfileobj(mocker: MockerFixture) -> MagicMock:
 @pytest.fixture
 def mock_downloads_form_path(request: SubRequest, mocker: MockerFixture) -> MagicMock:
     """Mock path formed in form_path of downloads module."""
-    mock: MagicMock = mocker.patch("fi_parliament_tools.downloads.form_path")
+    mock: MagicMock = mocker.patch("fi_parliament_tools.downloads.DownloadPipeline.form_path")
     mock.side_effect = request.param
     return mock
 
@@ -374,17 +381,18 @@ def test_download_transcripts(
 
 
 def test_downloads_form_path(
-    mock_downloads_path: MagicMock, mocker: MockerFixture, runner: CliRunner
+    mock_downloads_path: MagicMock,
+    download_pipeline: DownloadPipeline,
+    runner: CliRunner,
 ) -> None:
     """Check path forming separately."""
     with runner.isolated_filesystem():
-        errors: List[str] = []
-        assert str(downloads.form_path(0, 0, "test", errors)) == "tests/testing.test"
-        assert len(errors) == 0
+        assert str(download_pipeline.form_path(0, 0, "test")) == "tests/testing.test"
+        assert len(download_pipeline.errors) == 0
         mock_downloads_path.assert_called_once()
 
-        assert downloads.form_path(0, 0, "test", errors) is None
-        assert errors[0] == "File tests/testing.test exists, will not overwrite."
+        assert download_pipeline.form_path(0, 0, "test") is None
+        assert download_pipeline.errors[0] == "File tests/testing.test exists, will not overwrite."
         assert mock_downloads_path.call_count == 2
 
 

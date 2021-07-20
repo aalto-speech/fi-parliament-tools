@@ -16,6 +16,7 @@ from alive_progress import alive_bar
 from lxml import etree
 
 from fi_parliament_tools import video_query
+from fi_parliament_tools.pipeline import Pipeline
 from fi_parliament_tools.transcriptParser.documents import Session
 from fi_parliament_tools.transcriptParser.query import Query
 from fi_parliament_tools.transcriptParser.query import VaskiQuery
@@ -23,28 +24,8 @@ from fi_parliament_tools.transcriptParser.query import VaskiQuery
 VIDEO_API = "https://eduskunta.videosync.fi/api/v1/events"
 
 
-def form_path(num: int, year: int, suffix: str, errors: List[str]) -> Optional[pathlib.Path]:
-    """Create and validate path if file by the same name does not exist.
-
-    Args:
-        num (int): running number of the session, used to form filename
-        year (int): year of the session, used to form filename
-        suffix (str): file extension
-        errors (list): descriptions of all encountered errors
-
-    Returns:
-        pathlib.Path: path to a new file or None if duplicate exists already
-    """
-    p = Path(f"corpus/{year}/session-{num:03}-{year}.{suffix}").resolve()
-    if p.exists():
-        errors.append(f"File {p} exists, will not overwrite.")
-        return None
-    p.parent.mkdir(parents=True, exist_ok=True)
-    return p
-
-
 def filter_metadata_table(df: pd.DataFrame, args: Dict[str, str]) -> pd.DataFrame:
-    """Filter metadata table with given constraints.
+    """Filter metadata table with constraints given at the command line.
 
     Args:
         df (pandas.DataFrame): a metadata table to filter
@@ -111,85 +92,103 @@ def query_videos(args: Dict[str, str]) -> pd.DataFrame:
     return filter_metadata_table(df, args)
 
 
-def iterate_metadata_table(
-    df: pd.DataFrame,
-    extension: str,
-    processing_func: Callable[..., None],
-    log: Logger,
-    errors: List[str],
-) -> None:
-    """Iterate through metadata table and apply given download function.
+class DownloadPipeline(Pipeline):
+    """Download parliament data with given a table of transcripts/videos to download."""
 
-    Progress bar is included to show progress since the table might have hundreds of entries.
+    def __init__(self, log: Logger) -> None:
+        """Initialize common parameters and download table.
 
-    Args:
-        df (pandas.DataFrame): metadata of files to download
-        extension (str): file extension for the file resulting from processing
-        processing_func (func): processing function applied to the table entries
-        log (Logger): logger object
-        errors (list): descriptions of all encountered errors
-    """
-    with alive_bar(len(df)) as bar:
-        for index, num, year in zip(df.index, df.num, df.year):
-            if (path := form_path(num, year, extension, errors)) is not None:
-                processing_func(path, log, errors, **{"index": index, "num": num, "year": year})
-            bar()
+        Args:
+            log (Logger): logger object
+        """
+        super().__init__(log)
 
+    def run(
+        self, df: pd.DataFrame, extension: str, processing_func: Callable[..., None]
+    ) -> List[str]:
+        """Iterate through metadata table and apply given download function.
 
-def download_transcript(path: pathlib.Path, log: Logger, errors: List[str], **kwargs: Any) -> None:
-    """Try downloading and parsing a transcript from the parliament open data API.
+        Progress bar is included to show progress since the table might have hundreds of entries.
 
-    Saves both the original XML transcript and a parsed JSON.
+        Args:
+            df (pd.DataFrame): metadata of files to download
+            extension (str): file extension for the file resulting from processing
+            processing_func (func): processing function applied to the table entries
 
-    Args:
-        path (pathlib.Path): path to save the parsed transcript to
-        log (Logger): logger object
-        errors (list): descriptions of all encountered errors
-        kwargs (dict): expected to contain 'num' and 'year', which identify a plenary session
-    """
-    num, year = kwargs["num"], kwargs["year"]
-    log.debug(f"Parsing transcript {num}/{year} next.")
-    if xml_str := VaskiQuery(f"PTK {num}/{year} vp").get_xml():
-        xml = etree.fromstring(xml_str)
-        etree.ElementTree(xml).write(
-            str(path.with_suffix(".xml")), encoding="utf-8", pretty_print=True
-        )
-        Session(num, year, xml).parse_to_json(path)
-    else:
-        errors.append(f"XML for transcript {num}/{year} is not found.")
+        Returns:
+            List[str]: descriptions of all encountered errors
+        """
+        with alive_bar(len(df)) as bar:
+            for index, num, year in zip(df.index, df.num, df.year):
+                if path := self.form_path(num, year, extension):
+                    processing_func(path, **{"index": index, "num": num, "year": year})
+                bar()
+        return self.errors
 
+    def form_path(self, num: int, year: int, suffix: str) -> Optional[pathlib.Path]:
+        """Create and validate path if file by the same name does not exist.
 
-def download_video(path: pathlib.Path, log: Logger, errors: List[str], **kwargs: Any) -> None:
-    """Try downloading a single video from the video API and extracting the audio stream as wav.
+        Args:
+            num (int): running number of the session, used to form filename
+            year (int): year of the session, used to form filename
+            suffix (str): file extension
 
-    Args:
-        path (pathlib.Path): path to save the video file to
-        log (Logger): logger object
-        errors (list): descriptions of all encountered errors
-        kwargs (dict): expected to contain 'index', an unique identifier for the video
-    """
-    url = f"{VIDEO_API}/{kwargs['index']}/video/download"
-    log.debug(f"Will attempt to download {path.name} from {url}.")
-    try:
-        with requests.get(url, stream=True) as r, open(path, "wb") as f:
-            shutil.copyfileobj(r.raw, f)
-    except shutil.Error:
-        errors.append(f"Video download failed for {path.name} from {url}.")
-    extract_wav(path, log, errors)
+        Returns:
+            pathlib.Path: path to a new file or None if duplicate exists already
+        """
+        p = Path(f"corpus/{year}/session-{num:03}-{year}.{suffix}").resolve()
+        if p.exists():
+            self.errors.append(f"File {p} exists, will not overwrite.")
+            return None
+        p.parent.mkdir(parents=True, exist_ok=True)
+        return p
 
+    def download_transcript(self, path: pathlib.Path, **kwargs: Any) -> None:
+        """Try downloading and parsing a transcript from the parliament open data API.
 
-def extract_wav(path: pathlib.Path, log: Logger, errors: List[str]) -> None:
-    """Try extracting the audio stream from the video file in path using ffmpeg.
+        Saves both the original XML transcript and a parsed JSON.
 
-    Args:
-        path (pathlib.Path): path to the video file
-        log (Logger): logger object
-        errors (list): descriptions of all encountered errors
-    """
-    log.debug(f"Will attempt to extract audio from the video {path.name}.")
-    try:
-        audio = str(path.with_suffix(".wav"))
-        args = ["ffmpeg", "-i", str(path), "-f", "wav", "-ar", "16000", "-ac", "1", audio]
-        subprocess.run(args, capture_output=True, text=True)
-    except ValueError:
-        errors.append(f"Wav extraction failed for video {path.name}.")
+        Args:
+            path (pathlib.Path): path to save the parsed transcript to
+            kwargs (dict): expected to contain 'num' and 'year', which identify a plenary session
+        """
+        num, year = kwargs["num"], kwargs["year"]
+        self.log.debug(f"Parsing transcript {num}/{year} next.")
+        if xml_str := VaskiQuery(f"PTK {num}/{year} vp").get_xml():
+            xml = etree.fromstring(xml_str)
+            etree.ElementTree(xml).write(
+                str(path.with_suffix(".xml")), encoding="utf-8", pretty_print=True
+            )
+            Session(num, year, xml).parse_to_json(path)
+        else:
+            self.errors.append(f"XML for transcript {num}/{year} is not found.")
+
+    def download_video(self, path: pathlib.Path, **kwargs: Any) -> None:
+        """Try downloading a single video from the video API and extracting the audio stream as wav.
+
+        Args:
+            path (pathlib.Path): path to save the video file to
+            kwargs (dict): expected to contain 'index', an unique identifier for the video
+        """
+        url = f"{VIDEO_API}/{kwargs['index']}/video/download"
+        self.log.debug(f"Will attempt to download {path.name} from {url}.")
+        try:
+            with requests.get(url, stream=True) as r, open(path, "wb") as f:
+                shutil.copyfileobj(r.raw, f)
+        except shutil.Error:
+            self.errors.append(f"Video download failed for {path.name} from {url}.")
+        self.extract_wav(path)
+
+    def extract_wav(self, path: pathlib.Path) -> None:
+        """Try extracting the audio stream from the video file in path using ffmpeg.
+
+        Args:
+            path (pathlib.Path): path to the video file
+        """
+        self.log.debug(f"Will attempt to extract audio from the video {path.name}.")
+        try:
+            audio = str(path.with_suffix(".wav"))
+            args = ["ffmpeg", "-i", str(path), "-f", "wav", "-ar", "16000", "-ac", "1", audio]
+            subprocess.run(args, capture_output=True, text=True)
+        except ValueError:
+            self.errors.append(f"Wav extraction failed for video {path.name}.")

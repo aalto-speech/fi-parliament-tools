@@ -130,16 +130,17 @@ def download(
         "startSession": start_session,
         "endSession": end_session,
     }
+    pipeline = downloads.DownloadPipeline(log)
 
     try:
         if not video_only:
             df = downloads.query_transcripts(args)
             log.info(f"Found {len(df)} transcripts, proceed to download transcripts.")
-            downloads.iterate_metadata_table(df, "json", downloads.download_transcript, log, errors)
+            errors += pipeline.run(df, "json", pipeline.download_transcript)
         if not transcript_only:
             df = downloads.query_videos(args)
             log.info(f"Found {len(df)} videos, proceed to download videos and extract audio.")
-            downloads.iterate_metadata_table(df, "mp4", downloads.download_video, log, errors)
+            errors += pipeline.run(df, "mp4", pipeline.download_video)
     finally:
         final_report(log, errors)
 
@@ -171,7 +172,7 @@ def preprocess(
         if spec := importlib.util.spec_from_file_location("recipe", recipe_file):
             recipe = importlib.util.module_from_spec(spec)
             spec.loader.exec_module(recipe)  # type: ignore
-            pipeline = PreprocessingPipeline(transcripts, log, lid_model, mptable_file, recipe)
+            pipeline = PreprocessingPipeline(log, transcripts, lid_model, mptable_file, recipe)
             errors = pipeline.run()
         else:
             raise click.ClickException(
