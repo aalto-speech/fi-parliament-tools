@@ -2,7 +2,6 @@
 import glob
 import importlib
 import json
-import logging
 import os
 import shutil
 from logging import Logger
@@ -43,14 +42,6 @@ def load_recipe() -> Callable[[str], Any]:
             return recipe
 
     return _load_recipe
-
-
-@pytest.fixture
-def logger() -> Logger:
-    """Initialize a default logger for tests."""
-    log = logging.getLogger("test-logger")
-    log.setLevel(logging.CRITICAL)
-    return log
 
 
 @pytest.fixture
@@ -551,3 +542,18 @@ def test_postprocessor(runner: CliRunner) -> None:
         assert "Found 4 sessions in file list, proceed to postprocessing." in result.output
         assert "Finished successfully!" in result.output
         assert "Statistics of the speaker alignment" in result.output
+
+
+@mock.patch("fi_parliament_tools.mptable.get_data")
+@mock.patch("fi_parliament_tools.mptable.pd.DataFrame.set_index")
+def test_mptable(
+    mocked_get_data: MagicMock, mocked_set_index: MagicMock, runner: CliRunner
+) -> None:
+    """It successfully runs the mptable client."""
+    with runner.isolated_filesystem():
+        result = runner.invoke(__main__.main, ["build-mptable"])
+        assert "Output is logged to" in result.output
+        assert "Begin building MP data table." in result.output
+        assert "Fetch all MP data." in result.output
+        assert "Parse fetched data." in result.output
+        assert "Encountered 0 non-breaking error(s)." in result.output

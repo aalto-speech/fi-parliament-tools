@@ -6,6 +6,7 @@ files clean and readable. Other long strings, that do not need the hook for auto
 are defined separately in `data/long_strings.py`.
 """
 import json
+import logging
 from typing import Any
 
 import pytest
@@ -77,3 +78,11 @@ def session_query() -> SessionQuery:
 def statement_query() -> StatementQuery:
     """Initialize a dummy StatementQuery object."""
     return StatementQuery("0000/00")
+
+
+@pytest.fixture
+def logger() -> logging.Logger:
+    """Initialize a default logger for tests."""
+    log = logging.getLogger("test-logger")
+    log.setLevel(logging.CRITICAL)
+    return log
