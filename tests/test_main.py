@@ -22,9 +22,8 @@ from pytest_mock.plugin import MockerFixture  # type: ignore
 
 from fi_parliament_tools import __main__
 from fi_parliament_tools import downloads
-from fi_parliament_tools import preprocessing
+from fi_parliament_tools.preprocessing import PreprocessingPipeline
 from fi_parliament_tools.transcriptParser.data_structures import decode_transcript
-from fi_parliament_tools.transcriptParser.data_structures import Transcript
 
 
 @pytest.fixture
@@ -68,6 +67,15 @@ def transcript() -> Any:
     )
     yield json.load(input_json, object_hook=decode_transcript)
     input_json.close()
+
+
+@pytest.fixture
+def preprocess_pipeline(logger: Logger, mocker: MockerFixture) -> PreprocessingPipeline:
+    """Initialize PreprocessingPipeline with mocked LID model and MP table."""
+    mocker.patch("fi_parliament_tools.preprocessing.fasttext.load_model")
+    mocker.patch("fi_parliament_tools.preprocessing.pd.read_csv")
+    pipeline = PreprocessingPipeline([], logger, "lid_dummy", "mptable_dummy", "recipe_dummy")
+    return pipeline
 
 
 @pytest.fixture
@@ -136,20 +144,16 @@ def mock_vaskiquery(request: SubRequest, mocker: MockerFixture) -> MagicMock:
 def mock_fasttextmodel_load(mocker: MockerFixture) -> MagicMock:
     """Mock FastTextModel loading from a binary file."""
     mock: MagicMock = mocker.patch("fi_parliament_tools.preprocessing.fasttext.load_model")
-    mock.return_value = mocker.patch("fi_parliament_tools.preprocessing.FastTextModel")
     mock.return_value.predict.return_value = (("__label__fi", "__label__et"), None)
     return mock
 
 
 @pytest.fixture
-def mock_fasttextmodel_predict(mocker: MockerFixture) -> MagicMock:
-    """Mock FastTextModel for the preprocessing module."""
-    mock: MagicMock = mocker.patch("fi_parliament_tools.preprocessing.FastTextModel")
-    mock.predict.side_effect = [
-        (("__label__fi", "__label__et"), None),
-        (("__label__fi", "__label__sv"), None),
-        (("__label__en", "__label__sv"), None),
-    ]
+def mock_mp_table(mocker: MockerFixture) -> MagicMock:
+    """Mock MP table loading and operations."""
+    mock: MagicMock = mocker.patch("fi_parliament_tools.preprocessing.pd.read_csv")
+    mock().index.__getitem__().empty.__bool__.side_effect = 18 * [False] + 3 * [True]
+    mock().index.__getitem__().__getitem__.side_effect = 5 * [414] + 9 * [1148] + 4 * [809]
     return mock
 
 
@@ -157,6 +161,11 @@ def mock_fasttextmodel_predict(mocker: MockerFixture) -> MagicMock:
 def mock_statement(mocker: MockerFixture) -> MagicMock:
     """Mock Statement object for the preprocessing module."""
     mock: MagicMock = mocker.patch("fi_parliament_tools.preprocessing.Statement")
+    mock.text = (
+        "This text is used to test exceptions in preprocessor code. To include a character "
+        "that the simple test recipe cannot process, let's say greetings in German: Schöne Grüße!"
+    )
+    mock.embedded_statement.text = ""
     return mock
 
 
@@ -166,7 +175,9 @@ def test_main_succeeds(runner: CliRunner) -> None:
     assert result.exit_code == 0
 
 
-def test_preprocessor(mock_fasttextmodel_load: MagicMock, runner: CliRunner) -> None:
+def test_preprocessor(
+    mock_fasttextmodel_load: MagicMock, mock_mp_table: MagicMock, runner: CliRunner
+) -> None:
     """It successfully preprocesses the three files given the list file."""
     workdir = os.getcwd()
     with runner.isolated_filesystem():
@@ -176,6 +187,7 @@ def test_preprocessor(mock_fasttextmodel_load: MagicMock, runner: CliRunner) -> 
 
         Path("recipes").mkdir(parents=True, exist_ok=True)
         Path("recipes/lid.176.bin").touch()
+        Path("recipes/mp-table.csv").touch()
         shutil.copy(f"{workdir}/recipes/words_elative.txt", "recipes/words_elative.txt")
 
         with open("transcript.list", "w", encoding="utf-8") as outfile:
@@ -188,16 +200,21 @@ def test_preprocessor(mock_fasttextmodel_load: MagicMock, runner: CliRunner) -> 
                 "preprocess",
                 "transcript.list",
                 "recipes/lid.176.bin",
+                "recipes/mp-table.csv",
                 f"{workdir}/recipes/parl_to_kaldi_text.py",
             ],
         )
         assert result.exit_code == 0
         assert "Output is logged to" in result.output
-        assert "Got 5 transcripts, proceed to predict missing language labels." in result.output
-        assert "Next, preprocess all 5 transcripts." in result.output
+        assert "Got 5 transcripts, begin preprocessing." in result.output
+        assert "Encountered 4 non-breaking error(s)." in result.output
+        assert "Preprocessing output was empty for session-022-2019." in result.output
+        assert "Encountered unknown MP in " in result.output
         assert "Finished successfully!" in result.output
         mock_fasttextmodel_load.assert_called_once_with("recipes/lid.176.bin")
         assert mock_fasttextmodel_load.return_value.predict.call_count == 29
+        assert mock_mp_table().index.__getitem__().empty.__bool__.call_count == 21
+        assert mock_mp_table().index.__getitem__().__getitem__.call_count == 18
 
         for text in glob.glob("*.text"):
             with open(text, "r", encoding="utf-8") as outf, open(
@@ -214,6 +231,7 @@ def test_preprocessor_with_bad_recipe_file(runner: CliRunner) -> None:
             outfile.write("dummy.json\n")
 
         Path("lid.176.bin").touch()
+        Path("mp-table.csv").touch()
 
         result = runner.invoke(
             __main__.main,
@@ -221,45 +239,60 @@ def test_preprocessor_with_bad_recipe_file(runner: CliRunner) -> None:
                 "preprocess",
                 "transcript.list",
                 "lid.176.bin",
+                "mp-table.csv",
                 f"{workdir}/recipes/swedish_words.txt",
             ],
         )
         assert result.exit_code == 1
+        assert "Failed to import recipe" in result.output
+        assert "is it a python file?" in result.output
 
 
 def test_determine_language_label(
-    mock_fasttextmodel_predict: MagicMock, mock_statement: MagicMock
+    preprocess_pipeline: PreprocessingPipeline, mock_statement: MagicMock
 ) -> None:
     """It labels text as Finnish, Swedish, or both."""
+    preprocess_pipeline.lid.predict.side_effect = [
+        (("__label__fi", "__label__et"), None),
+        (("__label__fi", "__label__sv"), None),
+        (("__label__en", "__label__sv"), None),
+    ]
     true_labels = ["fi.p", "fi+sv.p", "sv.p"]
     for true_label in true_labels:
-        label = preprocessing.determine_language_label(mock_fasttextmodel_predict, mock_statement)
+        label = preprocess_pipeline.determine_language_label(mock_statement)
         assert label == true_label
 
 
 def test_preprocessor_unaccepted_chars_capture(
-    load_recipe: Callable[[str], Any], transcript: Transcript, logger: logging.Logger, tmpfile: Path
+    preprocess_pipeline: PreprocessingPipeline,
+    load_recipe: Callable[[str], Any],
+    mock_statement: MagicMock,
+    tmpfile: Path,
 ) -> None:
     """Ensure UnacceptedCharsError is captured, logged and recovered from."""
-    errors: List[str] = []
-    recipe = load_recipe("tests/data/simple_recipe.py")
+    preprocess_pipeline.recipe = load_recipe("tests/data/simple_recipe.py")
     with open(tmpfile, "w", encoding="utf-8") as tmp_out:
-        words = preprocessing.preprocess_transcript(transcript, recipe, tmp_out, logger, errors)
+        words = preprocess_pipeline.preprocess_statement(mock_statement, tmp_out)
 
-    assert f"UnacceptedCharsError in {tmpfile}. See log for debug info." == errors[0]
-    assert words == set(["A", "second", "statement", "text"])
+    assert (
+        f"UnacceptedCharsError in {tmpfile}. See log for debug info."
+        == preprocess_pipeline.errors[0]
+    )
+    assert words == set()
 
 
 def test_preprocessor_exception(
-    load_recipe: Callable[[str], Any], transcript: Transcript, logger: logging.Logger, tmpfile: Path
+    preprocess_pipeline: PreprocessingPipeline,
+    load_recipe: Callable[[str], Any],
+    mock_statement: MagicMock,
+    tmpfile: Path,
 ) -> None:
     """Ensure Exception is captured, logged and recovered from."""
-    errors: List[str] = []
-    recipe = load_recipe("tests/data/faulty_recipe.py")
+    preprocess_pipeline.recipe = load_recipe("tests/data/faulty_recipe.py")
     with open(tmpfile, "w", encoding="utf-8") as tmp_out:
-        words = preprocessing.preprocess_transcript(transcript, recipe, tmp_out, logger, errors)
+        words = preprocess_pipeline.preprocess_statement(mock_statement, tmp_out)
 
-    assert f"Caught an exception in {tmpfile}." == errors[0]
+    assert f"Caught an exception in {tmpfile}." == preprocess_pipeline.errors[0]
     assert words == set()
 
 
