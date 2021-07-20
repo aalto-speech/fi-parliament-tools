@@ -235,10 +235,10 @@ def test_parse_to_json(session: Session, true_output_path: str, tmp_path: Path) 
 @pytest.mark.parametrize(
     "mpinfo, true_gender",
     [
-        ("tests/data/xmls/haavisto.xml", "m"),
+        ("tests/data/xmls/ahde.xml", "o"),
         ("tests/data/xmls/kilpi.xml", "m"),
         ("tests/data/xmls/rehn-kivi.xml", "f"),
-        ("tests/data/xmls/vehvilainen.xml", "f"),
+        ("tests/data/xmls/suomela.xml", "f"),
     ],
     indirect=["mpinfo"],
 )
@@ -251,10 +251,10 @@ def test_get_gender(mpinfo: MPInfo, true_gender: str) -> None:
 @pytest.mark.parametrize(
     "mpinfo, true_language",
     [
-        ("tests/data/xmls/haavisto.xml", "fi"),
+        ("tests/data/xmls/ahde.xml", "fi"),
         ("tests/data/xmls/kilpi.xml", "fi"),
         ("tests/data/xmls/rehn-kivi.xml", "sv"),
-        ("tests/data/xmls/vehvilainen.xml", "fi"),
+        ("tests/data/xmls/suomela.xml", "fi"),
     ],
     indirect=["mpinfo"],
 )
@@ -267,10 +267,10 @@ def test_get_language(mpinfo: MPInfo, true_language: str) -> None:
 @pytest.mark.parametrize(
     "mpinfo, true_birthyear",
     [
-        ("tests/data/xmls/haavisto.xml", 1958),
+        ("tests/data/xmls/ahde.xml", 1945),
         ("tests/data/xmls/kilpi.xml", 1969),
         ("tests/data/xmls/rehn-kivi.xml", 1956),
-        ("tests/data/xmls/vehvilainen.xml", 1963),
+        ("tests/data/xmls/suomela.xml", 1994),
     ],
     indirect=["mpinfo"],
 )
@@ -283,10 +283,10 @@ def test_get_birthyear(mpinfo: MPInfo, true_birthyear: int) -> None:
 @pytest.mark.parametrize(
     "mpinfo, true_party",
     [
-        ("tests/data/xmls/haavisto.xml", "Green Parliamentary Group"),
+        ("tests/data/xmls/ahde.xml", "Sosialidemokraattinen eduskuntaryhmä"),
         ("tests/data/xmls/kilpi.xml", "Parliamentary Group of the National Coalition Party"),
         ("tests/data/xmls/rehn-kivi.xml", "Swedish Parliamentary Group"),
-        ("tests/data/xmls/vehvilainen.xml", "Centre Party Parliamentary Group"),
+        ("tests/data/xmls/suomela.xml", "Green Parliamentary Group"),
     ],
     indirect=["mpinfo"],
 )
@@ -299,10 +299,10 @@ def test_get_party(mpinfo: MPInfo, true_party: str) -> None:
 @pytest.mark.parametrize(
     "mpinfo, true_profession",
     [
-        ("tests/data/xmls/haavisto.xml", "Member of Parliament"),
+        ("tests/data/xmls/ahde.xml", ""),
         ("tests/data/xmls/kilpi.xml", "police officer, writer"),
         ("tests/data/xmls/rehn-kivi.xml", "architect, building supervision manager"),
-        ("tests/data/xmls/vehvilainen.xml", "Master of Arts"),
+        ("tests/data/xmls/suomela.xml", "student of social sciences"),
     ],
     indirect=["mpinfo"],
 )
@@ -315,10 +315,10 @@ def test_get_profession(mpinfo: MPInfo, true_profession: str) -> None:
 @pytest.mark.parametrize(
     "mpinfo, true_city",
     [
-        ("tests/data/xmls/haavisto.xml", "Helsinki"),
+        ("tests/data/xmls/ahde.xml", ""),
         ("tests/data/xmls/kilpi.xml", "Kuopio"),
         ("tests/data/xmls/rehn-kivi.xml", "Kauniainen"),
-        ("tests/data/xmls/vehvilainen.xml", "Joensuu"),
+        ("tests/data/xmls/suomela.xml", "Tampere"),
     ],
     indirect=["mpinfo"],
 )
@@ -331,10 +331,10 @@ def test_get_city(mpinfo: MPInfo, true_city: str) -> None:
 @pytest.mark.parametrize(
     "mpinfo, true_pob",
     [
-        ("tests/data/xmls/haavisto.xml", "Helsinki"),
+        ("tests/data/xmls/ahde.xml", "Oulu"),
         ("tests/data/xmls/kilpi.xml", "Rovaniemi"),
         ("tests/data/xmls/rehn-kivi.xml", "Helsinki"),
-        ("tests/data/xmls/vehvilainen.xml", "Leppävirta"),
+        ("tests/data/xmls/suomela.xml", ""),
     ],
     indirect=["mpinfo"],
 )
@@ -347,10 +347,10 @@ def test_get_pob(mpinfo: MPInfo, true_pob: str) -> None:
 @pytest.mark.parametrize(
     "mpinfo, mpid, firstname, lastname, true_mp",
     [
-        ("tests/data/xmls/haavisto.xml", 118, "Pekka", "Haavisto", 0),
+        ("tests/data/xmls/ahde.xml", 103, "Matti", "Ahde", 0),
         ("tests/data/xmls/kilpi.xml", 1432, "Marko", "Kilpi", 1),
         ("tests/data/xmls/rehn-kivi.xml", 1374, "Veronica", "Rehn-Kivi", 2),
-        ("tests/data/xmls/vehvilainen.xml", 508, "Anu", "Vehviläinen", 3),
+        ("tests/data/xmls/suomela.xml", 1423, "Iiris", "Suomela", 3),
     ],
     indirect=["mpinfo", "true_mp"],
 )
