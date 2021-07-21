@@ -7,7 +7,6 @@ from pathlib import Path
 from typing import Any
 from typing import Callable
 from typing import Dict
-from typing import List
 from typing import Optional
 
 import pandas as pd
@@ -103,9 +102,7 @@ class DownloadPipeline(Pipeline):
         """
         super().__init__(log)
 
-    def run(
-        self, df: pd.DataFrame, extension: str, processing_func: Callable[..., None]
-    ) -> List[str]:
+    def run(self, df: pd.DataFrame, extension: str, processing_func: Callable[..., None]) -> None:
         """Iterate through metadata table and apply given download function.
 
         Progress bar is included to show progress since the table might have hundreds of entries.
@@ -114,16 +111,12 @@ class DownloadPipeline(Pipeline):
             df (pd.DataFrame): metadata of files to download
             extension (str): file extension for the file resulting from processing
             processing_func (func): processing function applied to the table entries
-
-        Returns:
-            List[str]: descriptions of all encountered errors
         """
         with alive_bar(len(df)) as bar:
             for index, num, year in zip(df.index, df.num, df.year):
                 if path := self.form_path(num, year, extension):
                     processing_func(path, **{"index": index, "num": num, "year": year})
                 bar()
-        return self.errors
 
     def form_path(self, num: int, year: int, suffix: str) -> Optional[pathlib.Path]:
         """Create and validate path if file by the same name does not exist.

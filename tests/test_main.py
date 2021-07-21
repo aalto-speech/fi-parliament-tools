@@ -204,7 +204,7 @@ def test_preprocessor(
         )
         assert result.exit_code == 0
         assert "Output is logged to" in result.output
-        assert "Got 5 transcripts, begin preprocessing." in result.output
+        assert "Found 5 transcripts, begin preprocessing." in result.output
         assert "Encountered 4 non-breaking error(s)." in result.output
         assert "Preprocessing output was empty for session-022-2019." in result.output
         assert "Encountered unknown MP in " in result.output
@@ -497,7 +497,7 @@ def test_postprocessor_without_input(runner: CliRunner) -> None:
         )
         assert result.exit_code == 0
         assert "Output is logged to" in result.output
-        assert "Found 0 sessions in file list, proceed to postprocessing." in result.output
+        assert "Found 0 sessions in file list, begin postprocessing." in result.output
         assert "Finished successfully!" in result.output
 
 
@@ -547,7 +547,7 @@ def test_postprocessor(runner: CliRunner) -> None:
         )
         assert result.exit_code == 0
         assert "Output is logged to" in result.output
-        assert "Found 4 sessions in file list, proceed to postprocessing." in result.output
+        assert "Found 3 sessions in file list, begin postprocessing." in result.output
         assert "Finished successfully!" in result.output
         assert "Statistics of the speaker alignment" in result.output
 

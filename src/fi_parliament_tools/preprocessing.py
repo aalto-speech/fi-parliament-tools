@@ -37,19 +37,19 @@ class PreprocessingPipeline(Pipeline):
     """
 
     def __init__(
-        self, log: Logger, input_files: List[str], lid_model: str, mptable: str, recipe: Any
+        self, log: Logger, transcript_paths: List[str], lid_model: str, mptable: str, recipe: Any
     ) -> None:
         """Initialize common parameters and preprocessing specific parameters.
 
         Args:
             log (Logger): logger object
-            input_files (List[str]): parliament transcripts (.json) to process
+            transcript_paths (List[str]): parliament transcripts (.json) to process
             lid_model (str): path to LID model for predicting text language
             mptable (str): path to CSV table of MP information
             recipe (Any): a preprocessing recipe file loaded as a module
         """
         super().__init__(log)
-        self.input_files = [Path(input_file).resolve() for input_file in input_files]
+        self.transcript_paths = [Path(path).resolve() for path in transcript_paths]
         self.lid = fasttext.load_model(lid_model)
         self.recipe = recipe
         self.mptable = pd.read_csv(mptable, sep=":", index_col="mp_id")
@@ -81,14 +81,10 @@ class PreprocessingPipeline(Pipeline):
             json.dump(asdict(transcript), outfile, ensure_ascii=False, indent=2)
         input_path.with_suffix(".words").write_text("\n".join(unique_words), encoding="utf-8")
 
-    def run(self) -> List[str]:
-        """Run preprocessing pipeline over the input file list.
-
-        Returns:
-            List[str]: descriptions of all encountered errors
-        """
-        with alive_bar(len(self.input_files)) as bar:
-            for input_path in self.input_files:
+    def run(self) -> None:
+        """Run preprocessing pipeline over the input file list."""
+        with alive_bar(len(self.transcript_paths)) as bar:
+            for input_path in self.transcript_paths:
                 transcript = self.load_transcript(input_path)
                 with input_path.with_suffix(".text").open("w", encoding="utf-8") as textfile:
                     bytecount = textfile.write(input_path.stem)
@@ -97,7 +93,6 @@ class PreprocessingPipeline(Pipeline):
                         self.errors.append(f"Preprocessing output was empty for {input_path.stem}.")
                 self.write_transcript_and_words(input_path, transcript, unique_words)
                 bar()
-        return self.errors
 
     def preprocess_transcript(
         self, transcript: Transcript, textfile: TextIO

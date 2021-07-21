@@ -8,11 +8,10 @@ from typing import List
 from typing import TextIO
 
 import click
-import pandas as pd
 
 from fi_parliament_tools import downloads
 from fi_parliament_tools import mptable
-from fi_parliament_tools import postprocessing
+from fi_parliament_tools.postprocessing import PostProcessingPipeline
 from fi_parliament_tools.preprocessing import PreprocessingPipeline
 
 
@@ -116,7 +115,6 @@ def download(
 ) -> None:
     """Download Finnish parliament videos and transcripts."""
     log = setup_logger(f"{date.today()}-download.log")
-    errors: List[str] = []
 
     if not end_date and not end_session:
         week_before = date.today() - timedelta(weeks=1)
@@ -136,13 +134,13 @@ def download(
         if not video_only:
             df = downloads.query_transcripts(args)
             log.info(f"Found {len(df)} transcripts, proceed to download transcripts.")
-            errors += pipeline.run(df, "json", pipeline.download_transcript)
+            pipeline.run(df, "json", pipeline.download_transcript)
         if not transcript_only:
             df = downloads.query_videos(args)
             log.info(f"Found {len(df)} videos, proceed to download videos and extract audio.")
-            errors += pipeline.run(df, "mp4", pipeline.download_video)
+            pipeline.run(df, "mp4", pipeline.download_video)
     finally:
-        final_report(log, errors)
+        final_report(log, pipeline.errors)
 
 
 @main.command()
@@ -164,53 +162,46 @@ def preprocess(
     RECIPE_FILE is used to preprocess text for speech recognition.
     """  # noqa: DAR101, DAR401, ignore missing arg documentation
     log = setup_logger(f"{date.today()}-preprocess.log")
-    errors: List[str] = []
 
-    try:
+    if spec := importlib.util.spec_from_file_location("recipe", recipe_file):
+        recipe = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(recipe)  # type: ignore
         transcripts = transcript_list.read().split()
-        log.info(f"Got {len(transcripts)} transcripts, begin preprocessing.")
-        if spec := importlib.util.spec_from_file_location("recipe", recipe_file):
-            recipe = importlib.util.module_from_spec(spec)
-            spec.loader.exec_module(recipe)  # type: ignore
-            pipeline = PreprocessingPipeline(log, transcripts, lid_model, mptable_file, recipe)
-            errors = pipeline.run()
-        else:
-            raise click.ClickException(
-                f"Failed to import recipe '{recipe_file}', is it a python file?"
-            )
-    finally:
-        final_report(log, errors)
+        pipeline = PreprocessingPipeline(log, transcripts, lid_model, mptable_file, recipe)
+        try:
+            log.info(f"Found {len(transcripts)} transcripts, begin preprocessing.")
+            pipeline.run()
+        finally:
+            final_report(log, pipeline.errors)
+    else:
+        raise click.ClickException(f"Failed to import recipe '{recipe_file}', is it a python file?")
 
 
 @main.command()
-@click.argument("segments-list", type=click.File(encoding="utf-8"))
+@click.argument("ctms-list", type=click.File(encoding="utf-8"))
 @click.argument("recipe-file", type=click.Path(exists=True))
-def postprocess(segments_list: TextIO, recipe_file: str) -> None:
-    """Assign speakers to segmentation results listed in SEGMENTS_LIST.
+def postprocess(ctms_list: TextIO, recipe_file: str) -> None:
+    """Postprocess segmentation results given a list of segmented CTMs in CTMS_LIST.
 
     RECIPE_FILE is needed for preprocessing the original transcript to the aligned text. Use the
     same RECIPE_FILE as with preprocess command.
     """  # noqa: DAR101, DAR401, ignore missing arg documentation
     log = setup_logger(f"{date.today()}-postprocess.log")
-    errors: List[str] = []
-    stats = pd.DataFrame()
 
-    try:
-        sessions = segments_list.read().split()
-        if spec := importlib.util.spec_from_file_location("recipe", recipe_file):
-            recipe = importlib.util.module_from_spec(spec)
-            spec.loader.exec_module(recipe)  # type: ignore
-            log.info(f"Found {len(sessions)} sessions in file list, proceed to postprocessing.")
-            stats = postprocessing.iterate_sessions(sessions, recipe, log, errors)
-        else:
-            raise click.ClickException(
-                f"Failed to import recipe '{recipe_file}', is it a python file?"
-            )
-
-    finally:
-        final_report(log, errors)
-        if not stats.empty:
-            postprocessing.report_statistics(log, stats)
+    if spec := importlib.util.spec_from_file_location("recipe", recipe_file):
+        recipe = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(recipe)  # type: ignore
+        ctms = ctms_list.read().split()
+        pipeline = PostProcessingPipeline(log, ctms, recipe)
+        try:
+            log.info(f"Found {len(pipeline.inputs)} sessions in file list, begin postprocessing.")
+            pipeline.run()
+        finally:
+            final_report(log, pipeline.errors)
+            if not pipeline.stats.empty:
+                pipeline.report_statistics()
+    else:
+        raise click.ClickException(f"Failed to import recipe '{recipe_file}', is it a python file?")
 
 
 @main.command()
