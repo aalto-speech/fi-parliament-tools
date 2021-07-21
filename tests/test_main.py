@@ -205,7 +205,7 @@ def test_preprocessor(
         assert result.exit_code == 0
         assert "Output is logged to" in result.output
         assert "Found 5 transcripts, begin preprocessing." in result.output
-        assert "Encountered 4 non-breaking error(s)." in result.output
+        assert "Encountered 3 non-breaking error(s)." in result.output
         assert "Preprocessing output was empty for session-022-2019." in result.output
         assert "Encountered unknown MP in " in result.output
         assert "Finished successfully!" in result.output
