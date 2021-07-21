@@ -1,13 +1,11 @@
 """Test cases for the __main__, downloads, preprocessing, and postprocessing modules."""
 import glob
-import importlib
 import json
 import os
 import shutil
 from logging import Logger
 from pathlib import Path
 from typing import Any
-from typing import Callable
 from typing import List
 from typing import Optional
 from typing import Tuple
@@ -22,32 +20,12 @@ from pytest_mock.plugin import MockerFixture  # type: ignore
 from fi_parliament_tools import __main__
 from fi_parliament_tools.downloads import DownloadPipeline
 from fi_parliament_tools.parsing.data_structures import decode_transcript
-from fi_parliament_tools.preprocessing import PreprocessingPipeline
 
 
 @pytest.fixture
 def runner() -> CliRunner:
     """Fixture for invoking command-line interfaces."""
     return CliRunner()
-
-
-@pytest.fixture
-def load_recipe() -> Callable[[str], Any]:
-    """Load a recipe module for testing purposes."""
-
-    def _load_recipe(recipe_path: str) -> Any:
-        if spec := importlib.util.spec_from_file_location("recipe", recipe_path):
-            recipe = importlib.util.module_from_spec(spec)
-            spec.loader.exec_module(recipe)  # type: ignore
-            return recipe
-
-    return _load_recipe
-
-
-@pytest.fixture
-def tmpfile(tmp_path: Path) -> Path:
-    """Create a file in the tmp directory."""
-    return tmp_path / "tmp_output.txt"
 
 
 @pytest.fixture
@@ -64,15 +42,6 @@ def transcript() -> Any:
 def download_pipeline(logger: Logger) -> DownloadPipeline:
     """Initialize DownloadPipeline."""
     pipeline = DownloadPipeline(logger)
-    return pipeline
-
-
-@pytest.fixture
-def preprocess_pipeline(logger: Logger, mocker: MockerFixture) -> PreprocessingPipeline:
-    """Initialize PreprocessingPipeline with mocked LID model and MP table."""
-    mocker.patch("fi_parliament_tools.preprocessing.fasttext.load_model")
-    mocker.patch("fi_parliament_tools.preprocessing.pd.read_csv")
-    pipeline = PreprocessingPipeline(logger, [], "lid_dummy", "mptable_dummy", "recipe_dummy")
     return pipeline
 
 
@@ -153,18 +122,6 @@ def mock_mp_table(mocker: MockerFixture) -> MagicMock:
     return mock
 
 
-@pytest.fixture
-def mock_statement(mocker: MockerFixture) -> MagicMock:
-    """Mock Statement object for the preprocessing module."""
-    mock: MagicMock = mocker.patch("fi_parliament_tools.preprocessing.Statement")
-    mock.text = (
-        "This text is used to test exceptions in preprocessor code. To include a character "
-        "that the simple test recipe cannot process, let's say greetings in German: Schöne Grüße!"
-    )
-    mock.embedded_statement.text = ""
-    return mock
-
-
 def test_main_succeeds(runner: CliRunner) -> None:
     """It exits with a status code of zero."""
     result = runner.invoke(__main__.main)
@@ -242,54 +199,6 @@ def test_preprocessor_with_bad_recipe_file(runner: CliRunner) -> None:
         assert result.exit_code == 1
         assert "Failed to import recipe" in result.output
         assert "is it a python file?" in result.output
-
-
-def test_determine_language_label(
-    preprocess_pipeline: PreprocessingPipeline, mock_statement: MagicMock
-) -> None:
-    """It labels text as Finnish, Swedish, or both."""
-    preprocess_pipeline.lid.predict.side_effect = [
-        (("__label__fi", "__label__et"), None),
-        (("__label__fi", "__label__sv"), None),
-        (("__label__en", "__label__sv"), None),
-    ]
-    true_labels = ["fi.p", "fi+sv.p", "sv.p"]
-    for true_label in true_labels:
-        label = preprocess_pipeline.determine_language_label(mock_statement)
-        assert label == true_label
-
-
-def test_preprocessor_unaccepted_chars_capture(
-    preprocess_pipeline: PreprocessingPipeline,
-    load_recipe: Callable[[str], Any],
-    mock_statement: MagicMock,
-    tmpfile: Path,
-) -> None:
-    """Ensure UnacceptedCharsError is captured, logged and recovered from."""
-    preprocess_pipeline.recipe = load_recipe("tests/data/simple_recipe.py")
-    with open(tmpfile, "w", encoding="utf-8") as tmp_out:
-        words = preprocess_pipeline.preprocess_statement(mock_statement, tmp_out)
-
-    assert (
-        f"UnacceptedCharsError in {tmpfile}. See log for debug info."
-        == preprocess_pipeline.errors[0]
-    )
-    assert words == set()
-
-
-def test_preprocessor_exception(
-    preprocess_pipeline: PreprocessingPipeline,
-    load_recipe: Callable[[str], Any],
-    mock_statement: MagicMock,
-    tmpfile: Path,
-) -> None:
-    """Ensure Exception is captured, logged and recovered from."""
-    preprocess_pipeline.recipe = load_recipe("tests/data/faulty_recipe.py")
-    with open(tmpfile, "w", encoding="utf-8") as tmp_out:
-        words = preprocess_pipeline.preprocess_statement(mock_statement, tmp_out)
-
-    assert f"Caught an exception in {tmpfile}." == preprocess_pipeline.errors[0]
-    assert words == set()
 
 
 def test_download_limiting_options(runner: CliRunner) -> None:
@@ -553,7 +462,7 @@ def test_postprocessor(runner: CliRunner) -> None:
 @mock.patch("fi_parliament_tools.mptable.get_data")
 @mock.patch("fi_parliament_tools.mptable.pd.DataFrame.set_index")
 def test_mptable(
-    mocked_get_data: MagicMock, mocked_set_index: MagicMock, runner: CliRunner
+    mocked_set_index: MagicMock, mocked_get_data: MagicMock, runner: CliRunner
 ) -> None:
     """It successfully runs the mptable client."""
     with runner.isolated_filesystem():
@@ -563,3 +472,5 @@ def test_mptable(
         assert "Fetch all MP data." in result.output
         assert "Parse fetched data." in result.output
         assert "Encountered 0 non-breaking error(s)." in result.output
+        mocked_get_data.assert_called_once()
+        mocked_set_index.assert_called_once_with("mp_id")

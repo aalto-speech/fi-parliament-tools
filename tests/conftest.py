@@ -5,9 +5,12 @@ testing. Keeping the test data for full transcript (subsections) in csv files he
 files clean and readable. Other long strings, that do not need the hook for automatic generation,
 are defined separately in `data/long_strings.py`.
 """
+import importlib
 import json
 import logging
+from pathlib import Path
 from typing import Any
+from typing import Callable
 
 import pytest
 from _pytest.fixtures import SubRequest
@@ -86,3 +89,22 @@ def logger() -> logging.Logger:
     log = logging.getLogger("test-logger")
     log.setLevel(logging.CRITICAL)
     return log
+
+
+@pytest.fixture
+def tmpfile(tmp_path: Path) -> Path:
+    """Create a file in the tmp directory."""
+    return tmp_path / "tmp_output.txt"
+
+
+@pytest.fixture
+def load_recipe() -> Callable[[str], Any]:
+    """Load a recipe module for testing purposes."""
+
+    def _load_recipe(recipe_path: str) -> Any:
+        if spec := importlib.util.spec_from_file_location("recipe", recipe_path):
+            recipe = importlib.util.module_from_spec(spec)
+            spec.loader.exec_module(recipe)  # type: ignore
+            return recipe
+
+    return _load_recipe
