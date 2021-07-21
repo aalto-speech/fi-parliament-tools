@@ -10,14 +10,14 @@ from typing import Union
 
 from lxml import etree
 
-from fi_parliament_tools.transcriptParser.data_structures import EmbeddedStatement
-from fi_parliament_tools.transcriptParser.data_structures import MP
-from fi_parliament_tools.transcriptParser.data_structures import Statement
-from fi_parliament_tools.transcriptParser.data_structures import Subsection
-from fi_parliament_tools.transcriptParser.data_structures import Transcript
-from fi_parliament_tools.transcriptParser.query import SessionQuery
-from fi_parliament_tools.transcriptParser.query import StatementQuery
-from fi_parliament_tools.transcriptParser.query import VaskiQuery
+from fi_parliament_tools.parsing.data_structures import EmbeddedStatement
+from fi_parliament_tools.parsing.data_structures import MP
+from fi_parliament_tools.parsing.data_structures import Statement
+from fi_parliament_tools.parsing.data_structures import Subsection
+from fi_parliament_tools.parsing.data_structures import Transcript
+from fi_parliament_tools.parsing.query import SessionQuery
+from fi_parliament_tools.parsing.query import StatementQuery
+from fi_parliament_tools.parsing.query import VaskiQuery
 
 
 class Session:

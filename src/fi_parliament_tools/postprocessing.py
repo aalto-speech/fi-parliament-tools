@@ -13,10 +13,10 @@ from typing import Tuple
 import pandas as pd
 from alive_progress import alive_bar
 
+from fi_parliament_tools.parsing.data_structures import decode_transcript
 from fi_parliament_tools.pipeline import Pipeline
-from fi_parliament_tools.transcriptMatcher import IO
-from fi_parliament_tools.transcriptMatcher import labeler
-from fi_parliament_tools.transcriptParser.data_structures import decode_transcript
+from fi_parliament_tools.segmentFiltering import IO
+from fi_parliament_tools.segmentFiltering import labeler
 
 STATS_COLUMNS = [
     "length",

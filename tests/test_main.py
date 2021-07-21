@@ -21,8 +21,8 @@ from pytest_mock.plugin import MockerFixture  # type: ignore
 
 from fi_parliament_tools import __main__
 from fi_parliament_tools.downloads import DownloadPipeline
+from fi_parliament_tools.parsing.data_structures import decode_transcript
 from fi_parliament_tools.preprocessing import PreprocessingPipeline
-from fi_parliament_tools.transcriptParser.data_structures import decode_transcript
 
 
 @pytest.fixture

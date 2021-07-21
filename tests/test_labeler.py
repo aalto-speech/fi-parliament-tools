@@ -7,7 +7,7 @@ import pytest
 from _pytest.fixtures import SubRequest
 from pytest_mock.plugin import MockerFixture  # type: ignore
 
-from fi_parliament_tools.transcriptMatcher import labeler
+from fi_parliament_tools.segmentFiltering import labeler
 
 
 @pytest.fixture

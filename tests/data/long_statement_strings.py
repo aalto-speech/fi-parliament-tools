@@ -9,7 +9,7 @@ from typing import Tuple
 import pytest
 from _pytest.fixtures import SubRequest
 
-from fi_parliament_tools.transcriptParser.data_structures import MP
+from fi_parliament_tools.parsing.data_structures import MP
 
 chairman_texts = [
     "Ilmoitetaan, että valiokuntien ja kansliatoimikunnan vaalit toimitetaan ensi tiistaina 5. "

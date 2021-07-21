@@ -9,9 +9,9 @@ from typing import Tuple
 
 import pytest
 
-from fi_parliament_tools.transcriptParser.data_structures import MP
-from fi_parliament_tools.transcriptParser.documents import MPInfo
-from fi_parliament_tools.transcriptParser.documents import Session
+from fi_parliament_tools.parsing.data_structures import MP
+from fi_parliament_tools.parsing.documents import MPInfo
+from fi_parliament_tools.parsing.documents import Session
 
 
 @pytest.mark.parametrize(

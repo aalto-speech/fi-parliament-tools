@@ -15,10 +15,10 @@ from alive_progress import alive_bar
 from lxml import etree
 
 from fi_parliament_tools import video_query
+from fi_parliament_tools.parsing.documents import Session
+from fi_parliament_tools.parsing.query import Query
+from fi_parliament_tools.parsing.query import VaskiQuery
 from fi_parliament_tools.pipeline import Pipeline
-from fi_parliament_tools.transcriptParser.documents import Session
-from fi_parliament_tools.transcriptParser.query import Query
-from fi_parliament_tools.transcriptParser.query import VaskiQuery
 
 VIDEO_API = "https://eduskunta.videosync.fi/api/v1/events"
 

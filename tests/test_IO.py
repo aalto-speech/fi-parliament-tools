@@ -7,7 +7,7 @@ from unittest.mock import MagicMock
 import pytest
 from pytest_mock.plugin import MockerFixture  # type: ignore
 
-from fi_parliament_tools.transcriptMatcher import IO
+from fi_parliament_tools.segmentFiltering import IO
 
 
 def test_read_ctm_segmented() -> None:

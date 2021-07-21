@@ -13,12 +13,12 @@ import pytest
 from _pytest.fixtures import SubRequest
 from lxml import etree
 
-from fi_parliament_tools.transcriptParser.documents import MPInfo
-from fi_parliament_tools.transcriptParser.documents import Session
-from fi_parliament_tools.transcriptParser.query import Query
-from fi_parliament_tools.transcriptParser.query import SessionQuery
-from fi_parliament_tools.transcriptParser.query import StatementQuery
-from fi_parliament_tools.transcriptParser.query import VaskiQuery
+from fi_parliament_tools.parsing.documents import MPInfo
+from fi_parliament_tools.parsing.documents import Session
+from fi_parliament_tools.parsing.query import Query
+from fi_parliament_tools.parsing.query import SessionQuery
+from fi_parliament_tools.parsing.query import StatementQuery
+from fi_parliament_tools.parsing.query import VaskiQuery
 
 pytest_plugins = ["tests.data.long_statement_strings", "tests.data.transcript_query"]
 
