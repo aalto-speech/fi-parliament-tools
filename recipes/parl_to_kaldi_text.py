@@ -467,7 +467,7 @@ REGEXPS = [
     (r"[.:?!]\s+", r"\n"),
     # Muut välimerkit = Other punctuation
     (r"[!\?;…\/]", r"\n"),
-    (r"[>¤¶†ªðÐº¨¦¾Þ\\©®þ\«,­¸:_\»<=&\*()\]¿¡#@~\"'`´‘’“”]", r""),
+    (r"[>¤¶†ªðÐº¨¦¾Þ\\©®þ\«,­¸:_\»<=&\*()\]¿¡§#@~\"'`´‘’“”]", r""),
     (r"\s?—\s?", r" "),
     # Loput pisteet pois = Remove rest of periods
     (r"\.", r" "),

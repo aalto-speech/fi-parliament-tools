@@ -90,7 +90,7 @@ class PreprocessingPipeline(Pipeline):
                     bytecount = textfile.write(input_path.stem)
                     transcript, unique_words = self.preprocess_transcript(transcript, textfile)
                     if textfile.tell() == bytecount:
-                        self.errors.append(f"Preprocessing output was empty for {input_path.stem}.")
+                        self.log.warning(f"Preprocessing output was empty for {input_path.stem}.")
                 self.write_transcript_and_words(input_path, transcript, unique_words)
                 bar()
 
@@ -115,7 +115,7 @@ class PreprocessingPipeline(Pipeline):
         for sub in transcript.subsections:
             for statement in sub.statements:
                 self.recognize_language(statement)
-                self.update_missing_mpids(statement, textfile)
+                self.update_missing_mpids(statement, textfile.name.replace("text", "json"))
                 new_words = self.preprocess_statement(statement, textfile)
                 unique_words = unique_words.union(new_words)
         return transcript, unique_words
@@ -154,12 +154,12 @@ class PreprocessingPipeline(Pipeline):
             label = "sv.p"
         return label
 
-    def update_missing_mpids(self, statement: Statement, textfile: TextIO) -> None:
+    def update_missing_mpids(self, statement: Statement, path: str) -> None:
         """Update missing MP id value in statement and its embedded statement.
 
         Args:
             statement (Statement): statement to update
-            textfile (TextIO): included for logging purposes
+            path (str): transcript JSON path for logging needs
         """
         try:
             if statement.mp_id == 0 and statement.firstname:
@@ -168,9 +168,8 @@ class PreprocessingPipeline(Pipeline):
             if embedded.mp_id == 0 and embedded.firstname:
                 embedded.mp_id = self.lookup_mpid(embedded)
         except KeyError as e:
-            msg = f"Unknown MP in {textfile.name} in statement at '{statement.start_time}':\n {e}"
-            self.log.debug(msg)
-            self.errors.append(f"Encountered unknown MP in {textfile.name}. See log for more info.")
+            self.log.debug(f"Unknown MP in {path} in statement at '{statement.start_time}':\n {e}")
+            self.errors.append(f"Encountered unknown MP in {path}. See log for more info.")
 
     def lookup_mpid(self, statement: Union[Statement, EmbeddedStatement]) -> int:
         """Look up MP id in the MP table using MP name.
