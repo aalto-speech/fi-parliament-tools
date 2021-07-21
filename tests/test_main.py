@@ -90,9 +90,7 @@ def mock_get_full_table(
     mocker: MockerFixture, query_get_full_table: Tuple[List[List[Optional[str]]], List[str]]
 ) -> MagicMock:
     """Mock a small table instead of the true big table."""
-    mock: MagicMock = mocker.patch(
-        "fi_parliament_tools.transcriptParser.query.Query.get_full_table"
-    )
+    mock: MagicMock = mocker.patch("fi_parliament_tools.parsing.query.Query.get_full_table")
     mock.return_value = query_get_full_table
     return mock
 
