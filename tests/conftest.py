@@ -6,17 +6,14 @@ files clean and readable. Other long strings, that do not need the hook for auto
 are defined separately in `data/long_strings.py`.
 """
 import json
+import logging
 from typing import Any
-from typing import Dict
-from typing import Tuple
-from typing import Union
 
 import pytest
 from _pytest.fixtures import SubRequest
 from lxml import etree
 
-from fi_parliament_tools.transcriptParser.data_structures import EmbeddedStatement
-from fi_parliament_tools.transcriptParser.data_structures import Statement
+from fi_parliament_tools.transcriptParser.documents import MPInfo
 from fi_parliament_tools.transcriptParser.documents import Session
 from fi_parliament_tools.transcriptParser.query import Query
 from fi_parliament_tools.transcriptParser.query import SessionQuery
@@ -52,17 +49,11 @@ def session(request: SubRequest) -> Session:
 
 
 @pytest.fixture(scope="module")
-def embedded_statement(request: SubRequest) -> Tuple[EmbeddedStatement, Dict[str, str]]:
-    """Initialize and return an embedded statement object for given data, return also the data."""
-    return (EmbeddedStatement(*request.param.values()), request.param)
-
-
-@pytest.fixture(scope="module")
-def speaker_statement(
-    request: SubRequest,
-) -> Tuple[Statement, Dict[str, Union[str, int]]]:
-    """Initialize and return a speaker statement object for given data, return also the data."""
-    return (Statement(*request.param.values()), request.param)
+def mpinfo(request: SubRequest) -> MPInfo:
+    """Initialize and return an MPInfo object for given XML."""
+    xml_path = request.param
+    xml = etree.parse(xml_path)
+    return MPInfo(xml)
 
 
 @pytest.fixture(scope="module")
@@ -87,3 +78,11 @@ def session_query() -> SessionQuery:
 def statement_query() -> StatementQuery:
     """Initialize a dummy StatementQuery object."""
     return StatementQuery("0000/00")
+
+
+@pytest.fixture(scope="module")
+def logger() -> logging.Logger:
+    """Initialize a default logger for tests."""
+    log = logging.getLogger("test-logger")
+    log.setLevel(logging.CRITICAL)
+    return log

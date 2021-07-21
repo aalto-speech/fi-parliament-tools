@@ -9,6 +9,8 @@ from typing import Tuple
 
 import pytest
 
+from fi_parliament_tools.transcriptParser.data_structures import MP
+from fi_parliament_tools.transcriptParser.documents import MPInfo
 from fi_parliament_tools.transcriptParser.documents import Session
 
 
@@ -212,6 +214,7 @@ def test_embedded_chairman_statement(
         ((34, 2015), "tests/data/jsons/session-034-2015.json"),
         ((35, 2018), "tests/data/jsons/session-035-2018.json"),
         ((130, 2017), "tests/data/jsons/session-130-2017.json"),
+        ((141, 2017), "tests/data/jsons/session-141-2017.json"),
     ],
     indirect=["session"],
 )
@@ -227,3 +230,133 @@ def test_parse_to_json(session: Session, true_output_path: str, tmp_path: Path) 
     session.parse_to_json(tmpfile)
     with open(true_output_path, "r", encoding="utf-8") as true_file:
         assert tmpfile.read_text("utf-8") == true_file.read()
+
+
+@pytest.mark.parametrize(
+    "mpinfo, true_gender",
+    [
+        ("tests/data/xmls/ahde.xml", "o"),
+        ("tests/data/xmls/kilpi.xml", "m"),
+        ("tests/data/xmls/rehn-kivi.xml", "f"),
+        ("tests/data/xmls/suomela.xml", "f"),
+    ],
+    indirect=["mpinfo"],
+)
+def test_get_gender(mpinfo: MPInfo, true_gender: str) -> None:
+    """Test that gender is correctly parsed from the XML."""
+    gender = mpinfo.get_gender()
+    assert gender == true_gender
+
+
+@pytest.mark.parametrize(
+    "mpinfo, true_language",
+    [
+        ("tests/data/xmls/ahde.xml", "fi"),
+        ("tests/data/xmls/kilpi.xml", "fi"),
+        ("tests/data/xmls/rehn-kivi.xml", "sv"),
+        ("tests/data/xmls/suomela.xml", "fi"),
+    ],
+    indirect=["mpinfo"],
+)
+def test_get_language(mpinfo: MPInfo, true_language: str) -> None:
+    """Test that language is correctly parsed from the XML."""
+    language = mpinfo.get_language()
+    assert language == true_language
+
+
+@pytest.mark.parametrize(
+    "mpinfo, true_birthyear",
+    [
+        ("tests/data/xmls/ahde.xml", 1945),
+        ("tests/data/xmls/kilpi.xml", 1969),
+        ("tests/data/xmls/rehn-kivi.xml", 1956),
+        ("tests/data/xmls/suomela.xml", 1994),
+    ],
+    indirect=["mpinfo"],
+)
+def test_get_birthyear(mpinfo: MPInfo, true_birthyear: int) -> None:
+    """Test that birth year is correctly parsed from the XML."""
+    birthyear = mpinfo.get_birthyear()
+    assert birthyear == true_birthyear
+
+
+@pytest.mark.parametrize(
+    "mpinfo, true_party",
+    [
+        ("tests/data/xmls/ahde.xml", "Sosialidemokraattinen eduskuntaryhmä"),
+        ("tests/data/xmls/kilpi.xml", "Parliamentary Group of the National Coalition Party"),
+        ("tests/data/xmls/rehn-kivi.xml", "Swedish Parliamentary Group"),
+        ("tests/data/xmls/suomela.xml", "Green Parliamentary Group"),
+    ],
+    indirect=["mpinfo"],
+)
+def test_get_party(mpinfo: MPInfo, true_party: str) -> None:
+    """Test that party (/parliamentary group) is correctly parsed from the XML."""
+    party = mpinfo.get_party()
+    assert party == true_party
+
+
+@pytest.mark.parametrize(
+    "mpinfo, true_profession",
+    [
+        ("tests/data/xmls/ahde.xml", ""),
+        ("tests/data/xmls/kilpi.xml", "police officer, writer"),
+        ("tests/data/xmls/rehn-kivi.xml", "architect, building supervision manager"),
+        ("tests/data/xmls/suomela.xml", "student of social sciences"),
+    ],
+    indirect=["mpinfo"],
+)
+def test_get_profession(mpinfo: MPInfo, true_profession: str) -> None:
+    """Test that profession is correctly parsed from the XML."""
+    profession = mpinfo.get_profession()
+    assert profession == true_profession
+
+
+@pytest.mark.parametrize(
+    "mpinfo, true_city",
+    [
+        ("tests/data/xmls/ahde.xml", ""),
+        ("tests/data/xmls/kilpi.xml", "Kuopio"),
+        ("tests/data/xmls/rehn-kivi.xml", "Kauniainen"),
+        ("tests/data/xmls/suomela.xml", "Tampere"),
+    ],
+    indirect=["mpinfo"],
+)
+def test_get_city(mpinfo: MPInfo, true_city: str) -> None:
+    """Test that current home city is correctly parsed from the XML."""
+    city = mpinfo.get_city()
+    assert city == true_city
+
+
+@pytest.mark.parametrize(
+    "mpinfo, true_pob",
+    [
+        ("tests/data/xmls/ahde.xml", "Oulu"),
+        ("tests/data/xmls/kilpi.xml", "Rovaniemi"),
+        ("tests/data/xmls/rehn-kivi.xml", "Helsinki"),
+        ("tests/data/xmls/suomela.xml", ""),
+    ],
+    indirect=["mpinfo"],
+)
+def test_get_pob(mpinfo: MPInfo, true_pob: str) -> None:
+    """Test that place of birth is correctly parsed from the XML."""
+    pob = mpinfo.get_pob()
+    assert pob == true_pob
+
+
+@pytest.mark.parametrize(
+    "mpinfo, mpid, firstname, lastname, true_mp",
+    [
+        ("tests/data/xmls/ahde.xml", 103, "Matti", "Ahde", 0),
+        ("tests/data/xmls/kilpi.xml", 1432, "Marko", "Kilpi", 1),
+        ("tests/data/xmls/rehn-kivi.xml", 1374, "Veronica", "Rehn-Kivi", 2),
+        ("tests/data/xmls/suomela.xml", 1423, "Iiris", "Suomela", 3),
+    ],
+    indirect=["mpinfo", "true_mp"],
+)
+def test_mpinfo_parse(
+    mpinfo: MPInfo, mpid: int, firstname: str, lastname: str, true_mp: MP
+) -> None:
+    """Test that MP info is correctly parsed from the XML to an MP object."""
+    mp = mpinfo.parse(mpid, firstname, lastname)
+    assert mp == true_mp

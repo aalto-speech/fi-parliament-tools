@@ -8,11 +8,11 @@ from typing import List
 from typing import TextIO
 
 import click
-import pandas as pd
 
 from fi_parliament_tools import downloads
-from fi_parliament_tools import postprocessing
-from fi_parliament_tools import preprocessing
+from fi_parliament_tools import mptable
+from fi_parliament_tools.postprocessing import PostProcessingPipeline
+from fi_parliament_tools.preprocessing import PreprocessingPipeline
 
 
 def setup_logger(logfile: str) -> logging.Logger:
@@ -115,7 +115,6 @@ def download(
 ) -> None:
     """Download Finnish parliament videos and transcripts."""
     log = setup_logger(f"{date.today()}-download.log")
-    errors: List[str] = []
 
     if not end_date and not end_session:
         week_before = date.today() - timedelta(weeks=1)
@@ -129,79 +128,112 @@ def download(
         "startSession": start_session,
         "endSession": end_session,
     }
+    pipeline = downloads.DownloadPipeline(log)
 
     try:
         if not video_only:
             df = downloads.query_transcripts(args)
             log.info(f"Found {len(df)} transcripts, proceed to download transcripts.")
-            downloads.iterate_metadata_table(df, "json", downloads.download_transcript, log, errors)
+            pipeline.run(df, "json", pipeline.download_transcript)
         if not transcript_only:
             df = downloads.query_videos(args)
             log.info(f"Found {len(df)} videos, proceed to download videos and extract audio.")
-            downloads.iterate_metadata_table(df, "mp4", downloads.download_video, log, errors)
+            pipeline.run(df, "mp4", pipeline.download_video)
     finally:
-        final_report(log, errors)
+        final_report(log, pipeline.errors)
 
 
 @main.command()
 @click.argument("transcript-list", type=click.File(encoding="utf-8"))
 @click.argument("lid-model", type=click.Path(exists=True))
+@click.argument("mptable-file", type=click.Path(exists=True))
 @click.argument("recipe-file", type=click.Path(exists=True))
-def preprocess(transcript_list: TextIO, lid_model: str, recipe_file: str) -> None:
-    """Preprocess parliament transcripts in TRANSCRIPT_LIST using LID_MODEL and RECIPE_FILE.
+def preprocess(
+    transcript_list: TextIO, lid_model: str, mptable_file: str, recipe_file: str
+) -> None:
+    """Preprocess parliament transcripts in TRANSCRIPT_LIST using given file arguments.
 
     LID_MODEL predicts language (fi/sv/both) for those statements that do not have a language label
-    in the XMLs. RECIPE_FILE is used to preprocess text for speech recognition.
+    in the XMLs.
+
+    MPTABLE_FILE is used to add MP ids to (chairman) statements without them. Table can be created
+    or updated with the 'mptable' command.
+
+    RECIPE_FILE is used to preprocess text for speech recognition.
     """  # noqa: DAR101, DAR401, ignore missing arg documentation
     log = setup_logger(f"{date.today()}-preprocess.log")
-    errors: List[str] = []
 
-    try:
+    if spec := importlib.util.spec_from_file_location("recipe", recipe_file):
+        recipe = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(recipe)  # type: ignore
         transcripts = transcript_list.read().split()
-        log.info(f"Got {len(transcripts)} transcripts, proceed to predict missing language labels.")
-        if spec := importlib.util.spec_from_file_location("recipe", recipe_file):
-            recipe = importlib.util.module_from_spec(spec)
-            spec.loader.exec_module(recipe)  # type: ignore
-            preprocessing.apply_fasttext_lid(lid_model, transcripts, log, errors)
-            log.info(f"Next, preprocess all {len(transcripts)} transcripts.")
-            preprocessing.iterate_transcripts(transcripts, recipe, log, errors)
-        else:
-            raise click.ClickException(
-                f"Failed to import recipe '{recipe_file}', is it a python file?"
-            )
-    finally:
-        final_report(log, errors)
+        pipeline = PreprocessingPipeline(log, transcripts, lid_model, mptable_file, recipe)
+        try:
+            log.info(f"Found {len(transcripts)} transcripts, begin preprocessing.")
+            pipeline.run()
+        finally:
+            final_report(log, pipeline.errors)
+    else:
+        raise click.ClickException(f"Failed to import recipe '{recipe_file}', is it a python file?")
 
 
 @main.command()
-@click.argument("segments-list", type=click.File(encoding="utf-8"))
+@click.argument("ctms-list", type=click.File(encoding="utf-8"))
 @click.argument("recipe-file", type=click.Path(exists=True))
-def postprocess(segments_list: TextIO, recipe_file: str) -> None:
-    """Assign speakers to segmentation results listed in SEGMENTS_LIST.
+def postprocess(ctms_list: TextIO, recipe_file: str) -> None:
+    """Postprocess segmentation results given a list of segmented CTMs in CTMS_LIST.
 
     RECIPE_FILE is needed for preprocessing the original transcript to the aligned text. Use the
     same RECIPE_FILE as with preprocess command.
     """  # noqa: DAR101, DAR401, ignore missing arg documentation
     log = setup_logger(f"{date.today()}-postprocess.log")
-    errors: List[str] = []
-    stats = pd.DataFrame()
+
+    if spec := importlib.util.spec_from_file_location("recipe", recipe_file):
+        recipe = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(recipe)  # type: ignore
+        ctms = ctms_list.read().split()
+        pipeline = PostProcessingPipeline(log, ctms, recipe)
+        try:
+            log.info(f"Found {len(pipeline.inputs)} sessions in file list, begin postprocessing.")
+            pipeline.run()
+        finally:
+            final_report(log, pipeline.errors)
+            if not pipeline.stats.empty:
+                pipeline.report_statistics()
+    else:
+        raise click.ClickException(f"Failed to import recipe '{recipe_file}', is it a python file?")
+
+
+@main.command()
+@click.option(
+    "-e",
+    "--get-english",
+    is_flag=True,
+    help="Get English data if available. If English data is not available, Finnish data is used instead.",
+)
+@click.option(
+    "-u", "--update-old", is_flag=True, help="Update outdated values in an existing MP table."
+)
+def build_mptable(get_english: bool, update_old: bool) -> None:
+    """Build an MP data table or update an existing one with new MPs.
+
+    With --get-english handle, English data is used if available. English data is usually available
+    only for current MPs. Using the handle will result in table with some MP entries in English and
+    the rest in Finnish.
+
+    If a previous table exists at 'generated/mp-table.csv', running this command will add new MP
+    entries to it. Using --update-old handle will cause old MP entries to get updated as well. Be
+    warned however, this may cause data loss (e.g. party or home city may change)!
+    """  # noqa: DAR101, DAR401, ignore missing arg documentation
+    log = setup_logger(f"{date.today()}-mptable.log")
+
+    Path("generated").mkdir(exist_ok=True)
 
     try:
-        sessions = segments_list.read().split()
-        if spec := importlib.util.spec_from_file_location("recipe", recipe_file):
-            recipe = importlib.util.module_from_spec(spec)
-            spec.loader.exec_module(recipe)  # type: ignore
-            log.info(f"Found {len(sessions)} sessions in file list, proceed to postprocessing.")
-            stats = postprocessing.iterate_sessions(sessions, recipe, log, errors)
-        else:
-            raise click.ClickException(
-                f"Failed to import recipe '{recipe_file}', is it a python file?"
-            )
-
+        log.info("Begin building MP data table.")
+        mptable.build_table(get_english, update_old, log)
     finally:
-        final_report(log, errors)
-        if not stats.empty:
-            postprocessing.report_statistics(log, stats)
+        final_report(log, [])
 
 
 if __name__ == "__main__":

@@ -134,6 +134,44 @@ class Transcript:
     subsections: List[Subsection] = field(default_factory=list)
 
 
+@dataclass
+class MP:
+    """A member of parliament data structure for saving basic information about an MP.
+
+    Gender is either 'm' for male or 'f' for female. Language refers to mother tongue, either
+    Finnish or Swedish. Party field contains the party the MP represents at the time this object
+    is created. Profession field may contain multiple different professions and/or the highest
+    educational degree the MP holds.
+
+    City field contains the municipality the MP currently resides in. Place of birth (pob) defines
+    the municipality/city the MP was born in. Pob-field may contain a foreign city or a
+    (Finnish) municipality that has ceased to exist.
+    """
+
+    __slots__ = [
+        "mp_id",
+        "firstname",
+        "lastname",
+        "gender",
+        "lang",
+        "birthyear",
+        "party",
+        "profession",
+        "city",
+        "pob",
+    ]
+    mp_id: int
+    firstname: str
+    lastname: str
+    gender: str
+    lang: str
+    birthyear: int
+    party: str
+    profession: str
+    city: str
+    pob: str
+
+
 def decode_transcript(
     dct: Dict[Any, Any],
 ) -> Union[EmbeddedStatement, Statement, Subsection, Transcript, Dict[Any, Any]]:

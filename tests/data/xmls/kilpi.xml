@@ -1,0 +1,342 @@
+<?xml version="1.0" standalone="no"?>
+<Henkilo kieliKoodi="FI" tyyppiKoodi="Kansanedustaja">
+    <HenkiloNro>1432</HenkiloNro>
+    <EtunimetNimi>Marko</EtunimetNimi>
+    <SukuNimi>Kilpi</SukuNimi>
+    <LajitteluNimi>kilpi marko</LajitteluNimi>
+    <KutsumaNimi>Marko</KutsumaNimi>
+    <MatrikkeliNimi>Kilpi, Marko</MatrikkeliNimi>
+    <Puh>09 432 3088</Puh>
+    <SahkoPosti>marko.kilpi@parliament.fi</SahkoPosti>
+    <KotiSivu>www.markokilpi.com</KotiSivu>
+    <Ammatti>police officer, writer</Ammatti>
+    <SyntymaPvm>1969</SyntymaPvm>
+    <SyntymaPaikka>Rovaniemi</SyntymaPaikka>
+    <KuolemaPvm/>
+    <KuolemaPaikka/>
+    <SukuPuoliKoodi>Mies</SukuPuoliKoodi>
+    <NykyinenKotikunta>Kuopio</NykyinenKotikunta>
+    <KansanedustajuusPaattynytPvm/>
+    <Koulutukset>
+        <Koulutus>
+            <Nimi>Degree in policing</Nimi>
+            <Oppilaitos/>
+            <Vuosi/>
+        </Koulutus>
+    </Koulutukset>
+    <TyoUra>
+        <Tyo>
+            <Nimi>Eastern Finland Police Department</Nimi>
+            <AikaJakso>2000-2019</AikaJakso>
+        </Tyo>
+        <Tyo>
+            <Nimi>Police college, planner</Nimi>
+            <AikaJakso>1999-2000</AikaJakso>
+        </Tyo>
+        <Tyo>
+            <Nimi>Mediafactory, Managing Director</Nimi>
+            <AikaJakso/>
+        </Tyo>
+        <Tyo>
+            <Nimi>Savon Sanomat, rotary operator, mail dispatcher, courier</Nimi>
+            <AikaJakso/>
+        </Tyo>
+    </TyoUra>
+    <Vanhemmat/>
+    <Puolisot/>
+    <Lapset/>
+    <Arvonimet>
+        <Arvonimi>
+            <Nimi/>
+            <Oppilaitos/>
+            <Vuosi/>
+            <LisaTieto/>
+        </Arvonimi>
+    </Arvonimet>
+    <Sotilasarvo/>
+    <AseetonpalvelusVuosi/>
+    <SiviilipalvelusVuosi/>
+    <Vaalipiirit>
+        <NykyinenVaalipiiri>
+            <Nimi>Electoral District of Savo-Karelia</Nimi>
+            <AlkuPvm>17.04.2019</AlkuPvm>
+            <Tunnus>saka01</Tunnus>
+        </NykyinenVaalipiiri>
+        <EdellisetVaalipiirit>
+            <VaaliPiiri>
+                <Nimi/>
+                <AlkuPvm/>
+                <LoppuPvm/>
+                <Tunnus/>
+            </VaaliPiiri>
+        </EdellisetVaalipiirit>
+    </Vaalipiirit>
+    <Edustajatoimet>
+        <Edustajatoimi>
+            <AlkuPvm>17.04.2019</AlkuPvm>
+            <LoppuPvm/>
+        </Edustajatoimi>
+    </Edustajatoimet>
+    <Eduskuntaryhmat>
+        <NykyinenEduskuntaryhma>
+            <Nimi>Parliamentary Group of the National Coalition Party</Nimi>
+            <EntNimi>
+                <Nimi/>
+                <AlkuPvm/>
+                <LoppuPvm/>
+            </EntNimi>
+            <Tunnus>kok01</Tunnus>
+            <AlkuPvm>17.04.2019</AlkuPvm>
+        </NykyinenEduskuntaryhma>
+        <EdellisetEduskuntaryhmat>
+            <Eduskuntaryhma>
+                <Nimi/>
+                <EntNimi>
+                    <Nimi/>
+                    <AlkuPvm/>
+                    <LoppuPvm/>
+                </EntNimi>
+                <Tunnus/>
+                <Jasenyys>
+                    <AlkuPvm/>
+                    <LoppuPvm/>
+                    <AikaJakso/>
+                </Jasenyys>
+            </Eduskuntaryhma>
+        </EdellisetEduskuntaryhmat>
+        <TehtavatEduskuntaryhmassa>
+            <Eduskuntaryhma>
+                <Nimi/>
+                <EntNimi>
+                    <Nimi/>
+                    <AlkuPvm/>
+                    <LoppuPvm/>
+                </EntNimi>
+                <Tunnus/>
+                <ToimielinNimi/>
+                <ToimielinTunnus/>
+                <Tehtava>
+                    <Rooli/>
+                    <AlkuPvm/>
+                    <LoppuPvm/>
+                    <AikaJakso/>
+                </Tehtava>
+            </Eduskuntaryhma>
+        </TehtavatEduskuntaryhmassa>
+        <TehtavatAiemmissaEduskuntaryhmissa>
+            <Eduskuntaryhma>
+                <Nimi/>
+                <EntNimi>
+                    <Nimi/>
+                    <AlkuPvm/>
+                    <LoppuPvm/>
+                </EntNimi>
+                <Tunnus/>
+                <ToimielinNimi/>
+                <ToimielinTunnus/>
+                <Tehtava>
+                    <Rooli/>
+                    <AlkuPvm/>
+                    <LoppuPvm/>
+                    <AikaJakso/>
+                </Tehtava>
+            </Eduskuntaryhma>
+        </TehtavatAiemmissaEduskuntaryhmissa>
+    </Eduskuntaryhmat>
+    <NykyisetToimielinjasenyydet>
+        <Toimielin OnkoValiokunta="true">
+            <Nimi>Audit Committee</Nimi>
+            <EntNimi>
+                <Nimi/>
+                <AlkuPvm/>
+                <LoppuPvm/>
+            </EntNimi>
+            <Tunnus>trv01</Tunnus>
+            <Jasenyys>
+                <Rooli>member</Rooli>
+                <AlkuPvm>18.06.2019</AlkuPvm>
+                <LoppuPvm/>
+                <AikaJakso/>
+            </Jasenyys>
+        </Toimielin>
+        <Toimielin OnkoValiokunta="true">
+            <Nimi>Administration Committee</Nimi>
+            <EntNimi>
+                <Nimi/>
+                <AlkuPvm/>
+                <LoppuPvm/>
+            </EntNimi>
+            <Tunnus>hav01</Tunnus>
+            <Jasenyys>
+                <Rooli>deputy member</Rooli>
+                <AlkuPvm>18.06.2019</AlkuPvm>
+                <LoppuPvm/>
+                <AikaJakso/>
+            </Jasenyys>
+        </Toimielin>
+        <Toimielin OnkoValiokunta="true">
+            <Nimi>Legal Affairs Committee</Nimi>
+            <EntNimi>
+                <Nimi/>
+                <AlkuPvm/>
+                <LoppuPvm/>
+            </EntNimi>
+            <Tunnus>lav01</Tunnus>
+            <Jasenyys>
+                <Rooli>member</Rooli>
+                <AlkuPvm>18.06.2019</AlkuPvm>
+                <LoppuPvm/>
+                <AikaJakso/>
+            </Jasenyys>
+        </Toimielin>
+        <Toimielin OnkoValiokunta="true">
+            <Nimi>Transport and Communications Committee</Nimi>
+            <EntNimi>
+                <Nimi/>
+                <AlkuPvm/>
+                <LoppuPvm/>
+            </EntNimi>
+            <Tunnus>liv01</Tunnus>
+            <Jasenyys>
+                <Rooli>deputy member</Rooli>
+                <AlkuPvm>03.04.2020</AlkuPvm>
+                <LoppuPvm/>
+                <AikaJakso/>
+            </Jasenyys>
+        </Toimielin>
+        <Toimielin OnkoValiokunta="true">
+            <Nimi>Committee for the Future</Nimi>
+            <EntNimi>
+                <Nimi/>
+                <AlkuPvm/>
+                <LoppuPvm/>
+            </EntNimi>
+            <Tunnus>tuv01</Tunnus>
+            <Jasenyys>
+                <Rooli>deputy member</Rooli>
+                <AlkuPvm>18.06.2019</AlkuPvm>
+                <LoppuPvm/>
+                <AikaJakso/>
+            </Jasenyys>
+        </Toimielin>
+    </NykyisetToimielinjasenyydet>
+    <AiemmatToimielinjasenyydet>
+        <Toimielin OnkoValiokunta="true">
+            <Nimi>Social Affairs and Health Committee</Nimi>
+            <EntNimi>
+                <Nimi/>
+                <AlkuPvm/>
+                <LoppuPvm/>
+            </EntNimi>
+            <Tunnus>stv01</Tunnus>
+            <Jasenyys>
+                <Rooli>deputy member</Rooli>
+                <AlkuPvm>02.05.2019</AlkuPvm>
+                <LoppuPvm>17.06.2019</LoppuPvm>
+                <AikaJakso/>
+            </Jasenyys>
+        </Toimielin>
+        <Toimielin OnkoValiokunta="true">
+            <Nimi>Employment and Equality Committee</Nimi>
+            <EntNimi>
+                <Nimi/>
+                <AlkuPvm/>
+                <LoppuPvm/>
+            </EntNimi>
+            <Tunnus>tyv01</Tunnus>
+            <Jasenyys>
+                <Rooli>member</Rooli>
+                <AlkuPvm>02.05.2019</AlkuPvm>
+                <LoppuPvm>17.06.2019</LoppuPvm>
+                <AikaJakso/>
+            </Jasenyys>
+        </Toimielin>
+        <Toimielin OnkoValiokunta="true">
+            <Nimi>Environment Committee</Nimi>
+            <EntNimi>
+                <Nimi/>
+                <AlkuPvm/>
+                <LoppuPvm/>
+            </EntNimi>
+            <Tunnus>ymv01</Tunnus>
+            <Jasenyys>
+                <Rooli>member</Rooli>
+                <AlkuPvm>02.05.2019</AlkuPvm>
+                <LoppuPvm>17.06.2019</LoppuPvm>
+                <AikaJakso/>
+            </Jasenyys>
+        </Toimielin>
+    </AiemmatToimielinjasenyydet>
+    <ValtiollisetLuottamustehtavat>
+        <Tehtava>
+            <Nimi/>
+            <AikaJakso/>
+        </Tehtava>
+    </ValtiollisetLuottamustehtavat>
+    <KansanvalisetLuottamustehtavat>
+        <Tehtava>
+            <Nimi/>
+            <AikaJakso/>
+        </Tehtava>
+    </KansanvalisetLuottamustehtavat>
+    <KunnallisetLuottamustehtavat>
+        <Tehtava>
+            <Nimi/>
+            <AikaJakso/>
+        </Tehtava>
+    </KunnallisetLuottamustehtavat>
+    <MuutLuottamustehtavat>
+        <Tehtava>
+            <Nimi/>
+            <AikaJakso/>
+        </Tehtava>
+    </MuutLuottamustehtavat>
+    <ValtioneuvostonJasenyydet>
+        <Jasenyys>
+            <Ministeriys/>
+            <Nimi/>
+            <Hallitus/>
+            <AlkuPvm/>
+            <LoppuPvm/>
+        </Jasenyys>
+    </ValtioneuvostonJasenyydet>
+    <Sidonnaisuudet>
+        <Sidonnaisuus>
+            <Sidonta/>
+            <Otsikko/>
+            <RyhmaOtsikko/>
+        </Sidonnaisuus>
+    </Sidonnaisuudet>
+    <LisaTiedot/>
+    <EdustajanJulkaisut>
+        <EdustajanJulkaisu>
+            <Nimi/>
+            <Vuosi/>
+            <Tekijat/>
+        </EdustajanJulkaisu>
+    </EdustajanJulkaisut>
+    <KirjallisuuttaEdustajasta>
+        <Julkaisu>
+            <Nimi/>
+            <Vuosi/>
+            <Tekijat/>
+        </Julkaisu>
+    </KirjallisuuttaEdustajasta>
+    <EdustajatoimiKeskeytynyt>
+        <ToimenKeskeytys>
+            <Selite/>
+            <TilallaHenkilo/>
+            <AlkuPvm/>
+            <LoppuPvm/>
+        </ToimenKeskeytys>
+    </EdustajatoimiKeskeytynyt>
+    <Kansanedustajana>
+        <Keskeytys>
+            <Selite/>
+            <TilallaSelite/>
+            <TilallaHenkilo/>
+            <AlkuPvm/>
+            <LoppuPvm/>
+        </Keskeytys>
+    </Kansanedustajana>
+</Henkilo>

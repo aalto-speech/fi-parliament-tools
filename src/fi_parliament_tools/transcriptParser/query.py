@@ -41,13 +41,13 @@ class Query:
                 return data
             return None
 
-    def get_full_table(self) -> Tuple[List[List[Optional[str]]], List[str]]:
+    def get_full_table(self) -> Tuple[List[List[str]], List[str]]:
         """Get the full table.
 
         Returns:
-            Tuple[List[str], List[str]]: each data row as a list and column names for the rows
+            Tuple[List[List[str]], List[str]]: each data row as a list and column names for the rows
         """
-        data: List[List[Optional[str]]] = []
+        data: List[List[str]] = []
         while response := self.get_json():
             columns = response["columnNames"]
             data += response["rowData"]
@@ -250,3 +250,14 @@ class StatementQuery(Query):
                 if empty_statement_type_and_manner and has_spoker_first:
                     return row[4]
         return ""
+
+
+class MPQuery(Query):
+    """A class for querying the MemberOfParliament table.
+
+    The table contains information about members of parliament.
+    """
+
+    def __init__(self) -> None:
+        """Form an API query with given parameters."""
+        super().__init__("MemberOfParliament")

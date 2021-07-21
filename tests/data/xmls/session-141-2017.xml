@@ -1,0 +1,1518 @@
+<ns11:Siirto xmlns:ns11="http://www.eduskunta.fi/skeemat/siirto/2011/09/07">
+  <Sanomavalitys xmlns="http://www.eduskunta.fi/skeemat/siirtokooste/2011/05/17">
+    <ns4:SanomatyyppiNimi xmlns:ns4="http://www.eduskunta.fi/skeemat/siirtoelementit/2011/05/17">VASKI_JULKVP_Record_fi</ns4:SanomatyyppiNimi>
+    <ns4:SanomaTunnus xmlns:ns4="http://www.eduskunta.fi/skeemat/siirtoelementit/2011/05/17">Vaski_VASKI_JULKVP_Record_fi_26-huhti-2019_11:15:04:919_EEST</ns4:SanomaTunnus>
+    <ns4:LuontiHetki xmlns:ns4="http://www.eduskunta.fi/skeemat/siirtoelementit/2011/05/17">2019-04-26T11:15:04.919+03:00</ns4:LuontiHetki>
+    <ns4:SiirtoKoodi xmlns:ns4="http://www.eduskunta.fi/skeemat/siirtoelementit/2011/05/17">paivitys</ns4:SiirtoKoodi>
+    <Toimija xmlns="http://www.vn.fi/skeemat/metatietokooste/2010/04/27" xmlns:s119="http://www.vn.fi/skeemat/metatietoelementit/2010/04/27" s119:rooliKoodi="lahettaja">
+      <s119:YhteisoTeksti>Eduskunta</s119:YhteisoTeksti>
+    </Toimija>
+    <Toimija xmlns="http://www.vn.fi/skeemat/metatietokooste/2010/04/27" xmlns:s120="http://www.vn.fi/skeemat/metatietoelementit/2010/04/27" s120:rooliKoodi="vastaanottaja">
+      <s120:YhteisoTeksti>Eduskunta</s120:YhteisoTeksti>
+    </Toimija>
+  </Sanomavalitys>
+  <ns11:SiirtoMetatieto>
+    <jme:JulkaisuMetatieto xmlns:asi="http://www.vn.fi/skeemat/asiakirjakooste/2010/04/27" xmlns:asi1="http://www.vn.fi/skeemat/asiakirjaelementit/2010/04/27" xmlns:jme="http://www.eduskunta.fi/skeemat/julkaisusiirtokooste/2011/12/20" xmlns:met="http://www.vn.fi/skeemat/metatietokooste/2010/04/27" xmlns:met1="http://www.vn.fi/skeemat/metatietoelementit/2010/04/27" xmlns:org="http://www.vn.fi/skeemat/organisaatiokooste/2010/02/15" xmlns:org1="http://www.vn.fi/skeemat/organisaatioelementit/2010/02/15" xmlns:sii="http://www.eduskunta.fi/skeemat/siirtokooste/2011/05/17" xmlns:sii1="http://www.eduskunta.fi/skeemat/siirtoelementit/2011/05/17" xmlns:sis="http://www.vn.fi/skeemat/sisaltokooste/2010/04/27" xmlns:sis1="http://www.vn.fi/skeemat/sisaltoelementit/2010/04/27" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" met1:asiakirjatyyppiNimi="Pöytäkirja" met1:eduskuntaTunnus="PTK 141/2017 vp" met1:identifiointiTunnus="{AAAD9588-BA2D-CA2F-84EC-6A58B5C00000}" met1:kieliKoodi="fi" met1:laadintaPvm="2017-12-15" met1:muuTunnus="EDK-2017-AK-165530" met1:paatehtavaKoodi="00 00 03 Poliittinen ohjaus">
+      <asi:IdentifiointiOsa>
+        <met1:AsiakirjatyyppiNimi>Pöytäkirja</met1:AsiakirjatyyppiNimi>
+        <asi:EduskuntaTunniste>
+          <met1:AsiakirjatyyppiKoodi>PTK</met1:AsiakirjatyyppiKoodi>
+          <asi1:AsiakirjaNroTeksti>141</asi1:AsiakirjaNroTeksti>
+          <asi1:ValtiopaivavuosiTeksti>2017</asi1:ValtiopaivavuosiTeksti>
+        </asi:EduskuntaTunniste>
+        <met:Toimija met1:rooliKoodi="Laatija">
+          <met1:YhteisoTeksti>Täysistunto</met1:YhteisoTeksti>
+        </met:Toimija>
+        <met1:LaadintaPvmTeksti>15.12.2017</met1:LaadintaPvmTeksti>
+        <met:Nimeke met1:vaihtoehtoinenNimekeTeksti="">
+          <met1:NimekeTeksti>Perjantai 15.12.2017 klo 10.03—11.49</met1:NimekeTeksti>
+        </met:Nimeke>
+      </asi:IdentifiointiOsa>
+      <sii:EsitysmuotoViite met1:muuTunnus="{AAAD9588-BA2D-CA2F-84EC-6A58B5C00000}"/>
+    </jme:JulkaisuMetatieto>
+  </ns11:SiirtoMetatieto>
+  <SiirtoAsiakirja xmlns="http://www.eduskunta.fi/skeemat/siirtokooste/2011/05/17">
+    <RakenneAsiakirja>
+      <ptk:Poytakirja xmlns:asi="http://www.vn.fi/skeemat/asiakirjakooste/2010/04/27" xmlns:asi1="http://www.vn.fi/skeemat/asiakirjaelementit/2010/04/27" xmlns:elu="http://www.eduskunta.fi/skeemat/ehdotusluettelo/2014/07/28" xmlns:fra="http://www.eduskunta.fi/skeemat/fraasikooste/2011/01/04" xmlns:fra1="http://www.eduskunta.fi/skeemat/fraasielementit/2011/01/04" xmlns:met="http://www.vn.fi/skeemat/metatietokooste/2010/04/27" xmlns:met1="http://www.vn.fi/skeemat/metatietoelementit/2010/04/27" xmlns:mix="http://www.loc.gov/mix/v20" xmlns:narc="http://www.arkisto.fi/skeemat/sahke2/2011/01/31_vnk" xmlns:org="http://www.vn.fi/skeemat/organisaatiokooste/2010/02/15" xmlns:org1="http://www.vn.fi/skeemat/organisaatioelementit/2010/02/15" xmlns:ptk="http://www.eduskunta.fi/skeemat/poytakirja/2011/01/28" xmlns:saa="http://www.vn.fi/skeemat/saadoskooste/2010/04/27" xmlns:saa1="http://www.vn.fi/skeemat/saadoselementit/2010/04/27" xmlns:sis="http://www.vn.fi/skeemat/sisaltokooste/2010/04/27" xmlns:sis1="http://www.vn.fi/skeemat/sisaltoelementit/2010/04/27" xmlns:tau="http://www.vn.fi/skeemat/taulukkokooste/2010/04/27" xmlns:vsk="http://www.eduskunta.fi/skeemat/vaskikooste/2011/01/04" xmlns:vsk1="http://www.eduskunta.fi/skeemat/vaskielementit/2011/01/04" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" met1:asiakirjatyyppiNimi="Pöytäkirja" met1:eduskuntaTunnus="PTK 141/2017 vp" met1:identifiointiTunnus="66b5494e-458e-cd62-84d0-624e2b400000" met1:kieliKoodi="fi" met1:laadintaPvm="2019-04-26" met1:muuTunnus="66b5494e-458e-cd62-84d0-624e2b400000" met1:rakennemaarittelyNimi="eduskunnanpoytakirja.xsd" met1:tilaKoodi="Tarkistettu" met1:versioTeksti="4.3" vsk1:kokousAloitusHetki="2017-12-15T10:00:00" vsk1:kokousLopetusHetki="2017-12-15T11:00:00">
+        <asi:IdentifiointiOsa>
+          <met1:AsiakirjatyyppiNimi>Pöytäkirja</met1:AsiakirjatyyppiNimi>
+          <asi:EduskuntaTunniste>
+            <met1:AsiakirjatyyppiKoodi>PTK</met1:AsiakirjatyyppiKoodi>
+            <asi1:AsiakirjaNroTeksti>141</asi1:AsiakirjaNroTeksti>
+            <asi1:ValtiopaivavuosiTeksti>2017 vp</asi1:ValtiopaivavuosiTeksti>
+          </asi:EduskuntaTunniste>
+          <met:Toimija met1:rooliKoodi="Laatija">
+            <met1:YhteisoTeksti>Täysistunto</met1:YhteisoTeksti>
+          </met:Toimija>
+          <met:Nimeke>
+            <met1:NimekeTeksti>Perjantai 15.12.2017 klo 10.03—11.49</met1:NimekeTeksti>
+          </met:Nimeke>
+        </asi:IdentifiointiOsa>
+        <asi:SisaltoKuvaus>
+          <sis:KappaleKooste>Täysistunto alkoi klo 10.03. Täysistunto keskeytettiin klo 10.58. Täysistuntoa jatkettiin klo 11.28. Täysistunto päättyi klo 11.49.</sis:KappaleKooste>
+          <sis:KappaleKooste>Puhetta johti puhemies Maria Lohela (10.03—10.58 ja 11.28—11.49).</sis:KappaleKooste>
+        </asi:SisaltoKuvaus>
+        <vsk:MuuAsiakohta met1:muuTunnus="41441" vsk1:kasittelyvaiheKoodi="KOKNHU" vsk1:kohtaJNro="1" vsk1:kohtatyyppiKoodi="Asiakohta" vsk1:yleinenKasittelyvaiheKoodi="KOKOUS">
+          <vsk1:KohtaNumero>1</vsk1:KohtaNumero>
+          <sis1:OtsikkoTeksti>Nimenhuuto</sis1:OtsikkoTeksti>
+          <vsk:KohtaAsiakirja vsk1:hyperlinkkiKoodi="EDK-2017-AK-165445">
+            <met1:AsiakirjatyyppiNimi>Nimenhuutoraportti</met1:AsiakirjatyyppiNimi>
+            <vsk1:TarkenneTeksti>Liite 1A</vsk1:TarkenneTeksti>
+          </vsk:KohtaAsiakirja>
+          <vsk:Toimenpide met1:muuTunnus="177815" vsk1:fraasiTunnus="K_106">
+            <vsk:KohtaSisalto>
+              <sis:KappaleKooste>Toimitettiin nimenhuuto.</sis:KappaleKooste>
+            </vsk:KohtaSisalto>
+          </vsk:Toimenpide>
+        </vsk:MuuAsiakohta>
+        <vsk:MuuAsiakohta met1:muuTunnus="41442" vsk1:kasittelyvaiheKoodi="KOKILM" vsk1:kohtaJNro="2" vsk1:kohtatyyppiKoodi="Asiakohta" vsk1:yleinenKasittelyvaiheKoodi="KOKOUS">
+          <vsk1:KohtaNumero>2</vsk1:KohtaNumero>
+          <sis1:OtsikkoTeksti>Ilmoituksia</sis1:OtsikkoTeksti>
+        </vsk:MuuAsiakohta>
+        <vsk:MuuAsiakohta met1:muuTunnus="52716" vsk1:kasittelyvaiheKoodi="KOKHAL" vsk1:kohtaJNro="3" vsk1:kohtatyyppiKoodi="Alikohta" vsk1:paakohtaTunnus="41442" vsk1:yleinenKasittelyvaiheKoodi="KOKOUS">
+          <vsk1:KohtaNumero>2.1</vsk1:KohtaNumero>
+          <sis1:OtsikkoTeksti>Hallituksen esitykset</sis1:OtsikkoTeksti>
+          <vsk:Toimenpide met1:muuTunnus="225677" vsk1:fraasiTunnus="K_118">
+            <vsk:KohtaSisalto>
+              <sis:KappaleKooste>Valtioneuvosto on 14.12.2017 antanut hallituksen esitykset HE 185-189/2017 vp.</sis:KappaleKooste>
+            </vsk:KohtaSisalto>
+          </vsk:Toimenpide>
+        </vsk:MuuAsiakohta>
+        <vsk:MuuAsiakohta met1:muuTunnus="52761" vsk1:kasittelyvaiheKoodi="KOKK" vsk1:kohtaJNro="4" vsk1:kohtatyyppiKoodi="Alikohta" vsk1:paakohtaTunnus="41442" vsk1:yleinenKasittelyvaiheKoodi="KOKOUS">
+          <vsk1:KohtaNumero>2.2</vsk1:KohtaNumero>
+          <sis1:OtsikkoTeksti>Kertomukset</sis1:OtsikkoTeksti>
+          <vsk:Toimenpide met1:muuTunnus="226304" vsk1:fraasiTunnus="K_134">
+            <vsk:KohtaSisalto>
+              <sis:KappaleKooste>Eduskunnalle on annettu Hallituksen kertomus kielilainsäädännön soveltamisesta 2017 (K 18/2017 vp).</sis:KappaleKooste>
+            </vsk:KohtaSisalto>
+          </vsk:Toimenpide>
+        </vsk:MuuAsiakohta>
+        <vsk:MuuAsiakohta met1:muuTunnus="52717" vsk1:kasittelyvaiheKoodi="KOKK" vsk1:kohtaJNro="5" vsk1:kohtatyyppiKoodi="Alikohta" vsk1:paakohtaTunnus="41442" vsk1:yleinenKasittelyvaiheKoodi="KOKOUS">
+          <vsk1:KohtaNumero>2.3</vsk1:KohtaNumero>
+          <sis1:OtsikkoTeksti>Kertomukset</sis1:OtsikkoTeksti>
+          <vsk:Toimenpide met1:muuTunnus="225679" vsk1:fraasiTunnus="K_134">
+            <vsk:KohtaSisalto>
+              <sis:KappaleKooste>Eduskunnalle on annettu Valtiontalouden tarkastusviraston erilliskertomus eduskunnalle: Finanssipolitiikan valvonnan raportti 2017 (K 20/2017 vp).</sis:KappaleKooste>
+            </vsk:KohtaSisalto>
+          </vsk:Toimenpide>
+        </vsk:MuuAsiakohta>
+        <vsk:MuuAsiakohta met1:muuTunnus="52718" vsk1:kasittelyvaiheKoodi="KOKVKK" vsk1:kohtaJNro="6" vsk1:kohtatyyppiKoodi="Alikohta" vsk1:paakohtaTunnus="41442" vsk1:yleinenKasittelyvaiheKoodi="KOKOUS">
+          <vsk1:KohtaNumero>2.4</vsk1:KohtaNumero>
+          <sis1:OtsikkoTeksti>Vastaukset kirjallisiin kysymyksiin</sis1:OtsikkoTeksti>
+          <vsk:Toimenpide met1:muuTunnus="225683" vsk1:fraasiTunnus="K_138">
+            <vsk:KohtaSisalto>
+              <sis:KappaleKooste>Eduskunnalle ovat saapuneet vastaukset kirjallisiin kysymyksiin KK 432, 497, 499, 501-506, 509-516, 518-523, 526-531, 533, 535/2017 vp.</sis:KappaleKooste>
+            </vsk:KohtaSisalto>
+          </vsk:Toimenpide>
+        </vsk:MuuAsiakohta>
+        <vsk:Asiakohta met1:eduskuntaTunnus="HE 100/2017 vp" met1:muuTunnus="52724" vsk1:kasittelyvaiheKoodi="1K" vsk1:kohtaJNro="7" vsk1:kohtatyyppiKoodi="Asiakohta" vsk1:yleinenKasittelyvaiheKoodi="1K">
+          <vsk1:KohtaNumero>3</vsk1:KohtaNumero>
+          <vsk:KohtaNimeke>
+            <met1:NimekeTeksti>Hallituksen esitys eduskunnalle alkoholilaiksi ja eräiksi siihen liittyviksi laeiksi</met1:NimekeTeksti>
+          </vsk:KohtaNimeke>
+          <vsk:KohtaAsia vsk1:hyperlinkkiKoodi="HE 100/2017 vp">
+            <met1:AsiakirjatyyppiNimi>Hallituksen esitys</met1:AsiakirjatyyppiNimi>
+            <met1:EduskuntaTunnus>HE 100/2017 vp</met1:EduskuntaTunnus>
+          </vsk:KohtaAsia>
+          <vsk:KohtaAsia>
+            <met1:AsiakirjatyyppiNimi>Lakialoite</met1:AsiakirjatyyppiNimi>
+            <sis1:MultiViiteTunnus>LA 4, 6, 8, 12/2016 vp, 34, 42/2017 vp</sis1:MultiViiteTunnus>
+          </vsk:KohtaAsia>
+          <vsk:KohtaAsia vsk1:hyperlinkkiKoodi="TPA 3/2015 vp">
+            <met1:AsiakirjatyyppiNimi>Toimenpidealoite</met1:AsiakirjatyyppiNimi>
+            <met1:EduskuntaTunnus>TPA 3/2015 vp</met1:EduskuntaTunnus>
+          </vsk:KohtaAsia>
+          <vsk:KohtaAsiakirja>
+            <met1:AsiakirjatyyppiNimi>Valiokunnan mietintö</met1:AsiakirjatyyppiNimi>
+            <met1:EduskuntaTunnus>StVM 24/2017 vp</met1:EduskuntaTunnus>
+          </vsk:KohtaAsiakirja>
+          <vsk:KohtaAsiakirja vsk1:hyperlinkkiKoodi="EDK-2017-AK-165468">
+            <met1:AsiakirjatyyppiNimi>Pöytäkirjan liite</met1:AsiakirjatyyppiNimi>
+            <met:MuuViite>
+              <sis1:ViiteTeksti>Mikko Kärnän muutosehdotus</sis1:ViiteTeksti>
+            </met:MuuViite>
+            <vsk1:TarkenneTeksti>Liite 3A</vsk1:TarkenneTeksti>
+          </vsk:KohtaAsiakirja>
+          <vsk:KohtaAsiakirja vsk1:hyperlinkkiKoodi="EDK-2017-AK-165472">
+            <met1:AsiakirjatyyppiNimi>Pöytäkirjan liite</met1:AsiakirjatyyppiNimi>
+            <met:MuuViite>
+              <sis1:ViiteTeksti>Jani Mäkelän muutosehdotus</sis1:ViiteTeksti>
+            </met:MuuViite>
+            <vsk1:TarkenneTeksti>Liite 3B</vsk1:TarkenneTeksti>
+          </vsk:KohtaAsiakirja>
+          <vsk:KohtaAsiakirja vsk1:hyperlinkkiKoodi="EDK-2017-AK-165474">
+            <met1:AsiakirjatyyppiNimi>Pöytäkirjan liite</met1:AsiakirjatyyppiNimi>
+            <met:MuuViite>
+              <sis1:ViiteTeksti>Päivi Räsäsen muutosehdotus</sis1:ViiteTeksti>
+            </met:MuuViite>
+            <vsk1:TarkenneTeksti>Liite 3C</vsk1:TarkenneTeksti>
+          </vsk:KohtaAsiakirja>
+          <vsk:KohtaAsiakirja vsk1:hyperlinkkiKoodi="EDK-2017-AK-165476">
+            <met1:AsiakirjatyyppiNimi>Pöytäkirjan liite</met1:AsiakirjatyyppiNimi>
+            <met:MuuViite>
+              <sis1:ViiteTeksti>Sari Tanuksen muutosehdotus</sis1:ViiteTeksti>
+            </met:MuuViite>
+            <vsk1:TarkenneTeksti>Liite 3D</vsk1:TarkenneTeksti>
+          </vsk:KohtaAsiakirja>
+          <vsk:Toimenpide met1:muuTunnus="225786" vsk1:fraasiTunnus="1K_12">
+            <sis1:ValiotsikkoTeksti>Ensimmäinen käsittely</sis1:ValiotsikkoTeksti>
+            <vsk:KohtaSisalto>
+              <vsk:PuheenjohtajaRepliikki>
+                <vsk1:PuheenjohtajaTeksti>Puhemies Maria Lohela</vsk1:PuheenjohtajaTeksti>
+                <sis:KappaleKooste>Ensimmäiseen käsittelyyn esitellään päiväjärjestyksen <sis1:HarvaKursiiviTeksti>3.</sis1:HarvaKursiiviTeksti> asia. Käsittelyn pohjana on sosiaali- ja terveysvaliokunnan mietintö StVM 24/2017 vp. Yleiskeskustelu asiasta päättyi 14.12.2017 pidetyssä 3. täysistunnossa.</sis:KappaleKooste>
+                <sis:KappaleKooste>Nyt käsitellään muutosehdotukset.</sis:KappaleKooste>
+              </vsk:PuheenjohtajaRepliikki>
+              <sis:KappaleKooste>1. lakiehdotus</sis:KappaleKooste>
+              <sis:KappaleKooste>17 §</sis:KappaleKooste>
+            </vsk:KohtaSisalto>
+          </vsk:Toimenpide>
+          <vsk:PaatoksentekoToimenpide met1:muuTunnus="225787" vsk1:fraasiTunnus="1K_7">
+            <vsk:KohtaSisalto>
+              <vsk:PuhujaRepliikki>
+                <met:Toimija>
+                  <org:Henkilo met1:muuTunnus="612">
+                    <org1:EtuNimi>Sari</org1:EtuNimi>
+                    <org1:SukuNimi>Sarkomaa</org1:SukuNimi>
+                    <org1:LisatietoTeksti>kok</org1:LisatietoTeksti>
+                  </org:Henkilo>
+                </met:Toimija>
+                <sis:KappaleKooste>Arvoisa puhemies! Teen vastalauseen 1 mukaisen esityksen.</sis:KappaleKooste>
+              </vsk:PuhujaRepliikki>
+              <vsk:PuhujaRepliikki>
+                <met:Toimija>
+                  <org:Henkilo met1:muuTunnus="1372">
+                    <org1:EtuNimi>Matti</org1:EtuNimi>
+                    <org1:SukuNimi>Torvinen</org1:SukuNimi>
+                    <org1:LisatietoTeksti>sin</org1:LisatietoTeksti>
+                  </org:Henkilo>
+                </met:Toimija>
+                <sis:KappaleKooste>Arvoisa puhemies! Kannatan edustaja Sarkomaan esitystä.</sis:KappaleKooste>
+              </vsk:PuhujaRepliikki>
+              <vsk:PuhujaRepliikki>
+                <met:Toimija>
+                  <org:Henkilo met1:muuTunnus="499">
+                    <org1:EtuNimi>Päivi</org1:EtuNimi>
+                    <org1:SukuNimi>Räsänen</org1:SukuNimi>
+                    <org1:LisatietoTeksti>kd</org1:LisatietoTeksti>
+                  </org:Henkilo>
+                </met:Toimija>
+                <sis:KappaleKooste>Arvoisa puhemies! Esitän, että pykälä saa sen muodon, joka on pöydille jaettuna nimelläni.</sis:KappaleKooste>
+              </vsk:PuhujaRepliikki>
+              <vsk:PuhujaRepliikki>
+                <met:Toimija>
+                  <org:Henkilo met1:muuTunnus="1325">
+                    <org1:EtuNimi>Sari</org1:EtuNimi>
+                    <org1:SukuNimi>Tanus</org1:SukuNimi>
+                    <org1:LisatietoTeksti>kd</org1:LisatietoTeksti>
+                  </org:Henkilo>
+                </met:Toimija>
+                <sis:KappaleKooste>Arvoisa puhemies! Kannatan.</sis:KappaleKooste>
+              </vsk:PuhujaRepliikki>
+              <vsk:PuhujaRepliikki>
+                <met:Toimija>
+                  <org:Henkilo met1:muuTunnus="1301">
+                    <org1:EtuNimi>Jani</org1:EtuNimi>
+                    <org1:SukuNimi>Mäkelä</org1:SukuNimi>
+                    <org1:LisatietoTeksti>ps</org1:LisatietoTeksti>
+                  </org:Henkilo>
+                </met:Toimija>
+                <sis:KappaleKooste>Arvoisa puhemies! Esitän, että 17 § hyväksytään pöydille jaetun muutosesitykseni mukaisena.</sis:KappaleKooste>
+              </vsk:PuhujaRepliikki>
+              <vsk:PuhujaRepliikki>
+                <met:Toimija>
+                  <org:Henkilo met1:muuTunnus="1327">
+                    <org1:EtuNimi>Ville</org1:EtuNimi>
+                    <org1:SukuNimi>Tavio</org1:SukuNimi>
+                    <org1:LisatietoTeksti>ps</org1:LisatietoTeksti>
+                  </org:Henkilo>
+                </met:Toimija>
+                <sis:KappaleKooste>Arvoisa puhemies! Kannatan.</sis:KappaleKooste>
+              </vsk:PuhujaRepliikki>
+              <vsk:PuhujaRepliikki>
+                <met:Toimija>
+                  <org:Henkilo met1:muuTunnus="1348">
+                    <org1:EtuNimi>Mikko</org1:EtuNimi>
+                    <org1:SukuNimi>Kärnä</org1:SukuNimi>
+                    <org1:LisatietoTeksti>kesk</org1:LisatietoTeksti>
+                  </org:Henkilo>
+                </met:Toimija>
+                <sis:KappaleKooste>Arvoisa rouva puhemies! Esitän, että laki hyväksytään muutosesitykseni mukaisena.</sis:KappaleKooste>
+              </vsk:PuhujaRepliikki>
+              <vsk:PuhujaRepliikki>
+                <met:Toimija>
+                  <org:Henkilo met1:muuTunnus="1305">
+                    <org1:EtuNimi>Juha</org1:EtuNimi>
+                    <org1:SukuNimi>Pylväs</org1:SukuNimi>
+                    <org1:LisatietoTeksti>kesk</org1:LisatietoTeksti>
+                  </org:Henkilo>
+                </met:Toimija>
+                <sis:KappaleKooste>Arvoisa puhemies! Kannatan.</sis:KappaleKooste>
+              </vsk:PuhujaRepliikki>
+              <vsk:PuhujaRepliikki>
+                <met:Toimija>
+                  <org:Henkilo met1:muuTunnus="791">
+                    <org1:EtuNimi>Anneli</org1:EtuNimi>
+                    <org1:SukuNimi>Kiljunen</org1:SukuNimi>
+                    <org1:LisatietoTeksti>sd</org1:LisatietoTeksti>
+                  </org:Henkilo>
+                </met:Toimija>
+                <sis:KappaleKooste>Arvoisa puhemies! Esitän, että pykälä saa vastalauseen 2 mukaisen muodon.</sis:KappaleKooste>
+              </vsk:PuhujaRepliikki>
+              <vsk:PuhujaRepliikki>
+                <met:Toimija>
+                  <org:Henkilo met1:muuTunnus="1097">
+                    <org1:EtuNimi>Aino-Kaisa</org1:EtuNimi>
+                    <org1:SukuNimi>Pekonen</org1:SukuNimi>
+                    <org1:LisatietoTeksti>vas</org1:LisatietoTeksti>
+                  </org:Henkilo>
+                </met:Toimija>
+                <sis:KappaleKooste>Arvoisa puhemies! Kannatan edustaja Kiljusen esitystä.</sis:KappaleKooste>
+              </vsk:PuhujaRepliikki>
+              <vsk:PuheenjohtajaRepliikki>
+                <vsk1:PuheenjohtajaTeksti>Puhemies Maria Lohela</vsk1:PuheenjohtajaTeksti>
+                <sis:KappaleKooste>Sari Sarkomaa on Matti Torvisen kannattamana ehdottanut, että pykälä hyväksytään vastalauseen 1 mukaisena.</sis:KappaleKooste>
+                <sis:KappaleKooste>Päivi Räsänen on Sari Tanuksen kannattamana ehdottanut, että pykälä hyväksytään edustajille jaetun muutosehdotuksen mukaisena. (Pöytäkirjan liite 3C)</sis:KappaleKooste>
+                <sis:KappaleKooste>Jani Mäkelä on Ville Tavion kannattamana ehdottanut, että pykälä hyväksytään edustajille jaetun muutosehdotuksen mukaisena. (Pöytäkirjan liite 3B)</sis:KappaleKooste>
+                <sis:KappaleKooste>Mikko Kärnä on Juha Pylvään kannattamana ehdottanut, että pykälä hyväksytään edustajille jaetun muutosehdotuksen mukaisena. (Pöytäkirjan liite 3A)</sis:KappaleKooste>
+                <sis:KappaleKooste>Anneli Kiljunen on Aino-Kaisa Pekosen kannattamana ehdottanut, että pykälä hyväksytään vastalauseen 2 mukaisena.</sis:KappaleKooste>
+              </vsk:PuheenjohtajaRepliikki>
+              <sis:KappaleKooste>Selonteko hyväksyttiin.</sis:KappaleKooste>
+              <vsk:PuheenjohtajaRepliikki>
+                <vsk1:PuheenjohtajaTeksti>Puhemies Maria Lohela</vsk1:PuheenjohtajaTeksti>
+                <sis:KappaleKooste>Ensin äänestetään Jani Mäkelän ehdotuksesta Päivi Räsäsen ehdotusta vastaan, sitten voittaneesta samansisältöisiä edustaja Sari Sarkomaan ja Mikko Kärnän ehdotuksia vastaan, sitten voittaneesta edustaja Kiljusen ehdotusta vastaan ja lopuksi voittaneesta mietintöä vastaan.</sis:KappaleKooste>
+              </vsk:PuheenjohtajaRepliikki>
+              <sis:KappaleKooste>Äänestysjärjestys hyväksyttiin.</sis:KappaleKooste>
+              <vsk:AanestysKappaleKooste>1) Päivi Räsäsen ehdotus "jaa", Jani Mäkelän ehdotus "ei". <vsk:AanestysTulos><vsk1:AanestysTulosTeksti>Äänestyksen tulos: jaa 49, ei 68, tyhjiä 77; poissa 5 </vsk1:AanestysTulosTeksti><vsk:AanestysViite met1:kieliKoodi="fi" vsk1:aanestysNroTeksti="91" vsk1:kokousNroTeksti="141" vsk1:valtiopaivaTeksti="2017 vp" vsk1:valtiopaivavuosiNroTeksti="2017"><vsk1:AanestysViiteTeksti>(äänestys 91). </vsk1:AanestysViiteTeksti></vsk:AanestysViite></vsk:AanestysTulos>Eduskunta hyväksyi tässä äänestyksessä Jani Mäkelän ehdotuksen.</vsk:AanestysKappaleKooste>
+              <vsk:AanestysKappaleKooste>2) Sari Sarkomaan ja Mikko Kärnän ehdotus "jaa", Jani Mäkelän ehdotus "ei". <vsk:AanestysTulos><vsk1:AanestysTulosTeksti>Äänestyksen tulos: jaa 128, ei 14, tyhjiä 50; poissa 7 </vsk1:AanestysTulosTeksti><vsk:AanestysViite met1:kieliKoodi="fi" vsk1:aanestysNroTeksti="92" vsk1:kokousNroTeksti="141" vsk1:valtiopaivaTeksti="2017 vp" vsk1:valtiopaivavuosiNroTeksti="2017"><vsk1:AanestysViiteTeksti>(äänestys 92). </vsk1:AanestysViiteTeksti></vsk:AanestysViite></vsk:AanestysTulos>Eduskunta hyväksyi tässä äänestyksessä Sari Sarkomaan ja Mikko Kärnän ehdotuksen.</vsk:AanestysKappaleKooste>
+              <vsk:AanestysKappaleKooste>3) Anneli Kiljusen ehdotus "jaa", Sari Sarkomaan ja Mikko Kärnän ehdotus "ei". <vsk:AanestysTulos><vsk1:AanestysTulosTeksti>Äänestyksen tulos: jaa 68, ei 121, tyhjiä 1; poissa 9 </vsk1:AanestysTulosTeksti><vsk:AanestysViite met1:kieliKoodi="fi" vsk1:aanestysNroTeksti="93" vsk1:kokousNroTeksti="141" vsk1:valtiopaivaTeksti="2017 vp" vsk1:valtiopaivavuosiNroTeksti="2017"><vsk1:AanestysViiteTeksti>(äänestys 93). Eduskunta hyväksyi tässä äänestyksessä Sari Sarkomaan ja Mikko Kärnän ehdotuksen.</vsk1:AanestysViiteTeksti></vsk:AanestysViite></vsk:AanestysTulos></vsk:AanestysKappaleKooste>
+              <vsk:AanestysKappaleKooste>4) Mietintö "jaa", Sari Sarkomaan ja Mikko Kärnän ehdotus "ei". <vsk:AanestysTulos><vsk1:AanestysTulosTeksti>Äänestyksen tulos: jaa 94, ei 98; poissa 7 </vsk1:AanestysTulosTeksti><vsk:AanestysViite met1:kieliKoodi="fi" vsk1:aanestysNroTeksti="94" vsk1:kokousNroTeksti="141" vsk1:valtiopaivaTeksti="2017 vp" vsk1:valtiopaivavuosiNroTeksti="2017"><vsk1:AanestysViiteTeksti>(äänestys 94). </vsk1:AanestysViiteTeksti></vsk:AanestysViite></vsk:AanestysTulos>Eduskunta hyväksyi tässä äänestyksessä Sari Sarkomaan ja Mikko Kärnän ehdotuksen.</vsk:AanestysKappaleKooste>
+              <sis:KappaleKooste>18 a §</sis:KappaleKooste>
+              <vsk:PuhujaRepliikki>
+                <met:Toimija>
+                  <org:Henkilo met1:muuTunnus="1325">
+                    <org1:EtuNimi>Sari</org1:EtuNimi>
+                    <org1:SukuNimi>Tanus</org1:SukuNimi>
+                    <org1:LisatietoTeksti>kd</org1:LisatietoTeksti>
+                  </org:Henkilo>
+                </met:Toimija>
+                <sis:KappaleKooste>Arvoisa puhemies! Esitän, että pykälä vähimmäisjuomavalikoimasta saa muodon, joka on jaettu pöydille.</sis:KappaleKooste>
+              </vsk:PuhujaRepliikki>
+              <vsk:PuhujaRepliikki>
+                <met:Toimija>
+                  <org:Henkilo met1:muuTunnus="499">
+                    <org1:EtuNimi>Päivi</org1:EtuNimi>
+                    <org1:SukuNimi>Räsänen</org1:SukuNimi>
+                    <org1:LisatietoTeksti>kd</org1:LisatietoTeksti>
+                  </org:Henkilo>
+                </met:Toimija>
+                <sis:KappaleKooste>Arvoisa puhemies! Kannatan. </sis:KappaleKooste>
+              </vsk:PuhujaRepliikki>
+              <vsk:PuheenjohtajaRepliikki>
+                <vsk1:PuheenjohtajaTeksti>Puhemies Maria Lohela</vsk1:PuheenjohtajaTeksti>
+                <sis:KappaleKooste>Sari Tanus on Päivi Räsäsen kannattamana ehdottanut, että pykälä hyväksytään edustajille jaetun muutosehdotuksen mukaisena. (Pöytäkirjan liite 3D)</sis:KappaleKooste>
+              </vsk:PuheenjohtajaRepliikki>
+              <sis:KappaleKooste>Selonteko hyväksyttiin.</sis:KappaleKooste>
+              <vsk:AanestysKappaleKooste>Mietintö "jaa", Sari Tanuksen ehdotus "ei". <vsk:AanestysTulos><vsk1:AanestysTulosTeksti>Äänestyksen tulos: jaa 169, ei 15, tyhjiä 8; poissa 7 </vsk1:AanestysTulosTeksti><vsk:AanestysViite met1:kieliKoodi="fi" vsk1:aanestysNroTeksti="95" vsk1:kokousNroTeksti="141" vsk1:valtiopaivaTeksti="2017 vp" vsk1:valtiopaivavuosiNroTeksti="2017"><vsk1:AanestysViiteTeksti>(äänestys 95). </vsk1:AanestysViiteTeksti></vsk:AanestysViite></vsk:AanestysTulos>Eduskunta hyväksyi mietinnön.</vsk:AanestysKappaleKooste>
+              <sis:KappaleKooste>26 §</sis:KappaleKooste>
+              <vsk:PuhujaRepliikki>
+                <met:Toimija>
+                  <org:Henkilo met1:muuTunnus="612">
+                    <org1:EtuNimi>Sari</org1:EtuNimi>
+                    <org1:SukuNimi>Sarkomaa</org1:SukuNimi>
+                    <org1:LisatietoTeksti>kok</org1:LisatietoTeksti>
+                  </org:Henkilo>
+                </met:Toimija>
+                <sis:KappaleKooste>Arvoisa puhemies! Teen vastalauseen 1 mukaisen esityksen.</sis:KappaleKooste>
+              </vsk:PuhujaRepliikki>
+              <vsk:PuhujaRepliikki>
+                <met:Toimija>
+                  <org:Henkilo met1:muuTunnus="1372">
+                    <org1:EtuNimi>Matti</org1:EtuNimi>
+                    <org1:SukuNimi>Torvinen</org1:SukuNimi>
+                    <org1:LisatietoTeksti>sin</org1:LisatietoTeksti>
+                  </org:Henkilo>
+                </met:Toimija>
+                <sis:KappaleKooste>Arvoisa rouva puhemies! Kannatan edustaja Sarkomaan esitystä.</sis:KappaleKooste>
+              </vsk:PuhujaRepliikki>
+              <vsk:PuhujaRepliikki>
+                <met:Toimija>
+                  <org:Henkilo met1:muuTunnus="1301">
+                    <org1:EtuNimi>Jani</org1:EtuNimi>
+                    <org1:SukuNimi>Mäkelä</org1:SukuNimi>
+                    <org1:LisatietoTeksti>ps</org1:LisatietoTeksti>
+                  </org:Henkilo>
+                </met:Toimija>
+                <sis:KappaleKooste>Arvoisa puhemies! Esitän, että 26 § hyväksytään pöydille jaetun muutos-ehdotukseni mukaisena.</sis:KappaleKooste>
+              </vsk:PuhujaRepliikki>
+              <vsk:PuhujaRepliikki>
+                <met:Toimija>
+                  <org:Henkilo met1:muuTunnus="1122">
+                    <org1:EtuNimi>Olli</org1:EtuNimi>
+                    <org1:SukuNimi>Immonen</org1:SukuNimi>
+                    <org1:LisatietoTeksti>ps</org1:LisatietoTeksti>
+                  </org:Henkilo>
+                </met:Toimija>
+                <sis:KappaleKooste>Arvoisa puhemies! Kannatan.</sis:KappaleKooste>
+              </vsk:PuhujaRepliikki>
+              <vsk:PuhujaRepliikki>
+                <met:Toimija>
+                  <org:Henkilo met1:muuTunnus="1348">
+                    <org1:EtuNimi>Mikko</org1:EtuNimi>
+                    <org1:SukuNimi>Kärnä</org1:SukuNimi>
+                    <org1:LisatietoTeksti>kesk</org1:LisatietoTeksti>
+                  </org:Henkilo>
+                </met:Toimija>
+                <sis:KappaleKooste>Arvoisa rouva puhemies! Esitän, että alkoholilaki hyväksytään muutosesitykseni mukaisesti.</sis:KappaleKooste>
+              </vsk:PuhujaRepliikki>
+              <vsk:PuhujaRepliikki>
+                <met:Toimija>
+                  <org:Henkilo met1:muuTunnus="1305">
+                    <org1:EtuNimi>Juha</org1:EtuNimi>
+                    <org1:SukuNimi>Pylväs</org1:SukuNimi>
+                    <org1:LisatietoTeksti>kesk</org1:LisatietoTeksti>
+                  </org:Henkilo>
+                </met:Toimija>
+                <sis:KappaleKooste>Arvoisa puhemies! Kannatan.</sis:KappaleKooste>
+              </vsk:PuhujaRepliikki>
+              <vsk:PuhujaRepliikki>
+                <met:Toimija>
+                  <org:Henkilo met1:muuTunnus="791">
+                    <org1:EtuNimi>Anneli</org1:EtuNimi>
+                    <org1:SukuNimi>Kiljunen</org1:SukuNimi>
+                    <org1:LisatietoTeksti>sd</org1:LisatietoTeksti>
+                  </org:Henkilo>
+                </met:Toimija>
+                <sis:KappaleKooste>Arvoisa puhemies! Esitän, että pykälä saa vastalauseen 2 mukaisen muodon.</sis:KappaleKooste>
+              </vsk:PuhujaRepliikki>
+              <vsk:PuhujaRepliikki>
+                <met:Toimija>
+                  <org:Henkilo met1:muuTunnus="1097">
+                    <org1:EtuNimi>Aino-Kaisa</org1:EtuNimi>
+                    <org1:SukuNimi>Pekonen</org1:SukuNimi>
+                    <org1:LisatietoTeksti>vas</org1:LisatietoTeksti>
+                  </org:Henkilo>
+                </met:Toimija>
+                <sis:KappaleKooste>Arvoisa puhemies! Kannatan edustaja Kiljusen esitystä.</sis:KappaleKooste>
+              </vsk:PuhujaRepliikki>
+              <vsk:PuhujaRepliikki>
+                <met:Toimija>
+                  <org:Henkilo met1:muuTunnus="499">
+                    <org1:EtuNimi>Päivi</org1:EtuNimi>
+                    <org1:SukuNimi>Räsänen</org1:SukuNimi>
+                    <org1:LisatietoTeksti>kd</org1:LisatietoTeksti>
+                  </org:Henkilo>
+                </met:Toimija>
+                <sis:KappaleKooste>Arvoisa puhemies! Esitän, että pykälä saa sen muodon, joka on pöydille jaettuna nimelläni.</sis:KappaleKooste>
+              </vsk:PuhujaRepliikki>
+              <vsk:PuhujaRepliikki>
+                <met:Toimija>
+                  <org:Henkilo met1:muuTunnus="1325">
+                    <org1:EtuNimi>Sari</org1:EtuNimi>
+                    <org1:SukuNimi>Tanus</org1:SukuNimi>
+                    <org1:LisatietoTeksti>kd</org1:LisatietoTeksti>
+                  </org:Henkilo>
+                </met:Toimija>
+                <sis:KappaleKooste>Arvoisa puhemies! Kannatan edustaja Räsäsen ehdotusta.</sis:KappaleKooste>
+              </vsk:PuhujaRepliikki>
+              <vsk:PuheenjohtajaRepliikki>
+                <vsk1:PuheenjohtajaTeksti>Puhemies Maria Lohela</vsk1:PuheenjohtajaTeksti>
+                <sis:KappaleKooste>Sari Sarkomaa on Matti Torvisen kannattamana ehdottanut, että pykälä hyväksytään vastalauseen 1 mukaisena.</sis:KappaleKooste>
+                <sis:KappaleKooste>Jani Mäkelä on Olli Immosen kannattamana ehdottanut, että pykälä hyväksytään edustajille jaetun muutosehdotuksen mukaisena. (Pöytäkirjan liite 3B)</sis:KappaleKooste>
+                <sis:KappaleKooste>Mikko Kärnä on Juha Pylvään kannattamana ehdottanut, että pykälä hyväksytään edustajille jaetun muutosehdotuksen mukaisena. (Pöytäkirjan liite 3A)</sis:KappaleKooste>
+                <sis:KappaleKooste>Anneli Kiljunen on Aino-Kaisa Pekosen kannattamana ehdottanut, että pykälä hyväksytään vastalauseen 2 mukaisena. </sis:KappaleKooste>
+                <sis:KappaleKooste>Päivi Räsänen on Sari Tanuksen kannattamana ehdottanut, että pykälä hyväksytään edustajille jaetun muutosehdotuksen mukaisena. (Pöytäkirjan liite 3C)</sis:KappaleKooste>
+              </vsk:PuheenjohtajaRepliikki>
+              <sis:KappaleKooste>Selonteko hyväksyttiin.</sis:KappaleKooste>
+              <vsk:PuheenjohtajaRepliikki>
+                <vsk1:PuheenjohtajaTeksti>Puhemies Maria Lohela</vsk1:PuheenjohtajaTeksti>
+                <sis:KappaleKooste>Ensin äänestetään Jani Mäkelän ehdotuksesta Päivi Räsäsen ehdotusta vastaan, sitten voittaneesta samansisältöisiä edustaja Sari Sarkomaan ja Mikko Kärnän ehdotuksia vastaan, sitten voittaneesta edustaja Kiljusen ehdotusta vastaan ja lopuksi voittaneesta mietintöä vastaan.</sis:KappaleKooste>
+              </vsk:PuheenjohtajaRepliikki>
+              <sis:KappaleKooste>Äänestysjärjestys hyväksyttiin.</sis:KappaleKooste>
+              <vsk:AanestysKappaleKooste>1) Päivi Räsäsen ehdotus "jaa", Jani Mäkelän ehdotus "ei". <vsk:AanestysTulos><vsk1:AanestysTulosTeksti>Äänestyksen tulos: jaa 42, ei 68, tyhjiä 82; poissa 7 </vsk1:AanestysTulosTeksti><vsk:AanestysViite met1:kieliKoodi="fi" vsk1:aanestysNroTeksti="96" vsk1:kokousNroTeksti="141" vsk1:valtiopaivaTeksti="2017 vp" vsk1:valtiopaivavuosiNroTeksti="2017"><vsk1:AanestysViiteTeksti>(äänestys 96). </vsk1:AanestysViiteTeksti></vsk:AanestysViite></vsk:AanestysTulos>Eduskunta hyväksyi tässä äänestyksessä Jani Mäkelän ehdotuksen.</vsk:AanestysKappaleKooste>
+              <vsk:AanestysKappaleKooste>2) Sari Sarkomaan ja Mikko Kärnän ehdotus "jaa", Jani Mäkelän ehdotus "ei". <vsk:AanestysTulos><vsk1:AanestysTulosTeksti>Äänestyksen tulos: jaa 125, ei 15, tyhjiä 51; poissa 8 </vsk1:AanestysTulosTeksti><vsk:AanestysViite met1:kieliKoodi="fi" vsk1:aanestysNroTeksti="97" vsk1:kokousNroTeksti="141" vsk1:valtiopaivaTeksti="2017 vp" vsk1:valtiopaivavuosiNroTeksti="2017"><vsk1:AanestysViiteTeksti>(äänestys 97). Eduskunta hyväksyi tässä äänestyksessä Sari Sarkomaan ja Mikko Kärnän ehdotuksen.</vsk1:AanestysViiteTeksti></vsk:AanestysViite></vsk:AanestysTulos></vsk:AanestysKappaleKooste>
+              <vsk:AanestysKappaleKooste>3) Anneli Kiljusen ehdotus "jaa", Sari Sarkomaan ja Mikko Kärnän ehdotus "ei". <vsk:AanestysTulos><vsk1:AanestysTulosTeksti>Äänestyksen tulos: jaa 67, ei 120; poissa 12 </vsk1:AanestysTulosTeksti><vsk:AanestysViite met1:kieliKoodi="fi" vsk1:aanestysNroTeksti="98" vsk1:kokousNroTeksti="141" vsk1:valtiopaivaTeksti="2017 vp" vsk1:valtiopaivavuosiNroTeksti="2017"><vsk1:AanestysViiteTeksti>(äänestys 98). Eduskunta hyväksyi tässä äänestyksessä Sari Sarkomaan ja Mikko Kärnän ehdotuksen.</vsk1:AanestysViiteTeksti></vsk:AanestysViite></vsk:AanestysTulos></vsk:AanestysKappaleKooste>
+              <vsk:AanestysKappaleKooste>4) Mietintö "jaa", Sari Sarkomaan ja Mikko Kärnän ehdotus "ei". <vsk:AanestysTulos><vsk1:AanestysTulosTeksti>Äänestyksen tulos: jaa 89, ei 102; poissa 8 </vsk1:AanestysTulosTeksti><vsk:AanestysViite met1:kieliKoodi="fi" vsk1:aanestysNroTeksti="99" vsk1:kokousNroTeksti="141" vsk1:valtiopaivaTeksti="2017 vp" vsk1:valtiopaivavuosiNroTeksti="2017"><vsk1:AanestysViiteTeksti>(äänestys 99). </vsk1:AanestysViiteTeksti></vsk:AanestysViite></vsk:AanestysTulos>Eduskunta hyväksyi Sari Sarkomaan ja Mikko Kärnän ehdotuksen.</vsk:AanestysKappaleKooste>
+              <sis:KappaleKooste>30 b §</sis:KappaleKooste>
+              <vsk:PuhujaRepliikki>
+                <met:Toimija>
+                  <org:Henkilo met1:muuTunnus="1325">
+                    <org1:EtuNimi>Sari</org1:EtuNimi>
+                    <org1:SukuNimi>Tanus</org1:SukuNimi>
+                    <org1:LisatietoTeksti>kd</org1:LisatietoTeksti>
+                  </org:Henkilo>
+                </met:Toimija>
+                <sis:KappaleKooste>Arvoisa puhemies! On tulossa koko opposition yhteinen samansisältöinen pykäläehdotus, joten vedän ehdotukseni 30 b pois.</sis:KappaleKooste>
+              </vsk:PuhujaRepliikki>
+              <sis:KappaleKooste>32 §</sis:KappaleKooste>
+              <vsk:PuhujaRepliikki>
+                <met:Toimija>
+                  <org:Henkilo met1:muuTunnus="791">
+                    <org1:EtuNimi>Anneli</org1:EtuNimi>
+                    <org1:SukuNimi>Kiljunen</org1:SukuNimi>
+                    <org1:LisatietoTeksti>sd</org1:LisatietoTeksti>
+                  </org:Henkilo>
+                </met:Toimija>
+                <sis:KappaleKooste>Arvoisa puhemies! Esitän, että pykälä saa vastalauseen 2 mukaisen muodon, eli kyse on etämyynnistä.</sis:KappaleKooste>
+              </vsk:PuhujaRepliikki>
+              <vsk:PuhujaRepliikki>
+                <met:Toimija>
+                  <org:Henkilo met1:muuTunnus="1325">
+                    <org1:EtuNimi>Sari</org1:EtuNimi>
+                    <org1:SukuNimi>Tanus</org1:SukuNimi>
+                    <org1:LisatietoTeksti>kd</org1:LisatietoTeksti>
+                  </org:Henkilo>
+                </met:Toimija>
+                <sis:KappaleKooste>Arvoisa puhemies! Kannatan edustaja Kiljusen ehdotusta.</sis:KappaleKooste>
+              </vsk:PuhujaRepliikki>
+              <vsk:AanestysKappaleKooste>Mietintö "jaa", Anneli Kiljusen ehdotus "ei". <vsk:AanestysTulos><vsk1:AanestysTulosTeksti>Äänestyksen tulos: jaa 108, ei 77, tyhjiä 7; poissa 7 </vsk1:AanestysTulosTeksti><vsk:AanestysViite met1:kieliKoodi="fi" vsk1:aanestysNroTeksti="100" vsk1:kokousNroTeksti="141" vsk1:valtiopaivaTeksti="2017 vp" vsk1:valtiopaivavuosiNroTeksti="2017"><vsk1:AanestysViiteTeksti>(äänestys 100). </vsk1:AanestysViiteTeksti></vsk:AanestysViite></vsk:AanestysTulos>Eduskunta hyväksyi mietinnön.</vsk:AanestysKappaleKooste>
+              <sis:KappaleKooste>38 §</sis:KappaleKooste>
+              <vsk:PuhujaRepliikki>
+                <met:Toimija>
+                  <org:Henkilo met1:muuTunnus="1325">
+                    <org1:EtuNimi>Sari</org1:EtuNimi>
+                    <org1:SukuNimi>Tanus</org1:SukuNimi>
+                    <org1:LisatietoTeksti>kd</org1:LisatietoTeksti>
+                  </org:Henkilo>
+                </met:Toimija>
+                <sis:KappaleKooste>Arvoisa puhemies! Ehdotan, että 38 § saa sen muodon, mikä on pöydille jaetussa lomakkeessa.</sis:KappaleKooste>
+              </vsk:PuhujaRepliikki>
+              <vsk:PuhujaRepliikki>
+                <met:Toimija>
+                  <org:Henkilo met1:muuTunnus="499">
+                    <org1:EtuNimi>Päivi</org1:EtuNimi>
+                    <org1:SukuNimi>Räsänen</org1:SukuNimi>
+                    <org1:LisatietoTeksti>kd</org1:LisatietoTeksti>
+                  </org:Henkilo>
+                </met:Toimija>
+                <sis:KappaleKooste>Arvoisa puhemies! Kannatan.</sis:KappaleKooste>
+              </vsk:PuhujaRepliikki>
+              <vsk:PuhujaRepliikki>
+                <met:Toimija>
+                  <org:Henkilo met1:muuTunnus="791">
+                    <org1:EtuNimi>Anneli</org1:EtuNimi>
+                    <org1:SukuNimi>Kiljunen</org1:SukuNimi>
+                    <org1:LisatietoTeksti>sd</org1:LisatietoTeksti>
+                  </org:Henkilo>
+                </met:Toimija>
+                <sis:KappaleKooste>Arvoisa puhemies! Esitän, että pykälä saa vastalauseen 2 mukaisen muodon.</sis:KappaleKooste>
+              </vsk:PuhujaRepliikki>
+              <vsk:PuhujaRepliikki>
+                <met:Toimija>
+                  <org:Henkilo met1:muuTunnus="1097">
+                    <org1:EtuNimi>Aino-Kaisa</org1:EtuNimi>
+                    <org1:SukuNimi>Pekonen</org1:SukuNimi>
+                    <org1:LisatietoTeksti>vas</org1:LisatietoTeksti>
+                  </org:Henkilo>
+                </met:Toimija>
+                <sis:KappaleKooste>Arvoisa puhemies! Kannatan edustaja Kiljusen esitystä.</sis:KappaleKooste>
+              </vsk:PuhujaRepliikki>
+              <vsk:PuheenjohtajaRepliikki>
+                <vsk1:PuheenjohtajaTeksti>Puhemies Maria Lohela</vsk1:PuheenjohtajaTeksti>
+                <sis:KappaleKooste>Sari Tanus on Päivi Räsäsen kannattamana ehdottanut, että pykälä hyväksytään edustajille jaetun muutosehdotuksen mukaisena. (Pöytäkirjan liite 3D)</sis:KappaleKooste>
+                <sis:KappaleKooste>Anneli Kiljunen on Aino-Kaisa Pekosen kannattamana ehdottanut, että pykälä hyväksytään vastalauseen 2 mukaisena.</sis:KappaleKooste>
+              </vsk:PuheenjohtajaRepliikki>
+              <sis:KappaleKooste>Selonteko hyväksyttiin.</sis:KappaleKooste>
+              <vsk:PuheenjohtajaRepliikki>
+                <vsk1:PuheenjohtajaTeksti>Puhemies Maria Lohela</vsk1:PuheenjohtajaTeksti>
+                <sis:KappaleKooste>Ensin äänestetään Sari Tanuksen ehdotuksesta Anneli Kiljusen ehdotusta vastaan ja sitten voittaneesta mietintöä vastaan.</sis:KappaleKooste>
+              </vsk:PuheenjohtajaRepliikki>
+              <sis:KappaleKooste>Äänestysjärjestys hyväksyttiin.</sis:KappaleKooste>
+              <vsk:AanestysKappaleKooste>1) Anneli Kiljusen ehdotus "jaa", Sari Tanuksen ehdotus "ei". <vsk:AanestysTulos><vsk1:AanestysTulosTeksti>Äänestyksen tulos: jaa 184, ei 7, tyhjiä 2; poissa 6 </vsk1:AanestysTulosTeksti><vsk:AanestysViite met1:kieliKoodi="fi" vsk1:aanestysNroTeksti="101" vsk1:kokousNroTeksti="141" vsk1:valtiopaivaTeksti="2017 vp" vsk1:valtiopaivavuosiNroTeksti="2017"><vsk1:AanestysViiteTeksti>(äänestys 101). Eduskunta hyväksyi tässä äänestyksessä Anneli Kiljusen ehdotuksen.</vsk1:AanestysViiteTeksti></vsk:AanestysViite></vsk:AanestysTulos></vsk:AanestysKappaleKooste>
+              <vsk:AanestysKappaleKooste>2) Mietintö "jaa", Anneli Kiljusen ehdotus "ei".<vsk:AanestysTulos><vsk1:AanestysTulosTeksti> Äänestyksen tulos: jaa 121, ei 71; poissa 7 </vsk1:AanestysTulosTeksti><vsk:AanestysViite met1:kieliKoodi="fi" vsk1:aanestysNroTeksti="102" vsk1:kokousNroTeksti="141" vsk1:valtiopaivaTeksti="2017 vp" vsk1:valtiopaivavuosiNroTeksti="2017"><vsk1:AanestysViiteTeksti>(äänestys 102). </vsk1:AanestysViiteTeksti></vsk:AanestysViite></vsk:AanestysTulos>Eduskunta hyväksyi mietinnön.</vsk:AanestysKappaleKooste>
+              <sis:KappaleKooste>42 §</sis:KappaleKooste>
+              <vsk:PuhujaRepliikki>
+                <met:Toimija>
+                  <org:Henkilo met1:muuTunnus="1325">
+                    <org1:EtuNimi>Sari</org1:EtuNimi>
+                    <org1:SukuNimi>Tanus</org1:SukuNimi>
+                    <org1:LisatietoTeksti>kd</org1:LisatietoTeksti>
+                  </org:Henkilo>
+                </met:Toimija>
+                <sis:KappaleKooste>Arvoisa puhemies! Ehdotan, että 42 § saa sen muodon, mikä on pöydille jaetussa lomakkeessa.</sis:KappaleKooste>
+              </vsk:PuhujaRepliikki>
+              <vsk:PuhujaRepliikki>
+                <met:Toimija>
+                  <org:Henkilo met1:muuTunnus="499">
+                    <org1:EtuNimi>Päivi</org1:EtuNimi>
+                    <org1:SukuNimi>Räsänen</org1:SukuNimi>
+                    <org1:LisatietoTeksti>kd</org1:LisatietoTeksti>
+                  </org:Henkilo>
+                </met:Toimija>
+                <sis:KappaleKooste>Arvoisa puhemies! Kannatan.</sis:KappaleKooste>
+              </vsk:PuhujaRepliikki>
+              <vsk:PuheenjohtajaRepliikki>
+                <vsk1:PuheenjohtajaTeksti>Puhemies Maria Lohela</vsk1:PuheenjohtajaTeksti>
+                <sis:KappaleKooste>Sari Tanus on Päivi Räsäsen kannattamana ehdottanut, että pykälä hyväksytään edustajille jaetun muutosehdotuksen mukaisena. (Pöytäkirjan liite 3D)</sis:KappaleKooste>
+              </vsk:PuheenjohtajaRepliikki>
+              <sis:KappaleKooste>Selonteko hyväksyttiin.</sis:KappaleKooste>
+              <vsk:AanestysKappaleKooste>Mietintö "jaa", Sari Tanuksen ehdotus "ei". <vsk:AanestysTulos><vsk1:AanestysTulosTeksti>Äänestyksen tulos: jaa 182, ei 7, tyhjiä 1; poissa 9 </vsk1:AanestysTulosTeksti><vsk:AanestysViite met1:kieliKoodi="fi" vsk1:aanestysNroTeksti="103" vsk1:kokousNroTeksti="141" vsk1:valtiopaivaTeksti="2017 vp" vsk1:valtiopaivavuosiNroTeksti="2017"><vsk1:AanestysViiteTeksti>(äänestys 103). </vsk1:AanestysViiteTeksti></vsk:AanestysViite></vsk:AanestysTulos> Eduskunta hyväksyi mietinnön. </vsk:AanestysKappaleKooste>
+              <sis:KappaleKooste>44 §</sis:KappaleKooste>
+              <vsk:PuhujaRepliikki>
+                <met:Toimija>
+                  <org:Henkilo met1:muuTunnus="1325">
+                    <org1:EtuNimi>Sari</org1:EtuNimi>
+                    <org1:SukuNimi>Tanus</org1:SukuNimi>
+                    <org1:LisatietoTeksti>kd</org1:LisatietoTeksti>
+                  </org:Henkilo>
+                </met:Toimija>
+                <sis:KappaleKooste>Arvoisa puhemies! Ehdotan, että 44 § poistetaan.</sis:KappaleKooste>
+              </vsk:PuhujaRepliikki>
+              <vsk:PuheenjohtajaRepliikki>
+                <vsk1:PuheenjohtajaTeksti>Puhemies Maria Lohela</vsk1:PuheenjohtajaTeksti>
+                <sis:KappaleKooste>Sari Tanus on Päivi Räsäsen kannattamana ehdottanut, että pykälä poistetaan. (Pöytäkirjan liite 3D)</sis:KappaleKooste>
+              </vsk:PuheenjohtajaRepliikki>
+              <sis:KappaleKooste>Selonteko hyväksyttiin.</sis:KappaleKooste>
+              <vsk:AanestysKappaleKooste>Mietintö "jaa", Sari Tanuksen ehdotus "ei". <vsk:AanestysTulos><vsk1:AanestysTulosTeksti>Äänestyksen tulos: jaa 187, ei 5; poissa 7 </vsk1:AanestysTulosTeksti><vsk:AanestysViite met1:kieliKoodi="fi" vsk1:aanestysNroTeksti="104" vsk1:kokousNroTeksti="141" vsk1:valtiopaivaTeksti="2017 vp" vsk1:valtiopaivavuosiNroTeksti="2017"><vsk1:AanestysViiteTeksti>(äänestys 104). </vsk1:AanestysViiteTeksti></vsk:AanestysViite></vsk:AanestysTulos>Eduskunta hyväksyi mietinnön.</vsk:AanestysKappaleKooste>
+              <sis:KappaleKooste>92 §</sis:KappaleKooste>
+              <vsk:PuhujaRepliikki>
+                <met:Toimija>
+                  <org:Henkilo met1:muuTunnus="791">
+                    <org1:EtuNimi>Anneli</org1:EtuNimi>
+                    <org1:SukuNimi>Kiljunen</org1:SukuNimi>
+                    <org1:LisatietoTeksti>sd</org1:LisatietoTeksti>
+                  </org:Henkilo>
+                </met:Toimija>
+                <sis:KappaleKooste>Arvoisa puhemies! Esitän, että pykälä saa sen muodon kuin on vastalauseessa 2.</sis:KappaleKooste>
+              </vsk:PuhujaRepliikki>
+              <vsk:PuhujaRepliikki>
+                <met:Toimija>
+                  <org:Henkilo met1:muuTunnus="1097">
+                    <org1:EtuNimi>Aino-Kaisa</org1:EtuNimi>
+                    <org1:SukuNimi>Pekonen</org1:SukuNimi>
+                    <org1:LisatietoTeksti>vas</org1:LisatietoTeksti>
+                  </org:Henkilo>
+                </met:Toimija>
+                <sis:KappaleKooste>Arvoisa puhemies! Kannatan edustaja Kiljusen esitystä.</sis:KappaleKooste>
+              </vsk:PuhujaRepliikki>
+              <vsk:PuheenjohtajaRepliikki>
+                <vsk1:PuheenjohtajaTeksti>Puhemies Maria Lohela</vsk1:PuheenjohtajaTeksti>
+                <sis:KappaleKooste>Anneli Kiljunen on Aino-Kaisa Pekosen kannattamana ehdottanut, että pykälä hyväksytään vastalauseen 2 mukaisena.</sis:KappaleKooste>
+              </vsk:PuheenjohtajaRepliikki>
+              <sis:KappaleKooste>Selonteko hyväksyttiin.</sis:KappaleKooste>
+              <vsk:AanestysKappaleKooste>Mietintö "jaa", Anneli Kiljusen ehdotus "ei".<vsk:AanestysTulos><vsk1:AanestysTulosTeksti> Äänestyksen tulos: jaa 121, ei 69; poissa 9 </vsk1:AanestysTulosTeksti><vsk:AanestysViite met1:kieliKoodi="fi" vsk1:aanestysNroTeksti="105" vsk1:kokousNroTeksti="141" vsk1:valtiopaivaTeksti="2017 vp" vsk1:valtiopaivavuosiNroTeksti="2017"><vsk1:AanestysViiteTeksti>(äänestys 105). </vsk1:AanestysViiteTeksti></vsk:AanestysViite></vsk:AanestysTulos>Eduskunta hyväksyi mietinnön. </vsk:AanestysKappaleKooste>
+              <vsk:PuhujaRepliikki>
+                <met:Toimija>
+                  <org:Henkilo met1:muuTunnus="1154">
+                    <org1:EtuNimi>Jari</org1:EtuNimi>
+                    <org1:SukuNimi>Myllykoski</org1:SukuNimi>
+                    <org1:LisatietoTeksti>vas</org1:LisatietoTeksti>
+                  </org:Henkilo>
+                </met:Toimija>
+                <sis:KappaleKooste>Arvoisa rouva puhemies! 17 §:n ensimmäisessä äänestyksessä tarkoitukseni oli äänestää "ei".</sis:KappaleKooste>
+              </vsk:PuhujaRepliikki>
+              <vsk:PuheenjohtajaRepliikki>
+                <vsk1:PuheenjohtajaTeksti>Puhemies Maria Lohela</vsk1:PuheenjohtajaTeksti>
+                <sis:KappaleKooste>Merkitään.</sis:KappaleKooste>
+              </vsk:PuheenjohtajaRepliikki>
+              <sis:KappaleKooste>Asia lähetettiin suureen valiokuntaan, koska eduskunta ei hyväksynyt 1. lakiehdotuksen sisältöä sosiaali- ja terveysvaliokunnan mietinnön mukaisena.</sis:KappaleKooste>
+              <sis:Palstaviiva/>
+              <vsk:PuheenjohtajaRepliikki>
+                <vsk1:PuheenjohtajaTeksti>Puhemies Maria Lohela</vsk1:PuheenjohtajaTeksti>
+                <sis:KappaleKooste>Annan puheenvuoron suuren valiokunnan puheenjohtajalle Anne-Mari Virolaiselle.</sis:KappaleKooste>
+              </vsk:PuheenjohtajaRepliikki>
+              <vsk:PuhujaRepliikki>
+                <met:Toimija>
+                  <org:Henkilo met1:muuTunnus="948">
+                    <org1:EtuNimi>Anne-Mari</org1:EtuNimi>
+                    <org1:SukuNimi>Virolainen</org1:SukuNimi>
+                    <org1:LisatietoTeksti>kok</org1:LisatietoTeksti>
+                  </org:Henkilo>
+                </met:Toimija>
+                <sis:KappaleKooste>Arvoisa puhemies, ärade talman! Suuri valiokunta kokoontuu välittömästi valtiovarainvaliokunnan huoneessa tämän talon neljännessä kerroksessa.</sis:KappaleKooste>
+                <sis:KappaleKooste>Stora utskottet sammanträder i finansutskottets rum i fjärde våningen omedelbart efter att plenum avslutats.</sis:KappaleKooste>
+              </vsk:PuhujaRepliikki>
+            </vsk:KohtaSisalto>
+          </vsk:PaatoksentekoToimenpide>
+        </vsk:Asiakohta>
+        <vsk:Asiakohta met1:eduskuntaTunnus="HE 97/2017 vp" met1:muuTunnus="52454" vsk1:kasittelyvaiheKoodi="1K" vsk1:kohtaJNro="8" vsk1:kohtatyyppiKoodi="Asiakohta" vsk1:yleinenKasittelyvaiheKoodi="1K">
+          <vsk1:KohtaNumero>4</vsk1:KohtaNumero>
+          <vsk:KohtaNimeke>
+            <met1:NimekeTeksti>Hallituksen esitys  eduskunnalle  veronkannon, verotuksen toimittamisen ja eräiden seuraamusmaksujen uudistamista koskevaksi lainsäädännöksi</met1:NimekeTeksti>
+          </vsk:KohtaNimeke>
+          <vsk:KohtaAsia vsk1:hyperlinkkiKoodi="HE 97/2017 vp">
+            <met1:AsiakirjatyyppiNimi>Hallituksen esitys</met1:AsiakirjatyyppiNimi>
+            <met1:EduskuntaTunnus>HE 97/2017 vp</met1:EduskuntaTunnus>
+          </vsk:KohtaAsia>
+          <vsk:KohtaAsiakirja>
+            <met1:AsiakirjatyyppiNimi>Valiokunnan mietintö</met1:AsiakirjatyyppiNimi>
+            <met1:EduskuntaTunnus>VaVM 26/2017 vp</met1:EduskuntaTunnus>
+          </vsk:KohtaAsiakirja>
+          <vsk:Toimenpide met1:muuTunnus="224906" vsk1:fraasiTunnus="1K_12">
+            <sis1:ValiotsikkoTeksti>Ensimmäinen käsittely</sis1:ValiotsikkoTeksti>
+            <vsk:KohtaSisalto>
+              <vsk:PuheenjohtajaRepliikki>
+                <vsk1:PuheenjohtajaTeksti>Puhemies Maria Lohela</vsk1:PuheenjohtajaTeksti>
+                <sis:KappaleKooste>Ensimmäiseen käsittelyyn esitellään päiväjärjestyksen <sis1:HarvaKursiiviTeksti>4.</sis1:HarvaKursiiviTeksti> asia. Käsittelyn pohjana on valtiovarainvaliokunnan mietintö VaVM 26/2017 vp. Yleiskeskustelu asiasta päättyi 14.12.2017 pidetyssä 3. täysistunnossa.</sis:KappaleKooste>
+                <sis:KappaleKooste>Yleiskeskustelussa on Timo Harakka Ozan Yanarin kannattamana ehdottanut, että käsittelyn pohjaksi otetaan vastalauseeseen sisältyvät pykäläehdotukset.</sis:KappaleKooste>
+              </vsk:PuheenjohtajaRepliikki>
+              <sis:KappaleKooste>Selonteko hyväksyttiin.</sis:KappaleKooste>
+              <vsk:AanestysKappaleKooste>Valiokunnan ehdotus "jaa", Timo Harakan ehdotus "ei".<vsk:AanestysTulos><vsk1:AanestysTulosTeksti> Äänestyksen tulos: jaa 116, ei 76; poissa 7 </vsk1:AanestysTulosTeksti><vsk:AanestysViite met1:kieliKoodi="fi" vsk1:aanestysNroTeksti="87" vsk1:kokousNroTeksti="141" vsk1:valtiopaivaTeksti="2017 vp" vsk1:valtiopaivavuosiNroTeksti="2017"><vsk1:AanestysViiteTeksti>(äänestys 87). </vsk1:AanestysViiteTeksti></vsk:AanestysViite></vsk:AanestysTulos>Eduskunta hyväksyi käsittelyn pohjaksi valiokunnan ehdotuksen.</vsk:AanestysKappaleKooste>
+              <vsk:PuheenjohtajaRepliikki>
+                <vsk1:PuheenjohtajaTeksti>Puhemies Maria Lohela</vsk1:PuheenjohtajaTeksti>
+                <sis:KappaleKooste>Nyt käsitellään muutosehdotukset.</sis:KappaleKooste>
+              </vsk:PuheenjohtajaRepliikki>
+              <sis:KappaleKooste>5. lakiehdotus</sis:KappaleKooste>
+              <sis:KappaleKooste>32 §</sis:KappaleKooste>
+              <vsk:PuhujaRepliikki>
+                <met:Toimija>
+                  <org:Henkilo met1:muuTunnus="1326">
+                    <org1:EtuNimi>Timo</org1:EtuNimi>
+                    <org1:SukuNimi>Harakka</org1:SukuNimi>
+                    <org1:LisatietoTeksti>sd</org1:LisatietoTeksti>
+                  </org:Henkilo>
+                </met:Toimija>
+                <sis:KappaleKooste>Arvoisa puhemies! Esitän, että 32 § saa vastalauseen mukaisen muodon.</sis:KappaleKooste>
+              </vsk:PuhujaRepliikki>
+              <vsk:PuhujaRepliikki>
+                <met:Toimija>
+                  <org:Henkilo met1:muuTunnus="507">
+                    <org1:EtuNimi>Kari</org1:EtuNimi>
+                    <org1:SukuNimi>Uotila</org1:SukuNimi>
+                    <org1:LisatietoTeksti>vas</org1:LisatietoTeksti>
+                  </org:Henkilo>
+                </met:Toimija>
+                <sis:KappaleKooste>Arvoisa rouva puhemies! Kannatan edustaja Harakan ehdotusta.</sis:KappaleKooste>
+              </vsk:PuhujaRepliikki>
+              <vsk:PuheenjohtajaRepliikki>
+                <vsk1:PuheenjohtajaTeksti>Puhemies Maria Lohela</vsk1:PuheenjohtajaTeksti>
+                <sis:KappaleKooste>Timo Harakka on Kari Uotilan kannattamana ehdottanut, että pykälä hyväksytään vastalauseen mukaisena.</sis:KappaleKooste>
+              </vsk:PuheenjohtajaRepliikki>
+              <sis:KappaleKooste>Selonteko hyväksyttiin.</sis:KappaleKooste>
+              <vsk:AanestysKappaleKooste>Mietintö "jaa", Timo Harakan ehdotus "ei".<vsk:AanestysTulos><vsk1:AanestysTulosTeksti> Äänestyksen tulos: jaa 117, ei 77; poissa 5 </vsk1:AanestysTulosTeksti><vsk:AanestysViite met1:kieliKoodi="fi" vsk1:aanestysNroTeksti="88" vsk1:kokousNroTeksti="141" vsk1:valtiopaivaTeksti="2017 vp" vsk1:valtiopaivavuosiNroTeksti="2017"><vsk1:AanestysViiteTeksti>(äänestys 88). </vsk1:AanestysViiteTeksti></vsk:AanestysViite></vsk:AanestysTulos>Eduskunta hyväksyi mietinnön.</vsk:AanestysKappaleKooste>
+              <sis:KappaleKooste>32 a §</sis:KappaleKooste>
+              <vsk:PuhujaRepliikki>
+                <met:Toimija>
+                  <org:Henkilo met1:muuTunnus="1326">
+                    <org1:EtuNimi>Timo</org1:EtuNimi>
+                    <org1:SukuNimi>Harakka</org1:SukuNimi>
+                    <org1:LisatietoTeksti>sd</org1:LisatietoTeksti>
+                  </org:Henkilo>
+                </met:Toimija>
+                <sis:KappaleKooste>Arvoisa puhemies! Esitän, että pykälä saa vastalauseen mukaisen muodon.</sis:KappaleKooste>
+              </vsk:PuhujaRepliikki>
+              <vsk:PuhujaRepliikki>
+                <met:Toimija>
+                  <org:Henkilo met1:muuTunnus="1332">
+                    <org1:EtuNimi>Ozan</org1:EtuNimi>
+                    <org1:SukuNimi>Yanar</org1:SukuNimi>
+                    <org1:LisatietoTeksti>vihr</org1:LisatietoTeksti>
+                  </org:Henkilo>
+                </met:Toimija>
+                <sis:KappaleKooste>Arvoisa puhemies! Kannatan edustaja Harakan ehdotusta.</sis:KappaleKooste>
+              </vsk:PuhujaRepliikki>
+              <vsk:PuheenjohtajaRepliikki>
+                <vsk1:PuheenjohtajaTeksti>Puhemies Maria Lohela</vsk1:PuheenjohtajaTeksti>
+                <sis:KappaleKooste>Timo Harakka on Ozan Yanarin kannattamana ehdottanut, että pykälä hyväksytään vastalauseen mukaisena.</sis:KappaleKooste>
+              </vsk:PuheenjohtajaRepliikki>
+              <sis:KappaleKooste>Selonteko hyväksyttiin.</sis:KappaleKooste>
+              <vsk:AanestysKappaleKooste>Mietintö "jaa", Timo Harakan ehdotus "ei".<vsk:AanestysTulos><vsk1:AanestysTulosTeksti> Äänestyksen tulos: jaa 116, ei 79; poissa 4 </vsk1:AanestysTulosTeksti><vsk:AanestysViite met1:kieliKoodi="fi" vsk1:aanestysNroTeksti="89" vsk1:kokousNroTeksti="141" vsk1:valtiopaivaTeksti="2017 vp" vsk1:valtiopaivavuosiNroTeksti="2017"><vsk1:AanestysViiteTeksti>(äänestys 89). </vsk1:AanestysViiteTeksti></vsk:AanestysViite></vsk:AanestysTulos>Eduskunta hyväksyi mietinnön.</vsk:AanestysKappaleKooste>
+              <sis:KappaleKooste>32 b §</sis:KappaleKooste>
+              <vsk:PuhujaRepliikki>
+                <met:Toimija>
+                  <org:Henkilo met1:muuTunnus="1326">
+                    <org1:EtuNimi>Timo</org1:EtuNimi>
+                    <org1:SukuNimi>Harakka</org1:SukuNimi>
+                    <org1:LisatietoTeksti>sd</org1:LisatietoTeksti>
+                  </org:Henkilo>
+                </met:Toimija>
+                <sis:KappaleKooste>Arvoisa puhemies! Esitän, että pykälä saa vastalauseen mukaisen muodon.</sis:KappaleKooste>
+              </vsk:PuhujaRepliikki>
+              <vsk:PuhujaRepliikki>
+                <met:Toimija>
+                  <org:Henkilo met1:muuTunnus="1136">
+                    <org1:EtuNimi>Ville</org1:EtuNimi>
+                    <org1:SukuNimi>Vähämäki</org1:SukuNimi>
+                    <org1:LisatietoTeksti>ps</org1:LisatietoTeksti>
+                  </org:Henkilo>
+                </met:Toimija>
+                <sis:KappaleKooste>Puhemies! Kannatan edustaja Harakan ehdotusta.</sis:KappaleKooste>
+              </vsk:PuhujaRepliikki>
+              <vsk:PuheenjohtajaRepliikki>
+                <vsk1:PuheenjohtajaTeksti>Puhemies Maria Lohela</vsk1:PuheenjohtajaTeksti>
+                <sis:KappaleKooste>Timo Harakka on Ville Vähämäen kannattamana ehdottanut, että pykälä hyväksytään vastalauseen mukaisena.</sis:KappaleKooste>
+              </vsk:PuheenjohtajaRepliikki>
+              <sis:KappaleKooste>Selonteko hyväksyttiin.</sis:KappaleKooste>
+              <vsk:AanestysKappaleKooste>Mietintö "jaa", Timo Harakan ehdotus "ei".<vsk:AanestysTulos><vsk1:AanestysTulosTeksti> Äänestyksen tulos: jaa 115, ei 79; poissa 5 </vsk1:AanestysTulosTeksti><vsk:AanestysViite met1:kieliKoodi="fi" vsk1:aanestysNroTeksti="90" vsk1:kokousNroTeksti="141" vsk1:valtiopaivaTeksti="2017 vp" vsk1:valtiopaivavuosiNroTeksti="2017"><vsk1:AanestysViiteTeksti>(äänestys 90). </vsk1:AanestysViiteTeksti></vsk:AanestysViite></vsk:AanestysTulos>Eduskunta hyväksyi mietinnön.</vsk:AanestysKappaleKooste>
+            </vsk:KohtaSisalto>
+          </vsk:Toimenpide>
+          <vsk:PaatoksentekoToimenpide met1:muuTunnus="224907" vsk1:fraasiTunnus="P_1K_1">
+            <vsk:KohtaSisalto>
+              <sis:KappaleKooste>Eduskunta hyväksyi hallituksen esitykseen HE 97/2017 vp sisältyvien 1.—42. lakiehdotuksen sisällön mietinnön mukaisena. Lakiehdotusten ensimmäinen käsittely päättyi.</sis:KappaleKooste>
+            </vsk:KohtaSisalto>
+          </vsk:PaatoksentekoToimenpide>
+        </vsk:Asiakohta>
+        <vsk:Asiakohta met1:eduskuntaTunnus="HE 106/2017 vp" met1:muuTunnus="52300" vsk1:kasittelyvaiheKoodi="AK" vsk1:kohtaJNro="9" vsk1:kohtatyyppiKoodi="Asiakohta" vsk1:yleinenKasittelyvaiheKoodi="AK">
+          <vsk1:KohtaNumero>5</vsk1:KohtaNumero>
+          <vsk:KohtaNimeke>
+            <met1:NimekeTeksti>Hallituksen esitys eduskunnalle valtion talousarvioksi vuodelle 2018</met1:NimekeTeksti>
+            <met1:NimekeTeksti>Hallituksen esitys  eduskunnalle  vuoden  2018  talousarvioesityksen (HE 106/2017 vp) täydentämisestä</met1:NimekeTeksti>
+          </vsk:KohtaNimeke>
+          <vsk:KohtaAsia vsk1:hyperlinkkiKoodi="HE 106/2017 vp">
+            <met1:AsiakirjatyyppiNimi>Hallituksen esitys</met1:AsiakirjatyyppiNimi>
+            <met1:EduskuntaTunnus>HE 106/2017 vp</met1:EduskuntaTunnus>
+          </vsk:KohtaAsia>
+          <vsk:KohtaAsia vsk1:hyperlinkkiKoodi="HE 176/2017 vp">
+            <met1:AsiakirjatyyppiNimi>Hallituksen esitys</met1:AsiakirjatyyppiNimi>
+            <met1:EduskuntaTunnus>HE 176/2017 vp</met1:EduskuntaTunnus>
+          </vsk:KohtaAsia>
+          <vsk:KohtaAsia>
+            <met1:AsiakirjatyyppiNimi>Talousarvioaloite</met1:AsiakirjatyyppiNimi>
+            <sis1:MultiViiteTunnus>TAA 1-535/2017 vp</sis1:MultiViiteTunnus>
+          </vsk:KohtaAsia>
+          <vsk:KohtaAsia vsk1:hyperlinkkiKoodi="TPA 51/2017 vp">
+            <met1:AsiakirjatyyppiNimi>Toimenpidealoite</met1:AsiakirjatyyppiNimi>
+            <met1:EduskuntaTunnus>TPA 51/2017 vp</met1:EduskuntaTunnus>
+          </vsk:KohtaAsia>
+          <vsk:KohtaAsiakirja>
+            <met1:AsiakirjatyyppiNimi>Valiokunnan mietintö</met1:AsiakirjatyyppiNimi>
+            <met1:EduskuntaTunnus>VaVM 22/2017 vp</met1:EduskuntaTunnus>
+          </vsk:KohtaAsiakirja>
+          <vsk:Toimenpide met1:muuTunnus="224042" vsk1:fraasiTunnus="AK_14">
+            <sis1:ValiotsikkoTeksti>Ainoa käsittely</sis1:ValiotsikkoTeksti>
+            <vsk:KohtaSisalto>
+              <vsk:PuheenjohtajaRepliikki>
+                <vsk1:PuheenjohtajaTeksti>Puhemies Maria Lohela</vsk1:PuheenjohtajaTeksti>
+                <sis:KappaleKooste>Ainoaan käsittelyyn esitellään päiväjärjestyksen <sis1:HarvaKursiiviTeksti>5.</sis1:HarvaKursiiviTeksti> asia. Käsittelyn pohjana on valtiovarainvaliokunnan mietintö VaVM 22/2017 vp. Asian käsittely keskeytettiin 14.12.2017 pidetyssä kolmannessa täysistunnossa.</sis:KappaleKooste>
+              </vsk:PuheenjohtajaRepliikki>
+            </vsk:KohtaSisalto>
+          </vsk:Toimenpide>
+          <vsk:Toimenpide met1:muuTunnus="224046" vsk1:fraasiTunnus="KESK50_AK">
+            <vsk:KohtaSisalto>
+              <sis:KappaleKooste/>
+            </vsk:KohtaSisalto>
+          </vsk:Toimenpide>
+        </vsk:Asiakohta>
+        <vsk:MuuAsiakohta met1:muuTunnus="52447" vsk1:budjetinAlikohtaTunnus="23" vsk1:kasittelyvaiheKoodi="KOKB" vsk1:kohtaJNro="10" vsk1:kohtatyyppiKoodi="Alikohta" vsk1:paakohtaTunnus="HE 106/2017 vp" vsk1:yleinenKasittelyvaiheKoodi="KOKOUS">
+          <vsk1:KohtaNumero>5.1</vsk1:KohtaNumero>
+          <sis1:OtsikkoTeksti>Pääluokka 23 Valtioneuvoston kanslia</sis1:OtsikkoTeksti>
+          <vsk:Toimenpide met1:muuTunnus="224843" vsk1:fraasiTunnus="K_152">
+            <vsk:KohtaSisalto>
+              <vsk:PuheenjohtajaRepliikki>
+                <vsk1:PuheenjohtajaTeksti>Puhemies Maria Lohela</vsk1:PuheenjohtajaTeksti>
+                <sis:KappaleKooste>Yleiskeskustelu pääluokasta päättyi 13.12.2017 pidetyssä täysistunnossa. Ryhdytään pääluokan 23 yksityiskohtaiseen käsittelyyn.</sis:KappaleKooste>
+              </vsk:PuheenjohtajaRepliikki>
+              <sis:KappaleKooste>Tehtiin seuraavat pääluokkaa koskevat, hyväksytyn menettelytavan mukaisesti keskuskansliaan kirjallisina jätetyt, edustajille monistettuina ja numeroituina jaetut ehdotukset:</sis:KappaleKooste>
+              <sis:KappaleKooste>1. Leena Meri ps Sami Savion ps kannattamana 23.01.01: Vähennetään 6 200 000 euroa valtioneuvoston kanslian toimintamenoihin ehdotetusta määrärahasta. (TAA 293)</sis:KappaleKooste>
+              <sis:KappaleKooste>2. Ville Vähämäki ps Mika Niikon ps kannattamana 23.01.02: Lausumaehdotus: "Eduskunta edellyttää, että hallitus vähentää poliittisten erityisavustajien määrää ja uudistaa valtiosihteerijärjestelmän." (Vastalause 6)</sis:KappaleKooste>
+              <sis:KappaleKooste>3. Stefan Wallin r Anna-Maja Henrikssonin r kannattamana 23.01.22: Vähennetään 7 000 000 euroa valtioneuvoston selvitys- ja tutkimustoimintaan ehdotetusta määrärahasta. (Vastalause 4)</sis:KappaleKooste>
+              <sis:KappaleKooste>4. Ville Vähämäki ps Mika Niikon ps kannattamana 23.10: Lausumaehdotus: "Eduskunta edellyttää, että hallitus tehostaa valtion omistajaohjausta erityisesti niiden yhtiöiden osalta, jotka toimivat kansalaisrajapinnassa ja joilla on tärkeä yhteiskunnallinen palvelutehtävä, kuten mm. Posti ja VR." (Vastalause 6)</sis:KappaleKooste>
+              <sis:KappaleKooste>5. Ville Vähämäki ps Mika Niikon ps kannattamana 23.10: Lausumaehdotus: "Eduskunta edellyttää, että hallitus panee valtion taseen töihin siten, että syntyy uusia innovatiivisia tulevaisuuden yrityksiä ja työpaikkoja sekä koulutus ja tutkimus vahvistuvat, mutta pitää valtion määräysvallassa ne yhtiöt, joilla on huoltovarmuuden tai alueellisen kehityksen kannalta tärkeä merkitys." (Vastalause 6)</sis:KappaleKooste>
+              <sis:KappaleKooste>6. Kari Uotila vas Li Anderssonin vas kannattamana 23.10: Lausumaehdotus: "Eduskunta edellyttää, että hallitus antaa eduskunnalle kattavan selvityksen uudenlaisten omistajapoliittisten kehitysyhtiöiden todellisesta tarpeesta ja käyttötarkoituksesta ja että valtio-omistaja pidättyy myymästä sellaisia omistuksia, joilla on strategista merkitystä Suomen taloudelle ja elinkeinotoiminnan kehitykselle tai joiden tuotto ylittää selvästi Suomen valtionlainojen korkotason." (Vastalause 3)</sis:KappaleKooste>
+              <sis:KappaleKooste>7. Kari Uotila vas Li Anderssonin vas kannattamana 23.10: Lausumaehdotus: "Eduskunta edellyttää, että valtion omistus Neste Oyj:ssä säilytetään yli 50 prosentissa." (Vastalause 3)</sis:KappaleKooste>
+              <sis:KappaleKooste>8. Kari Uotila vas Li Anderssonin vas kannattamana 23.10: Lausumaehdotus: "Eduskunta edellyttää, että hallitus antaa välittömästi uuden omistajapoliittisen ohjeistuksen, joka velvoittaa valtion enemmistöomisteiset yhtiöt raportoimaan vähintään teollisen yhteistyön ja kehityksen järjestön OECD:n niin sanotun BEPS-hankkeen mukaiset tiedot julkisesti ja eritellysti kaikista maista, joissa niillä on tytäryhtiö tai kiinteä toimipaikka. Tämä tarkoittaa, että raportoinnista tulee käydä ilmi henkilöstömäärä, henkilöstökulut, liikevaihto, voitto, maksetut ja kertyneet yhteisöverot sekä keskeiset rahoitustiedot."   (Vastalause 3)</sis:KappaleKooste>
+              <sis:KappaleKooste>9. Ville Vähämäki ps Mika Niikon ps kannattamana 23.20.50: Vähennetään 4 445 000 euroa puoluetoiminnan tukemiseen osoitetusta määrärahasta. (Vastalause 6)</sis:KappaleKooste>
+              <vsk:AanestysKappaleKooste>Mietintö "jaa", Leena Meren ehdotus 1 "ei". <vsk:AanestysTulos><vsk1:AanestysTulosTeksti>Äänestyksen tulos: jaa 169, ei 16; poissa 14 </vsk1:AanestysTulosTeksti><vsk:AanestysViite met1:kieliKoodi="fi" vsk1:aanestysNroTeksti="1" vsk1:kokousNroTeksti="141" vsk1:valtiopaivaTeksti="2017 vp" vsk1:valtiopaivavuosiNroTeksti="2017"><vsk1:AanestysViiteTeksti>(äänestys 1). </vsk1:AanestysViiteTeksti></vsk:AanestysViite></vsk:AanestysTulos>Eduskunta hyväksyi mietinnön.</vsk:AanestysKappaleKooste>
+              <vsk:AanestysKappaleKooste>Mietintö "jaa", Ville Vähämäen ehdotus 2 "ei". <vsk:AanestysTulos><vsk1:AanestysTulosTeksti>Äänestyksen tulos: jaa 175, ei 15; poissa 9 </vsk1:AanestysTulosTeksti><vsk:AanestysViite met1:kieliKoodi="fi" vsk1:aanestysNroTeksti="2" vsk1:kokousNroTeksti="141" vsk1:valtiopaivaTeksti="2017 vp" vsk1:valtiopaivavuosiNroTeksti="2017"><vsk1:AanestysViiteTeksti>(äänestys 2). </vsk1:AanestysViiteTeksti></vsk:AanestysViite></vsk:AanestysTulos>Eduskunta hyväksyi mietinnön.</vsk:AanestysKappaleKooste>
+              <vsk:AanestysKappaleKooste>Mietintö "jaa", Stefan Wallinin ehdotus 3 "ei". <vsk:AanestysTulos><vsk1:AanestysTulosTeksti>Äänestyksen tulos: jaa 178, ei 14; poissa 7 </vsk1:AanestysTulosTeksti><vsk:AanestysViite met1:kieliKoodi="fi" vsk1:aanestysNroTeksti="3" vsk1:kokousNroTeksti="141" vsk1:valtiopaivaTeksti="2017 vp" vsk1:valtiopaivavuosiNroTeksti="2017"><vsk1:AanestysViiteTeksti>(äänestys 3). </vsk1:AanestysViiteTeksti></vsk:AanestysViite></vsk:AanestysTulos>Eduskunta hyväksyi mietinnön.</vsk:AanestysKappaleKooste>
+              <vsk:AanestysKappaleKooste>Mietintö "jaa", Ville Vähämäen ehdotus 4 "ei". <vsk:AanestysTulos><vsk1:AanestysTulosTeksti>Äänestyksen tulos: jaa 125, ei 67; poissa 7 </vsk1:AanestysTulosTeksti><vsk:AanestysViite met1:kieliKoodi="fi" vsk1:aanestysNroTeksti="4" vsk1:kokousNroTeksti="141" vsk1:valtiopaivaTeksti="2017 vp" vsk1:valtiopaivavuosiNroTeksti="2017"><vsk1:AanestysViiteTeksti>(äänestys 4). </vsk1:AanestysViiteTeksti></vsk:AanestysViite></vsk:AanestysTulos>Eduskunta hyväksyi mietinnön.</vsk:AanestysKappaleKooste>
+              <vsk:AanestysKappaleKooste>Mietintö "jaa", Ville Vähämäen ehdotus 5 "ei". <vsk:AanestysTulos><vsk1:AanestysTulosTeksti>Äänestyksen tulos: jaa 130, ei 63; poissa 6 </vsk1:AanestysTulosTeksti><vsk:AanestysViite met1:kieliKoodi="fi" vsk1:aanestysNroTeksti="5" vsk1:kokousNroTeksti="141" vsk1:valtiopaivaTeksti="2017 vp" vsk1:valtiopaivavuosiNroTeksti="2017"><vsk1:AanestysViiteTeksti>(äänestys 5). </vsk1:AanestysViiteTeksti></vsk:AanestysViite></vsk:AanestysTulos>Eduskunta hyväksyi mietinnön.</vsk:AanestysKappaleKooste>
+              <vsk:AanestysKappaleKooste>Mietintö "jaa", Kari Uotilan ehdotus 6 "ei". <vsk:AanestysTulos><vsk1:AanestysTulosTeksti>Äänestyksen tulos: jaa 126, ei 68; poissa 5 </vsk1:AanestysTulosTeksti><vsk:AanestysViite met1:kieliKoodi="fi" vsk1:aanestysNroTeksti="6" vsk1:kokousNroTeksti="141" vsk1:valtiopaivaTeksti="2017 vp" vsk1:valtiopaivavuosiNroTeksti="2017"><vsk1:AanestysViiteTeksti>(äänestys 6). </vsk1:AanestysViiteTeksti></vsk:AanestysViite></vsk:AanestysTulos>Eduskunta hyväksyi mietinnön.</vsk:AanestysKappaleKooste>
+              <vsk:AanestysKappaleKooste>Mietintö "jaa", Kari Uotilan ehdotus 7 "ei". <vsk:AanestysTulos><vsk1:AanestysTulosTeksti>Äänestyksen tulos: jaa 128, ei 65; poissa 6 </vsk1:AanestysTulosTeksti><vsk:AanestysViite met1:kieliKoodi="fi" vsk1:aanestysNroTeksti="7" vsk1:kokousNroTeksti="141" vsk1:valtiopaivaTeksti="2017 vp" vsk1:valtiopaivavuosiNroTeksti="2017"><vsk1:AanestysViiteTeksti>(äänestys 7). </vsk1:AanestysViiteTeksti></vsk:AanestysViite></vsk:AanestysTulos>Eduskunta hyväksyi mietinnön.</vsk:AanestysKappaleKooste>
+              <vsk:PuhujaRepliikki>
+                <met:Toimija>
+                  <org:Henkilo met1:muuTunnus="1325">
+                    <org1:EtuNimi>Sari</org1:EtuNimi>
+                    <org1:SukuNimi>Tanus</org1:SukuNimi>
+                    <org1:LisatietoTeksti>kd</org1:LisatietoTeksti>
+                  </org:Henkilo>
+                </met:Toimija>
+                <sis:KappaleKooste>Arvoisa puhemies! Tarkoituksena oli äänestää "jaa".</sis:KappaleKooste>
+              </vsk:PuhujaRepliikki>
+              <vsk:PuheenjohtajaRepliikki>
+                <vsk1:PuheenjohtajaTeksti>Puhemies Maria Lohela</vsk1:PuheenjohtajaTeksti>
+                <sis:KappaleKooste>Merkitään.</sis:KappaleKooste>
+              </vsk:PuheenjohtajaRepliikki>
+              <vsk:AanestysKappaleKooste>Mietintö "jaa", Kari Uotilan ehdotus 8 "ei". <vsk:AanestysTulos><vsk1:AanestysTulosTeksti>Äänestyksen tulos: jaa 104, ei 88; poissa 7 </vsk1:AanestysTulosTeksti><vsk:AanestysViite met1:kieliKoodi="fi" vsk1:aanestysNroTeksti="8" vsk1:kokousNroTeksti="141" vsk1:valtiopaivaTeksti="2017 vp" vsk1:valtiopaivavuosiNroTeksti="2017"><vsk1:AanestysViiteTeksti>(äänestys 8). </vsk1:AanestysViiteTeksti></vsk:AanestysViite></vsk:AanestysTulos>Eduskunta hyväksyi mietinnön.</vsk:AanestysKappaleKooste>
+              <vsk:PuhujaRepliikki>
+                <met:Toimija>
+                  <org:Henkilo met1:muuTunnus="1097">
+                    <org1:EtuNimi>Aino-Kaisa</org1:EtuNimi>
+                    <org1:SukuNimi>Pekonen</org1:SukuNimi>
+                    <org1:LisatietoTeksti>vas</org1:LisatietoTeksti>
+                  </org:Henkilo>
+                </met:Toimija>
+                <sis:KappaleKooste>Arvoisa puhemies! Oli tarkoitus äänestää kohdassa 4 "ei".</sis:KappaleKooste>
+              </vsk:PuhujaRepliikki>
+              <vsk:PuheenjohtajaRepliikki>
+                <vsk1:PuheenjohtajaTeksti>Puhemies Maria Lohela</vsk1:PuheenjohtajaTeksti>
+                <sis:KappaleKooste>Merkitään.</sis:KappaleKooste>
+              </vsk:PuheenjohtajaRepliikki>
+              <vsk:AanestysKappaleKooste>Mietintö "jaa", Ville Vähämäen ehdotus 9 "ei". <vsk:AanestysTulos><vsk1:AanestysTulosTeksti>Äänestyksen tulos: jaa 177, ei 17; poissa 5 </vsk1:AanestysTulosTeksti><vsk:AanestysViite met1:kieliKoodi="fi" vsk1:aanestysNroTeksti="9" vsk1:kokousNroTeksti="141" vsk1:valtiopaivaTeksti="2017 vp" vsk1:valtiopaivavuosiNroTeksti="2017"><vsk1:AanestysViiteTeksti>(äänestys 9). </vsk1:AanestysViiteTeksti></vsk:AanestysViite></vsk:AanestysTulos>Eduskunta hyväksyi mietinnön.</vsk:AanestysKappaleKooste>
+              <vsk:PuhujaRepliikki>
+                <met:Toimija>
+                  <org:Henkilo met1:muuTunnus="1326">
+                    <org1:EtuNimi>Timo</org1:EtuNimi>
+                    <org1:SukuNimi>Harakka</org1:SukuNimi>
+                    <org1:LisatietoTeksti>sd</org1:LisatietoTeksti>
+                  </org:Henkilo>
+                </met:Toimija>
+                <sis:KappaleKooste>Arvoisa puhemies! Tarkoitus oli kohdassa 1 äänestää "jaa".</sis:KappaleKooste>
+              </vsk:PuhujaRepliikki>
+              <vsk:PuheenjohtajaRepliikki>
+                <vsk1:PuheenjohtajaTeksti>Puhemies Maria Lohela</vsk1:PuheenjohtajaTeksti>
+                <sis:KappaleKooste>Merkitään. — Hyvät edustajat! Ennen kuin siirrytään seuraavan pääluokan käsittelyyn, pyydän, että teette itsellenne merkinnät niistä tilanteista, jos satutte äänestämään toisin kuin tarkoititte, ja ilmoitatte ne kaikki sitten, kun asia on käyty loppuun.</sis:KappaleKooste>
+              </vsk:PuheenjohtajaRepliikki>
+            </vsk:KohtaSisalto>
+          </vsk:Toimenpide>
+          <vsk:PaatoksentekoToimenpide met1:muuTunnus="224844" vsk1:fraasiTunnus="K_150">
+            <vsk:KohtaSisalto>
+              <sis:KappaleKooste>Eduskunta hyväksyi pääluokan 23 mietinnön mukaisena.</sis:KappaleKooste>
+            </vsk:KohtaSisalto>
+          </vsk:PaatoksentekoToimenpide>
+        </vsk:MuuAsiakohta>
+        <vsk:MuuAsiakohta met1:muuTunnus="52448" vsk1:budjetinAlikohtaTunnus="24" vsk1:kasittelyvaiheKoodi="KOKB" vsk1:kohtaJNro="11" vsk1:kohtatyyppiKoodi="Alikohta" vsk1:paakohtaTunnus="HE 106/2017 vp" vsk1:yleinenKasittelyvaiheKoodi="KOKOUS">
+          <vsk1:KohtaNumero>5.2</vsk1:KohtaNumero>
+          <sis1:OtsikkoTeksti>Pääluokka 24 Ulkoasiainministeriön hallinnonala</sis1:OtsikkoTeksti>
+          <vsk:Toimenpide met1:muuTunnus="224855" vsk1:fraasiTunnus="K_152">
+            <vsk:KohtaSisalto>
+              <vsk:PuheenjohtajaRepliikki>
+                <vsk1:PuheenjohtajaTeksti>Puhemies Maria Lohela</vsk1:PuheenjohtajaTeksti>
+                <sis:KappaleKooste>Nyt ryhdytään pääluokan 24 yksityiskohtaiseen käsittelyyn. Yleiskeskustelu päättyi 14.12.2017 pidetyssä 3. täysistunnossa.</sis:KappaleKooste>
+              </vsk:PuheenjohtajaRepliikki>
+              <sis:KappaleKooste>Tehtiin seuraavat pääluokkaa koskevat, hyväksytyn menettelytavan mukaisesti keskuskansliaan kirjallisina jätetyt, edustajille monistettuina ja numeroituina jaetut ehdotukset:</sis:KappaleKooste>
+              <sis:KappaleKooste>1. Ville Vähämäki ps Mika Niikon ps kannattamana 24.01.01: Lausumaehdotus: "Eduskunta edellyttää, että hallitus siirtää taloudellisia ja henkilöresursseja kaikissa ulkomaisissa edustustoissa vientimme edistämiseen ja Suomen matkailun kasvattamiseen." (Vastalause 6)</sis:KappaleKooste>
+              <sis:KappaleKooste>2. Ville Vähämäki ps Mika Niikon ps kannattamana 24.01.01: Lausumaehdotus: "Eduskunta edellyttää, että hallitus ryhtyy toimenpiteisiin Suomen Kabulissa olevan suurlähetystön lakkauttamiseksi ja Afganistanin suhteiden hoitamiseksi jostakin toisesta lähetystöstä." (Vastalause 6)</sis:KappaleKooste>
+              <sis:KappaleKooste>3. Kari Uotila vas Li Anderssonin vas kannattamana 24.10.21: Lisätään 3 600 000 euroa siviilikriisinhallinnan asiantuntijamäärän kasvattamiseen. (Vastalause 3)</sis:KappaleKooste>
+              <sis:KappaleKooste>4. Antero Laukkanen kd Peter Östmanin kd kannattamana 24.30.66: Lisätään 30 000 000 euroa kansalaisjärjestöjen kehitysyhteistyöhön. (Vastalause 5)</sis:KappaleKooste>
+              <sis:KappaleKooste>5. Johanna Ojala-Niemelä sd Krista Kiurun sd kannattamana 24.30.66: Lisätään 100 000 000 euroa varsinaiseen kehitysyhteistyöhön. (Vastalause 1, TAA 234)</sis:KappaleKooste>
+              <sis:KappaleKooste>6. Kari Uotila vas Li Anderssonin vas kannattamana 24.30.66: Lisätään 120 000 000 euroa varsinaiseen kehitysyhteistyöhön ja ilmastorahoitukseen. (Vastalause 3)</sis:KappaleKooste>
+              <sis:KappaleKooste>7. Ozan Yanar vihr Emma Karin vihr kannattamana 24.30.66: Lisätään 125 000 000 euroa varsinaiseen kehitysyhteistyöhön. (Vastalause 2					)</sis:KappaleKooste>
+              <sis:KappaleKooste>8. Stefan Wallin r Anna-Maja Henrikssonin r kannattamana 24.30.66: Lisätään 213 000 000 euroa varsinaiseen kehitysyhteistyöhön. (Vastalause 4)</sis:KappaleKooste>
+              <sis:KappaleKooste>9. Ville Vähämäki ps Mika Niikon ps kannattamana 24.30.66: Vähennetään 75 000 000 euroa varsinaiseen kehitysyhteistyöhön osoitetusta määrärahasta. (Vastalause 6)</sis:KappaleKooste>
+              <sis:KappaleKooste>10. Johanna Ojala-Niemelä sd Krista Kiurun sd kannattamana 24.30.66: Lausumaehdotus: "Eduskunta edellyttää, että kansalaisjärjestöjen tekemän kehitysyhteistyön resursseja vahvistetaan ja että järjestöjen nykymuotoisen viestintä- ja globaalikasvatustuen jatkuvuus ja riittävät määrärahat turvataan." (Vastalause 1)</sis:KappaleKooste>
+              <sis:KappaleKooste>11. Antero Laukkanen kd Peter Östmanin kd kannattamana 24.30.66: Lausumaehdotus: "Eduskunta edellyttää, että kehitysyhteistyötä tekevien kansalaisjärjestöjen rahoitus turvataan ja huomioidaan kansalaisjärjestöjen tekemän työn merkitys kaikkein heikoimmassa asemassa olevien ihmisten auttamisessa." (Vastalause 5)</sis:KappaleKooste>
+              <sis:KappaleKooste>12. Kari Uotila vas Li Anderssonin vas kannattamana 24.30.66: Lausumaehdotus: "Eduskunta edellyttää, että kansalaisjärjestöjen kehitys- ja vaikutustyöhön sekä kehitysyhteistyötiedotukseen budjetoitu rahoitus mahdollistaa jatkossakin järjestöjen omaehtoisen ja moninaisen työn kehityskysymysten parissa, on kokonaisuudessaan kansalaisjärjestöjen haettavissa ja määrärahaosuudeltaan vähintään nykyisen VGK-tuen tasoa" (Vastalause 3)</sis:KappaleKooste>
+              <sis:KappaleKooste>13. Ville Vähämäki ps Mika Niikon ps kannattamana 24.30.66: Lausumaehdotus: "Eduskunta edellyttää, että hallitus uudistaa Suomen kehitysyhteistyön Perussuomalaisten luoman mallin mukaiseksi ja vahvistaa suomalaisten kansalaisjärjestöjen kehitysyhteistyön rahoitusta." (Vastalause 6)</sis:KappaleKooste>
+              <sis:KappaleKooste>14. Johanna Ojala-Niemelä sd Krista Kiurun sd kannattamana 24.30.66: Lausumaehdotus: "Eduskunta edellyttää, että hallitus ryhtyy tarvittaviin toimiin varsinaisen kehitysyhteistyön määrärahan korottamiseksi." (Vastalause 1)</sis:KappaleKooste>
+              <sis:KappaleKooste>15. Kari Uotila vas Li Anderssonin vas kannattamana 24.30.66: Lausumaehdotus: "Eduskunta edellyttää, että hallitus korottaa Suomen kehitysyhteistyömäärärahoja vuosittain huomattavasti niin, että saavutamme kohtuullisella aikavälillä kansainvälisten sitoumustemme mukaisen 0,7 prosentin bruttokansantulo-osuuden. Ilmastorahoituksen tulee olla lisäistä kehitysyhteistyöhön nähden, ja nykyistä suurempi osa siitä tulee olla lahjamuotoista." (Vastalause 3)</sis:KappaleKooste>
+              <sis:KappaleKooste>16. Kari Uotila vas Li Anderssonin vas kannattamana 24.30.66: Lausumaehdotus: "Eduskunta edellyttää, että hallitus kohdentaa kaikesta kehitysyhteistyöstään vähintään 0,2 prosentin bruttokansantulo-osuuden kaikkein köyhimmille eli niin sanotuille LDC-maille kansainvälisten sitoumuksien mukaisesti." (Vastalause 3)</sis:KappaleKooste>
+              <sis:KappaleKooste>17. Kari Uotila vas Li Anderssonin vas kannattamana 24.30.66: Lausumaehdotus: "Eduskunta edellyttää, että ilmastorahoituksen osuus Suomen kehitysyhteistyöstä tulee avata talousarvioesityksessä nykyistä yksityiskohtaisemmin niin, että talousarvioesityksestä käy tarkemmin ilmi, mikä on varsinaisen ja kansainvälisesti raportoitavan ilmastorahoituksen osuus ja käyttötarkoitus." (Vastalause 3)</sis:KappaleKooste>
+              <sis:KappaleKooste>18. Kari Uotila vas Li Anderssonin vas kannattamana 24.30.66: Lausumaehdotus: "Eduskunta edellyttää, että hallitus ei raportoi pakolaisten tai turvapaikanhakijoiden vastaanottamisesta Suomessa syntyviä kuluja, kehitysmaista Suomeen tulevien opiskelijoiden kuluja tai kehitysmaille annettavia velkahelpotuksia osana virallista kehitysyhteistyötään." (Vastalause 3)</sis:KappaleKooste>
+              <sis:KappaleKooste>19. Kari Uotila vas Li Anderssonin vas kannattamana 24.30.88: Vähennetään 10 000 000 euroa Finnfundin pääoman korottamiseen ehdotetusta määrärahasta. (Vastalause 3)</sis:KappaleKooste>
+              <sis:KappaleKooste>20. Stefan Wallin r Anna-Maja Henrikssonin r kannattamana 24.30.88: Vähennetään 10 000 000 euroa Finnfundin (Teollisen yhteistyön rahasto Oy) pääoman korottamiseen ehdotetusta määrärahasta. (Vastalause 4)</sis:KappaleKooste>
+              <sis:KappaleKooste>21. Stefan Wallin r Anna-Maja Henrikssonin r kannattamana 24.30.89: Vähennetään 130 000 000 euroa kehitysyhteistyön finanssisijoituksiin ehdotetusta määrärahasta. (Vastalause 4)</sis:KappaleKooste>
+              <sis:KappaleKooste>22. Kari Uotila vas Li Anderssonin vas kannattamana 24.30.89: Lausumaehdotus: "Eduskunta edellyttää, että hallitus antaa eduskunnalle välittömästi selvityksen kehitysyhteistyön finanssisijoitusten suunnitellusta käyttötarkoituksesta ja kohdennuksesta sekä siitä, kuinka näiden sijoitusten osalta varmistetaan yleisten kehitysavun tuloksellisuuteen ja avoimuuteen liittyvien kriteereiden toteutuminen. Jatkossa tämän tiedon tulee olla eduskunnan käytettävissä talousarvioesityksen käsittelyn yhteydessä." (Vastalause 3)</sis:KappaleKooste>
+              <sis:KappaleKooste>23. Johanna Ojala-Niemelä sd Krista Kiurun sd kannattamana 24.90.50: Lisätään 1 000 000 euroa Suomen ulkopolitiikan kannalta keskeisten teemojen piirissä toimivien järjestöjen tukemiseen ja lisätään momentin perusteluihin maininta, että määrärahasta saa käyttää 700 000 euroa kansalaisjärjestöjen YK-tiedotukseen ja 500 000 euroa kansalaisjärjestöjen Eurooppa-tiedotukseen ja että valtionavustuksista järjestetään erillisiä hakukierroksia. (Vastalause 1, TAA 235)</sis:KappaleKooste>
+              <vsk:AanestysKappaleKooste>Mietintö "jaa", Ville Vähämäen ehdotus 1 "ei". <vsk:AanestysTulos><vsk1:AanestysTulosTeksti>Äänestyksen tulos: jaa 177, ei 17; poissa 5 </vsk1:AanestysTulosTeksti><vsk:AanestysViite met1:kieliKoodi="fi" vsk1:aanestysNroTeksti="10" vsk1:kokousNroTeksti="141" vsk1:valtiopaivaTeksti="2017 vp" vsk1:valtiopaivavuosiNroTeksti="2017"><vsk1:AanestysViiteTeksti>(äänestys 10). </vsk1:AanestysViiteTeksti></vsk:AanestysViite></vsk:AanestysTulos> Eduskunta hyväksyi mietinnön. </vsk:AanestysKappaleKooste>
+              <vsk:AanestysKappaleKooste>Mietintö "jaa", Ville Vähämäen ehdotus 2 "ei". <vsk:AanestysTulos><vsk1:AanestysTulosTeksti>Äänestyksen tulos: jaa 177, ei 17; poissa 5 </vsk1:AanestysTulosTeksti><vsk:AanestysViite met1:kieliKoodi="fi" vsk1:aanestysNroTeksti="11" vsk1:kokousNroTeksti="141" vsk1:valtiopaivaTeksti="2017 vp" vsk1:valtiopaivavuosiNroTeksti="2017"><vsk1:AanestysViiteTeksti>(äänestys 11). </vsk1:AanestysViiteTeksti></vsk:AanestysViite></vsk:AanestysTulos> Eduskunta hyväksyi mietinnön. </vsk:AanestysKappaleKooste>
+              <vsk:AanestysKappaleKooste>Mietintö "jaa", Kari Uotilan ehdotus 3 "ei". <vsk:AanestysTulos><vsk1:AanestysTulosTeksti>Äänestyksen tulos: jaa 101, ei 93; poissa 5 </vsk1:AanestysTulosTeksti><vsk:AanestysViite met1:kieliKoodi="fi" vsk1:aanestysNroTeksti="12" vsk1:kokousNroTeksti="141" vsk1:valtiopaivaTeksti="2017 vp" vsk1:valtiopaivavuosiNroTeksti="2017"><vsk1:AanestysViiteTeksti>(äänestys 12). </vsk1:AanestysViiteTeksti></vsk:AanestysViite></vsk:AanestysTulos> Eduskunta hyväksyi mietinnön. </vsk:AanestysKappaleKooste>
+              <vsk:AanestysKappaleKooste>Mietintö "jaa", Antero Laukkasen ehdotus 4 "ei". <vsk:AanestysTulos><vsk1:AanestysTulosTeksti>Äänestyksen tulos: jaa 115, ei 76; poissa 8 </vsk1:AanestysTulosTeksti><vsk:AanestysViite met1:kieliKoodi="fi" vsk1:aanestysNroTeksti="13" vsk1:kokousNroTeksti="141" vsk1:valtiopaivaTeksti="2017 vp" vsk1:valtiopaivavuosiNroTeksti="2017"><vsk1:AanestysViiteTeksti>(äänestys 13). </vsk1:AanestysViiteTeksti></vsk:AanestysViite></vsk:AanestysTulos> Eduskunta hyväksyi mietinnön. </vsk:AanestysKappaleKooste>
+              <vsk:PuheenjohtajaRepliikki>
+                <vsk1:PuheenjohtajaTeksti>Puhemies Maria Lohela</vsk1:PuheenjohtajaTeksti>
+                <sis:KappaleKooste>Johanna Ojala-Niemelän ehdotus 5, Kari Uotilan ehdotus 6, Ozan Yanarin ehdotus 7, Stefan Wallinin ehdotus 8 ja Ville Vähämäen ehdotus 9 koskevat samaa määrärahaa. Ensin äänestetään Stefan Wallinin ehdotuksesta 8 Ozan Yanarin ehdotusta 7 vastaan, sitten voittaneesta Kari Uotilan ehdotusta 6 vastaan, sen jälkeen voittaneesta Johanna Ojala-Niemelän ehdotusta 5 vastaan ja vielä voittaneesta Ville Vähämäen ehdotusta 9 vastaan. Lopuksi äänestetään voittaneesta mietintöä vastaan.</sis:KappaleKooste>
+              </vsk:PuheenjohtajaRepliikki>
+              <sis:KappaleKooste>Äänestysjärjestys hyväksyttiin.</sis:KappaleKooste>
+              <vsk:AanestysKappaleKooste>1) Ozan Yanarin ehdotus 7 "jaa", Stefan Wallinin ehdotus 8 "ei". <vsk:AanestysTulos><vsk1:AanestysTulosTeksti>Äänestyksen tulos: jaa 183, ei 11, tyhjiä 1; poissa 4 </vsk1:AanestysTulosTeksti><vsk:AanestysViite met1:kieliKoodi="fi" vsk1:aanestysNroTeksti="14" vsk1:kokousNroTeksti="141" vsk1:valtiopaivaTeksti="2017 vp" vsk1:valtiopaivavuosiNroTeksti="2017"><vsk1:AanestysViiteTeksti>(äänestys 14). </vsk1:AanestysViiteTeksti></vsk:AanestysViite></vsk:AanestysTulos> Eduskunta hyväksyi tässä äänestyksessä Ozan Yanarin ehdotuksen 7. </vsk:AanestysKappaleKooste>
+              <vsk:AanestysKappaleKooste>2) Kari Uotilan ehdotus 6 "jaa", Ozan Yanarin ehdotus 7 "ei". <vsk:AanestysTulos><vsk1:AanestysTulosTeksti>Äänestyksen tulos: jaa 169, ei 25; poissa 5 </vsk1:AanestysTulosTeksti><vsk:AanestysViite met1:kieliKoodi="fi" vsk1:aanestysNroTeksti="15" vsk1:kokousNroTeksti="141" vsk1:valtiopaivaTeksti="2017 vp" vsk1:valtiopaivavuosiNroTeksti="2017"><vsk1:AanestysViiteTeksti>(äänestys 15). </vsk1:AanestysViiteTeksti></vsk:AanestysViite></vsk:AanestysTulos> Eduskunta hyväksyi tässä äänestyksessä Kari Uotilan ehdotuksen 6. </vsk:AanestysKappaleKooste>
+              <vsk:AanestysKappaleKooste>3) Johanna Ojala-Niemelän ehdotus 5 "jaa", Kari Uotilan ehdotus 6 "ei". <vsk:AanestysTulos><vsk1:AanestysTulosTeksti>Äänestyksen tulos: jaa 157, ei 37; poissa 5 </vsk1:AanestysTulosTeksti><vsk:AanestysViite met1:kieliKoodi="fi" vsk1:aanestysNroTeksti="16" vsk1:kokousNroTeksti="141" vsk1:valtiopaivaTeksti="2017 vp" vsk1:valtiopaivavuosiNroTeksti="2017"><vsk1:AanestysViiteTeksti>(äänestys 16). </vsk1:AanestysViiteTeksti></vsk:AanestysViite></vsk:AanestysTulos> Eduskunta hyväksyi tässä äänestyksessä Johanna Ojala-Niemelän ehdotuksen 5. </vsk:AanestysKappaleKooste>
+              <vsk:AanestysKappaleKooste>4) Ville Vähämäen ehdotus 9 "jaa", Johanna Ojala-Niemelän ehdotus 5 "ei". <vsk:AanestysTulos><vsk1:AanestysTulosTeksti>Äänestyksen tulos: jaa 118, ei 76; poissa 5 </vsk1:AanestysTulosTeksti><vsk:AanestysViite met1:kieliKoodi="fi" vsk1:aanestysNroTeksti="17" vsk1:kokousNroTeksti="141" vsk1:valtiopaivaTeksti="2017 vp" vsk1:valtiopaivavuosiNroTeksti="2017"><vsk1:AanestysViiteTeksti>(äänestys 17). </vsk1:AanestysViiteTeksti></vsk:AanestysViite></vsk:AanestysTulos> Eduskunta hyväksyi tässä äänestyksessä Ville Vähämäen ehdotuksen 9. </vsk:AanestysKappaleKooste>
+              <vsk:AanestysKappaleKooste>5) Mietintö "jaa", Ville Vähämäen ehdotus 9 "ei". <vsk:AanestysTulos><vsk1:AanestysTulosTeksti>Äänestyksen tulos: jaa 164, ei 28; poissa 7 </vsk1:AanestysTulosTeksti><vsk:AanestysViite met1:kieliKoodi="fi" vsk1:aanestysNroTeksti="18" vsk1:kokousNroTeksti="141" vsk1:valtiopaivaTeksti="2017 vp" vsk1:valtiopaivavuosiNroTeksti="2017"><vsk1:AanestysViiteTeksti>(äänestys 18). </vsk1:AanestysViiteTeksti></vsk:AanestysViite></vsk:AanestysTulos> Eduskunta hyväksyi mietinnön. </vsk:AanestysKappaleKooste>
+              <vsk:AanestysKappaleKooste>Mietintö "jaa", Johanna Ojala-Niemelän ehdotus 10 "ei". <vsk:AanestysTulos><vsk1:AanestysTulosTeksti>Äänestyksen tulos: jaa 119, ei 73; poissa 7 </vsk1:AanestysTulosTeksti><vsk:AanestysViite met1:kieliKoodi="fi" vsk1:aanestysNroTeksti="19" vsk1:kokousNroTeksti="141" vsk1:valtiopaivaTeksti="2017 vp" vsk1:valtiopaivavuosiNroTeksti="2017"><vsk1:AanestysViiteTeksti>(äänestys 19). </vsk1:AanestysViiteTeksti></vsk:AanestysViite></vsk:AanestysTulos> Eduskunta hyväksyi mietinnön. </vsk:AanestysKappaleKooste>
+              <vsk:AanestysKappaleKooste>Mietintö "jaa", Antero Laukkasen ehdotus 11 "ei". <vsk:AanestysTulos><vsk1:AanestysTulosTeksti>Äänestyksen tulos: jaa 117, ei 77; poissa 5 </vsk1:AanestysTulosTeksti><vsk:AanestysViite met1:kieliKoodi="fi" vsk1:aanestysNroTeksti="20" vsk1:kokousNroTeksti="141" vsk1:valtiopaivaTeksti="2017 vp" vsk1:valtiopaivavuosiNroTeksti="2017"><vsk1:AanestysViiteTeksti>(äänestys 20). </vsk1:AanestysViiteTeksti></vsk:AanestysViite></vsk:AanestysTulos> Eduskunta hyväksyi mietinnön. </vsk:AanestysKappaleKooste>
+              <vsk:AanestysKappaleKooste>Mietintö "jaa", Kari Uotilan ehdotus 12 "ei". <vsk:AanestysTulos><vsk1:AanestysTulosTeksti>Äänestyksen tulos: jaa 113, ei 74; poissa 12 </vsk1:AanestysTulosTeksti><vsk:AanestysViite met1:kieliKoodi="fi" vsk1:aanestysNroTeksti="21" vsk1:kokousNroTeksti="141" vsk1:valtiopaivaTeksti="2017 vp" vsk1:valtiopaivavuosiNroTeksti="2017"><vsk1:AanestysViiteTeksti>(äänestys 21). </vsk1:AanestysViiteTeksti></vsk:AanestysViite></vsk:AanestysTulos> Eduskunta hyväksyi mietinnön. </vsk:AanestysKappaleKooste>
+              <vsk:AanestysKappaleKooste>Mietintö "jaa", Ville Vähämäen ehdotus 13 "ei". <vsk:AanestysTulos><vsk1:AanestysTulosTeksti>Äänestyksen tulos: jaa 175, ei 17; poissa 7 </vsk1:AanestysTulosTeksti><vsk:AanestysViite met1:kieliKoodi="fi" vsk1:aanestysNroTeksti="22" vsk1:kokousNroTeksti="141" vsk1:valtiopaivaTeksti="2017 vp" vsk1:valtiopaivavuosiNroTeksti="2017"><vsk1:AanestysViiteTeksti>(äänestys 22). </vsk1:AanestysViiteTeksti></vsk:AanestysViite></vsk:AanestysTulos> Eduskunta hyväksyi mietinnön. </vsk:AanestysKappaleKooste>
+              <vsk:AanestysKappaleKooste>Mietintö "jaa", Johanna Ojala-Niemelän ehdotus 14 "ei". <vsk:AanestysTulos><vsk1:AanestysTulosTeksti>Äänestyksen tulos: jaa 117, ei 75; poissa 7 </vsk1:AanestysTulosTeksti><vsk:AanestysViite met1:kieliKoodi="fi" vsk1:aanestysNroTeksti="23" vsk1:kokousNroTeksti="141" vsk1:valtiopaivaTeksti="2017 vp" vsk1:valtiopaivavuosiNroTeksti="2017"><vsk1:AanestysViiteTeksti>(äänestys 23). </vsk1:AanestysViiteTeksti></vsk:AanestysViite></vsk:AanestysTulos> Eduskunta hyväksyi mietinnön. </vsk:AanestysKappaleKooste>
+              <vsk:AanestysKappaleKooste>Mietintö "jaa", Kari Uotilan ehdotus 15 "ei". <vsk:AanestysTulos><vsk1:AanestysTulosTeksti>Äänestyksen tulos: jaa 119, ei 75; poissa 5 </vsk1:AanestysTulosTeksti><vsk:AanestysViite met1:kieliKoodi="fi" vsk1:aanestysNroTeksti="24" vsk1:kokousNroTeksti="141" vsk1:valtiopaivaTeksti="2017 vp" vsk1:valtiopaivavuosiNroTeksti="2017"><vsk1:AanestysViiteTeksti>(äänestys 24). </vsk1:AanestysViiteTeksti></vsk:AanestysViite></vsk:AanestysTulos> Eduskunta hyväksyi mietinnön. </vsk:AanestysKappaleKooste>
+              <vsk:AanestysKappaleKooste>Mietintö "jaa", Kari Uotilan ehdotus 16 "ei". <vsk:AanestysTulos><vsk1:AanestysTulosTeksti>Äänestyksen tulos: jaa 118, ei 75; poissa 6 </vsk1:AanestysTulosTeksti><vsk:AanestysViite met1:kieliKoodi="fi" vsk1:aanestysNroTeksti="25" vsk1:kokousNroTeksti="141" vsk1:valtiopaivaTeksti="2017 vp" vsk1:valtiopaivavuosiNroTeksti="2017"><vsk1:AanestysViiteTeksti>(äänestys 25). </vsk1:AanestysViiteTeksti></vsk:AanestysViite></vsk:AanestysTulos> Eduskunta hyväksyi mietinnön. </vsk:AanestysKappaleKooste>
+              <vsk:AanestysKappaleKooste>Mietintö "jaa", Kari Uotilan ehdotus 17 "ei". <vsk:AanestysTulos><vsk1:AanestysTulosTeksti>Äänestyksen tulos: jaa 118, ei 75; poissa 6 </vsk1:AanestysTulosTeksti><vsk:AanestysViite met1:kieliKoodi="fi" vsk1:aanestysNroTeksti="26" vsk1:kokousNroTeksti="141" vsk1:valtiopaivaTeksti="2017 vp" vsk1:valtiopaivavuosiNroTeksti="2017"><vsk1:AanestysViiteTeksti>(äänestys 26). </vsk1:AanestysViiteTeksti></vsk:AanestysViite></vsk:AanestysTulos> Eduskunta hyväksyi mietinnön. </vsk:AanestysKappaleKooste>
+              <vsk:AanestysKappaleKooste>Mietintö "jaa", Kari Uotilan ehdotus 18 "ei". <vsk:AanestysTulos><vsk1:AanestysTulosTeksti>Äänestyksen tulos: jaa 124, ei 70; poissa 5 </vsk1:AanestysTulosTeksti><vsk:AanestysViite met1:kieliKoodi="fi" vsk1:aanestysNroTeksti="27" vsk1:kokousNroTeksti="141" vsk1:valtiopaivaTeksti="2017 vp" vsk1:valtiopaivavuosiNroTeksti="2017"><vsk1:AanestysViiteTeksti>(äänestys 27). </vsk1:AanestysViiteTeksti></vsk:AanestysViite></vsk:AanestysTulos> Eduskunta hyväksyi mietinnön. </vsk:AanestysKappaleKooste>
+              <sis:KappaleKooste/>
+              <vsk:PuheenjohtajaRepliikki>
+                <vsk1:PuheenjohtajaTeksti>Puhemies Maria Lohela</vsk1:PuheenjohtajaTeksti>
+                <sis:KappaleKooste>Kari Uotilan ehdotus 19 ja Stefan Wallinin ehdotus 20 ovat saman sisältöisiä, joten niistä äänestetään yhdessä mietintöä vastaan.</sis:KappaleKooste>
+              </vsk:PuheenjohtajaRepliikki>
+              <sis:KappaleKooste>Äänestysjärjestys hyväksyttiin.</sis:KappaleKooste>
+              <vsk:AanestysKappaleKooste>Mietintö "jaa", Kari Uotilan ehdotus 19 ja Stefan Wallinin ehdotus 20 "ei". <vsk:AanestysTulos><vsk1:AanestysTulosTeksti>Äänestyksen tulos: jaa 134, ei 56; poissa 9 </vsk1:AanestysTulosTeksti><vsk:AanestysViite met1:kieliKoodi="fi" vsk1:aanestysNroTeksti="28" vsk1:kokousNroTeksti="141" vsk1:valtiopaivaTeksti="2017 vp" vsk1:valtiopaivavuosiNroTeksti="2017"><vsk1:AanestysViiteTeksti>(äänestys 28). </vsk1:AanestysViiteTeksti></vsk:AanestysViite></vsk:AanestysTulos> Eduskunta hyväksyi mietinnön. </vsk:AanestysKappaleKooste>
+              <vsk:AanestysKappaleKooste>Mietintö "jaa", Stefan Wallinin ehdotus 21 "ei". <vsk:AanestysTulos><vsk1:AanestysTulosTeksti>Äänestyksen tulos: jaa 182, ei 10, tyhjiä 1; poissa 6 </vsk1:AanestysTulosTeksti><vsk:AanestysViite met1:kieliKoodi="fi" vsk1:aanestysNroTeksti="29" vsk1:kokousNroTeksti="141" vsk1:valtiopaivaTeksti="2017 vp" vsk1:valtiopaivavuosiNroTeksti="2017"><vsk1:AanestysViiteTeksti>(äänestys 29). </vsk1:AanestysViiteTeksti></vsk:AanestysViite></vsk:AanestysTulos> Eduskunta hyväksyi mietinnön. </vsk:AanestysKappaleKooste>
+              <vsk:AanestysKappaleKooste>Mietintö "jaa", Kari Uotilan ehdotus 22 "ei". <vsk:AanestysTulos><vsk1:AanestysTulosTeksti>Äänestyksen tulos: jaa 101, ei 89; poissa 9 </vsk1:AanestysTulosTeksti><vsk:AanestysViite met1:kieliKoodi="fi" vsk1:aanestysNroTeksti="30" vsk1:kokousNroTeksti="141" vsk1:valtiopaivaTeksti="2017 vp" vsk1:valtiopaivavuosiNroTeksti="2017"><vsk1:AanestysViiteTeksti>(äänestys 30). </vsk1:AanestysViiteTeksti></vsk:AanestysViite></vsk:AanestysTulos> Eduskunta hyväksyi mietinnön. </vsk:AanestysKappaleKooste>
+              <vsk:AanestysKappaleKooste>Mietintö "jaa", Johanna Ojala-Niemelän ehdotus 23 "ei". <vsk:AanestysTulos><vsk1:AanestysTulosTeksti>Äänestyksen tulos: jaa 124, ei 68; poissa 7 </vsk1:AanestysTulosTeksti><vsk:AanestysViite met1:kieliKoodi="fi" vsk1:aanestysNroTeksti="31" vsk1:kokousNroTeksti="141" vsk1:valtiopaivaTeksti="2017 vp" vsk1:valtiopaivavuosiNroTeksti="2017"><vsk1:AanestysViiteTeksti>(äänestys 31). </vsk1:AanestysViiteTeksti></vsk:AanestysViite></vsk:AanestysTulos> Eduskunta hyväksyi mietinnön. </vsk:AanestysKappaleKooste>
+              <vsk:PuhujaRepliikki>
+                <met:Toimija>
+                  <org:Henkilo met1:muuTunnus="1141">
+                    <org1:EtuNimi>Peter</org1:EtuNimi>
+                    <org1:SukuNimi>Östman</org1:SukuNimi>
+                    <org1:LisatietoTeksti>kd</org1:LisatietoTeksti>
+                  </org:Henkilo>
+                </met:Toimija>
+                <sis:KappaleKooste>Arvoisa puhemies! Kohdassa 9 viimeisessä äänestyksessä oli tarkoitus äänestää "jaa".</sis:KappaleKooste>
+              </vsk:PuhujaRepliikki>
+              <vsk:PuhujaRepliikki>
+                <met:Toimija>
+                  <org:Henkilo met1:muuTunnus="499">
+                    <org1:EtuNimi>Päivi</org1:EtuNimi>
+                    <org1:SukuNimi>Räsänen</org1:SukuNimi>
+                    <org1:LisatietoTeksti>kd</org1:LisatietoTeksti>
+                  </org:Henkilo>
+                </met:Toimija>
+                <sis:KappaleKooste>Arvoisa puhemies! Samoin.</sis:KappaleKooste>
+              </vsk:PuhujaRepliikki>
+              <vsk:PuhujaRepliikki>
+                <met:Toimija>
+                  <org:Henkilo met1:muuTunnus="118">
+                    <org1:EtuNimi>Pekka</org1:EtuNimi>
+                    <org1:SukuNimi>Haavisto</org1:SukuNimi>
+                    <org1:LisatietoTeksti>vihr</org1:LisatietoTeksti>
+                  </org:Henkilo>
+                </met:Toimija>
+                <sis:KappaleKooste>Arvoisa puhemies! Kohdassa 9 tarkoitus oli äänestää "jaa".</sis:KappaleKooste>
+              </vsk:PuhujaRepliikki>
+              <vsk:PuhujaRepliikki>
+                <met:Toimija>
+                  <org:Henkilo met1:muuTunnus="351">
+                    <org1:EtuNimi>Eva</org1:EtuNimi>
+                    <org1:SukuNimi>Biaudet</org1:SukuNimi>
+                    <org1:LisatietoTeksti>r</org1:LisatietoTeksti>
+                  </org:Henkilo>
+                </met:Toimija>
+                <sis:KappaleKooste>Kohdassa 9 viimeisessä äänestyksessä tarkoitus oli äänestää "jaa".</sis:KappaleKooste>
+              </vsk:PuhujaRepliikki>
+              <vsk:PuhujaRepliikki>
+                <met:Toimija>
+                  <org:Henkilo met1:muuTunnus="1343">
+                    <org1:EtuNimi>Antero</org1:EtuNimi>
+                    <org1:SukuNimi>Laukkanen</org1:SukuNimi>
+                    <org1:LisatietoTeksti>kd</org1:LisatietoTeksti>
+                  </org:Henkilo>
+                </met:Toimija>
+                <sis:KappaleKooste>Arvoisa puhemies! Kohdassa 9 viimeisessä äänestyksessä tarkoitus oli äänestää "jaa".</sis:KappaleKooste>
+              </vsk:PuhujaRepliikki>
+              <vsk:PuhujaRepliikki>
+                <met:Toimija>
+                  <org:Henkilo met1:muuTunnus="769">
+                    <org1:EtuNimi>Mikaela</org1:EtuNimi>
+                    <org1:SukuNimi>Nylander</org1:SukuNimi>
+                    <org1:LisatietoTeksti>r</org1:LisatietoTeksti>
+                  </org:Henkilo>
+                </met:Toimija>
+                <sis:KappaleKooste>Arvoisa puhemies! Äänestyksessä 9 viimeisessä äänestyksessä oli tarkoitus äänestää "jaa".</sis:KappaleKooste>
+              </vsk:PuhujaRepliikki>
+              <vsk:PuhujaRepliikki>
+                <met:Toimija>
+                  <org:Henkilo met1:muuTunnus="941">
+                    <org1:EtuNimi>Anna-Maja</org1:EtuNimi>
+                    <org1:SukuNimi>Henriksson</org1:SukuNimi>
+                    <org1:LisatietoTeksti>r</org1:LisatietoTeksti>
+                  </org:Henkilo>
+                </met:Toimija>
+                <sis:KappaleKooste>Arvoisa puhemies! Kohdassa 9 viimeisessä äänestyksessä oli tarkoitus äänestää "jaa".</sis:KappaleKooste>
+              </vsk:PuhujaRepliikki>
+              <vsk:PuhujaRepliikki>
+                <met:Toimija>
+                  <org:Henkilo met1:muuTunnus="910">
+                    <org1:EtuNimi>Stefan</org1:EtuNimi>
+                    <org1:SukuNimi>Wallin</org1:SukuNimi>
+                    <org1:LisatietoTeksti>r</org1:LisatietoTeksti>
+                  </org:Henkilo>
+                </met:Toimija>
+                <sis:KappaleKooste>Arvoisa puhemies! Kohdassa 9 viimeisessä äänestyksessä oli tarkoitus äänestää "jaa".</sis:KappaleKooste>
+              </vsk:PuhujaRepliikki>
+              <vsk:PuhujaRepliikki>
+                <met:Toimija>
+                  <org:Henkilo met1:muuTunnus="1306">
+                    <org1:EtuNimi>Anders</org1:EtuNimi>
+                    <org1:SukuNimi>Adlercreutz</org1:SukuNimi>
+                    <org1:LisatietoTeksti>r</org1:LisatietoTeksti>
+                  </org:Henkilo>
+                </met:Toimija>
+                <sis:KappaleKooste>Arvoisa puhemies! Kohdan 9 viimeisessä äänestyksessä oli tarkoitus äänestää "jaa".</sis:KappaleKooste>
+              </vsk:PuhujaRepliikki>
+              <vsk:PuhujaRepliikki>
+                <met:Toimija>
+                  <org:Henkilo met1:muuTunnus="1374">
+                    <org1:EtuNimi>Veronica</org1:EtuNimi>
+                    <org1:SukuNimi>Rehn-Kivi</org1:SukuNimi>
+                    <org1:LisatietoTeksti>r</org1:LisatietoTeksti>
+                  </org:Henkilo>
+                </met:Toimija>
+                <sis:KappaleKooste>Arvoisa puhemies! Kohdassa 10 oli tarkoitus äänestää "ei".</sis:KappaleKooste>
+              </vsk:PuhujaRepliikki>
+              <vsk:PuhujaRepliikki>
+                <met:Toimija>
+                  <org:Henkilo met1:muuTunnus="1318">
+                    <org1:EtuNimi>Joakim</org1:EtuNimi>
+                    <org1:SukuNimi>Strand</org1:SukuNimi>
+                    <org1:LisatietoTeksti>r</org1:LisatietoTeksti>
+                  </org:Henkilo>
+                </met:Toimija>
+                <sis:KappaleKooste>Puhemies! Kohdassa 9 "jaa".</sis:KappaleKooste>
+              </vsk:PuhujaRepliikki>
+              <vsk:PuheenjohtajaRepliikki>
+                <vsk1:PuheenjohtajaTeksti>Puhemies Maria Lohela</vsk1:PuheenjohtajaTeksti>
+                <sis:KappaleKooste>Merkitään.</sis:KappaleKooste>
+              </vsk:PuheenjohtajaRepliikki>
+            </vsk:KohtaSisalto>
+          </vsk:Toimenpide>
+          <vsk:PaatoksentekoToimenpide met1:muuTunnus="224856" vsk1:fraasiTunnus="K_150">
+            <vsk:KohtaSisalto>
+              <sis:KappaleKooste>Eduskunta hyväksyi pääluokan 24 mietinnön mukaisena.</sis:KappaleKooste>
+            </vsk:KohtaSisalto>
+          </vsk:PaatoksentekoToimenpide>
+          <sis:NeljannesTyhja/>
+        </vsk:MuuAsiakohta>
+        <vsk:MuuAsiakohta met1:muuTunnus="52449" vsk1:budjetinAlikohtaTunnus="25" vsk1:kasittelyvaiheKoodi="KOKB" vsk1:kohtaJNro="12" vsk1:kohtatyyppiKoodi="Alikohta" vsk1:paakohtaTunnus="HE 106/2017 vp" vsk1:yleinenKasittelyvaiheKoodi="KOKOUS">
+          <vsk1:KohtaNumero>5.3</vsk1:KohtaNumero>
+          <sis1:OtsikkoTeksti>Pääluokka 25 Oikeusministeriön hallinnonala</sis1:OtsikkoTeksti>
+          <vsk:Toimenpide met1:muuTunnus="224862" vsk1:fraasiTunnus="K_152">
+            <vsk:KohtaSisalto>
+              <vsk:PuheenjohtajaRepliikki>
+                <vsk1:PuheenjohtajaTeksti>Puhemies Maria Lohela</vsk1:PuheenjohtajaTeksti>
+                <sis:KappaleKooste>Yleiskeskustelu pääluokasta päättyi 14.12.2017 pidetyssä 3. täysistunnossa. Ryhdytään pääluokan 25 yksityiskohtaiseen käsittelyyn.</sis:KappaleKooste>
+              </vsk:PuheenjohtajaRepliikki>
+              <sis:KappaleKooste>Tehtiin seuraavat pääluokkaa koskevat, hyväksytyn menettelytavan mukaisesti keskuskansliaan kirjallisina jätetyt, edustajille monistettuina ja numeroituina jaetut ehdotukset:</sis:KappaleKooste>
+              <sis:KappaleKooste>1. Ville Vähämäki ps Mika Niikon ps kannattamana 25.01.01: Lausumaehdotus: "Eduskunta edellyttää, että hallitus ryhtyy pikaisiin toimenpiteisiin 1990-luvun lamavelallisten vapauttamiseksi vastuistaan." (Vastalause 6)</sis:KappaleKooste>
+              <sis:KappaleKooste>2. Ville Vähämäki ps Mika Niikon ps kannattamana 25.01.01: Lausumaehdotus: "Eduskunta edellyttää, että hallitus ryhtyy toimenpiteisiin vuoden 2019 kansanedustajien vaa-lien ja Euroopan unionin parlamentin jäsenten vaalien toimittamiseksi samanaikaisesti." (Vastalause 6)</sis:KappaleKooste>
+              <sis:KappaleKooste>3. Ville Vähämäki ps Mika Niikon ps kannattamana 25.01.01: Lausumaehdotus: "Eduskunta edellyttää, että hallitus pikaisesti ryhtyy toimenpiteisiin maksuhäiriöiden määrän vähentämiseksi esim. luomalla positiivisen luottorekisterin." (Vastalause 6)</sis:KappaleKooste>
+              <sis:KappaleKooste>4. Ville Vähämäki ps Mika Niikon ps kannattamana 25.01.01: Lausumaehdotus: "Eduskunta edellyttää, että hallitus valmistelee lainsäädännön henkilökohtaisen konkurssin mahdollistamiseksi Suomessa." (Vastalause 6)</sis:KappaleKooste>
+              <sis:KappaleKooste>5. Leena Meri ps Sami Savion ps kannattamana 25.01.03: Vähennetään 1 337 000 euroa yhdenvertaisuusvaltuutetulle ehdotetusta määrärahasta. (TAA 296)</sis:KappaleKooste>
+              <sis:KappaleKooste>6. Sari Essayah kd Päivi Räsäsen kd kannattamana 25.01.50: Lisätään 150 000 euroa ViaDia ry:lle vankien ja vapautuneiden vankien yhteiskuntaan sopeutumista tukevaan työhön. (TAA 54)</sis:KappaleKooste>
+              <sis:KappaleKooste>7. Stefan Wallin r Anna-Maja Henrikssonin r kannattamana 25.01.50: Lisätään 410 000 euroa Saamelaiskäräjien avustukseen. (Vastalause 4)</sis:KappaleKooste>
+              <sis:KappaleKooste>8. Kari Uotila vas Li Anderssonin vas kannattamana 25.10.03: Lisätään 2 000 000 euroa harmaan talouden torjuntaan ja tuomioistuinten käsittelyruuhkan helpottamiseen.  (Vastalause 3)</sis:KappaleKooste>
+              <sis:KappaleKooste>9. Ozan Yanar vihr Emma Karin vihr kannattamana 25.10.03: Lisätään 2 000 000 euroa tuomioistuimille harmaan talouden torjuntaan. (Vastalause 2)</sis:KappaleKooste>
+              <sis:KappaleKooste>10. Antero Laukkanen kd Peter Östmanin kd kannattamana 25.10.03: Lisätään 2 000 000 euroa tuomioistuinten toiminnan turvaamiseksi.  (Vastalause 5)</sis:KappaleKooste>
+              <sis:KappaleKooste>11. Johanna Ojala-Niemelä sd Krista Kiurun sd kannattamana 25.10.03: Lisätään 3 100 000 euroa muiden tuomioistuinten toimintamenoihin.  (Vastalause 1)</sis:KappaleKooste>
+              <sis:KappaleKooste>12. Stefan Wallin r Anna-Maja Henrikssonin r kannattamana 25.10.03: Lisätään 7 168 000 euroa, josta 3 500 000 euroa osoitetaan harmaan talouden torjuntaan.  (Vastalause 4)</sis:KappaleKooste>
+              <sis:KappaleKooste/>
+              <sis:KappaleKooste>13. Johanna Ojala-Niemelä sd Krista Kiurun sd kannattamana 25.10.03: Lausumaehdotus: "Eduskunta edellyttää, että käräjäoikeuksien määrää ei vähennetä ennen kunnollisia vaikuttavuusarviointeja. Käräjäoikeusverkoston laajuudesta päättäminen tulee jättää perustettavan tuomioistuinviraston arvioitavaksi."  (Vastalause 1)</sis:KappaleKooste>
+              <sis:KappaleKooste>14. Ville Vähämäki ps Mika Niikon ps kannattamana 25.10.03: Lausumaehdotus: "Eduskunta edellyttää, että hallitus säilyttää Iisalmen, Varkauden, Raahen, Kotkan ja Järvenpään käräjäpaikat."  (Vastalause 6)</sis:KappaleKooste>
+              <sis:KappaleKooste>15. Ville Vähämäki ps Mika Niikon ps kannattamana 25.10: Lausumaehdotus: "Eduskunta edellyttää, että hallitus parantaa suomalaisten oikeusturvaa laskemalla oikeudenkäyntikulujen tasoa."  (Vastalause 6)</sis:KappaleKooste>
+              <sis:KappaleKooste>16. Ville Vähämäki ps Mika Niikon ps kannattamana 25.10: Lausumaehdotus: "Eduskunta edellyttää, että hallitus ryhtyy toimenpiteisiin seksuaalirikosten rangaistusten nostamiseksi."  (Vastalause 6)</sis:KappaleKooste>
+              <sis:KappaleKooste>17. Stefan Wallin r Anna-Maja Henrikssonin r kannattamana 25.20.01: Lisätään 1 664 000 euroa, josta 500 000 euroa osoitetaan harmaan talouden torjuntaan. (Vastalause 4)</sis:KappaleKooste>
+              <sis:KappaleKooste>18. Johanna Ojala-Niemelä sd Krista Kiurun sd kannattamana 25.20.01: Lisätään 2 000 000 euroa ulosottolaitoksen ja konkurssivalvonnan toimintamenoihin.  (Vastalause 1)</sis:KappaleKooste>
+              <sis:KappaleKooste>19. Kari Uotila vas Li Anderssonin vas kannattamana 25.20.01: Lisätään 2 000 000 euroa ulosottolaitoksen ja konkurssivalvonnan toimintamenoihin harmaan talouden torjuntaan. (Vastalause 3)</sis:KappaleKooste>
+              <sis:KappaleKooste>20. Antero Laukkanen kd Peter Östmanin kd kannattamana 25.30.01: Lisätään 2 000 000 euroa syyttäjän toimintamenoihin harmaan talouden torjunnan tehostamiseen. (Vastalause 5)</sis:KappaleKooste>
+              <sis:KappaleKooste>21. Kari Uotila vas Li Anderssonin vas kannattamana 25.30.01: Lisätään 2 000 000 euroa syyttäjälaitoksen toimintamenoihin harmaan talouden torjuntaan. (Vastalause 3)</sis:KappaleKooste>
+              <sis:KappaleKooste>22. Ozan Yanar vihr Emma Karin vihr kannattamana 25.30.01: Lisätään 2 000 000 euroa syyttäjälaitokselle harmaan talouden torjuntaan.  (Vastalause 2)</sis:KappaleKooste>
+              <sis:KappaleKooste>23. Johanna Ojala-Niemelä sd Krista Kiurun sd kannattamana 25.30.01: Lisätään 2 100 000 euroa syyttäjälaitoksen toimintamenoihin.  (Vastalause 1)</sis:KappaleKooste>
+              <sis:KappaleKooste>24. Stefan Wallin r Anna-Maja Henrikssonin r kannattamana 25.30.01: Lisätään 3 168 000 euroa, josta 1 000 000 euroa osoitetaan harmaan talouden torjuntaan.  (Vastalause 4)</sis:KappaleKooste>
+              <sis:KappaleKooste>25. Kari Uotila vas Li Anderssonin vas kannattamana 25.40.01: Lisätään 7 000 000 euroa Pelson vankilan peruskorjaukseen tai uudisrakentamiseen. (Vastalause 3)</sis:KappaleKooste>
+              <sis:KappaleKooste>26. Johanna Ojala-Niemelä sd Krista Kiurun sd kannattamana 25.40.01: Lausumaehdotus: "Eduskunta edellyttää, että Pelson vankila säilytetään 120-paikkaisena suljettuna vankilana ja uuden vankilan uudisrakentaminen käynnistetään mahdollisimman pikaisesti."  (Vastalause 1)</sis:KappaleKooste>
+              <vsk:AanestysKappaleKooste>Mietintö "jaa", Ville Vähämäen ehdotus 1 "ei". <vsk:AanestysTulos><vsk1:AanestysTulosTeksti>Äänestyksen tulos: jaa 113, ei 80; poissa 6 </vsk1:AanestysTulosTeksti><vsk:AanestysViite met1:kieliKoodi="fi" vsk1:aanestysNroTeksti="32" vsk1:kokousNroTeksti="141" vsk1:valtiopaivaTeksti="2017 vp" vsk1:valtiopaivavuosiNroTeksti="2017"><vsk1:AanestysViiteTeksti>(äänestys 32). </vsk1:AanestysViiteTeksti></vsk:AanestysViite></vsk:AanestysTulos>Eduskunta hyväksyi mietinnön.</vsk:AanestysKappaleKooste>
+              <vsk:AanestysKappaleKooste>Mietintö "jaa", Ville Vähämäen ehdotus 2 "ei". <vsk:AanestysTulos><vsk1:AanestysTulosTeksti>Äänestyksen tulos: jaa 177, ei 17; poissa 5 </vsk1:AanestysTulosTeksti><vsk:AanestysViite met1:kieliKoodi="fi" vsk1:aanestysNroTeksti="33" vsk1:kokousNroTeksti="141" vsk1:valtiopaivaTeksti="2017 vp" vsk1:valtiopaivavuosiNroTeksti="2017"><vsk1:AanestysViiteTeksti>(äänestys 33). </vsk1:AanestysViiteTeksti></vsk:AanestysViite></vsk:AanestysTulos>Eduskunta hyväksyi mietinnön.</vsk:AanestysKappaleKooste>
+              <vsk:AanestysKappaleKooste>Mietintö "jaa", Ville Vähämäen ehdotus 3 "ei". <vsk:AanestysTulos><vsk1:AanestysTulosTeksti>Äänestyksen tulos: jaa 134, ei 58; poissa 7 </vsk1:AanestysTulosTeksti><vsk:AanestysViite met1:kieliKoodi="fi" vsk1:aanestysNroTeksti="34" vsk1:kokousNroTeksti="141" vsk1:valtiopaivaTeksti="2017 vp" vsk1:valtiopaivavuosiNroTeksti="2017"><vsk1:AanestysViiteTeksti>(äänestys 34). </vsk1:AanestysViiteTeksti></vsk:AanestysViite></vsk:AanestysTulos>Eduskunta hyväksyi mietinnön.</vsk:AanestysKappaleKooste>
+              <vsk:AanestysKappaleKooste>Mietintö "jaa", Ville Vähämäen ehdotus 4 "ei". <vsk:AanestysTulos><vsk1:AanestysTulosTeksti>Äänestyksen tulos: jaa 112, ei 83; poissa 4 </vsk1:AanestysTulosTeksti><vsk:AanestysViite met1:kieliKoodi="fi" vsk1:aanestysNroTeksti="35" vsk1:kokousNroTeksti="141" vsk1:valtiopaivaTeksti="2017 vp" vsk1:valtiopaivavuosiNroTeksti="2017"><vsk1:AanestysViiteTeksti>(äänestys 35). </vsk1:AanestysViiteTeksti></vsk:AanestysViite></vsk:AanestysTulos>Eduskunta hyväksyi mietinnön.</vsk:AanestysKappaleKooste>
+              <vsk:AanestysKappaleKooste>Mietintö "jaa", Leena Meren ehdotus 5 "ei". <vsk:AanestysTulos><vsk1:AanestysTulosTeksti>Äänestyksen tulos: jaa 177, ei 17; poissa 5 </vsk1:AanestysTulosTeksti><vsk:AanestysViite met1:kieliKoodi="fi" vsk1:aanestysNroTeksti="36" vsk1:kokousNroTeksti="141" vsk1:valtiopaivaTeksti="2017 vp" vsk1:valtiopaivavuosiNroTeksti="2017"><vsk1:AanestysViiteTeksti>(äänestys 36). </vsk1:AanestysViiteTeksti></vsk:AanestysViite></vsk:AanestysTulos>Eduskunta hyväksyi mietinnön.</vsk:AanestysKappaleKooste>
+              <vsk:AanestysKappaleKooste>Mietintö "jaa", Sari Essayah’n ehdotus 6 "ei". <vsk:AanestysTulos><vsk1:AanestysTulosTeksti>Äänestyksen tulos: jaa 187, ei 8; poissa 4 </vsk1:AanestysTulosTeksti><vsk:AanestysViite met1:kieliKoodi="fi" vsk1:aanestysNroTeksti="37" vsk1:kokousNroTeksti="141" vsk1:valtiopaivaTeksti="2017 vp" vsk1:valtiopaivavuosiNroTeksti="2017"><vsk1:AanestysViiteTeksti>(äänestys 37). </vsk1:AanestysViiteTeksti></vsk:AanestysViite></vsk:AanestysTulos>Eduskunta hyväksyi mietinnön.</vsk:AanestysKappaleKooste>
+              <vsk:AanestysKappaleKooste>Mietintö "jaa", Stefan Wallinin ehdotus 7 "ei". <vsk:AanestysTulos><vsk1:AanestysTulosTeksti>Äänestyksen tulos: jaa 117, ei 77; poissa 5 </vsk1:AanestysTulosTeksti><vsk:AanestysViite met1:kieliKoodi="fi" vsk1:aanestysNroTeksti="38" vsk1:kokousNroTeksti="141" vsk1:valtiopaivaTeksti="2017 vp" vsk1:valtiopaivavuosiNroTeksti="2017"><vsk1:AanestysViiteTeksti>(äänestys 38). </vsk1:AanestysViiteTeksti></vsk:AanestysViite></vsk:AanestysTulos>Eduskunta hyväksyi mietinnön.</vsk:AanestysKappaleKooste>
+              <vsk:AanestysKappaleKooste>Mietintö "jaa", Kari Uotilan ehdotus 8 "ei". <vsk:AanestysTulos><vsk1:AanestysTulosTeksti>Äänestyksen tulos: jaa 102, ei 93; poissa 4 </vsk1:AanestysTulosTeksti><vsk:AanestysViite met1:kieliKoodi="fi" vsk1:aanestysNroTeksti="39" vsk1:kokousNroTeksti="141" vsk1:valtiopaivaTeksti="2017 vp" vsk1:valtiopaivavuosiNroTeksti="2017"><vsk1:AanestysViiteTeksti>(äänestys 39). </vsk1:AanestysViiteTeksti></vsk:AanestysViite></vsk:AanestysTulos>Eduskunta hyväksyi mietinnön.</vsk:AanestysKappaleKooste>
+              <vsk:AanestysKappaleKooste>Mietintö "jaa", Ozan Yanarin ehdotus 9 "ei". <vsk:AanestysTulos><vsk1:AanestysTulosTeksti>Äänestyksen tulos: jaa 98, ei 93; poissa 8 </vsk1:AanestysTulosTeksti><vsk:AanestysViite met1:kieliKoodi="fi" vsk1:aanestysNroTeksti="40" vsk1:kokousNroTeksti="141" vsk1:valtiopaivaTeksti="2017 vp" vsk1:valtiopaivavuosiNroTeksti="2017"><vsk1:AanestysViiteTeksti>(äänestys 40). </vsk1:AanestysViiteTeksti></vsk:AanestysViite></vsk:AanestysTulos>Eduskunta hyväksyi mietinnön.</vsk:AanestysKappaleKooste>
+              <vsk:PuheenjohtajaRepliikki>
+                <vsk1:PuheenjohtajaTeksti>Puhemies Maria Lohela</vsk1:PuheenjohtajaTeksti>
+                <sis:KappaleKooste>Antero Laukkasen ehdotus 10 ja Johanna Ojala-Niemelän ehdotus 11 koskevat samaa määrärahaa, joten ensin äänestetään Johanna Ojala-Niemelän ehdotuksesta 11 Antero Laukkasen ehdotusta 10 vastaan ja sen jälkeen voittaneesta mietintöä vastaan.</sis:KappaleKooste>
+              </vsk:PuheenjohtajaRepliikki>
+              <sis:KappaleKooste>Äänestysjärjestys hyväksyttiin.</sis:KappaleKooste>
+              <vsk:AanestysKappaleKooste>1) Antero Laukkasen ehdotus 10 "jaa", Johanna Ojala-Niemelän ehdotus 11 "ei". <vsk:AanestysTulos><vsk1:AanestysTulosTeksti>Äänestyksen tulos: jaa 138, ei 55, tyhjiä 1; poissa 5 </vsk1:AanestysTulosTeksti><vsk:AanestysViite met1:kieliKoodi="fi" vsk1:aanestysNroTeksti="41" vsk1:kokousNroTeksti="141" vsk1:valtiopaivaTeksti="2017 vp" vsk1:valtiopaivavuosiNroTeksti="2017"><vsk1:AanestysViiteTeksti>(äänestys 41). </vsk1:AanestysViiteTeksti></vsk:AanestysViite></vsk:AanestysTulos>Eduskunta hyväksyi tässä äänestyksessä Antero Laukkasen ehdotuksen 10.</vsk:AanestysKappaleKooste>
+              <vsk:AanestysKappaleKooste>2) Mietintö "jaa", Antero Laukkasen ehdotus 10 "ei". <vsk:AanestysTulos><vsk1:AanestysTulosTeksti>Äänestyksen tulos: jaa 101, ei 93; poissa 5 </vsk1:AanestysTulosTeksti><vsk:AanestysViite met1:kieliKoodi="fi" vsk1:aanestysNroTeksti="42" vsk1:kokousNroTeksti="141" vsk1:valtiopaivaTeksti="2017 vp" vsk1:valtiopaivavuosiNroTeksti="2017"><vsk1:AanestysViiteTeksti>(äänestys 42). </vsk1:AanestysViiteTeksti></vsk:AanestysViite></vsk:AanestysTulos>Eduskunta hyväksyi mietinnön.</vsk:AanestysKappaleKooste>
+              <vsk:AanestysKappaleKooste>Mietintö "jaa", Stefan Wallinin ehdotus 12 "ei". <vsk:AanestysTulos><vsk1:AanestysTulosTeksti>Äänestyksen tulos: jaa 102, ei 93; poissa 4 </vsk1:AanestysTulosTeksti><vsk:AanestysViite met1:kieliKoodi="fi" vsk1:aanestysNroTeksti="43" vsk1:kokousNroTeksti="141" vsk1:valtiopaivaTeksti="2017 vp" vsk1:valtiopaivavuosiNroTeksti="2017"><vsk1:AanestysViiteTeksti>(äänestys 43). </vsk1:AanestysViiteTeksti></vsk:AanestysViite></vsk:AanestysTulos>Eduskunta hyväksyi mietinnön.</vsk:AanestysKappaleKooste>
+              <vsk:AanestysKappaleKooste>Mietintö "jaa", Johanna Ojala-Niemelän ehdotus 13 "ei". <vsk:AanestysTulos><vsk1:AanestysTulosTeksti>Äänestyksen tulos: jaa 102, ei 93; poissa 4 </vsk1:AanestysTulosTeksti><vsk:AanestysViite met1:kieliKoodi="fi" vsk1:aanestysNroTeksti="44" vsk1:kokousNroTeksti="141" vsk1:valtiopaivaTeksti="2017 vp" vsk1:valtiopaivavuosiNroTeksti="2017"><vsk1:AanestysViiteTeksti>(äänestys 44). </vsk1:AanestysViiteTeksti></vsk:AanestysViite></vsk:AanestysTulos>Eduskunta hyväksyi mietinnön.</vsk:AanestysKappaleKooste>
+              <vsk:AanestysKappaleKooste>Mietintö "jaa", Ville Vähämäen ehdotus 14 "ei". <vsk:AanestysTulos><vsk1:AanestysTulosTeksti>Äänestyksen tulos: jaa 110, ei 72, tyhjiä 9; poissa 8 </vsk1:AanestysTulosTeksti><vsk:AanestysViite met1:kieliKoodi="fi" vsk1:aanestysNroTeksti="45" vsk1:kokousNroTeksti="141" vsk1:valtiopaivaTeksti="2017 vp" vsk1:valtiopaivavuosiNroTeksti="2017"><vsk1:AanestysViiteTeksti>(äänestys 45). </vsk1:AanestysViiteTeksti></vsk:AanestysViite></vsk:AanestysTulos>Eduskunta hyväksyi mietinnön.</vsk:AanestysKappaleKooste>
+              <vsk:AanestysKappaleKooste>Mietintö "jaa", Ville Vähämäen ehdotus 15 "ei". <vsk:AanestysTulos><vsk1:AanestysTulosTeksti>Äänestyksen tulos: jaa 102, ei 90; poissa 7 </vsk1:AanestysTulosTeksti><vsk:AanestysViite met1:kieliKoodi="fi" vsk1:aanestysNroTeksti="46" vsk1:kokousNroTeksti="141" vsk1:valtiopaivaTeksti="2017 vp" vsk1:valtiopaivavuosiNroTeksti="2017"><vsk1:AanestysViiteTeksti>(äänestys 46). </vsk1:AanestysViiteTeksti></vsk:AanestysViite></vsk:AanestysTulos>Eduskunta hyväksyi mietinnön.</vsk:AanestysKappaleKooste>
+              <vsk:AanestysKappaleKooste>Mietintö "jaa", Ville Vähämäen ehdotus 16 "ei". <vsk:AanestysTulos><vsk1:AanestysTulosTeksti>Äänestyksen tulos: jaa 111, ei 79; poissa 9 </vsk1:AanestysTulosTeksti><vsk:AanestysViite met1:kieliKoodi="fi" vsk1:aanestysNroTeksti="47" vsk1:kokousNroTeksti="141" vsk1:valtiopaivaTeksti="2017 vp" vsk1:valtiopaivavuosiNroTeksti="2017"><vsk1:AanestysViiteTeksti>(äänestys 47). </vsk1:AanestysViiteTeksti></vsk:AanestysViite></vsk:AanestysTulos>Eduskunta hyväksyi mietinnön.</vsk:AanestysKappaleKooste>
+              <vsk:AanestysKappaleKooste>Mietintö "jaa", Stefan Wallinin 17 "ei". <vsk:AanestysTulos><vsk1:AanestysTulosTeksti>Äänestyksen tulos: jaa 101, ei 91; poissa 7 </vsk1:AanestysTulosTeksti><vsk:AanestysViite met1:kieliKoodi="fi" vsk1:aanestysNroTeksti="48" vsk1:kokousNroTeksti="141" vsk1:valtiopaivaTeksti="2017 vp" vsk1:valtiopaivavuosiNroTeksti="2017"><vsk1:AanestysViiteTeksti>(äänestys 48)</vsk1:AanestysViiteTeksti></vsk:AanestysViite></vsk:AanestysTulos>. Eduskunta hyväksyi mietinnön.</vsk:AanestysKappaleKooste>
+              <vsk:AanestysKappaleKooste>Mietintö "jaa", Johanna Ojala-Niemelän ehdotus 18 "ei". <vsk:AanestysTulos><vsk1:AanestysTulosTeksti>Äänestyksen tulos: jaa 119, ei 75; poissa 5 </vsk1:AanestysTulosTeksti><vsk:AanestysViite met1:kieliKoodi="fi" vsk1:aanestysNroTeksti="49" vsk1:kokousNroTeksti="141" vsk1:valtiopaivaTeksti="2017 vp" vsk1:valtiopaivavuosiNroTeksti="2017"><vsk1:AanestysViiteTeksti>(äänestys 49). </vsk1:AanestysViiteTeksti></vsk:AanestysViite></vsk:AanestysTulos>Eduskunta hyväksyi mietinnön.</vsk:AanestysKappaleKooste>
+              <vsk:AanestysKappaleKooste>Mietintö "jaa", Kari Uotilan ehdotus 19 "ei". <vsk:AanestysTulos><vsk1:AanestysTulosTeksti>Äänestyksen tulos: jaa 117, ei 78; poissa 4 </vsk1:AanestysTulosTeksti><vsk:AanestysViite met1:kieliKoodi="fi" vsk1:aanestysNroTeksti="50" vsk1:kokousNroTeksti="141" vsk1:valtiopaivaTeksti="2017 vp" vsk1:valtiopaivavuosiNroTeksti="2017"><vsk1:AanestysViiteTeksti>(äänestys 50). </vsk1:AanestysViiteTeksti></vsk:AanestysViite></vsk:AanestysTulos>Eduskunta hyväksyi mietinnön.</vsk:AanestysKappaleKooste>
+              <vsk:PuheenjohtajaRepliikki>
+                <vsk1:PuheenjohtajaTeksti>Puhemies Maria Lohela</vsk1:PuheenjohtajaTeksti>
+                <sis:KappaleKooste>Antero Laukkasen ehdotus 20, Kari Uotilan ehdotus 21 ja Ozan Yanarin ehdotus 22 ovat samansisältöiset, joten niistä äänestetään yhdessä mietintöä vastaan.</sis:KappaleKooste>
+              </vsk:PuheenjohtajaRepliikki>
+              <sis:KappaleKooste>Äänestysjärjestys hyväksyttiin.</sis:KappaleKooste>
+              <vsk:AanestysKappaleKooste>Mietintö "jaa", Antero Laukkasen ehdotus 20, Kari Uotilan ehdotus 21 ja Ozan Yanarin ehdotus 22 "ei". <vsk:AanestysTulos><vsk1:AanestysTulosTeksti>Äänestyksen tulos: jaa 102, ei 93; poissa 4 </vsk1:AanestysTulosTeksti><vsk:AanestysViite met1:kieliKoodi="fi" vsk1:aanestysNroTeksti="51" vsk1:kokousNroTeksti="141" vsk1:valtiopaivaTeksti="2017 vp" vsk1:valtiopaivavuosiNroTeksti="2017"><vsk1:AanestysViiteTeksti>(äänestys 51). </vsk1:AanestysViiteTeksti></vsk:AanestysViite></vsk:AanestysTulos>Eduskunta hyväksyi mietinnön.</vsk:AanestysKappaleKooste>
+              <vsk:AanestysKappaleKooste>Mietintö "jaa", Johanna Ojala-Niemelän ehdotus 23 "ei". <vsk:AanestysTulos><vsk1:AanestysTulosTeksti>Äänestyksen tulos: jaa 102, ei 93; poissa 4 </vsk1:AanestysTulosTeksti><vsk:AanestysViite met1:kieliKoodi="fi" vsk1:aanestysNroTeksti="52" vsk1:kokousNroTeksti="141" vsk1:valtiopaivaTeksti="2017 vp" vsk1:valtiopaivavuosiNroTeksti="2017"><vsk1:AanestysViiteTeksti>(äänestys 52). </vsk1:AanestysViiteTeksti></vsk:AanestysViite></vsk:AanestysTulos>Eduskunta hyväksyi mietinnön.</vsk:AanestysKappaleKooste>
+              <vsk:AanestysKappaleKooste>Mietintö "jaa", Stefan Wallinin ehdotus 24 "ei". <vsk:AanestysTulos><vsk1:AanestysTulosTeksti>Äänestyksen tulos: jaa 102, ei 93; poissa 4 </vsk1:AanestysTulosTeksti><vsk:AanestysViite met1:kieliKoodi="fi" vsk1:aanestysNroTeksti="53" vsk1:kokousNroTeksti="141" vsk1:valtiopaivaTeksti="2017 vp" vsk1:valtiopaivavuosiNroTeksti="2017"><vsk1:AanestysViiteTeksti>(äänestys 53). </vsk1:AanestysViiteTeksti></vsk:AanestysViite></vsk:AanestysTulos>Eduskunta hyväksyi mietinnön.</vsk:AanestysKappaleKooste>
+              <vsk:AanestysKappaleKooste>Mietintö "jaa", Kari Uotilan ehdotus 25 "ei". <vsk:AanestysTulos><vsk1:AanestysTulosTeksti>Äänestyksen tulos: jaa 100, ei 90; poissa 9 </vsk1:AanestysTulosTeksti><vsk:AanestysViite met1:kieliKoodi="fi" vsk1:aanestysNroTeksti="54" vsk1:kokousNroTeksti="141" vsk1:valtiopaivaTeksti="2017 vp" vsk1:valtiopaivavuosiNroTeksti="2017"><vsk1:AanestysViiteTeksti>(äänestys 54). </vsk1:AanestysViiteTeksti></vsk:AanestysViite></vsk:AanestysTulos>Eduskunta hyväksyi mietinnön.</vsk:AanestysKappaleKooste>
+              <vsk:AanestysKappaleKooste>Mietintö "jaa", Johanna Ojala-Niemelän ehdotus 26 "ei". <vsk:AanestysTulos><vsk1:AanestysTulosTeksti>Äänestyksen tulos: jaa 102, ei 92; poissa 5 </vsk1:AanestysTulosTeksti><vsk:AanestysViite met1:kieliKoodi="fi" vsk1:aanestysNroTeksti="55" vsk1:kokousNroTeksti="141" vsk1:valtiopaivaTeksti="2017 vp" vsk1:valtiopaivavuosiNroTeksti="2017"><vsk1:AanestysViiteTeksti>(äänestys 55). </vsk1:AanestysViiteTeksti></vsk:AanestysViite></vsk:AanestysTulos>Eduskunta hyväksyi mietinnön.</vsk:AanestysKappaleKooste>
+            </vsk:KohtaSisalto>
+          </vsk:Toimenpide>
+          <vsk:PaatoksentekoToimenpide met1:muuTunnus="224863" vsk1:fraasiTunnus="K_150">
+            <vsk:KohtaSisalto>
+              <sis:KappaleKooste>Eduskunta hyväksyi pääluokan 25 mietinnön mukaisena.</sis:KappaleKooste>
+            </vsk:KohtaSisalto>
+          </vsk:PaatoksentekoToimenpide>
+        </vsk:MuuAsiakohta>
+        <vsk:MuuAsiakohta met1:muuTunnus="52450" vsk1:budjetinAlikohtaTunnus="26" vsk1:kasittelyvaiheKoodi="KOKB" vsk1:kohtaJNro="13" vsk1:kohtatyyppiKoodi="Alikohta" vsk1:paakohtaTunnus="HE 106/2017 vp" vsk1:yleinenKasittelyvaiheKoodi="KOKOUS">
+          <vsk1:KohtaNumero>5.4</vsk1:KohtaNumero>
+          <sis1:OtsikkoTeksti>Pääluokka 26 Sisäministeriön hallinnonala</sis1:OtsikkoTeksti>
+          <vsk:Toimenpide met1:muuTunnus="224868" vsk1:fraasiTunnus="K_152">
+            <vsk:KohtaSisalto>
+              <vsk:PuheenjohtajaRepliikki>
+                <vsk1:PuheenjohtajaTeksti>Puhemies Maria Lohela</vsk1:PuheenjohtajaTeksti>
+                <sis:KappaleKooste>Yleiskeskustelu päättyi 14.12.2017 pidetyssä 3. täysistunnossa. Ryhdytään pääluokan 26 yksityiskohtaiseen käsittelyyn.</sis:KappaleKooste>
+              </vsk:PuheenjohtajaRepliikki>
+              <sis:KappaleKooste>Tehtiin seuraavat pääluokkaa koskevat, hyväksytyn menettelytavan mukaisesti keskuskansliaan kirjallisina jätetyt, edustajille monistettuina ja numeroituina jaetut ehdotukset:</sis:KappaleKooste>
+              <sis:KappaleKooste>1. Ville Vähämäki ps Mika Niikon ps kannattamana 26.01: Lausumaehdotus: "Eduskunta edellyttää, että hallitus teettää puolueettoman ja perusteellisen selvityksen vuosina 2015—2017 perustettujen vastaanottokeskusten rahan käytöstä ja hallinnosta ja tuo selvityksen eduskunnan käsittelyyn." (Vastalause 6)</sis:KappaleKooste>
+              <sis:KappaleKooste>2. Juho Eerola ps Mika Raatikaisen ps kannattamana 26.10.01: Lisätään 128 000 euroa poliisin toimintamenoihin somalin- ja arabiankielisen viharikollisuuden torjuntaan. (TAA 40)</sis:KappaleKooste>
+              <sis:KappaleKooste>3. Mika Niikko ps Arja Juvosen ps kannattamana 26.10.01: Lisätään 245 000 euroa Internetissä tapahtuvan lasten seksuaalisen hyväksikäytön vastaiseen työhön. (TAA 335)</sis:KappaleKooste>
+              <sis:KappaleKooste>4. Mikaela Nylander r Thomas Blomqvistin r kannattamana 26.10.01: Lisätään 2 000 000 euroa poliisipalveluiden saatavuuden varmistamiseksi Loviisassa. (TAA 344)</sis:KappaleKooste>
+              <sis:KappaleKooste>5. Kari Uotila vas Li Anderssonin vas kannattamana 26.10.01: Lisätään 2 000 000 euroa harmaan talouden torjuntaan. (Vastalause 3)</sis:KappaleKooste>
+              <sis:KappaleKooste>6. Ozan Yanar vihr Emma Karin vihr kannattamana 26.10.01: Lisätään 2 000 000 euroa poliisille harmaan talouden torjuntaan. (Vastalause 2)</sis:KappaleKooste>
+              <sis:KappaleKooste>7. Johanna Ojala-Niemelä sd Krista Kiurun sd kannattamana 26.10.01: Lisätään 3 000 000 euroa poliisitoimelle harmaan talouden torjuntaan. (Vastalause 1)</sis:KappaleKooste>
+              <sis:KappaleKooste>8. Stefan Wallin r Anna-Maja Henrikssonin r kannattamana 26.10.01: Lisätään 5 000 000 euroa poliisitoimen toimintamenoihin harmaan talouden torjumiseksi. (Vastalause 4)</sis:KappaleKooste>
+              <sis:KappaleKooste>9. Kari Uotila vas Li Anderssonin vas kannattamana 26.10.01: Lisätään 10 000 000 euroa raskaan liikenteen valvontayksikön perustamiseen. (Vastalause 3)</sis:KappaleKooste>
+              <sis:KappaleKooste>10. Ville Vähämäki ps Mika Niikon ps kannattamana 26.10.01: Lisätään 15 000 000 euroa poliisitoimen toimintamenoihin. (Vastalause 6)</sis:KappaleKooste>
+              <sis:KappaleKooste>11. Päivi Räsänen kd Sari Essayah’n kd kannattamana 26.10.01: Lisätään 17 000 000 euroa poliisin toimintamenoihin sisäisen turvallisuuden edistämiseen ja harmaan talouden torjunnan tehostamiseen. (Vastalause 5)</sis:KappaleKooste>
+              <sis:KappaleKooste>11a. Johanna Ojala-Niemelä sd Krista Kiurun sd kannattamana 26.10.01: Lausumaehdotus: "Eduskunta edellyttää, että hallitus vastaa alkoholilain muutoksista johtuvaan polii-sien lisätarpeeseen ennen alkoholilain voimaantuloa ja osoittaa siihen riittävät resurssit." (Vastalause 1)</sis:KappaleKooste>
+              <sis:KappaleKooste>11b. Ville Vähämäki ps Mika Niikon ps kannattamana 26.10.01: Lausumaehdotus: "Eduskunta edellyttää, että hallitus panostaa voimakkaasti Panaman paperien ja Paratiisin paperien sisältämien tietojen tutkimiseen ja mahdollisten väärinkäytösten edellyttämiin toimenpiteisiin sekä vastaavien ilmiöiden ennalta ehkäisemiseen." (Vastalause 6)</sis:KappaleKooste>
+              <sis:KappaleKooste>11c. Ville Vähämäki ps Mika Niikon ps kannattamana 26.10.01: Lausumaehdotus: "Eduskunta edellyttää, että hallitus vahvistaa poliisin toimintaedellytyksiä niin, että sisäinen turvallisuus varmistetaan koko maassa ja rikosten selvitysaste nousee nykyisestä. Tämä edellyttää, että poliisien määrä nostetaan pysyvästi 7 500:aan vuoteen 2022 mennessä." (Vastalause 6)</sis:KappaleKooste>
+              <sis:KappaleKooste>12. Ville Tavio ps Sami Savion ps kannattamana 26.10.02: Lisätään 1 000 000 euroa terrorismin torjumiseen siten, että vähennetään vastaavan suuruinen summa momentilta 26.10.01 vihapuheen torjumisesta. (TAA 464)</sis:KappaleKooste>
+              <sis:KappaleKooste>13. Päivi Räsänen kd Sari Essayah’n kd kannattamana 26.10.02: Lisätään 3 000 000 euroa Suojelupoliisin toimintamenoihin. (Vastalause 5)</sis:KappaleKooste>
+              <sis:KappaleKooste>14. Ville Vähämäki ps Mika Niikon ps kannattamana 26.10.02: Lisätään 3 000 000 euroa suojelupoliisitoimen toimintamenoihin. (Vastalause 6)</sis:KappaleKooste>
+              <sis:KappaleKooste>15. Johanna Ojala-Niemelä sd Krista Kiurun sd kannattamana 26.20.01: Lisätään 2 000 000 euroa Rajavartiolaitoksen toimintamenoihin. (Vastalause 1)</sis:KappaleKooste>
+              <sis:KappaleKooste>16. Ville Vähämäki ps Mika Niikon ps kannattamana 26.20.01: Lisätään 3 000 000 euroa Rajavartiolaitoksen toimintamenoihin. (Vastalause 6)</sis:KappaleKooste>
+              <sis:KappaleKooste>17. Ville Vähämäki ps Mika Niikon ps kannattamana 26.20.01: Lausumaehdotus: "Eduskunta edellyttää, että hallitus laatii suunnitelman ottaa rajatarkastukset nopeasti käyttöön Suomen kaikilla ulkorajoilla, mikäli tilanne sitä edellyttää." (Vastalause 6)</sis:KappaleKooste>
+              <sis:KappaleKooste>18. Johanna Ojala-Niemelä sd Krista Kiurun sd kannattamana 26.30.02: Lisätään 1 000 000 euroa hätäkeskuslaitoksen toimintamenoihin. (Vastalause 1)</sis:KappaleKooste>
+              <sis:KappaleKooste>19. Ozan Yanar vihr Emma Karin vihr kannattamana 26.40.01: Lisätään 5 000 000 euroa turvapaikkaprosessin laadun parantamiseen. (Vastalause 2)</sis:KappaleKooste>
+              <sis:KappaleKooste>20. Ville Vähämäki ps Mika Niikon ps kannattamana 26.40.01: Vähennetään 41 600 000 euroa vastaanoton kustannuksiin osoitetusta määrahasta. (Vastalause 6)</sis:KappaleKooste>
+              <sis:KappaleKooste>21. Ville Vähämäki ps Mika Niikon ps kannattamana 26.40.01: Lausumaehdotus: "Eduskunta edellyttää, että hallitus toteuttaa kokonaisuudessaan syksyllä 2015 laaditun turvapaikkapoliittisen toimintaohjelmansa." (Vastalause 6)</sis:KappaleKooste>
+              <sis:KappaleKooste>22. Kari Uotila vas Li Anderssonin vas kannattamana 26.40.21: Lisätään 3 200 000 euroa pakolaisten ja turvapaikanhakijoiden vastaanottoon pakolaiskiintiön korottamiseksi 2 500:aan. (Vastalause 3)</sis:KappaleKooste>
+              <sis:KappaleKooste>23. Stefan Wallin r Anna-Maja Henrikssonin r kannattamana 26.40.21: Lisätään 3 300 000 euroa pakolaisten ja turvapaikanhakijoiden vastaanottoon pakolaiskiintiön korottamiseksi 750 pakolaisesta 2 500 pakolaiseen. (Vastalause 4)</sis:KappaleKooste>
+              <sis:KappaleKooste>24. Kari Uotila vas Li Anderssonin vas kannattamana 26.40.21: Lausumaehdotus: "Eduskunta edellyttää, että hallitus ottaa käyttöön viisumisäännösten mahdollistaman niin sanotun humanitaarisen viisumin turvallisen Suomeen matkustamisen mahdollistamiseksi kansainvälisen suojelun tarpeessa oleville henkilöille." (Vastalause 3)</sis:KappaleKooste>
+              <sis:KappaleKooste>25. Kari Uotila vas Li Anderssonin vas kannattamana 26.40.21: Lausumaehdotus: "Eduskunta edellyttää, että hallitus laatii ja tuo eduskunnan käsiteltäväksi kokonaisarvion kaikista viime vuosina tehdyistä, pakolaisten ja turvapaikanhakijoiden asemaa heikentäneistä lainsäädäntöuudistuksista sekä Maahanmuuttoviraston kiristyneistä käytännöistä ja näiden muutosten yhteisvaikutuksista." (Vastalause 3)</sis:KappaleKooste>
+              <sis:KappaleKooste>26. Kari Uotila vas Li Anderssonin vas kannattamana 26.40.21: Lausumaehdotus: "Eduskunta edellyttää, että hallitus peruu tekemänsä päätökset turvapaikanhakijoiden oikeus-avun rajaamisesta, valitusaikojen leikkaamisesta ja avustajien palkkiojärjestelmän muutoksesta." (Vastalause 3)</sis:KappaleKooste>
+              <sis:KappaleKooste>27. Kari Uotila vas Li Anderssonin vas kannattamana 26.40.21: Lausumaehdotus: "Eduskunta edellyttää, että hallitus ryhtyy tarvittaviin toimiin, jotta Suomi keskeyttää turvapaikanhakijoiden palautukset vakavien konfliktien keskelle ja ihmisoikeusloukkausten vaaraan" (Vastalause 3)</sis:KappaleKooste>
+              <sis:KappaleKooste>28. Kari Uotila vas Li Anderssonin vas kannattamana 26.40.21: Lausumaehdotus: "Eduskunta edellyttää, että hallitus tuo eduskunnan käsiteltäväksi esityksen, jolla perutaan kansainvälistä suojelua saavien henkilöiden perheenyhdistämisen edellytykseksi asetettu toimeentulovaatimus." (Vastalause 3)</sis:KappaleKooste>
+              <sis:KappaleKooste>29. Kari Uotila vas Li Anderssonin vas kannattamana 26.40.21: Lausumaehdotus: "Eduskunta edellyttää, että hallitus mahdollistaa perheenyhdistämishakemuksen jättämisen missä tahansa Suomen edustustossa." (Vastalause 3)</sis:KappaleKooste>
+              <sis:KappaleKooste>30. Ville Vähämäki ps Mika Niikon ps kannattamana 26.40.22: Lausumaehdotus: "Eduskunta edellyttää, että hallitus tehostaa kielteisen turvapaikkapäätöksen saaneiden, luvattomasti maassa olevien henkilöiden poistamista Suomesta." (Vastalause 6)</sis:KappaleKooste>
+              <vsk:AanestysKappaleKooste>Mietintö "jaa", Ville Vähämäen ehdotus 1 "ei". <vsk:AanestysTulos><vsk1:AanestysTulosTeksti>Äänestyksen tulos: jaa 175, ei 17; poissa 7 </vsk1:AanestysTulosTeksti><vsk:AanestysViite met1:kieliKoodi="fi" vsk1:aanestysNroTeksti="56" vsk1:kokousNroTeksti="141" vsk1:valtiopaivaTeksti="2017 vp" vsk1:valtiopaivavuosiNroTeksti="2017"><vsk1:AanestysViiteTeksti>(äänestys 56). </vsk1:AanestysViiteTeksti></vsk:AanestysViite></vsk:AanestysTulos> Eduskunta hyväksyi mietinnön. </vsk:AanestysKappaleKooste>
+              <vsk:PuhujaRepliikki>
+                <met:Toimija>
+                  <org:Henkilo met1:muuTunnus="1309">
+                    <org1:EtuNimi>Veera</org1:EtuNimi>
+                    <org1:SukuNimi>Ruoho</org1:SukuNimi>
+                    <org1:LisatietoTeksti>kok</org1:LisatietoTeksti>
+                  </org:Henkilo>
+                </met:Toimija>
+                <sis:KappaleKooste>Arvoisa puhemies! Piti äänestää "jaa".</sis:KappaleKooste>
+              </vsk:PuhujaRepliikki>
+              <vsk:PuheenjohtajaRepliikki>
+                <vsk1:PuheenjohtajaTeksti>Puhemies Maria Lohela</vsk1:PuheenjohtajaTeksti>
+                <sis:KappaleKooste>Merkitään, mutta toistan, että kaikki korjausehdotukset tehdään sitten pääluokan päätteeksi.</sis:KappaleKooste>
+              </vsk:PuheenjohtajaRepliikki>
+              <vsk:AanestysKappaleKooste>Mietintö "jaa", Juho Eerolan ehdotus 2 "ei". <vsk:AanestysTulos><vsk1:AanestysTulosTeksti>Äänestyksen tulos: jaa 165, ei 28; poissa 6 </vsk1:AanestysTulosTeksti><vsk:AanestysViite met1:kieliKoodi="fi" vsk1:aanestysNroTeksti="57" vsk1:kokousNroTeksti="141" vsk1:valtiopaivaTeksti="2017 vp" vsk1:valtiopaivavuosiNroTeksti="2017"><vsk1:AanestysViiteTeksti>(äänestys 57). </vsk1:AanestysViiteTeksti></vsk:AanestysViite></vsk:AanestysTulos> Eduskunta hyväksyi mietinnön. </vsk:AanestysKappaleKooste>
+              <vsk:AanestysKappaleKooste>Mietintö "jaa", Mika Niikon ehdotus 3 "ei". <vsk:AanestysTulos><vsk1:AanestysTulosTeksti>Äänestyksen tulos: jaa 108, ei 83; poissa 8 </vsk1:AanestysTulosTeksti><vsk:AanestysViite met1:kieliKoodi="fi" vsk1:aanestysNroTeksti="58" vsk1:kokousNroTeksti="141" vsk1:valtiopaivaTeksti="2017 vp" vsk1:valtiopaivavuosiNroTeksti="2017"><vsk1:AanestysViiteTeksti>(äänestys 58). </vsk1:AanestysViiteTeksti></vsk:AanestysViite></vsk:AanestysTulos> Eduskunta hyväksyi mietinnön. </vsk:AanestysKappaleKooste>
+              <vsk:AanestysKappaleKooste>Mietintö "jaa", Mikaela Nylanderin ehdotus 4 "ei". <vsk:AanestysTulos><vsk1:AanestysTulosTeksti>Äänestyksen tulos: jaa 161, ei 31; poissa 7 </vsk1:AanestysTulosTeksti><vsk:AanestysViite met1:kieliKoodi="fi" vsk1:aanestysNroTeksti="59" vsk1:kokousNroTeksti="141" vsk1:valtiopaivaTeksti="2017 vp" vsk1:valtiopaivavuosiNroTeksti="2017"><vsk1:AanestysViiteTeksti>(äänestys 59). </vsk1:AanestysViiteTeksti></vsk:AanestysViite></vsk:AanestysTulos> Eduskunta hyväksyi mietinnön. </vsk:AanestysKappaleKooste>
+              <vsk:PuheenjohtajaRepliikki>
+                <vsk1:PuheenjohtajaTeksti>Puhemies Maria Lohela</vsk1:PuheenjohtajaTeksti>
+                <sis:KappaleKooste>Kari Uotilan ja Ozan Yanarin samansisältöiset ehdotukset 5 ja 6, Johanna Ojala-Niemelän ehdotus 7 ja Stefan Wallinin ehdotus 8 koskevat samaa määrärahaa, joten ensin äänestetään Stefan Wallinin ehdotuksesta 8 Johanna Ojala-Niemelän ehdotusta 7 vastaan ja sen jälkeen voittaneesta Kari Uotilan ja Ozan Yanarin samansisältöisiä ehdotuksia 5 ja 6 vastaan ja lopuksi voittaneesta mietintöä vastaan.</sis:KappaleKooste>
+              </vsk:PuheenjohtajaRepliikki>
+              <sis:KappaleKooste>Äänestysjärjestys hyväksyttiin.</sis:KappaleKooste>
+              <vsk:AanestysKappaleKooste>1) Johanna Ojala Niemelän ehdotus 7 "jaa", Stefan Wallinin ehdotus 8 "ei". <vsk:AanestysTulos><vsk1:AanestysTulosTeksti>Äänestyksen tulos: jaa 148, ei 42; poissa 9 </vsk1:AanestysTulosTeksti><vsk:AanestysViite met1:kieliKoodi="fi" vsk1:aanestysNroTeksti="60" vsk1:kokousNroTeksti="141" vsk1:valtiopaivaTeksti="2017 vp" vsk1:valtiopaivavuosiNroTeksti="2017"><vsk1:AanestysViiteTeksti>(äänestys 60). </vsk1:AanestysViiteTeksti></vsk:AanestysViite></vsk:AanestysTulos>Eduskunta hyväksyi tässä äänestyksessä Johanna Ojala-Niemelän ehdotuksen 7.</vsk:AanestysKappaleKooste>
+              <vsk:AanestysKappaleKooste>2) Kari Uotilan ehdotus 5 ja Ozan Yanarin ehdotus 6 "jaa", Johanna Ojala-Niemelän ehdotus 7 "ei". <vsk:AanestysTulos><vsk1:AanestysTulosTeksti>Äänestyksen tulos: jaa 129, ei 64; poissa 6 </vsk1:AanestysTulosTeksti><vsk:AanestysViite met1:kieliKoodi="fi" vsk1:aanestysNroTeksti="61" vsk1:kokousNroTeksti="141" vsk1:valtiopaivaTeksti="2017 vp" vsk1:valtiopaivavuosiNroTeksti="2017"><vsk1:AanestysViiteTeksti>(äänestys 61).</vsk1:AanestysViiteTeksti></vsk:AanestysViite></vsk:AanestysTulos> Eduskunta hyväksyi tässä äänestyksessä Kari Uotilan ehdotuksen 5 ja Ozan Yanarin ehdotuksen 6.</vsk:AanestysKappaleKooste>
+              <vsk:AanestysKappaleKooste>3) Mietintö "jaa", Kari Uotilan ehdotus 5 ja Ozan Yanarin ehdotus 6 "ei". <vsk:AanestysTulos><vsk1:AanestysTulosTeksti>Äänestyksen tulos: jaa 102, ei 92; poissa 5 </vsk1:AanestysTulosTeksti><vsk:AanestysViite met1:kieliKoodi="fi" vsk1:aanestysNroTeksti="62" vsk1:kokousNroTeksti="141" vsk1:valtiopaivaTeksti="2017 vp" vsk1:valtiopaivavuosiNroTeksti="2017"><vsk1:AanestysViiteTeksti>(äänestys 62). </vsk1:AanestysViiteTeksti></vsk:AanestysViite></vsk:AanestysTulos> Eduskunta hyväksyi mietinnön. </vsk:AanestysKappaleKooste>
+              <vsk:AanestysKappaleKooste>Mietintö "jaa", Kari Uotilan ehdotus 9 "ei". <vsk:AanestysTulos><vsk1:AanestysTulosTeksti>Äänestyksen tulos: jaa 179, ei 15; poissa 5 </vsk1:AanestysTulosTeksti><vsk:AanestysViite met1:kieliKoodi="fi" vsk1:aanestysNroTeksti="63" vsk1:kokousNroTeksti="141" vsk1:valtiopaivaTeksti="2017 vp" vsk1:valtiopaivavuosiNroTeksti="2017"><vsk1:AanestysViiteTeksti>(äänestys 63). </vsk1:AanestysViiteTeksti></vsk:AanestysViite></vsk:AanestysTulos> Eduskunta hyväksyi mietinnön.</vsk:AanestysKappaleKooste>
+              <vsk:AanestysKappaleKooste>Mietintö "jaa", Ville Vähämäen ehdotus 10 "ei". <vsk:AanestysTulos><vsk1:AanestysTulosTeksti>Äänestyksen tulos: jaa 162, ei 30; poissa 7 </vsk1:AanestysTulosTeksti><vsk:AanestysViite met1:kieliKoodi="fi" vsk1:aanestysNroTeksti="64" vsk1:kokousNroTeksti="141" vsk1:valtiopaivaTeksti="2017 vp" vsk1:valtiopaivavuosiNroTeksti="2017"><vsk1:AanestysViiteTeksti>(äänestys 64). </vsk1:AanestysViiteTeksti></vsk:AanestysViite></vsk:AanestysTulos> Eduskunta hyväksyi mietinnön. </vsk:AanestysKappaleKooste>
+              <vsk:AanestysKappaleKooste>Mietintö "jaa", Päivi Räsäsen ehdotus 11 "ei". <vsk:AanestysTulos><vsk1:AanestysTulosTeksti>Äänestyksen tulos: jaa 149, ei 44; poissa 6 </vsk1:AanestysTulosTeksti><vsk:AanestysViite met1:kieliKoodi="fi" vsk1:aanestysNroTeksti="65" vsk1:kokousNroTeksti="141" vsk1:valtiopaivaTeksti="2017 vp" vsk1:valtiopaivavuosiNroTeksti="2017"><vsk1:AanestysViiteTeksti>(äänestys 65). </vsk1:AanestysViiteTeksti></vsk:AanestysViite></vsk:AanestysTulos> Eduskunta hyväksyi mietinnön. </vsk:AanestysKappaleKooste>
+              <vsk:AanestysKappaleKooste>Mietintö "jaa", Johanna Ojala-Niemelän ehdotus 11a "ei". <vsk:AanestysTulos><vsk1:AanestysTulosTeksti>Äänestyksen tulos: jaa 102, ei 92; poissa 5 </vsk1:AanestysTulosTeksti><vsk:AanestysViite met1:kieliKoodi="fi" vsk1:aanestysNroTeksti="66" vsk1:kokousNroTeksti="141" vsk1:valtiopaivaTeksti="2017 vp" vsk1:valtiopaivavuosiNroTeksti="2017"><vsk1:AanestysViiteTeksti>(äänestys 66). </vsk1:AanestysViiteTeksti></vsk:AanestysViite></vsk:AanestysTulos> Eduskunta hyväksyi mietinnön. </vsk:AanestysKappaleKooste>
+              <vsk:AanestysKappaleKooste>Mietintö "jaa", Ville Vähämäen ehdotus 11b "ei". <vsk:AanestysTulos><vsk1:AanestysTulosTeksti>Äänestyksen tulos: jaa 100, ei 91; poissa 8 </vsk1:AanestysTulosTeksti><vsk:AanestysViite met1:kieliKoodi="fi" vsk1:aanestysNroTeksti="67" vsk1:kokousNroTeksti="141" vsk1:valtiopaivaTeksti="2017 vp" vsk1:valtiopaivavuosiNroTeksti="2017"><vsk1:AanestysViiteTeksti>(äänestys 67). </vsk1:AanestysViiteTeksti></vsk:AanestysViite></vsk:AanestysTulos> Eduskunta hyväksyi mietinnön. </vsk:AanestysKappaleKooste>
+              <vsk:AanestysKappaleKooste>Mietintö "jaa", Ville Vähämäen ehdotus 11c "ei". <vsk:AanestysTulos><vsk1:AanestysTulosTeksti>Äänestyksen tulos: jaa 120, ei 70; poissa 9 </vsk1:AanestysTulosTeksti><vsk:AanestysViite met1:kieliKoodi="fi" vsk1:aanestysNroTeksti="68" vsk1:kokousNroTeksti="141" vsk1:valtiopaivaTeksti="2017 vp" vsk1:valtiopaivavuosiNroTeksti="2017"><vsk1:AanestysViiteTeksti>(äänestys 68). </vsk1:AanestysViiteTeksti></vsk:AanestysViite></vsk:AanestysTulos> Eduskunta hyväksyi mietinnön. </vsk:AanestysKappaleKooste>
+              <vsk:AanestysKappaleKooste>Mietintö "jaa", Ville Tavion ehdotus 12 "ei". <vsk:AanestysTulos><vsk1:AanestysTulosTeksti>Äänestyksen tulos: jaa 177, ei 16; poissa 6 </vsk1:AanestysTulosTeksti><vsk:AanestysViite met1:kieliKoodi="fi" vsk1:aanestysNroTeksti="69" vsk1:kokousNroTeksti="141" vsk1:valtiopaivaTeksti="2017 vp" vsk1:valtiopaivavuosiNroTeksti="2017"><vsk1:AanestysViiteTeksti>(äänestys 69). </vsk1:AanestysViiteTeksti></vsk:AanestysViite></vsk:AanestysTulos> Eduskunta hyväksyi mietinnön. </vsk:AanestysKappaleKooste>
+              <vsk:PuheenjohtajaRepliikki>
+                <vsk1:PuheenjohtajaTeksti>Puhemies Maria Lohela</vsk1:PuheenjohtajaTeksti>
+                <sis:KappaleKooste>Päivi Räsäsen ehdotus 13 ja Ville Vähämäen ehdotus 14 ovat saman sisältöisiä, joten niistä äänestetään yhdessä mietintöä vastaan.</sis:KappaleKooste>
+              </vsk:PuheenjohtajaRepliikki>
+              <vsk:AanestysKappaleKooste>Mietintö "jaa", Päivi Räsäsen ehdotus 13 ja Ville Vähämäen ehdotus 14 "ei". <vsk:AanestysTulos><vsk1:AanestysTulosTeksti>Äänestyksen tulos: jaa 172, ei 22; poissa 5 </vsk1:AanestysTulosTeksti><vsk:AanestysViite met1:kieliKoodi="fi" vsk1:aanestysNroTeksti="70" vsk1:kokousNroTeksti="141" vsk1:valtiopaivaTeksti="2017 vp" vsk1:valtiopaivavuosiNroTeksti="2017"><vsk1:AanestysViiteTeksti>(äänestys 70).  Eduskunta hyväksyi mietinnön. </vsk1:AanestysViiteTeksti></vsk:AanestysViite></vsk:AanestysTulos></vsk:AanestysKappaleKooste>
+              <vsk:PuheenjohtajaRepliikki>
+                <vsk1:PuheenjohtajaTeksti>Puhemies Maria Lohela</vsk1:PuheenjohtajaTeksti>
+                <sis:KappaleKooste>Johanna Ojala-Niemelän ehdotus 15 ja Ville Vähämäen ehdotus 16 koskevat samaa määrärahaa, joten ensin äänestetään Ville Vähämäen ehdotuksesta 16 Johanna Ojala-Niemelän ehdotusta 15 vastaan ja sen jälkeen voittaneesta mietintöä vastaan.</sis:KappaleKooste>
+              </vsk:PuheenjohtajaRepliikki>
+              <sis:KappaleKooste>Äänestysjärjestys hyväksyttiin.</sis:KappaleKooste>
+              <vsk:AanestysKappaleKooste>1) Johanna Ojala-Niemelän ehdotus 15 "jaa", Ville Vähämäen ehdotus 16 "ei". <vsk:AanestysTulos><vsk1:AanestysTulosTeksti>Äänestyksen tulos: jaa 166, ei 26; poissa 7 </vsk1:AanestysTulosTeksti><vsk:AanestysViite met1:kieliKoodi="fi" vsk1:aanestysNroTeksti="71" vsk1:kokousNroTeksti="141" vsk1:valtiopaivaTeksti="2017 vp" vsk1:valtiopaivavuosiNroTeksti="2017"><vsk1:AanestysViiteTeksti>(äänestys 71). </vsk1:AanestysViiteTeksti></vsk:AanestysViite></vsk:AanestysTulos> Eduskunta hyväksyi tässä äänestyksessä Johanna Ojala-Niemelän ehdotuksen 15.</vsk:AanestysKappaleKooste>
+              <vsk:AanestysKappaleKooste>2) Mietintö "jaa", Johanna Ojala-Niemelän ehdotus 15 "ei". <vsk:AanestysTulos><vsk1:AanestysTulosTeksti>Äänestyksen tulos: jaa 114, ei 80; poissa 5 </vsk1:AanestysTulosTeksti><vsk:AanestysViite met1:kieliKoodi="fi" vsk1:aanestysNroTeksti="72" vsk1:kokousNroTeksti="141" vsk1:valtiopaivaTeksti="2017 vp" vsk1:valtiopaivavuosiNroTeksti="2017"><vsk1:AanestysViiteTeksti>(äänestys 72). </vsk1:AanestysViiteTeksti></vsk:AanestysViite></vsk:AanestysTulos> Eduskunta hyväksyi mietinnön. </vsk:AanestysKappaleKooste>
+              <vsk:AanestysKappaleKooste>Mietintö "jaa", Ville Vähämäen ehdotus 17 "ei". <vsk:AanestysTulos><vsk1:AanestysTulosTeksti>Äänestyksen tulos: jaa 172, ei 21; poissa 6 </vsk1:AanestysTulosTeksti><vsk:AanestysViite met1:kieliKoodi="fi" vsk1:aanestysNroTeksti="73" vsk1:kokousNroTeksti="141" vsk1:valtiopaivaTeksti="2017 vp" vsk1:valtiopaivavuosiNroTeksti="2017"><vsk1:AanestysViiteTeksti>(äänestys 73). </vsk1:AanestysViiteTeksti></vsk:AanestysViite></vsk:AanestysTulos> Eduskunta hyväksyi mietinnön. </vsk:AanestysKappaleKooste>
+              <vsk:AanestysKappaleKooste>Mietintö "jaa", Johanna Ojala-Niemelän ehdotus 18 "ei". <vsk:AanestysTulos><vsk1:AanestysTulosTeksti>Äänestyksen tulos: jaa 115, ei 78; poissa 6 </vsk1:AanestysTulosTeksti><vsk:AanestysViite met1:kieliKoodi="fi" vsk1:aanestysNroTeksti="74" vsk1:kokousNroTeksti="141" vsk1:valtiopaivaTeksti="2017 vp" vsk1:valtiopaivavuosiNroTeksti="2017"><vsk1:AanestysViiteTeksti>(äänestys 74). </vsk1:AanestysViiteTeksti></vsk:AanestysViite></vsk:AanestysTulos> Eduskunta hyväksyi mietinnön. </vsk:AanestysKappaleKooste>
+              <vsk:AanestysKappaleKooste>Mietintö "jaa", Ozan Yanarin ehdotus 19 "ei". <vsk:AanestysTulos><vsk1:AanestysTulosTeksti>Äänestyksen tulos: jaa 154, ei 40; poissa 5 </vsk1:AanestysTulosTeksti><vsk:AanestysViite met1:kieliKoodi="fi" vsk1:aanestysNroTeksti="75" vsk1:kokousNroTeksti="141" vsk1:valtiopaivaTeksti="2017 vp" vsk1:valtiopaivavuosiNroTeksti="2017"><vsk1:AanestysViiteTeksti>(äänestys 75). </vsk1:AanestysViiteTeksti></vsk:AanestysViite></vsk:AanestysTulos> Eduskunta hyväksyi mietinnön. </vsk:AanestysKappaleKooste>
+              <vsk:AanestysKappaleKooste>Mietintö "jaa", Ville Vähämäen ehdotus 20 "ei". <vsk:AanestysTulos><vsk1:AanestysTulosTeksti>Äänestyksen tulos: jaa 177, ei 16; poissa 6 </vsk1:AanestysTulosTeksti><vsk:AanestysViite met1:kieliKoodi="fi" vsk1:aanestysNroTeksti="76" vsk1:kokousNroTeksti="141" vsk1:valtiopaivaTeksti="2017 vp" vsk1:valtiopaivavuosiNroTeksti="2017"><vsk1:AanestysViiteTeksti>(äänestys 76). </vsk1:AanestysViiteTeksti></vsk:AanestysViite></vsk:AanestysTulos> Eduskunta hyväksyi mietinnön. </vsk:AanestysKappaleKooste>
+              <vsk:AanestysKappaleKooste>Mietintö "jaa", Ville Vähämäen ehdotus 21 "ei". <vsk:AanestysTulos><vsk1:AanestysTulosTeksti>Äänestyksen tulos: jaa 174, ei 16; poissa 9 </vsk1:AanestysTulosTeksti><vsk:AanestysViite met1:kieliKoodi="fi" vsk1:aanestysNroTeksti="77" vsk1:kokousNroTeksti="141" vsk1:valtiopaivaTeksti="2017 vp" vsk1:valtiopaivavuosiNroTeksti="2017"><vsk1:AanestysViiteTeksti>(äänestys 77). </vsk1:AanestysViiteTeksti></vsk:AanestysViite></vsk:AanestysTulos> Eduskunta hyväksyi mietinnön. </vsk:AanestysKappaleKooste>
+              <vsk:PuheenjohtajaRepliikki>
+                <vsk1:PuheenjohtajaTeksti>Puhemies Maria Lohela</vsk1:PuheenjohtajaTeksti>
+                <sis:KappaleKooste>Kari Uotilan ehdotus 22 ja Stefan Wallinin ehdotus 23 koskevat samaa määrärahaa, joten ensin äänestetään Stefan Wallinin ehdotuksesta 23 Kari Uotilan ehdotusta 22 vastaan ja sen jälkeen voittaneesta mietintöä vastaan.</sis:KappaleKooste>
+              </vsk:PuheenjohtajaRepliikki>
+              <sis:KappaleKooste>Äänestysjärjestys hyväksyttiin.</sis:KappaleKooste>
+              <vsk:AanestysKappaleKooste>1) Kari Uotilan ehdotus 22 "jaa", Stefan Wallinin ehdotus 23 "ei". <vsk:AanestysTulos><vsk1:AanestysTulosTeksti>Äänestyksen tulos: jaa 166, ei 25, tyhjiä 1; poissa 7 </vsk1:AanestysTulosTeksti><vsk:AanestysViite met1:kieliKoodi="fi" vsk1:aanestysNroTeksti="78" vsk1:kokousNroTeksti="141" vsk1:valtiopaivaTeksti="2017 vp" vsk1:valtiopaivavuosiNroTeksti="2017"><vsk1:AanestysViiteTeksti>(äänestys 78). </vsk1:AanestysViiteTeksti></vsk:AanestysViite></vsk:AanestysTulos> Eduskunta hyväksyi tässä äänestyksessä Kari Uotilan ehdotuksen 22. </vsk:AanestysKappaleKooste>
+              <vsk:AanestysKappaleKooste>2) Mietintö "jaa", Kari Uotilan ehdotus 22 "ei". <vsk:AanestysTulos><vsk1:AanestysTulosTeksti>Äänestyksen tulos: jaa 148, ei 41; poissa 10 </vsk1:AanestysTulosTeksti><vsk:AanestysViite met1:kieliKoodi="fi" vsk1:aanestysNroTeksti="79" vsk1:kokousNroTeksti="141" vsk1:valtiopaivaTeksti="2017 vp" vsk1:valtiopaivavuosiNroTeksti="2017"><vsk1:AanestysViiteTeksti>(äänestys 79). </vsk1:AanestysViiteTeksti></vsk:AanestysViite></vsk:AanestysTulos> Eduskunta hyväksyi mietinnön. </vsk:AanestysKappaleKooste>
+              <vsk:AanestysKappaleKooste>Mietintö "jaa", Kari Uotilan ehdotus 24 "ei". <vsk:AanestysTulos><vsk1:AanestysTulosTeksti>Äänestyksen tulos: jaa 150, ei 43; poissa 6 </vsk1:AanestysTulosTeksti><vsk:AanestysViite met1:kieliKoodi="fi" vsk1:aanestysNroTeksti="80" vsk1:kokousNroTeksti="141" vsk1:valtiopaivaTeksti="2017 vp" vsk1:valtiopaivavuosiNroTeksti="2017"><vsk1:AanestysViiteTeksti>(äänestys 80). </vsk1:AanestysViiteTeksti></vsk:AanestysViite></vsk:AanestysTulos> Eduskunta hyväksyi mietinnön. </vsk:AanestysKappaleKooste>
+              <vsk:AanestysKappaleKooste>Mietintö "jaa", Kari Uotilan ehdotus 25 "ei". <vsk:AanestysTulos><vsk1:AanestysTulosTeksti>Äänestyksen tulos: jaa 123, ei 67; poissa 9 </vsk1:AanestysTulosTeksti><vsk:AanestysViite met1:kieliKoodi="fi" vsk1:aanestysNroTeksti="81" vsk1:kokousNroTeksti="141" vsk1:valtiopaivaTeksti="2017 vp" vsk1:valtiopaivavuosiNroTeksti="2017"><vsk1:AanestysViiteTeksti>(äänestys 81). </vsk1:AanestysViiteTeksti></vsk:AanestysViite></vsk:AanestysTulos> Eduskunta hyväksyi mietinnön. </vsk:AanestysKappaleKooste>
+              <vsk:AanestysKappaleKooste>Mietintö "jaa", Kari Uotilan ehdotus 26 "ei". <vsk:AanestysTulos><vsk1:AanestysTulosTeksti>Äänestyksen tulos: jaa 124, ei 66; poissa 9 </vsk1:AanestysTulosTeksti><vsk:AanestysViite met1:kieliKoodi="fi" vsk1:aanestysNroTeksti="82" vsk1:kokousNroTeksti="141" vsk1:valtiopaivaTeksti="2017 vp" vsk1:valtiopaivavuosiNroTeksti="2017"><vsk1:AanestysViiteTeksti>(äänestys 82). </vsk1:AanestysViiteTeksti></vsk:AanestysViite></vsk:AanestysTulos> Eduskunta hyväksyi mietinnön. </vsk:AanestysKappaleKooste>
+              <vsk:AanestysKappaleKooste>Mietintö "jaa", Kari Uotilan ehdotus 27 "ei". <vsk:AanestysTulos><vsk1:AanestysTulosTeksti>Äänestyksen tulos: jaa 119, ei 68; poissa 12 </vsk1:AanestysTulosTeksti><vsk:AanestysViite met1:kieliKoodi="fi" vsk1:aanestysNroTeksti="83" vsk1:kokousNroTeksti="141" vsk1:valtiopaivaTeksti="2017 vp" vsk1:valtiopaivavuosiNroTeksti="2017"><vsk1:AanestysViiteTeksti>(äänestys 83). </vsk1:AanestysViiteTeksti></vsk:AanestysViite></vsk:AanestysTulos> Eduskunta hyväksyi mietinnön. </vsk:AanestysKappaleKooste>
+              <vsk:AanestysKappaleKooste>Mietintö "jaa", Kari Uotilan ehdotus 28 "ei". <vsk:AanestysTulos><vsk1:AanestysTulosTeksti>Äänestyksen tulos: jaa 121, ei 68; poissa 10 </vsk1:AanestysTulosTeksti><vsk:AanestysViite met1:kieliKoodi="fi" vsk1:aanestysNroTeksti="84" vsk1:kokousNroTeksti="141" vsk1:valtiopaivaTeksti="2017 vp" vsk1:valtiopaivavuosiNroTeksti="2017"><vsk1:AanestysViiteTeksti>(äänestys 84). </vsk1:AanestysViiteTeksti></vsk:AanestysViite></vsk:AanestysTulos> Eduskunta hyväksyi mietinnön. </vsk:AanestysKappaleKooste>
+              <vsk:AanestysKappaleKooste>Mietintö "jaa", Kari Uotilan ehdotus 29 "ei". <vsk:AanestysTulos><vsk1:AanestysTulosTeksti>Äänestyksen tulos: jaa 120, ei 69; poissa 10 </vsk1:AanestysTulosTeksti><vsk:AanestysViite met1:kieliKoodi="fi" vsk1:aanestysNroTeksti="85" vsk1:kokousNroTeksti="141" vsk1:valtiopaivaTeksti="2017 vp" vsk1:valtiopaivavuosiNroTeksti="2017"><vsk1:AanestysViiteTeksti>(äänestys 85). </vsk1:AanestysViiteTeksti></vsk:AanestysViite></vsk:AanestysTulos> Eduskunta hyväksyi mietinnön. </vsk:AanestysKappaleKooste>
+              <vsk:AanestysKappaleKooste>Mietintö "jaa", Ville Vähämäen ehdotus 30 "ei". <vsk:AanestysTulos><vsk1:AanestysTulosTeksti>Äänestyksen tulos: jaa 139, ei 47; poissa 13 </vsk1:AanestysTulosTeksti><vsk:AanestysViite met1:kieliKoodi="fi" vsk1:aanestysNroTeksti="86" vsk1:kokousNroTeksti="141" vsk1:valtiopaivaTeksti="2017 vp" vsk1:valtiopaivavuosiNroTeksti="2017"><vsk1:AanestysViiteTeksti>(äänestys 86). </vsk1:AanestysViiteTeksti></vsk:AanestysViite></vsk:AanestysTulos> Eduskunta hyväksyi mietinnön. </vsk:AanestysKappaleKooste>
+              <vsk:PuhujaRepliikki>
+                <met:Toimija>
+                  <org:Henkilo met1:muuTunnus="363">
+                    <org1:EtuNimi>Satu</org1:EtuNimi>
+                    <org1:SukuNimi>Hassi</org1:SukuNimi>
+                    <org1:LisatietoTeksti>vihr</org1:LisatietoTeksti>
+                  </org:Henkilo>
+                </met:Toimija>
+                <sis:KappaleKooste>Arvoisa puhemies! Jos on vielä mahdollisuus ilmoittaa: pääluokassa 25, siis edellisessä pääluokassa, ehdotuksen 1 kohdalla tarkoitukseni oli äänestää "ei".</sis:KappaleKooste>
+              </vsk:PuhujaRepliikki>
+              <vsk:PuhujaRepliikki>
+                <met:Toimija>
+                  <org:Henkilo met1:muuTunnus="791">
+                    <org1:EtuNimi>Anneli</org1:EtuNimi>
+                    <org1:SukuNimi>Kiljunen</org1:SukuNimi>
+                    <org1:LisatietoTeksti>sd</org1:LisatietoTeksti>
+                  </org:Henkilo>
+                </met:Toimija>
+                <sis:KappaleKooste>Arvoisa puhemies! Samoin kohdassa 2 piti äänestää "ei".</sis:KappaleKooste>
+              </vsk:PuhujaRepliikki>
+              <vsk:PuhujaRepliikki>
+                <met:Toimija>
+                  <org:Henkilo met1:muuTunnus="203">
+                    <org1:EtuNimi>Riitta</org1:EtuNimi>
+                    <org1:SukuNimi>Myller</org1:SukuNimi>
+                    <org1:LisatietoTeksti>sd</org1:LisatietoTeksti>
+                  </org:Henkilo>
+                </met:Toimija>
+                <sis:KappaleKooste>Arvoisa puhemies! Samoin kohdassa 2 oli tarkoitus äänestää "ei".</sis:KappaleKooste>
+              </vsk:PuhujaRepliikki>
+              <vsk:PuhujaRepliikki>
+                <met:Toimija>
+                  <org:Henkilo met1:muuTunnus="1274">
+                    <org1:EtuNimi>Antti</org1:EtuNimi>
+                    <org1:SukuNimi>Rinne</org1:SukuNimi>
+                    <org1:LisatietoTeksti>sd</org1:LisatietoTeksti>
+                  </org:Henkilo>
+                </met:Toimija>
+                <sis:KappaleKooste>Arvoisa puhemies! Tarkoitus oli äänestää äänestyksessä 2 "jaa" ja äänestyksessä 9 "ei".</sis:KappaleKooste>
+              </vsk:PuhujaRepliikki>
+              <vsk:PuhujaRepliikki>
+                <met:Toimija>
+                  <org:Henkilo met1:muuTunnus="538">
+                    <org1:EtuNimi>Tuula</org1:EtuNimi>
+                    <org1:SukuNimi>Haatainen</org1:SukuNimi>
+                    <org1:LisatietoTeksti>sd</org1:LisatietoTeksti>
+                  </org:Henkilo>
+                </met:Toimija>
+                <sis:KappaleKooste>Arvoisa puhemies! Tarkoitus oli äänestää äänestyksessä 2 "jaa".</sis:KappaleKooste>
+              </vsk:PuhujaRepliikki>
+              <vsk:PuhujaRepliikki>
+                <met:Toimija>
+                  <org:Henkilo met1:muuTunnus="1133">
+                    <org1:EtuNimi>Mika</org1:EtuNimi>
+                    <org1:SukuNimi>Kari</org1:SukuNimi>
+                    <org1:LisatietoTeksti>sd</org1:LisatietoTeksti>
+                  </org:Henkilo>
+                </met:Toimija>
+                <sis:KappaleKooste>Arvoisa rouva puhemies! Tarkoitukseni oli äänestää kohdassa 2 "jaa".</sis:KappaleKooste>
+              </vsk:PuhujaRepliikki>
+              <vsk:PuhujaRepliikki>
+                <met:Toimija>
+                  <org:Henkilo met1:muuTunnus="1121">
+                    <org1:EtuNimi>Lauri</org1:EtuNimi>
+                    <org1:SukuNimi>Ihalainen</org1:SukuNimi>
+                    <org1:LisatietoTeksti>sd</org1:LisatietoTeksti>
+                  </org:Henkilo>
+                </met:Toimija>
+                <sis:KappaleKooste>Arvoisa puhemies! Tarkoitus oli äänestää kohdassa 2 "jaa".</sis:KappaleKooste>
+              </vsk:PuhujaRepliikki>
+              <vsk:PuhujaRepliikki>
+                <met:Toimija>
+                  <org:Henkilo met1:muuTunnus="1099">
+                    <org1:EtuNimi>Eeva-Johanna</org1:EtuNimi>
+                    <org1:SukuNimi>Eloranta</org1:SukuNimi>
+                    <org1:LisatietoTeksti>sd</org1:LisatietoTeksti>
+                  </org:Henkilo>
+                </met:Toimija>
+                <sis:KappaleKooste>Arvoisa puhemies! Kohdassa 2 tarkoitukseni oli äänestää "jaa".</sis:KappaleKooste>
+              </vsk:PuhujaRepliikki>
+              <vsk:PuhujaRepliikki>
+                <met:Toimija>
+                  <org:Henkilo met1:muuTunnus="971">
+                    <org1:EtuNimi>Johanna</org1:EtuNimi>
+                    <org1:SukuNimi>Ojala-Niemelä</org1:SukuNimi>
+                    <org1:LisatietoTeksti>sd</org1:LisatietoTeksti>
+                  </org:Henkilo>
+                </met:Toimija>
+                <sis:KappaleKooste>Arvoisa puhemies! Kohdassa 2 oli tarkoitus äänestää "jaa".</sis:KappaleKooste>
+              </vsk:PuhujaRepliikki>
+              <vsk:PuhujaRepliikki>
+                <met:Toimija>
+                  <org:Henkilo met1:muuTunnus="1102">
+                    <org1:EtuNimi>Kristiina</org1:EtuNimi>
+                    <org1:SukuNimi>Salonen</org1:SukuNimi>
+                    <org1:LisatietoTeksti>sd</org1:LisatietoTeksti>
+                  </org:Henkilo>
+                </met:Toimija>
+                <sis:KappaleKooste>Arvoisa puhemies! Samoin kohdassa 2 "jaa".</sis:KappaleKooste>
+              </vsk:PuhujaRepliikki>
+              <vsk:PuhujaRepliikki>
+                <met:Toimija>
+                  <org:Henkilo met1:muuTunnus="1302">
+                    <org1:EtuNimi>Ilmari</org1:EtuNimi>
+                    <org1:SukuNimi>Nurminen</org1:SukuNimi>
+                    <org1:LisatietoTeksti>sd</org1:LisatietoTeksti>
+                  </org:Henkilo>
+                </met:Toimija>
+                <sis:KappaleKooste>Arvoisa puhemies! Tarkoitukseni oli äänestää kohdassa 2 "jaa".</sis:KappaleKooste>
+              </vsk:PuhujaRepliikki>
+              <vsk:PuhujaRepliikki>
+                <met:Toimija>
+                  <org:Henkilo met1:muuTunnus="1326">
+                    <org1:EtuNimi>Timo</org1:EtuNimi>
+                    <org1:SukuNimi>Harakka</org1:SukuNimi>
+                    <org1:LisatietoTeksti>sd</org1:LisatietoTeksti>
+                  </org:Henkilo>
+                </met:Toimija>
+                <sis:KappaleKooste>Arvoisa puhemies! Kohdassa 6 oli tarkoitus äänestää "ei" ja kohdassa 24 oli tarkoitus äänestää "jaa".</sis:KappaleKooste>
+              </vsk:PuhujaRepliikki>
+              <vsk:PuhujaRepliikki>
+                <met:Toimija>
+                  <org:Henkilo met1:muuTunnus="1316">
+                    <org1:EtuNimi>Ville</org1:EtuNimi>
+                    <org1:SukuNimi>Skinnari</org1:SukuNimi>
+                    <org1:LisatietoTeksti>sd</org1:LisatietoTeksti>
+                  </org:Henkilo>
+                </met:Toimija>
+                <sis:KappaleKooste>Arvoisa puhemies! Kohdassa 24 tarkoitukseni oli äänestää "jaa".</sis:KappaleKooste>
+              </vsk:PuhujaRepliikki>
+              <vsk:PuhujaRepliikki>
+                <met:Toimija>
+                  <org:Henkilo met1:muuTunnus="1319">
+                    <org1:EtuNimi>Satu</org1:EtuNimi>
+                    <org1:SukuNimi>Taavitsainen</org1:SukuNimi>
+                    <org1:LisatietoTeksti>sd</org1:LisatietoTeksti>
+                  </org:Henkilo>
+                </met:Toimija>
+                <sis:KappaleKooste>Arvoisa puhemies! Kohdassa 1 tarkoitukseni oli äänestää "ei".</sis:KappaleKooste>
+              </vsk:PuhujaRepliikki>
+              <vsk:PuhujaRepliikki>
+                <met:Toimija>
+                  <org:Henkilo met1:muuTunnus="1324">
+                    <org1:EtuNimi>Hanna</org1:EtuNimi>
+                    <org1:SukuNimi>Halmeenpää</org1:SukuNimi>
+                    <org1:LisatietoTeksti>vihr</org1:LisatietoTeksti>
+                  </org:Henkilo>
+                </met:Toimija>
+                <sis:KappaleKooste>Arvoisa puhemies! Kohdassa 18 oli tarkoitus äänestää "ei".</sis:KappaleKooste>
+              </vsk:PuhujaRepliikki>
+              <vsk:PuhujaRepliikki>
+                <met:Toimija>
+                  <org:Henkilo met1:muuTunnus="511">
+                    <org1:EtuNimi>Pia</org1:EtuNimi>
+                    <org1:SukuNimi>Viitanen</org1:SukuNimi>
+                    <org1:LisatietoTeksti>sd</org1:LisatietoTeksti>
+                  </org:Henkilo>
+                </met:Toimija>
+                <sis:KappaleKooste>Arvoisa puhemies! Kohtaan 2 "jaa".</sis:KappaleKooste>
+              </vsk:PuhujaRepliikki>
+              <vsk:PuhujaRepliikki>
+                <met:Toimija>
+                  <org:Henkilo met1:muuTunnus="791">
+                    <org1:EtuNimi>Anneli</org1:EtuNimi>
+                    <org1:SukuNimi>Kiljunen</org1:SukuNimi>
+                    <org1:LisatietoTeksti>sd</org1:LisatietoTeksti>
+                  </org:Henkilo>
+                </met:Toimija>
+                <sis:KappaleKooste>Arvoisa puhemies! Kohtaan 2 "jaa".</sis:KappaleKooste>
+              </vsk:PuhujaRepliikki>
+              <vsk:PuhujaRepliikki>
+                <met:Toimija>
+                  <org:Henkilo met1:muuTunnus="203">
+                    <org1:EtuNimi>Riitta</org1:EtuNimi>
+                    <org1:SukuNimi>Myller</org1:SukuNimi>
+                    <org1:LisatietoTeksti>sd</org1:LisatietoTeksti>
+                  </org:Henkilo>
+                </met:Toimija>
+                <sis:KappaleKooste>Arvoisa puhemies! Samoin kohtaan 2 "jaa".</sis:KappaleKooste>
+              </vsk:PuhujaRepliikki>
+              <vsk:PuhujaRepliikki>
+                <met:Toimija>
+                  <org:Henkilo met1:muuTunnus="1325">
+                    <org1:EtuNimi>Sari</org1:EtuNimi>
+                    <org1:SukuNimi>Tanus</org1:SukuNimi>
+                    <org1:LisatietoTeksti>kd</org1:LisatietoTeksti>
+                  </org:Henkilo>
+                </met:Toimija>
+                <sis:KappaleKooste>Arvoisa puhemies! Kohdassa 29 tarkoitus oli äänestää "ei".</sis:KappaleKooste>
+              </vsk:PuhujaRepliikki>
+              <vsk:PuhujaRepliikki>
+                <met:Toimija>
+                  <org:Henkilo met1:muuTunnus="1343">
+                    <org1:EtuNimi>Antero</org1:EtuNimi>
+                    <org1:SukuNimi>Laukkanen</org1:SukuNimi>
+                    <org1:LisatietoTeksti>kd</org1:LisatietoTeksti>
+                  </org:Henkilo>
+                </met:Toimija>
+                <sis:KappaleKooste>Arvoisa rouva puhemies! Kohdassa 26 oli tarkoitus äänestää "ei".</sis:KappaleKooste>
+              </vsk:PuhujaRepliikki>
+              <vsk:PuhujaRepliikki>
+                <met:Toimija>
+                  <org:Henkilo met1:muuTunnus="565">
+                    <org1:EtuNimi>Susanna</org1:EtuNimi>
+                    <org1:SukuNimi>Huovinen</org1:SukuNimi>
+                    <org1:LisatietoTeksti>sd</org1:LisatietoTeksti>
+                  </org:Henkilo>
+                </met:Toimija>
+                <sis:KappaleKooste>Arvoisa puhemies! Kohdassa 2, äänestyksessä 2, oli tarkoitus äänestää "jaa".</sis:KappaleKooste>
+              </vsk:PuhujaRepliikki>
+              <vsk:PuheenjohtajaRepliikki>
+                <vsk1:PuheenjohtajaTeksti>Puhemies Maria Lohela</vsk1:PuheenjohtajaTeksti>
+                <sis:KappaleKooste>Merkitään.</sis:KappaleKooste>
+              </vsk:PuheenjohtajaRepliikki>
+            </vsk:KohtaSisalto>
+          </vsk:Toimenpide>
+          <vsk:PaatoksentekoToimenpide met1:muuTunnus="224869" vsk1:fraasiTunnus="K_150">
+            <vsk:KohtaSisalto>
+              <sis:KappaleKooste>Eduskunta hyväksyi pääluokan 26 mietinnön mukaisena.</sis:KappaleKooste>
+              <sis:KappaleKooste>Asian käsittely keskeytettiin.</sis:KappaleKooste>
+            </vsk:KohtaSisalto>
+          </vsk:PaatoksentekoToimenpide>
+        </vsk:MuuAsiakohta>
+        <vsk:Asiakohta met1:eduskuntaTunnus="HE 182/2017 vp" met1:muuTunnus="52720" vsk1:kasittelyvaiheKoodi="1K" vsk1:kohtaJNro="14" vsk1:kohtatyyppiKoodi="Asiakohta" vsk1:yleinenKasittelyvaiheKoodi="1K">
+          <vsk1:KohtaNumero>6</vsk1:KohtaNumero>
+          <vsk:KohtaNimeke>
+            <met1:NimekeTeksti>Hallituksen esitys  eduskunnalle laeiksi kuntien ja kuntayhtymien eräiden oikeustoimien väliaikaisesta  rajoittamisesta  sosiaali-  ja  terveydenhuollossa  annetun  lain  sekä eräiden kunta- ja palvelurakenneuudistuksesta  annetussa  laissa säädettyjen velvoitteiden soveltamisesta annetun lain muuttamisesta</met1:NimekeTeksti>
+          </vsk:KohtaNimeke>
+          <vsk:KohtaAsia vsk1:hyperlinkkiKoodi="HE 182/2017 vp">
+            <met1:AsiakirjatyyppiNimi>Hallituksen esitys</met1:AsiakirjatyyppiNimi>
+            <met1:EduskuntaTunnus>HE 182/2017 vp</met1:EduskuntaTunnus>
+          </vsk:KohtaAsia>
+          <vsk:KohtaAsiakirja>
+            <met1:AsiakirjatyyppiNimi>Valiokunnan mietintö</met1:AsiakirjatyyppiNimi>
+            <met1:EduskuntaTunnus>StVM 23/2017 vp</met1:EduskuntaTunnus>
+          </vsk:KohtaAsiakirja>
+          <vsk:Toimenpide met1:muuTunnus="226480" vsk1:fraasiTunnus="P_KESK_40">
+            <sis1:ValiotsikkoTeksti>Ensimmäinen käsittely</sis1:ValiotsikkoTeksti>
+            <vsk:KohtaSisalto>
+              <sis:KappaleKooste>Asia poistettiin päiväjärjestyksestä.</sis:KappaleKooste>
+            </vsk:KohtaSisalto>
+          </vsk:Toimenpide>
+        </vsk:Asiakohta>
+        <vsk:MuuAsiakohta met1:muuTunnus="41443" vsk1:kasittelyvaiheKoodi="KOKSEU" vsk1:kohtaJNro="15" vsk1:kohtatyyppiKoodi="Asiakohta" vsk1:yleinenKasittelyvaiheKoodi="KOKOUS">
+          <vsk1:KohtaNumero>7</vsk1:KohtaNumero>
+          <sis1:OtsikkoTeksti>Seuraava täysistunto</sis1:OtsikkoTeksti>
+          <vsk:Toimenpide met1:muuTunnus="177817" vsk1:fraasiTunnus="K_110">
+            <vsk:KohtaSisalto>
+              <sis:KappaleKooste>Eduskunnan seuraava täysistunto on maanantaina 18.12.2017 klo 12.00. Täysistunto lopetettiin klo 11.49.</sis:KappaleKooste>
+            </vsk:KohtaSisalto>
+          </vsk:Toimenpide>
+        </vsk:MuuAsiakohta>
+        <asi:AllekirjoitusOsa>
+          <asi1:JohdantoTeksti>Pöytäkirjan vakuudeksi:</asi1:JohdantoTeksti>
+          <asi:Allekirjoittaja>
+            <org:Henkilo>
+              <org1:EtuNimi>Maija-Leena</org1:EtuNimi>
+              <org1:SukuNimi>Paavola</org1:SukuNimi>
+            </org:Henkilo>
+          </asi:Allekirjoittaja>
+        </asi:AllekirjoitusOsa>
+      </ptk:Poytakirja>
+    </RakenneAsiakirja>
+  </SiirtoAsiakirja>
+  <SiirtoTiedosto xmlns="http://www.eduskunta.fi/skeemat/siirtokooste/2011/05/17">
+    <Document xmlns="http://www.arkisto.fi/skeemat/sahke2/2011/01/31_vnk">
+      <NativeId>{AAAD9588-BA2D-CA2F-84EC-6A58B5C00000}</NativeId>
+      <UseType>Julkaisu</UseType>
+      <File>
+        <Name>AAAD9588-BA2D-CA2F-84EC-6A58B5C00000.pdf</Name>
+        <Path>sftp://intpurnukka.eduskunta.fi:22/home/vaskijul/liitteet/tojulkvp/AAAD9588-BA2D-CA2F-84EC-6A58B5C00000.pdf</Path>
+      </File>
+      <Format>
+        <Name>application/pdf</Name>
+        <Version/>
+      </Format>
+      <HashAlgorithm>MD5</HashAlgorithm>
+      <HashValue>c0a3567e23a3fe6ccd43d19e27f196f9</HashValue>
+    </Document>
+  </SiirtoTiedosto>
+</ns11:Siirto>
