@@ -1,0 +1,1021 @@
+<?xml version="1.0" standalone="no"?>
+<Henkilo kieliKoodi="FI" tyyppiKoodi="Kansanedustaja">
+    <HenkiloNro>103</HenkiloNro>
+    <EtunimetNimi>Matti Allan</EtunimetNimi>
+    <SukuNimi> Ahde</SukuNimi>
+    <LajitteluNimi>ahde matti</LajitteluNimi>
+    <KutsumaNimi>Matti</KutsumaNimi>
+    <MatrikkeliNimi>Ahde, Matti Allan</MatrikkeliNimi>
+    <Puh/>
+    <SahkoPosti/>
+    <KotiSivu/>
+    <Ammatti/>
+    <SyntymaPvm>1945</SyntymaPvm>
+    <SyntymaPaikka>Oulu</SyntymaPaikka>
+    <KuolemaPvm>2019</KuolemaPvm>
+    <KuolemaPaikka>Helsinki</KuolemaPaikka>
+    <SukuPuoliKoodi/>
+    <NykyinenKotikunta/>
+    <KansanedustajuusPaattynytPvm>19.04.2011</KansanedustajuusPaattynytPvm>
+    <Koulutukset>
+        <Koulutus>
+            <Nimi>kansakoulu</Nimi>
+            <Oppilaitos/>
+            <Vuosi/>
+        </Koulutus>
+        <Koulutus>
+            <Nimi>ammattikoulu</Nimi>
+            <Oppilaitos>Pohjois-Pohjanmaan keskusammattikoulu, iltalinja</Oppilaitos>
+            <Vuosi>1962</Vuosi>
+        </Koulutus>
+        <Koulutus>
+            <Nimi>kansankorkeakoulu</Nimi>
+            <Oppilaitos>Työväen akatemia</Oppilaitos>
+            <Vuosi>1968</Vuosi>
+        </Koulutus>
+    </Koulutukset>
+    <TyoUra>
+        <Tyo>
+            <Nimi>Typpi oy:n sähköasentaja Oulussa</Nimi>
+            <AikaJakso>1961-1964</AikaJakso>
+        </Tyo>
+        <Tyo>
+            <Nimi>Sosialidemokraattisen nuorison keskusliiton järjestöohjaaja Oulussa</Nimi>
+            <AikaJakso>1968-1970</AikaJakso>
+        </Tyo>
+        <Tyo>
+            <Nimi>Oy Veikkaus ab:n toimitusjohtaja Vantaalla</Nimi>
+            <AikaJakso>1990-2001</AikaJakso>
+        </Tyo>
+        <Tyo>
+            <Nimi>kansanedustaja</Nimi>
+            <AikaJakso>1970-1990, 2003-2011</AikaJakso>
+        </Tyo>
+        <Tyo>
+            <Nimi>Hilma Oy:n projektityöntekijä</Nimi>
+            <AikaJakso>2001-2003</AikaJakso>
+        </Tyo>
+    </TyoUra>
+    <Vanhemmat/>
+    <Puolisot/>
+    <Lapset/>
+    <Arvonimet>
+        <Arvonimi>
+            <Nimi/>
+            <Oppilaitos/>
+            <Vuosi/>
+            <LisaTieto/>
+        </Arvonimi>
+    </Arvonimet>
+    <Sotilasarvo vuosi="2004">ylikersantti</Sotilasarvo>
+    <AseetonpalvelusVuosi/>
+    <SiviilipalvelusVuosi/>
+    <Vaalipiirit>
+        <NykyinenVaalipiiri>
+            <Nimi/>
+            <AlkuPvm/>
+            <Tunnus/>
+        </NykyinenVaalipiiri>
+        <EdellisetVaalipiirit>
+            <VaaliPiiri>
+                <Nimi>Oulun läänin vaalipiiri</Nimi>
+                <AlkuPvm>23.03.1970</AlkuPvm>
+                <LoppuPvm>30.06.1990</LoppuPvm>
+                <Tunnus>oul03</Tunnus>
+            </VaaliPiiri>
+            <VaaliPiiri>
+                <Nimi>Oulun vaalipiiri</Nimi>
+                <AlkuPvm>19.03.2003</AlkuPvm>
+                <LoppuPvm>19.04.2011</LoppuPvm>
+                <Tunnus>oul04</Tunnus>
+            </VaaliPiiri>
+        </EdellisetVaalipiirit>
+    </Vaalipiirit>
+    <Edustajatoimet>
+        <Edustajatoimi>
+            <AlkuPvm>23.03.1970</AlkuPvm>
+            <LoppuPvm>30.06.1990</LoppuPvm>
+        </Edustajatoimi>
+        <Edustajatoimi>
+            <AlkuPvm>19.03.2003</AlkuPvm>
+            <LoppuPvm>19.04.2011</LoppuPvm>
+        </Edustajatoimi>
+    </Edustajatoimet>
+    <Eduskuntaryhmat>
+        <NykyinenEduskuntaryhma>
+            <Nimi/>
+            <EntNimi>
+                <Nimi/>
+                <AlkuPvm/>
+                <LoppuPvm/>
+            </EntNimi>
+            <Tunnus/>
+            <AlkuPvm/>
+        </NykyinenEduskuntaryhma>
+        <EdellisetEduskuntaryhmat>
+            <Eduskuntaryhma>
+                <Nimi>Sosialidemokraattinen eduskuntaryhmä</Nimi>
+                <EntNimi>
+                    <Nimi/>
+                    <AlkuPvm/>
+                    <LoppuPvm/>
+                </EntNimi>
+                <Tunnus>sd01</Tunnus>
+                <Jasenyys>
+                    <AlkuPvm>23.03.1970</AlkuPvm>
+                    <LoppuPvm>30.06.1990</LoppuPvm>
+                    <AikaJakso/>
+                </Jasenyys>
+                <Jasenyys>
+                    <AlkuPvm>19.03.2003</AlkuPvm>
+                    <LoppuPvm>19.04.2011</LoppuPvm>
+                    <AikaJakso/>
+                </Jasenyys>
+            </Eduskuntaryhma>
+        </EdellisetEduskuntaryhmat>
+        <TehtavatEduskuntaryhmassa>
+            <Eduskuntaryhma>
+                <Nimi/>
+                <EntNimi>
+                    <Nimi/>
+                    <AlkuPvm/>
+                    <LoppuPvm/>
+                </EntNimi>
+                <Tunnus/>
+                <ToimielinNimi/>
+                <ToimielinTunnus/>
+                <Tehtava>
+                    <Rooli/>
+                    <AlkuPvm/>
+                    <LoppuPvm/>
+                    <AikaJakso/>
+                </Tehtava>
+            </Eduskuntaryhma>
+        </TehtavatEduskuntaryhmassa>
+        <TehtavatAiemmissaEduskuntaryhmissa>
+            <Eduskuntaryhma>
+                <Nimi>Sosialidemokraattinen eduskuntaryhmä</Nimi>
+                <EntNimi>
+                    <Nimi/>
+                    <AlkuPvm/>
+                    <LoppuPvm/>
+                </EntNimi>
+                <Tunnus>sd01</Tunnus>
+                <ToimielinNimi/>
+                <ToimielinTunnus/>
+                <Tehtava>
+                    <Rooli>puheenjohtaja</Rooli>
+                    <AlkuPvm>1975 II</AlkuPvm>
+                    <LoppuPvm>1982</LoppuPvm>
+                    <AikaJakso/>
+                </Tehtava>
+            </Eduskuntaryhma>
+        </TehtavatAiemmissaEduskuntaryhmissa>
+    </Eduskuntaryhmat>
+    <NykyisetToimielinjasenyydet>
+        <Toimielin>
+            <Nimi/>
+            <EntNimi>
+                <Nimi/>
+                <AlkuPvm/>
+                <LoppuPvm/>
+            </EntNimi>
+            <Tunnus/>
+            <Jasenyys>
+                <Rooli/>
+                <AlkuPvm/>
+                <LoppuPvm/>
+                <AikaJakso/>
+            </Jasenyys>
+        </Toimielin>
+    </NykyisetToimielinjasenyydet>
+    <AiemmatToimielinjasenyydet>
+        <Toimielin OnkoValiokunta="false">
+            <Nimi>Puhemiehistö</Nimi>
+            <EntNimi>
+                <Nimi/>
+                <AlkuPvm/>
+                <LoppuPvm/>
+            </EntNimi>
+            <Tunnus>pmt01</Tunnus>
+            <Jasenyys>
+                <Rooli>Puhemies</Rooli>
+                <AlkuPvm>08.05.1987</AlkuPvm>
+                <LoppuPvm>31.01.1989</LoppuPvm>
+                <AikaJakso/>
+            </Jasenyys>
+        </Toimielin>
+        <Toimielin OnkoValiokunta="false">
+            <Nimi>Puhemiesneuvosto</Nimi>
+            <EntNimi>
+                <Nimi/>
+                <AlkuPvm/>
+                <LoppuPvm/>
+            </EntNimi>
+            <Tunnus>pmn01</Tunnus>
+            <Jasenyys>
+                <Rooli>Puhemies</Rooli>
+                <AlkuPvm>08.05.1987</AlkuPvm>
+                <LoppuPvm>1988</LoppuPvm>
+                <AikaJakso/>
+            </Jasenyys>
+            <Jasenyys>
+                <Rooli>jäsen</Rooli>
+                <AlkuPvm>01.06.2007</AlkuPvm>
+                <LoppuPvm>19.04.2011</LoppuPvm>
+                <AikaJakso/>
+            </Jasenyys>
+        </Toimielin>
+        <Toimielin OnkoValiokunta="false">
+            <Nimi>Kansliatoimikunta</Nimi>
+            <EntNimi>
+                <Nimi/>
+                <AlkuPvm/>
+                <LoppuPvm/>
+            </EntNimi>
+            <Tunnus>ktk01</Tunnus>
+            <Jasenyys>
+                <Rooli>Puhemies</Rooli>
+                <AlkuPvm>08.05.1987</AlkuPvm>
+                <LoppuPvm>1988</LoppuPvm>
+                <AikaJakso/>
+            </Jasenyys>
+            <Jasenyys>
+                <Rooli>jäsen</Rooli>
+                <AlkuPvm>02.04.2003</AlkuPvm>
+                <LoppuPvm>20.03.2007</LoppuPvm>
+                <AikaJakso/>
+            </Jasenyys>
+            <Jasenyys>
+                <Rooli>jäsen</Rooli>
+                <AlkuPvm>21.05.2010</AlkuPvm>
+                <LoppuPvm>19.04.2011</LoppuPvm>
+                <AikaJakso/>
+            </Jasenyys>
+        </Toimielin>
+        <Toimielin OnkoValiokunta="true">
+            <Nimi>Suuri valiokunta</Nimi>
+            <EntNimi>
+                <Nimi/>
+                <AlkuPvm/>
+                <LoppuPvm/>
+            </EntNimi>
+            <Tunnus>suv01</Tunnus>
+            <Jasenyys>
+                <Rooli>jäsen</Rooli>
+                <AlkuPvm>1970</AlkuPvm>
+                <LoppuPvm>1972</LoppuPvm>
+                <AikaJakso/>
+            </Jasenyys>
+            <Jasenyys>
+                <Rooli>varajäsen</Rooli>
+                <AlkuPvm>10.12.2003</AlkuPvm>
+                <LoppuPvm>16.09.2004</LoppuPvm>
+                <AikaJakso/>
+            </Jasenyys>
+            <Jasenyys>
+                <Rooli>jäsen</Rooli>
+                <AlkuPvm>03.04.2007</AlkuPvm>
+                <LoppuPvm>02.05.2007</LoppuPvm>
+                <AikaJakso/>
+            </Jasenyys>
+        </Toimielin>
+        <Toimielin OnkoValiokunta="true">
+            <Nimi>Liikenne- ja viestintävaliokunta</Nimi>
+            <EntNimi>
+                <Nimi>Kulkulaitosvaliokunta</Nimi>
+                <AlkuPvm/>
+                <LoppuPvm>04.02.1973</LoppuPvm>
+            </EntNimi>
+            <EntNimi>
+                <Nimi>Liikennevaliokunta</Nimi>
+                <AlkuPvm/>
+                <LoppuPvm>28.02.2003</LoppuPvm>
+            </EntNimi>
+            <Tunnus>liv01</Tunnus>
+            <Jasenyys>
+                <Rooli>varajäsen</Rooli>
+                <AlkuPvm>1970</AlkuPvm>
+                <LoppuPvm>1970</LoppuPvm>
+                <AikaJakso/>
+            </Jasenyys>
+            <Jasenyys>
+                <Rooli>varajäsen</Rooli>
+                <AlkuPvm>03.04.2007</AlkuPvm>
+                <LoppuPvm>02.05.2007</LoppuPvm>
+                <AikaJakso/>
+            </Jasenyys>
+        </Toimielin>
+        <Toimielin OnkoValiokunta="true">
+            <Nimi>Puolustusasiainvaliokunta</Nimi>
+            <EntNimi>
+                <Nimi/>
+                <AlkuPvm/>
+                <LoppuPvm/>
+            </EntNimi>
+            <Tunnus>puv01</Tunnus>
+            <Jasenyys>
+                <Rooli>varajäsen</Rooli>
+                <AlkuPvm>1970</AlkuPvm>
+                <LoppuPvm>1971</LoppuPvm>
+                <AikaJakso/>
+            </Jasenyys>
+        </Toimielin>
+        <Toimielin OnkoValiokunta="true">
+            <Nimi>Sivistysvaliokunta</Nimi>
+            <EntNimi>
+                <Nimi/>
+                <AlkuPvm/>
+                <LoppuPvm/>
+            </EntNimi>
+            <Tunnus>siv01</Tunnus>
+            <Jasenyys>
+                <Rooli>jäsen</Rooli>
+                <AlkuPvm>1970</AlkuPvm>
+                <LoppuPvm>1973</LoppuPvm>
+                <AikaJakso/>
+            </Jasenyys>
+            <Jasenyys>
+                <Rooli>varajäsen</Rooli>
+                <AlkuPvm>1975 I</AlkuPvm>
+                <LoppuPvm>1975 I</LoppuPvm>
+                <AikaJakso/>
+            </Jasenyys>
+        </Toimielin>
+        <Toimielin OnkoValiokunta="true">
+            <Nimi>Sosiaalivaliokunta</Nimi>
+            <EntNimi>
+                <Nimi/>
+                <AlkuPvm/>
+                <LoppuPvm/>
+            </EntNimi>
+            <Tunnus>stv01</Tunnus>
+            <Jasenyys>
+                <Rooli>jäsen</Rooli>
+                <AlkuPvm>1972</AlkuPvm>
+                <LoppuPvm>1975 I</LoppuPvm>
+                <AikaJakso/>
+            </Jasenyys>
+        </Toimielin>
+        <Toimielin OnkoValiokunta="true">
+            <Nimi>Ulkoasiainvaliokunta</Nimi>
+            <EntNimi>
+                <Nimi/>
+                <AlkuPvm/>
+                <LoppuPvm/>
+            </EntNimi>
+            <Tunnus>uav01</Tunnus>
+            <Jasenyys>
+                <Rooli>varajäsen</Rooli>
+                <AlkuPvm>1975 II</AlkuPvm>
+                <LoppuPvm>1981</LoppuPvm>
+                <AikaJakso/>
+            </Jasenyys>
+            <Jasenyys>
+                <Rooli>jäsen</Rooli>
+                <AlkuPvm>07.02.1989</AlkuPvm>
+                <LoppuPvm>30.06.1990</LoppuPvm>
+                <AikaJakso/>
+            </Jasenyys>
+        </Toimielin>
+        <Toimielin OnkoValiokunta="true">
+            <Nimi>Valtiovarainvaliokunta</Nimi>
+            <EntNimi>
+                <Nimi/>
+                <AlkuPvm/>
+                <LoppuPvm/>
+            </EntNimi>
+            <Tunnus>vav01</Tunnus>
+            <Jasenyys>
+                <Rooli>varajäsen</Rooli>
+                <AlkuPvm>02.04.2003</AlkuPvm>
+                <LoppuPvm>28.04.2003</LoppuPvm>
+                <AikaJakso/>
+            </Jasenyys>
+            <Jasenyys>
+                <Rooli>jäsen</Rooli>
+                <AlkuPvm>29.04.2003</AlkuPvm>
+                <LoppuPvm>02.05.2007</LoppuPvm>
+                <AikaJakso/>
+            </Jasenyys>
+            <Jasenyys>
+                <Rooli>Varapuheenjohtaja</Rooli>
+                <AlkuPvm>06.05.2003</AlkuPvm>
+                <LoppuPvm>02.05.2007</LoppuPvm>
+                <AikaJakso/>
+            </Jasenyys>
+            <Jasenyys>
+                <Rooli>jäsen</Rooli>
+                <AlkuPvm>16.02.2010</AlkuPvm>
+                <LoppuPvm>19.04.2011</LoppuPvm>
+                <AikaJakso/>
+            </Jasenyys>
+        </Toimielin>
+        <Toimielin OnkoValiokunta="false">
+            <Nimi>Hallinto- ja tarkastusjaosto</Nimi>
+            <EntNimi>
+                <Nimi/>
+                <AlkuPvm/>
+                <LoppuPvm/>
+            </EntNimi>
+            <Tunnus/>
+            <Jasenyys>
+                <Rooli>lisäjäsen</Rooli>
+                <AlkuPvm>08.04.2003</AlkuPvm>
+                <LoppuPvm>05.05.2003</LoppuPvm>
+                <AikaJakso/>
+            </Jasenyys>
+            <Jasenyys>
+                <Rooli>jäsen</Rooli>
+                <AlkuPvm>06.05.2003</AlkuPvm>
+                <LoppuPvm>20.03.2007</LoppuPvm>
+                <AikaJakso/>
+            </Jasenyys>
+        </Toimielin>
+        <Toimielin OnkoValiokunta="true">
+            <Nimi>Turvallisuus- ja puolustusjaosto</Nimi>
+            <EntNimi>
+                <Nimi/>
+                <AlkuPvm/>
+                <LoppuPvm/>
+            </EntNimi>
+            <Tunnus>tpj01</Tunnus>
+            <Jasenyys>
+                <Rooli>jäsen</Rooli>
+                <AlkuPvm>08.04.2003</AlkuPvm>
+                <LoppuPvm>29.09.2005</LoppuPvm>
+                <AikaJakso/>
+            </Jasenyys>
+        </Toimielin>
+        <Toimielin OnkoValiokunta="true">
+            <Nimi>Kauppa- ja teollisuusjaosto</Nimi>
+            <EntNimi>
+                <Nimi/>
+                <AlkuPvm/>
+                <LoppuPvm/>
+            </EntNimi>
+            <Tunnus>ktj01</Tunnus>
+            <Jasenyys>
+                <Rooli>jäsen</Rooli>
+                <AlkuPvm>08.04.2003</AlkuPvm>
+                <LoppuPvm>29.09.2005</LoppuPvm>
+                <AikaJakso/>
+            </Jasenyys>
+        </Toimielin>
+        <Toimielin OnkoValiokunta="true">
+            <Nimi>Verojaosto</Nimi>
+            <EntNimi>
+                <Nimi/>
+                <AlkuPvm/>
+                <LoppuPvm/>
+            </EntNimi>
+            <Tunnus>vej01</Tunnus>
+            <Jasenyys>
+                <Rooli>jäsen</Rooli>
+                <AlkuPvm>06.02.2004</AlkuPvm>
+                <LoppuPvm>09.09.2004</LoppuPvm>
+                <AikaJakso/>
+            </Jasenyys>
+            <Jasenyys>
+                <Rooli>jäsen</Rooli>
+                <AlkuPvm>30.09.2005</AlkuPvm>
+                <LoppuPvm>20.03.2007</LoppuPvm>
+                <AikaJakso/>
+            </Jasenyys>
+            <Jasenyys>
+                <Rooli>jäsen</Rooli>
+                <AlkuPvm>19.02.2010</AlkuPvm>
+                <LoppuPvm>19.04.2011</LoppuPvm>
+                <AikaJakso/>
+            </Jasenyys>
+        </Toimielin>
+        <Toimielin OnkoValiokunta="true">
+            <Nimi>Maatalousjaosto</Nimi>
+            <EntNimi>
+                <Nimi/>
+                <AlkuPvm/>
+                <LoppuPvm/>
+            </EntNimi>
+            <Tunnus>maj01</Tunnus>
+            <Jasenyys>
+                <Rooli>lisäjäsen</Rooli>
+                <AlkuPvm>30.09.2005</AlkuPvm>
+                <LoppuPvm>20.03.2007</LoppuPvm>
+                <AikaJakso/>
+            </Jasenyys>
+        </Toimielin>
+        <Toimielin OnkoValiokunta="true">
+            <Nimi>Tarkastusvaliokunta</Nimi>
+            <EntNimi>
+                <Nimi/>
+                <AlkuPvm/>
+                <LoppuPvm/>
+            </EntNimi>
+            <Tunnus>trv01</Tunnus>
+            <Jasenyys>
+                <Rooli>Puheenjohtaja</Rooli>
+                <AlkuPvm>01.06.2007</AlkuPvm>
+                <LoppuPvm>19.04.2011</LoppuPvm>
+                <AikaJakso/>
+            </Jasenyys>
+        </Toimielin>
+        <Toimielin OnkoValiokunta="false">
+            <Nimi>Valitsijamiehet</Nimi>
+            <EntNimi>
+                <Nimi/>
+                <AlkuPvm/>
+                <LoppuPvm/>
+            </EntNimi>
+            <Tunnus>val01</Tunnus>
+            <Jasenyys>
+                <Rooli>varajäsen</Rooli>
+                <AlkuPvm>1970</AlkuPvm>
+                <LoppuPvm>1971</LoppuPvm>
+                <AikaJakso/>
+            </Jasenyys>
+        </Toimielin>
+        <Toimielin OnkoValiokunta="false">
+            <Nimi>Kansainvälisten asiain foorumi</Nimi>
+            <EntNimi>
+                <Nimi/>
+                <AlkuPvm/>
+                <LoppuPvm/>
+            </EntNimi>
+            <Tunnus>kvf01</Tunnus>
+            <Jasenyys>
+                <Rooli>jäsen</Rooli>
+                <AlkuPvm>20.06.2007</AlkuPvm>
+                <LoppuPvm>19.04.2011</LoppuPvm>
+                <AikaJakso/>
+            </Jasenyys>
+        </Toimielin>
+    </AiemmatToimielinjasenyydet>
+    <ValtiollisetLuottamustehtavat>
+        <Tehtava>
+            <Nimi>Talouspolitiikan johtamiskoulutuksen neuvottelukunta</Nimi>
+            <AikaJakso/>
+        </Tehtava>
+        <Tehtava>
+            <Nimi>Nuorisolakikomitea</Nimi>
+            <AikaJakso>1970-1971</AikaJakso>
+        </Tehtava>
+        <Tehtava>
+            <Nimi>Valtion nuorisoneuvosto, pj</Nimi>
+            <AikaJakso>1970-1975</AikaJakso>
+        </Tehtava>
+        <Tehtava>
+            <Nimi>Kirkko ja valtio -komitea</Nimi>
+            <AikaJakso>1972-1977</AikaJakso>
+        </Tehtava>
+        <Tehtava>
+            <Nimi>Valtion urheiluneuvosto, pj</Nimi>
+            <AikaJakso>1975-1977</AikaJakso>
+        </Tehtava>
+        <Tehtava>
+            <Nimi>Valtion urheiluneuvosto</Nimi>
+            <AikaJakso>1978-1983</AikaJakso>
+        </Tehtava>
+        <Tehtava>
+            <Nimi>presidentin valitsijamies</Nimi>
+            <AikaJakso>1978, 1982, 1988</AikaJakso>
+        </Tehtava>
+        <Tehtava>
+            <Nimi>Uusimuotoista koulutustoimintaa järjestävien harjoituskeskusten perustamista selvittävä työryhmä, pj</Nimi>
+            <AikaJakso>1979-1980</AikaJakso>
+        </Tehtava>
+        <Tehtava>
+            <Nimi>Työllisyystyöryhmä, pj</Nimi>
+            <AikaJakso>1997-1999</AikaJakso>
+        </Tehtava>
+        <Tehtava>
+            <Nimi>Valtiontalouden parlamentaarinen valvonta-toimikunta, pj</Nimi>
+            <AikaJakso>2003-2005</AikaJakso>
+        </Tehtava>
+        <Tehtava>
+            <Nimi>Rahapelifoorumi, pj</Nimi>
+            <AikaJakso>2004-2007</AikaJakso>
+        </Tehtava>
+    </ValtiollisetLuottamustehtavat>
+    <KansanvalisetLuottamustehtavat>
+        <Tehtava>
+            <Nimi>Kansainvälisen työläisurheilukomitean (CSIT) johtokunta</Nimi>
+            <AikaJakso>1990-1993</AikaJakso>
+        </Tehtava>
+        <Tehtava>
+            <Nimi>Valtiollisten arpajaisyhtiöiden kansainvälisen yhdistyksen (AILE) hallitus</Nimi>
+            <AikaJakso>1990-1999</AikaJakso>
+        </Tehtava>
+        <Tehtava>
+            <Nimi>Intertoton Euroryhmän hallitus</Nimi>
+            <AikaJakso>1991-1999</AikaJakso>
+        </Tehtava>
+        <Tehtava>
+            <Nimi>Intertoton peliryhmä, pj</Nimi>
+            <AikaJakso>1996-1999</AikaJakso>
+        </Tehtava>
+        <Tehtava>
+            <Nimi>EFP:n hallitus</Nimi>
+            <AikaJakso>1997-2001</AikaJakso>
+        </Tehtava>
+        <Tehtava>
+            <Nimi>Intertoton hallitus</Nimi>
+            <AikaJakso>1997-1999</AikaJakso>
+        </Tehtava>
+        <Tehtava>
+            <Nimi>Maailman arpajaisyhtiöiden liiton (WLA) hallitus</Nimi>
+            <AikaJakso>1999-2001</AikaJakso>
+        </Tehtava>
+        <Tehtava>
+            <Nimi>Euroopan valtiollisten arpajais- ja vedonlyöntiyhtiöiden (ESTLA) liiton hallitus</Nimi>
+            <AikaJakso>1999-2001</AikaJakso>
+        </Tehtava>
+    </KansanvalisetLuottamustehtavat>
+    <KunnallisetLuottamustehtavat>
+        <Tehtava>
+            <Nimi>Oulun kaupunginvaltuusto</Nimi>
+            <AikaJakso>1972-1984</AikaJakso>
+        </Tehtava>
+        <Tehtava>
+            <Nimi>Oulunsuun sairaalan liittovaltuusto, pj</Nimi>
+            <AikaJakso>1973-1979</AikaJakso>
+        </Tehtava>
+    </KunnallisetLuottamustehtavat>
+    <MuutLuottamustehtavat>
+        <Tehtava>
+            <Nimi>Oulun sosialidemokraattisen työväenyhdistyksen johtokunta</Nimi>
+            <AikaJakso>1970</AikaJakso>
+        </Tehtava>
+        <Tehtava>
+            <Nimi>Pohjola-Nordenin keskushallitus</Nimi>
+            <AikaJakso>1971-1977</AikaJakso>
+        </Tehtava>
+        <Tehtava>
+            <Nimi>Oulun sosialidemokraattinen työväenyhdistys, pj</Nimi>
+            <AikaJakso>1971-1975</AikaJakso>
+        </Tehtava>
+        <Tehtava>
+            <Nimi>Outokumpu oy:n hallintoneuvosto</Nimi>
+            <AikaJakso>1971-1980</AikaJakso>
+        </Tehtava>
+        <Tehtava>
+            <Nimi>OTP:n johtokunta</Nimi>
+            <AikaJakso>1972-1974</AikaJakso>
+        </Tehtava>
+        <Tehtava>
+            <Nimi>Sosialidemokraattisen puolueen puoluetoimikunta</Nimi>
+            <AikaJakso>1972-1990</AikaJakso>
+        </Tehtava>
+        <Tehtava>
+            <Nimi>Ruotsalais-suomalaisen kulttuurikeskuksen johtokunta</Nimi>
+            <AikaJakso>1974-1977</AikaJakso>
+        </Tehtava>
+        <Tehtava>
+            <Nimi>Työväen Akatemian hallitus</Nimi>
+            <AikaJakso>1974-1993</AikaJakso>
+        </Tehtava>
+        <Tehtava>
+            <Nimi>Oulun sosialidemokraattisen työväenhdistyksen johtokunta</Nimi>
+            <AikaJakso>1976-1982</AikaJakso>
+        </Tehtava>
+        <Tehtava>
+            <Nimi>Savonlinnan oopperajuhlien kannatusyhdistyksen johtokunta</Nimi>
+            <AikaJakso>1977-1980</AikaJakso>
+        </Tehtava>
+        <Tehtava>
+            <Nimi>Työväen urheiluliitto, pj</Nimi>
+            <AikaJakso>1977-1995</AikaJakso>
+        </Tehtava>
+        <Tehtava>
+            <Nimi>Suomen Olympiakomitean kansainvälinen valiokunta</Nimi>
+            <AikaJakso>1978-1980</AikaJakso>
+        </Tehtava>
+        <Tehtava>
+            <Nimi>Suomen Olympiakomitean työvaliokunta</Nimi>
+            <AikaJakso>1978-1993</AikaJakso>
+        </Tehtava>
+        <Tehtava>
+            <Nimi>Suomen Olympiakomitean hallitus, vpj</Nimi>
+            <AikaJakso>1978-1993</AikaJakso>
+        </Tehtava>
+        <Tehtava>
+            <Nimi>Suomen Olympiakomitean valtuuskunta</Nimi>
+            <AikaJakso>1978-1993</AikaJakso>
+        </Tehtava>
+        <Tehtava>
+            <Nimi>Urheilijoiden ammattienedistämissäätiö</Nimi>
+            <AikaJakso>1978-1983</AikaJakso>
+        </Tehtava>
+        <Tehtava>
+            <Nimi>Ooppera- ja näyttelykeskussäätiö, pj</Nimi>
+            <AikaJakso>1980-1995</AikaJakso>
+        </Tehtava>
+        <Tehtava>
+            <Nimi>Kansa-yhtiöiden hallintoneuvosto</Nimi>
+            <AikaJakso>1980-1992</AikaJakso>
+        </Tehtava>
+        <Tehtava>
+            <Nimi>Eläke-Varman hallintoneuvosto</Nimi>
+            <AikaJakso>1980-1992</AikaJakso>
+        </Tehtava>
+        <Tehtava>
+            <Nimi>Oy Veikkaus Ab:n hallitus</Nimi>
+            <AikaJakso>1980-2001</AikaJakso>
+        </Tehtava>
+        <Tehtava>
+            <Nimi>Kvartto oy:n hallitus, pj</Nimi>
+            <AikaJakso>1980-1992</AikaJakso>
+        </Tehtava>
+        <Tehtava>
+            <Nimi>Urho Kekkosen kuntoinstituuttisäätiön hallitus, 1. vpj</Nimi>
+            <AikaJakso>1980-1984</AikaJakso>
+        </Tehtava>
+        <Tehtava>
+            <Nimi>Suomen Kansallisoopperan säätiön hallitus, vpj</Nimi>
+            <AikaJakso>1980-2007</AikaJakso>
+        </Tehtava>
+        <Tehtava>
+            <Nimi>Savonlinnan oopperajuhlien kannatusyhdistyksen valtuusto</Nimi>
+            <AikaJakso>1980-2013</AikaJakso>
+        </Tehtava>
+        <Tehtava>
+            <Nimi>Urheilijoiden ammattienedistämissäätiö, vpj</Nimi>
+            <AikaJakso>1977-</AikaJakso>
+        </Tehtava>
+        <Tehtava>
+            <Nimi>Suomen sähköalan työntekijäin liitto ry (nykyinen sähköalojen ammattiliitto), kunniajäsen</Nimi>
+            <AikaJakso>1984</AikaJakso>
+        </Tehtava>
+        <Tehtava>
+            <Nimi>Suomen sosialidemokraattinen puolue, 2. vpj</Nimi>
+            <AikaJakso>1984-1987</AikaJakso>
+        </Tehtava>
+        <Tehtava>
+            <Nimi>UKK-instituuttisäätiön valtuuskunta, 1. vpj</Nimi>
+            <AikaJakso>1984-2005</AikaJakso>
+        </Tehtava>
+        <Tehtava>
+            <Nimi>Lohtajan kirkkomusiikkijuhlat ry:n valtuuskunnan hallitus</Nimi>
+            <AikaJakso>1986-1999</AikaJakso>
+        </Tehtava>
+        <Tehtava>
+            <Nimi>Suomen sosialidemokraattinen puolue, 1. vpj</Nimi>
+            <AikaJakso>1987-1990</AikaJakso>
+        </Tehtava>
+        <Tehtava>
+            <Nimi>Finnair oy:n hallintoneuvosto</Nimi>
+            <AikaJakso>1988-1991</AikaJakso>
+        </Tehtava>
+        <Tehtava>
+            <Nimi>Kuhmon kulttuuritalosäätiön hallitus</Nimi>
+            <AikaJakso>1988-1997</AikaJakso>
+        </Tehtava>
+        <Tehtava>
+            <Nimi>Suomalaisen saunan tutkimussäätiön hallitus</Nimi>
+            <AikaJakso>1989-1994</AikaJakso>
+        </Tehtava>
+        <Tehtava>
+            <Nimi>STS-säätiön valtuuskunta</Nimi>
+            <AikaJakso>1989-2000</AikaJakso>
+        </Tehtava>
+        <Tehtava>
+            <Nimi>Palkansaajasäätiön valtuuskunta</Nimi>
+            <AikaJakso>2000-2012</AikaJakso>
+        </Tehtava>
+        <Tehtava>
+            <Nimi>Oy Veikkaus Ab:n hallitus, pj</Nimi>
+            <AikaJakso>1990-2000</AikaJakso>
+        </Tehtava>
+        <Tehtava>
+            <Nimi>Oy Valotorni ab:n hallitus</Nimi>
+            <AikaJakso>1990-1991</AikaJakso>
+        </Tehtava>
+        <Tehtava>
+            <Nimi>TUL:n Kisakeskussäätiön valtuuskunta, pj</Nimi>
+            <AikaJakso>1990-1995</AikaJakso>
+        </Tehtava>
+        <Tehtava>
+            <Nimi>Oy Valotorni ab:n hallitus, pj</Nimi>
+            <AikaJakso>1991-1993</AikaJakso>
+        </Tehtava>
+        <Tehtava>
+            <Nimi>Kvartto oy:n hallitus, vpj</Nimi>
+            <AikaJakso>1990-1992</AikaJakso>
+        </Tehtava>
+        <Tehtava>
+            <Nimi>Edita Kvartto oy:n hallitus, vpj</Nimi>
+            <AikaJakso>1992-2001</AikaJakso>
+        </Tehtava>
+        <Tehtava>
+            <Nimi>MTV oy:n hallintoneuvosto</Nimi>
+            <AikaJakso>1992-1998</AikaJakso>
+        </Tehtava>
+        <Tehtava>
+            <Nimi>Maailman luonnon säätiön Suomen rahaston hallintoneuvosto</Nimi>
+            <AikaJakso>1992-1998</AikaJakso>
+        </Tehtava>
+        <Tehtava>
+            <Nimi>Oy Valotorni ab:n hallitus, vpj</Nimi>
+            <AikaJakso>1993-1994</AikaJakso>
+        </Tehtava>
+        <Tehtava>
+            <Nimi>Keskinäinen henkivakuutusyhtiö Tapiolan hallintoneuvosto, vpj</Nimi>
+            <AikaJakso>1993-1994</AikaJakso>
+        </Tehtava>
+        <Tehtava>
+            <Nimi>Suomen Olympiakomitean valtuuskunta, vpj</Nimi>
+            <AikaJakso>1993-1996</AikaJakso>
+        </Tehtava>
+        <Tehtava>
+            <Nimi>Suomen Liikunta ja Urheilu ry:n (SLU) hallitus, vpj</Nimi>
+            <AikaJakso>1993-1997</AikaJakso>
+        </Tehtava>
+        <Tehtava>
+            <Nimi>Keskinäinen vakuutusyhtiö Tapiolan hallintoneuvosto, vpj</Nimi>
+            <AikaJakso>1994-1996</AikaJakso>
+        </Tehtava>
+        <Tehtava>
+            <Nimi>Oopperan Tukisäätiön hallitus, pj</Nimi>
+            <AikaJakso>1995-</AikaJakso>
+        </Tehtava>
+        <Tehtava>
+            <Nimi>Keskinäinen henkivakuutusyhtiö Tapiolan hallintoneuvosto, pj</Nimi>
+            <AikaJakso>1996-2001</AikaJakso>
+        </Tehtava>
+        <Tehtava>
+            <Nimi>Kuvataideakatemian neuvottelukunta</Nimi>
+            <AikaJakso>1997-1999</AikaJakso>
+        </Tehtava>
+        <Tehtava>
+            <Nimi>Suomen Olympiakomitean valtuuskunta, pj</Nimi>
+            <AikaJakso>1996-2004</AikaJakso>
+        </Tehtava>
+        <Tehtava>
+            <Nimi>Helsingin vuoden 2000 juhlavaltuuskunta</Nimi>
+            <AikaJakso>1997-2000</AikaJakso>
+        </Tehtava>
+        <Tehtava>
+            <Nimi>Sibelius-Akatemian tukisäätiön hallitus</Nimi>
+            <AikaJakso>1997-</AikaJakso>
+        </Tehtava>
+        <Tehtava>
+            <Nimi>Alma Media oyj:n hallintoneuvosto</Nimi>
+            <AikaJakso>1998-2002</AikaJakso>
+        </Tehtava>
+        <Tehtava>
+            <Nimi>Liikuntatieteellisen seuran neuvottelukunta</Nimi>
+            <AikaJakso>1998-2003</AikaJakso>
+        </Tehtava>
+        <Tehtava>
+            <Nimi>Merita oyj:n hallintoneuvosto</Nimi>
+            <AikaJakso>1999-2000</AikaJakso>
+        </Tehtava>
+        <Tehtava>
+            <Nimi>Nordea Pankki oyj:n neuvottelukunta</Nimi>
+            <AikaJakso>2003-2008</AikaJakso>
+        </Tehtava>
+        <Tehtava>
+            <Nimi>Suomen Salibandyliitto, pj</Nimi>
+            <AikaJakso>2002-2012</AikaJakso>
+        </Tehtava>
+        <Tehtava>
+            <Nimi>SSBL Salibandy oy:n hallitus, vpj</Nimi>
+            <AikaJakso>2002-2012</AikaJakso>
+        </Tehtava>
+        <Tehtava>
+            <Nimi>VR-Yhtymä oy:n hallintoneuvosto, pj</Nimi>
+            <AikaJakso>2004-2012</AikaJakso>
+        </Tehtava>
+        <Tehtava>
+            <Nimi>Pertunmaa-valtuuskunta</Nimi>
+            <AikaJakso>2006-</AikaJakso>
+        </Tehtava>
+        <Tehtava>
+            <Nimi>Salibandyn Tuki -säätiö, pj</Nimi>
+            <AikaJakso>2009-</AikaJakso>
+        </Tehtava>
+        <Tehtava>
+            <Nimi>Suomen Olympiakomitean valtuuskunta</Nimi>
+            <AikaJakso>2004-</AikaJakso>
+        </Tehtava>
+        <Tehtava>
+            <Nimi>Tanhuvaaran urheiluopiston säätiön valtuuskunta</Nimi>
+            <AikaJakso>2009-2015</AikaJakso>
+        </Tehtava>
+        <Tehtava>
+            <Nimi>Oulun Kärpät neuvottelukunta</Nimi>
+            <AikaJakso>2005-</AikaJakso>
+        </Tehtava>
+    </MuutLuottamustehtavat>
+    <ValtioneuvostonJasenyydet>
+        <Jasenyys>
+            <Ministeriys>Ministeri</Ministeriys>
+            <Nimi>sisäasiainministeri</Nimi>
+            <Hallitus>Sorsa III</Hallitus>
+            <AlkuPvm>19.02.1982</AlkuPvm>
+            <LoppuPvm>06.05.1983</LoppuPvm>
+        </Jasenyys>
+        <Jasenyys>
+            <Ministeriys>Ministeri</Ministeriys>
+            <Nimi>ministeri kauppa- ja teollisuusministeriössä</Nimi>
+            <Hallitus>Sorsa III</Hallitus>
+            <AlkuPvm>19.02.1982</AlkuPvm>
+            <LoppuPvm>05.05.1983</LoppuPvm>
+        </Jasenyys>
+        <Jasenyys>
+            <Ministeriys>Ministeri</Ministeriys>
+            <Nimi>ministeri sosiaali- ja terveysministeriössä</Nimi>
+            <Hallitus>Sorsa III</Hallitus>
+            <AlkuPvm>19.02.1982</AlkuPvm>
+            <LoppuPvm>05.05.1983</LoppuPvm>
+        </Jasenyys>
+        <Jasenyys>
+            <Ministeriys>Ministeri</Ministeriys>
+            <Nimi>sisäasiainministeri</Nimi>
+            <Hallitus>Sorsa IV</Hallitus>
+            <AlkuPvm>06.05.1983</AlkuPvm>
+            <LoppuPvm>30.09.1983</LoppuPvm>
+        </Jasenyys>
+        <Jasenyys>
+            <Ministeriys>Ministeri</Ministeriys>
+            <Nimi>ministeri sosiaali- ja terveysministeriössä</Nimi>
+            <Hallitus>Sorsa IV</Hallitus>
+            <AlkuPvm>06.05.1983</AlkuPvm>
+            <LoppuPvm>29.04.1987</LoppuPvm>
+        </Jasenyys>
+        <Jasenyys>
+            <Ministeriys>Ministeri</Ministeriys>
+            <Nimi>ministeri maa- ja metsätalousministeriössä</Nimi>
+            <Hallitus>Sorsa IV</Hallitus>
+            <AlkuPvm>06.05.1983</AlkuPvm>
+            <LoppuPvm>30.09.1983</LoppuPvm>
+        </Jasenyys>
+        <Jasenyys>
+            <Ministeriys>Ministeri</Ministeriys>
+            <Nimi>ministeri kauppa- ja teollisuusministeriössä</Nimi>
+            <Hallitus>Sorsa IV</Hallitus>
+            <AlkuPvm>06.05.1983</AlkuPvm>
+            <LoppuPvm>30.09.1983</LoppuPvm>
+        </Jasenyys>
+        <Jasenyys>
+            <Ministeriys>Ministeri</Ministeriys>
+            <Nimi>ympäristöministeri</Nimi>
+            <Hallitus>Sorsa IV</Hallitus>
+            <AlkuPvm>01.10.1983</AlkuPvm>
+            <LoppuPvm>30.04.1987</LoppuPvm>
+        </Jasenyys>
+    </ValtioneuvostonJasenyydet>
+    <Sidonnaisuudet>
+        <Sidonnaisuus>
+            <Sidonta/>
+            <Otsikko/>
+            <RyhmaOtsikko/>
+        </Sidonnaisuus>
+    </Sidonnaisuudet>
+    <LisaTiedot>SL K I 1989, SU s.ar 1995, SVR R I 1980. Jordanian Uudelleensyntymisen ritarikunnan suurristi (JordUR suurr) 1987. Rafael Paasio -mitali 1995. Suomen liikunnan ja urheilun kultainen ansiomerkki 2001. Suomen näyttämötaiteen kultainen kunniamerkki valkoisella nauhalla. Rintamaveteraaniliiton kunniaristi 2005.</LisaTiedot>
+    <EdustajanJulkaisut>
+        <EdustajanJulkaisu>
+            <Nimi>Punainen kirja</Nimi>
+            <Vuosi>1970</Vuosi>
+            <Tekijat>&amp; al.</Tekijat>
+        </EdustajanJulkaisu>
+        <EdustajanJulkaisu>
+            <Nimi>Ystävyyskirja</Nimi>
+            <Vuosi>1972</Vuosi>
+            <Tekijat>&amp; al.</Tekijat>
+        </EdustajanJulkaisu>
+        <EdustajanJulkaisu>
+            <Nimi>Entä minun isänmaani</Nimi>
+            <Vuosi>1975</Vuosi>
+            <Tekijat>&amp; al.</Tekijat>
+        </EdustajanJulkaisu>
+        <EdustajanJulkaisu>
+            <Nimi>Matti Ahde Sähkömies</Nimi>
+            <Vuosi>2013</Vuosi>
+            <Tekijat>&amp; Timo Hakkarainen</Tekijat>
+        </EdustajanJulkaisu>
+    </EdustajanJulkaisut>
+    <KirjallisuuttaEdustajasta>
+        <Julkaisu>
+            <Nimi/>
+            <Vuosi/>
+            <Tekijat/>
+        </Julkaisu>
+    </KirjallisuuttaEdustajasta>
+    <EdustajatoimiKeskeytynyt>
+        <ToimenKeskeytys>
+            <Selite/>
+            <TilallaHenkilo/>
+            <AlkuPvm/>
+            <LoppuPvm/>
+        </ToimenKeskeytys>
+    </EdustajatoimiKeskeytynyt>
+    <Kansanedustajana>
+        <Keskeytys>
+            <Selite>Siirtynyt 30.6.1990 Oy Veikkaus Ab:n toimitusjohtajaksi</Selite>
+            <TilallaSelite>Seuraaja</TilallaSelite>
+            <TilallaHenkilo>Aarno Bell /Sdp</TilallaHenkilo>
+            <AlkuPvm>23.03.1970</AlkuPvm>
+            <LoppuPvm>30.06.1990</LoppuPvm>
+        </Keskeytys>
+    </Kansanedustajana>
+</Henkilo>

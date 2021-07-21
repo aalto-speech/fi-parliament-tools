@@ -11,6 +11,7 @@ from typing import Union
 from lxml import etree
 
 from fi_parliament_tools.transcriptParser.data_structures import EmbeddedStatement
+from fi_parliament_tools.transcriptParser.data_structures import MP
 from fi_parliament_tools.transcriptParser.data_structures import Statement
 from fi_parliament_tools.transcriptParser.data_structures import Subsection
 from fi_parliament_tools.transcriptParser.data_structures import Transcript
@@ -298,8 +299,9 @@ class Session:
             Subsection: a subsection if there are any speech transcripts in it
         """
         statement_elements = xml_element.xpath(
-            ". /*[local-name() = 'Toimenpide']//*[local-name() = 'PuheenjohtajaRepliikki' or "
-            "local-name() = 'PuhujaRepliikki'] | . //*[local-name() = 'PuheenvuoroToimenpide']"
+            ". /*[local-name() = 'Toimenpide' or local-name() = 'PaatoksentekoToimenpide']"
+            "//*[local-name() = 'PuheenjohtajaRepliikki' or local-name() = 'PuhujaRepliikki']"
+            " | . //*[local-name() = 'PuheenvuoroToimenpide']"
         )
         if not statement_elements:
             return None
@@ -428,3 +430,104 @@ class Interpellation(Session):
         return Statement(
             "L", mp_id, first, last, party, title, start, "", "fi", text, -1.0, -1.0, embed
         )
+
+
+class MPInfo:
+    """Parse MP information from an XML document."""
+
+    def __init__(self, xml_root: etree) -> None:
+        """Initialize MPInfo object with the given xml.
+
+        Args:
+            xml_root (etree): root of the XML document containing MP information
+        """
+        [self.xml] = xml_root.xpath("/*[local-name() = 'Henkilo']")
+
+    def get_gender(self) -> str:
+        """Parse gender from the MP info XML.
+
+        Returns:
+            str: m/f/o for male/female/other
+        """
+        gender = "".join(self.xml.xpath("./SukuPuoliKoodi/text()"))
+        if gender == "Mies":
+            return "m"
+        elif gender == "Nainen":
+            return "f"
+        return "o"
+
+    def get_language(self) -> str:
+        """Parse mother tongue of the MP from the MP info XML."""
+        [lang] = self.xml.xpath("./@kieliKoodi")
+        return str(lang).lower()
+
+    def get_birthyear(self) -> int:
+        """Parse the birth year from the MP info XML."""
+        [year] = self.xml.xpath("./SyntymaPvm/text()")
+        return int(year)
+
+    def get_party(self) -> str:
+        """Parse the current party (or parliamentary group) from the MP info XML.
+
+        If current party is not defined (former MPs), all previous parties are joined into one
+        string.
+
+        Returns:
+            str: party or comma-separated string of former parties
+        """
+        if party := self.xml.xpath("./Eduskuntaryhmat/NykyinenEduskuntaryhma/Nimi/text()"):
+            return ", ".join(party)
+        return ", ".join(self.xml.xpath("./Eduskuntaryhmat/EdellisetEduskuntaryhmat/*/Nimi/text()"))
+
+    def get_profession(self) -> str:
+        """Parse the profession(s) from the MP info XML.
+
+        Returns:
+            str: professions listed in a string or empty string if not defined
+        """
+        if profession := self.xml.xpath("./Ammatti/text()"):
+            return ", ".join(profession)
+        return ""
+
+    def get_city(self) -> str:
+        """Parse the current home city/municipality from the MP info XML.
+
+        Returns:
+            str: city or empty string if not defined
+        """
+        if city := self.xml.xpath("./NykyinenKotikunta/text()"):
+            return ", ".join(city)
+        return ""
+
+    def get_pob(self) -> str:
+        """Parse the place of birth from the MP info XML.
+
+        Returns:
+            str: place of birth or empty string if not defined
+        """
+        if pob := self.xml.xpath("./SyntymaPaikka/text()"):
+            return ", ".join(pob)
+        return ""
+
+    def parse(self, mpid: int, firstname: str, lastname: str) -> MP:
+        """Parse data from MP XML to MP data structure.
+
+        The first three fields (mpid, firstname, lastname) are returned in the same query as the
+        XML parsed here so there is no need to parse them from the XML.
+
+        Args:
+            mpid (int): unique id of the MP
+            firstname (str): firstname of the MP
+            lastname (str): lastname of the MP
+
+        Returns:
+            MP: an object that contains all parsed info
+        """
+        gender = self.get_gender()
+        lang = self.get_language()
+        birthyear = self.get_birthyear()
+        party = self.get_party()
+        profession = self.get_profession()
+        city = self.get_city()
+        pob = self.get_pob()
+        return MP(mpid, firstname, lastname, gender, lang, birthyear, party, profession, city, pob)
