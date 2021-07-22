@@ -3,7 +3,6 @@ import glob
 import json
 import os
 import shutil
-from logging import Logger
 from pathlib import Path
 from typing import Any
 from typing import List
@@ -18,7 +17,6 @@ from click.testing import CliRunner
 from pytest_mock.plugin import MockerFixture  # type: ignore
 
 from fi_parliament_tools import __main__
-from fi_parliament_tools.downloads import DownloadPipeline
 from fi_parliament_tools.parsing.data_structures import decode_transcript
 
 
@@ -39,13 +37,6 @@ def transcript() -> Any:
 
 
 @pytest.fixture
-def download_pipeline(logger: Logger) -> DownloadPipeline:
-    """Initialize DownloadPipeline."""
-    pipeline = DownloadPipeline(logger)
-    return pipeline
-
-
-@pytest.fixture
 def mock_downloads_requests_get(mocker: MockerFixture) -> MagicMock:
     """Mock returned jsons of the requests.get calls in downloads module."""
     mock: MagicMock = mocker.patch("fi_parliament_tools.downloads.requests.get")
@@ -61,31 +52,6 @@ def mock_get_full_table(
     """Mock a small table instead of the true big table."""
     mock: MagicMock = mocker.patch("fi_parliament_tools.parsing.query.Query.get_full_table")
     mock.return_value = query_get_full_table
-    return mock
-
-
-@pytest.fixture
-def mock_downloads_path(mocker: MockerFixture) -> MagicMock:
-    """Mock path formed in form_path of downloads module."""
-    mock: MagicMock = mocker.patch("fi_parliament_tools.downloads.Path")
-    mock.return_value.resolve.return_value.__str__.return_value = "tests/testing.test"
-    mock.return_value.resolve.return_value.exists.side_effect = [False, True]
-    return mock
-
-
-@pytest.fixture
-def mock_subprocess_run(mocker: MockerFixture) -> MagicMock:
-    """Trigger an error once in a subprocess.run call."""
-    mock: MagicMock = mocker.patch("fi_parliament_tools.downloads.subprocess.run")
-    mock.side_effect = [ValueError("Wav extraction failure."), None]
-    return mock
-
-
-@pytest.fixture
-def mock_shutil_copyfileobj(mocker: MockerFixture) -> MagicMock:
-    """Trigger an error once in a shutil.copyfileobj call."""
-    mock: MagicMock = mocker.patch("fi_parliament_tools.downloads.shutil.copyfileobj")
-    mock.side_effect = [None, shutil.Error("Video download failure.")]
     return mock
 
 
@@ -221,7 +187,7 @@ def test_download_limiting_options(runner: CliRunner) -> None:
 @pytest.mark.parametrize(
     "mock_downloads_form_path", ([Path("session-135-2018.mp4"), None],), indirect=True
 )
-def test_download_videos(
+def test_video_download_only(
     mocked_open: MagicMock,
     mocked_atomic_write: MagicMock,
     mocked_copy: MagicMock,
@@ -234,7 +200,16 @@ def test_download_videos(
     with runner.isolated_filesystem():
         result = runner.invoke(
             __main__.main,
-            ["download", "-v", "--start-date", "2018-12-20", "--end-date", "2018-12-22"],
+            [
+                "download",
+                "-v",
+                "--start-date",
+                "2018-12-20",
+                "--end-date",
+                "2018-12-22",
+                "--start-session",
+                "",
+            ],
         )
         assert "Output is logged to" in result.output
         assert "Found 2 videos, proceed to download videos and extract audio." in result.output
@@ -288,67 +263,6 @@ def test_download_transcripts(
         assert mock_vaskiquery.call_count == 3
         mock_get_full_table.assert_called_once()
         assert mock_downloads_form_path.call_count == 3
-
-
-def test_downloads_form_path(
-    mock_downloads_path: MagicMock,
-    download_pipeline: DownloadPipeline,
-    runner: CliRunner,
-) -> None:
-    """Check path forming separately."""
-    with runner.isolated_filesystem():
-        assert str(download_pipeline.form_path(0, 0, "test")) == "tests/testing.test"
-        assert len(download_pipeline.errors) == 0
-        mock_downloads_path.assert_called_once()
-
-        assert download_pipeline.form_path(0, 0, "test") is None
-        assert download_pipeline.errors[0] == "File tests/testing.test exists, will not overwrite."
-        assert mock_downloads_path.call_count == 2
-
-
-@mock.patch("builtins.open")
-@mock.patch("fi_parliament_tools.downloads.atomic_write")
-@pytest.mark.parametrize(
-    "mock_downloads_form_path",
-    ([Path("session-135-2018.mp4"), Path("session-136-2018.mp4")],),
-    indirect=True,
-)
-def test_video_download_exceptions(
-    mocked_atomic_write: MagicMock,
-    mocked_open: MagicMock,
-    mock_subprocess_run: MagicMock,
-    mock_shutil_copyfileobj: MagicMock,
-    mock_downloads_requests_get: MagicMock,
-    mock_downloads_form_path: MagicMock,
-    runner: CliRunner,
-) -> None:
-    """Test the exception branches in the video download functions."""
-    with runner.isolated_filesystem():
-        result = runner.invoke(
-            __main__.main,
-            [
-                "download",
-                "-v",
-                "--start-date",
-                "2018-12-20",
-                "--end-date",
-                "2018-12-22",
-                "--start-session",
-                "",
-            ],
-        )
-        assert "Output is logged to" in result.output
-        assert "Found 2 videos, proceed to download videos and extract audio." in result.output
-        assert "Encountered 2 non-breaking error(s)." in result.output
-        assert "Wav extraction failed for video session-135-2018.mp4." in result.output
-        assert "Video download failed for session-136-2018.mp4" in result.output
-        assert "Finished successfully!" in result.output
-        mocked_open.assert_called_once()
-        assert mocked_atomic_write.call_count == 2
-        assert mock_subprocess_run.call_count == 2
-        assert mock_shutil_copyfileobj.call_count == 2
-        assert mock_downloads_requests_get.call_count == 3
-        assert mock_downloads_form_path.call_count == 2
 
 
 @mock.patch("fi_parliament_tools.downloads.etree")
