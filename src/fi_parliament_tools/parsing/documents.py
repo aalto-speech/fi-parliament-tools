@@ -8,6 +8,7 @@ from typing import Optional
 from typing import Tuple
 from typing import Union
 
+from atomicwrites import atomic_write
 from lxml import etree
 
 from fi_parliament_tools.parsing.data_structures import EmbeddedStatement
@@ -285,7 +286,7 @@ class Session:
         for subsec in subsections:
             if (processed := self.process_subsection(subsec)) is not None:
                 transcript.subsections.append(processed)
-        with open(path, "w", encoding="utf-8") as outfile:
+        with atomic_write(path, mode="w", encoding="utf-8") as outfile:
             json.dump(asdict(transcript), outfile, ensure_ascii=False, indent=2)
             outfile.write("\n")
 

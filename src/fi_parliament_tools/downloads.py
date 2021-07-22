@@ -12,6 +12,7 @@ from typing import Optional
 import pandas as pd
 import requests
 from alive_progress import alive_bar
+from atomicwrites import atomic_write
 from lxml import etree
 
 from fi_parliament_tools import video_query
@@ -166,7 +167,7 @@ class DownloadPipeline(Pipeline):
         url = f"{VIDEO_API}/{kwargs['index']}/video/download"
         self.log.debug(f"Will attempt to download {path.name} from {url}.")
         try:
-            with requests.get(url, stream=True) as r, open(path, "wb") as f:
+            with requests.get(url, stream=True) as r, atomic_write(path, mode="wb") as f:
                 shutil.copyfileobj(r.raw, f)
         except shutil.Error:
             self.errors.append(f"Video download failed for {path.name} from {url}.")

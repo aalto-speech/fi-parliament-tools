@@ -216,12 +216,14 @@ def test_download_limiting_options(runner: CliRunner) -> None:
 
 @mock.patch("fi_parliament_tools.downloads.subprocess.run")
 @mock.patch("fi_parliament_tools.downloads.shutil.copyfileobj")
+@mock.patch("fi_parliament_tools.downloads.atomic_write")
 @mock.patch("builtins.open")
 @pytest.mark.parametrize(
     "mock_downloads_form_path", ([Path("session-135-2018.mp4"), None],), indirect=True
 )
 def test_download_videos(
     mocked_open: MagicMock,
+    mocked_atomic_write: MagicMock,
     mocked_copy: MagicMock,
     mocked_run: MagicMock,
     mock_downloads_requests_get: MagicMock,
@@ -238,9 +240,10 @@ def test_download_videos(
         assert "Found 2 videos, proceed to download videos and extract audio." in result.output
         assert "Encountered 0 non-breaking error(s)." in result.output
         assert "Finished successfully!" in result.output
-        assert mocked_open.call_count == 2  # 1 x logger, 1 x video download
-        assert mocked_copy.call_count == 1
-        assert mocked_run.call_count == 1
+        mocked_open.assert_called_once()
+        mocked_atomic_write.assert_called_once()
+        mocked_copy.assert_called_once()
+        mocked_run.assert_called_once()
         assert mock_downloads_requests_get.call_count == 2
         assert mock_downloads_form_path.call_count == 2
 
@@ -304,12 +307,14 @@ def test_downloads_form_path(
 
 
 @mock.patch("builtins.open")
+@mock.patch("fi_parliament_tools.downloads.atomic_write")
 @pytest.mark.parametrize(
     "mock_downloads_form_path",
     ([Path("session-135-2018.mp4"), Path("session-136-2018.mp4")],),
     indirect=True,
 )
 def test_video_download_exceptions(
+    mocked_atomic_write: MagicMock,
     mocked_open: MagicMock,
     mock_subprocess_run: MagicMock,
     mock_shutil_copyfileobj: MagicMock,
@@ -338,7 +343,8 @@ def test_video_download_exceptions(
         assert "Wav extraction failed for video session-135-2018.mp4." in result.output
         assert "Video download failed for session-136-2018.mp4" in result.output
         assert "Finished successfully!" in result.output
-        assert mocked_open.call_count == 3  # 1 x logger, 2 x video download
+        mocked_open.assert_called_once()
+        assert mocked_atomic_write.call_count == 2
         assert mock_subprocess_run.call_count == 2
         assert mock_shutil_copyfileobj.call_count == 2
         assert mock_downloads_requests_get.call_count == 3

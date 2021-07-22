@@ -4,9 +4,9 @@ from dataclasses import asdict
 from logging import Logger
 from pathlib import Path
 from typing import Any
+from typing import IO
 from typing import List
 from typing import Set
-from typing import TextIO
 from typing import Tuple
 from typing import Type
 from typing import Union
@@ -15,6 +15,7 @@ import fasttext  # type: ignore
 import pandas as pd
 from aalto_asr_preprocessor import preprocessor
 from alive_progress import alive_bar
+from atomicwrites import atomic_write
 
 from fi_parliament_tools.parsing.data_structures import decode_transcript
 from fi_parliament_tools.parsing.data_structures import EmbeddedStatement
@@ -54,48 +55,49 @@ class PreprocessingPipeline(Pipeline):
         self.recipe = recipe
         self.mptable = pd.read_csv(mptable, sep=":", index_col="mp_id")
 
-    def load_transcript(self, input_path: Path) -> Transcript:
+    def load_transcript(self, path: Path) -> Transcript:
         """Load Transcript object from a JSON file at input path.
 
         Args:
-            input_path (Path): path to a JSON transcript file
+            path (Path): path to a JSON transcript file
 
         Returns:
             Transcript: loaded transcript object
         """
-        with input_path.open(mode="r", encoding="utf-8", newline="") as infile:
+        with path.open(mode="r", encoding="utf-8", newline="") as infile:
             transcript: Transcript = json.load(infile, object_hook=decode_transcript)
         return transcript
 
     def write_transcript_and_words(
-        self, input_path: Path, transcript: Transcript, unique_words: Set[str]
+        self, path: Path, transcript: Transcript, unique_words: Set[str]
     ) -> None:
         """Write updated transcript to the JSON file and list of unique words to a .words file.
 
         Args:
-            input_path (Path): path to the original JSON file
+            path (Path): path to the original JSON file
             transcript (Transcript): updated transcript
             unique_words (Set[str]): list of unique words in the transcript
         """
-        with input_path.open(mode="w", encoding="utf-8", newline="") as outfile:
-            json.dump(asdict(transcript), outfile, ensure_ascii=False, indent=2)
-        input_path.with_suffix(".words").write_text("\n".join(unique_words), encoding="utf-8")
+        with atomic_write(path, mode="w", overwrite=True, encoding="utf-8", newline="") as jsonf:
+            json.dump(asdict(transcript), jsonf, ensure_ascii=False, indent=2)
+        with atomic_write(path.with_suffix(".words"), mode="w", encoding="utf-8") as wordf:
+            wordf.write("\n".join(unique_words))
 
     def run(self) -> None:
         """Run preprocessing pipeline over the input file list."""
         with alive_bar(len(self.transcript_paths)) as bar:
-            for input_path in self.transcript_paths:
-                transcript = self.load_transcript(input_path)
-                with input_path.with_suffix(".text").open("w", encoding="utf-8") as textfile:
-                    bytecount = textfile.write(input_path.stem)
-                    transcript, unique_words = self.preprocess_transcript(transcript, textfile)
-                    if textfile.tell() == bytecount:
-                        self.log.warning(f"Preprocessing output was empty for {input_path.stem}.")
-                self.write_transcript_and_words(input_path, transcript, unique_words)
+            for path in self.transcript_paths:
+                transcript = self.load_transcript(path)
+                with atomic_write(path.with_suffix(".text"), mode="w", encoding="utf-8") as textf:
+                    bytecount = textf.write(path.stem)
+                    transcript, unique_words = self.preprocess_transcript(transcript, textf)
+                    if textf.tell() == bytecount:
+                        self.log.warning(f"Preprocessing output was empty for {path.stem}.")
+                self.write_transcript_and_words(path, transcript, unique_words)
                 bar()
 
     def preprocess_transcript(
-        self, transcript: Transcript, textfile: TextIO
+        self, transcript: Transcript, textfile: IO[Any]
     ) -> Tuple[Transcript, Set[str]]:
         """Preprocess transcript for segmentation.
 
@@ -106,7 +108,7 @@ class PreprocessingPipeline(Pipeline):
 
         Args:
             transcript (Transcript): transcript to update
-            textfile (TextIO): a file handle for writing output
+            textfile (IO[Any]): a file handle for writing output
 
         Returns:
             Tuple[Transcript, Set[str]]: preprocessed transcript and a set of unique words in it
@@ -195,7 +197,7 @@ class PreprocessingPipeline(Pipeline):
             )
         return int(lookup[0])
 
-    def preprocess_statement(self, statement: Statement, textfile: TextIO) -> Set[str]:
+    def preprocess_statement(self, statement: Statement, textfile: IO[Any]) -> Set[str]:
         """Preprocess and write statement to a file given a recipe and return unique Finnish words.
 
         Note that some words in Swedish and other languages will get included in the word lists
@@ -205,7 +207,7 @@ class PreprocessingPipeline(Pipeline):
 
         Args:
             statement (Statement): a statement to preprocess
-            textfile (TextIO): a file handle for writing output
+            textfile (IO[Any]): a file handle for writing output
 
         Returns:
             Set[str]: a set of unique Finnish words within the statement
