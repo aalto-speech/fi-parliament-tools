@@ -1,32 +1,45 @@
 """Test post-2015 session parsing."""
 from dataclasses import asdict
-from pathlib import Path
 from typing import Any
 from typing import Collection
 from typing import Dict
 from typing import List
 from typing import Tuple
+from unittest.mock import MagicMock
 
 import pytest
+from _pytest.fixtures import SubRequest
+from pytest_mock.plugin import MockerFixture  # type: ignore
 
 from fi_parliament_tools.parsing.data_structures import MP
+from fi_parliament_tools.parsing.data_structures import Transcript
 from fi_parliament_tools.parsing.documents import MPInfo
 from fi_parliament_tools.parsing.documents import Session
 
 
+@pytest.fixture
+def mock_session_start_time(request: SubRequest, mocker: MockerFixture) -> MagicMock:
+    """Mock SessionQuery.get_session_start_time call."""
+    mock: MagicMock = mocker.patch("fi_parliament_tools.parsing.documents.SessionQuery")
+    mock.return_value.get_session_start_time.return_value = request.param
+    return mock
+
+
 @pytest.mark.parametrize(
-    "session, true_result",
+    "session, mock_session_start_time, true_result",
     [
-        ((32, 2016), "2016-04-05 13:59:28.087"),
-        ((7, 2018), "2018-02-15T16:00:00"),
-        ((72, 2019), "2019-11-28T16:00:00"),
+        ((32, 2016), "2016-04-05 13:59:28.087", "2016-04-05 13:59:28.087"),
+        ((7, 2018), "", "2018-02-15T16:00:00"),
+        ((72, 2019), "", "2019-11-28T16:00:00"),
     ],
-    indirect=["session"],
+    indirect=["session", "mock_session_start_time"],
 )
-def test_start_time(session: Session, true_result: str) -> None:
+def test_start_time(session: Session, mock_session_start_time: MagicMock, true_result: str) -> None:
     """Test that session start time stamp is correctly parsed."""
-    timestamp = session.get_session_start_time()
+    timestamp = session.get_session_start()
     assert timestamp == true_result
+    mock_session_start_time.assert_called_once_with(session.query_key)
+    mock_session_start_time.return_value.get_session_start_time.assert_called_once()
 
 
 @pytest.mark.parametrize(
@@ -207,7 +220,7 @@ def test_embedded_chairman_statement(
 
 
 @pytest.mark.parametrize(
-    "session, true_output_path",
+    "session, transcript",
     [
         ((7, 2020), "tests/data/jsons/session-007-2020.json"),
         ((19, 2016), "tests/data/jsons/session-019-2016.json"),
@@ -216,20 +229,17 @@ def test_embedded_chairman_statement(
         ((130, 2017), "tests/data/jsons/session-130-2017.json"),
         ((141, 2017), "tests/data/jsons/session-141-2017.json"),
     ],
-    indirect=["session"],
+    indirect=True,
 )
-def test_parse_to_json(session: Session, true_output_path: str, tmp_path: Path) -> None:
-    """Test that a session transcript is correctly parsed into a JSON file.
+def test_parse(session: Session, transcript: Transcript) -> None:
+    """Test that a session transcript is correctly parsed into a Transcript object.
 
     Args:
         session (Session): parliament plenary session to parse
-        true_output_path (str): path to the file used as comparison
-        tmp_path (Path): built-in pytest fixture for creating temporary output files
+        transcript (Transcript): the correct result for comparison
     """
-    tmpfile = tmp_path / "tmp_output_test.json"
-    session.parse_to_json(tmpfile)
-    with open(true_output_path, "r", encoding="utf-8") as true_file:
-        assert tmpfile.read_text("utf-8") == true_file.read()
+    parsed_session = session.parse()
+    assert parsed_session == transcript
 
 
 @pytest.mark.parametrize(

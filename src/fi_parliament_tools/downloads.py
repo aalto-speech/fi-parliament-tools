@@ -153,7 +153,8 @@ class DownloadPipeline(Pipeline):
             etree.ElementTree(xml).write(
                 str(path.with_suffix(".xml")), encoding="utf-8", pretty_print=True
             )
-            Session(num, year, xml).parse_to_json(path)
+            transcript = Session(num, year, xml).parse()
+            transcript.save_to_json(path)
         else:
             self.errors.append(f"XML for transcript {num}/{year} is not found.")
 

@@ -10,12 +10,17 @@ for later processing.
 
 Slots are used to optimize memory consumption and processing speed.
 """
+import json
+from dataclasses import asdict
 from dataclasses import dataclass
 from dataclasses import field
+from pathlib import Path
 from typing import Any
 from typing import Dict
 from typing import List
 from typing import Union
+
+from atomicwrites import atomic_write
 
 
 @dataclass
@@ -132,6 +137,16 @@ class Transcript:
     year: int
     begin_time: str
     subsections: List[Subsection] = field(default_factory=list)
+
+    def save_to_json(self, path: Union[str, Path]) -> None:
+        """Save the transcript to a JSON file.
+
+        Args:
+            path (Union[str, Path]): path to the JSON file
+        """
+        with atomic_write(path, mode="w", encoding="utf-8") as outfile:
+            json.dump(asdict(self), outfile, ensure_ascii=False, indent=2)
+            outfile.write("\n")
 
 
 @dataclass

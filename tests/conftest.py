@@ -16,6 +16,7 @@ import pytest
 from _pytest.fixtures import SubRequest
 from lxml import etree
 
+from fi_parliament_tools.parsing.data_structures import decode_transcript
 from fi_parliament_tools.parsing.documents import MPInfo
 from fi_parliament_tools.parsing.documents import Session
 from fi_parliament_tools.parsing.query import Query
@@ -26,7 +27,7 @@ from fi_parliament_tools.parsing.query import VaskiQuery
 pytest_plugins = ["tests.data.long_statement_strings", "tests.data.transcript_query"]
 
 
-@pytest.fixture
+@pytest.fixture(scope="module")
 def json_test_data(request: SubRequest) -> Any:
     """Read test input from a csv file (skip header). Each line corresponds to a speaker statement.
 
@@ -38,6 +39,14 @@ def json_test_data(request: SubRequest) -> Any:
     """
     input_json = open(request.param, "r", encoding="utf-8", newline="")
     yield json.load(input_json)
+    input_json.close()
+
+
+@pytest.fixture(scope="module")
+def transcript(request: SubRequest) -> Any:
+    """Read a transcript from a json to Transcript object."""
+    input_json = open(request.param, "r", encoding="utf-8", newline="")
+    yield json.load(input_json, object_hook=decode_transcript)
     input_json.close()
 
 

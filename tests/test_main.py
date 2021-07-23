@@ -4,7 +4,6 @@ import json
 import os
 import shutil
 from pathlib import Path
-from typing import Any
 from typing import List
 from typing import Optional
 from typing import Tuple
@@ -17,23 +16,12 @@ from click.testing import CliRunner
 from pytest_mock.plugin import MockerFixture  # type: ignore
 
 from fi_parliament_tools import __main__
-from fi_parliament_tools.parsing.data_structures import decode_transcript
 
 
 @pytest.fixture
 def runner() -> CliRunner:
     """Fixture for invoking command-line interfaces."""
     return CliRunner()
-
-
-@pytest.fixture
-def transcript() -> Any:
-    """Read the dummy transcript from a json."""
-    input_json = open(
-        "tests/data/jsons/preprocessing_test_sample.json", "r", encoding="utf-8", newline=""
-    )
-    yield json.load(input_json, object_hook=decode_transcript)
-    input_json.close()
 
 
 @pytest.fixture
