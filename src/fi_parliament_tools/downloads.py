@@ -1,5 +1,4 @@
 """Command line client for downloading Finnish parliament data."""
-import pathlib
 import shutil
 import subprocess
 from logging import Logger
@@ -7,18 +6,20 @@ from pathlib import Path
 from typing import Any
 from typing import Callable
 from typing import Dict
+from typing import List
 from typing import Optional
 
 import pandas as pd
 import requests
 from alive_progress import alive_bar
+from atomicwrites import atomic_write
 from lxml import etree
 
 from fi_parliament_tools import video_query
+from fi_parliament_tools.parsing.documents import Session
+from fi_parliament_tools.parsing.query import Query
+from fi_parliament_tools.parsing.query import VaskiQuery
 from fi_parliament_tools.pipeline import Pipeline
-from fi_parliament_tools.transcriptParser.documents import Session
-from fi_parliament_tools.transcriptParser.query import Query
-from fi_parliament_tools.transcriptParser.query import VaskiQuery
 
 VIDEO_API = "https://eduskunta.videosync.fi/api/v1/events"
 
@@ -118,7 +119,7 @@ class DownloadPipeline(Pipeline):
                     processing_func(path, **{"index": index, "num": num, "year": year})
                 bar()
 
-    def form_path(self, num: int, year: int, suffix: str) -> Optional[pathlib.Path]:
+    def form_path(self, num: int, year: int, suffix: str) -> Optional[Path]:
         """Create and validate path if file by the same name does not exist.
 
         Args:
@@ -127,7 +128,7 @@ class DownloadPipeline(Pipeline):
             suffix (str): file extension
 
         Returns:
-            pathlib.Path: path to a new file or None if duplicate exists already
+            Path: path to a new file or None if duplicate exists already
         """
         p = Path(f"corpus/{year}/session-{num:03}-{year}.{suffix}").resolve()
         if p.exists():
@@ -136,13 +137,13 @@ class DownloadPipeline(Pipeline):
         p.parent.mkdir(parents=True, exist_ok=True)
         return p
 
-    def download_transcript(self, path: pathlib.Path, **kwargs: Any) -> None:
+    def download_transcript(self, path: Path, **kwargs: Any) -> None:
         """Try downloading and parsing a transcript from the parliament open data API.
 
         Saves both the original XML transcript and a parsed JSON.
 
         Args:
-            path (pathlib.Path): path to save the parsed transcript to
+            path (Path): path to save the parsed transcript to
             kwargs (dict): expected to contain 'num' and 'year', which identify a plenary session
         """
         num, year = kwargs["num"], kwargs["year"]
@@ -152,36 +153,52 @@ class DownloadPipeline(Pipeline):
             etree.ElementTree(xml).write(
                 str(path.with_suffix(".xml")), encoding="utf-8", pretty_print=True
             )
-            Session(num, year, xml).parse_to_json(path)
+            transcript = Session(num, year, xml).parse()
+            transcript.save_to_json(path)
         else:
             self.errors.append(f"XML for transcript {num}/{year} is not found.")
 
-    def download_video(self, path: pathlib.Path, **kwargs: Any) -> None:
+    def download_video(self, path: Path, **kwargs: Any) -> None:
         """Try downloading a single video from the video API and extracting the audio stream as wav.
 
         Args:
-            path (pathlib.Path): path to save the video file to
+            path (Path): path to save the video file to
             kwargs (dict): expected to contain 'index', an unique identifier for the video
         """
         url = f"{VIDEO_API}/{kwargs['index']}/video/download"
         self.log.debug(f"Will attempt to download {path.name} from {url}.")
         try:
-            with requests.get(url, stream=True) as r, open(path, "wb") as f:
+            with requests.get(url, stream=True) as r, atomic_write(path, mode="wb") as f:
                 shutil.copyfileobj(r.raw, f)
+            self.extract_wav(path)
         except shutil.Error:
             self.errors.append(f"Video download failed for {path.name} from {url}.")
-        self.extract_wav(path)
 
-    def extract_wav(self, path: pathlib.Path) -> None:
+    def extract_wav(self, video: Path) -> None:
         """Try extracting the audio stream from the video file in path using ffmpeg.
 
         Args:
-            path (pathlib.Path): path to the video file
+            video (Path): path to the video file
         """
-        self.log.debug(f"Will attempt to extract audio from the video {path.name}.")
+        self.log.debug(f"Will attempt to extract audio from the video {video.name}.")
+        audio = video.with_suffix(".wav")
+        args = ["ffmpeg", "-i", str(video), "-f", "wav", "-ar", "16000", "-ac", "1", str(audio)]
         try:
-            audio = str(path.with_suffix(".wav"))
-            args = ["ffmpeg", "-i", str(path), "-f", "wav", "-ar", "16000", "-ac", "1", audio]
-            subprocess.run(args, capture_output=True, text=True)
-        except ValueError:
-            self.errors.append(f"Wav extraction failed for video {path.name}.")
+            subprocess.run(args, capture_output=True, check=True, text=True)
+        except subprocess.CalledProcessError as e:
+            msg = f"ffmpeg returned non-zero exit status {e.returncode}. Stderr:\n {e.stderr}"
+            self.cleanup_subprocess(msg, [audio, video])
+        except KeyboardInterrupt:
+            self.cleanup_subprocess("Caught keyboard interrupt.", [audio, video])
+
+    def cleanup_subprocess(self, error_msg: str, paths: List[Path]) -> None:
+        """Ensure partial files are not left behind by the subprocess call.
+
+        Args:
+            error_msg (str): error message for the log
+            paths (List[Path]): files to remove in the clean up
+        """
+        self.log.error(f"{error_msg}.\nTo prevent data corruption, will remove paths:")
+        self.log.error("\n".join([str(p) for p in paths]))
+        for path in paths:
+            path.unlink(missing_ok=True)

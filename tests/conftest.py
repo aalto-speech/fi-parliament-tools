@@ -5,25 +5,29 @@ testing. Keeping the test data for full transcript (subsections) in csv files he
 files clean and readable. Other long strings, that do not need the hook for automatic generation,
 are defined separately in `data/long_strings.py`.
 """
+import importlib
 import json
 import logging
+from pathlib import Path
 from typing import Any
+from typing import Callable
 
 import pytest
 from _pytest.fixtures import SubRequest
 from lxml import etree
 
-from fi_parliament_tools.transcriptParser.documents import MPInfo
-from fi_parliament_tools.transcriptParser.documents import Session
-from fi_parliament_tools.transcriptParser.query import Query
-from fi_parliament_tools.transcriptParser.query import SessionQuery
-from fi_parliament_tools.transcriptParser.query import StatementQuery
-from fi_parliament_tools.transcriptParser.query import VaskiQuery
+from fi_parliament_tools.parsing.data_structures import decode_transcript
+from fi_parliament_tools.parsing.documents import MPInfo
+from fi_parliament_tools.parsing.documents import Session
+from fi_parliament_tools.parsing.query import Query
+from fi_parliament_tools.parsing.query import SessionQuery
+from fi_parliament_tools.parsing.query import StatementQuery
+from fi_parliament_tools.parsing.query import VaskiQuery
 
 pytest_plugins = ["tests.data.long_statement_strings", "tests.data.transcript_query"]
 
 
-@pytest.fixture
+@pytest.fixture(scope="module")
 def json_test_data(request: SubRequest) -> Any:
     """Read test input from a csv file (skip header). Each line corresponds to a speaker statement.
 
@@ -35,6 +39,14 @@ def json_test_data(request: SubRequest) -> Any:
     """
     input_json = open(request.param, "r", encoding="utf-8", newline="")
     yield json.load(input_json)
+    input_json.close()
+
+
+@pytest.fixture(scope="module")
+def transcript(request: SubRequest) -> Any:
+    """Read a transcript from a json to Transcript object."""
+    input_json = open(request.param, "r", encoding="utf-8", newline="")
+    yield json.load(input_json, object_hook=decode_transcript)
     input_json.close()
 
 
@@ -86,3 +98,22 @@ def logger() -> logging.Logger:
     log = logging.getLogger("test-logger")
     log.setLevel(logging.CRITICAL)
     return log
+
+
+@pytest.fixture
+def tmpfile(tmp_path: Path) -> Path:
+    """Create a file in the tmp directory."""
+    return tmp_path / "tmp_output.txt"
+
+
+@pytest.fixture
+def load_recipe() -> Callable[[str], Any]:
+    """Load a recipe module for testing purposes."""
+
+    def _load_recipe(recipe_path: str) -> Any:
+        if spec := importlib.util.spec_from_file_location("recipe", recipe_path):
+            recipe = importlib.util.module_from_spec(spec)
+            spec.loader.exec_module(recipe)  # type: ignore
+            return recipe
+
+    return _load_recipe

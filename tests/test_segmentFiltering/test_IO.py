@@ -7,7 +7,7 @@ from unittest.mock import MagicMock
 import pytest
 from pytest_mock.plugin import MockerFixture  # type: ignore
 
-from fi_parliament_tools.transcriptMatcher import IO
+from fi_parliament_tools.segmentFiltering import IO
 
 
 def test_read_ctm_segmented() -> None:
@@ -58,7 +58,7 @@ def test_read_kaldi_text() -> None:
 @pytest.fixture
 def mock_df_to_csv(mocker: MockerFixture) -> MagicMock:
     """Mock the to_csv function of a Pandas DataFrame."""
-    mock: MagicMock = mocker.patch("fi_parliament_tools.transcriptMatcher.IO.pd.DataFrame.to_csv")
+    mock: MagicMock = mocker.patch("fi_parliament_tools.segmentFiltering.IO.pd.DataFrame.to_csv")
     return mock
 
 

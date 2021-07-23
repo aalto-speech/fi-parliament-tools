@@ -7,8 +7,8 @@ import pandas as pd
 from lxml import etree
 
 from fi_parliament_tools import MPID_FILTER
-from fi_parliament_tools.transcriptParser.documents import MPInfo
-from fi_parliament_tools.transcriptParser.query import MPQuery
+from fi_parliament_tools.parsing.documents import MPInfo
+from fi_parliament_tools.parsing.query import MPQuery
 
 
 def build_table(get_english: bool, update_old: bool, log: Logger) -> None:

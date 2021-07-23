@@ -1,23 +1,19 @@
 """Parsers for handling different parliament documents published after 2015."""
-import json
-import pathlib
 import re
-from dataclasses import asdict
 from typing import List
 from typing import Optional
 from typing import Tuple
-from typing import Union
 
 from lxml import etree
 
-from fi_parliament_tools.transcriptParser.data_structures import EmbeddedStatement
-from fi_parliament_tools.transcriptParser.data_structures import MP
-from fi_parliament_tools.transcriptParser.data_structures import Statement
-from fi_parliament_tools.transcriptParser.data_structures import Subsection
-from fi_parliament_tools.transcriptParser.data_structures import Transcript
-from fi_parliament_tools.transcriptParser.query import SessionQuery
-from fi_parliament_tools.transcriptParser.query import StatementQuery
-from fi_parliament_tools.transcriptParser.query import VaskiQuery
+from fi_parliament_tools.parsing.data_structures import EmbeddedStatement
+from fi_parliament_tools.parsing.data_structures import MP
+from fi_parliament_tools.parsing.data_structures import Statement
+from fi_parliament_tools.parsing.data_structures import Subsection
+from fi_parliament_tools.parsing.data_structures import Transcript
+from fi_parliament_tools.parsing.query import SessionQuery
+from fi_parliament_tools.parsing.query import StatementQuery
+from fi_parliament_tools.parsing.query import VaskiQuery
 
 
 class Session:
@@ -258,7 +254,7 @@ class Session:
                 return EmbeddedStatement(0, title, first, last, "", text, -1.0, -1.0)
         return EmbeddedStatement(0, "", "", "", "", "", -1.0, -1.0)
 
-    def get_session_start_time(self) -> str:
+    def get_session_start(self) -> str:
         """Get the true session start time from a database.
 
         The database stores timestamps in the format 'YYYY-MM-DD HH:MM:SS.sss'.
@@ -271,13 +267,13 @@ class Session:
             [start_time] = self.xml_transcript.xpath(". /@*[local-name() = 'kokousAloitusHetki']")
         return start_time
 
-    def parse_to_json(self, path: Union[str, pathlib.Path]) -> None:
-        """Parse the session transcript into a JSON file defined in the path.
+    def parse(self) -> Transcript:
+        """Parse the session transcript into the Transcript data structure.
 
-        Args:
-            path (str): path to the JSON file
+        Returns:
+            Transcript: the parsed transcript
         """
-        start_time = self.get_session_start_time()
+        start_time = self.get_session_start()
         transcript = Transcript(self.number, self.year, start_time)
         subsections = self.xml_transcript.xpath(
             ". /*[local-name() = 'MuuAsiakohta' or local-name() = 'Asiakohta']"
@@ -285,9 +281,7 @@ class Session:
         for subsec in subsections:
             if (processed := self.process_subsection(subsec)) is not None:
                 transcript.subsections.append(processed)
-        with open(path, "w", encoding="utf-8") as outfile:
-            json.dump(asdict(transcript), outfile, ensure_ascii=False, indent=2)
-            outfile.write("\n")
+        return transcript
 
     def process_subsection(self, xml_element: etree._Element) -> Optional[Subsection]:
         """Process the statements in a session subsection and save them into a JSON file.

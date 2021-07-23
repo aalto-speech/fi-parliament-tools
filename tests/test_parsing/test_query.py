@@ -5,10 +5,10 @@ from unittest.mock import MagicMock
 import pytest
 from pytest_mock.plugin import MockerFixture  # type: ignore
 
-from fi_parliament_tools.transcriptParser.query import Query
-from fi_parliament_tools.transcriptParser.query import SessionQuery
-from fi_parliament_tools.transcriptParser.query import StatementQuery
-from fi_parliament_tools.transcriptParser.query import VaskiQuery
+from fi_parliament_tools.parsing.query import Query
+from fi_parliament_tools.parsing.query import SessionQuery
+from fi_parliament_tools.parsing.query import StatementQuery
+from fi_parliament_tools.parsing.query import VaskiQuery
 
 
 @pytest.fixture

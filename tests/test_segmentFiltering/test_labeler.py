@@ -7,7 +7,7 @@ import pytest
 from _pytest.fixtures import SubRequest
 from pytest_mock.plugin import MockerFixture  # type: ignore
 
-from fi_parliament_tools.transcriptMatcher import labeler
+from fi_parliament_tools.segmentFiltering import labeler
 
 
 @pytest.fixture
@@ -34,7 +34,7 @@ def test_df() -> pd.DataFrame:
 @pytest.fixture
 def mock_statement(mocker: MockerFixture) -> MagicMock:
     """Mock a Statement object."""
-    mock: MagicMock = mocker.patch("fi_parliament_tools.transcriptMatcher.labeler.Statement")
+    mock: MagicMock = mocker.patch("fi_parliament_tools.segmentFiltering.labeler.Statement")
     mock.language = "sv.p"
     mock.mp_id = 1
     mock.firstname = "Test"
@@ -45,7 +45,7 @@ def mock_statement(mocker: MockerFixture) -> MagicMock:
 @pytest.fixture
 def mock_find_statement(mocker: MockerFixture) -> MagicMock:
     """Mock find_statement method."""
-    mock: MagicMock = mocker.patch("fi_parliament_tools.transcriptMatcher.labeler.find_statement")
+    mock: MagicMock = mocker.patch("fi_parliament_tools.segmentFiltering.labeler.find_statement")
     mock.return_value = (10, 15)
     return mock
 

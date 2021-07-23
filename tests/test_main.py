@@ -1,13 +1,9 @@
-"""Test cases for the __main__, downloads, preprocessing, and postprocessing modules."""
+"""Test cases for the command line client in __main__ module."""
 import glob
-import importlib
 import json
 import os
 import shutil
-from logging import Logger
 from pathlib import Path
-from typing import Any
-from typing import Callable
 from typing import List
 from typing import Optional
 from typing import Tuple
@@ -20,60 +16,12 @@ from click.testing import CliRunner
 from pytest_mock.plugin import MockerFixture  # type: ignore
 
 from fi_parliament_tools import __main__
-from fi_parliament_tools.downloads import DownloadPipeline
-from fi_parliament_tools.preprocessing import PreprocessingPipeline
-from fi_parliament_tools.transcriptParser.data_structures import decode_transcript
 
 
 @pytest.fixture
 def runner() -> CliRunner:
     """Fixture for invoking command-line interfaces."""
     return CliRunner()
-
-
-@pytest.fixture
-def load_recipe() -> Callable[[str], Any]:
-    """Load a recipe module for testing purposes."""
-
-    def _load_recipe(recipe_path: str) -> Any:
-        if spec := importlib.util.spec_from_file_location("recipe", recipe_path):
-            recipe = importlib.util.module_from_spec(spec)
-            spec.loader.exec_module(recipe)  # type: ignore
-            return recipe
-
-    return _load_recipe
-
-
-@pytest.fixture
-def tmpfile(tmp_path: Path) -> Path:
-    """Create a file in the tmp directory."""
-    return tmp_path / "tmp_output.txt"
-
-
-@pytest.fixture
-def transcript() -> Any:
-    """Read the dummy transcript from a json."""
-    input_json = open(
-        "tests/data/jsons/preprocessing_test_sample.json", "r", encoding="utf-8", newline=""
-    )
-    yield json.load(input_json, object_hook=decode_transcript)
-    input_json.close()
-
-
-@pytest.fixture
-def download_pipeline(logger: Logger) -> DownloadPipeline:
-    """Initialize DownloadPipeline."""
-    pipeline = DownloadPipeline(logger)
-    return pipeline
-
-
-@pytest.fixture
-def preprocess_pipeline(logger: Logger, mocker: MockerFixture) -> PreprocessingPipeline:
-    """Initialize PreprocessingPipeline with mocked LID model and MP table."""
-    mocker.patch("fi_parliament_tools.preprocessing.fasttext.load_model")
-    mocker.patch("fi_parliament_tools.preprocessing.pd.read_csv")
-    pipeline = PreprocessingPipeline(logger, [], "lid_dummy", "mptable_dummy", "recipe_dummy")
-    return pipeline
 
 
 @pytest.fixture
@@ -90,35 +38,8 @@ def mock_get_full_table(
     mocker: MockerFixture, query_get_full_table: Tuple[List[List[Optional[str]]], List[str]]
 ) -> MagicMock:
     """Mock a small table instead of the true big table."""
-    mock: MagicMock = mocker.patch(
-        "fi_parliament_tools.transcriptParser.query.Query.get_full_table"
-    )
+    mock: MagicMock = mocker.patch("fi_parliament_tools.parsing.query.Query.get_full_table")
     mock.return_value = query_get_full_table
-    return mock
-
-
-@pytest.fixture
-def mock_downloads_path(mocker: MockerFixture) -> MagicMock:
-    """Mock path formed in form_path of downloads module."""
-    mock: MagicMock = mocker.patch("fi_parliament_tools.downloads.Path")
-    mock.return_value.resolve.return_value.__str__.return_value = "tests/testing.test"
-    mock.return_value.resolve.return_value.exists.side_effect = [False, True]
-    return mock
-
-
-@pytest.fixture
-def mock_subprocess_run(mocker: MockerFixture) -> MagicMock:
-    """Trigger an error once in a subprocess.run call."""
-    mock: MagicMock = mocker.patch("fi_parliament_tools.downloads.subprocess.run")
-    mock.side_effect = [ValueError("Wav extraction failure."), None]
-    return mock
-
-
-@pytest.fixture
-def mock_shutil_copyfileobj(mocker: MockerFixture) -> MagicMock:
-    """Trigger an error once in a shutil.copyfileobj call."""
-    mock: MagicMock = mocker.patch("fi_parliament_tools.downloads.shutil.copyfileobj")
-    mock.side_effect = [None, shutil.Error("Video download failure.")]
     return mock
 
 
@@ -152,18 +73,6 @@ def mock_mp_table(mocker: MockerFixture) -> MagicMock:
     mock: MagicMock = mocker.patch("fi_parliament_tools.preprocessing.pd.read_csv")
     mock().index.__getitem__().empty.__bool__.side_effect = 18 * [False] + 3 * [True]
     mock().index.__getitem__().__getitem__.side_effect = 5 * [414] + 9 * [1148] + 4 * [809]
-    return mock
-
-
-@pytest.fixture
-def mock_statement(mocker: MockerFixture) -> MagicMock:
-    """Mock Statement object for the preprocessing module."""
-    mock: MagicMock = mocker.patch("fi_parliament_tools.preprocessing.Statement")
-    mock.text = (
-        "This text is used to test exceptions in preprocessor code. To include a character "
-        "that the simple test recipe cannot process, let's say greetings in German: Schöne Grüße!"
-    )
-    mock.embedded_statement.text = ""
     return mock
 
 
@@ -246,54 +155,6 @@ def test_preprocessor_with_bad_recipe_file(runner: CliRunner) -> None:
         assert "is it a python file?" in result.output
 
 
-def test_determine_language_label(
-    preprocess_pipeline: PreprocessingPipeline, mock_statement: MagicMock
-) -> None:
-    """It labels text as Finnish, Swedish, or both."""
-    preprocess_pipeline.lid.predict.side_effect = [
-        (("__label__fi", "__label__et"), None),
-        (("__label__fi", "__label__sv"), None),
-        (("__label__en", "__label__sv"), None),
-    ]
-    true_labels = ["fi.p", "fi+sv.p", "sv.p"]
-    for true_label in true_labels:
-        label = preprocess_pipeline.determine_language_label(mock_statement)
-        assert label == true_label
-
-
-def test_preprocessor_unaccepted_chars_capture(
-    preprocess_pipeline: PreprocessingPipeline,
-    load_recipe: Callable[[str], Any],
-    mock_statement: MagicMock,
-    tmpfile: Path,
-) -> None:
-    """Ensure UnacceptedCharsError is captured, logged and recovered from."""
-    preprocess_pipeline.recipe = load_recipe("tests/data/simple_recipe.py")
-    with open(tmpfile, "w", encoding="utf-8") as tmp_out:
-        words = preprocess_pipeline.preprocess_statement(mock_statement, tmp_out)
-
-    assert (
-        f"UnacceptedCharsError in {tmpfile}. See log for debug info."
-        == preprocess_pipeline.errors[0]
-    )
-    assert words == set()
-
-
-def test_preprocessor_exception(
-    preprocess_pipeline: PreprocessingPipeline,
-    load_recipe: Callable[[str], Any],
-    mock_statement: MagicMock,
-    tmpfile: Path,
-) -> None:
-    """Ensure Exception is captured, logged and recovered from."""
-    preprocess_pipeline.recipe = load_recipe("tests/data/faulty_recipe.py")
-    with open(tmpfile, "w", encoding="utf-8") as tmp_out:
-        words = preprocess_pipeline.preprocess_statement(mock_statement, tmp_out)
-
-    assert f"Caught an exception in {tmpfile}." == preprocess_pipeline.errors[0]
-    assert words == set()
-
-
 def test_download_limiting_options(runner: CliRunner) -> None:
     """Check that '-v' and '-t' options work and that missing end options are handled correctly."""
     with runner.isolated_filesystem():
@@ -309,12 +170,14 @@ def test_download_limiting_options(runner: CliRunner) -> None:
 
 @mock.patch("fi_parliament_tools.downloads.subprocess.run")
 @mock.patch("fi_parliament_tools.downloads.shutil.copyfileobj")
+@mock.patch("fi_parliament_tools.downloads.atomic_write")
 @mock.patch("builtins.open")
 @pytest.mark.parametrize(
     "mock_downloads_form_path", ([Path("session-135-2018.mp4"), None],), indirect=True
 )
-def test_download_videos(
+def test_video_download_only(
     mocked_open: MagicMock,
+    mocked_atomic_write: MagicMock,
     mocked_copy: MagicMock,
     mocked_run: MagicMock,
     mock_downloads_requests_get: MagicMock,
@@ -325,15 +188,25 @@ def test_download_videos(
     with runner.isolated_filesystem():
         result = runner.invoke(
             __main__.main,
-            ["download", "-v", "--start-date", "2018-12-20", "--end-date", "2018-12-22"],
+            [
+                "download",
+                "-v",
+                "--start-date",
+                "2018-12-20",
+                "--end-date",
+                "2018-12-22",
+                "--start-session",
+                "",
+            ],
         )
         assert "Output is logged to" in result.output
         assert "Found 2 videos, proceed to download videos and extract audio." in result.output
         assert "Encountered 0 non-breaking error(s)." in result.output
         assert "Finished successfully!" in result.output
-        assert mocked_open.call_count == 2  # 1 x logger, 1 x video download
-        assert mocked_copy.call_count == 1
-        assert mocked_run.call_count == 1
+        mocked_open.assert_called_once()
+        mocked_atomic_write.assert_called_once()
+        mocked_copy.assert_called_once()
+        mocked_run.assert_called_once()
         assert mock_downloads_requests_get.call_count == 2
         assert mock_downloads_form_path.call_count == 2
 
@@ -378,64 +251,6 @@ def test_download_transcripts(
         assert mock_vaskiquery.call_count == 3
         mock_get_full_table.assert_called_once()
         assert mock_downloads_form_path.call_count == 3
-
-
-def test_downloads_form_path(
-    mock_downloads_path: MagicMock,
-    download_pipeline: DownloadPipeline,
-    runner: CliRunner,
-) -> None:
-    """Check path forming separately."""
-    with runner.isolated_filesystem():
-        assert str(download_pipeline.form_path(0, 0, "test")) == "tests/testing.test"
-        assert len(download_pipeline.errors) == 0
-        mock_downloads_path.assert_called_once()
-
-        assert download_pipeline.form_path(0, 0, "test") is None
-        assert download_pipeline.errors[0] == "File tests/testing.test exists, will not overwrite."
-        assert mock_downloads_path.call_count == 2
-
-
-@mock.patch("builtins.open")
-@pytest.mark.parametrize(
-    "mock_downloads_form_path",
-    ([Path("session-135-2018.mp4"), Path("session-136-2018.mp4")],),
-    indirect=True,
-)
-def test_video_download_exceptions(
-    mocked_open: MagicMock,
-    mock_subprocess_run: MagicMock,
-    mock_shutil_copyfileobj: MagicMock,
-    mock_downloads_requests_get: MagicMock,
-    mock_downloads_form_path: MagicMock,
-    runner: CliRunner,
-) -> None:
-    """Test the exception branches in the video download functions."""
-    with runner.isolated_filesystem():
-        result = runner.invoke(
-            __main__.main,
-            [
-                "download",
-                "-v",
-                "--start-date",
-                "2018-12-20",
-                "--end-date",
-                "2018-12-22",
-                "--start-session",
-                "",
-            ],
-        )
-        assert "Output is logged to" in result.output
-        assert "Found 2 videos, proceed to download videos and extract audio." in result.output
-        assert "Encountered 2 non-breaking error(s)." in result.output
-        assert "Wav extraction failed for video session-135-2018.mp4." in result.output
-        assert "Video download failed for session-136-2018.mp4" in result.output
-        assert "Finished successfully!" in result.output
-        assert mocked_open.call_count == 3  # 1 x logger, 2 x video download
-        assert mock_subprocess_run.call_count == 2
-        assert mock_shutil_copyfileobj.call_count == 2
-        assert mock_downloads_requests_get.call_count == 3
-        assert mock_downloads_form_path.call_count == 2
 
 
 @mock.patch("fi_parliament_tools.downloads.etree")
@@ -555,7 +370,7 @@ def test_postprocessor(runner: CliRunner) -> None:
 @mock.patch("fi_parliament_tools.mptable.get_data")
 @mock.patch("fi_parliament_tools.mptable.pd.DataFrame.set_index")
 def test_mptable(
-    mocked_get_data: MagicMock, mocked_set_index: MagicMock, runner: CliRunner
+    mocked_set_index: MagicMock, mocked_get_data: MagicMock, runner: CliRunner
 ) -> None:
     """It successfully runs the mptable client."""
     with runner.isolated_filesystem():
@@ -565,3 +380,5 @@ def test_mptable(
         assert "Fetch all MP data." in result.output
         assert "Parse fetched data." in result.output
         assert "Encountered 0 non-breaking error(s)." in result.output
+        mocked_get_data.assert_called_once()
+        mocked_set_index.assert_called_once_with("mp_id")

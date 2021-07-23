@@ -16,12 +16,12 @@ from typing import Union
 import pandas as pd
 from aalto_asr_preprocessor import preprocessor
 
-from fi_parliament_tools.transcriptMatcher.IO import KaldiCTMSegmented
-from fi_parliament_tools.transcriptMatcher.IO import KaldiSegments
-from fi_parliament_tools.transcriptMatcher.IO import KaldiText
-from fi_parliament_tools.transcriptParser.data_structures import EmbeddedStatement
-from fi_parliament_tools.transcriptParser.data_structures import Statement
-from fi_parliament_tools.transcriptParser.data_structures import Transcript
+from fi_parliament_tools.parsing.data_structures import EmbeddedStatement
+from fi_parliament_tools.parsing.data_structures import Statement
+from fi_parliament_tools.parsing.data_structures import Transcript
+from fi_parliament_tools.segmentFiltering.IO import KaldiCTMSegmented
+from fi_parliament_tools.segmentFiltering.IO import KaldiSegments
+from fi_parliament_tools.segmentFiltering.IO import KaldiText
 
 Match = namedtuple("Match", "a b size")
 StatementsList = List[Union[Statement, EmbeddedStatement]]
