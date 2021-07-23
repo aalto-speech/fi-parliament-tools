@@ -1,4 +1,4 @@
-"""Test cases for the __main__, downloads, preprocessing, and postprocessing modules."""
+"""Test cases for the command line client in __main__ module."""
 import glob
 import json
 import os

@@ -1,4 +1,4 @@
-"""Test cases for the preprocessing module."""
+"""Test cases for the downloads module."""
 import shutil
 import subprocess
 from logging import Logger
