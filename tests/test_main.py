@@ -363,6 +363,7 @@ def test_postprocessor(runner: CliRunner) -> None:
         assert result.exit_code == 0
         assert "Output is logged to" in result.output
         assert "Found 3 sessions in file list, begin postprocessing." in result.output
+        assert "Session number and year not in filename:" in result.output
         assert "Finished successfully!" in result.output
         assert "Statistics of the speaker alignment" in result.output
 
