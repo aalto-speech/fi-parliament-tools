@@ -10,6 +10,14 @@ python-versions = ">=3.8,<4.0"
 click = ">=8.0.1,<9.0.0"
 
 [[package]]
+name = "about-time"
+version = "3.1.1"
+description = "Easily measure timing and throughput of code blocks, with beautiful human friendly representations."
+category = "main"
+optional = false
+python-versions = "*"
+
+[[package]]
 name = "alabaster"
 version = "0.7.12"
 description = "A configurable sidebar-enabled Sphinx theme"
@@ -19,11 +27,15 @@ python-versions = "*"
 
 [[package]]
 name = "alive-progress"
-version = "1.6.2"
-description = "A new kind of Progress Bar, with real-time throughput, eta and very cool animations!"
+version = "2.0.0"
+description = "A new kind of Progress Bar, with real time throughput, ETA and very cool animations!"
 category = "main"
 optional = false
-python-versions = ">=2.7, <4"
+python-versions = ">=3.6, <4"
+
+[package.dependencies]
+about-time = "3.1.1"
+grapheme = "0.6.0"
 
 [[package]]
 name = "appdirs"
@@ -353,6 +365,17 @@ python-versions = ">=3.6"
 
 [package.dependencies]
 gitdb = ">=4.0.1,<5"
+
+[[package]]
+name = "grapheme"
+version = "0.6.0"
+description = "Unicode grapheme helpers"
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.extras]
+test = ["pytest", "sphinx", "sphinx-autobuild", "wheel", "twine"]
 
 [[package]]
 name = "identify"
@@ -1080,20 +1103,24 @@ tests = ["codecov", "scikit-build", "cmake", "ninja", "pybind11", "pytest", "pyt
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.8"
-content-hash = "184b4f066f98ccc82051979ba2a5cb4070ddaca61033bfd122dfb7e9cdcc5a64"
+content-hash = "87665652959a353093d5de146211a24013b924c0008496eda1cd5de8e00c2197"
 
 [metadata.files]
 aalto-asr-preprocessor = [
     {file = "aalto-asr-preprocessor-2021.6.17.tar.gz", hash = "sha256:14545b4181d5b444f8b916aff1f2b2482cee15f66751a459f433ff4868c9bba0"},
     {file = "aalto_asr_preprocessor-2021.6.17-py3-none-any.whl", hash = "sha256:bd4a0ff81ffe83bab83df8c21d888327be9a348b57a1b0a4fc3f9a516d0c4650"},
 ]
+about-time = [
+    {file = "about-time-3.1.1.tar.gz", hash = "sha256:586b329450c9387d1ae8c42d2db4f5b4c57a54508d0f1b7bb00322ffd5ce9f9b"},
+    {file = "about_time-3.1.1-py3-none-any.whl", hash = "sha256:96841beb3f9b5de1cbb323d2bdb0fa9abdecbc46f2d546b9b3c2483d23daa17a"},
+]
 alabaster = [
     {file = "alabaster-0.7.12-py2.py3-none-any.whl", hash = "sha256:446438bdcca0e05bd45ea2de1668c1d9b032e1a9154c2c259092d77031ddd359"},
     {file = "alabaster-0.7.12.tar.gz", hash = "sha256:a661d72d58e6ea8a57f7a86e37d86716863ee5e92788398526d58b26a4e4dc02"},
 ]
 alive-progress = [
-    {file = "alive-progress-1.6.2.tar.gz", hash = "sha256:642e1ce98becf226c8c36bf24e10221085998c5465a357a66fb83b7dc618b43e"},
-    {file = "alive_progress-1.6.2-py3-none-any.whl", hash = "sha256:0f1111f56b1b870f5e5edd57e89fc97dc1ca0a73eb5c5a09533494c7e850a818"},
+    {file = "alive-progress-2.0.0.tar.gz", hash = "sha256:cc043d687df96767d7573d31b8a86a229c4184cefb730bd7670826a6be93b0e9"},
+    {file = "alive_progress-2.0.0-py3-none-any.whl", hash = "sha256:d6b847f6522e95a93ad41dd3cee80a41a8af9a572e5e4d624def543747670f0f"},
 ]
 appdirs = [
     {file = "appdirs-1.4.4-py2.py3-none-any.whl", hash = "sha256:a841dacd6b99318a741b166adb07e19ee71a274450e68237b4650ca1055ab128"},
@@ -1258,6 +1285,9 @@ gitdb = [
 gitpython = [
     {file = "GitPython-3.1.18-py3-none-any.whl", hash = "sha256:fce760879cd2aebd2991b3542876dc5c4a909b30c9d69dfc488e504a8db37ee8"},
     {file = "GitPython-3.1.18.tar.gz", hash = "sha256:b838a895977b45ab6f0cc926a9045c8d1c44e2b653c1fcc39fe91f42c6e8f05b"},
+]
+grapheme = [
+    {file = "grapheme-0.6.0.tar.gz", hash = "sha256:44c2b9f21bbe77cfb05835fec230bd435954275267fea1858013b102f8603cca"},
 ]
 identify = [
     {file = "identify-2.2.11-py2.py3-none-any.whl", hash = "sha256:7abaecbb414e385752e8ce02d8c494f4fbc780c975074b46172598a28f1ab839"},
