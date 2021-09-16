@@ -19,7 +19,7 @@ OUTPUT=$2
 maindir=$(pwd)
 mkdir -p $OUTPUT
 
-echo "Move and write output to $OUTPUT."
+echo "Split ctm_edits.segmented files will be written to $OUTPUT."
 cd $OUTPUT
 
 # In the below awk commands, we find the 16 chars long session identifier on each line,

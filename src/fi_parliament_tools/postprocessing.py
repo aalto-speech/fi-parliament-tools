@@ -63,7 +63,7 @@ class PostProcessingPipeline(Pipeline):
             num, year = hit.groups()
             json_file = Path(f"corpus/{year}/session-{num}-{year}.json").resolve()
             return (Path(ctm_path).resolve(), json_file, f"{num}-{year}")
-        self.errors.append(f"Session number and year not in filename: {ctm_path}. Skipped.")
+        self.log.error(f"Session number and year not in filename: {ctm_path}. Skipped.")
         return None
 
     def run(self) -> None:
