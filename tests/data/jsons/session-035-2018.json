@@ -1,11 +1,11 @@
 {
-  "number": 35,
+  "num": 35,
   "year": 2018,
   "begin_time": "2018-04-13T13:00:00",
   "subsections": [
     {
       "number": "3",
-      "title": "Lakialoite laiksi muovipakkausverosta",
+      "topic": "Lakialoite laiksi muovipakkausverosta",
       "statements": [
         {
           "type": "C",

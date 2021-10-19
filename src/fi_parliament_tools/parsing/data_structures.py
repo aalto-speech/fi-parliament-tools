@@ -119,7 +119,7 @@ class Subsection:
     """
 
     number: str
-    title: str
+    topic: str
     statements: List[Statement] = field(default_factory=list)
 
 
@@ -133,7 +133,7 @@ class Transcript:
     is further split into subsections.
     """
 
-    number: int
+    num: int
     year: int
     begin_time: str
     subsections: List[Subsection] = field(default_factory=list)

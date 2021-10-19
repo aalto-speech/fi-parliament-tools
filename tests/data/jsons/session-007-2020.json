@@ -1,11 +1,11 @@
 {
-  "number": 7,
+  "num": 7,
   "year": 2020,
   "begin_time": "2020-02-14 11:00:17",
   "subsections": [
     {
       "number": "3",
-      "title": "Lakialoite laiksi rikoslain 17 luvun muuttamisesta",
+      "topic": "Lakialoite laiksi rikoslain 17 luvun muuttamisesta",
       "statements": [
         {
           "type": "C",

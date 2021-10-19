@@ -1,11 +1,11 @@
 {
-  "number": 130,
+  "num": 130,
   "year": 2017,
   "begin_time": "2017-12-04 22:05:13.447",
   "subsections": [
     {
       "number": "2.2",
-      "title": "Muut ilmoitukset",
+      "topic": "Muut ilmoitukset",
       "statements": [
         {
           "type": "C",
@@ -35,7 +35,7 @@
     },
     {
       "number": "3",
-      "title": "Hallituksen esitys eduskunnalle laiksi toisen kotimaisen  kielen  kokeilusta perusopetuksessa",
+      "topic": "Hallituksen esitys eduskunnalle laiksi toisen kotimaisen  kielen  kokeilusta perusopetuksessa",
       "statements": [
         {
           "type": "C",
@@ -521,7 +521,7 @@
     },
     {
       "number": "8",
-      "title": "Hallituksen esitys eduskunnalle laeiksi ulkomaalaislain ja ulkomaalaisrekisteristä annetun lain 3 b §:n muuttamisesta",
+      "topic": "Hallituksen esitys eduskunnalle laeiksi ulkomaalaislain ja ulkomaalaisrekisteristä annetun lain 3 b §:n muuttamisesta",
       "statements": [
         {
           "type": "C",
