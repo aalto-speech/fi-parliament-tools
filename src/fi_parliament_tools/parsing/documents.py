@@ -503,6 +503,22 @@ class MPInfo:
             return ", ".join(pob)
         return ""
 
+    def get_districts(self) -> str:
+        """Parse the electoral districts from the MP info XML.
+
+        Returns:
+            str: electoral districts with duration and empty string if not defined
+        """
+        return None
+
+    def get_education(self) -> str:
+        """Parse the education history from the MP info XML.
+
+        Returns:
+            str: names of the educational degrees or empty string if not defined
+        """
+        return None
+
     def parse(self, mpid: int, firstname: str, lastname: str) -> MP:
         """Parse data from MP XML to MP data structure.
 

@@ -355,6 +355,41 @@ def test_get_pob(mpinfo: MPInfo, true_pob: str) -> None:
 
 
 @pytest.mark.parametrize(
+    "mpinfo, true_districts",
+    [
+        (
+            "tests/data/xmls/ahde.xml",
+            "Oulun läänin vaalipiiri (03/1970-06/1990), Oulun vaalipiiri (03/2003-04/2011)",
+        ),
+        ("tests/data/xmls/kilpi.xml", "Electoral District of Savo-Karelia (04/2019-)"),
+        ("tests/data/xmls/rehn-kivi.xml", "Electoral District of Uusimaa (08/2016-)"),
+        ("tests/data/xmls/suomela.xml", "Electoral District of Pirkanmaa (04/2019-)"),
+    ],
+    indirect=["mpinfo"],
+)
+def test_get_districts(mpinfo: MPInfo, true_districts: str) -> None:
+    """Test that electoral districts are correctly parsed from the XML."""
+    districts = mpinfo.get_districts()
+    assert districts == true_districts
+
+
+@pytest.mark.parametrize(
+    "mpinfo, true_education",
+    [
+        ("tests/data/xmls/ahde.xml", "kansakoulu, ammattikoulu, kansankorkeakoulu"),
+        ("tests/data/xmls/kilpi.xml", "Degree in policing"),
+        ("tests/data/xmls/rehn-kivi.xml", "architect"),
+        ("tests/data/xmls/suomela.xml", ""),
+    ],
+    indirect=["mpinfo"],
+)
+def test_get_education(mpinfo: MPInfo, true_education: str) -> None:
+    """Test that degree names and education are correctly parsed from the XML."""
+    education = mpinfo.get_education()
+    assert education == true_education
+
+
+@pytest.mark.parametrize(
     "mpinfo, mpid, firstname, lastname, true_mp",
     [
         ("tests/data/xmls/ahde.xml", 103, "Matti", "Ahde", 0),
