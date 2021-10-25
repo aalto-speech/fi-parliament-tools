@@ -25,10 +25,10 @@ def build_table(get_english: bool, update_old: bool, log: Logger) -> None:
     new_table = parse_mp_data(data, get_english)
     if Path("generated/mp-table.csv").exists():
         log.info("Existing table found at 'generated/mp-table.csv'.")
-        old_table = pd.read_csv("generated/mp-table.csv", sep=":", index_col="mp_id")
+        old_table = pd.read_csv("generated/mp-table.csv", sep="|", index_col="mp_id")
         new_table = add_new_mps(old_table, new_table, log, update_old=update_old)
     log.info("Saving resulting table to 'generated/mp-table.csv'.")
-    new_table.to_csv("generated/mp-table.csv", sep=":")
+    new_table.to_csv("generated/mp-table.csv", sep="|")
 
 
 def get_data() -> List[List[str]]:

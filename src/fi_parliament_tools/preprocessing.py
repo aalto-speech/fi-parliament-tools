@@ -53,7 +53,7 @@ class PreprocessingPipeline(Pipeline):
         self.transcript_paths = [Path(path).resolve() for path in transcript_paths]
         self.lid = fasttext.load_model(lid_model)
         self.recipe = recipe
-        self.mptable = pd.read_csv(mptable, sep=":", index_col="mp_id")
+        self.mptable = pd.read_csv(mptable, sep="|", index_col="mp_id")
 
     def load_transcript(self, path: Path) -> Transcript:
         """Load Transcript object from a JSON file at input path.
