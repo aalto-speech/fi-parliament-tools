@@ -223,6 +223,7 @@ embedded_statements = [
     },
 ]
 
+
 mps = [
     MP(
         103,
@@ -235,6 +236,8 @@ mps = [
         "",
         "",
         "Oulu",
+        "Oulun läänin vaalipiiri (03/1970-06/1990), Oulun vaalipiiri (03/2003-04/2011)",
+        "kansakoulu, ammattikoulu, kansankorkeakoulu",
     ),
     MP(
         1432,
@@ -247,6 +250,8 @@ mps = [
         "police officer, writer",
         "Kuopio",
         "Rovaniemi",
+        "Electoral District of Savo-Karelia (04/2019-)",
+        "Degree in policing",
     ),
     MP(
         1374,
@@ -259,6 +264,8 @@ mps = [
         "architect, building supervision manager",
         "Kauniainen",
         "Helsinki",
+        "Electoral District of Uusimaa (08/2016-)",
+        "architect",
     ),
     MP(
         1423,
@@ -270,6 +277,8 @@ mps = [
         "Green Parliamentary Group",
         "student of social sciences",
         "Tampere",
+        "",
+        "Electoral District of Pirkanmaa (04/2019-)",
         "",
     ),
 ]

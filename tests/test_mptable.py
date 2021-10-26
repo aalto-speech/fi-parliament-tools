@@ -78,13 +78,13 @@ def test_build_table(
     mptable.build_table(True, False, logger)
     assert mocked_get_data.call_count == 2
     assert mock_path_exists.call_count == 2
-    mocked_read.assert_called_once_with("generated/mp-table.csv", sep=":", index_col="mp_id")
+    mocked_read.assert_called_once_with("generated/mp-table.csv", sep="|", index_col="mp_id")
     mocked_add_new.assert_called_once_with(
         mocked_read.return_value, mocked_parse.return_value, logger, update_old=False
     )
     mocked_parse.assert_called_with(mocked_get_data.return_value, True)
-    mocked_add_new().to_csv.assert_called_once_with("generated/mp-table.csv", sep=":")
-    mocked_parse().to_csv.assert_called_once_with("generated/mp-table.csv", sep=":")
+    mocked_add_new().to_csv.assert_called_once_with("generated/mp-table.csv", sep="|")
+    mocked_parse().to_csv.assert_called_once_with("generated/mp-table.csv", sep="|")
 
 
 def test_get_data(mock_mpquery_get_full_table: MagicMock) -> None:

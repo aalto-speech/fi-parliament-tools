@@ -154,13 +154,25 @@ class MP:
     """A member of parliament data structure for saving basic information about an MP.
 
     Gender is either 'm' for male or 'f' for female. Language refers to mother tongue, either
-    Finnish or Swedish. Party field contains the party the MP represents at the time this object
-    is created. Profession field may contain multiple different professions and/or the highest
-    educational degree the MP holds.
+    Finnish (fi) or Swedish (sv). Party field contains the party the MP represents at the time
+    this object is created. Profession field may contain multiple different professions and/or
+    the highest educational degree the MP holds.
 
     City field contains the municipality the MP currently resides in. Place of birth (pob) defines
     the municipality/city the MP was born in. Pob-field may contain a foreign city or a
     (Finnish) municipality that has ceased to exist.
+
+    Electoral districts are listed by their name and duration. Duration in this case means, how
+    long the MP represented that particular district. Duration may also be open-ended in the case
+    of current MPs. Many districts have had name changes in the past. An example of the districts
+    field content:
+
+    'Electoral District of Helsinki (04/2015-), Helsinki constituency (03/1991-03/1999), Electoral
+    District of Helsinki (03/1999-12/2006)'
+
+    Education field can be empty or contain one or more degree/profession names. For example:
+
+    'matriculated, nurse, Master of Social Sciences'
     """
 
     __slots__ = [
@@ -174,6 +186,8 @@ class MP:
         "profession",
         "city",
         "pob",
+        "districts",
+        "education",
     ]
     mp_id: int
     firstname: str
@@ -185,6 +199,8 @@ class MP:
     profession: str
     city: str
     pob: str
+    districts: str
+    education: str
 
 
 def decode_transcript(
