@@ -374,6 +374,25 @@ def test_get_districts(mpinfo: MPInfo, true_districts: str) -> None:
 
 
 @pytest.mark.parametrize(
+    "mpinfo, true_district_dates",
+    [
+        ("tests/data/xmls/ahde.xml", ["(03/1970-06/1990)", "(03/2003-04/2011)"]),
+        ("tests/data/xmls/kilpi.xml", ["(04/2019-)"]),
+        ("tests/data/xmls/rehn-kivi.xml", ["(08/2016-)"]),
+        ("tests/data/xmls/suomela.xml", ["(04/2019-)"]),
+    ],
+    indirect=["mpinfo"],
+)
+def test_get_district_date_range(mpinfo: MPInfo, true_district_dates: List[str]) -> None:
+    """Test that the date range for electoral district is correctly parsed from the XML."""
+    districts = mpinfo.xml.xpath("./Vaalipiirit/*[contains(name(),'Vaalipiiri')]")
+    district_dates = [
+        date for district in districts for date in mpinfo.get_district_date_range(district)
+    ]
+    assert district_dates == true_district_dates
+
+
+@pytest.mark.parametrize(
     "mpinfo, true_education",
     [
         ("tests/data/xmls/ahde.xml", "kansakoulu, ammattikoulu, kansankorkeakoulu"),
