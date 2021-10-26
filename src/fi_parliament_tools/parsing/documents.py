@@ -129,7 +129,7 @@ class Session:
             xml_element (etree._Element): speech part of a speaker statement ('PuheenvuoroOsa')
 
         Returns:
-            list: the statement split into a list of paragraph strings
+            List[str]: the statement split into a list of paragraph strings
         """
         text = xml_element.xpath(
             '. /*[local-name() = "KohtaSisalto"]/*[local-name() = "KappaleKooste"]/text()'
@@ -212,7 +212,7 @@ class Session:
             xml_element (etree._Element): a speaker turn ('PuheenvuoroToimenpide')
 
         Returns:
-            Statement: a data object that contains all speaker statement data
+            List[Statement]: a data object that contains all speaker statement data
         """
         [speaker_element] = xml_element.xpath(". /*[local-name() = 'Toimija']")
         speech_elements = xml_element.xpath(". /*[local-name() = 'PuheenvuoroOsa']")
@@ -241,7 +241,7 @@ class Session:
 
         Args:
             xml_element (etree._Element): speech part of a speaker statement ('PuheenvuoroOsa')
-            main_text (list): text paragraphs of the main statement
+            main_text (List[str]): text paragraphs of the main statement
 
         Returns:
             EmbeddedStatement: an object that contains all the embedded statement data
@@ -503,6 +503,44 @@ class MPInfo:
             return ", ".join(pob)
         return ""
 
+    def get_districts(self) -> str:
+        """Parse the electoral districts from the MP info XML.
+
+        Returns:
+            str: electoral districts with duration and empty string if not defined
+        """
+        districts = self.xml.xpath("./Vaalipiirit/*[contains(name(),'Vaalipiiri')]")
+        names = [name for district in districts for name in district.xpath(".//Nimi/text()")]
+        dates = [date for district in districts for date in self.get_district_date_range(district)]
+        return ", ".join([f"{n} {d}" for n, d in zip(names, dates)])
+
+    def get_district_date_range(self, xml_element: etree._Element) -> List[str]:
+        """Parse the electoral district start and end dates into a date range.
+
+        Args:
+            xml_element (etree._Element): XML element with the electoral district info
+
+        Returns:
+            List[str]: parsed date ranges or empty list if no dates found
+        """
+        if start := xml_element.xpath(".//AlkuPvm/text()"):
+            start = [re.sub(r"\d{2}.(\d{2}).(\d{4})", r"\1/\2", s) for s in start]
+        if end := xml_element.xpath(".//LoppuPvm/text()"):
+            end = [re.sub(r"\d{2}.(\d{2}).(\d{4})", r"\1/\2", e) for e in end]
+        if len(end) == 0 and len(start) > len(end):
+            end = [""]
+        return [f"({s}-{e})" for s, e in zip(start, end)]
+
+    def get_education(self) -> str:
+        """Parse the education history from the MP info XML.
+
+        Returns:
+            str: names of the educational degrees or empty string if not defined
+        """
+        if education := self.xml.xpath("./Koulutukset/Koulutus/Nimi/text()"):
+            return ", ".join(education)
+        return ""
+
     def parse(self, mpid: int, firstname: str, lastname: str) -> MP:
         """Parse data from MP XML to MP data structure.
 
@@ -517,11 +555,17 @@ class MPInfo:
         Returns:
             MP: an object that contains all parsed info
         """
-        gender = self.get_gender()
-        lang = self.get_language()
-        birthyear = self.get_birthyear()
-        party = self.get_party()
-        profession = self.get_profession()
-        city = self.get_city()
-        pob = self.get_pob()
-        return MP(mpid, firstname, lastname, gender, lang, birthyear, party, profession, city, pob)
+        return MP(
+            mpid,
+            firstname,
+            lastname,
+            self.get_gender(),
+            self.get_language(),
+            self.get_birthyear(),
+            self.get_party(),
+            self.get_profession(),
+            self.get_city(),
+            self.get_pob(),
+            self.get_districts(),
+            self.get_education(),
+        )

@@ -355,6 +355,60 @@ def test_get_pob(mpinfo: MPInfo, true_pob: str) -> None:
 
 
 @pytest.mark.parametrize(
+    "mpinfo, true_districts",
+    [
+        (
+            "tests/data/xmls/ahde.xml",
+            "Oulun läänin vaalipiiri (03/1970-06/1990), Oulun vaalipiiri (03/2003-04/2011)",
+        ),
+        ("tests/data/xmls/kilpi.xml", "Electoral District of Savo-Karelia (04/2019-)"),
+        ("tests/data/xmls/rehn-kivi.xml", "Electoral District of Uusimaa (08/2016-)"),
+        ("tests/data/xmls/suomela.xml", "Electoral District of Pirkanmaa (04/2019-)"),
+    ],
+    indirect=["mpinfo"],
+)
+def test_get_districts(mpinfo: MPInfo, true_districts: str) -> None:
+    """Test that electoral districts are correctly parsed from the XML."""
+    districts = mpinfo.get_districts()
+    assert districts == true_districts
+
+
+@pytest.mark.parametrize(
+    "mpinfo, true_district_dates",
+    [
+        ("tests/data/xmls/ahde.xml", ["(03/1970-06/1990)", "(03/2003-04/2011)"]),
+        ("tests/data/xmls/kilpi.xml", ["(04/2019-)"]),
+        ("tests/data/xmls/rehn-kivi.xml", ["(08/2016-)"]),
+        ("tests/data/xmls/suomela.xml", ["(04/2019-)"]),
+    ],
+    indirect=["mpinfo"],
+)
+def test_get_district_date_range(mpinfo: MPInfo, true_district_dates: List[str]) -> None:
+    """Test that the date range for electoral district is correctly parsed from the XML."""
+    districts = mpinfo.xml.xpath("./Vaalipiirit/*[contains(name(),'Vaalipiiri')]")
+    district_dates = [
+        date for district in districts for date in mpinfo.get_district_date_range(district)
+    ]
+    assert district_dates == true_district_dates
+
+
+@pytest.mark.parametrize(
+    "mpinfo, true_education",
+    [
+        ("tests/data/xmls/ahde.xml", "kansakoulu, ammattikoulu, kansankorkeakoulu"),
+        ("tests/data/xmls/kilpi.xml", "Degree in policing"),
+        ("tests/data/xmls/rehn-kivi.xml", "architect"),
+        ("tests/data/xmls/suomela.xml", ""),
+    ],
+    indirect=["mpinfo"],
+)
+def test_get_education(mpinfo: MPInfo, true_education: str) -> None:
+    """Test that degree names and education are correctly parsed from the XML."""
+    education = mpinfo.get_education()
+    assert education == true_education
+
+
+@pytest.mark.parametrize(
     "mpinfo, mpid, firstname, lastname, true_mp",
     [
         ("tests/data/xmls/ahde.xml", 103, "Matti", "Ahde", 0),
