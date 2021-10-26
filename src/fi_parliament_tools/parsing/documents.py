@@ -555,11 +555,17 @@ class MPInfo:
         Returns:
             MP: an object that contains all parsed info
         """
-        gender = self.get_gender()
-        lang = self.get_language()
-        birthyear = self.get_birthyear()
-        party = self.get_party()
-        profession = self.get_profession()
-        city = self.get_city()
-        pob = self.get_pob()
-        return MP(mpid, firstname, lastname, gender, lang, birthyear, party, profession, city, pob)
+        return MP(
+            mpid,
+            firstname,
+            lastname,
+            self.get_gender(),
+            self.get_language(),
+            self.get_birthyear(),
+            self.get_party(),
+            self.get_profession(),
+            self.get_city(),
+            self.get_pob(),
+            self.get_districts(),
+            self.get_education(),
+        )
