@@ -125,7 +125,7 @@ class XMLCombiner(object):
     def __init__(self, main_xml: str):
         """Initialize the combined XML by using the main document XML as base."""
         self.root = etree.fromstring(main_xml)
-        self.subsections = self.root.xpath("//*[local-name() = 'Asiakohta']")
+        self.subsections: Any = self.root.xpath("//*[local-name() = 'Asiakohta']")
 
     def combine(self) -> str:
         """Replace subsection elements in the main transcript with corresponding subsection XMLs.
@@ -135,10 +135,10 @@ class XMLCombiner(object):
         """
         for subsec in self.subsections:
             if num := subsec.xpath("string(. /*[local-name() = 'KohtaNumero']/text())"):
-                [main_id] = self.root.xpath(
+                main_id: Any = self.root.xpath(
                     "//*[local-name() = 'Poytakirja']/@*[local-name() = 'eduskuntaTunnus']"
                 )
-                self.replace_element(main_id[:-3] + f"/{num} vp", subsec)
+                self.replace_element(main_id[0][:-3] + f"/{num} vp", subsec)
         xml_string: str = etree.tostring(self.root, encoding="unicode")
         return xml_string
 
@@ -150,9 +150,10 @@ class XMLCombiner(object):
             subsec: subsection element in the main XML
         """
         if xml_str := VaskiQuery(doc_id, doc_type="RecordArticle").get_xml():
-            sub_xml = etree.fromstring(xml_str)
+            sub_xml: Any = etree.fromstring(xml_str)
             [replacement] = sub_xml.xpath("//*[local-name() = 'Asiakohta']")
-            subsec.getparent().replace(subsec, replacement)
+            parent: Any = subsec.getparent()
+            parent.replace(subsec, replacement)
 
 
 class SessionQuery(Query):

@@ -56,7 +56,9 @@ def session(request: SubRequest) -> Session:
     number: int
     year: int
     number, year = request.param
-    xml = etree.parse(f"tests/data/xmls/session-{number:03}-{year}.xml")
+    xml_path = f"tests/data/xmls/session-{number:03}-{year}.xml"
+    with open(xml_path, "r", encoding="utf-8", newline="") as infile:
+        xml = etree.fromstring(infile.read())
     return Session(number, year, xml)
 
 
@@ -64,7 +66,8 @@ def session(request: SubRequest) -> Session:
 def mpinfo(request: SubRequest) -> MPInfo:
     """Initialize and return an MPInfo object for given XML."""
     xml_path = request.param
-    xml = etree.parse(xml_path)
+    with open(xml_path, "r", encoding="utf-8", newline="") as infile:
+        xml = etree.fromstring(infile.read())
     return MPInfo(xml)
 
 
