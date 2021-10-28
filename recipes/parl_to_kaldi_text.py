@@ -406,7 +406,7 @@ REGEXPS = [
         r"((?:\d+(?: [a-z])?, )*\d+(?: [a-z])?(?:—|-| ja ))?(\d+(?: *[a-z])?) *§:?([a-zåäö]*)",
         expand_numbers_with_section_sign,
     ),
-    (r"§:?([a-zåäö])", expand_section_sign),
+    (r"§:?([a-zåäö]+)", expand_section_sign),
     # Ruotsinkielisessä tekstissä pykälämerkki tulee ennen numeroa. Käsitellään toistaiseksi näin
     # koska pelkällä poistolla virheet edellisessä regexpissä jäävät huomaamatta = This format
     # appears in Swedish texts, handle like this for now so errors with above regexp aren't missed
@@ -512,6 +512,8 @@ TRANSLATIONS = {
     "ş": "s",
     "ß": "ss",
     "ž": "z",
+    "ğ": "g",
+    "ł": "l",
     # Weird special characters encountered in Swedish text
     "ı": "i",
     "ﬁ": "fi",
