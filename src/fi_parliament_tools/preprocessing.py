@@ -90,14 +90,14 @@ class PreprocessingPipeline(Pipeline):
                 transcript = self.load_transcript(path)
                 with atomic_write(path.with_suffix(".text"), mode="w", encoding="utf-8") as textf:
                     bytecount = textf.write(path.stem)
-                    transcript, unique_words = self.preprocess_transcript(transcript, textf)
+                    transcript, unique_words = self.preprocess_transcript(transcript, textf, path)
                     if textf.tell() == bytecount:
                         self.log.warning(f"Preprocessing output was empty for {path.stem}.")
                 self.write_transcript_and_words(path, transcript, unique_words)
                 bar()
 
     def preprocess_transcript(
-        self, transcript: Transcript, textfile: IO[Any]
+        self, transcript: Transcript, textfile: IO[Any], path: Path
     ) -> Tuple[Transcript, Set[str]]:
         """Preprocess transcript for segmentation.
 
@@ -109,6 +109,7 @@ class PreprocessingPipeline(Pipeline):
         Args:
             transcript (Transcript): transcript to update
             textfile (IO[Any]): a file handle for writing output
+            path: (Path): path to the input JSON
 
         Returns:
             Tuple[Transcript, Set[str]]: preprocessed transcript and a set of unique words in it
@@ -117,8 +118,8 @@ class PreprocessingPipeline(Pipeline):
         for sub in transcript.subsections:
             for statement in sub.statements:
                 self.recognize_language(statement)
-                self.update_missing_mpids(statement, textfile.name.replace("text", "json"))
-                new_words = self.preprocess_statement(statement, textfile)
+                self.update_missing_mpids(statement, path)
+                new_words = self.preprocess_statement(statement, textfile, path)
                 unique_words = unique_words.union(new_words)
         return transcript, unique_words
 
@@ -156,12 +157,12 @@ class PreprocessingPipeline(Pipeline):
             label = "sv.p"
         return label
 
-    def update_missing_mpids(self, statement: Statement, path: str) -> None:
+    def update_missing_mpids(self, statement: Statement, path: Path) -> None:
         """Update missing MP id value in statement and its embedded statement.
 
         Args:
             statement (Statement): statement to update
-            path (str): transcript JSON path for logging needs
+            path (Path): transcript JSON path for logging needs
         """
         try:
             if statement.mp_id == 0 and statement.firstname:
@@ -197,7 +198,7 @@ class PreprocessingPipeline(Pipeline):
             )
         return int(lookup[0])
 
-    def preprocess_statement(self, statement: Statement, textfile: IO[Any]) -> Set[str]:
+    def preprocess_statement(self, statement: Statement, textfile: IO[Any], path: Path) -> Set[str]:
         """Preprocess and write statement to a file given a recipe and return unique Finnish words.
 
         Note that some words in Swedish and other languages will get included in the word lists
@@ -208,6 +209,7 @@ class PreprocessingPipeline(Pipeline):
         Args:
             statement (Statement): a statement to preprocess
             textfile (IO[Any]): a file handle for writing output
+            path (Path): path to the file being processed
 
         Returns:
             Set[str]: a set of unique Finnish words within the statement
@@ -223,12 +225,12 @@ class PreprocessingPipeline(Pipeline):
             if "fi" in statement.language:
                 return set(txt.split())
         except preprocessor.UnacceptedCharsError as e:
-            self.log.debug(f"Error message for {textfile.name}:\n {e}")
-            self.errors.append(f"UnacceptedCharsError in {textfile.name}. See log for debug info.")
+            self.log.debug(f"Error message for {path}:\n {e}")
+            self.errors.append(f"UnacceptedCharsError in {path}. See log for debug info.")
         except Exception as e:
             self.log.exception(
-                f"Preprocessing failed in {textfile.name} in statement beginning at "
+                f"Preprocessing failed in {path} in statement beginning at "
                 f"'{statement.start_time}' with error message:\n {e}."
             )
-            self.errors.append(f"Caught an exception in {textfile.name}.")
+            self.errors.append(f"Caught an exception in {path}.")
         return set()
