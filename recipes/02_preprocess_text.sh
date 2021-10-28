@@ -2,25 +2,28 @@
 
 export LC_ALL=C
 
-if [ $# -ne 3 ]; then
-    echo "Usage: recipes/02_preprocess_text.sh <transcript_list> <lid_model> <recipe> <corpus_dir>"
-    echo "e.g.: $0 transcripts.list recipes/lid.176.bin recipes/parl_to_kaldi_text.py"
-    echo "/path/to/corpus_folder"
+if [ $# -ne 5 ]; then
+    echo "Usage: recipes/02_preprocess_text.sh <transcript_list> <lid_model> <mptable> <recipe>"
+    echo "                                     <corpus_dir>"
+    echo "e.g.: $0 transcripts.list recipes/lid.176.bin generated/mp-table.csv"
+    echo "      recipes/parl_to_kaldi_text.py corpus/"
     echo
     echo "Preprocess parliament JSON transcripts in <transcript_list>. Use <lid_model> to"
-    echo "recognize language in statements without language label. Use <recipe> to convert"
-    echo "original transcript text into Kaldi text. Also write lists of all the unique"
-    echo "(Finnish) words that appear in the transcripts to .words files in <corpus_dir>."
-    echo "To see examples of how to easily create the <transcript_list> file, see"
-    echo "comments in this script."
+    echo "recognize language in statements without language label. Use <mptable> to update"
+    echo "missing MP ids in the transcripts. Use <recipe> to convert original transcript text"
+    echo "into Kaldi text."
+    echo "Also write lists of all the unique (Finnish) words that appear in the transcripts to"
+    echo ".words files in <corpus_dir>. To see examples of how to easily create the "
+    echo "<transcript_list> file, see the comments in this script."
     echo
     exit 1
 fi
 
 TRANSCRIPT_FILES=$1
 LID_MODEL=$2
-RECIPE=$3
-CORPUS_DIR=$4
+MPTABLE=$3
+RECIPE=$4
+CORPUS_DIR=$5
 
 # Examples of commands that can be used to generate the transcript file list automatically:
 
@@ -40,7 +43,7 @@ CORPUS_DIR=$4
 # find $CORPUS_DIR -type f -name "*.wav" -ctime -3 | sed "s/wav/json/" > transcripts.list
 
 # Call preprocessing script
-poetry run fi-parliament-tools preprocess $TRANSCRIPT_FILES $LID_MODEL $RECIPE
+poetry run fi-parliament-tools preprocess $TRANSCRIPT_FILES $LID_MODEL $MPTABLE $RECIPE
 
 # Sort all word files on their own first (Just printing all files to stdout with cat and sorting the
 # stdout does not work. Some words vanish in the process for unknown reason unless files are
