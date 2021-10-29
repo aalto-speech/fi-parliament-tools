@@ -14,6 +14,9 @@ fi
 SOURCE_DIR=$1
 REMOTE_DIR=$2
 
+# Ensure read and write permissions for file owner and team members
+find corpus/ -user $(echo $USER) -exec chmod ug+rw {} \;
+
 echo "Start by synchronizing wav and (preprocessed) text files first because it is much faster."
 rsync -Phauvz --include "*/" --include "*.wav" --include "*.text" --exclude "*" -e "ssh" --chmod=g+s,g+rw --group=t405-puhe $SOURCE_DIR $REMOTE_DIR
 

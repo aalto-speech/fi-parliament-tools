@@ -65,3 +65,6 @@ comm -23 <(sort -u $UNFILTERED) <(sort -u recipes/swedish_words.txt) >new_vocab
 echo "Clean up and finish."
 rm $TRANSCRIPT_FILES $UNFILTERED
 find $CORPUS_DIR -type f -name "*.words" -delete
+
+# Ensure read and write permissions for file owner and team members
+find corpus/ -user $(echo $USER) -exec chmod ug+rw {} \;
