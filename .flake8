@@ -6,3 +6,5 @@ max-line-length = 100
 application-import-names = fi_parliament_tools,tests
 import-order-style = google
 per-file-ignores = tests/*:S101
+rst-roles = class,const,func,meth,mod,ref
+rst-directives = deprecated
