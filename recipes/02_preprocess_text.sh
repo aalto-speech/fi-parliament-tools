@@ -43,7 +43,7 @@ CORPUS_DIR=$5
 # find $CORPUS_DIR -type f -name "*.wav" -ctime -3 | sed "s/wav/json/" > transcripts.list
 
 # Call preprocessing script
-poetry run fi-parliament-tools preprocess $TRANSCRIPT_FILES $LID_MODEL $MPTABLE $RECIPE
+fi-parliament-tools preprocess $TRANSCRIPT_FILES $LID_MODEL $MPTABLE $RECIPE
 
 # Sort all word files on their own first (Just printing all files to stdout with cat and sorting the
 # stdout does not work. Some words vanish in the process for unknown reason unless files are

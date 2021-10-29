@@ -15,4 +15,4 @@ fi
 SEGMENTS_LIST=$1
 RECIPE=$2
 
-poetry run fi-parliament-tools postprocess $SEGMENTS_LIST $RECIPE
+fi-parliament-tools postprocess $SEGMENTS_LIST $RECIPE

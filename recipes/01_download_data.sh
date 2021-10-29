@@ -17,7 +17,7 @@ if [ ! -d corpus ]; then
 fi
 
 # An example of how to use the download client (use --help handle to find out more)
-poetry run fi-parliament-tools download --start_session $START --end_session $END
+fi-parliament-tools download --start_session $START --end_session $END
 
 echo "Next, compare the length of all audio files to their corresponding video file."
 echo "Video download may have failed if the difference is over a minute."
