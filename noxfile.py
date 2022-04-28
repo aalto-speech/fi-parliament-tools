@@ -98,7 +98,18 @@ def safety(session: Session) -> None:
     """Check dependencies for security vulnerabilities using Safety."""
     requirements = session.poetry.export_requirements()
     session.install("safety")
-    session.run("safety", "check", f"--file={requirements}", "--bare")
+    session.run(
+        "safety",
+        "check",
+        f"--file={requirements}",
+        "--bare",
+        "-i",
+        "44715",
+        "-i",
+        "44716",
+        "-i",
+        "44717",
+    )  # Ignore safety warnings about numpy to update dependencies, remove later
 
 
 @session(python=python_versions)
