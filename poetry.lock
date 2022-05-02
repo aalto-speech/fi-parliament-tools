@@ -27,11 +27,11 @@ python-versions = "*"
 
 [[package]]
 name = "alive-progress"
-version = "2.1.0"
-description = "A new kind of Progress Bar, with real time throughput, ETA and very cool animations!"
+version = "2.4.1"
+description = "A new kind of Progress Bar, with real-time throughput, ETA, and very cool animations!"
 category = "main"
 optional = false
-python-versions = ">=3.6, <4"
+python-versions = ">=3.7, <4"
 
 [package.dependencies]
 about-time = "3.1.1"
@@ -1094,7 +1094,7 @@ tests = ["cmake", "codecov", "ninja", "pybind11", "pytest-cov", "pytest-cov", "p
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.8"
-content-hash = "b646654c7547f395af8fa1ff8789cc289c8f49731f5b87c02d4fa27f7c95a172"
+content-hash = "ec1ca735c037157715ee1756ef24051030dae5c7e014ea8be264ce509852cf46"
 
 [metadata.files]
 aalto-asr-preprocessor = [
@@ -1110,8 +1110,8 @@ alabaster = [
     {file = "alabaster-0.7.12.tar.gz", hash = "sha256:a661d72d58e6ea8a57f7a86e37d86716863ee5e92788398526d58b26a4e4dc02"},
 ]
 alive-progress = [
-    {file = "alive-progress-2.1.0.tar.gz", hash = "sha256:c418ccbf9b900b25b156db3978e9e2bc740c6c7f1db470da323b7f6c33808d68"},
-    {file = "alive_progress-2.1.0-py3-none-any.whl", hash = "sha256:d3e235335593df70a0cbec497d7429ba014ab65186d1e37717256eeb0a7d0585"},
+    {file = "alive-progress-2.4.1.tar.gz", hash = "sha256:089757c8197f27ad972ba27e1060f6db92368d83c736884e159034fd74865323"},
+    {file = "alive_progress-2.4.1-py3-none-any.whl", hash = "sha256:5503ffca0a0607d5f0d24d3b10a718fe50e375470fa07602b246333eb7ec88ee"},
 ]
 "aspy.refactor-imports" = [
     {file = "aspy.refactor_imports-3.0.1-py2.py3-none-any.whl", hash = "sha256:bc257946fdf5abd9c60393cfb8d0b5d45a2b87d1ee0ede46584c8be5567bc669"},
