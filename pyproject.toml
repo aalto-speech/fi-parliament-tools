@@ -46,7 +46,7 @@ sphinx-autobuild = "^2021.3.14"
 sphinx-click = "^4.0.3"
 sphinx-rtd-theme = "^1.0.0"
 typeguard = "^2.13.3"
-xdoctest = {extras = ["colors"], version = "^0.15.9"}
+xdoctest = {extras = ["colors"], version = "^1.0.0"}
 
 [tool.poetry.scripts]
 fi-parliament-tools = "fi_parliament_tools.__main__:main"
