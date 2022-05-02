@@ -160,12 +160,15 @@ class KaldiText(KaldiFile):
         self.df = self.get_df()
 
     def get_df(self) -> pd.DataFrame:
-        """Convert data in the file into a DataFrame that can be used in postprocessing.
+        r"""Convert data in the file into a DataFrame that can be used in postprocessing.
+
+        Since pandas 1.4.0, `\n` is not accepted as line separator anymore. It is replaced with
+        regex end of line character `$`.
 
         Returns:
             pd.DataFrame: prepared DataFrame
         """
-        df = self.load(separator="\n")
+        df = self.load(separator="$")
         split = df.uttid.str.split(" ", n=1, expand=True)
         df.uttid = split[0]
         df = df.assign(text=split[1], new_uttid="")
