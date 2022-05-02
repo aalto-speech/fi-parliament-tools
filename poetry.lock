@@ -1,6 +1,6 @@
 [[package]]
 name = "aalto-asr-preprocessor"
-version = "2021.6.17"
+version = "2022.4.27"
 description = "Aalto ASR preprocessing tool for preparing texts."
 category = "main"
 optional = false
@@ -1123,12 +1123,12 @@ testing = ["pytest (>=6)", "pytest-checkdocs (>=2.4)", "pytest-flake8", "pytest-
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.8"
-content-hash = "c08b921b18a0741870bf7fc36966404efc3b27f8e9d85e97c0e66ce435312f64"
+content-hash = "b7ef786ce66db8982f57e115052c5aafbe488a245f56b0faf5a7964488b2a797"
 
 [metadata.files]
 aalto-asr-preprocessor = [
-    {file = "aalto-asr-preprocessor-2021.6.17.tar.gz", hash = "sha256:14545b4181d5b444f8b916aff1f2b2482cee15f66751a459f433ff4868c9bba0"},
-    {file = "aalto_asr_preprocessor-2021.6.17-py3-none-any.whl", hash = "sha256:bd4a0ff81ffe83bab83df8c21d888327be9a348b57a1b0a4fc3f9a516d0c4650"},
+    {file = "aalto-asr-preprocessor-2022.4.27.tar.gz", hash = "sha256:719a8d21d4673b586a9d894327f6a7f33bbed809e0a6cc46a953342418a231a3"},
+    {file = "aalto_asr_preprocessor-2022.4.27-py3-none-any.whl", hash = "sha256:af0a64075b18aa0a19b3e3fa75e4512416283efedcf00eb78f6576632f064d89"},
 ]
 about-time = [
     {file = "about-time-3.1.1.tar.gz", hash = "sha256:586b329450c9387d1ae8c42d2db4f5b4c57a54508d0f1b7bb00322ffd5ce9f9b"},
