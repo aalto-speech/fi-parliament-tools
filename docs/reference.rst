@@ -1,10 +1,6 @@
 Reference
 =========
 
-.. contents::
-   :local:
-   :backlinks: none
-
 
 fi_parliament_tools.__main__
 ----------------------------
@@ -55,6 +51,12 @@ fi_parliament_tools.video_query
    :members:
 
 
+fi_parliament_tools.parsing
+---------------------------
+
+.. automodule:: fi_parliament_tools.parsing
+
+
 fi_parliament_tools.parsing.data_structures
 -------------------------------------------
 
@@ -74,6 +76,12 @@ fi_parliament_tools.parsing.query
 
 .. automodule:: fi_parliament_tools.parsing.query
    :members:
+
+
+fi_parliament_tools.segmentFiltering
+------------------------------------
+
+.. automodule:: fi_parliament_tools.segmentFiltering
 
 
 fi_parliament_tools.segmentFiltering.IO
