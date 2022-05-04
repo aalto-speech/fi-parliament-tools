@@ -9,6 +9,7 @@ from typing import Tuple
 
 import aalto_asr_preprocessor.fi.numbers.expansion as num_fi
 
+
 SUFFIX_MAPPING: Dict[str, List[str]] = {
     "NOM": ["han", "hän", "kaan", "kään", "ko", "kö", "kin", "pa", "pä"],
     "PAR": ["a", "ä", "aa", "ää", "ta", "taa", "tta", "tä"],

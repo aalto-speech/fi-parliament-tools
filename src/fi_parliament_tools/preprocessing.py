@@ -3,8 +3,8 @@ import json
 from dataclasses import asdict
 from logging import Logger
 from pathlib import Path
-from typing import Any
 from typing import IO
+from typing import Any
 from typing import List
 from typing import Set
 from typing import Tuple
@@ -17,11 +17,12 @@ from aalto_asr_preprocessor import preprocessor
 from alive_progress import alive_bar
 from atomicwrites import atomic_write
 
-from fi_parliament_tools.parsing.data_structures import decode_transcript
 from fi_parliament_tools.parsing.data_structures import EmbeddedStatement
 from fi_parliament_tools.parsing.data_structures import Statement
 from fi_parliament_tools.parsing.data_structures import Transcript
+from fi_parliament_tools.parsing.data_structures import decode_transcript
 from fi_parliament_tools.pipeline import Pipeline
+
 
 FastTextModel = Type[fasttext.FastText._FastText]
 

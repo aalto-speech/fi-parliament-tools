@@ -11,6 +11,7 @@ from _pytest.fixtures import SubRequest
 
 from fi_parliament_tools.parsing.data_structures import MP
 
+
 chairman_texts = [
     "Ilmoitetaan, että valiokuntien ja kansliatoimikunnan vaalit toimitetaan ensi tiistaina 5. "
     "päivänä toukokuuta kello 14 pidettävässä täysistunnossa. Ehdokaslistat näitä vaaleja varten "

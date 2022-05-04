@@ -18,6 +18,7 @@ from fi_parliament_tools.pipeline import Pipeline
 from fi_parliament_tools.segmentFiltering import IO
 from fi_parliament_tools.segmentFiltering import labeler
 
+
 STATS_COLUMNS = [
     "length",
     "statements",

@@ -7,8 +7,8 @@ from typing import Tuple
 
 from lxml import etree
 
-from fi_parliament_tools.parsing.data_structures import EmbeddedStatement
 from fi_parliament_tools.parsing.data_structures import MP
+from fi_parliament_tools.parsing.data_structures import EmbeddedStatement
 from fi_parliament_tools.parsing.data_structures import Statement
 from fi_parliament_tools.parsing.data_structures import Subsection
 from fi_parliament_tools.parsing.data_structures import Transcript

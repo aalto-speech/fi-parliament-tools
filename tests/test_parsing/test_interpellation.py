@@ -5,6 +5,7 @@ from lxml import etree
 
 from fi_parliament_tools.parsing.documents import Interpellation
 
+
 true_interpellation_statement = {
     "type": "L",
     "mp_id": 1144,

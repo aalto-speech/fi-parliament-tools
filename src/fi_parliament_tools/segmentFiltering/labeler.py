@@ -23,6 +23,7 @@ from fi_parliament_tools.segmentFiltering.IO import KaldiCTMSegmented
 from fi_parliament_tools.segmentFiltering.IO import KaldiSegments
 from fi_parliament_tools.segmentFiltering.IO import KaldiText
 
+
 Match = namedtuple("Match", "a b size")
 StatementsList = List[Union[Statement, EmbeddedStatement]]
 

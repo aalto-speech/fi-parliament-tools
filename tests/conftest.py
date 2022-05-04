@@ -24,6 +24,7 @@ from fi_parliament_tools.parsing.query import SessionQuery
 from fi_parliament_tools.parsing.query import StatementQuery
 from fi_parliament_tools.parsing.query import VaskiQuery
 
+
 pytest_plugins = ["tests.data.long_statement_strings", "tests.data.transcript_query"]
 
 
