@@ -53,10 +53,11 @@ fi-parliament-tools = "fi_parliament_tools.__main__:main"
 
 [tool.coverage.paths]
 source = ["src", "*/site-packages"]
+tests = ["tests", "*/tests"]
 
 [tool.coverage.run]
 branch = true
-source = ["fi_parliament_tools"]
+source = ["fi_parliament_tools", "tests"]
 
 [tool.coverage.report]
 show_missing = true

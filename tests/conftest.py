@@ -113,7 +113,7 @@ def tmpfile(tmp_path: Path) -> Path:
 def load_recipe() -> Callable[[str], Any]:
     """Load a recipe module for testing purposes."""
 
-    def _load_recipe(recipe_path: str) -> Any:
+    def _load_recipe(recipe_path: str) -> Any:  # pragma: no cover
         if spec := importlib.util.spec_from_file_location("recipe", recipe_path):
             recipe = importlib.util.module_from_spec(spec)
             spec.loader.exec_module(recipe)  # type: ignore
