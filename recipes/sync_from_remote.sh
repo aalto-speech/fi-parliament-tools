@@ -20,4 +20,3 @@ rsync -Pharumvz --include "*/" --include "/*/*/segments" --include "text" --incl
 
 # Ensure read and write permissions for file owner and team members
 find $TARGET_DIR -user $(echo $USER) -exec chmod ug+rw {} \;
-
