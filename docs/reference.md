@@ -1,6 +1,6 @@
 # Reference
 
-## fi_parliament_tools.__main__
+## fi_parliament_tools.**main**
 
 ```{eval-rst}
 .. automodule:: fi_parliament_tools.__main__

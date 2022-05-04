@@ -12,13 +12,11 @@
 
 ## Features
 
-* A client for downloading Finnish parliament video recordings and transcripts
+- A client for downloading Finnish parliament video recordings and transcripts
 
 ## Requirements
 
-* Python >= 3.8
-* Click
-* lxml
+For Python requirements, see 
 
 ## Installation
 
