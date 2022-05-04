@@ -1,5 +1,6 @@
 """Parsers for handling different parliament documents published after 2015."""
 import re
+from typing import Any
 from typing import List
 from typing import Optional
 from typing import Tuple
@@ -19,13 +20,13 @@ from fi_parliament_tools.parsing.query import VaskiQuery
 class Session:
     """A class for handling XML formatted parliament session transcripts."""
 
-    def __init__(self, number: int, year: int, xml_root: etree):
+    def __init__(self, number: int, year: int, xml_root: Any):
         """Initialize Session object from the given session number, year and xml.
 
         Args:
             number (int): running number for the session
             year (int): working year of the session
-            xml_root (etree): root of the XML document containing the transcript
+            xml_root (Any): root of the XML document containing the transcript
         """
         self.number = number
         self.year = year
@@ -47,19 +48,19 @@ class Session:
             "Embedded lastname",
             "Embedded statement",
         ]
-
+        self.xml_transcript: Any
         [self.xml_transcript] = xml_root.xpath(
             "//*[local-name() = 'Siirto']//*[local-name() = 'Poytakirja']"
         )
 
-    def get_chairman_info(self, xml_element: etree._Element) -> Tuple[str, str, str]:
+    def get_chairman_info(self, xml_element: Any) -> Tuple[str, str, str]:
         """Get the chairman title and name from an XML element.
 
         In the transcript xmls the chairman info is in one string. General format is:
         (First/Second) (Vice)Chairman Firstname Lastname
 
         Args:
-            xml_element (etree._Element): a chairman statement ('PuheenjohtajaRepliikki')
+            xml_element (Any): a chairman statement ('PuheenjohtajaRepliikki')
 
         Returns:
             str: chairman title
@@ -84,10 +85,10 @@ class Session:
         Returns:
             str: statement text
         """
-        text = xml_element.xpath('. //*[local-name() = "KappaleKooste"]//text()')
+        text: Any = xml_element.xpath('. //*[local-name() = "KappaleKooste"]//text()')
         return " ".join([paragraph.strip() for paragraph in text])
 
-    def get_speaker_info(self, xml_element: etree._Element) -> Tuple[int, str, str, str, str]:
+    def get_speaker_info(self, xml_element: Any) -> Tuple[int, str, str, str, str]:
         """Get information about the speaker from the xml_element.
 
         The info includes MP id, name and party/title. MP id is unique identifier given to
@@ -104,7 +105,7 @@ class Session:
         again.
 
         Args:
-            xml_element (etree._Element): speaker part of a speaker statement ('Toimija')
+            xml_element (Any): speaker part of a speaker statement ('Toimija')
 
         Returns:
             int: MP id
@@ -122,11 +123,11 @@ class Session:
             title = "".join(xml_element.xpath('. /@*[local-name() = "rooliKoodi"]')).strip()
         return (int(mp_id), firstname, lastname, party, re.sub(" +", " ", title))
 
-    def get_speaker_statement_text(self, xml_element: etree._Element) -> List[str]:
+    def get_speaker_statement_text(self, xml_element: Any) -> List[str]:
         """Get the statement of the speaker from the xml_element.
 
         Args:
-            xml_element (etree._Element): speech part of a speaker statement ('PuheenvuoroOsa')
+            xml_element (Any): speech part of a speaker statement ('PuheenvuoroOsa')
 
         Returns:
             List[str]: the statement split into a list of paragraph strings
@@ -136,11 +137,11 @@ class Session:
         )
         return [paragraph.strip() for paragraph in text]
 
-    def get_speaker_statement_timestamps(self, xml_element: etree._Element) -> Tuple[str, str]:
+    def get_speaker_statement_timestamps(self, xml_element: Any) -> Tuple[str, str]:
         """Get the start and end timestamps of a speaker statement from the xml_element.
 
         Args:
-            xml_element (etree._Element): speech part of a speaker statement ('PuheenvuoroOsa')
+            xml_element (Any): speech part of a speaker statement ('PuheenvuoroOsa')
 
         Returns:
             str: statement start time as "YYYY-MM-DDTHH:MM:SS" or empty str if missing
@@ -152,7 +153,7 @@ class Session:
             end_time = [""]
         return (start_time[0], end_time[0])
 
-    def get_language_code(self, xml_element: etree._Element) -> str:
+    def get_language_code(self, xml_element: Any) -> str:
         """Get the language code of a speaker statement from the xml_element.
 
         The 'kieliKoodi' attribute is always Finnish and statements are assumed to be Finnish by
@@ -160,7 +161,7 @@ class Session:
         called 'toinenKieliKoodi'.
 
         Args:
-            xml_element (etree._Element): speech part of a speaker statement ('PuheenvuoroOsa')
+            xml_element (Any): speech part of a speaker statement ('PuheenvuoroOsa')
 
         Returns:
             str: the language code as a string ('fi' or 'sv')
@@ -187,11 +188,11 @@ class Session:
         embed = EmbeddedStatement(0, "", "", "", "", "", -1.0, -1.0)
         return Statement("C", 0, first, last, "", title, "", "", "", text, -1.0, -1.0, embed)
 
-    def compose_short_statement(self, xml_element: etree._Element) -> Statement:
+    def compose_short_statement(self, xml_element: Any) -> Statement:
         """Compose a short speaker statement object from the given XML element.
 
         Args:
-            xml_element (etree._Element): a short speaker turn ('PuhujaRepliikki')
+            xml_element (Any): a short speaker turn ('PuhujaRepliikki')
 
         Returns:
             Statement: a data object that contains all speaker statement data
@@ -202,14 +203,14 @@ class Session:
         embed = EmbeddedStatement(0, "", "", "", "", "", -1.0, -1.0)
         return Statement("S", mp_id, first, last, party, title, "", "", "", text, -1.0, -1.0, embed)
 
-    def compose_speaker_statements(self, xml_element: etree._Element) -> List[Statement]:
+    def compose_speaker_statements(self, xml_element: Any) -> List[Statement]:
         """Compose long statements from the given xml_element.
 
         Most long statements have only one speech element. However, some MPs switch between Finnish
         and Swedish in their speech. Different languages are separated to their own speech elements.
 
         Args:
-            xml_element (etree._Element): a speaker turn ('PuheenvuoroToimenpide')
+            xml_element (Any): a speaker turn ('PuheenvuoroToimenpide')
 
         Returns:
             List[Statement]: a data object that contains all speaker statement data
@@ -231,16 +232,14 @@ class Session:
             )
         return statements
 
-    def check_embedded_statement(
-        self, xml_element: etree._Element, main_text: List[str]
-    ) -> EmbeddedStatement:
+    def check_embedded_statement(self, xml_element: Any, main_text: List[str]) -> EmbeddedStatement:
         """Check whether a speaker statement contains an embedded statement.
 
         If the statement has embedded speech from the chairman, the place of the embedded speech
         within the speaker text is marked with `#ch_statement` for later processing.
 
         Args:
-            xml_element (etree._Element): speech part of a speaker statement ('PuheenvuoroOsa')
+            xml_element (Any): speech part of a speaker statement ('PuheenvuoroOsa')
             main_text (List[str]): text paragraphs of the main statement
 
         Returns:
@@ -283,11 +282,11 @@ class Session:
                 transcript.subsections.append(processed)
         return transcript
 
-    def process_subsection(self, xml_element: etree._Element) -> Optional[Subsection]:
+    def process_subsection(self, xml_element: Any) -> Optional[Subsection]:
         """Process the statements in a session subsection and save them into a JSON file.
 
         Args:
-            xml_element (etree._Element): a session subsection ('MuuAsiakohta/Asiakohta')
+            xml_element (Any): a session subsection ('MuuAsiakohta/Asiakohta')
 
         Returns:
             Subsection: a subsection if there are any speech transcripts in it
@@ -317,11 +316,11 @@ class Session:
             subsection.statements.append(self.process_interpellation(xml_element))
         return subsection
 
-    def contains_interpellation(self, xml_element: etree._Element) -> bool:
+    def contains_interpellation(self, xml_element: Any) -> bool:
         """Check if the session subsection contains an interpellation.
 
         Args:
-            xml_element (etree._Element): a session subsection ('MuuAsiakohta/Asiakohta')
+            xml_element (Any): a session subsection ('MuuAsiakohta/Asiakohta')
 
         Returns:
             bool: True if the subsection contains an interpellation
@@ -331,20 +330,26 @@ class Session:
         )
         return has_interpellation
 
-    def process_interpellation(self, xml_element: etree._Element) -> Statement:
+    def process_interpellation(self, xml_element: Any) -> Statement:
         """Fetch and process the interpellation statement within the subsection.
 
         Args:
-            xml_element (etree._Element): a session subsection ('MuuAsiakohta/Asiakohta')
+            xml_element (Any): a session subsection ('MuuAsiakohta/Asiakohta')
+
+        Raises:
+            ValueError: raised if query to the parliament API returns None
 
         Returns:
             Statement: a data object that contains all interpellation statement data
         """
         [interp_id] = xml_element.xpath(". //*[local-name() = 'EduskuntaTunnus']/text()")
         interp_number, interp_year = re.findall(r"\d+", interp_id)
-        xml = etree.fromstring(VaskiQuery(interp_id, doc_type="Interpellation").get_xml())
-        interpellation = Interpellation(interp_number, interp_year, xml, self.query_key)
-        return interpellation.compose_speaker_statement()
+        if xml_str := VaskiQuery(interp_id, doc_type="Interpellation").get_xml():
+            xml = etree.fromstring(xml_str)
+            interpellation = Interpellation(interp_number, interp_year, xml, self.query_key)
+            return interpellation.compose_speaker_statement()
+        else:
+            raise ValueError(f"XML for interpellation {interp_id} not found in a query.")
 
 
 class Interpellation(Session):
@@ -354,19 +359,20 @@ class Interpellation(Session):
     structure.
     """
 
-    def __init__(self, number: int, year: int, xml_root: etree, session: str):
+    def __init__(self, number: int, year: int, xml_root: Any, session: str):
         """Initialize Interpellation object from the given session number, year and xml.
 
         Args:
             number (int): interpellation number as an integer
             year (int): year of the session
-            xml_root (etree): root of the XML document containing the interpellation
+            xml_root (Any): root of the XML document containing the interpellation
             session (str): the parliament session that contains the interpellation ('year/number')
         """
         self.number = number
         self.year = year
         self.session = session
 
+        self.xml_transcript: Any
         [self.xml_transcript] = xml_root.xpath(
             "/*[local-name() = 'Siirto']//*[local-name() = 'Kysymys']"
         )
@@ -429,12 +435,13 @@ class Interpellation(Session):
 class MPInfo:
     """Parse MP information from an XML document."""
 
-    def __init__(self, xml_root: etree) -> None:
+    def __init__(self, xml_root: Any) -> None:
         """Initialize MPInfo object with the given xml.
 
         Args:
-            xml_root (etree): root of the XML document containing MP information
+            xml_root (Any): root of the XML document containing MP information
         """
+        self.xml: Any
         [self.xml] = xml_root.xpath("/*[local-name() = 'Henkilo']")
 
     def get_gender(self) -> str:
@@ -514,15 +521,17 @@ class MPInfo:
         dates = [date for district in districts for date in self.get_district_date_range(district)]
         return ", ".join([f"{n} {d}" for n, d in zip(names, dates)])
 
-    def get_district_date_range(self, xml_element: etree._Element) -> List[str]:
+    def get_district_date_range(self, xml_element: Any) -> List[str]:
         """Parse the electoral district start and end dates into a date range.
 
         Args:
-            xml_element (etree._Element): XML element with the electoral district info
+            xml_element (Any): XML element with the electoral district info
 
         Returns:
             List[str]: parsed date ranges or empty list if no dates found
         """
+        start: Any
+        end: Any
         if start := xml_element.xpath(".//AlkuPvm/text()"):
             start = [re.sub(r"\d{2}.(\d{2}).(\d{4})", r"\1/\2", s) for s in start]
         if end := xml_element.xpath(".//LoppuPvm/text()"):

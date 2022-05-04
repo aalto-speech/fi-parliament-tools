@@ -4,7 +4,7 @@ export LC_ALL=C
 
 if [ $# -ne 2 ]; then
     echo "Usage: recipes/split_ctm_by_session.sh <inputdir> <outputdir>"
-    echo "e.g.: $0 generated/work/2021-01-01 generated/realign"
+    echo "e.g.: $0 generated/work/2021-01-01 generated/autumn2020"
     echo
     echo "This script splits the ctm_edits.segmented, segments, and text files"
     echo "to session specific files, so we can do the realignment on a session-by-session"
@@ -32,6 +32,6 @@ echo "Splitting done, move back to $maindir."
 cd $maindir
 
 echo "Write input list for postprocessing to segments.list."
-find $OUTPUT -iname "*ctm_edits*" | sort > segments.list
+find $OUTPUT -iname "*ctm_edits*" | sort >segments.list
 
 echo "Done."

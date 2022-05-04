@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [ $# -ne 3 ]; then
+if [ $# -ne 2 ]; then
     echo "Usage: recipes/04_postprocess_ctms.sh <segments_list> <recipe>"
     echo "e.g.: $0 segments.list /path/to/recipe_file"
     echo

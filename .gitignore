@@ -18,6 +18,7 @@ new_vocab
 /.vscode/
 /dist/
 /docs/_build/
+/final_outputs/
 /generated/
 /logs/
 /src/*.egg-info/

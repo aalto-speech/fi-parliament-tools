@@ -242,6 +242,25 @@ def test_parse(session: Session, transcript: Transcript) -> None:
     assert parsed_session == transcript
 
 
+@pytest.fixture
+def mock_vaskiquery_none(mocker: MockerFixture) -> MagicMock:
+    """Mock a VaskiQuery for the downloads module."""
+    mock: MagicMock = mocker.patch("fi_parliament_tools.parsing.documents.VaskiQuery")
+    mock.return_value.get_xml.return_value = None
+    return mock
+
+
+@pytest.mark.parametrize("session", [((34, 2015))], indirect=True)
+def test_process_interpellation_error(session: Session, mock_vaskiquery_none: MagicMock) -> None:
+    """Test that ValueError is raised if interpellation XML is not found in query."""
+    with pytest.raises(ValueError):
+        subsections = session.xml_transcript.xpath(
+            ". /*[local-name() = 'MuuAsiakohta' or local-name() = 'Asiakohta']"
+        )
+        session.process_interpellation(subsections[4])
+        mock_vaskiquery_none.assert_called_once()
+
+
 @pytest.mark.parametrize(
     "mpinfo, true_gender",
     [

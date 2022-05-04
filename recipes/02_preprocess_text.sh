@@ -46,18 +46,17 @@ poetry run fi-parliament-tools preprocess $TRANSCRIPT_FILES $LID_MODEL $RECIPE
 # stdout does not work. Some words vanish in the process for unknown reason unless files are
 # presorted and merged. Maybe a memory issue?)
 echo "Merge all .words files to one word list."
-for f in $(find "${CORPUS_DIR}" -type f -name "*.words" | sort);
-do
-	sort -uo $f{,}
+for f in $(find "${CORPUS_DIR}" -type f -name "*.words" | sort); do
+    sort -uo $f{,}
 done
 # Then merge all files and find unique words
 UNFILTERED="unfiltered_words.txt"
-sort -m -u $(find "${CORPUS_DIR}" -type f -name "*.words" | sort) > $UNFILTERED
+sort -m -u $(find "${CORPUS_DIR}" -type f -name "*.words" | sort) >$UNFILTERED
 
 # Filter the Swedish words that usually appear in transcript statements that are not explicitly
 # labeled to be Swedish
 echo "Filter Swedish words using recipes/swedish_words.txt."
-comm -23 <(sort -u $UNFILTERED) <(sort -u recipes/swedish_words.txt) > new_vocab
+comm -23 <(sort -u $UNFILTERED) <(sort -u recipes/swedish_words.txt) >new_vocab
 
 # Cleanup
 echo "Clean up and finish."
