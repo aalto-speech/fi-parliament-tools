@@ -16,7 +16,12 @@
 
 ## Requirements
 
-For Python requirements, see 
+For Python requirements, see the [Python project file].
+Additionally, this tool uses [FFmpeg] and [SoX].
+
+[python project file]: https://github.com/aalto-speech/fi-parliament-tools/blob/main/pyproject.toml
+[ffmpeg]: https://ffmpeg.org/
+[sox]: http://sox.sourceforge.net/
 
 ## Installation
 
@@ -31,7 +36,7 @@ $ pip install .
 
 ## Usage
 
-For detailed instructions, `fi-parliament-tools --help` in terminal.
+For detailed instructions, run `fi-parliament-tools --help` in terminal.
 
 ## Contributing
 
