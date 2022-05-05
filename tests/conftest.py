@@ -38,7 +38,7 @@ def json_test_data(request: SubRequest) -> Any:
     Yields:
         list: lines of the csv file
     """
-    input_json = open(request.param, "r", encoding="utf-8", newline="")
+    input_json = open(request.param, encoding="utf-8", newline="")
     yield json.load(input_json)
     input_json.close()
 
@@ -46,7 +46,7 @@ def json_test_data(request: SubRequest) -> Any:
 @pytest.fixture(scope="module")
 def transcript(request: SubRequest) -> Any:
     """Read a transcript from a json to Transcript object."""
-    input_json = open(request.param, "r", encoding="utf-8", newline="")
+    input_json = open(request.param, encoding="utf-8", newline="")
     yield json.load(input_json, object_hook=decode_transcript)
     input_json.close()
 
@@ -58,7 +58,7 @@ def session(request: SubRequest) -> Session:
     year: int
     number, year = request.param
     xml_path = f"tests/data/xmls/session-{number:03}-{year}.xml"
-    with open(xml_path, "r", encoding="utf-8", newline="") as infile:
+    with open(xml_path, encoding="utf-8", newline="") as infile:
         xml = etree.fromstring(infile.read())
     return Session(number, year, xml)
 
@@ -67,7 +67,7 @@ def session(request: SubRequest) -> Session:
 def mpinfo(request: SubRequest) -> MPInfo:
     """Initialize and return an MPInfo object for given XML."""
     xml_path = request.param
-    with open(xml_path, "r", encoding="utf-8", newline="") as infile:
+    with open(xml_path, encoding="utf-8", newline="") as infile:
         xml = etree.fromstring(infile.read())
     return MPInfo(xml)
 

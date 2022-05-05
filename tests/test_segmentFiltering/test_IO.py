@@ -29,7 +29,7 @@ def test_read_ctm_segmented() -> None:
         "session_start",
     ]
     assert df.isna().sum().sum() == 0
-    assert set(df.edit.unique()) == set(["ins", "sil", "cor", "del", "sub"])
+    assert set(df.edit.unique()) == {"ins", "sil", "cor", "del", "sub"}
 
 
 def test_read_segments() -> None:

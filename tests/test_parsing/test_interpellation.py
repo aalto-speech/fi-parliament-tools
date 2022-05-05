@@ -34,7 +34,7 @@ true_interpellation_statement = {
 
 def test_interpellation(interpellation_4_2017_text: str) -> None:
     """Test that interpellation is correctly parsed."""
-    with open("tests/data/xmls/vk-04-2017.xml", "r", encoding="utf-8", newline="") as infile:
+    with open("tests/data/xmls/vk-04-2017.xml", encoding="utf-8", newline="") as infile:
         xml = etree.fromstring(infile.read())
     interpellation = Interpellation(4, 2017, xml, "2017/124")
     statement = interpellation.compose_speaker_statement()

@@ -39,7 +39,7 @@ class KaldiFile:
         """
         rows = []
         last = self.cols[-1]
-        with open(self.filename, "r") as input:
+        with open(self.filename) as input:
             for row in csv.DictReader(
                 input, delimiter=" ", fieldnames=self.cols[:-1], restkey=last, skipinitialspace=True
             ):

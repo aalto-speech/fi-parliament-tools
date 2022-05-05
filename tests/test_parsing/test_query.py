@@ -72,7 +72,7 @@ def read_xml_string() -> Callable[[int, int, str], str]:
 
     def _read_xml_string(number: int, year: int, subsection: str) -> str:
         xmlfile = f"tests/data/xmls/session-{number:03}-{year}{subsection}.xml"
-        with open(xmlfile, "r", encoding="utf-8") as infile:
+        with open(xmlfile, encoding="utf-8") as infile:
             lines = infile.readlines()
             return " ".join([line.strip() for line in lines])
 

@@ -115,7 +115,7 @@ class VaskiQuery(Query):
         return None
 
 
-class XMLCombiner(object):
+class XMLCombiner:
     """A class for combining XMLs of transcript subsections.
 
     This class is used when the main XML is missing the transcribed speech but the transcriptions
