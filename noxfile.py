@@ -1,4 +1,5 @@
 """Setup for nox."""
+import os
 import shutil
 import sys
 from pathlib import Path
@@ -13,7 +14,9 @@ try:
 except ImportError:
     message = f"""\
     Nox failed to import the 'nox-poetry' package.
+
     Please install it using the following command:
+
     {sys.executable} -m pip install nox-poetry"""
     raise SystemExit(dedent(message)) from None
 
@@ -158,6 +161,9 @@ def coverage(session: Session) -> None:
 def docs_build(session: Session) -> None:
     """Build the documentation."""
     args = session.posargs or ["docs", "docs/_build"]
+    if not session.posargs and "FORCE_COLOR" in os.environ:
+        args.insert(0, "--color")
+
     session.install(".")
     session.install("sphinx", "sphinx-click", "furo", "myst-parser")
 

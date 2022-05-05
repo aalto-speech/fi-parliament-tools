@@ -25,6 +25,8 @@ jobs:
     env:
       NOXSESSION: ${{ matrix.session }}
       PYTHONUTF8: 1
+      FORCE_COLOR: "1"
+      PRE_COMMIT_COLOR: "always"
 
     steps:
       - name: Check out the repository
