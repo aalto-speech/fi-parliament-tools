@@ -1,11 +1,11 @@
 {
-  "number": 19,
+  "num": 19,
   "year": 2016,
   "begin_time": "2016-03-04 13:00:04.697",
   "subsections": [
     {
       "number": "3",
-      "title": "Hallituksen esitys eduskunnalle laeiksi vuosilomalain, merimiesten vuosilomalain ja sairausvakuutuslain muuttamisesta",
+      "topic": "Hallituksen esitys eduskunnalle laeiksi vuosilomalain, merimiesten vuosilomalain ja sairausvakuutuslain muuttamisesta",
       "statements": [
         {
           "type": "C",
@@ -107,7 +107,7 @@
     },
     {
       "number": "4",
-      "title": "Hallituksen esitys eduskunnalle laiksi luonnonsuojelulain muuttamisesta",
+      "topic": "Hallituksen esitys eduskunnalle laiksi luonnonsuojelulain muuttamisesta",
       "statements": [
         {
           "type": "C",
@@ -209,7 +209,7 @@
     },
     {
       "number": "5",
-      "title": "Hallituksen esitys eduskunnalle laeiksi maankäyttö- ja rakennuslain muuttamisesta sekä kevennettyjen rakentamis- ja kaavamääräysten kokeilusta annetun lain 3 §:n kumoamisesta",
+      "topic": "Hallituksen esitys eduskunnalle laeiksi maankäyttö- ja rakennuslain muuttamisesta sekä kevennettyjen rakentamis- ja kaavamääräysten kokeilusta annetun lain 3 §:n kumoamisesta",
       "statements": [
         {
           "type": "C",
@@ -383,7 +383,7 @@
     },
     {
       "number": "7",
-      "title": "Hallituksen esitys  eduskunnalle  Argentiinan, Brasilian,  Israelin, Serbian ja  Vietnamin kanssa diplomaattisen edustuston,  konsuliedustuston tai  kansainvälisissä järjestöissä toimivan edustuston  työntekijän perheenjäsenen ansiotyön tekemisestä tehtyjen  sopimusten hyväksymisestä sekä laeiksi sopimusten  lainsäädännön alaan  kuuluvien  määräysten voimaansaattamisesta",
+      "topic": "Hallituksen esitys  eduskunnalle  Argentiinan, Brasilian,  Israelin, Serbian ja  Vietnamin kanssa diplomaattisen edustuston,  konsuliedustuston tai  kansainvälisissä järjestöissä toimivan edustuston  työntekijän perheenjäsenen ansiotyön tekemisestä tehtyjen  sopimusten hyväksymisestä sekä laeiksi sopimusten  lainsäädännön alaan  kuuluvien  määräysten voimaansaattamisesta",
       "statements": [
         {
           "type": "C",

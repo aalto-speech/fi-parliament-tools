@@ -26,7 +26,7 @@ def form_date_parameter(date: str, name: str) -> str:
     )
     match = re.match(date_regexp, date)
     if match is None:
-        raise ValueError("{} {} is an invalid date.".format(name, date))
+        raise ValueError(f"{name} {date} is an invalid date.")
     return f"{name}={date}&"
 
 

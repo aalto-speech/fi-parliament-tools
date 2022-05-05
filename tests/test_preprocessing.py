@@ -56,7 +56,7 @@ def test_preprocessor_unaccepted_chars_capture(
     """Ensure UnacceptedCharsError is captured, logged and recovered from."""
     preprocess_pipeline.recipe = load_recipe("tests/data/simple_recipe.py")
     with open(tmpfile, "w", encoding="utf-8") as tmp_out:
-        words = preprocess_pipeline.preprocess_statement(mock_statement, tmp_out)
+        words = preprocess_pipeline.preprocess_statement(mock_statement, tmp_out, tmpfile)
 
     assert (
         f"UnacceptedCharsError in {tmpfile}. See log for debug info."
@@ -74,7 +74,7 @@ def test_preprocessor_exception(
     """Ensure Exception is captured, logged and recovered from."""
     preprocess_pipeline.recipe = load_recipe("tests/data/faulty_recipe.py")
     with open(tmpfile, "w", encoding="utf-8") as tmp_out:
-        words = preprocess_pipeline.preprocess_statement(mock_statement, tmp_out)
+        words = preprocess_pipeline.preprocess_statement(mock_statement, tmp_out, tmpfile)
 
     assert f"Caught an exception in {tmpfile}." == preprocess_pipeline.errors[0]
     assert words == set()

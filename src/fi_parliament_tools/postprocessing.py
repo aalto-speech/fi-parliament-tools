@@ -18,6 +18,7 @@ from fi_parliament_tools.pipeline import Pipeline
 from fi_parliament_tools.segmentFiltering import IO
 from fi_parliament_tools.segmentFiltering import labeler
 
+
 STATS_COLUMNS = [
     "length",
     "statements",
@@ -63,7 +64,7 @@ class PostProcessingPipeline(Pipeline):
             num, year = hit.groups()
             json_file = Path(f"corpus/{year}/session-{num}-{year}.json").resolve()
             return (Path(ctm_path).resolve(), json_file, f"{num}-{year}")
-        self.errors.append(f"Session number and year not in filename: {ctm_path}. Skipped.")
+        self.log.error(f"Session number and year not in filename: {ctm_path}. Skipped.")
         return None
 
     def run(self) -> None:
@@ -83,7 +84,7 @@ class PostProcessingPipeline(Pipeline):
             session (str): session identifier (format: num-year)
         """
         try:
-            with open(json_file, mode="r", encoding="utf-8", newline="") as infile:
+            with open(json_file, encoding="utf-8", newline="") as infile:
                 transcript = json.load(infile, object_hook=decode_transcript)
             ctm, segments, kalditext = self.load_kaldi_files(path.parent, session)
             segments, kalditext = labeler.label_segments(
@@ -111,7 +112,7 @@ class PostProcessingPipeline(Pipeline):
         """
         session_path = f"{basepath}/session-{session}"
         kaldi_files = [IO.KaldiCTMSegmented, IO.KaldiSegments, IO.KaldiText]
-        ctm, segments, kalditext = [file(session_path) for file in kaldi_files]
+        ctm, segments, kalditext = (file(session_path) for file in kaldi_files)
         ctm.df.attrs["session"] = session
         return ctm, segments, kalditext  # type: ignore
 

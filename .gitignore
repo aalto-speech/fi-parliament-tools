@@ -4,6 +4,7 @@ README.Aalto
 *.pyc
 *tmp*
 corpus
+*.swp
 *.bin
 *.list
 *.tar

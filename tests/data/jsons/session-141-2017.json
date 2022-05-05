@@ -1,11 +1,11 @@
 {
-  "number": 141,
+  "num": 141,
   "year": 2017,
   "begin_time": "2017-12-15 10:03:56.79",
   "subsections": [
     {
       "number": "3",
-      "title": "Hallituksen esitys eduskunnalle alkoholilaiksi ja eräiksi siihen liittyviksi laeiksi",
+      "topic": "Hallituksen esitys eduskunnalle alkoholilaiksi ja eräiksi siihen liittyviksi laeiksi",
       "statements": [
         {
           "type": "C",
@@ -1187,7 +1187,7 @@
     },
     {
       "number": "4",
-      "title": "Hallituksen esitys  eduskunnalle  veronkannon, verotuksen toimittamisen ja eräiden seuraamusmaksujen uudistamista koskevaksi lainsäädännöksi",
+      "topic": "Hallituksen esitys  eduskunnalle  veronkannon, verotuksen toimittamisen ja eräiden seuraamusmaksujen uudistamista koskevaksi lainsäädännöksi",
       "statements": [
         {
           "type": "C",
@@ -1457,7 +1457,7 @@
     },
     {
       "number": "5",
-      "title": "Hallituksen esitys eduskunnalle valtion talousarvioksi vuodelle 2018. Hallituksen esitys  eduskunnalle  vuoden  2018  talousarvioesityksen (HE 106/2017 vp) täydentämisestä",
+      "topic": "Hallituksen esitys eduskunnalle valtion talousarvioksi vuodelle 2018. Hallituksen esitys  eduskunnalle  vuoden  2018  talousarvioesityksen (HE 106/2017 vp) täydentämisestä",
       "statements": [
         {
           "type": "C",
@@ -1487,7 +1487,7 @@
     },
     {
       "number": "5.1",
-      "title": "Pääluokka 23 Valtioneuvoston kanslia",
+      "topic": "Pääluokka 23 Valtioneuvoston kanslia",
       "statements": [
         {
           "type": "C",
@@ -1661,7 +1661,7 @@
     },
     {
       "number": "5.2",
-      "title": "Pääluokka 24 Ulkoasiainministeriön hallinnonala",
+      "topic": "Pääluokka 24 Ulkoasiainministeriön hallinnonala",
       "statements": [
         {
           "type": "C",
@@ -2027,7 +2027,7 @@
     },
     {
       "number": "5.3",
-      "title": "Pääluokka 25 Oikeusministeriön hallinnonala",
+      "topic": "Pääluokka 25 Oikeusministeriön hallinnonala",
       "statements": [
         {
           "type": "C",
@@ -2105,7 +2105,7 @@
     },
     {
       "number": "5.4",
-      "title": "Pääluokka 26 Sisäministeriön hallinnonala",
+      "topic": "Pääluokka 26 Sisäministeriön hallinnonala",
       "statements": [
         {
           "type": "C",

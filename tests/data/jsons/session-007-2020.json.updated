@@ -9,14 +9,14 @@
       "statements": [
         {
           "type": "C",
-          "mp_id": 0,
+          "mp_id": 414,
           "firstname": "Matti",
           "lastname": "Vanhanen",
           "party": "",
           "title": "Puhemies",
           "start_time": "",
           "end_time": "",
-          "language": "",
+          "language": "fi.p",
           "text": "Lähetekeskustelua varten esitellään päiväjärjestyksen 3. asia. Puhemiesneuvosto ehdottaa, että asia lähetetään lakivaliokuntaan.",
           "offset": -1.0,
           "duration": -1.0,
@@ -45,11 +45,11 @@
           "offset": -1.0,
           "duration": -1.0,
           "embedded_statement": {
-            "mp_id": 0,
+            "mp_id": 414,
             "title": "Puhemies",
             "firstname": "Matti",
             "lastname": "Vanhanen",
-            "language": "",
+            "language": "fi.p",
             "text": "Odottakaa hetki.",
             "offset": -1.0,
             "duration": -1.0
@@ -213,11 +213,11 @@
           "offset": -1.0,
           "duration": -1.0,
           "embedded_statement": {
-            "mp_id": 0,
+            "mp_id": 414,
             "title": "Puhemies",
             "firstname": "Matti",
             "lastname": "Vanhanen",
-            "language": "",
+            "language": "fi.p",
             "text": "Vielä vastauspuheenvuoro edustaja Merelle, sen jälkeen puhujalistaan.",
             "offset": -1.0,
             "duration": -1.0
@@ -237,11 +237,11 @@
           "offset": -1.0,
           "duration": -1.0,
           "embedded_statement": {
-            "mp_id": 0,
+            "mp_id": 414,
             "title": "Puhemies",
             "firstname": "Matti",
             "lastname": "Vanhanen",
-            "language": "",
+            "language": "fi.p",
             "text": "Takaisin puhujalistaan.",
             "offset": -1.0,
             "duration": -1.0
@@ -285,11 +285,11 @@
           "offset": -1.0,
           "duration": -1.0,
           "embedded_statement": {
-            "mp_id": 0,
+            "mp_id": 414,
             "title": "Puhemies",
             "firstname": "Matti",
             "lastname": "Vanhanen",
-            "language": "",
+            "language": "fi.p",
             "text": "Myönnän vielä puheenvuoron edustaja Pelkoselle.",
             "offset": -1.0,
             "duration": -1.0

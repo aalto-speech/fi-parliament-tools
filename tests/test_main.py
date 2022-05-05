@@ -28,7 +28,7 @@ def runner() -> CliRunner:
 def mock_downloads_requests_get(mocker: MockerFixture) -> MagicMock:
     """Mock returned jsons of the requests.get calls in downloads module."""
     mock: MagicMock = mocker.patch("fi_parliament_tools.downloads.requests.get")
-    with open("tests/data/jsons/video_query.json", "r", encoding="utf-8") as infile:
+    with open("tests/data/jsons/video_query.json", encoding="utf-8") as infile:
         mock.return_value.__enter__.return_value.json.return_value = json.load(infile)
     return mock
 
@@ -123,11 +123,17 @@ def test_preprocessor(
         assert mock_mp_table().index.__getitem__().empty.__bool__.call_count == 21
         assert mock_mp_table().index.__getitem__().__getitem__.call_count == 18
 
+        jsondir = f"{workdir}/tests/data/jsons"
         for text in glob.glob("*.text"):
-            with open(text, "r", encoding="utf-8") as outf, open(
-                f"{workdir}/tests/data/jsons/{text}", "r", encoding="utf-8"
+            with open(text, encoding="utf-8") as outf, open(
+                f"{jsondir}/{text}", encoding="utf-8"
             ) as truef:
                 assert outf.read() + "\n" == truef.read()
+
+        with open("session-007-2020.json", encoding="utf-8") as outf, open(
+            f"{jsondir}/session-007-2020.json.updated", encoding="utf-8"
+        ) as truef:
+            assert outf.read() + "\n" == truef.read()
 
 
 def test_preprocessor_with_bad_recipe_file(runner: CliRunner) -> None:
@@ -363,6 +369,7 @@ def test_postprocessor(runner: CliRunner) -> None:
         assert result.exit_code == 0
         assert "Output is logged to" in result.output
         assert "Found 3 sessions in file list, begin postprocessing." in result.output
+        assert "Session number and year not in filename:" in result.output
         assert "Finished successfully!" in result.output
         assert "Statistics of the speaker alignment" in result.output
 

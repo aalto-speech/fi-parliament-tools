@@ -21,6 +21,7 @@ from fi_parliament_tools.parsing.query import Query
 from fi_parliament_tools.parsing.query import VaskiQuery
 from fi_parliament_tools.pipeline import Pipeline
 
+
 VIDEO_API = "https://eduskunta.videosync.fi/api/v1/events"
 
 

@@ -13,7 +13,7 @@ def test_save_to_json(mocked_atomic_write: MagicMock, mocked_dump: MagicMock) ->
     transcript.save_to_json("some_path")
     mocked_atomic_write.assert_called_once_with("some_path", mode="w", encoding="utf-8")
     mocked_dump.assert_called_once_with(
-        {"number": 0, "year": 0, "begin_time": "YYYY-MM-DDTHH:MM:SS", "subsections": []},
+        {"num": 0, "year": 0, "begin_time": "YYYY-MM-DDTHH:MM:SS", "subsections": []},
         mocked_atomic_write().__enter__(),
         ensure_ascii=False,
         indent=2,

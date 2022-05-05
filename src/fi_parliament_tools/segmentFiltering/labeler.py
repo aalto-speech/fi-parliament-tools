@@ -9,8 +9,6 @@ from typing import Any
 from typing import Iterable
 from typing import Iterator
 from typing import List
-from typing import Optional
-from typing import Tuple
 from typing import Union
 
 import pandas as pd
@@ -23,6 +21,7 @@ from fi_parliament_tools.segmentFiltering.IO import KaldiCTMSegmented
 from fi_parliament_tools.segmentFiltering.IO import KaldiSegments
 from fi_parliament_tools.segmentFiltering.IO import KaldiText
 
+
 Match = namedtuple("Match", "a b size")
 StatementsList = List[Union[Statement, EmbeddedStatement]]
 
@@ -33,8 +32,8 @@ def label_segments(
     segments: KaldiSegments,
     kalditext: KaldiText,
     recipe: Any,
-    errors: List[str],
-) -> Tuple[KaldiSegments, KaldiText]:
+    errors: list[str],
+) -> tuple[KaldiSegments, KaldiText]:
     """Assign language and speakers to each segment and corresponding text transcript.
 
     Args:
@@ -56,7 +55,7 @@ def label_segments(
 
 
 def match_ctm_to_transcript(
-    df: pd.DataFrame, transcript: Transcript, recipe: Any, errors: List[str]
+    df: pd.DataFrame, transcript: Transcript, recipe: Any, errors: list[str]
 ) -> pd.DataFrame:
     """Iterate through statements in the transcript and try to find them in the aligned CTM.
 
@@ -96,7 +95,7 @@ def match_ctm_to_transcript(
     return df
 
 
-def adjust_indices(df: pd.DataFrame, start_idx: int, end_idx: int) -> Tuple[int, int]:
+def adjust_indices(df: pd.DataFrame, start_idx: int, end_idx: int) -> tuple[int, int]:
     """Update statement start and end indices if ASR hypothesis does not match transcript.
 
     The Kaldi alignment may have matched the last words of a statement to untranscribed speech
@@ -124,7 +123,7 @@ def adjust_indices(df: pd.DataFrame, start_idx: int, end_idx: int) -> Tuple[int,
 
 
 def assign_speaker(
-    df: pd.DataFrame, text: str, statement: Union[Statement, EmbeddedStatement]
+    df: pd.DataFrame, text: str, statement: Statement | EmbeddedStatement
 ) -> pd.DataFrame:
     """Assign speaker to a statement in the aligned CTM.
 
@@ -149,12 +148,12 @@ def assign_speaker(
 
 def find_statement(
     df: pd.DataFrame,
-    text: List[str],
+    text: list[str],
     lang: str,
     match_limit: int = 30,
     size: int = 10000,
     step: int = 7500,
-) -> Tuple[int, int]:
+) -> tuple[int, int]:
     """Find where the statement text starts and ends in the alignment CTM.
 
     Args:
@@ -192,7 +191,7 @@ def find_statement(
     raise ValueError("Alignment not found.")
 
 
-def find_end_index(masked: pd.DataFrame, text: List[str], added_range: int = 100) -> int:
+def find_end_index(masked: pd.DataFrame, text: list[str], added_range: int = 100) -> int:
     """Find the last index of the statement text in the transcript column of the alignment CTM.
 
     Args:
@@ -218,7 +217,7 @@ def find_end_index(masked: pd.DataFrame, text: List[str], added_range: int = 100
 
 
 def sliding_window(
-    iterable: Iterable[Any], size: int = 10000, step: int = 7500, fillvalue: Optional[Any] = None
+    iterable: Iterable[Any], size: int = 10000, step: int = 7500, fillvalue: Any | None = None
 ) -> Iterator[Any]:
     """Form a deque-based sliding window for iterables with variable size and step.
 
@@ -308,7 +307,7 @@ def get_segment_speaker(row: pd.Series, main_df: pd.DataFrame, sil_mask: pd.Seri
     length = row.seg_end_idx - row.seg_start_idx
     start = row.name[0] + shift
     slice = main_df.mpid.iloc[start : start + length].loc[sil_mask]
-    mpids: List[int] = slice.unique()
+    mpids: list[int] = slice.unique()
     mpids.sort()
     if len(mpids) == 2 and 0 in mpids and sum(slice == 0) < 2:
         return mpids[1]
