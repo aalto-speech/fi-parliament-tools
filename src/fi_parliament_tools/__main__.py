@@ -160,7 +160,7 @@ def preprocess(
     or updated with the 'mptable' command.
 
     RECIPE_FILE is used to preprocess text for speech recognition.
-    """  # noqa: DAR101, DAR401, ignore missing arg documentation
+    """
     log = setup_logger(f"{date.today()}-preprocess.log")
 
     if spec := importlib.util.spec_from_file_location("recipe", recipe_file):
@@ -185,7 +185,7 @@ def postprocess(ctms_list: TextIO, recipe_file: str) -> None:
 
     RECIPE_FILE is needed for preprocessing the original transcript to the aligned text. Use the
     same RECIPE_FILE as with preprocess command.
-    """  # noqa: DAR101, DAR401, ignore missing arg documentation
+    """
     log = setup_logger(f"{date.today()}-postprocess.log")
 
     if spec := importlib.util.spec_from_file_location("recipe", recipe_file):
@@ -224,7 +224,7 @@ def build_mptable(get_english: bool, update_old: bool) -> None:
     If a previous table exists at 'generated/mp-table.csv', running this command will add new MP
     entries to it. Using --update-old handle will cause old MP entries to get updated as well. Be
     warned however, this may cause data loss (e.g. party or home city may change)!
-    """  # noqa: DAR101, DAR401, ignore missing arg documentation
+    """
     log = setup_logger(f"{date.today()}-mptable.log")
 
     Path("generated").mkdir(exist_ok=True)
