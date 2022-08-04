@@ -617,8 +617,8 @@ optional = false
 python-versions = ">=3.6"
 
 [package.extras]
-dev = ["pre-commit", "tox"]
-testing = ["pytest", "pytest-benchmark"]
+testing = ["pytest-benchmark", "pytest"]
+dev = ["tox", "pre-commit"]
 
 [[package]]
 name = "pre-commit"
@@ -957,8 +957,8 @@ optional = false
 python-versions = ">=3.5"
 
 [package.extras]
-lint = ["flake8", "mypy", "docutils-stubs"]
 test = ["pytest"]
+lint = ["docutils-stubs", "mypy", "flake8"]
 
 [[package]]
 name = "sphinxcontrib-devhelp"
@@ -969,8 +969,8 @@ optional = false
 python-versions = ">=3.5"
 
 [package.extras]
-lint = ["flake8", "mypy", "docutils-stubs"]
 test = ["pytest"]
+lint = ["docutils-stubs", "mypy", "flake8"]
 
 [[package]]
 name = "sphinxcontrib-htmlhelp"
@@ -981,8 +981,8 @@ optional = false
 python-versions = ">=3.6"
 
 [package.extras]
-lint = ["flake8", "mypy", "docutils-stubs"]
-test = ["pytest", "html5lib"]
+test = ["html5lib", "pytest"]
+lint = ["docutils-stubs", "mypy", "flake8"]
 
 [[package]]
 name = "sphinxcontrib-jsmath"
@@ -993,7 +993,7 @@ optional = false
 python-versions = ">=3.5"
 
 [package.extras]
-test = ["pytest", "flake8", "mypy"]
+test = ["mypy", "flake8", "pytest"]
 
 [[package]]
 name = "sphinxcontrib-qthelp"
@@ -1004,8 +1004,8 @@ optional = false
 python-versions = ">=3.5"
 
 [package.extras]
-lint = ["flake8", "mypy", "docutils-stubs"]
 test = ["pytest"]
+lint = ["docutils-stubs", "mypy", "flake8"]
 
 [[package]]
 name = "sphinxcontrib-serializinghtml"
@@ -1127,27 +1127,27 @@ Pygments = {version = "*", optional = true, markers = "python_version >= \"3.5.0
 six = "*"
 
 [package.extras]
-all = ["cmake", "codecov", "ninja", "pybind11", "scikit-build", "six", "colorama", "pytest", "pytest-cov", "debugpy", "pytest", "pygments", "pytest", "pytest-cov", "pytest", "pytest-cov", "jupyter-client", "ipython", "debugpy", "ipykernel", "pytest", "debugpy", "debugpy", "typing", "debugpy", "ipython-genutils", "pytest", "pygments", "attrs", "jedi", "jinja2", "jupyter-core", "nbconvert", "pytest-cov", "jupyter-client", "ipython", "ipykernel"]
-all-strict = ["cmake (==3.21.2)", "codecov (==2.0.15)", "ninja (==1.10.2)", "pybind11 (==2.7.1)", "scikit-build (==0.11.1)", "six (==1.11.0)", "colorama (==0.4.1)", "pytest-cov (==2.8.1)", "pytest (==4.6.0)", "debugpy (==1.3.0)", "pytest (==4.6.0)", "Pygments (==2.0.0)", "pytest-cov (==2.8.1)", "pytest (==4.6.0)", "pytest-cov (==2.9.0)", "pytest (==4.6.0)", "jupyter-client (==6.1.5)", "IPython (==7.10.0)", "debugpy (==1.0.0)", "ipykernel (==5.2.0)", "pytest (==4.6.0)", "debugpy (==1.0.0)", "debugpy (==1.0.0)", "typing (==3.7.4)", "debugpy (==1.6.0)", "ipython-genutils (==0.2.0)", "pytest (==6.2.5)", "Pygments (==2.4.1)", "attrs (==19.2.0)", "jedi (==0.16)", "jinja2 (==3.0.0)", "jupyter-core (==4.7.0)", "nbconvert (==6.0.0)", "pytest-cov (==3.0.0)", "jupyter-client (==7.0.0)", "IPython (==7.23.1)", "ipykernel (==6.0.0)"]
-colors = ["colorama", "pygments", "pygments"]
-jupyter = ["debugpy", "jupyter-client", "ipython", "debugpy", "ipykernel", "debugpy", "debugpy", "debugpy", "ipython-genutils", "attrs", "jedi", "jinja2", "jupyter-core", "nbconvert", "jupyter-client", "ipython", "ipykernel"]
-optional-strict = ["colorama (==0.4.1)", "debugpy (==1.3.0)", "tomli (==0.2.0)", "Pygments (==2.0.0)", "jupyter-client (==6.1.5)", "IPython (==7.10.0)", "debugpy (==1.0.0)", "ipykernel (==5.2.0)", "debugpy (==1.0.0)", "debugpy (==1.0.0)", "debugpy (==1.6.0)", "ipython-genutils (==0.2.0)", "Pygments (==2.4.1)", "attrs (==19.2.0)", "jedi (==0.16)", "jinja2 (==3.0.0)", "jupyter-core (==4.7.0)", "nbconvert (==6.0.0)", "jupyter-client (==7.0.0)", "IPython (==7.23.1)", "ipykernel (==6.0.0)"]
-optional = ["colorama", "debugpy", "tomli", "pygments", "jupyter-client", "ipython", "debugpy", "ipykernel", "debugpy", "debugpy", "debugpy", "ipython-genutils", "pygments", "attrs", "jedi", "jinja2", "jupyter-core", "nbconvert", "jupyter-client", "ipython", "ipykernel"]
+tests = ["pytest-cov", "pytest", "typing", "pytest", "pytest-cov", "pytest", "pytest-cov", "pytest", "pytest", "pytest-cov", "pytest", "scikit-build", "pybind11", "ninja", "codecov", "cmake"]
+tests-strict = ["pytest-cov (==3.0.0)", "pytest (==6.2.5)", "typing (==3.7.4)", "pytest (==4.6.0)", "pytest (==4.6.0)", "pytest-cov (==2.9.0)", "pytest (==4.6.0)", "pytest-cov (==2.8.1)", "pytest (==4.6.0)", "pytest (==4.6.0)", "pytest-cov (==2.8.1)", "scikit-build (==0.11.1)", "pybind11 (==2.7.1)", "ninja (==1.10.2)", "codecov (==2.0.15)", "cmake (==3.21.2)"]
 runtime-strict = ["six (==1.11.0)"]
-tests = ["cmake", "codecov", "ninja", "pybind11", "scikit-build", "pytest", "pytest-cov", "pytest", "pytest", "pytest-cov", "pytest", "pytest-cov", "pytest", "typing", "pytest", "pytest-cov"]
-tests-strict = ["cmake (==3.21.2)", "codecov (==2.0.15)", "ninja (==1.10.2)", "pybind11 (==2.7.1)", "scikit-build (==0.11.1)", "pytest-cov (==2.8.1)", "pytest (==4.6.0)", "pytest (==4.6.0)", "pytest-cov (==2.8.1)", "pytest (==4.6.0)", "pytest-cov (==2.9.0)", "pytest (==4.6.0)", "pytest (==4.6.0)", "typing (==3.7.4)", "pytest (==6.2.5)", "pytest-cov (==3.0.0)"]
+optional = ["ipykernel", "ipython", "jupyter-client", "nbconvert", "jupyter-core", "jinja2", "jedi", "attrs", "pygments", "ipython-genutils", "debugpy", "debugpy", "debugpy", "ipykernel", "debugpy", "ipython", "jupyter-client", "pygments", "tomli", "debugpy", "colorama"]
+optional-strict = ["ipykernel (==6.0.0)", "IPython (==7.23.1)", "jupyter-client (==7.0.0)", "nbconvert (==6.0.0)", "jupyter-core (==4.7.0)", "jinja2 (==3.0.0)", "jedi (==0.16)", "attrs (==19.2.0)", "Pygments (==2.4.1)", "ipython-genutils (==0.2.0)", "debugpy (==1.6.0)", "debugpy (==1.0.0)", "debugpy (==1.0.0)", "ipykernel (==5.2.0)", "debugpy (==1.0.0)", "IPython (==7.10.0)", "jupyter-client (==6.1.5)", "Pygments (==2.0.0)", "tomli (==0.2.0)", "debugpy (==1.3.0)", "colorama (==0.4.1)"]
+jupyter = ["ipykernel", "ipython", "jupyter-client", "nbconvert", "jupyter-core", "jinja2", "jedi", "attrs", "ipython-genutils", "debugpy", "debugpy", "debugpy", "ipykernel", "debugpy", "ipython", "jupyter-client", "debugpy"]
+colors = ["pygments", "pygments", "colorama"]
+all = ["ipykernel", "ipython", "jupyter-client", "pytest-cov", "nbconvert", "jupyter-core", "jinja2", "jedi", "attrs", "pygments", "pytest", "ipython-genutils", "debugpy", "typing", "debugpy", "debugpy", "pytest", "ipykernel", "debugpy", "ipython", "jupyter-client", "pytest-cov", "pytest", "pytest-cov", "pytest", "pygments", "pytest", "debugpy", "pytest-cov", "pytest", "colorama", "six", "scikit-build", "pybind11", "ninja", "codecov", "cmake"]
+all-strict = ["ipykernel (==6.0.0)", "IPython (==7.23.1)", "jupyter-client (==7.0.0)", "pytest-cov (==3.0.0)", "nbconvert (==6.0.0)", "jupyter-core (==4.7.0)", "jinja2 (==3.0.0)", "jedi (==0.16)", "attrs (==19.2.0)", "Pygments (==2.4.1)", "pytest (==6.2.5)", "ipython-genutils (==0.2.0)", "debugpy (==1.6.0)", "typing (==3.7.4)", "debugpy (==1.0.0)", "debugpy (==1.0.0)", "pytest (==4.6.0)", "ipykernel (==5.2.0)", "debugpy (==1.0.0)", "IPython (==7.10.0)", "jupyter-client (==6.1.5)", "pytest (==4.6.0)", "pytest-cov (==2.9.0)", "pytest (==4.6.0)", "pytest-cov (==2.8.1)", "Pygments (==2.0.0)", "pytest (==4.6.0)", "debugpy (==1.3.0)", "pytest (==4.6.0)", "pytest-cov (==2.8.1)", "colorama (==0.4.1)", "six (==1.11.0)", "scikit-build (==0.11.1)", "pybind11 (==2.7.1)", "ninja (==1.10.2)", "codecov (==2.0.15)", "cmake (==3.21.2)"]
 
 [[package]]
 name = "zipp"
-version = "3.8.0"
+version = "3.8.1"
 description = "Backport of pathlib-compatible object wrapper for zip files"
 category = "dev"
 optional = false
 python-versions = ">=3.7"
 
 [package.extras]
-docs = ["sphinx", "jaraco.packaging (>=9)", "rst.linker (>=1.9)"]
-testing = ["pytest (>=6)", "pytest-checkdocs (>=2.4)", "pytest-flake8", "pytest-cov", "pytest-enabler (>=1.0.1)", "jaraco.itertools", "func-timeout", "pytest-black (>=0.3.7)", "pytest-mypy (>=0.9.1)"]
+docs = ["sphinx", "jaraco.packaging (>=9)", "rst.linker (>=1.9)", "jaraco.tidelift (>=1.4)"]
+testing = ["pytest (>=6)", "pytest-checkdocs (>=2.4)", "pytest-flake8", "pytest-cov", "pytest-enabler (>=1.3)", "jaraco.itertools", "func-timeout", "pytest-black (>=0.3.7)", "pytest-mypy (>=0.9.1)"]
 
 [metadata]
 lock-version = "1.1"
@@ -1827,6 +1827,6 @@ xdoctest = [
     {file = "xdoctest-1.0.1.tar.gz", hash = "sha256:3b90a4b7894dda58c9c8dc673fb61fdceb90fdc838baf1cac475618c8e35975c"},
 ]
 zipp = [
-    {file = "zipp-3.8.0-py3-none-any.whl", hash = "sha256:c4f6e5bbf48e74f7a38e7cc5b0480ff42b0ae5178957d564d18932525d5cf099"},
-    {file = "zipp-3.8.0.tar.gz", hash = "sha256:56bf8aadb83c24db6c4b577e13de374ccfb67da2078beba1d037c17980bf43ad"},
+    {file = "zipp-3.8.1-py3-none-any.whl", hash = "sha256:47c40d7fe183a6f21403a199b3e4192cca5774656965b0a4988ad2f8feb5f009"},
+    {file = "zipp-3.8.1.tar.gz", hash = "sha256:05b45f1ee8f807d0cc928485ca40a07cb491cf092ff587c0df9cb1fd154848d2"},
 ]
