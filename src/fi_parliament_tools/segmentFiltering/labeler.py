@@ -183,9 +183,9 @@ def find_statement(
                 break
             else:
                 s = start + i * step
-                edit_ratios = masked.edit[s : s + match.size].value_counts(normalize=True)
+                edit_ratios = masked.edit.iloc[s : s + match.size].value_counts(normalize=True)
                 if "sv" in lang or ("cor" in edit_ratios and edit_ratios["cor"] > 0.5):
-                    return masked.index[s], find_end_index(masked.transcript[s:], text)
+                    return masked.index[s], find_end_index(masked.transcript.iloc[s:], text)
                 start += words_matched
                 diff.set_seq1(window[start:])
     raise ValueError("Alignment not found.")

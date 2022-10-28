@@ -113,7 +113,9 @@ def test_find_statement(test_df: pd.DataFrame) -> None:
 def test_find_end_index(masked_start: int, text: str, true_end: int, test_df: pd.DataFrame) -> None:
     """Find the end of statement in the CTM."""
     masked = test_df[(test_df.transcript != "<eps>") & (test_df.transcript != "<UNK>")]
-    end_idx = labeler.find_end_index(masked.transcript[masked_start:], text.split(), added_range=10)
+    end_idx = labeler.find_end_index(
+        masked.transcript.iloc[masked_start:], text.split(), added_range=10
+    )
     assert end_idx == true_end
 
 
@@ -122,7 +124,7 @@ def test_find_end_index_error(test_df: pd.DataFrame) -> None:
     masked = test_df[(test_df.transcript != "<eps>") & (test_df.transcript != "<UNK>")]
     statement = "this statement does not exist in the test ctm"
     with pytest.raises(ValueError, match="Statement end index not found."):
-        labeler.find_end_index(masked.transcript[150:], statement.split())
+        labeler.find_end_index(masked.transcript.iloc[150:], statement.split())
 
 
 def test_sliding_window() -> None:
