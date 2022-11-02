@@ -651,14 +651,14 @@ tomli = {version = ">=1.1.0", markers = "python_version < \"3.11\""}
 
 [[package]]
 name = "pybind11"
-version = "2.10.0"
+version = "2.10.1"
 description = "Seamless operability between C++11 and Python"
 category = "main"
 optional = false
 python-versions = ">=3.6"
 
 [package.extras]
-global = ["pybind11-global (==2.10.0)"]
+global = ["pybind11-global (==2.10.1)"]
 
 [[package]]
 name = "pycodestyle"
@@ -1649,8 +1649,8 @@ pre-commit-hooks = [
     {file = "pre_commit_hooks-4.3.0.tar.gz", hash = "sha256:fda598a4c834d030727e6a615722718b47510f4bed72df4c949f95ba9f5aaf88"},
 ]
 pybind11 = [
-    {file = "pybind11-2.10.0-py3-none-any.whl", hash = "sha256:6bbc7a2f79689307f0d8d240172851955fc214b33e4cbd7fdbc9cd7176a09260"},
-    {file = "pybind11-2.10.0.tar.gz", hash = "sha256:18977589c10f595f65ec1be90b0a0763b43e458d25d97be9db75b958eb1f43fe"},
+    {file = "pybind11-2.10.1-py3-none-any.whl", hash = "sha256:ebf3eeac46859a2e10077ae45378ba3f33d999a9064697a3464fba1a4a04fc0a"},
+    {file = "pybind11-2.10.1.tar.gz", hash = "sha256:c9571b8a6607c8e90ea156a2a455383b9911f89da414e9f5e251ab58dc3e3c71"},
 ]
 pycodestyle = [
     {file = "pycodestyle-2.9.1-py2.py3-none-any.whl", hash = "sha256:d1735fc58b418fd7c5f658d28d943854f8a849b01a5d0a1e6f3f3fdd0166804b"},
