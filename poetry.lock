@@ -1856,14 +1856,14 @@ testing = ["coverage (>=6.2)", "coverage-enable-subprocess (>=1)", "flaky (>=3.7
 
 [[package]]
 name = "xdoctest"
-version = "1.1.0"
+version = "1.1.1"
 description = "A rewrite of the builtin doctest module"
 category = "dev"
 optional = false
 python-versions = ">=3.6"
 files = [
-    {file = "xdoctest-1.1.0-py3-none-any.whl", hash = "sha256:da330c4dacee51f3c785820bc743188fb6f7c64c5fa1c54bff8836b3cf23d69b"},
-    {file = "xdoctest-1.1.0.tar.gz", hash = "sha256:0fd4fad7932f0a2f082dfdfb857dd6ca41603757586c39b1e5b4d333fc389f8a"},
+    {file = "xdoctest-1.1.1-py3-none-any.whl", hash = "sha256:d59d4ed91cb92e4430ef0ad1b134a2bef02adff7d2fb9c9f057547bee44081a2"},
+    {file = "xdoctest-1.1.1.tar.gz", hash = "sha256:2eac8131bdcdf2781b4e5a62d6de87f044b730cc8db8af142a51bb29c245e779"},
 ]
 
 [package.dependencies]
