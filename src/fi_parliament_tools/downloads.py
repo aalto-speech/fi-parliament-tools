@@ -12,7 +12,7 @@ from typing import Optional
 import pandas as pd
 import requests
 from alive_progress import alive_bar
-from atomicwrites import atomic_write
+from atomicwrites import atomic_write as atomic
 from lxml import etree
 
 from fi_parliament_tools import video_query
@@ -82,7 +82,7 @@ def query_videos(args: Dict[str, str]) -> pd.DataFrame:
         pandas.DataFrame: a metadata table
     """
     query_url = video_query.form_event_query(args)
-    with requests.get(query_url) as response:
+    with requests.get(query_url, timeout=35) as response:
         video_meta = response.json()
     df = pd.DataFrame(video_meta["events"], columns=["_id", "urlName", "publishingDate"])
     df.set_index("_id", inplace=True)
@@ -169,7 +169,7 @@ class DownloadPipeline(Pipeline):
         url = f"{VIDEO_API}/{kwargs['index']}/video/download"
         self.log.debug(f"Will attempt to download {path.name} from {url}.")
         try:
-            with requests.get(url, stream=True) as r, atomic_write(path, mode="wb") as f:
+            with requests.get(url, timeout=35, stream=True) as r, atomic(path, mode="wb") as f:
                 shutil.copyfileobj(r.raw, f)
             self.extract_wav(path)
         except shutil.Error:

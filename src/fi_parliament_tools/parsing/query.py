@@ -35,7 +35,7 @@ class Query:
         Returns:
             dict: a JSON dictionary containing the response if succesful, otherwise None
         """
-        with requests.get(self.query_url, params=self.query_params) as response:
+        with requests.get(self.query_url, params=self.query_params, timeout=35) as response:
             data: Dict[str, Any] = response.json()
             if data["rowData"]:
                 return data
