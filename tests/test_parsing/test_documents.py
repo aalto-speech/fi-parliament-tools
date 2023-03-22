@@ -220,26 +220,31 @@ def test_embedded_chairman_statement(
 
 
 @pytest.mark.parametrize(
-    "session, transcript",
+    "session, mock_session_start_time, transcript",
     [
-        ((7, 2020), "tests/data/jsons/session-007-2020.json"),
-        ((19, 2016), "tests/data/jsons/session-019-2016.json"),
-        ((34, 2015), "tests/data/jsons/session-034-2015.json"),
-        ((35, 2018), "tests/data/jsons/session-035-2018.json"),
-        ((130, 2017), "tests/data/jsons/session-130-2017.json"),
-        ((141, 2017), "tests/data/jsons/session-141-2017.json"),
+        ((7, 2020), "2020-02-14 11:00:17", "tests/data/jsons/session-007-2020.json"),
+        ((19, 2016), "2016-03-04 13:00:04.697", "tests/data/jsons/session-019-2016.json"),
+        ((34, 2015), "2015-09-16 14:01:47.54", "tests/data/jsons/session-034-2015.json"),
+        ((35, 2018), "", "tests/data/jsons/session-035-2018.json"),
+        ((130, 2017), "2017-12-04 22:05:13.447", "tests/data/jsons/session-130-2017.json"),
+        ((141, 2017), "2017-12-15 10:03:56.79", "tests/data/jsons/session-141-2017.json"),
     ],
     indirect=True,
 )
-def test_parse(session: Session, transcript: Transcript) -> None:
+def test_parse(
+    session: Session, mock_session_start_time: MagicMock, transcript: Transcript
+) -> None:
     """Test that a session transcript is correctly parsed into a Transcript object.
 
     Args:
         session (Session): parliament plenary session to parse
+        mock_session_start_time (MagicMock): mock requests JSON query made within parse()
         transcript (Transcript): the correct result for comparison
     """
     parsed_session = session.parse()
     assert parsed_session == transcript
+    mock_session_start_time.assert_called_once_with(session.query_key)
+    mock_session_start_time.return_value.get_session_start_time.assert_called_once()
 
 
 @pytest.fixture
