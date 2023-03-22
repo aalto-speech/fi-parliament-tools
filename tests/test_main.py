@@ -176,7 +176,7 @@ def test_download_limiting_options(runner: CliRunner) -> None:
 
 @mock.patch("fi_parliament_tools.downloads.subprocess.run")
 @mock.patch("fi_parliament_tools.downloads.shutil.copyfileobj")
-@mock.patch("fi_parliament_tools.downloads.atomic_write")
+@mock.patch("fi_parliament_tools.downloads.atomic")
 @mock.patch("builtins.open")
 @pytest.mark.parametrize(
     "mock_downloads_form_path", ([Path("session-135-2018.mp4"), None],), indirect=True
