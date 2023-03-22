@@ -1,6 +1,7 @@
 """Test post-2015 session parsing."""
 from dataclasses import asdict
 from typing import Any
+from typing import Callable
 from typing import Collection
 from typing import Dict
 from typing import List
@@ -22,6 +23,34 @@ def mock_session_start_time(request: SubRequest, mocker: MockerFixture) -> Magic
     """Mock SessionQuery.get_session_start_time call."""
     mock: MagicMock = mocker.patch("fi_parliament_tools.parsing.documents.SessionQuery")
     mock.return_value.get_session_start_time.return_value = request.param
+    return mock
+
+
+@pytest.fixture
+def mock_interpellation_queries(
+    read_xml_string: Callable[[str], str], mocker: MockerFixture
+) -> MagicMock:
+    """Mock queries to get the interpellation 1/2015 and a related timestamp from the API."""
+    mock: MagicMock = mocker.patch("requests.get")
+    mock.return_value.__enter__.return_value.json.side_effect = [
+        {
+            "columnNames": ["column1", "column2"],
+            "rowData": [["", read_xml_string("vk-01-2015.xml")]],
+            "hasMore": False,
+        },
+        {
+            "columnNames": ["column1", "column2"],
+            "rowData": [
+                4 * [""] + ["2015-09-16 14:03:08.013", "", "116"] + 10 * [""] + ["2", "1"],
+                4 * [""] + ["2015-09-16 14:18:30.397", "T", "214"] + 10 * [""] + ["2", "1"],
+                4 * [""] + ["2015-09-16 14:22:36.12", "T", "1141"] + 10 * [""] + ["2", "2"],
+                4 * [""] + ["2015-09-16 14:39:16.08", "V", "116"] + 10 * [""] + ["2", "7"],
+                4 * [""] + ["2015-09-16 14:43:06.073", "V", "1128"] + 10 * [""] + ["2", "10"],
+                4 * [""] + ["2015-09-16 14:44:28.803", "V", "768"] + 10 * [""] + ["2", "11"],
+            ],
+            "hasMore": False,
+        },
+    ]
     return mock
 
 
@@ -220,26 +249,58 @@ def test_embedded_chairman_statement(
 
 
 @pytest.mark.parametrize(
-    "session, transcript",
+    "session, mock_session_start_time, transcript",
     [
-        ((7, 2020), "tests/data/jsons/session-007-2020.json"),
-        ((19, 2016), "tests/data/jsons/session-019-2016.json"),
-        ((34, 2015), "tests/data/jsons/session-034-2015.json"),
-        ((35, 2018), "tests/data/jsons/session-035-2018.json"),
-        ((130, 2017), "tests/data/jsons/session-130-2017.json"),
-        ((141, 2017), "tests/data/jsons/session-141-2017.json"),
+        ((7, 2020), "2020-02-14 11:00:17", "tests/data/jsons/session-007-2020.json"),
+        ((19, 2016), "2016-03-04 13:00:04.697", "tests/data/jsons/session-019-2016.json"),
+        ((35, 2018), "", "tests/data/jsons/session-035-2018.json"),
+        ((130, 2017), "2017-12-04 22:05:13.447", "tests/data/jsons/session-130-2017.json"),
+        ((141, 2017), "2017-12-15 10:03:56.79", "tests/data/jsons/session-141-2017.json"),
     ],
     indirect=True,
 )
-def test_parse(session: Session, transcript: Transcript) -> None:
+def test_parse(
+    session: Session, mock_session_start_time: MagicMock, transcript: Transcript
+) -> None:
     """Test that a session transcript is correctly parsed into a Transcript object.
 
     Args:
         session (Session): parliament plenary session to parse
+        mock_session_start_time (MagicMock): mock requests JSON query made within parse()
         transcript (Transcript): the correct result for comparison
     """
     parsed_session = session.parse()
     assert parsed_session == transcript
+    mock_session_start_time.assert_called_once_with(session.query_key)
+    mock_session_start_time.return_value.get_session_start_time.assert_called_once()
+
+
+@pytest.mark.parametrize(
+    "session, mock_session_start_time, transcript",
+    [((34, 2015), "2015-09-16 14:01:47.54", "tests/data/jsons/session-034-2015.json")],
+    indirect=True,
+)
+def test_parsing_with_interpellation(
+    session: Session,
+    mock_session_start_time: MagicMock,
+    transcript: Transcript,
+    mock_interpellation_queries: MagicMock,
+) -> None:
+    """Test that a session transcript is correctly parsed into a Transcript object.
+
+    In this test case, one of the subsections is an interpellation.
+
+    Args:
+        session (Session): parliament plenary session to parse
+        mock_session_start_time (MagicMock): mock requests JSON query made within parse()
+        transcript (Transcript): the correct result for comparison
+        mock_interpellation_queries (MagicMock): mock queries that get interpellation related data
+    """
+    parsed_session = session.parse()
+    assert parsed_session == transcript
+    mock_session_start_time.assert_called_once_with(session.query_key)
+    mock_session_start_time.return_value.get_session_start_time.assert_called_once()
+    mock_interpellation_queries.return_value.__enter__.return_value.json.assert_called()
 
 
 @pytest.fixture

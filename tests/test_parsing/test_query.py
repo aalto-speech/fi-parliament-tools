@@ -67,43 +67,30 @@ def mock_requests_get_json_twice(mocker: MockerFixture) -> MagicMock:
 
 
 @pytest.fixture
-def read_xml_string() -> Callable[[int, int, str], str]:
-    """Read an XML file to a string. Subsection string needs to include a prepending '-'."""
-
-    def _read_xml_string(number: int, year: int, subsection: str) -> str:
-        xmlfile = f"tests/data/xmls/session-{number:03}-{year}{subsection}.xml"
-        with open(xmlfile, encoding="utf-8") as infile:
-            lines = infile.readlines()
-            return " ".join([line.strip() for line in lines])
-
-    return _read_xml_string
-
-
-@pytest.fixture
 def mock_requests_get_json_for_xml_combine(
-    read_xml_string: Callable[[int, int, str], str], mocker: MockerFixture
+    read_xml_string: Callable[[str], str], mocker: MockerFixture
 ) -> MagicMock:
     """Mock the results of XML combine queries to the parliament open data API."""
     mock: MagicMock = mocker.patch("requests.get")
     mock.return_value.__enter__.return_value.json.side_effect = [
         {
             "columnNames": ["column1", "column2"],
-            "rowData": [["", read_xml_string(61, 2020, "-tos")]],
+            "rowData": [["", read_xml_string("session-061-2020-tos.xml")]],
             "hasMore": False,
         },
         {
             "columnNames": ["column1", "column2"],
-            "rowData": [["", read_xml_string(61, 2020, "-3")]],
+            "rowData": [["", read_xml_string("session-061-2020-3.xml")]],
             "hasMore": False,
         },
         {
             "columnNames": ["column1", "column2"],
-            "rowData": [["", read_xml_string(61, 2020, "-4")]],
+            "rowData": [["", read_xml_string("session-061-2020-4.xml")]],
             "hasMore": False,
         },
         {
             "columnNames": ["column1", "column2"],
-            "rowData": [["", read_xml_string(61, 2020, "-5")]],
+            "rowData": [["", read_xml_string("session-061-2020-5.xml")]],
             "hasMore": False,
         },
         {
@@ -247,11 +234,11 @@ def test_get_xml_skip_xml_combine(
 
 
 def test_xml_combine(
-    read_xml_string: Callable[[int, int, str], str],
+    read_xml_string: Callable[[str], str],
     vaski_query: VaskiQuery,
     mock_requests_get_json_for_xml_combine: MagicMock,
 ) -> None:
     """Test a transcript is composed from subsections if the main transcript is missing."""
     combined_xml = vaski_query.get_xml()
-    true_file = read_xml_string(61, 2020, "")
+    true_file = read_xml_string("session-061-2020.xml")
     assert combined_xml == true_file

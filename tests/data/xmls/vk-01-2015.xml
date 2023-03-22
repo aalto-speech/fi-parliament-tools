@@ -1,0 +1,609 @@
+<ns11:Siirto xmlns:ns11="http://www.eduskunta.fi/skeemat/siirto/2011/09/07">
+  <Sanomavalitys xmlns="http://www.eduskunta.fi/skeemat/siirtokooste/2011/05/17">
+    <ns4:SanomatyyppiNimi xmlns:ns4="http://www.eduskunta.fi/skeemat/siirtoelementit/2011/05/17">VASKI_JULKVP_Interpellation_fi</ns4:SanomatyyppiNimi>
+    <ns4:SanomaTunnus xmlns:ns4="http://www.eduskunta.fi/skeemat/siirtoelementit/2011/05/17">Vaski_VASKI_JULKVP_Interpellation_fi_03-May-2021_15:10:40:514_EEST</ns4:SanomaTunnus>
+    <ns4:LuontiHetki xmlns:ns4="http://www.eduskunta.fi/skeemat/siirtoelementit/2011/05/17">2021-05-03T15:10:40.514+03:00</ns4:LuontiHetki>
+    <ns4:SiirtoKoodi xmlns:ns4="http://www.eduskunta.fi/skeemat/siirtoelementit/2011/05/17">paivitys</ns4:SiirtoKoodi>
+    <Toimija xmlns="http://www.vn.fi/skeemat/metatietokooste/2010/04/27" xmlns:s119="http://www.vn.fi/skeemat/metatietoelementit/2010/04/27" s119:rooliKoodi="lahettaja">
+      <s119:YhteisoTeksti>Eduskunta</s119:YhteisoTeksti>
+    </Toimija>
+    <Toimija xmlns="http://www.vn.fi/skeemat/metatietokooste/2010/04/27" xmlns:s120="http://www.vn.fi/skeemat/metatietoelementit/2010/04/27" s120:rooliKoodi="vastaanottaja">
+      <s120:YhteisoTeksti>Eduskunta</s120:YhteisoTeksti>
+    </Toimija>
+  </Sanomavalitys>
+  <ns11:SiirtoMetatieto>
+    <jme:JulkaisuMetatieto xmlns:asi="http://www.vn.fi/skeemat/asiakirjakooste/2010/04/27" xmlns:asi1="http://www.vn.fi/skeemat/asiakirjaelementit/2010/04/27" xmlns:jme="http://www.eduskunta.fi/skeemat/julkaisusiirtokooste/2011/12/20" xmlns:met="http://www.vn.fi/skeemat/metatietokooste/2010/04/27" xmlns:met1="http://www.vn.fi/skeemat/metatietoelementit/2010/04/27" xmlns:org="http://www.vn.fi/skeemat/organisaatiokooste/2010/02/15" xmlns:org1="http://www.vn.fi/skeemat/organisaatioelementit/2010/02/15" xmlns:sii="http://www.eduskunta.fi/skeemat/siirtokooste/2011/05/17" xmlns:sii1="http://www.eduskunta.fi/skeemat/siirtoelementit/2011/05/17" xmlns:sis="http://www.vn.fi/skeemat/sisaltokooste/2010/04/27" xmlns:sis1="http://www.vn.fi/skeemat/sisaltoelementit/2010/04/27" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" met1:asiakirjatyyppiNimi="Välikysymys" met1:eduskuntaTunnus="VK 1/2015 vp" met1:identifiointiTunnus="{2A198390-3D82-CF2D-8399-793222000013}" met1:kieliKoodi="fi" met1:laadintaPvm="2015-09-15" met1:muuTunnus="EDK-2015-AK-10637" met1:paatehtavaKoodi="04 01 01 Välikysymysmenettely">
+      <asi:IdentifiointiOsa>
+        <met1:AsiakirjatyyppiNimi>Välikysymys</met1:AsiakirjatyyppiNimi>
+        <asi:EduskuntaTunniste>
+          <met1:AsiakirjatyyppiKoodi>VK</met1:AsiakirjatyyppiKoodi>
+          <asi1:AsiakirjaNroTeksti>1</asi1:AsiakirjaNroTeksti>
+          <asi1:ValtiopaivavuosiTeksti>2015</asi1:ValtiopaivavuosiTeksti>
+        </asi:EduskuntaTunniste>
+        <asi:Vireilletulo>
+          <met1:EduskuntaTunnus>VK 1/2015 vp</met1:EduskuntaTunnus>
+        </asi:Vireilletulo>
+        <met:Toimija met1:rooliKoodi="Laatija">
+          <met1:YhteisoTeksti />
+          <org:Henkilo>
+            <org1:AsemaTeksti />
+            <org1:EtuNimi>Jukka</org1:EtuNimi>
+            <org1:SukuNimi>Gustafsson</org1:SukuNimi>
+            <org1:LisatietoTeksti>sd</org1:LisatietoTeksti>
+          </org:Henkilo>
+        </met:Toimija>
+        <met1:LaadintaPvmTeksti>15.09.2015</met1:LaadintaPvmTeksti>
+        <met:Nimeke met1:vaihtoehtoinenNimekeTeksti="">
+          <met1:NimekeTeksti>Välikysymys koulutusleikkausten vaikutuksista kasvuun, koulutukselliseen tasa-arvoon ja osaamistasoon</met1:NimekeTeksti>
+        </met:Nimeke>
+      </asi:IdentifiointiOsa>
+      <sii:EsitysmuotoViite met1:muuTunnus="{2A198390-3D82-CF2D-8399-793222000013}" />
+      <met:Aihe met1:muuTunnus="http://www.yso.fi/onto/yso/p249">
+        <met1:AiheTeksti>koulutuspolitiikka</met1:AiheTeksti>
+      </met:Aihe>
+      <met:Aihe met1:muuTunnus="http://www.yso.fi/onto/yso/p1650">
+        <met1:AiheTeksti>varhaiskasvatus</met1:AiheTeksti>
+      </met:Aihe>
+      <met:Aihe met1:muuTunnus="http://www.yso.fi/onto/yso/p20272">
+        <met1:AiheTeksti>esiopetus</met1:AiheTeksti>
+      </met:Aihe>
+      <met:Aihe met1:muuTunnus="http://www.yso.fi/onto/yso/p13590">
+        <met1:AiheTeksti>peruskoulutus</met1:AiheTeksti>
+      </met:Aihe>
+      <met:Aihe met1:muuTunnus="http://www.yso.fi/onto/yso/p9700">
+        <met1:AiheTeksti>ammatillinen koulutus</met1:AiheTeksti>
+      </met:Aihe>
+      <met:Aihe met1:muuTunnus="http://www.yso.fi/onto/yso/p1246">
+        <met1:AiheTeksti>korkeakouluopetus</met1:AiheTeksti>
+      </met:Aihe>
+      <met:Aihe met1:muuTunnus="http://www.yso.fi/onto/yso/p10895">
+        <met1:AiheTeksti>yliopistot</met1:AiheTeksti>
+      </met:Aihe>
+      <met:Aihe met1:muuTunnus="http://www.yso.fi/onto/yso/p1030">
+        <met1:AiheTeksti>korkeakoulut</met1:AiheTeksti>
+      </met:Aihe>
+      <met:Aihe met1:muuTunnus="http://www.yso.fi/onto/yso/p10564">
+        <met1:AiheTeksti>ammattikorkeakoulut</met1:AiheTeksti>
+      </met:Aihe>
+      <met:Aihe met1:muuTunnus="http://www.yso.fi/onto/yso/p978">
+        <met1:AiheTeksti>talouspolitiikka</met1:AiheTeksti>
+      </met:Aihe>
+      <met:Aihe met1:muuTunnus="http://www.yso.fi/onto/yso/p6172">
+        <met1:AiheTeksti>taloudelliset kriisit</met1:AiheTeksti>
+      </met:Aihe>
+      <met:Aihe met1:muuTunnus="http://www.yso.fi/onto/yso/p17567">
+        <met1:AiheTeksti>yhdenvertaisuus</met1:AiheTeksti>
+      </met:Aihe>
+      <met:Aihe met1:muuTunnus="http://www.yso.fi/onto/yso/p9189">
+        <met1:AiheTeksti>kilpailukyky</met1:AiheTeksti>
+      </met:Aihe>
+      <met:Aihe met1:muuTunnus="http://www.yso.fi/onto/yso/p183">
+        <met1:AiheTeksti>tutkimus</met1:AiheTeksti>
+      </met:Aihe>
+    </jme:JulkaisuMetatieto>
+  </ns11:SiirtoMetatieto>
+  <SiirtoAsiakirja xmlns="http://www.eduskunta.fi/skeemat/siirtokooste/2011/05/17">
+    <RakenneAsiakirja>
+      <kys:Kysymys xmlns:asi="http://www.vn.fi/skeemat/asiakirjakooste/2010/04/27" xmlns:asi1="http://www.vn.fi/skeemat/asiakirjaelementit/2010/04/27" xmlns:kys="http://www.eduskunta.fi/skeemat/kysymys/2012/08/10" xmlns:met="http://www.vn.fi/skeemat/metatietokooste/2010/04/27" xmlns:met1="http://www.vn.fi/skeemat/metatietoelementit/2010/04/27" xmlns:mix="http://www.loc.gov/mix/v20" xmlns:narc="http://www.arkisto.fi/skeemat/sahke2/2011/01/31_vnk" xmlns:org="http://www.vn.fi/skeemat/organisaatiokooste/2010/02/15" xmlns:org1="http://www.vn.fi/skeemat/organisaatioelementit/2010/02/15" xmlns:saa="http://www.vn.fi/skeemat/saadoskooste/2010/04/27" xmlns:saa1="http://www.vn.fi/skeemat/saadoselementit/2010/04/27" xmlns:sis="http://www.vn.fi/skeemat/sisaltokooste/2010/04/27" xmlns:sis1="http://www.vn.fi/skeemat/sisaltoelementit/2010/04/27" xmlns:tau="http://www.vn.fi/skeemat/taulukkokooste/2010/04/27" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" met1:asiakirjatyyppiNimi="Välikysymys" met1:eduskuntaTunnus="VK 1/2015 vp" met1:identifiointiTunnus="VK 1/2015 vp" met1:julkisuusKoodi="Julkinen" met1:kieliKoodi="fi" met1:laadintaPvm="2015-09-15" met1:paatehtavaKoodi="04 01 01" met1:rakennemaarittelyNimi="kysymys.xsd" met1:tilaKoodi="Valmis" met1:versioTeksti="5.0">
+        <asi:IdentifiointiOsa>
+          <met1:AsiakirjatyyppiNimi>Välikysymys</met1:AsiakirjatyyppiNimi>
+          <asi:EduskuntaTunniste>
+            <met1:AsiakirjatyyppiKoodi>VK</met1:AsiakirjatyyppiKoodi>
+            <asi1:AsiakirjaNroTeksti>1</asi1:AsiakirjaNroTeksti>
+            <asi1:ValtiopaivavuosiTeksti>2015 vp</asi1:ValtiopaivavuosiTeksti>
+          </asi:EduskuntaTunniste>
+          <met:Toimija met1:rooliKoodi="Laatija">
+            <org:Henkilo met1:muuTunnus="116">
+              <org1:EtuNimi>Jukka</org1:EtuNimi>
+              <org1:SukuNimi>Gustafsson</org1:SukuNimi>
+              <org1:LisatietoTeksti>sd</org1:LisatietoTeksti>
+              <org1:LisatietoTeksti>ym.</org1:LisatietoTeksti>
+            </org:Henkilo>
+          </met:Toimija>
+          <met:Nimeke>
+            <met1:NimekeTeksti>Välikysymys koulutusleikkausten vaikutuksista kasvuun, koulutukselliseen tasa-arvoon ja osaamistasoon </met1:NimekeTeksti>
+          </met:Nimeke>
+        </asi:IdentifiointiOsa>
+        <asi:PerusteluOsa>
+          <sis1:OtsikkoTeksti>Eduskunnalle</sis1:OtsikkoTeksti>
+          <asi:PerusteluLuku>
+            <sis:KappaleKooste>Suomalaisen yhteiskunnan menestysreseptinä on aina, erityisesti vaikeina aikoina, ollut koulutukseen, tutkimukseen ja osaamiseen panostaminen. Tämän reseptin varassa suomalaisten osaamistaso on menneinä vuosikymmeninä noussut, työn tuottavuus on moninkertaistunut ja Suomesta on tullut maailmanlaajuisesti tunnustettu korkean osaamisen ja teknologian maa.</sis:KappaleKooste>
+            <sis:KappaleKooste>1990-luvun syvän laman aikana päätettiin tukea rakennemuutoksen läpivientiä ja uuden kasvun synnyttämistä panostamalla koulutukseen, osaamiseen ja innovaatioihin. Suomi kävi läpi suuren elinkeinorakenteen muutoksen, jossa uutta kasvua alkoi syntyä elektroniikkateollisuuteen, korkean teknologian laitteiden ja palveluiden vientiin. </sis:KappaleKooste>
+            <sis:KappaleKooste>Uuteen kasvuun panostaminen kannatti, sillä huonoja taloudellisia aikoja seurasi taloudellisen kasvun ja työllisyyden paranemisen aika. </sis:KappaleKooste>
+            <sis:KappaleKooste>Edelliset, pääministeri Kataisen ja Stubbin, hallitukset joutuivat tekemään isoja säästöjä koulutukseen. Siksi ennen vaaleja kaikki eri puolueiden puheenjohtajat antoivat lupauksen, että enää ei koulutuksesta leikata. Keskustan puheenjohtaja Juha Sipilä piti jo viime vaalikauden leikkauksia liian suurina ja sanoi, että "Keskusta ei olisi leikannut näin paljon". </sis:KappaleKooste>
+            <sis:KappaleKooste>Valitettavasti pääministeri Sipilän johtaman hallituksen puolueet pettivät rankasti niin nuorille kuin koko kansallekin antamansa lupauksen, söivät sanansa. Hallitusohjelmassa päätettiin leikata opetuksesta ja tieteestä OAJ:n mukaan 3 miljardia euroa vaalikauden loppuun mennessä.</sis:KappaleKooste>
+            <sis:KappaleKooste>Varhaiskasvatuksen, perusopetuksen, ammatillisen koulutuksen sekä korkeakoulujen ja tieteen säästöjen lisäksi opintotuen leikkaukset ja indeksiin sitomatta jättäminen, Tekesin tutkimus- ja kehittämistoiminnan leikkaukset, evo-rahoituksen pienentäminen sekä indeksikorotusten jäädytykset yhdessä kurjistavat koulutusta. </sis:KappaleKooste>
+            <sis:KappaleKooste>Hallitus on myös päättänyt vähentää kuntien tehtäviä miljardin euron edestä, mistä tulee vielä lisäleikkauksia opetukseen.</sis:KappaleKooste>
+            <sis:KappaleKooste>Toimillaan hallitus romuttaa koulutuksellista tasa-arvoa, lisää alueellista eriarvoisuutta ja kasvattaa kuilua hyvin ja heikommin pärjäävien välillä. Hallituksen näkemys varhaiskasvatuksesta ja koulutuksesta pelkkinä kuluerinä, joista voidaan loputtomasti säästää, on äärimmäisen lyhytnäköinen eikä lainkaan linjassa hallituksen omien koulutuspoliittisten tavoitteiden kanssa suomalaisten osaamistason nostamisesta. </sis:KappaleKooste>
+            <sis:KappaleKooste>Sipilän hallituksen tapa leikata koulutuksesta johtaa siihen, että ensimmäistä kertaa sataan vuoteen Suomen osaamistaso tulee laskemaan. Hallitus syö eväät uudelta kasvulta, uusilta työpaikoilta ja innovaatioilta. </sis:KappaleKooste>
+            <sis:KappaleKooste>Suomen tulevaisuutta rakennetaan kuitenkin osaamisella. Suomessa on perinteisesti ollut valmiutta ja poliittista tahtoa panostaa koulutukseen. Tämä on myös antanut tulosta.</sis:KappaleKooste>
+            <sis:KappaleKooste>Maan hallitus on valinnut tien, joka vaarantaa Suomen uudistumisen. Hallituksen politiikka johtaa koulutustason nousun pysähtymiseen ja heikentää maamme tulevaisuuden mahdollisuuksia. Leikkaukset kautta koulutuskaaren aina varhaiskasvatuksesta yliopistojen opetus- ja tutkimustyöhön syövät edellytykset kestävältä talouskasvulta, viennin kehittämiseltä, uusien korkean tuottavuuden työpaikkojen synnyltä ja elinkeinorakenteen muutokselta. </sis:KappaleKooste>
+            <sis:KappaleKooste>Suomi on vaikeassa taloudellisessa tilanteessa, ja julkista taloutta on tarpeen tasapainottaa. Koulutuspoliittisesti kestävien rakenteellisten uudistusten sijasta maan hallitus on kuitenkin valinnut linjakseen koulutusleikkaukset. </sis:KappaleKooste>
+            <sis:KappaleKooste>Hallitus aikoo muuttaa yli 3-vuotiaiden lasten päivähoidon suhdelukua siten, että yhdellä työntekijällä saisi olla jatkossa 8 lasta nykyisten 7 lapsen sijaan. Lisäksi päätettiin subjektiivisen päivähoito-oikeuden rajaamisesta puolipäiväiseksi ja esiopetusikäisten päivähoitotarpeen korvaamisesta kerhotoiminnalla. Nämä muutokset aiheuttaisivat sen, että ryhmäkoot kasvaisivat reilusti.</sis:KappaleKooste>
+            <sis:KappaleKooste>Esiopetusikäisten lasten päivän pirstominen esiopetukseen ja sitä täydentävään kerhotoimintaan johtaa lasten päivän jakaantumiseen pahimmillaan kolmeen osaan ja kolmeen eri ryhmään jopa eri fyysisissä ympäristöissä saman päivän aikana. Tämä vaikuttaa paitsi lapsen esiopetuksen laatuun myös tavoitteiden saavuttamiseen ja ennen kaikkea lapsen kokonaishyvinvointiin.</sis:KappaleKooste>
+            <sis:KappaleKooste>Osansa hallituksen päätöksestä saavat kannettavakseen myös varhaiskasvatuksen parissa työskentelevät ammattilaiset. Työn kuormittavuus kasvaa ja kyky lapsen yksilölliseen kohtaamiseen heikkenee. Suuremmat ryhmäkoot tarkoittavat myös sitä, että tuhansien varhaiskasvatuksen parissa työskentelevien työpaikat ovat vaarassa. Alan tutkimukset ovat kuitenkin osoittaneet, että yhden euron panostus varhaiskasvatukseen tuo myöhemmin seitsemän euroa takaisin.</sis:KappaleKooste>
+            <sis:KappaleKooste>Laadukas peruskoulu on koulutusjärjestelmämme kivijalka. Oppimistulokset ovat kansainvälisten tutkimustulostenkin mukaan heikentyneet ja koulujen väliset erot kasvamassa. Sen vuoksi vastustamme hallituksen esitystä luopua perusopetuksen ryhmäkokojen pienentämiseen myönnettävistä valtionavustuksista sekä ns. tasa-arvoavustuksista. Hallituksen päätösten seurauksena ryhmäkoot ja koulujen väliset erot tulevat kasvamaan. Tätä emme voi hyväksyä.</sis:KappaleKooste>
+            <sis:KappaleKooste>Yleissivistävän koulutuksen osalta on myös syytä kysyä, miten hallitus aikoo turvata oppilaiden ja opiskelijoiden valinnanvapauden samalla, kun se leikkaa voimakkaasti määrärahoja.</sis:KappaleKooste>
+            <sis:KappaleKooste>Hallitus on esittänyt paikkaavansa leikkauksiaan laajentamalla oppimistapoja siten, että se ottaa käyttöön digitaalisia oppimisympäristöjä. On tietenkin selvää, että koulujärjestelmämme on seurattava kehitystä ja oltava osa digitalisaatiota. Kaikille oppilaille on tarjottava mahdollisuudet tasavertaisiin oppimisympäristöihin ja oppimismateriaaleihin molemmilla kansalliskielillä. Tämä ei kuitenkaan millään tavoin vähennä pätevien opettajien ja muun henkilökunnan tarvetta. Oppimisympäristöjä uudistettaessa on myös tärkeätä, että se tehdään suunnitelmallisesti ja että opettajille taataan riittävät jatkokoulutusmahdollisuudet.</sis:KappaleKooste>
+            <sis:KappaleKooste>Ammatillisen koulutuksen leikkaukset vaarantavat vakavalla tavalla ammatillisen koulutuksen ja ammattiosaamisen laadun, yleisen jatko-opintokelpoisuuden ja nuorisotakuun toteutumisen.</sis:KappaleKooste>
+            <sis:KappaleKooste>Samalla on syytä kysyä, miten hallitus aikoo turvata, että pienet koulutusohjelmat eivät häviä rajujen leikkausten seurauksena. Eteenkin ruotsinkielistä ammatillista koulutusta tarjoavat yksiköt ja koulutusohjelmat ovat hyvin pieniä ja haavoittuvia.</sis:KappaleKooste>
+            <sis:KappaleKooste>Hallituksen leikkaukset kurittavat uskomattomalla tavalla myös yliopistoja ja ammattikorkeakouluja. Suoria leikkauksia korkeakouluille tulee 75 miljoonaa euroa vuosittain. Tämän lisäksi yliopistojen ja ammattikorkeakoulujen indeksikorotukset jäädytetään vaalikauden ajaksi, mikä vähentää korkeakoulujen rahoitusta 170 miljoonalla eurolla vuosittain vaalikauden loppuvuosina. Suorien leikkausten lisäksi hallitus suunnittelee saavansa säästöjä aikaan vähentämällä maisterin tutkinnon suorittamismääriä 20 prosentilla yliopistoissa. Näillä leikkauksilla vaarannetaan korkeakoulujen mahdollisuudet tarjota laadukasta koulutusta, lasketaan osaamistasoa ja ennen kaikkea kavennetaan resursseja elintärkeältä perustutkimukselta, joiden pohjalta kehitetään tulevaisuuden innovaatioita. </sis:KappaleKooste>
+            <sis:KappaleKooste>On merkillistä, että hallitus peräänkuuluttaa Suomen nousua innovaatioilla ja samaan aikaan leikkaa perustutkimuksesta ja tieteestä. Nämä leikkaukset yliopistojen perusrahoituksesta sekä Suomen Akatemian ja Tekesin kilpaillusta tutkimusrahoituksesta uhkaavat näivettää koko suomalaisen innovaatioekosysteemin. Suomen vientivetoiseen kasvuun perustuva tulevaisuus, joka syntyy edelläkävijäosaamisesta, joutuu vaakalaudalle.</sis:KappaleKooste>
+            <sis:KappaleKooste>Maan hallituksen linjana näyttääkin olevan suomalaisten koulutustason laskeminen leikkauksilla ja tutkintomäärien vähentämisellä.</sis:KappaleKooste>
+            <sis:KappaleKooste>Opetusalan ammattilaiset ja heitä edustava Opetusalan ammattijärjestö OAJ ovat lausuneet syvän huolensa koulutusleikkausten seurauksista. </sis:KappaleKooste>
+            <sis:KappaleKooste>Useissa viime vuosina julkaistuissa tutkimuksissa ja selvityksissä todetaan, että Suomi on menettämässä asemansa koulutuksen mallimaana. Suomalaisten koulutustason nousu on pysähtymässä lähivuosina ja koulutusrakenne vakiintumassa nykytasolle. </sis:KappaleKooste>
+            <sis:KappaleKooste>Tällä koulutustason nousun pysähtymisellä on merkittävät seuraukset elinkeinorakenteen sekä korkean osaamisen työpaikkojen syntymisen kannalta. Aiempina vuosikymmeninä koulutustason nousulla on ollut merkittävä työuria pidentävä ja työvuosia lisäävä vaikutus. Toisin sanoen työllisyysasteen nostaminen tulee entistä vaikeammaksi koulutustason nousun pysähtyessä. </sis:KappaleKooste>
+            <sis:KappaleKooste>Hallitus on päätöksillään tehnyt arvovalinnan. Sekä absoluuttisina lukuina että opetuksen ja koulutuksen hallinnonalaan suhteutettuina tehdyt leikkauspäätökset ovat aivan liian suuria. Nyt leikataan uudelta talouskasvulta, uusien työpaikkojen synnyltä ja uusilta innovaatioilta siivet. Suomen taloustilanne on vakava, ja tarvitaan toimenpiteitä työllisyyden vahvistamiseksi julkisen talouden tasapainottamiseksi. Sipilän hallituksen tekemät leikkauspäätökset koulutuksesta tulevat pitkällä aikavälillä Suomelle ja suomalaisille erittäin kalliiksi. Koulutuksen ja tutkimuksen luoma edelläkävijäosaaminen luo sen perustan, jolta Suomi ponnistaa eteenpäin ja uuteen nousuun. </sis:KappaleKooste>
+          </asi:PerusteluLuku>
+        </asi:PerusteluOsa>
+        <asi:PonsiOsa>
+          <asi1:JohdantoTeksti>Edellä olevan perusteella ja Suomen perustuslain 43 §:ään viitaten esitämme asianomaisen ministerin vastattavaksi seuraavan välikysymyksen:</asi1:JohdantoTeksti>
+          <sis:SisennettyKappaleKooste>
+            <sis1:KursiiviTeksti>Koulutuksesta ja tutkimuksesta leikkaaminen ei vie Suomea uuteen nousuun. Miksi hallitus on vaarantanut tulevan kasvun leikkaamalla koulutuksesta ja tutkimuksesta,</sis1:KursiiviTeksti>
+          </sis:SisennettyKappaleKooste>
+          <sis:SisennettyKappaleKooste>
+            <sis1:KursiiviTeksti>Hallitus haluaa Suomesta "koulutuksen, osaamisen ja modernin oppimisen kärkimaan". Kuinka tämä tehdään, kun hallitus leikkaa pysyvästi koulutukselta ja tutkimukselta 3 miljardia euroa vaalikauden loppuun mennessä ja tämän laastariksi tarjotaan vain kertaluonteista 300 miljoonan euron kärkihanketta,</sis1:KursiiviTeksti>
+          </sis:SisennettyKappaleKooste>
+          <sis:SisennettyKappaleKooste>
+            <sis1:KursiiviTeksti>miksi hallituspuolueet vastoin antamiaan vaalilupauksia ottivat arvovalinnakseen koulutuksesta leikkaamisen,</sis1:KursiiviTeksti>
+          </sis:SisennettyKappaleKooste>
+          <sis:SisennettyKappaleKooste>
+            <sis1:KursiiviTeksti>miksi hallitus vaarantaa koulutuksellista tasa-arvoa rapauttamalla varhaiskasvatusta kasvattamalla ryhmäkokoja sekä leikkaamalla perusopetuksen ryhmäkokojen pienentämiseen tarkoitetut määrärahat,</sis1:KursiiviTeksti>
+          </sis:SisennettyKappaleKooste>
+          <sis:SisennettyKappaleKooste>
+            <sis1:KursiiviTeksti>miksi hallitus heikentää tietoisesti yhteiskuntamme kilpailu- ja uudistumiskykyä leikkaamalla yliopistoilta, ammattikorkeakouluilta, Suomen Akatemialta ja Tekesiltä ja</sis1:KursiiviTeksti>
+          </sis:SisennettyKappaleKooste>
+          <sis:SisennettyKappaleKooste>
+            <sis1:KursiiviTeksti>aikooko hallitus ottaa kansalaisten ja asiantuntijoiden eri foorumeilla esittämät huolet koulutuksen laadun heikkenemisestä ja lasten ja nuorten eriarvoisuuden lisääntymisestä vakavasti ja perua ylimitoitetut leikkauspäätöksensä?</sis1:KursiiviTeksti>
+          </sis:SisennettyKappaleKooste>
+        </asi:PonsiOsa>
+        <asi:AllekirjoitusOsa>
+          <asi:PaivaysKooste asi1:allekirjoitusPvm="2015-09-15">Helsingissä 15.9.2015</asi:PaivaysKooste>
+          <asi:Allekirjoittaja asi1:allekirjoitusLuokitusKoodi="EnsimmainenAllekirjoittaja">
+            <org:Henkilo met1:muuTunnus="116">
+              <org1:EtuNimi>Jukka</org1:EtuNimi>
+              <org1:SukuNimi>Gustafsson</org1:SukuNimi>
+              <org1:LisatietoTeksti>sd</org1:LisatietoTeksti>
+            </org:Henkilo>
+          </asi:Allekirjoittaja>
+          <asi:Allekirjoittaja>
+            <org:Henkilo met1:muuTunnus="1147">
+              <org1:EtuNimi>Antti</org1:EtuNimi>
+              <org1:SukuNimi>Lindtman</org1:SukuNimi>
+              <org1:LisatietoTeksti>sd</org1:LisatietoTeksti>
+            </org:Henkilo>
+          </asi:Allekirjoittaja>
+          <asi:Allekirjoittaja>
+            <org:Henkilo met1:muuTunnus="971">
+              <org1:EtuNimi>Johanna</org1:EtuNimi>
+              <org1:SukuNimi>Ojala-Niemelä</org1:SukuNimi>
+              <org1:LisatietoTeksti>sd</org1:LisatietoTeksti>
+            </org:Henkilo>
+          </asi:Allekirjoittaja>
+          <asi:Allekirjoittaja>
+            <org:Henkilo met1:muuTunnus="1274">
+              <org1:EtuNimi>Antti</org1:EtuNimi>
+              <org1:SukuNimi>Rinne</org1:SukuNimi>
+              <org1:LisatietoTeksti>sd</org1:LisatietoTeksti>
+            </org:Henkilo>
+          </asi:Allekirjoittaja>
+          <asi:Allekirjoittaja>
+            <org:Henkilo met1:muuTunnus="357">
+              <org1:EtuNimi>Erkki</org1:EtuNimi>
+              <org1:SukuNimi>Tuomioja</org1:SukuNimi>
+              <org1:LisatietoTeksti>sd</org1:LisatietoTeksti>
+            </org:Henkilo>
+          </asi:Allekirjoittaja>
+          <asi:Allekirjoittaja>
+            <org:Henkilo met1:muuTunnus="538">
+              <org1:EtuNimi>Tuula</org1:EtuNimi>
+              <org1:SukuNimi>Haatainen</org1:SukuNimi>
+              <org1:LisatietoTeksti>sd</org1:LisatietoTeksti>
+            </org:Henkilo>
+          </asi:Allekirjoittaja>
+          <asi:Allekirjoittaja>
+            <org:Henkilo met1:muuTunnus="565">
+              <org1:EtuNimi>Susanna</org1:EtuNimi>
+              <org1:SukuNimi>Huovinen</org1:SukuNimi>
+              <org1:LisatietoTeksti>sd</org1:LisatietoTeksti>
+            </org:Henkilo>
+          </asi:Allekirjoittaja>
+          <asi:Allekirjoittaja>
+            <org:Henkilo met1:muuTunnus="791">
+              <org1:EtuNimi>Anneli</org1:EtuNimi>
+              <org1:SukuNimi>Kiljunen</org1:SukuNimi>
+              <org1:LisatietoTeksti>sd</org1:LisatietoTeksti>
+            </org:Henkilo>
+          </asi:Allekirjoittaja>
+          <asi:Allekirjoittaja>
+            <org:Henkilo met1:muuTunnus="1319">
+              <org1:EtuNimi>Satu</org1:EtuNimi>
+              <org1:SukuNimi>Taavitsainen</org1:SukuNimi>
+              <org1:LisatietoTeksti>sd</org1:LisatietoTeksti>
+            </org:Henkilo>
+          </asi:Allekirjoittaja>
+          <asi:Allekirjoittaja>
+            <org:Henkilo met1:muuTunnus="954">
+              <org1:EtuNimi>Ilkka</org1:EtuNimi>
+              <org1:SukuNimi>Kantola</org1:SukuNimi>
+              <org1:LisatietoTeksti>sd</org1:LisatietoTeksti>
+            </org:Henkilo>
+          </asi:Allekirjoittaja>
+          <asi:Allekirjoittaja>
+            <org:Henkilo met1:muuTunnus="203">
+              <org1:EtuNimi>Riitta</org1:EtuNimi>
+              <org1:SukuNimi>Myller</org1:SukuNimi>
+              <org1:LisatietoTeksti>sd</org1:LisatietoTeksti>
+            </org:Henkilo>
+          </asi:Allekirjoittaja>
+          <asi:Allekirjoittaja>
+            <org:Henkilo met1:muuTunnus="1126">
+              <org1:EtuNimi>Tytti</org1:EtuNimi>
+              <org1:SukuNimi>Tuppurainen</org1:SukuNimi>
+              <org1:LisatietoTeksti>sd</org1:LisatietoTeksti>
+            </org:Henkilo>
+          </asi:Allekirjoittaja>
+          <asi:Allekirjoittaja>
+            <org:Henkilo met1:muuTunnus="1297">
+              <org1:EtuNimi>Sanna</org1:EtuNimi>
+              <org1:SukuNimi>Marin</org1:SukuNimi>
+              <org1:LisatietoTeksti>sd</org1:LisatietoTeksti>
+            </org:Henkilo>
+          </asi:Allekirjoittaja>
+          <asi:Allekirjoittaja>
+            <org:Henkilo met1:muuTunnus="1326">
+              <org1:EtuNimi>Timo</org1:EtuNimi>
+              <org1:SukuNimi>Harakka</org1:SukuNimi>
+              <org1:LisatietoTeksti>sd</org1:LisatietoTeksti>
+            </org:Henkilo>
+          </asi:Allekirjoittaja>
+          <asi:Allekirjoittaja>
+            <org:Henkilo met1:muuTunnus="1311">
+              <org1:EtuNimi>Joona</org1:EtuNimi>
+              <org1:SukuNimi>Räsänen</org1:SukuNimi>
+              <org1:LisatietoTeksti>sd</org1:LisatietoTeksti>
+            </org:Henkilo>
+          </asi:Allekirjoittaja>
+          <asi:Allekirjoittaja>
+            <org:Henkilo met1:muuTunnus="1102">
+              <org1:EtuNimi>Kristiina</org1:EtuNimi>
+              <org1:SukuNimi>Salonen</org1:SukuNimi>
+              <org1:LisatietoTeksti>sd</org1:LisatietoTeksti>
+            </org:Henkilo>
+          </asi:Allekirjoittaja>
+          <asi:Allekirjoittaja>
+            <org:Henkilo met1:muuTunnus="1302">
+              <org1:EtuNimi>Ilmari</org1:EtuNimi>
+              <org1:SukuNimi>Nurminen</org1:SukuNimi>
+              <org1:LisatietoTeksti>sd</org1:LisatietoTeksti>
+            </org:Henkilo>
+          </asi:Allekirjoittaja>
+          <asi:Allekirjoittaja>
+            <org:Henkilo met1:muuTunnus="952">
+              <org1:EtuNimi>Katja</org1:EtuNimi>
+              <org1:SukuNimi>Taimela</org1:SukuNimi>
+              <org1:LisatietoTeksti>sd</org1:LisatietoTeksti>
+            </org:Henkilo>
+          </asi:Allekirjoittaja>
+          <asi:Allekirjoittaja>
+            <org:Henkilo met1:muuTunnus="887">
+              <org1:EtuNimi>Sirpa</org1:EtuNimi>
+              <org1:SukuNimi>Paatero</org1:SukuNimi>
+              <org1:LisatietoTeksti>sd</org1:LisatietoTeksti>
+            </org:Henkilo>
+          </asi:Allekirjoittaja>
+          <asi:Allekirjoittaja>
+            <org:Henkilo met1:muuTunnus="1133">
+              <org1:EtuNimi>Mika</org1:EtuNimi>
+              <org1:SukuNimi>Kari</org1:SukuNimi>
+              <org1:LisatietoTeksti>sd</org1:LisatietoTeksti>
+            </org:Henkilo>
+          </asi:Allekirjoittaja>
+          <asi:Allekirjoittaja>
+            <org:Henkilo met1:muuTunnus="768">
+              <org1:EtuNimi>Eero</org1:EtuNimi>
+              <org1:SukuNimi>Heinäluoma</org1:SukuNimi>
+              <org1:LisatietoTeksti>sd</org1:LisatietoTeksti>
+            </org:Henkilo>
+          </asi:Allekirjoittaja>
+          <asi:Allekirjoittaja>
+            <org:Henkilo met1:muuTunnus="1121">
+              <org1:EtuNimi>Lauri</org1:EtuNimi>
+              <org1:SukuNimi>Ihalainen</org1:SukuNimi>
+              <org1:LisatietoTeksti>sd</org1:LisatietoTeksti>
+            </org:Henkilo>
+          </asi:Allekirjoittaja>
+          <asi:Allekirjoittaja>
+            <org:Henkilo met1:muuTunnus="931">
+              <org1:EtuNimi>Maarit</org1:EtuNimi>
+              <org1:SukuNimi>Feldt-Ranta</org1:SukuNimi>
+              <org1:LisatietoTeksti>sd</org1:LisatietoTeksti>
+            </org:Henkilo>
+          </asi:Allekirjoittaja>
+          <asi:Allekirjoittaja>
+            <org:Henkilo met1:muuTunnus="808">
+              <org1:EtuNimi>Jutta</org1:EtuNimi>
+              <org1:SukuNimi>Urpilainen</org1:SukuNimi>
+              <org1:LisatietoTeksti>sd</org1:LisatietoTeksti>
+            </org:Henkilo>
+          </asi:Allekirjoittaja>
+          <asi:Allekirjoittaja>
+            <org:Henkilo met1:muuTunnus="1144">
+              <org1:EtuNimi>Suna</org1:EtuNimi>
+              <org1:SukuNimi>Kymäläinen</org1:SukuNimi>
+              <org1:LisatietoTeksti>sd</org1:LisatietoTeksti>
+            </org:Henkilo>
+          </asi:Allekirjoittaja>
+          <asi:Allekirjoittaja>
+            <org:Henkilo met1:muuTunnus="1099">
+              <org1:EtuNimi>Eeva-Johanna</org1:EtuNimi>
+              <org1:SukuNimi>Eloranta</org1:SukuNimi>
+              <org1:LisatietoTeksti>sd</org1:LisatietoTeksti>
+            </org:Henkilo>
+          </asi:Allekirjoittaja>
+          <asi:Allekirjoittaja>
+            <org:Henkilo met1:muuTunnus="1202">
+              <org1:EtuNimi>Nasima</org1:EtuNimi>
+              <org1:SukuNimi>Razmyar</org1:SukuNimi>
+              <org1:LisatietoTeksti>sd</org1:LisatietoTeksti>
+            </org:Henkilo>
+          </asi:Allekirjoittaja>
+          <asi:Allekirjoittaja>
+            <org:Henkilo met1:muuTunnus="914">
+              <org1:EtuNimi>Outi</org1:EtuNimi>
+              <org1:SukuNimi>Alanko-Kahiluoto</org1:SukuNimi>
+              <org1:LisatietoTeksti>vihr</org1:LisatietoTeksti>
+            </org:Henkilo>
+          </asi:Allekirjoittaja>
+          <asi:Allekirjoittaja>
+            <org:Henkilo met1:muuTunnus="1114">
+              <org1:EtuNimi>Jani</org1:EtuNimi>
+              <org1:SukuNimi>Toivola</org1:SukuNimi>
+              <org1:LisatietoTeksti>vihr</org1:LisatietoTeksti>
+            </org:Henkilo>
+          </asi:Allekirjoittaja>
+          <asi:Allekirjoittaja>
+            <org:Henkilo met1:muuTunnus="956">
+              <org1:EtuNimi>Ville</org1:EtuNimi>
+              <org1:SukuNimi>Niinistö</org1:SukuNimi>
+              <org1:LisatietoTeksti>vihr</org1:LisatietoTeksti>
+            </org:Henkilo>
+          </asi:Allekirjoittaja>
+          <asi:Allekirjoittaja>
+            <org:Henkilo met1:muuTunnus="1346">
+              <org1:EtuNimi>Touko</org1:EtuNimi>
+              <org1:SukuNimi>Aalto</org1:SukuNimi>
+              <org1:LisatietoTeksti>vihr</org1:LisatietoTeksti>
+            </org:Henkilo>
+          </asi:Allekirjoittaja>
+          <asi:Allekirjoittaja>
+            <org:Henkilo met1:muuTunnus="1304">
+              <org1:EtuNimi>Olli-Poika</org1:EtuNimi>
+              <org1:SukuNimi>Parviainen</org1:SukuNimi>
+              <org1:LisatietoTeksti>vihr</org1:LisatietoTeksti>
+            </org:Henkilo>
+          </asi:Allekirjoittaja>
+          <asi:Allekirjoittaja>
+            <org:Henkilo met1:muuTunnus="1336">
+              <org1:EtuNimi>Emma</org1:EtuNimi>
+              <org1:SukuNimi>Kari</org1:SukuNimi>
+              <org1:LisatietoTeksti>vihr</org1:LisatietoTeksti>
+            </org:Henkilo>
+          </asi:Allekirjoittaja>
+          <asi:Allekirjoittaja>
+            <org:Henkilo met1:muuTunnus="930">
+              <org1:EtuNimi>Heli</org1:EtuNimi>
+              <org1:SukuNimi>Järvinen</org1:SukuNimi>
+              <org1:LisatietoTeksti>vihr</org1:LisatietoTeksti>
+            </org:Henkilo>
+          </asi:Allekirjoittaja>
+          <asi:Allekirjoittaja>
+            <org:Henkilo met1:muuTunnus="1332">
+              <org1:EtuNimi>Ozan</org1:EtuNimi>
+              <org1:SukuNimi>Yanar</org1:SukuNimi>
+              <org1:LisatietoTeksti>vihr</org1:LisatietoTeksti>
+            </org:Henkilo>
+          </asi:Allekirjoittaja>
+          <asi:Allekirjoittaja>
+            <org:Henkilo met1:muuTunnus="1329">
+              <org1:EtuNimi>Antero</org1:EtuNimi>
+              <org1:SukuNimi>Vartia</org1:SukuNimi>
+              <org1:LisatietoTeksti>vihr</org1:LisatietoTeksti>
+            </org:Henkilo>
+          </asi:Allekirjoittaja>
+          <asi:Allekirjoittaja>
+            <org:Henkilo met1:muuTunnus="1324">
+              <org1:EtuNimi>Hanna</org1:EtuNimi>
+              <org1:SukuNimi>Halmeenpää</org1:SukuNimi>
+              <org1:LisatietoTeksti>vihr</org1:LisatietoTeksti>
+            </org:Henkilo>
+          </asi:Allekirjoittaja>
+          <asi:Allekirjoittaja>
+            <org:Henkilo met1:muuTunnus="921">
+              <org1:EtuNimi>Johanna</org1:EtuNimi>
+              <org1:SukuNimi>Karimäki</org1:SukuNimi>
+              <org1:LisatietoTeksti>vihr</org1:LisatietoTeksti>
+            </org:Henkilo>
+          </asi:Allekirjoittaja>
+          <asi:Allekirjoittaja>
+            <org:Henkilo met1:muuTunnus="771">
+              <org1:EtuNimi>Jyrki</org1:EtuNimi>
+              <org1:SukuNimi>Kasvi</org1:SukuNimi>
+              <org1:LisatietoTeksti>vihr</org1:LisatietoTeksti>
+            </org:Henkilo>
+          </asi:Allekirjoittaja>
+          <asi:Allekirjoittaja>
+            <org:Henkilo met1:muuTunnus="118">
+              <org1:EtuNimi>Pekka</org1:EtuNimi>
+              <org1:SukuNimi>Haavisto</org1:SukuNimi>
+              <org1:LisatietoTeksti>vihr</org1:LisatietoTeksti>
+            </org:Henkilo>
+          </asi:Allekirjoittaja>
+          <asi:Allekirjoittaja>
+            <org:Henkilo met1:muuTunnus="1298">
+              <org1:EtuNimi>Krista</org1:EtuNimi>
+              <org1:SukuNimi>Mikkonen</org1:SukuNimi>
+              <org1:LisatietoTeksti>vihr</org1:LisatietoTeksti>
+            </org:Henkilo>
+          </asi:Allekirjoittaja>
+          <asi:Allekirjoittaja>
+            <org:Henkilo met1:muuTunnus="1097">
+              <org1:EtuNimi>Aino-Kaisa</org1:EtuNimi>
+              <org1:SukuNimi>Pekonen</org1:SukuNimi>
+              <org1:LisatietoTeksti>vas</org1:LisatietoTeksti>
+            </org:Henkilo>
+          </asi:Allekirjoittaja>
+          <asi:Allekirjoittaja>
+            <org:Henkilo met1:muuTunnus="479">
+              <org1:EtuNimi>Annika</org1:EtuNimi>
+              <org1:SukuNimi>Lapintie</org1:SukuNimi>
+              <org1:LisatietoTeksti>vas</org1:LisatietoTeksti>
+            </org:Henkilo>
+          </asi:Allekirjoittaja>
+          <asi:Allekirjoittaja>
+            <org:Henkilo met1:muuTunnus="507">
+              <org1:EtuNimi>Kari</org1:EtuNimi>
+              <org1:SukuNimi>Uotila</org1:SukuNimi>
+              <org1:LisatietoTeksti>vas</org1:LisatietoTeksti>
+            </org:Henkilo>
+          </asi:Allekirjoittaja>
+          <asi:Allekirjoittaja>
+            <org:Henkilo met1:muuTunnus="802">
+              <org1:EtuNimi>Markus</org1:EtuNimi>
+              <org1:SukuNimi>Mustajärvi</org1:SukuNimi>
+              <org1:LisatietoTeksti>vas</org1:LisatietoTeksti>
+            </org:Henkilo>
+          </asi:Allekirjoittaja>
+          <asi:Allekirjoittaja>
+            <org:Henkilo met1:muuTunnus="1276">
+              <org1:EtuNimi>Katja</org1:EtuNimi>
+              <org1:SukuNimi>Hänninen</org1:SukuNimi>
+              <org1:LisatietoTeksti>vas</org1:LisatietoTeksti>
+            </org:Henkilo>
+          </asi:Allekirjoittaja>
+          <asi:Allekirjoittaja>
+            <org:Henkilo met1:muuTunnus="1310">
+              <org1:EtuNimi>Li</org1:EtuNimi>
+              <org1:SukuNimi>Andersson</org1:SukuNimi>
+              <org1:LisatietoTeksti>vas</org1:LisatietoTeksti>
+            </org:Henkilo>
+          </asi:Allekirjoittaja>
+          <asi:Allekirjoittaja>
+            <org:Henkilo met1:muuTunnus="1312">
+              <org1:EtuNimi>Hanna</org1:EtuNimi>
+              <org1:SukuNimi>Sarkkinen</org1:SukuNimi>
+              <org1:LisatietoTeksti>vas</org1:LisatietoTeksti>
+            </org:Henkilo>
+          </asi:Allekirjoittaja>
+          <asi:Allekirjoittaja>
+            <org:Henkilo met1:muuTunnus="1315">
+              <org1:EtuNimi>Matti</org1:EtuNimi>
+              <org1:SukuNimi>Semi</org1:SukuNimi>
+              <org1:LisatietoTeksti>vas</org1:LisatietoTeksti>
+            </org:Henkilo>
+          </asi:Allekirjoittaja>
+          <asi:Allekirjoittaja>
+            <org:Henkilo met1:muuTunnus="1155">
+              <org1:EtuNimi>Anna</org1:EtuNimi>
+              <org1:SukuNimi>Kontula</org1:SukuNimi>
+              <org1:LisatietoTeksti>vas</org1:LisatietoTeksti>
+            </org:Henkilo>
+          </asi:Allekirjoittaja>
+          <asi:Allekirjoittaja>
+            <org:Henkilo met1:muuTunnus="917">
+              <org1:EtuNimi>Paavo</org1:EtuNimi>
+              <org1:SukuNimi>Arhinmäki</org1:SukuNimi>
+              <org1:LisatietoTeksti>vas</org1:LisatietoTeksti>
+            </org:Henkilo>
+          </asi:Allekirjoittaja>
+          <asi:Allekirjoittaja>
+            <org:Henkilo met1:muuTunnus="1154">
+              <org1:EtuNimi>Jari</org1:EtuNimi>
+              <org1:SukuNimi>Myllykoski</org1:SukuNimi>
+              <org1:LisatietoTeksti>vas</org1:LisatietoTeksti>
+            </org:Henkilo>
+          </asi:Allekirjoittaja>
+          <asi:Allekirjoittaja>
+            <org:Henkilo met1:muuTunnus="1153">
+              <org1:EtuNimi>Silvia</org1:EtuNimi>
+              <org1:SukuNimi>Modig</org1:SukuNimi>
+              <org1:LisatietoTeksti>vas</org1:LisatietoTeksti>
+            </org:Henkilo>
+          </asi:Allekirjoittaja>
+          <asi:Allekirjoittaja>
+            <org:Henkilo met1:muuTunnus="941">
+              <org1:EtuNimi>Anna-Maja</org1:EtuNimi>
+              <org1:SukuNimi>Henriksson</org1:SukuNimi>
+              <org1:LisatietoTeksti>r</org1:LisatietoTeksti>
+            </org:Henkilo>
+          </asi:Allekirjoittaja>
+          <asi:Allekirjoittaja>
+            <org:Henkilo met1:muuTunnus="1306">
+              <org1:EtuNimi>Anders</org1:EtuNimi>
+              <org1:SukuNimi>Adlercreutz</org1:SukuNimi>
+              <org1:LisatietoTeksti>r</org1:LisatietoTeksti>
+            </org:Henkilo>
+          </asi:Allekirjoittaja>
+          <asi:Allekirjoittaja>
+            <org:Henkilo met1:muuTunnus="351">
+              <org1:EtuNimi>Eva</org1:EtuNimi>
+              <org1:SukuNimi>Biaudet</org1:SukuNimi>
+              <org1:LisatietoTeksti>r</org1:LisatietoTeksti>
+            </org:Henkilo>
+          </asi:Allekirjoittaja>
+          <asi:Allekirjoittaja>
+            <org:Henkilo met1:muuTunnus="923">
+              <org1:EtuNimi>Thomas</org1:EtuNimi>
+              <org1:SukuNimi>Blomqvist</org1:SukuNimi>
+              <org1:LisatietoTeksti>r</org1:LisatietoTeksti>
+            </org:Henkilo>
+          </asi:Allekirjoittaja>
+          <asi:Allekirjoittaja>
+            <org:Henkilo met1:muuTunnus="1217">
+              <org1:EtuNimi>Carl</org1:EtuNimi>
+              <org1:SukuNimi>Haglund</org1:SukuNimi>
+              <org1:LisatietoTeksti>r</org1:LisatietoTeksti>
+            </org:Henkilo>
+          </asi:Allekirjoittaja>
+          <asi:Allekirjoittaja>
+            <org:Henkilo met1:muuTunnus="910">
+              <org1:EtuNimi>Stefan</org1:EtuNimi>
+              <org1:SukuNimi>Wallin</org1:SukuNimi>
+              <org1:LisatietoTeksti>r</org1:LisatietoTeksti>
+            </org:Henkilo>
+          </asi:Allekirjoittaja>
+          <asi:Allekirjoittaja>
+            <org:Henkilo met1:muuTunnus="769">
+              <org1:EtuNimi>Mikaela</org1:EtuNimi>
+              <org1:SukuNimi>Nylander</org1:SukuNimi>
+              <org1:LisatietoTeksti>r</org1:LisatietoTeksti>
+            </org:Henkilo>
+          </asi:Allekirjoittaja>
+          <asi:Allekirjoittaja>
+            <org:Henkilo met1:muuTunnus="1318">
+              <org1:EtuNimi>Joakim</org1:EtuNimi>
+              <org1:SukuNimi>Strand</org1:SukuNimi>
+              <org1:LisatietoTeksti>r</org1:LisatietoTeksti>
+            </org:Henkilo>
+          </asi:Allekirjoittaja>
+        </asi:AllekirjoitusOsa>
+      </kys:Kysymys>
+    </RakenneAsiakirja>
+  </SiirtoAsiakirja>
+  <SiirtoTiedosto xmlns="http://www.eduskunta.fi/skeemat/siirtokooste/2011/05/17">
+    <Document xmlns="http://www.arkisto.fi/skeemat/sahke2/2011/01/31_vnk">
+      <NativeId>{2A198390-3D82-CF2D-8399-793222000013}</NativeId>
+      <UseType>Julkaisu</UseType>
+      <File>
+        <Name>2A198390-3D82-CF2D-8399-793222000013.pdf</Name>
+        <Path>sftp://pintpurnukka.eduskunta.fi:22/home/vaskijul/liitteet/tojulkvp/2A198390-3D82-CF2D-8399-793222000013.pdf</Path>
+      </File>
+      <Format>
+        <Name>application/pdf</Name>
+        <Version />
+      </Format>
+      <HashAlgorithm>MD5</HashAlgorithm>
+      <HashValue>25aca561b176e91fa8fef665eb26f768</HashValue>
+    </Document>
+  </SiirtoTiedosto>
+</ns11:Siirto>
