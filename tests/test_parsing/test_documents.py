@@ -89,7 +89,7 @@ def test_speaker_info(
 ) -> None:
     """Test that speaker name and additional information is correctly parsed."""
     elements = session.xml_transcript.xpath(
-        f". /*[local-name() = 'Asiakohta'][*[local-name() = 'KohtaNumero' and .='{subsection}']]"
+        f". /*[local-name() = 'Asiakohta'][*[local-name() = 'KohtaNumero' and .={subsection!r}]]"
         "//*[local-name() = 'PuheenvuoroToimenpide']/*[local-name() = 'Toimija']"
     )
     assert len(elements) > 0
@@ -167,7 +167,7 @@ def test_language_code(session: Session, id: int, true_language: str) -> None:
 def test_speaker_statements(session: Session, subsection: int, json_test_data: Any) -> None:
     """Test a subsection of a transcript is parsed correctly."""
     elements = session.xml_transcript.xpath(
-        f". /*[local-name() = 'Asiakohta'][*[local-name() = 'KohtaNumero' and .='{subsection}']]"
+        f". /*[local-name() = 'Asiakohta'][*[local-name() = 'KohtaNumero' and .={subsection!r}]]"
         "//*[local-name() = 'PuheenvuoroToimenpide']"
     )
     assert len(elements) > 0
@@ -188,7 +188,7 @@ def test_chairman_statements(
 ) -> None:
     """Test a subsection of a transcript is parsed correctly."""
     [element] = session.xml_transcript.xpath(
-        f". /*[local-name() = 'Asiakohta'][*[local-name() = 'KohtaNumero' and .='{subsection}']]"
+        f". /*[local-name() = 'Asiakohta'][*[local-name() = 'KohtaNumero' and .={subsection!r}]]"
         "//*[local-name() = 'Toimenpide']//*[local-name() = 'PuheenjohtajaRepliikki']"
     )
     statement = session.compose_chairman_statement(element)
