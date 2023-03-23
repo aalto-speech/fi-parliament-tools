@@ -174,7 +174,7 @@ def preprocess(
         finally:
             final_report(log, pipeline.errors)
     else:
-        raise click.ClickException(f"Failed to import recipe '{recipe_file}', is it a python file?")
+        raise click.ClickException(f"Failed to import recipe {recipe_file!r}, is it a python file?")
 
 
 @main.command()
@@ -201,7 +201,7 @@ def postprocess(ctms_list: TextIO, recipe_file: str) -> None:
             if not pipeline.stats.empty:
                 pipeline.report_statistics()
     else:
-        raise click.ClickException(f"Failed to import recipe '{recipe_file}', is it a python file?")
+        raise click.ClickException(f"Failed to import recipe {recipe_file!r}, is it a python file?")
 
 
 @main.command()

@@ -60,7 +60,7 @@ def test_downloads_form_path(
 
 @mock.patch("fi_parliament_tools.downloads.DownloadPipeline.extract_wav")
 @mock.patch("fi_parliament_tools.downloads.shutil.copyfileobj")
-@mock.patch("fi_parliament_tools.downloads.atomic_write")
+@mock.patch("fi_parliament_tools.downloads.atomic")
 @mock.patch("fi_parliament_tools.downloads.requests.get")
 def test_download_video(
     mocked_get: MagicMock,
@@ -73,14 +73,14 @@ def test_download_video(
     path = Path("test_path")
     url = "https://eduskunta.videosync.fi/api/v1/events/abc012345/video/download"
     download_pipeline.download_video(path, **{"index": "abc012345"})
-    mocked_get.assert_called_once_with(url, stream=True)
+    mocked_get.assert_called_once_with(url, timeout=35, stream=True)
     mocked_atomic_write.assert_called_once_with(path, mode="wb")
     mocked_copyfileobj.assert_called_once()
     mocked_extract_wav.assert_called_once_with(path)
 
 
 @mock.patch("fi_parliament_tools.downloads.DownloadPipeline.extract_wav")
-@mock.patch("fi_parliament_tools.downloads.atomic_write")
+@mock.patch("fi_parliament_tools.downloads.atomic")
 @mock.patch("fi_parliament_tools.downloads.requests.get")
 def test_download_video_exception(
     mocked_get: MagicMock,
@@ -93,7 +93,7 @@ def test_download_video_exception(
     path = Path("test_path")
     url = "https://eduskunta.videosync.fi/api/v1/events/abc012345/video/download"
     download_pipeline.download_video(path, **{"index": "abc012345"})
-    mocked_get.assert_called_once_with(url, stream=True)
+    mocked_get.assert_called_once_with(url, timeout=35, stream=True)
     mocked_atomic_write.assert_called_once_with(path, mode="wb")
     mock_shutil_error.assert_called_once()
     mocked_extract_wav.assert_not_called()

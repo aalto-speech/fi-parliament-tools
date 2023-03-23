@@ -135,8 +135,9 @@ def assign_speaker(
     Returns:
         pd.DataFrame: updated CTM
     """
+    longest_match = 0.8 if "puhemies" in statement.title.lower() else 0.5
     start_idx, end_idx = find_statement(
-        df[["transcript", "edit"]], text.split(), statement.language
+        df[["transcript", "edit"]], text.split(), statement.language, longest_match=longest_match
     )
     if "sv" not in statement.language:
         start_idx, end_idx = adjust_indices(df, start_idx, end_idx)
@@ -150,9 +151,10 @@ def find_statement(
     df: pd.DataFrame,
     text: list[str],
     lang: str,
-    match_limit: int = 30,
+    match_limit: int = 50,
     size: int = 10000,
     step: int = 7500,
+    longest_match: float = 0.5,
 ) -> tuple[int, int]:
     """Find where the statement text starts and ends in the alignment CTM.
 
@@ -163,6 +165,7 @@ def find_statement(
         match_limit (int): the number of words to match in search, defaults to 30
         size (int): the size of the sliding window, defaults to 10 000
         step (int): the step size of the sliding window, defaults to 7500
+        longest_match (float): minimum proportion of consecutive words that should match
 
     Raises:
         ValueError: no alignment could be found
@@ -171,22 +174,23 @@ def find_statement(
         Tuple[int, int]: start and end indices of statement text
     """
     masked = df[(df.transcript != "<eps>") & (df.transcript != "<UNK>")]
-    words_matched = min(len(text), match_limit)
+    diff_len = min(len(text), match_limit)
     for i, w in enumerate(sliding_window(masked.transcript.values, size=size, step=step)):
         start, window = (0, list(w))
-        diff = difflib.SequenceMatcher(None, window, text[:words_matched])
+        diff = difflib.SequenceMatcher(None, window, text[:diff_len])
         while start < step:
-            min_m = min(words_matched, 5)
+            min_m = min(diff_len, 5)
             match = next((m for m in diff.get_matching_blocks() if m.size >= min_m), Match(0, 0, 0))
             start += match.a
-            if match.size <= 0:
+            long = diff.find_longest_match(0, len(window[start:]), 0, diff_len).size
+            if match.size <= 0 or long / diff_len <= longest_match:
                 break
             else:
                 s = start + i * step
                 edit_ratios = masked.edit.iloc[s : s + match.size].value_counts(normalize=True)
                 if "sv" in lang or ("cor" in edit_ratios and edit_ratios["cor"] > 0.5):
                     return masked.index[s], find_end_index(masked.transcript.iloc[s:], text)
-                start += words_matched
+                start += diff_len
                 diff.set_seq1(window[start:])
     raise ValueError("Alignment not found.")
 
@@ -211,7 +215,7 @@ def find_end_index(masked: pd.DataFrame, text: list[str], added_range: int = 100
     if ops[-1][0] == "equal":
         return int(masked.index[ops[-1][2]])
     matches = diff.get_matching_blocks()
-    if end_idx := next((m.a + m.size for m in matches[::-1] if m.size > 1), 0):
+    if end_idx := next((m.a + m.size for m in matches[::-1] if m.size > 2), 0):
         return int(masked.index[end_idx])
     raise ValueError("Statement end index not found.")
 

@@ -70,7 +70,7 @@ class PostProcessingPipeline(Pipeline):
     def run(self) -> None:
         """Run postprocessing pipeline over the inputs."""
         with alive_bar(len(self.inputs)) as bar:
-            for (ctm, json_file, session) in self.inputs:
+            for ctm, json_file, session in self.inputs:
                 self.log.info(f"Processing {ctm} next.")
                 self.postprocess_session(ctm, json_file, session)
                 bar()

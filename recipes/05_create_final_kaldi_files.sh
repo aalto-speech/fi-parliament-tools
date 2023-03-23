@@ -62,7 +62,7 @@ awk 'BEGIN { FS="-" } { print $0" "$1 }' $OUTPUT/utt >$OUTPUT/utt2spk
 
 # spk2utt
 echo "Compile $OUTPUT/spk2utt file."
-awk '{ utts[$2] = utts[$2]" "$1 } END { for (speaker in utts) print speaker utts[speaker] }' utt2spk >spk2utt
+awk '{ utts[$2] = utts[$2]" "$1 } END { for (speaker in utts) print speaker utts[speaker] }' $OUTPUT/utt2spk >$OUTPUT/spk2utt
 
 echo "Clean intermediary files."
 rm $OUTPUT/utt $OUTPUT/wav $OUTPUT/swedish_uttids

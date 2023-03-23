@@ -172,7 +172,7 @@ class PreprocessingPipeline(Pipeline):
             if embedded.mp_id == 0 and embedded.firstname:
                 embedded.mp_id = self.lookup_mpid(embedded)
         except KeyError as e:
-            self.log.debug(f"Unknown MP in {path} in statement at '{statement.start_time}':\n {e}")
+            self.log.debug(f"Unknown MP in {path} in statement at {statement.start_time!r}:\n {e}")
             self.errors.append(f"Encountered unknown MP in {path}. See log for more info.")
 
     def lookup_mpid(self, statement: Union[Statement, EmbeddedStatement]) -> int:
@@ -231,7 +231,7 @@ class PreprocessingPipeline(Pipeline):
         except Exception as e:
             self.log.exception(
                 f"Preprocessing failed in {path} in statement beginning at "
-                f"'{statement.start_time}' with error message:\n {e}."
+                f"{statement.start_time!r} with error message:\n {e}."
             )
             self.errors.append(f"Caught an exception in {path}.")
         return set()

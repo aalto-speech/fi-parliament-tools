@@ -355,6 +355,7 @@ REGEXPS = [
     (r"\boy\.", r"osakeyhtiö "),
     (r"\s+ry\.", r" rekisteröity yhdistys "),
     (r"\s+mm\.", r" muun muassa "),
+    (r"\b([Cc]ovid|COVID)-19\s", r"covid yhdeksäntoista "),
     (r"\bmrd\. mk\.", r"miljardia markkaa "),
     (r"\bmrd\.", r"miljardia "),
     (r"\bmilj\.", r"miljoonaa "),

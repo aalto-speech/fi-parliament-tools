@@ -121,3 +121,16 @@ def load_recipe() -> Callable[[str], Any]:
             return recipe
 
     return _load_recipe
+
+
+@pytest.fixture
+def read_xml_string() -> Callable[[str], str]:
+    """Read an XML file to a string. Subsection string needs to include a prepending '-'."""
+
+    def _read_xml_string(filename: str) -> str:
+        xmlfile = f"tests/data/xmls/{filename}"
+        with open(xmlfile, encoding="utf-8") as infile:
+            lines = infile.readlines()
+            return " ".join([line.strip() for line in lines])
+
+    return _read_xml_string
