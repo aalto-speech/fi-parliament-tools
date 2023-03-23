@@ -79,7 +79,7 @@ jobs:
           result = "${{ runner.os }}-{}-{}-pre-commit".format(python, digest[:8])
 
           with open(os.environ["GITHUB_OUTPUT"], mode="a") as io:
-            print("result={}".format(result))
+            print(f"result={result}", file=io)
 
       - name: Restore pre-commit cache
         uses: actions/cache@v3.3.1
