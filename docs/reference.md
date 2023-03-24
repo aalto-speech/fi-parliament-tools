@@ -82,10 +82,10 @@
 .. automodule:: fi_parliament_tools.segmentFiltering
 ```
 
-## fi_parliament_tools.segmentFiltering.IO
+## fi_parliament_tools.segmentFiltering.io
 
 ```{eval-rst}
-.. automodule:: fi_parliament_tools.segmentFiltering.IO
+.. automodule:: fi_parliament_tools.segmentFiltering.io
    :members:
 ```
 
