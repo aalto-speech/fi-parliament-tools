@@ -7,12 +7,12 @@ from unittest.mock import MagicMock
 import pytest
 from pytest_mock.plugin import MockerFixture  # type: ignore
 
-from fi_parliament_tools.segmentFiltering import IO
+from fi_parliament_tools.segmentFiltering import io
 
 
 def test_read_ctm_segmented() -> None:
     """Perform a surface level check that a ctm_edits.segmented file is correctly loaded."""
-    df = IO.KaldiCTMSegmented("tests/data/ctms/session-019-2016").get_df()
+    df = io.KaldiCTMSegmented("tests/data/ctms/session-019-2016").get_df()
     assert list(df.columns) == [
         "word_start",
         "word_duration",
@@ -34,7 +34,7 @@ def test_read_ctm_segmented() -> None:
 
 def test_read_segments() -> None:
     """Perform a surface level check that a Kaldi segments file is correctly loaded."""
-    df = IO.KaldiSegments("tests/data/ctms/session-019-2016").get_df()
+    df = io.KaldiSegments("tests/data/ctms/session-019-2016").get_df()
     assert list(df.columns) == [
         "uttid",
         "recordid",
@@ -50,7 +50,7 @@ def test_read_segments() -> None:
 
 def test_read_kaldi_text() -> None:
     """Perform a surface level check that a Kaldi text file is correctly loaded."""
-    df = IO.KaldiText("tests/data/ctms/session-019-2016").get_df()
+    df = io.KaldiText("tests/data/ctms/session-019-2016").get_df()
     assert list(df.columns) == ["uttid", "text", "new_uttid"]
     assert df.isna().sum().sum() == 0
 
@@ -58,14 +58,14 @@ def test_read_kaldi_text() -> None:
 @pytest.fixture
 def mock_df_to_csv(mocker: MockerFixture) -> MagicMock:
     """Mock the to_csv function of a Pandas DataFrame."""
-    mock: MagicMock = mocker.patch("fi_parliament_tools.segmentFiltering.IO.pd.DataFrame.to_csv")
+    mock: MagicMock = mocker.patch("fi_parliament_tools.segmentFiltering.io.pd.DataFrame.to_csv")
     return mock
 
 
 @pytest.mark.parametrize("cols", [None, ["new_uttid"]])
 def test_kaldi_segments_save_df(mock_df_to_csv: MagicMock, cols: Optional[List[str]]) -> None:
     """Save Kaldi segments DataFrame to a file."""
-    segments = IO.KaldiSegments("tests/data/ctms/session-019-2016")
+    segments = io.KaldiSegments("tests/data/ctms/session-019-2016")
     segments.save_df(segments.df, suffix=".test", cols=cols)
     if cols is None:
         cols = ["new_uttid", "recordid", "start", "end"]
@@ -82,7 +82,7 @@ def test_kaldi_segments_save_df(mock_df_to_csv: MagicMock, cols: Optional[List[s
 @pytest.mark.parametrize("cols", [None, ["text"]])
 def test_kaldi_text_save_df(mock_df_to_csv: MagicMock, cols: Optional[List[str]]) -> None:
     """Save Kaldi text DataFrame to a file."""
-    kaldi_text = IO.KaldiText("tests/data/ctms/session-019-2016")
+    kaldi_text = io.KaldiText("tests/data/ctms/session-019-2016")
     kaldi_text.save_df(kaldi_text.df, suffix=".test", cols=cols)
     if cols is None:
         cols = ["new_uttid", "text"]
@@ -110,7 +110,7 @@ def test_split_segment_id(
     segment_id: str, true_start: float, true_end: float, true_word_index: int
 ) -> None:
     """Check that the segment id is split correctly."""
-    start, end, word_index = IO.split_segment_id(segment_id)
+    start, end, word_index = io.split_segment_id(segment_id)
     assert start == true_start
     assert end == true_end
     assert word_index == true_word_index
@@ -126,4 +126,4 @@ def test_split_segment_id(
 def test_missing_segments(filename: str, message: str) -> None:
     """Check that missing segments raise an error."""
     with pytest.raises(ValueError, match=message):
-        IO.KaldiCTMSegmented(filename).get_df()
+        io.KaldiCTMSegmented(filename).get_df()

@@ -15,7 +15,7 @@ from alive_progress import alive_bar
 
 from fi_parliament_tools.parsing.data_structures import decode_transcript
 from fi_parliament_tools.pipeline import Pipeline
-from fi_parliament_tools.segmentFiltering import IO
+from fi_parliament_tools.segmentFiltering import io
 from fi_parliament_tools.segmentFiltering import labeler
 
 
@@ -100,7 +100,7 @@ class PostProcessingPipeline(Pipeline):
 
     def load_kaldi_files(
         self, basepath: Path, session: str
-    ) -> Tuple[IO.KaldiCTMSegmented, IO.KaldiSegments, IO.KaldiText]:
+    ) -> Tuple[io.KaldiCTMSegmented, io.KaldiSegments, io.KaldiText]:
         """Load Kaldi files needed for postprocessing.
 
         Args:
@@ -108,22 +108,22 @@ class PostProcessingPipeline(Pipeline):
             session (str): plenary session identifier
 
         Returns:
-            Tuple[IO.KaldiCTMSegmented, IO.KaldiSegments, IO.KaldiText]: loaded files
+            Tuple[io.KaldiCTMSegmented, io.KaldiSegments, io.KaldiText]: loaded files
         """
         session_path = f"{basepath}/session-{session}"
-        kaldi_files = [IO.KaldiCTMSegmented, IO.KaldiSegments, IO.KaldiText]
+        kaldi_files = [io.KaldiCTMSegmented, io.KaldiSegments, io.KaldiText]
         ctm, segments, kalditext = (file(session_path) for file in kaldi_files)
         ctm.df.attrs["session"] = session
         return ctm, segments, kalditext  # type: ignore
 
     def save_output(
-        self, segments: IO.KaldiSegments, kalditext: IO.KaldiText, kept_segments: pd.Series
+        self, segments: io.KaldiSegments, kalditext: io.KaldiText, kept_segments: pd.Series
     ) -> None:
         """Save kept segments and dropped segments to separate files.
 
         Args:
-            segments (IO.KaldiSegments): updated segments with speaker and language info
-            kalditext (IO.KaldiText): transcripts corresponding to segments
+            segments (io.KaldiSegments): updated segments with speaker and language info
+            kalditext (io.KaldiText): transcripts corresponding to segments
             kept_segments (pd.Series): mask to separate kept and dropped segments
         """
         segments.save_df(segments.df[kept_segments])
