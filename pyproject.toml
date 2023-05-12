@@ -91,7 +91,8 @@ exclude = [
 ignore = [
   "B905",
   "E501",
-  "S320"
+  "S320",
+  "S603",
 ]
 line-length = 100
 select = [
